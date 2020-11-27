@@ -1,0 +1,456 @@
+\hypertarget{struct_c_sm_action}{}\doxysection{C\+Sm\+Action Struct Reference}
+\label{struct_c_sm_action}\index{CSmAction@{CSmAction}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Sm\+Action\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{struct_c_sm_action}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_sm_action_a5cc29eaf54c3b500fad43edc61b3d309}{Send\+Rules\+Event}} (\mbox{\hyperlink{class_text}{Text}} Param1, \mbox{\hyperlink{class_text}{Text}}\mbox{[}$\,$\mbox{]} Param2, \mbox{\hyperlink{struct_c_entity}{C\+Entity}} Shooter, \mbox{\hyperlink{struct_c_entity}{C\+Entity}} Victim)
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_sm_action_a2c5f887e6096ce190d11e2c04b755338}{Anim\+\_\+\+Get\+Model\+Id}} (\mbox{\hyperlink{class_text}{Text}} Model\+Name)
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_sm_action_a3746f9c0eeeed53dfa9151c6c8d578ac}{Anim\+\_\+\+Play\+At\+Location}} (\mbox{\hyperlink{class_ident}{Ident}} Anim\+Model\+Id, \mbox{\hyperlink{class_vec3}{Vec3}} Position, \mbox{\hyperlink{class_vec3}{Vec3}} Direction)
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_sm_action_aa9b05a19f1b3a63406fd98971e460ffc}{Anim\+\_\+\+Play\+On\+Player}} (\mbox{\hyperlink{class_ident}{Ident}} Anim\+Model\+Id, \mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}} Player)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_sm_action_aed910cb1bcbd90d6f49318d59f487173}{Anim\+\_\+\+Stop}} (\mbox{\hyperlink{class_ident}{Ident}} Anim\+Id)
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_sm_action_a355d19563c7fd78f2f8af93ffd9c06ca}{Projectile\+\_\+\+Get\+Model\+Id}} (\mbox{\hyperlink{class_text}{Text}} Model\+Name)
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_sm_action_abf22e954f675f31847feee7a88f1e6e0}{Projectile\+\_\+\+Create\+At\+Location}} (\mbox{\hyperlink{class_ident}{Ident}} Projectile\+Model\+Id, \mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}} Player\+To\+Ignore, \mbox{\hyperlink{class_vec3}{Vec3}} Initial\+Position, \mbox{\hyperlink{class_vec3}{Vec3}} Initial\+Direction, \mbox{\hyperlink{class_vec3}{Vec3}} Initial\+Velocity)
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_sm_action_aae777ed90c8d75ecdfbe813e89a5aec4}{Projectile\+\_\+\+Create\+On\+Player}} (\mbox{\hyperlink{class_ident}{Ident}} Projectile\+Model\+Id, \mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}} Shooter)
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_a016880205c3b2005369c71a8a6850863}{Cooldown\+\_\+\+Is\+Ready}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_sm_action_a79bd48c3df7804cd1d3dc92eebab0da4}{Cooldown\+\_\+\+Start}} ()
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_sm_action_a0f9da151cc2e1fe94182bee6b4a3706a}{Shield\+\_\+\+Create\+At\+Location}} (\mbox{\hyperlink{class_vec3}{Vec3}} Position, \mbox{\hyperlink{class_vec3}{Vec3}} Direction)
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_sm_action_a2392b595d11102d3e00490749479485b}{Shield\+\_\+\+Create\+On\+Player}} (\mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}} Shield\+Owner)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_sm_action_a905716b4ea23d907c2818debbebf807e}{Shield\+\_\+\+Destroy}} (\mbox{\hyperlink{class_ident}{Ident}} Shield\+Id)
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_a4a340dc05f2c9ec70a422e92ec97dd23}{Shield\+\_\+\+Exists}} (\mbox{\hyperlink{class_ident}{Ident}} Shield\+Id)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_a11a568da8020a3726984f85641baf0fa}{Shield\+\_\+\+Get\+Armor}} (\mbox{\hyperlink{class_ident}{Ident}} Shield\+Id)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_sm_action_a76bf4a63c62efff6e6208cf64075a922}{Shield\+\_\+\+Set\+Armor}} (\mbox{\hyperlink{class_ident}{Ident}} Shield\+Id, \mbox{\hyperlink{class_integer}{Integer}} Shield\+Armor)
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_a1012b68db637a81ddf5e2faec6052e73}{Shield\+\_\+\+Get\+Is\+Active}} (\mbox{\hyperlink{class_ident}{Ident}} Shield\+Id)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_sm_action_a99e1f60ca7d63e4e1711f29b2e9359df}{Shield\+\_\+\+Set\+Is\+Active}} (\mbox{\hyperlink{class_ident}{Ident}} Shield\+Id, \mbox{\hyperlink{class_boolean}{Boolean}} Shield\+Is\+Active)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_a9c6139e9269d7f3d6471ce9cc0c807b2}{Shield\+\_\+\+Get\+Armor\+Max}} (\mbox{\hyperlink{class_ident}{Ident}} Shield\+Id)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_a00ffa2dd35c7e5a37dbcabd65d922afb}{Shield\+\_\+\+Get\+Tick\+Reload}} (\mbox{\hyperlink{class_ident}{Ident}} Shield\+Id)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_ac89927c2e4218b30461426f76f391496}{Shield\+\_\+\+Get\+Cooldown}} (\mbox{\hyperlink{class_ident}{Ident}} Shield\+Id)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_ac5f1a9b5352f3676ecf712e447367311}{Get\+Player\+Ammo}} (\mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}} Player)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_a9c32668cad6dcb94439f6597c236d5dc}{Get\+Player\+Ammo\+Max}} (\mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}} Player)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_sm_action_a95ce0d824d6f693fed70f3087aff7060}{Vehicle\+\_\+\+Trigger\+Turbo}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_sm_action_a35edd892180a575ad99a9e1e268ba9d4}{Vehicle\+\_\+\+Trigger\+Turbo\+Brake}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_a5cd1e51b19c0f18d5dd4354a4929ae87}{Now}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_adf4ed70cb1c6500d3e94fff0b1b35971}{Variant}}
+\item 
+const \mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_sm_action_aab30bc4bd667d5faad8d228652e36a5a}{Players}}
+\item 
+const \mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}} \mbox{\hyperlink{struct_c_sm_action_a190c5107d7cc3e8eabd435dce394d51d}{Owner}}
+\item 
+const \mbox{\hyperlink{struct_c_mode_vehicle}{C\+Mode\+Vehicle}} \mbox{\hyperlink{struct_c_sm_action_a9e859a2ec7d944e6da720b9c416189b3}{Owner\+Vehicle}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_a0349182b4646ca198106a380f5c03284}{Is\+Active}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_ad43a69b761a44f3166c4d5867bf68793}{Is\+Bound}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_aada2b0f8b27a89bf962d888823dc8d4b}{Energy}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_aed9968f6e9e2eaae9cc4665f535ce244}{Energy\+Max}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_a93115c21b183c8f78e9bca9d287844b3}{Energy\+Cost}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_a944997baf6ecaa9c8097d472289a60db}{Energy\+Reload}}
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_sm_action_a6b24e37bd114777884ef001e6e83b34e}{Ammo\+Gain}}
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_sm_action_abb8493f96073d2c47e3cb3ce6683f665}{State\+\_\+\+Entity\+Id1}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_adaba76026cc94f0ed85b74ab75b91bf4}{State\+\_\+\+Integer1}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_a7f95da66399314cf4f58e1b5454631c2}{State\+\_\+\+Integer2}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_a238bc21184240446c63219e27ed109fd}{State\+\_\+\+Boolean1}}
+\item 
+const \mbox{\hyperlink{struct_c_sm_action_event}{C\+Sm\+Action\+Event}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_sm_action_a10052f547252810f728c914cc47d5d5c}{Pending\+Events}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_aff093056984e8e79e9b7fd06eff7e4b9}{Is\+Jumping}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_ac063c1785d52dc22bf1279a577aad4ed}{Is\+Gliding}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_a9841ccdf21a255f69a7ca2402907c32c}{Is\+Attractor}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_ae519a6686a533ce6fc2e6cd1e18be9f7}{Is\+Flying}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_a293afee840b84a9f179e890248c90275}{Is\+Sliding}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_a3b2581b5922431084c9e6ec581c3695a}{Is\+Running}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_acb8cfdee62d8b23aa5f2765fb43dac28}{Is\+Frozen}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_aaf2cccb11092b6cb5261242f1dbf5f45}{Is\+Sneaking}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_a6acc5f6035d7c254fe13b018e2948367}{Is\+Free\+Looking}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_sm_action_ad34c325573fc5a65830a3cabb349c69e}{Has\+No\+Player\+Collision}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_a446d543f04ffdb199640cee158ea4c7b}{Cooldown}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Supported declare modes \+: Local An action 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_sm_action_a2c5f887e6096ce190d11e2c04b755338}\label{struct_c_sm_action_a2c5f887e6096ce190d11e2c04b755338}} 
+\index{CSmAction@{CSmAction}!Anim\_GetModelId@{Anim\_GetModelId}}
+\index{Anim\_GetModelId@{Anim\_GetModelId}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Anim\_GetModelId()}{Anim\_GetModelId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+Sm\+Action\+::\+Anim\+\_\+\+Get\+Model\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Model\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a3746f9c0eeeed53dfa9151c6c8d578ac}\label{struct_c_sm_action_a3746f9c0eeeed53dfa9151c6c8d578ac}} 
+\index{CSmAction@{CSmAction}!Anim\_PlayAtLocation@{Anim\_PlayAtLocation}}
+\index{Anim\_PlayAtLocation@{Anim\_PlayAtLocation}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Anim\_PlayAtLocation()}{Anim\_PlayAtLocation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+Sm\+Action\+::\+Anim\+\_\+\+Play\+At\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Anim\+Model\+Id,  }\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Position,  }\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_aa9b05a19f1b3a63406fd98971e460ffc}\label{struct_c_sm_action_aa9b05a19f1b3a63406fd98971e460ffc}} 
+\index{CSmAction@{CSmAction}!Anim\_PlayOnPlayer@{Anim\_PlayOnPlayer}}
+\index{Anim\_PlayOnPlayer@{Anim\_PlayOnPlayer}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Anim\_PlayOnPlayer()}{Anim\_PlayOnPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+Sm\+Action\+::\+Anim\+\_\+\+Play\+On\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Anim\+Model\+Id,  }\item[{\mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}}}]{Player }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_aed910cb1bcbd90d6f49318d59f487173}\label{struct_c_sm_action_aed910cb1bcbd90d6f49318d59f487173}} 
+\index{CSmAction@{CSmAction}!Anim\_Stop@{Anim\_Stop}}
+\index{Anim\_Stop@{Anim\_Stop}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Anim\_Stop()}{Anim\_Stop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Sm\+Action\+::\+Anim\+\_\+\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Anim\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a016880205c3b2005369c71a8a6850863}\label{struct_c_sm_action_a016880205c3b2005369c71a8a6850863}} 
+\index{CSmAction@{CSmAction}!Cooldown\_IsReady@{Cooldown\_IsReady}}
+\index{Cooldown\_IsReady@{Cooldown\_IsReady}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Cooldown\_IsReady()}{Cooldown\_IsReady()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Cooldown\+\_\+\+Is\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a79bd48c3df7804cd1d3dc92eebab0da4}\label{struct_c_sm_action_a79bd48c3df7804cd1d3dc92eebab0da4}} 
+\index{CSmAction@{CSmAction}!Cooldown\_Start@{Cooldown\_Start}}
+\index{Cooldown\_Start@{Cooldown\_Start}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Cooldown\_Start()}{Cooldown\_Start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Sm\+Action\+::\+Cooldown\+\_\+\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_ac5f1a9b5352f3676ecf712e447367311}\label{struct_c_sm_action_ac5f1a9b5352f3676ecf712e447367311}} 
+\index{CSmAction@{CSmAction}!GetPlayerAmmo@{GetPlayerAmmo}}
+\index{GetPlayerAmmo@{GetPlayerAmmo}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{GetPlayerAmmo()}{GetPlayerAmmo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Get\+Player\+Ammo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}}}]{Player }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a9c32668cad6dcb94439f6597c236d5dc}\label{struct_c_sm_action_a9c32668cad6dcb94439f6597c236d5dc}} 
+\index{CSmAction@{CSmAction}!GetPlayerAmmoMax@{GetPlayerAmmoMax}}
+\index{GetPlayerAmmoMax@{GetPlayerAmmoMax}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{GetPlayerAmmoMax()}{GetPlayerAmmoMax()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Get\+Player\+Ammo\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}}}]{Player }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_abf22e954f675f31847feee7a88f1e6e0}\label{struct_c_sm_action_abf22e954f675f31847feee7a88f1e6e0}} 
+\index{CSmAction@{CSmAction}!Projectile\_CreateAtLocation@{Projectile\_CreateAtLocation}}
+\index{Projectile\_CreateAtLocation@{Projectile\_CreateAtLocation}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Projectile\_CreateAtLocation()}{Projectile\_CreateAtLocation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+Sm\+Action\+::\+Projectile\+\_\+\+Create\+At\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Projectile\+Model\+Id,  }\item[{\mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}}}]{Player\+To\+Ignore,  }\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Initial\+Position,  }\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Initial\+Direction,  }\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Initial\+Velocity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_aae777ed90c8d75ecdfbe813e89a5aec4}\label{struct_c_sm_action_aae777ed90c8d75ecdfbe813e89a5aec4}} 
+\index{CSmAction@{CSmAction}!Projectile\_CreateOnPlayer@{Projectile\_CreateOnPlayer}}
+\index{Projectile\_CreateOnPlayer@{Projectile\_CreateOnPlayer}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Projectile\_CreateOnPlayer()}{Projectile\_CreateOnPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+Sm\+Action\+::\+Projectile\+\_\+\+Create\+On\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Projectile\+Model\+Id,  }\item[{\mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}}}]{Shooter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a355d19563c7fd78f2f8af93ffd9c06ca}\label{struct_c_sm_action_a355d19563c7fd78f2f8af93ffd9c06ca}} 
+\index{CSmAction@{CSmAction}!Projectile\_GetModelId@{Projectile\_GetModelId}}
+\index{Projectile\_GetModelId@{Projectile\_GetModelId}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Projectile\_GetModelId()}{Projectile\_GetModelId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+Sm\+Action\+::\+Projectile\+\_\+\+Get\+Model\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Model\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a5cc29eaf54c3b500fad43edc61b3d309}\label{struct_c_sm_action_a5cc29eaf54c3b500fad43edc61b3d309}} 
+\index{CSmAction@{CSmAction}!SendRulesEvent@{SendRulesEvent}}
+\index{SendRulesEvent@{SendRulesEvent}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{SendRulesEvent()}{SendRulesEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Sm\+Action\+::\+Send\+Rules\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Param1,  }\item[{\mbox{\hyperlink{class_text}{Text}}\mbox{[}$\,$\mbox{]}}]{Param2,  }\item[{\mbox{\hyperlink{struct_c_entity}{C\+Entity}}}]{Shooter,  }\item[{\mbox{\hyperlink{struct_c_entity}{C\+Entity}}}]{Victim }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a0f9da151cc2e1fe94182bee6b4a3706a}\label{struct_c_sm_action_a0f9da151cc2e1fe94182bee6b4a3706a}} 
+\index{CSmAction@{CSmAction}!Shield\_CreateAtLocation@{Shield\_CreateAtLocation}}
+\index{Shield\_CreateAtLocation@{Shield\_CreateAtLocation}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Shield\_CreateAtLocation()}{Shield\_CreateAtLocation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+Sm\+Action\+::\+Shield\+\_\+\+Create\+At\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Position,  }\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a2392b595d11102d3e00490749479485b}\label{struct_c_sm_action_a2392b595d11102d3e00490749479485b}} 
+\index{CSmAction@{CSmAction}!Shield\_CreateOnPlayer@{Shield\_CreateOnPlayer}}
+\index{Shield\_CreateOnPlayer@{Shield\_CreateOnPlayer}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Shield\_CreateOnPlayer()}{Shield\_CreateOnPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+Sm\+Action\+::\+Shield\+\_\+\+Create\+On\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}}}]{Shield\+Owner }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a905716b4ea23d907c2818debbebf807e}\label{struct_c_sm_action_a905716b4ea23d907c2818debbebf807e}} 
+\index{CSmAction@{CSmAction}!Shield\_Destroy@{Shield\_Destroy}}
+\index{Shield\_Destroy@{Shield\_Destroy}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Shield\_Destroy()}{Shield\_Destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Sm\+Action\+::\+Shield\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Shield\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a4a340dc05f2c9ec70a422e92ec97dd23}\label{struct_c_sm_action_a4a340dc05f2c9ec70a422e92ec97dd23}} 
+\index{CSmAction@{CSmAction}!Shield\_Exists@{Shield\_Exists}}
+\index{Shield\_Exists@{Shield\_Exists}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Shield\_Exists()}{Shield\_Exists()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Shield\+\_\+\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Shield\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a11a568da8020a3726984f85641baf0fa}\label{struct_c_sm_action_a11a568da8020a3726984f85641baf0fa}} 
+\index{CSmAction@{CSmAction}!Shield\_GetArmor@{Shield\_GetArmor}}
+\index{Shield\_GetArmor@{Shield\_GetArmor}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Shield\_GetArmor()}{Shield\_GetArmor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Shield\+\_\+\+Get\+Armor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Shield\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a9c6139e9269d7f3d6471ce9cc0c807b2}\label{struct_c_sm_action_a9c6139e9269d7f3d6471ce9cc0c807b2}} 
+\index{CSmAction@{CSmAction}!Shield\_GetArmorMax@{Shield\_GetArmorMax}}
+\index{Shield\_GetArmorMax@{Shield\_GetArmorMax}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Shield\_GetArmorMax()}{Shield\_GetArmorMax()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Shield\+\_\+\+Get\+Armor\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Shield\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_ac89927c2e4218b30461426f76f391496}\label{struct_c_sm_action_ac89927c2e4218b30461426f76f391496}} 
+\index{CSmAction@{CSmAction}!Shield\_GetCooldown@{Shield\_GetCooldown}}
+\index{Shield\_GetCooldown@{Shield\_GetCooldown}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Shield\_GetCooldown()}{Shield\_GetCooldown()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Shield\+\_\+\+Get\+Cooldown (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Shield\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a1012b68db637a81ddf5e2faec6052e73}\label{struct_c_sm_action_a1012b68db637a81ddf5e2faec6052e73}} 
+\index{CSmAction@{CSmAction}!Shield\_GetIsActive@{Shield\_GetIsActive}}
+\index{Shield\_GetIsActive@{Shield\_GetIsActive}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Shield\_GetIsActive()}{Shield\_GetIsActive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Shield\+\_\+\+Get\+Is\+Active (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Shield\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a00ffa2dd35c7e5a37dbcabd65d922afb}\label{struct_c_sm_action_a00ffa2dd35c7e5a37dbcabd65d922afb}} 
+\index{CSmAction@{CSmAction}!Shield\_GetTickReload@{Shield\_GetTickReload}}
+\index{Shield\_GetTickReload@{Shield\_GetTickReload}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Shield\_GetTickReload()}{Shield\_GetTickReload()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Shield\+\_\+\+Get\+Tick\+Reload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Shield\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a76bf4a63c62efff6e6208cf64075a922}\label{struct_c_sm_action_a76bf4a63c62efff6e6208cf64075a922}} 
+\index{CSmAction@{CSmAction}!Shield\_SetArmor@{Shield\_SetArmor}}
+\index{Shield\_SetArmor@{Shield\_SetArmor}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Shield\_SetArmor()}{Shield\_SetArmor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Sm\+Action\+::\+Shield\+\_\+\+Set\+Armor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Shield\+Id,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Shield\+Armor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a99e1f60ca7d63e4e1711f29b2e9359df}\label{struct_c_sm_action_a99e1f60ca7d63e4e1711f29b2e9359df}} 
+\index{CSmAction@{CSmAction}!Shield\_SetIsActive@{Shield\_SetIsActive}}
+\index{Shield\_SetIsActive@{Shield\_SetIsActive}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Shield\_SetIsActive()}{Shield\_SetIsActive()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Sm\+Action\+::\+Shield\+\_\+\+Set\+Is\+Active (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Shield\+Id,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Shield\+Is\+Active }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a95ce0d824d6f693fed70f3087aff7060}\label{struct_c_sm_action_a95ce0d824d6f693fed70f3087aff7060}} 
+\index{CSmAction@{CSmAction}!Vehicle\_TriggerTurbo@{Vehicle\_TriggerTurbo}}
+\index{Vehicle\_TriggerTurbo@{Vehicle\_TriggerTurbo}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Vehicle\_TriggerTurbo()}{Vehicle\_TriggerTurbo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Sm\+Action\+::\+Vehicle\+\_\+\+Trigger\+Turbo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_sm_action_a35edd892180a575ad99a9e1e268ba9d4}\label{struct_c_sm_action_a35edd892180a575ad99a9e1e268ba9d4}} 
+\index{CSmAction@{CSmAction}!Vehicle\_TriggerTurboBrake@{Vehicle\_TriggerTurboBrake}}
+\index{Vehicle\_TriggerTurboBrake@{Vehicle\_TriggerTurboBrake}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Vehicle\_TriggerTurboBrake()}{Vehicle\_TriggerTurboBrake()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Sm\+Action\+::\+Vehicle\+\_\+\+Trigger\+Turbo\+Brake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_sm_action_a6b24e37bd114777884ef001e6e83b34e}\label{struct_c_sm_action_a6b24e37bd114777884ef001e6e83b34e}} 
+\index{CSmAction@{CSmAction}!AmmoGain@{AmmoGain}}
+\index{AmmoGain@{AmmoGain}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{AmmoGain}{AmmoGain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} C\+Sm\+Action\+::\+Ammo\+Gain}
+
+\mbox{\Hypertarget{struct_c_sm_action_a446d543f04ffdb199640cee158ea4c7b}\label{struct_c_sm_action_a446d543f04ffdb199640cee158ea4c7b}} 
+\index{CSmAction@{CSmAction}!Cooldown@{Cooldown}}
+\index{Cooldown@{Cooldown}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Cooldown}{Cooldown}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Cooldown}
+
+\mbox{\Hypertarget{struct_c_sm_action_aada2b0f8b27a89bf962d888823dc8d4b}\label{struct_c_sm_action_aada2b0f8b27a89bf962d888823dc8d4b}} 
+\index{CSmAction@{CSmAction}!Energy@{Energy}}
+\index{Energy@{Energy}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Energy}{Energy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Energy}
+
+\mbox{\Hypertarget{struct_c_sm_action_a93115c21b183c8f78e9bca9d287844b3}\label{struct_c_sm_action_a93115c21b183c8f78e9bca9d287844b3}} 
+\index{CSmAction@{CSmAction}!EnergyCost@{EnergyCost}}
+\index{EnergyCost@{EnergyCost}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{EnergyCost}{EnergyCost}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Energy\+Cost}
+
+\mbox{\Hypertarget{struct_c_sm_action_aed9968f6e9e2eaae9cc4665f535ce244}\label{struct_c_sm_action_aed9968f6e9e2eaae9cc4665f535ce244}} 
+\index{CSmAction@{CSmAction}!EnergyMax@{EnergyMax}}
+\index{EnergyMax@{EnergyMax}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{EnergyMax}{EnergyMax}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Energy\+Max}
+
+\mbox{\Hypertarget{struct_c_sm_action_a944997baf6ecaa9c8097d472289a60db}\label{struct_c_sm_action_a944997baf6ecaa9c8097d472289a60db}} 
+\index{CSmAction@{CSmAction}!EnergyReload@{EnergyReload}}
+\index{EnergyReload@{EnergyReload}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{EnergyReload}{EnergyReload}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Energy\+Reload}
+
+\mbox{\Hypertarget{struct_c_sm_action_ad34c325573fc5a65830a3cabb349c69e}\label{struct_c_sm_action_ad34c325573fc5a65830a3cabb349c69e}} 
+\index{CSmAction@{CSmAction}!HasNoPlayerCollision@{HasNoPlayerCollision}}
+\index{HasNoPlayerCollision@{HasNoPlayerCollision}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{HasNoPlayerCollision}{HasNoPlayerCollision}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Has\+No\+Player\+Collision}
+
+\mbox{\Hypertarget{struct_c_sm_action_a0349182b4646ca198106a380f5c03284}\label{struct_c_sm_action_a0349182b4646ca198106a380f5c03284}} 
+\index{CSmAction@{CSmAction}!IsActive@{IsActive}}
+\index{IsActive@{IsActive}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{IsActive}{IsActive}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Is\+Active}
+
+\mbox{\Hypertarget{struct_c_sm_action_a9841ccdf21a255f69a7ca2402907c32c}\label{struct_c_sm_action_a9841ccdf21a255f69a7ca2402907c32c}} 
+\index{CSmAction@{CSmAction}!IsAttractor@{IsAttractor}}
+\index{IsAttractor@{IsAttractor}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{IsAttractor}{IsAttractor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Is\+Attractor}
+
+\mbox{\Hypertarget{struct_c_sm_action_ad43a69b761a44f3166c4d5867bf68793}\label{struct_c_sm_action_ad43a69b761a44f3166c4d5867bf68793}} 
+\index{CSmAction@{CSmAction}!IsBound@{IsBound}}
+\index{IsBound@{IsBound}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{IsBound}{IsBound}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Is\+Bound}
+
+\mbox{\Hypertarget{struct_c_sm_action_ae519a6686a533ce6fc2e6cd1e18be9f7}\label{struct_c_sm_action_ae519a6686a533ce6fc2e6cd1e18be9f7}} 
+\index{CSmAction@{CSmAction}!IsFlying@{IsFlying}}
+\index{IsFlying@{IsFlying}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{IsFlying}{IsFlying}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Is\+Flying}
+
+\mbox{\Hypertarget{struct_c_sm_action_a6acc5f6035d7c254fe13b018e2948367}\label{struct_c_sm_action_a6acc5f6035d7c254fe13b018e2948367}} 
+\index{CSmAction@{CSmAction}!IsFreeLooking@{IsFreeLooking}}
+\index{IsFreeLooking@{IsFreeLooking}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{IsFreeLooking}{IsFreeLooking}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Is\+Free\+Looking}
+
+\mbox{\Hypertarget{struct_c_sm_action_acb8cfdee62d8b23aa5f2765fb43dac28}\label{struct_c_sm_action_acb8cfdee62d8b23aa5f2765fb43dac28}} 
+\index{CSmAction@{CSmAction}!IsFrozen@{IsFrozen}}
+\index{IsFrozen@{IsFrozen}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{IsFrozen}{IsFrozen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Is\+Frozen}
+
+\mbox{\Hypertarget{struct_c_sm_action_ac063c1785d52dc22bf1279a577aad4ed}\label{struct_c_sm_action_ac063c1785d52dc22bf1279a577aad4ed}} 
+\index{CSmAction@{CSmAction}!IsGliding@{IsGliding}}
+\index{IsGliding@{IsGliding}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{IsGliding}{IsGliding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Is\+Gliding}
+
+\mbox{\Hypertarget{struct_c_sm_action_aff093056984e8e79e9b7fd06eff7e4b9}\label{struct_c_sm_action_aff093056984e8e79e9b7fd06eff7e4b9}} 
+\index{CSmAction@{CSmAction}!IsJumping@{IsJumping}}
+\index{IsJumping@{IsJumping}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{IsJumping}{IsJumping}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Is\+Jumping}
+
+\mbox{\Hypertarget{struct_c_sm_action_a3b2581b5922431084c9e6ec581c3695a}\label{struct_c_sm_action_a3b2581b5922431084c9e6ec581c3695a}} 
+\index{CSmAction@{CSmAction}!IsRunning@{IsRunning}}
+\index{IsRunning@{IsRunning}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{IsRunning}{IsRunning}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Is\+Running}
+
+\mbox{\Hypertarget{struct_c_sm_action_a293afee840b84a9f179e890248c90275}\label{struct_c_sm_action_a293afee840b84a9f179e890248c90275}} 
+\index{CSmAction@{CSmAction}!IsSliding@{IsSliding}}
+\index{IsSliding@{IsSliding}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{IsSliding}{IsSliding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Is\+Sliding}
+
+\mbox{\Hypertarget{struct_c_sm_action_aaf2cccb11092b6cb5261242f1dbf5f45}\label{struct_c_sm_action_aaf2cccb11092b6cb5261242f1dbf5f45}} 
+\index{CSmAction@{CSmAction}!IsSneaking@{IsSneaking}}
+\index{IsSneaking@{IsSneaking}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{IsSneaking}{IsSneaking}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+Is\+Sneaking}
+
+\mbox{\Hypertarget{struct_c_sm_action_a5cd1e51b19c0f18d5dd4354a4929ae87}\label{struct_c_sm_action_a5cd1e51b19c0f18d5dd4354a4929ae87}} 
+\index{CSmAction@{CSmAction}!Now@{Now}}
+\index{Now@{Now}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Now}{Now}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Now}
+
+\mbox{\Hypertarget{struct_c_sm_action_a190c5107d7cc3e8eabd435dce394d51d}\label{struct_c_sm_action_a190c5107d7cc3e8eabd435dce394d51d}} 
+\index{CSmAction@{CSmAction}!Owner@{Owner}}
+\index{Owner@{Owner}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Owner}{Owner}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}} C\+Sm\+Action\+::\+Owner}
+
+\mbox{\Hypertarget{struct_c_sm_action_a9e859a2ec7d944e6da720b9c416189b3}\label{struct_c_sm_action_a9e859a2ec7d944e6da720b9c416189b3}} 
+\index{CSmAction@{CSmAction}!OwnerVehicle@{OwnerVehicle}}
+\index{OwnerVehicle@{OwnerVehicle}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{OwnerVehicle}{OwnerVehicle}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_mode_vehicle}{C\+Mode\+Vehicle}} C\+Sm\+Action\+::\+Owner\+Vehicle}
+
+\mbox{\Hypertarget{struct_c_sm_action_a10052f547252810f728c914cc47d5d5c}\label{struct_c_sm_action_a10052f547252810f728c914cc47d5d5c}} 
+\index{CSmAction@{CSmAction}!PendingEvents@{PendingEvents}}
+\index{PendingEvents@{PendingEvents}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{PendingEvents}{PendingEvents}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_sm_action_event}{C\+Sm\+Action\+Event}} \mbox{[}$\,$\mbox{]} C\+Sm\+Action\+::\+Pending\+Events}
+
+\mbox{\Hypertarget{struct_c_sm_action_aab30bc4bd667d5faad8d228652e36a5a}\label{struct_c_sm_action_aab30bc4bd667d5faad8d228652e36a5a}} 
+\index{CSmAction@{CSmAction}!Players@{Players}}
+\index{Players@{Players}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Players}{Players}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}} \mbox{[}$\,$\mbox{]} C\+Sm\+Action\+::\+Players}
+
+\mbox{\Hypertarget{struct_c_sm_action_a238bc21184240446c63219e27ed109fd}\label{struct_c_sm_action_a238bc21184240446c63219e27ed109fd}} 
+\index{CSmAction@{CSmAction}!State\_Boolean1@{State\_Boolean1}}
+\index{State\_Boolean1@{State\_Boolean1}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{State\_Boolean1}{State\_Boolean1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Sm\+Action\+::\+State\+\_\+\+Boolean1}
+
+\mbox{\Hypertarget{struct_c_sm_action_abb8493f96073d2c47e3cb3ce6683f665}\label{struct_c_sm_action_abb8493f96073d2c47e3cb3ce6683f665}} 
+\index{CSmAction@{CSmAction}!State\_EntityId1@{State\_EntityId1}}
+\index{State\_EntityId1@{State\_EntityId1}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{State\_EntityId1}{State\_EntityId1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+Sm\+Action\+::\+State\+\_\+\+Entity\+Id1}
+
+\mbox{\Hypertarget{struct_c_sm_action_adaba76026cc94f0ed85b74ab75b91bf4}\label{struct_c_sm_action_adaba76026cc94f0ed85b74ab75b91bf4}} 
+\index{CSmAction@{CSmAction}!State\_Integer1@{State\_Integer1}}
+\index{State\_Integer1@{State\_Integer1}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{State\_Integer1}{State\_Integer1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+State\+\_\+\+Integer1}
+
+\mbox{\Hypertarget{struct_c_sm_action_a7f95da66399314cf4f58e1b5454631c2}\label{struct_c_sm_action_a7f95da66399314cf4f58e1b5454631c2}} 
+\index{CSmAction@{CSmAction}!State\_Integer2@{State\_Integer2}}
+\index{State\_Integer2@{State\_Integer2}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{State\_Integer2}{State\_Integer2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+State\+\_\+\+Integer2}
+
+\mbox{\Hypertarget{struct_c_sm_action_adf4ed70cb1c6500d3e94fff0b1b35971}\label{struct_c_sm_action_adf4ed70cb1c6500d3e94fff0b1b35971}} 
+\index{CSmAction@{CSmAction}!Variant@{Variant}}
+\index{Variant@{Variant}!CSmAction@{CSmAction}}
+\doxysubsubsection{\texorpdfstring{Variant}{Variant}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+::\+Variant}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

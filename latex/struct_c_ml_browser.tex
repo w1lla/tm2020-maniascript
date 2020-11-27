@@ -1,0 +1,159 @@
+\hypertarget{struct_c_ml_browser}{}\doxysection{C\+Ml\+Browser Struct Reference}
+\label{struct_c_ml_browser}\index{CMlBrowser@{CMlBrowser}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Ml\+Browser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{struct_c_ml_browser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fb}{E\+Buddy\+Result}} \{ \mbox{\hyperlink{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fba01929997f2ff032e4f784846e50c9f5e}{Ok}}, 
+\mbox{\hyperlink{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fba0743d482850a7f1b074ae520073cb6e8}{Error}}, 
+\mbox{\hyperlink{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fba5c3e1f4fe18f9990055b3865c5991f0e}{Not\+Finished}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_ml_browser_af71f2e72a4286d7a3b434efe2a692b0b}{Show\+Cur\+Map\+Card}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_ml_browser_a5ad3ae6837c4ce2d155d477215848b79}{Browser\+Back}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_ml_browser_abf34f5206fb36d550ffcf261addeabe2}{Browser\+Quit}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_ml_browser_abac2b37156fb03b9582ff22cda81ee20}{Browser\+Home}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_ml_browser_a7e89aa876ee2afae3d57d6adb7ef5a72}{Browser\+Reload}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_ml_browser_aa353d957c06398f1bf122f0b20e8b533}{Set\+Local\+User\+Club\+Link}} (\mbox{\hyperlink{class_text}{Text}} Club\+Link)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_c_mania_app_browser}{C\+Mania\+App\+Browser}} \mbox{\hyperlink{struct_c_ml_browser_a180c3a9bf9cf4e0c526171e932418c26}{Parent\+App}}
+\item 
+const \mbox{\hyperlink{struct_c_map}{C\+Map}} \mbox{\hyperlink{struct_c_ml_browser_a355df55aa48f4e455db31205752e05f1}{Cur\+Map}}
+\item 
+const \mbox{\hyperlink{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fb}{E\+Buddy\+Result}} \mbox{\hyperlink{struct_c_ml_browser_afd0fd328476c9b987caba28c7990a968}{Buddy\+Do\+Result}}
+\item 
+const \mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_ml_browser_aca4d9869078f5f27f543a9d89c241f71}{Buddy\+Do\+Error\+Message}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_ml_browser_ace3e443146c4a0f81cdecd4cab35f8e9}{Is\+In\+Browser}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_ml_browser_a8dd5a9c0380718c9adad913f91b9da61}{Browser\+Focused\+Frame\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Supported declare modes \+: Local Persistent This is the Manialink browser interface. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fb}\label{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fb}} 
+\index{CMlBrowser@{CMlBrowser}!EBuddyResult@{EBuddyResult}}
+\index{EBuddyResult@{EBuddyResult}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{EBuddyResult}{EBuddyResult}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fb}{C\+Ml\+Browser\+::\+E\+Buddy\+Result}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ok@{Ok}!CMlBrowser@{CMlBrowser}}\index{CMlBrowser@{CMlBrowser}!Ok@{Ok}}}\mbox{\Hypertarget{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fba01929997f2ff032e4f784846e50c9f5e}\label{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fba01929997f2ff032e4f784846e50c9f5e}} 
+Ok&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Error@{Error}!CMlBrowser@{CMlBrowser}}\index{CMlBrowser@{CMlBrowser}!Error@{Error}}}\mbox{\Hypertarget{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fba0743d482850a7f1b074ae520073cb6e8}\label{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fba0743d482850a7f1b074ae520073cb6e8}} 
+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotFinished@{NotFinished}!CMlBrowser@{CMlBrowser}}\index{CMlBrowser@{CMlBrowser}!NotFinished@{NotFinished}}}\mbox{\Hypertarget{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fba5c3e1f4fe18f9990055b3865c5991f0e}\label{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fba5c3e1f4fe18f9990055b3865c5991f0e}} 
+Not\+Finished&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_ml_browser_a5ad3ae6837c4ce2d155d477215848b79}\label{struct_c_ml_browser_a5ad3ae6837c4ce2d155d477215848b79}} 
+\index{CMlBrowser@{CMlBrowser}!BrowserBack@{BrowserBack}}
+\index{BrowserBack@{BrowserBack}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{BrowserBack()}{BrowserBack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Ml\+Browser\+::\+Browser\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_ml_browser_abac2b37156fb03b9582ff22cda81ee20}\label{struct_c_ml_browser_abac2b37156fb03b9582ff22cda81ee20}} 
+\index{CMlBrowser@{CMlBrowser}!BrowserHome@{BrowserHome}}
+\index{BrowserHome@{BrowserHome}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{BrowserHome()}{BrowserHome()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Ml\+Browser\+::\+Browser\+Home (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_ml_browser_abf34f5206fb36d550ffcf261addeabe2}\label{struct_c_ml_browser_abf34f5206fb36d550ffcf261addeabe2}} 
+\index{CMlBrowser@{CMlBrowser}!BrowserQuit@{BrowserQuit}}
+\index{BrowserQuit@{BrowserQuit}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{BrowserQuit()}{BrowserQuit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Ml\+Browser\+::\+Browser\+Quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_ml_browser_a7e89aa876ee2afae3d57d6adb7ef5a72}\label{struct_c_ml_browser_a7e89aa876ee2afae3d57d6adb7ef5a72}} 
+\index{CMlBrowser@{CMlBrowser}!BrowserReload@{BrowserReload}}
+\index{BrowserReload@{BrowserReload}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{BrowserReload()}{BrowserReload()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Ml\+Browser\+::\+Browser\+Reload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_ml_browser_aa353d957c06398f1bf122f0b20e8b533}\label{struct_c_ml_browser_aa353d957c06398f1bf122f0b20e8b533}} 
+\index{CMlBrowser@{CMlBrowser}!SetLocalUserClubLink@{SetLocalUserClubLink}}
+\index{SetLocalUserClubLink@{SetLocalUserClubLink}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{SetLocalUserClubLink()}{SetLocalUserClubLink()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Ml\+Browser\+::\+Set\+Local\+User\+Club\+Link (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Club\+Link }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_ml_browser_af71f2e72a4286d7a3b434efe2a692b0b}\label{struct_c_ml_browser_af71f2e72a4286d7a3b434efe2a692b0b}} 
+\index{CMlBrowser@{CMlBrowser}!ShowCurMapCard@{ShowCurMapCard}}
+\index{ShowCurMapCard@{ShowCurMapCard}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{ShowCurMapCard()}{ShowCurMapCard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Ml\+Browser\+::\+Show\+Cur\+Map\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_ml_browser_a8dd5a9c0380718c9adad913f91b9da61}\label{struct_c_ml_browser_a8dd5a9c0380718c9adad913f91b9da61}} 
+\index{CMlBrowser@{CMlBrowser}!BrowserFocusedFrameId@{BrowserFocusedFrameId}}
+\index{BrowserFocusedFrameId@{BrowserFocusedFrameId}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{BrowserFocusedFrameId}{BrowserFocusedFrameId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+Ml\+Browser\+::\+Browser\+Focused\+Frame\+Id}
+
+\mbox{\Hypertarget{struct_c_ml_browser_aca4d9869078f5f27f543a9d89c241f71}\label{struct_c_ml_browser_aca4d9869078f5f27f543a9d89c241f71}} 
+\index{CMlBrowser@{CMlBrowser}!BuddyDoErrorMessage@{BuddyDoErrorMessage}}
+\index{BuddyDoErrorMessage@{BuddyDoErrorMessage}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{BuddyDoErrorMessage}{BuddyDoErrorMessage}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_text}{Text}} C\+Ml\+Browser\+::\+Buddy\+Do\+Error\+Message}
+
+\mbox{\Hypertarget{struct_c_ml_browser_afd0fd328476c9b987caba28c7990a968}\label{struct_c_ml_browser_afd0fd328476c9b987caba28c7990a968}} 
+\index{CMlBrowser@{CMlBrowser}!BuddyDoResult@{BuddyDoResult}}
+\index{BuddyDoResult@{BuddyDoResult}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{BuddyDoResult}{BuddyDoResult}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_ml_browser_af6082ac9bae1f71a5c6214a4733f39fb}{E\+Buddy\+Result}} C\+Ml\+Browser\+::\+Buddy\+Do\+Result}
+
+\mbox{\Hypertarget{struct_c_ml_browser_a355df55aa48f4e455db31205752e05f1}\label{struct_c_ml_browser_a355df55aa48f4e455db31205752e05f1}} 
+\index{CMlBrowser@{CMlBrowser}!CurMap@{CurMap}}
+\index{CurMap@{CurMap}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{CurMap}{CurMap}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_map}{C\+Map}} C\+Ml\+Browser\+::\+Cur\+Map}
+
+\mbox{\Hypertarget{struct_c_ml_browser_ace3e443146c4a0f81cdecd4cab35f8e9}\label{struct_c_ml_browser_ace3e443146c4a0f81cdecd4cab35f8e9}} 
+\index{CMlBrowser@{CMlBrowser}!IsInBrowser@{IsInBrowser}}
+\index{IsInBrowser@{IsInBrowser}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{IsInBrowser}{IsInBrowser}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Ml\+Browser\+::\+Is\+In\+Browser}
+
+\mbox{\Hypertarget{struct_c_ml_browser_a180c3a9bf9cf4e0c526171e932418c26}\label{struct_c_ml_browser_a180c3a9bf9cf4e0c526171e932418c26}} 
+\index{CMlBrowser@{CMlBrowser}!ParentApp@{ParentApp}}
+\index{ParentApp@{ParentApp}!CMlBrowser@{CMlBrowser}}
+\doxysubsubsection{\texorpdfstring{ParentApp}{ParentApp}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_mania_app_browser}{C\+Mania\+App\+Browser}} C\+Ml\+Browser\+::\+Parent\+App}
+
+Will be Null if the script is not runing in a layer of an app. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

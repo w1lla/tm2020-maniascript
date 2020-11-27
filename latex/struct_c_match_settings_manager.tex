@@ -1,0 +1,88 @@
+\hypertarget{struct_c_match_settings_manager}{}\doxysection{C\+Match\+Settings\+Manager Struct Reference}
+\label{struct_c_match_settings_manager}\index{CMatchSettingsManager@{CMatchSettingsManager}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Match\+Settings\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_c_match_settings_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_match_settings_manager_a056fddca2777e71b5555e18c0a6ebdb8}{Match\+Settings\+\_\+\+Refresh}} ()
+\item 
+\mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}} \mbox{\hyperlink{struct_c_match_settings_manager_a59e68cb76505ecec1c3acab6e94254dd}{Match\+Settings\+\_\+\+Create}} (\mbox{\hyperlink{class_text}{Text}} File\+Path)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_match_settings_manager_a326d7aee56b07d9f0b63ba2de8784e97}{Match\+Settings\+\_\+\+Save}} (\mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}} \mbox{\hyperlink{struct_c_match_settings_manager_a6439a065d05c78c8ee57119e40eb389e}{Match\+Settings}})
+\item 
+\mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}} \mbox{\hyperlink{struct_c_match_settings_manager_a5c0556565035e54c15bfe900bcf05038}{Match\+Settings\+\_\+\+Save\+As}} (\mbox{\hyperlink{class_text}{Text}} File\+Path, \mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}} \mbox{\hyperlink{struct_c_match_settings_manager_a6439a065d05c78c8ee57119e40eb389e}{Match\+Settings}})
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_match_settings_manager_af959b08e1f7af49e5f0faaf3cd19307d}{Match\+Settings\+\_\+\+Edit\+Script\+Settings}} (\mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}} \mbox{\hyperlink{struct_c_match_settings_manager_a6439a065d05c78c8ee57119e40eb389e}{Match\+Settings}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_match_settings_manager_a2c3b89aac585309636c5806b33ea2b16}{Match\+Settings\+\_\+\+Edit\+Script\+Settings\+\_\+\+Ongoing}}
+\item 
+const \mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_match_settings_manager_a6439a065d05c78c8ee57119e40eb389e}{Match\+Settings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allows handling of match-\/settings files 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_match_settings_manager_a59e68cb76505ecec1c3acab6e94254dd}\label{struct_c_match_settings_manager_a59e68cb76505ecec1c3acab6e94254dd}} 
+\index{CMatchSettingsManager@{CMatchSettingsManager}!MatchSettings\_Create@{MatchSettings\_Create}}
+\index{MatchSettings\_Create@{MatchSettings\_Create}!CMatchSettingsManager@{CMatchSettingsManager}}
+\doxysubsubsection{\texorpdfstring{MatchSettings\_Create()}{MatchSettings\_Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}} C\+Match\+Settings\+Manager\+::\+Match\+Settings\+\_\+\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{File\+Path }\end{DoxyParamCaption})}
+
+Create a new matchsettings file. \mbox{\Hypertarget{struct_c_match_settings_manager_af959b08e1f7af49e5f0faaf3cd19307d}\label{struct_c_match_settings_manager_af959b08e1f7af49e5f0faaf3cd19307d}} 
+\index{CMatchSettingsManager@{CMatchSettingsManager}!MatchSettings\_EditScriptSettings@{MatchSettings\_EditScriptSettings}}
+\index{MatchSettings\_EditScriptSettings@{MatchSettings\_EditScriptSettings}!CMatchSettingsManager@{CMatchSettingsManager}}
+\doxysubsubsection{\texorpdfstring{MatchSettings\_EditScriptSettings()}{MatchSettings\_EditScriptSettings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Match\+Settings\+Manager\+::\+Match\+Settings\+\_\+\+Edit\+Script\+Settings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}}}]{Match\+Settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_match_settings_manager_a056fddca2777e71b5555e18c0a6ebdb8}\label{struct_c_match_settings_manager_a056fddca2777e71b5555e18c0a6ebdb8}} 
+\index{CMatchSettingsManager@{CMatchSettingsManager}!MatchSettings\_Refresh@{MatchSettings\_Refresh}}
+\index{MatchSettings\_Refresh@{MatchSettings\_Refresh}!CMatchSettingsManager@{CMatchSettingsManager}}
+\doxysubsubsection{\texorpdfstring{MatchSettings\_Refresh()}{MatchSettings\_Refresh()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Match\+Settings\+Manager\+::\+Match\+Settings\+\_\+\+Refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Clear all matchsettings and reload them from disk. Be aware that any non-\/saved changes will be lost. \mbox{\Hypertarget{struct_c_match_settings_manager_a326d7aee56b07d9f0b63ba2de8784e97}\label{struct_c_match_settings_manager_a326d7aee56b07d9f0b63ba2de8784e97}} 
+\index{CMatchSettingsManager@{CMatchSettingsManager}!MatchSettings\_Save@{MatchSettings\_Save}}
+\index{MatchSettings\_Save@{MatchSettings\_Save}!CMatchSettingsManager@{CMatchSettingsManager}}
+\doxysubsubsection{\texorpdfstring{MatchSettings\_Save()}{MatchSettings\_Save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Match\+Settings\+Manager\+::\+Match\+Settings\+\_\+\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}}}]{Match\+Settings }\end{DoxyParamCaption})}
+
+Save a matchsettings file. \mbox{\Hypertarget{struct_c_match_settings_manager_a5c0556565035e54c15bfe900bcf05038}\label{struct_c_match_settings_manager_a5c0556565035e54c15bfe900bcf05038}} 
+\index{CMatchSettingsManager@{CMatchSettingsManager}!MatchSettings\_SaveAs@{MatchSettings\_SaveAs}}
+\index{MatchSettings\_SaveAs@{MatchSettings\_SaveAs}!CMatchSettingsManager@{CMatchSettingsManager}}
+\doxysubsubsection{\texorpdfstring{MatchSettings\_SaveAs()}{MatchSettings\_SaveAs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}} C\+Match\+Settings\+Manager\+::\+Match\+Settings\+\_\+\+Save\+As (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{File\+Path,  }\item[{\mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}}}]{Match\+Settings }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_match_settings_manager_a6439a065d05c78c8ee57119e40eb389e}\label{struct_c_match_settings_manager_a6439a065d05c78c8ee57119e40eb389e}} 
+\index{CMatchSettingsManager@{CMatchSettingsManager}!MatchSettings@{MatchSettings}}
+\index{MatchSettings@{MatchSettings}!CMatchSettingsManager@{CMatchSettingsManager}}
+\doxysubsubsection{\texorpdfstring{MatchSettings}{MatchSettings}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}} \mbox{[}$\,$\mbox{]} C\+Match\+Settings\+Manager\+::\+Match\+Settings}
+
+Array of the matchsettings \mbox{\Hypertarget{struct_c_match_settings_manager_a2c3b89aac585309636c5806b33ea2b16}\label{struct_c_match_settings_manager_a2c3b89aac585309636c5806b33ea2b16}} 
+\index{CMatchSettingsManager@{CMatchSettingsManager}!MatchSettings\_EditScriptSettings\_Ongoing@{MatchSettings\_EditScriptSettings\_Ongoing}}
+\index{MatchSettings\_EditScriptSettings\_Ongoing@{MatchSettings\_EditScriptSettings\_Ongoing}!CMatchSettingsManager@{CMatchSettingsManager}}
+\doxysubsubsection{\texorpdfstring{MatchSettings\_EditScriptSettings\_Ongoing}{MatchSettings\_EditScriptSettings\_Ongoing}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Match\+Settings\+Manager\+::\+Match\+Settings\+\_\+\+Edit\+Script\+Settings\+\_\+\+Ongoing}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

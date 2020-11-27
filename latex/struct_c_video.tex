@@ -1,0 +1,170 @@
+\hypertarget{struct_c_video}{}\doxysection{C\+Video Struct Reference}
+\label{struct_c_video}\index{CVideo@{CVideo}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Video\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_c_video}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6a}{E\+Texture\+Filter}} \{ \mbox{\hyperlink{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6aacde74b4f7b73508dbccda6d5d551f9a5}{Default}}, 
+\mbox{\hyperlink{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6aa29f8ac5e77b26b0fcbcd7962ee3b651f}{Point}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_video_aa7616d8fb5c182211fb527e65d1ff957}{Begin\+Processing}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_video_a79f8dec8c3c890b3c551ee5c3fcb1e4a}{End\+Processing}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_video_ae62ba2b8394864abdc5116473a99b42d}{Play}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_video_a2977bc750d632fe582cd25218db6b8ec}{Pause}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_video_a7f9146430bd837c720c177a6c9365141}{Stop}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_c_image}{C\+Image}} \mbox{\hyperlink{struct_c_video_abfd9440576768f38f9ac8d31910568d9}{Image}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_video_a66766a36352128ca363fb8571cf8f9ae}{Is\+Looping}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_video_a4a10775648289deffee1c2196fa6df3f}{Download\+In\+Progress}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_video_a28fba2e84576ef2e5fdd0703e93cbe3f}{Play\+Length}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_video_ac3379f9525717cce8d3049c4312dfe6e}{Is\+Processing}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_video_acc399d4e501627bea2dc1ece1a36e357}{Auto\+Processing}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_video_a2db67290348a32e6bb8d95c2d4fb2bc3}{Is\+Playing}}
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_video_a4813bfe13b182769bb383f4a8b93dacd}{Play\+Cursor}}
+\item 
+\mbox{\hyperlink{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6a}{E\+Texture\+Filter}} \mbox{\hyperlink{struct_c_video_ac521d74b0a896ad5d18784f63752b758}{Texture\+Filter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a video playback handle. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6a}\label{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6a}} 
+\index{CVideo@{CVideo}!ETextureFilter@{ETextureFilter}}
+\index{ETextureFilter@{ETextureFilter}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{ETextureFilter}{ETextureFilter}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6a}{C\+Video\+::\+E\+Texture\+Filter}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!CVideo@{CVideo}}\index{CVideo@{CVideo}!Default@{Default}}}\mbox{\Hypertarget{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6aacde74b4f7b73508dbccda6d5d551f9a5}\label{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6aacde74b4f7b73508dbccda6d5d551f9a5}} 
+Default&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Point@{Point}!CVideo@{CVideo}}\index{CVideo@{CVideo}!Point@{Point}}}\mbox{\Hypertarget{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6aa29f8ac5e77b26b0fcbcd7962ee3b651f}\label{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6aa29f8ac5e77b26b0fcbcd7962ee3b651f}} 
+Point&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_video_aa7616d8fb5c182211fb527e65d1ff957}\label{struct_c_video_aa7616d8fb5c182211fb527e65d1ff957}} 
+\index{CVideo@{CVideo}!BeginProcessing@{BeginProcessing}}
+\index{BeginProcessing@{BeginProcessing}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{BeginProcessing()}{BeginProcessing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Video\+::\+Begin\+Processing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_video_a79f8dec8c3c890b3c551ee5c3fcb1e4a}\label{struct_c_video_a79f8dec8c3c890b3c551ee5c3fcb1e4a}} 
+\index{CVideo@{CVideo}!EndProcessing@{EndProcessing}}
+\index{EndProcessing@{EndProcessing}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{EndProcessing()}{EndProcessing()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Video\+::\+End\+Processing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_video_a2977bc750d632fe582cd25218db6b8ec}\label{struct_c_video_a2977bc750d632fe582cd25218db6b8ec}} 
+\index{CVideo@{CVideo}!Pause@{Pause}}
+\index{Pause@{Pause}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Video\+::\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_video_ae62ba2b8394864abdc5116473a99b42d}\label{struct_c_video_ae62ba2b8394864abdc5116473a99b42d}} 
+\index{CVideo@{CVideo}!Play@{Play}}
+\index{Play@{Play}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Video\+::\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_video_a7f9146430bd837c720c177a6c9365141}\label{struct_c_video_a7f9146430bd837c720c177a6c9365141}} 
+\index{CVideo@{CVideo}!Stop@{Stop}}
+\index{Stop@{Stop}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Video\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_video_acc399d4e501627bea2dc1ece1a36e357}\label{struct_c_video_acc399d4e501627bea2dc1ece1a36e357}} 
+\index{CVideo@{CVideo}!AutoProcessing@{AutoProcessing}}
+\index{AutoProcessing@{AutoProcessing}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{AutoProcessing}{AutoProcessing}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Video\+::\+Auto\+Processing}
+
+Automatically begin processing when the layer becomes visible and end when hidden. \mbox{\Hypertarget{struct_c_video_a4a10775648289deffee1c2196fa6df3f}\label{struct_c_video_a4a10775648289deffee1c2196fa6df3f}} 
+\index{CVideo@{CVideo}!DownloadInProgress@{DownloadInProgress}}
+\index{DownloadInProgress@{DownloadInProgress}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{DownloadInProgress}{DownloadInProgress}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Video\+::\+Download\+In\+Progress}
+
+\mbox{\Hypertarget{struct_c_video_abfd9440576768f38f9ac8d31910568d9}\label{struct_c_video_abfd9440576768f38f9ac8d31910568d9}} 
+\index{CVideo@{CVideo}!Image@{Image}}
+\index{Image@{Image}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{Image}{Image}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_image}{C\+Image}} C\+Video\+::\+Image}
+
+\mbox{\Hypertarget{struct_c_video_a66766a36352128ca363fb8571cf8f9ae}\label{struct_c_video_a66766a36352128ca363fb8571cf8f9ae}} 
+\index{CVideo@{CVideo}!IsLooping@{IsLooping}}
+\index{IsLooping@{IsLooping}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{IsLooping}{IsLooping}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Video\+::\+Is\+Looping}
+
+\mbox{\Hypertarget{struct_c_video_a2db67290348a32e6bb8d95c2d4fb2bc3}\label{struct_c_video_a2db67290348a32e6bb8d95c2d4fb2bc3}} 
+\index{CVideo@{CVideo}!IsPlaying@{IsPlaying}}
+\index{IsPlaying@{IsPlaying}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{IsPlaying}{IsPlaying}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Video\+::\+Is\+Playing}
+
+\mbox{\Hypertarget{struct_c_video_ac3379f9525717cce8d3049c4312dfe6e}\label{struct_c_video_ac3379f9525717cce8d3049c4312dfe6e}} 
+\index{CVideo@{CVideo}!IsProcessing@{IsProcessing}}
+\index{IsProcessing@{IsProcessing}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{IsProcessing}{IsProcessing}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Video\+::\+Is\+Processing}
+
+\mbox{\Hypertarget{struct_c_video_a4813bfe13b182769bb383f4a8b93dacd}\label{struct_c_video_a4813bfe13b182769bb383f4a8b93dacd}} 
+\index{CVideo@{CVideo}!PlayCursor@{PlayCursor}}
+\index{PlayCursor@{PlayCursor}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{PlayCursor}{PlayCursor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} C\+Video\+::\+Play\+Cursor}
+
+\mbox{\Hypertarget{struct_c_video_a28fba2e84576ef2e5fdd0703e93cbe3f}\label{struct_c_video_a28fba2e84576ef2e5fdd0703e93cbe3f}} 
+\index{CVideo@{CVideo}!PlayLength@{PlayLength}}
+\index{PlayLength@{PlayLength}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{PlayLength}{PlayLength}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Video\+::\+Play\+Length}
+
+\mbox{\Hypertarget{struct_c_video_ac521d74b0a896ad5d18784f63752b758}\label{struct_c_video_ac521d74b0a896ad5d18784f63752b758}} 
+\index{CVideo@{CVideo}!TextureFilter@{TextureFilter}}
+\index{TextureFilter@{TextureFilter}!CVideo@{CVideo}}
+\doxysubsubsection{\texorpdfstring{TextureFilter}{TextureFilter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_video_ab8049352b5d1785f42f9b8251fe66c6a}{E\+Texture\+Filter}} C\+Video\+::\+Texture\+Filter}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

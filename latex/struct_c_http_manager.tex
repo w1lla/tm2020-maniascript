@@ -1,0 +1,128 @@
+\hypertarget{struct_c_http_manager}{}\doxysection{C\+Http\+Manager Struct Reference}
+\label{struct_c_http_manager}\index{CHttpManager@{CHttpManager}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Http\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_c_http_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} \mbox{\hyperlink{struct_c_http_manager_a17b9f1f8183ddb4ac47f223c64edaf6b}{Create\+Get}} (\mbox{\hyperlink{class_text}{Text}} Url)
+\item 
+\mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} \mbox{\hyperlink{struct_c_http_manager_a7987a5904142513920e8afe7e3d740c2}{Create\+Get}} (\mbox{\hyperlink{class_text}{Text}} Url, \mbox{\hyperlink{class_boolean}{Boolean}} Use\+Cache)
+\item 
+\mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} \mbox{\hyperlink{struct_c_http_manager_a2dd784250d9e2027fc49eb07d3e18940}{Create\+Get}} (\mbox{\hyperlink{class_text}{Text}} Url, \mbox{\hyperlink{class_boolean}{Boolean}} Use\+Cache, \mbox{\hyperlink{class_text}{Text}} Additional\+Headers)
+\item 
+\mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} \mbox{\hyperlink{struct_c_http_manager_a4ac0b5e57abd363e2c11aa71879da565}{Create\+Post}} (\mbox{\hyperlink{class_text}{Text}} Url, \mbox{\hyperlink{class_text}{Text}} Resource)
+\item 
+\mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} \mbox{\hyperlink{struct_c_http_manager_ac11e219d952b6df51a9701a55c70f161}{Create\+Post}} (\mbox{\hyperlink{class_text}{Text}} Url, \mbox{\hyperlink{class_text}{Text}} Resource, \mbox{\hyperlink{class_text}{Text}} Additional\+Headers)
+\item 
+\mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} \mbox{\hyperlink{struct_c_http_manager_adceaf508877f901c949693f1a7aba2c6}{Create\+Post\+File}} (\mbox{\hyperlink{class_text}{Text}} Url, \mbox{\hyperlink{class_text}{Text}} File\+Name, \mbox{\hyperlink{class_text}{Text}} Additional\+Headers)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_http_manager_ac684634a02c187302e20d748a342db98}{Destroy}} (\mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} Request)
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_http_manager_a902d8cc9f8dbffe29bec2fe016fb5a13}{Is\+Valid\+Url}} (\mbox{\hyperlink{class_text}{Text}} Url)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_http_manager_a821894c490c4a5247ea8480fd10f7f74}{Requests}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_http_manager_a61680c48bff62240ae1448dc76523775}{Slots\+Available}}
+\item 
+const \mbox{\hyperlink{struct_c_http_event}{C\+Http\+Event}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_http_manager_a4fe66a19260ffc93d2f73df93275f55c}{Pending\+Events}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_http_manager_a0ef46bc2c718a656b2926688e72efcd6}{Automatic\+Headers\+\_\+\+Timezone}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manager for H\+T\+TP requests 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_http_manager_a17b9f1f8183ddb4ac47f223c64edaf6b}\label{struct_c_http_manager_a17b9f1f8183ddb4ac47f223c64edaf6b}} 
+\index{CHttpManager@{CHttpManager}!CreateGet@{CreateGet}}
+\index{CreateGet@{CreateGet}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{CreateGet()}{CreateGet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} C\+Http\+Manager\+::\+Create\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Url }\end{DoxyParamCaption})}
+
+Create a get request, Additionnal\+Headers format is \+: \char`\"{}\+Header-\/name\+: Value\textbackslash{}n\+Other-\/name\+: Other\+Value\char`\"{} \mbox{\Hypertarget{struct_c_http_manager_a7987a5904142513920e8afe7e3d740c2}\label{struct_c_http_manager_a7987a5904142513920e8afe7e3d740c2}} 
+\index{CHttpManager@{CHttpManager}!CreateGet@{CreateGet}}
+\index{CreateGet@{CreateGet}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{CreateGet()}{CreateGet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} C\+Http\+Manager\+::\+Create\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Url,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Use\+Cache }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_http_manager_a2dd784250d9e2027fc49eb07d3e18940}\label{struct_c_http_manager_a2dd784250d9e2027fc49eb07d3e18940}} 
+\index{CHttpManager@{CHttpManager}!CreateGet@{CreateGet}}
+\index{CreateGet@{CreateGet}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{CreateGet()}{CreateGet()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} C\+Http\+Manager\+::\+Create\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Url,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Use\+Cache,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Additional\+Headers }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_http_manager_a4ac0b5e57abd363e2c11aa71879da565}\label{struct_c_http_manager_a4ac0b5e57abd363e2c11aa71879da565}} 
+\index{CHttpManager@{CHttpManager}!CreatePost@{CreatePost}}
+\index{CreatePost@{CreatePost}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{CreatePost()}{CreatePost()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} C\+Http\+Manager\+::\+Create\+Post (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Url,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Resource }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_http_manager_ac11e219d952b6df51a9701a55c70f161}\label{struct_c_http_manager_ac11e219d952b6df51a9701a55c70f161}} 
+\index{CHttpManager@{CHttpManager}!CreatePost@{CreatePost}}
+\index{CreatePost@{CreatePost}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{CreatePost()}{CreatePost()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} C\+Http\+Manager\+::\+Create\+Post (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Url,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Resource,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Additional\+Headers }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_http_manager_adceaf508877f901c949693f1a7aba2c6}\label{struct_c_http_manager_adceaf508877f901c949693f1a7aba2c6}} 
+\index{CHttpManager@{CHttpManager}!CreatePostFile@{CreatePostFile}}
+\index{CreatePostFile@{CreatePostFile}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{CreatePostFile()}{CreatePostFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} C\+Http\+Manager\+::\+Create\+Post\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Url,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{File\+Name,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Additional\+Headers }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_http_manager_ac684634a02c187302e20d748a342db98}\label{struct_c_http_manager_ac684634a02c187302e20d748a342db98}} 
+\index{CHttpManager@{CHttpManager}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Http\+Manager\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}}}]{Request }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_http_manager_a902d8cc9f8dbffe29bec2fe016fb5a13}\label{struct_c_http_manager_a902d8cc9f8dbffe29bec2fe016fb5a13}} 
+\index{CHttpManager@{CHttpManager}!IsValidUrl@{IsValidUrl}}
+\index{IsValidUrl@{IsValidUrl}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{IsValidUrl()}{IsValidUrl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Http\+Manager\+::\+Is\+Valid\+Url (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Url }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_http_manager_a0ef46bc2c718a656b2926688e72efcd6}\label{struct_c_http_manager_a0ef46bc2c718a656b2926688e72efcd6}} 
+\index{CHttpManager@{CHttpManager}!AutomaticHeaders\_Timezone@{AutomaticHeaders\_Timezone}}
+\index{AutomaticHeaders\_Timezone@{AutomaticHeaders\_Timezone}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{AutomaticHeaders\_Timezone}{AutomaticHeaders\_Timezone}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Http\+Manager\+::\+Automatic\+Headers\+\_\+\+Timezone}
+
+\mbox{\Hypertarget{struct_c_http_manager_a4fe66a19260ffc93d2f73df93275f55c}\label{struct_c_http_manager_a4fe66a19260ffc93d2f73df93275f55c}} 
+\index{CHttpManager@{CHttpManager}!PendingEvents@{PendingEvents}}
+\index{PendingEvents@{PendingEvents}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{PendingEvents}{PendingEvents}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_http_event}{C\+Http\+Event}} \mbox{[}$\,$\mbox{]} C\+Http\+Manager\+::\+Pending\+Events}
+
+\mbox{\Hypertarget{struct_c_http_manager_a821894c490c4a5247ea8480fd10f7f74}\label{struct_c_http_manager_a821894c490c4a5247ea8480fd10f7f74}} 
+\index{CHttpManager@{CHttpManager}!Requests@{Requests}}
+\index{Requests@{Requests}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{Requests}{Requests}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}} \mbox{[}$\,$\mbox{]} C\+Http\+Manager\+::\+Requests}
+
+\mbox{\Hypertarget{struct_c_http_manager_a61680c48bff62240ae1448dc76523775}\label{struct_c_http_manager_a61680c48bff62240ae1448dc76523775}} 
+\index{CHttpManager@{CHttpManager}!SlotsAvailable@{SlotsAvailable}}
+\index{SlotsAvailable@{SlotsAvailable}!CHttpManager@{CHttpManager}}
+\doxysubsubsection{\texorpdfstring{SlotsAvailable}{SlotsAvailable}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Http\+Manager\+::\+Slots\+Available}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

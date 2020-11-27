@@ -1,0 +1,354 @@
+\hypertarget{struct_c_score_mgr}{}\doxysection{C\+Score\+Mgr Struct Reference}
+\label{struct_c_score_mgr}\index{CScoreMgr@{CScoreMgr}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Score\+Mgr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_c_score_mgr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bcec}{E\+Local\+Score\+Status}} \{ \mbox{\hyperlink{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2a94fe69a975247777f5670fb8a1e8e8bc}{None}}, 
+\mbox{\hyperlink{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bceca348222ad267fefc39c58b6b4b0915a35}{Loading}}, 
+\mbox{\hyperlink{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bceca58e29d8b34152058856c2d8406273786}{Not\+Loaded}}, 
+\mbox{\hyperlink{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bceca444c5f4ac2376a36164bf67062139728}{Loaded}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2}{E\+Master\+Server\+Score\+Status}} \{ \mbox{\hyperlink{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2a94fe69a975247777f5670fb8a1e8e8bc}{None}}, 
+\mbox{\hyperlink{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2a8461ce2e20be18bd6eb07c86d1083b4b}{Synchronizing}}, 
+\mbox{\hyperlink{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2ad367dac71d0b6d97844fbe22edab187f}{Not\+Synchronized}}, 
+\mbox{\hyperlink{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2ad9e9b7197031cbcb1ac6c589bc74dd99}{Synchronized}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_score_mgr_ac9db5a3147bdbe6da625d697f4c1d9e7}{Task\+Result\+\_\+\+Release}} (\mbox{\hyperlink{class_ident}{Ident}} Task\+Id)
+\item 
+\mbox{\hyperlink{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bcec}{E\+Local\+Score\+Status}} \mbox{\hyperlink{struct_c_score_mgr_a0a36bb464268cb360f0abab8112be303}{Score\+Status\+\_\+\+Get\+Local\+Status}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id)
+\item 
+\mbox{\hyperlink{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2}{E\+Master\+Server\+Score\+Status}} \mbox{\hyperlink{struct_c_score_mgr_ab21d1b195411f76b7af00c1718e9550d}{Score\+Status\+\_\+\+Get\+Master\+Server\+Status}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id)
+\item 
+\mbox{\hyperlink{struct_c_ghost}{C\+Ghost}} \mbox{\hyperlink{struct_c_score_mgr_a9c238d0691d5a8fa4809cf3fdcc381a9}{Playground\+\_\+\+Get\+Player\+Ghost}} (\mbox{\hyperlink{struct_c_player}{C\+Player}} Game\+Player)
+\item 
+\mbox{\hyperlink{struct_c_task_result}{C\+Task\+Result}} \mbox{\hyperlink{struct_c_score_mgr_ad3a20acd1eacb7bc57bcdf6fb708c5b8}{Map\+\_\+\+Set\+New\+Record}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Map\+Uid, \mbox{\hyperlink{class_text}{Text}} Context, \mbox{\hyperlink{struct_c_ghost}{C\+Ghost}} Ghost)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a3610227339ce6ca006be0306de809673}{Map\+\_\+\+Get\+Record}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Map\+Uid, \mbox{\hyperlink{class_text}{Text}} Context)
+\item 
+\mbox{\hyperlink{struct_c_task_result___ghost}{C\+Task\+Result\+\_\+\+Ghost}} \mbox{\hyperlink{struct_c_score_mgr_a9554095f12113333e93933946292989e}{Map\+\_\+\+Get\+Record\+Ghost}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Map\+Uid, \mbox{\hyperlink{class_text}{Text}} Context)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_aa6d9d584ab59020d576eeaa35099250a}{Map\+\_\+\+Get\+Multi\+Async\+Level}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Map\+Uid, \mbox{\hyperlink{class_text}{Text}} Context)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a3940864edb307b41fab892d26fff7f01}{Map\+\_\+\+Get\+Multi\+Async\+Level\+Record}} (\mbox{\hyperlink{class_text}{Text}} Map\+Uid, \mbox{\hyperlink{class_text}{Text}} Context, \mbox{\hyperlink{class_integer}{Integer}} Multi\+Async\+Level)
+\item 
+\mbox{\hyperlink{struct_c_task_result___ghost}{C\+Task\+Result\+\_\+\+Ghost}} \mbox{\hyperlink{struct_c_score_mgr_ac01ae44b0f3b28e5ec645dcefcff68c3}{Map\+\_\+\+Get\+Multi\+Async\+Level\+Record\+Ghost}} (\mbox{\hyperlink{class_text}{Text}} Map\+Uid, \mbox{\hyperlink{class_text}{Text}} Context, \mbox{\hyperlink{class_integer}{Integer}} Multi\+Async\+Level)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_ab801ce46ee6d3fa9b72abb84916d0c0b}{Map\+\_\+\+Get\+Skill\+Points}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Map\+Uid, \mbox{\hyperlink{class_text}{Text}} Context)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a038078e470d9d9f1a5d24bcdd7fc765f}{Map\+Leader\+Board\+\_\+\+Get\+Player\+Ranking}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Map\+Uid, \mbox{\hyperlink{class_text}{Text}} Context, \mbox{\hyperlink{class_text}{Text}} Zone)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a199d5b757e2efb1ed47242d473a046c9}{Map\+Leader\+Board\+\_\+\+Get\+Player\+Count}} (\mbox{\hyperlink{class_text}{Text}} Map\+Uid, \mbox{\hyperlink{class_text}{Text}} Context, \mbox{\hyperlink{class_text}{Text}} Zone)
+\item 
+\mbox{\hyperlink{struct_c_task_result___natural_leader_board_info_list}{C\+Task\+Result\+\_\+\+Natural\+Leader\+Board\+Info\+List}} \mbox{\hyperlink{struct_c_score_mgr_a458b0e5f0ed2613619241c77fc052019}{Map\+Leader\+Board\+\_\+\+Get\+Player\+List}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Map\+Uid, \mbox{\hyperlink{class_text}{Text}} Context, \mbox{\hyperlink{class_text}{Text}} Zone, \mbox{\hyperlink{class_integer}{Integer}} From\+Index, \mbox{\hyperlink{class_integer}{Integer}} Count)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a048b1b35321376746c575e0a69900e04}{Campaign\+\_\+\+Get\+Multi\+Async\+Level}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Campaign\+Id)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a763b193725765a0d660e3f450cc93adc}{Campaign\+\_\+\+Get\+Multi\+Async\+Level\+Count}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Campaign\+Id, \mbox{\hyperlink{class_integer}{Integer}} Multi\+Async\+Level)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_ac150bfb6384e2f19ed722fc301b7aef4}{Campaign\+\_\+\+Get\+Skill\+Points}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Campaign\+Id)
+\item 
+\mbox{\hyperlink{struct_c_task_result___map_record_list}{C\+Task\+Result\+\_\+\+Map\+Record\+List}} \mbox{\hyperlink{struct_c_score_mgr_a82e113891ad6b5dfe69e584907a468e0}{Campaign\+\_\+\+Get\+Opponent\+Records}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Campaign\+Id, \mbox{\hyperlink{class_text}{Text}} Opponent\+Login)
+\item 
+\mbox{\hyperlink{struct_c_task_result___buddies_challenge_record}{C\+Task\+Result\+\_\+\+Buddies\+Challenge\+Record}} \mbox{\hyperlink{struct_c_score_mgr_af9c7d726bcedb1ad87cebe1b2efbbee3}{Campaign\+\_\+\+Get\+Buddies\+Map\+Record}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Campaign\+Id, \mbox{\hyperlink{class_text}{Text}} Map\+Uid)
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_score_mgr_ade84cd7c9648aff27d768ddde453beef}{Campaign\+\_\+\+Is\+Buddies\+Map\+Record\+Dirty}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Campaign\+Id, \mbox{\hyperlink{class_text}{Text}} Map\+Uid)
+\item 
+\mbox{\hyperlink{struct_c_task_result___buddies_challenge_records_comparison}{C\+Task\+Result\+\_\+\+Buddies\+Challenge\+Records\+Comparison}} \mbox{\hyperlink{struct_c_score_mgr_ad333cf06ab49ecfa37c82495d37d7023}{Campaign\+\_\+\+Get\+Buddies\+Map\+Records\+Comparison}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Campaign\+Id)
+\item 
+\mbox{\hyperlink{struct_c_task_result___buddy_challenge_records_comparison}{C\+Task\+Result\+\_\+\+Buddy\+Challenge\+Records\+Comparison}} \mbox{\hyperlink{struct_c_score_mgr_a2cc151078316c0838dcf237701fc33b3}{Campaign\+\_\+\+Get\+Buddy\+Map\+Records\+Comparison}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Opponent\+Login, \mbox{\hyperlink{class_text}{Text}} Campaign\+Id)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a7824959fe1dbdecf44a3ccc53af172e2}{Campaign\+Leader\+Board\+\_\+\+Get\+Player\+Ranking}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Campaign\+Id, \mbox{\hyperlink{class_text}{Text}} Zone, \mbox{\hyperlink{class_boolean}{Boolean}} Use\+Skill\+Points)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a1aff9a4efa21dac3d47175f12a4dd7da}{Campaign\+Leader\+Board\+\_\+\+Get\+Player\+Count}} (\mbox{\hyperlink{class_text}{Text}} Campaign\+Id, \mbox{\hyperlink{class_text}{Text}} Zone, \mbox{\hyperlink{class_boolean}{Boolean}} Use\+Skill\+Points)
+\item 
+\mbox{\hyperlink{struct_c_task_result___natural_leader_board_info_list}{C\+Task\+Result\+\_\+\+Natural\+Leader\+Board\+Info\+List}} \mbox{\hyperlink{struct_c_score_mgr_aacd25267cfaf543e90b469bb5d0ea26c}{Campaign\+Leader\+Board\+\_\+\+Get\+Player\+List}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Campaign\+Id, \mbox{\hyperlink{class_text}{Text}} Zone, \mbox{\hyperlink{class_boolean}{Boolean}} Use\+Skill\+Points, \mbox{\hyperlink{class_integer}{Integer}} From\+Index, \mbox{\hyperlink{class_integer}{Integer}} Count)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_score_mgr_ac8f59b604c313c92362339213bf63baa}{Multiplayer\+\_\+\+Add\+To\+Score}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_real}{Real}} Score\+Diff, \mbox{\hyperlink{class_integer}{Integer}} Timestamp)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a2381b8939dc3e226bde59cb9e6ab30f0}{Multiplayer\+Leader\+Board\+\_\+\+Get\+Player\+Ranking}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Zone)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a170086cf6bf88024780e1e83c045e56b}{Multiplayer\+Leader\+Board\+\_\+\+Get\+Player\+Count}} (\mbox{\hyperlink{class_text}{Text}} Zone)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a49ac50d0be77d1685194750b7a33c949}{Global\+Leader\+Board\+\_\+\+Get\+Player\+Ranking}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Zone)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_score_mgr_a339c5d256624098ff25087b6d42bea02}{Global\+Leader\+Board\+\_\+\+Get\+Player\+Count}} (\mbox{\hyperlink{class_text}{Text}} Zone)
+\item 
+\mbox{\hyperlink{struct_c_task_result___real_leader_board_info_list}{C\+Task\+Result\+\_\+\+Real\+Leader\+Board\+Info\+List}} \mbox{\hyperlink{struct_c_score_mgr_ab581a4cc0290b138b36c1cccb6a4956c}{Global\+Leader\+Board\+\_\+\+Get\+Player\+List}} (\mbox{\hyperlink{class_ident}{Ident}} User\+Id, \mbox{\hyperlink{class_text}{Text}} Zone, \mbox{\hyperlink{class_integer}{Integer}} From\+Index, \mbox{\hyperlink{class_integer}{Integer}} Count)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_c_task_result}{C\+Task\+Result}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_score_mgr_a24e6d8b63a0c80dddea57e47681a92d1}{Task\+Results}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Score and leaderboard manager. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bcec}\label{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bcec}} 
+\index{CScoreMgr@{CScoreMgr}!ELocalScoreStatus@{ELocalScoreStatus}}
+\index{ELocalScoreStatus@{ELocalScoreStatus}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{ELocalScoreStatus}{ELocalScoreStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bcec}{C\+Score\+Mgr\+::\+E\+Local\+Score\+Status}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CScoreMgr@{CScoreMgr}}\index{CScoreMgr@{CScoreMgr}!None@{None}}}\mbox{\Hypertarget{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2a94fe69a975247777f5670fb8a1e8e8bc}\label{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2a94fe69a975247777f5670fb8a1e8e8bc}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Loading@{Loading}!CScoreMgr@{CScoreMgr}}\index{CScoreMgr@{CScoreMgr}!Loading@{Loading}}}\mbox{\Hypertarget{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bceca348222ad267fefc39c58b6b4b0915a35}\label{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bceca348222ad267fefc39c58b6b4b0915a35}} 
+Loading&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotLoaded@{NotLoaded}!CScoreMgr@{CScoreMgr}}\index{CScoreMgr@{CScoreMgr}!NotLoaded@{NotLoaded}}}\mbox{\Hypertarget{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bceca58e29d8b34152058856c2d8406273786}\label{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bceca58e29d8b34152058856c2d8406273786}} 
+Not\+Loaded&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Loaded@{Loaded}!CScoreMgr@{CScoreMgr}}\index{CScoreMgr@{CScoreMgr}!Loaded@{Loaded}}}\mbox{\Hypertarget{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bceca444c5f4ac2376a36164bf67062139728}\label{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bceca444c5f4ac2376a36164bf67062139728}} 
+Loaded&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2}\label{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2}} 
+\index{CScoreMgr@{CScoreMgr}!EMasterServerScoreStatus@{EMasterServerScoreStatus}}
+\index{EMasterServerScoreStatus@{EMasterServerScoreStatus}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{EMasterServerScoreStatus}{EMasterServerScoreStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2}{C\+Score\+Mgr\+::\+E\+Master\+Server\+Score\+Status}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CScoreMgr@{CScoreMgr}}\index{CScoreMgr@{CScoreMgr}!None@{None}}}\mbox{\Hypertarget{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2a94fe69a975247777f5670fb8a1e8e8bc}\label{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2a94fe69a975247777f5670fb8a1e8e8bc}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Synchronizing@{Synchronizing}!CScoreMgr@{CScoreMgr}}\index{CScoreMgr@{CScoreMgr}!Synchronizing@{Synchronizing}}}\mbox{\Hypertarget{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2a8461ce2e20be18bd6eb07c86d1083b4b}\label{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2a8461ce2e20be18bd6eb07c86d1083b4b}} 
+Synchronizing&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotSynchronized@{NotSynchronized}!CScoreMgr@{CScoreMgr}}\index{CScoreMgr@{CScoreMgr}!NotSynchronized@{NotSynchronized}}}\mbox{\Hypertarget{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2ad367dac71d0b6d97844fbe22edab187f}\label{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2ad367dac71d0b6d97844fbe22edab187f}} 
+Not\+Synchronized&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Synchronized@{Synchronized}!CScoreMgr@{CScoreMgr}}\index{CScoreMgr@{CScoreMgr}!Synchronized@{Synchronized}}}\mbox{\Hypertarget{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2ad9e9b7197031cbcb1ac6c589bc74dd99}\label{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2ad9e9b7197031cbcb1ac6c589bc74dd99}} 
+Synchronized&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_score_mgr_af9c7d726bcedb1ad87cebe1b2efbbee3}\label{struct_c_score_mgr_af9c7d726bcedb1ad87cebe1b2efbbee3}} 
+\index{CScoreMgr@{CScoreMgr}!Campaign\_GetBuddiesMapRecord@{Campaign\_GetBuddiesMapRecord}}
+\index{Campaign\_GetBuddiesMapRecord@{Campaign\_GetBuddiesMapRecord}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Campaign\_GetBuddiesMapRecord()}{Campaign\_GetBuddiesMapRecord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_task_result___buddies_challenge_record}{C\+Task\+Result\+\_\+\+Buddies\+Challenge\+Record}} C\+Score\+Mgr\+::\+Campaign\+\_\+\+Get\+Buddies\+Map\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Campaign\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid }\end{DoxyParamCaption})}
+
+Returns the buddies records for a map of a campaign. \mbox{\Hypertarget{struct_c_score_mgr_ad333cf06ab49ecfa37c82495d37d7023}\label{struct_c_score_mgr_ad333cf06ab49ecfa37c82495d37d7023}} 
+\index{CScoreMgr@{CScoreMgr}!Campaign\_GetBuddiesMapRecordsComparison@{Campaign\_GetBuddiesMapRecordsComparison}}
+\index{Campaign\_GetBuddiesMapRecordsComparison@{Campaign\_GetBuddiesMapRecordsComparison}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Campaign\_GetBuddiesMapRecordsComparison()}{Campaign\_GetBuddiesMapRecordsComparison()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_task_result___buddies_challenge_records_comparison}{C\+Task\+Result\+\_\+\+Buddies\+Challenge\+Records\+Comparison}} C\+Score\+Mgr\+::\+Campaign\+\_\+\+Get\+Buddies\+Map\+Records\+Comparison (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Campaign\+Id }\end{DoxyParamCaption})}
+
+Returns the buddies records comparison for a campaign. \mbox{\Hypertarget{struct_c_score_mgr_a2cc151078316c0838dcf237701fc33b3}\label{struct_c_score_mgr_a2cc151078316c0838dcf237701fc33b3}} 
+\index{CScoreMgr@{CScoreMgr}!Campaign\_GetBuddyMapRecordsComparison@{Campaign\_GetBuddyMapRecordsComparison}}
+\index{Campaign\_GetBuddyMapRecordsComparison@{Campaign\_GetBuddyMapRecordsComparison}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Campaign\_GetBuddyMapRecordsComparison()}{Campaign\_GetBuddyMapRecordsComparison()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_task_result___buddy_challenge_records_comparison}{C\+Task\+Result\+\_\+\+Buddy\+Challenge\+Records\+Comparison}} C\+Score\+Mgr\+::\+Campaign\+\_\+\+Get\+Buddy\+Map\+Records\+Comparison (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Opponent\+Login,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Campaign\+Id }\end{DoxyParamCaption})}
+
+Returns the records comparison with a buddy for a campaign. \mbox{\Hypertarget{struct_c_score_mgr_a048b1b35321376746c575e0a69900e04}\label{struct_c_score_mgr_a048b1b35321376746c575e0a69900e04}} 
+\index{CScoreMgr@{CScoreMgr}!Campaign\_GetMultiAsyncLevel@{Campaign\_GetMultiAsyncLevel}}
+\index{Campaign\_GetMultiAsyncLevel@{Campaign\_GetMultiAsyncLevel}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Campaign\_GetMultiAsyncLevel()}{Campaign\_GetMultiAsyncLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Campaign\+\_\+\+Get\+Multi\+Async\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Campaign\+Id }\end{DoxyParamCaption})}
+
+Returns the number of medals for a campaign. \mbox{\Hypertarget{struct_c_score_mgr_a763b193725765a0d660e3f450cc93adc}\label{struct_c_score_mgr_a763b193725765a0d660e3f450cc93adc}} 
+\index{CScoreMgr@{CScoreMgr}!Campaign\_GetMultiAsyncLevelCount@{Campaign\_GetMultiAsyncLevelCount}}
+\index{Campaign\_GetMultiAsyncLevelCount@{Campaign\_GetMultiAsyncLevelCount}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Campaign\_GetMultiAsyncLevelCount()}{Campaign\_GetMultiAsyncLevelCount()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Campaign\+\_\+\+Get\+Multi\+Async\+Level\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Campaign\+Id,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Multi\+Async\+Level }\end{DoxyParamCaption})}
+
+Returns the number of medals of the specified level for a campaign. \mbox{\Hypertarget{struct_c_score_mgr_a82e113891ad6b5dfe69e584907a468e0}\label{struct_c_score_mgr_a82e113891ad6b5dfe69e584907a468e0}} 
+\index{CScoreMgr@{CScoreMgr}!Campaign\_GetOpponentRecords@{Campaign\_GetOpponentRecords}}
+\index{Campaign\_GetOpponentRecords@{Campaign\_GetOpponentRecords}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Campaign\_GetOpponentRecords()}{Campaign\_GetOpponentRecords()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_task_result___map_record_list}{C\+Task\+Result\+\_\+\+Map\+Record\+List}} C\+Score\+Mgr\+::\+Campaign\+\_\+\+Get\+Opponent\+Records (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Campaign\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Opponent\+Login }\end{DoxyParamCaption})}
+
+Returns the all the records of an opponent specified by its login for a campaign. \mbox{\Hypertarget{struct_c_score_mgr_ac150bfb6384e2f19ed722fc301b7aef4}\label{struct_c_score_mgr_ac150bfb6384e2f19ed722fc301b7aef4}} 
+\index{CScoreMgr@{CScoreMgr}!Campaign\_GetSkillPoints@{Campaign\_GetSkillPoints}}
+\index{Campaign\_GetSkillPoints@{Campaign\_GetSkillPoints}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Campaign\_GetSkillPoints()}{Campaign\_GetSkillPoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Campaign\+\_\+\+Get\+Skill\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Campaign\+Id }\end{DoxyParamCaption})}
+
+Returns the skillpoints for a campaign. \mbox{\Hypertarget{struct_c_score_mgr_ade84cd7c9648aff27d768ddde453beef}\label{struct_c_score_mgr_ade84cd7c9648aff27d768ddde453beef}} 
+\index{CScoreMgr@{CScoreMgr}!Campaign\_IsBuddiesMapRecordDirty@{Campaign\_IsBuddiesMapRecordDirty}}
+\index{Campaign\_IsBuddiesMapRecordDirty@{Campaign\_IsBuddiesMapRecordDirty}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Campaign\_IsBuddiesMapRecordDirty()}{Campaign\_IsBuddiesMapRecordDirty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Score\+Mgr\+::\+Campaign\+\_\+\+Is\+Buddies\+Map\+Record\+Dirty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Campaign\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid }\end{DoxyParamCaption})}
+
+Returns if the buddies records for a map of a campaign are dirty. \mbox{\Hypertarget{struct_c_score_mgr_a1aff9a4efa21dac3d47175f12a4dd7da}\label{struct_c_score_mgr_a1aff9a4efa21dac3d47175f12a4dd7da}} 
+\index{CScoreMgr@{CScoreMgr}!CampaignLeaderBoard\_GetPlayerCount@{CampaignLeaderBoard\_GetPlayerCount}}
+\index{CampaignLeaderBoard\_GetPlayerCount@{CampaignLeaderBoard\_GetPlayerCount}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{CampaignLeaderBoard\_GetPlayerCount()}{CampaignLeaderBoard\_GetPlayerCount()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Campaign\+Leader\+Board\+\_\+\+Get\+Player\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Campaign\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Zone,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Use\+Skill\+Points }\end{DoxyParamCaption})}
+
+Returns the number of user ranked on a campaign. \mbox{\Hypertarget{struct_c_score_mgr_aacd25267cfaf543e90b469bb5d0ea26c}\label{struct_c_score_mgr_aacd25267cfaf543e90b469bb5d0ea26c}} 
+\index{CScoreMgr@{CScoreMgr}!CampaignLeaderBoard\_GetPlayerList@{CampaignLeaderBoard\_GetPlayerList}}
+\index{CampaignLeaderBoard\_GetPlayerList@{CampaignLeaderBoard\_GetPlayerList}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{CampaignLeaderBoard\_GetPlayerList()}{CampaignLeaderBoard\_GetPlayerList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_task_result___natural_leader_board_info_list}{C\+Task\+Result\+\_\+\+Natural\+Leader\+Board\+Info\+List}} C\+Score\+Mgr\+::\+Campaign\+Leader\+Board\+\_\+\+Get\+Player\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Campaign\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Zone,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Use\+Skill\+Points,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{From\+Index,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Count }\end{DoxyParamCaption})}
+
+Returns a part of the campaign leaderboard. \mbox{\Hypertarget{struct_c_score_mgr_a7824959fe1dbdecf44a3ccc53af172e2}\label{struct_c_score_mgr_a7824959fe1dbdecf44a3ccc53af172e2}} 
+\index{CScoreMgr@{CScoreMgr}!CampaignLeaderBoard\_GetPlayerRanking@{CampaignLeaderBoard\_GetPlayerRanking}}
+\index{CampaignLeaderBoard\_GetPlayerRanking@{CampaignLeaderBoard\_GetPlayerRanking}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{CampaignLeaderBoard\_GetPlayerRanking()}{CampaignLeaderBoard\_GetPlayerRanking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Campaign\+Leader\+Board\+\_\+\+Get\+Player\+Ranking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Campaign\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Zone,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Use\+Skill\+Points }\end{DoxyParamCaption})}
+
+Returns the user ranking on a campaign. \mbox{\Hypertarget{struct_c_score_mgr_a339c5d256624098ff25087b6d42bea02}\label{struct_c_score_mgr_a339c5d256624098ff25087b6d42bea02}} 
+\index{CScoreMgr@{CScoreMgr}!GlobalLeaderBoard\_GetPlayerCount@{GlobalLeaderBoard\_GetPlayerCount}}
+\index{GlobalLeaderBoard\_GetPlayerCount@{GlobalLeaderBoard\_GetPlayerCount}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{GlobalLeaderBoard\_GetPlayerCount()}{GlobalLeaderBoard\_GetPlayerCount()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Global\+Leader\+Board\+\_\+\+Get\+Player\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Zone }\end{DoxyParamCaption})}
+
+Returns the number of user ranked in global leaderboard. \mbox{\Hypertarget{struct_c_score_mgr_ab581a4cc0290b138b36c1cccb6a4956c}\label{struct_c_score_mgr_ab581a4cc0290b138b36c1cccb6a4956c}} 
+\index{CScoreMgr@{CScoreMgr}!GlobalLeaderBoard\_GetPlayerList@{GlobalLeaderBoard\_GetPlayerList}}
+\index{GlobalLeaderBoard\_GetPlayerList@{GlobalLeaderBoard\_GetPlayerList}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{GlobalLeaderBoard\_GetPlayerList()}{GlobalLeaderBoard\_GetPlayerList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_task_result___real_leader_board_info_list}{C\+Task\+Result\+\_\+\+Real\+Leader\+Board\+Info\+List}} C\+Score\+Mgr\+::\+Global\+Leader\+Board\+\_\+\+Get\+Player\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Zone,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{From\+Index,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Count }\end{DoxyParamCaption})}
+
+Returns a part of the global leaderboard. \mbox{\Hypertarget{struct_c_score_mgr_a49ac50d0be77d1685194750b7a33c949}\label{struct_c_score_mgr_a49ac50d0be77d1685194750b7a33c949}} 
+\index{CScoreMgr@{CScoreMgr}!GlobalLeaderBoard\_GetPlayerRanking@{GlobalLeaderBoard\_GetPlayerRanking}}
+\index{GlobalLeaderBoard\_GetPlayerRanking@{GlobalLeaderBoard\_GetPlayerRanking}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{GlobalLeaderBoard\_GetPlayerRanking()}{GlobalLeaderBoard\_GetPlayerRanking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Global\+Leader\+Board\+\_\+\+Get\+Player\+Ranking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Zone }\end{DoxyParamCaption})}
+
+Returns the user global ranking. \mbox{\Hypertarget{struct_c_score_mgr_aa6d9d584ab59020d576eeaa35099250a}\label{struct_c_score_mgr_aa6d9d584ab59020d576eeaa35099250a}} 
+\index{CScoreMgr@{CScoreMgr}!Map\_GetMultiAsyncLevel@{Map\_GetMultiAsyncLevel}}
+\index{Map\_GetMultiAsyncLevel@{Map\_GetMultiAsyncLevel}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_GetMultiAsyncLevel()}{Map\_GetMultiAsyncLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Map\+\_\+\+Get\+Multi\+Async\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Context }\end{DoxyParamCaption})}
+
+Returns the number of medals for a map. \mbox{\Hypertarget{struct_c_score_mgr_a3940864edb307b41fab892d26fff7f01}\label{struct_c_score_mgr_a3940864edb307b41fab892d26fff7f01}} 
+\index{CScoreMgr@{CScoreMgr}!Map\_GetMultiAsyncLevelRecord@{Map\_GetMultiAsyncLevelRecord}}
+\index{Map\_GetMultiAsyncLevelRecord@{Map\_GetMultiAsyncLevelRecord}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_GetMultiAsyncLevelRecord()}{Map\_GetMultiAsyncLevelRecord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Map\+\_\+\+Get\+Multi\+Async\+Level\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Context,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Multi\+Async\+Level }\end{DoxyParamCaption})}
+
+Returns the record score of the medal for a map. \mbox{\Hypertarget{struct_c_score_mgr_ac01ae44b0f3b28e5ec645dcefcff68c3}\label{struct_c_score_mgr_ac01ae44b0f3b28e5ec645dcefcff68c3}} 
+\index{CScoreMgr@{CScoreMgr}!Map\_GetMultiAsyncLevelRecordGhost@{Map\_GetMultiAsyncLevelRecordGhost}}
+\index{Map\_GetMultiAsyncLevelRecordGhost@{Map\_GetMultiAsyncLevelRecordGhost}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_GetMultiAsyncLevelRecordGhost()}{Map\_GetMultiAsyncLevelRecordGhost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_task_result___ghost}{C\+Task\+Result\+\_\+\+Ghost}} C\+Score\+Mgr\+::\+Map\+\_\+\+Get\+Multi\+Async\+Level\+Record\+Ghost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Context,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Multi\+Async\+Level }\end{DoxyParamCaption})}
+
+Returns the record ghost of the medal for a map. \mbox{\Hypertarget{struct_c_score_mgr_a3610227339ce6ca006be0306de809673}\label{struct_c_score_mgr_a3610227339ce6ca006be0306de809673}} 
+\index{CScoreMgr@{CScoreMgr}!Map\_GetRecord@{Map\_GetRecord}}
+\index{Map\_GetRecord@{Map\_GetRecord}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_GetRecord()}{Map\_GetRecord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Map\+\_\+\+Get\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Context }\end{DoxyParamCaption})}
+
+Returns the user record time for a map. \mbox{\Hypertarget{struct_c_score_mgr_a9554095f12113333e93933946292989e}\label{struct_c_score_mgr_a9554095f12113333e93933946292989e}} 
+\index{CScoreMgr@{CScoreMgr}!Map\_GetRecordGhost@{Map\_GetRecordGhost}}
+\index{Map\_GetRecordGhost@{Map\_GetRecordGhost}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_GetRecordGhost()}{Map\_GetRecordGhost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_task_result___ghost}{C\+Task\+Result\+\_\+\+Ghost}} C\+Score\+Mgr\+::\+Map\+\_\+\+Get\+Record\+Ghost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Context }\end{DoxyParamCaption})}
+
+Returns the user record ghost for a map. \mbox{\Hypertarget{struct_c_score_mgr_ab801ce46ee6d3fa9b72abb84916d0c0b}\label{struct_c_score_mgr_ab801ce46ee6d3fa9b72abb84916d0c0b}} 
+\index{CScoreMgr@{CScoreMgr}!Map\_GetSkillPoints@{Map\_GetSkillPoints}}
+\index{Map\_GetSkillPoints@{Map\_GetSkillPoints}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_GetSkillPoints()}{Map\_GetSkillPoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Map\+\_\+\+Get\+Skill\+Points (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Context }\end{DoxyParamCaption})}
+
+Returns the skillpoints for a map. \mbox{\Hypertarget{struct_c_score_mgr_ad3a20acd1eacb7bc57bcdf6fb708c5b8}\label{struct_c_score_mgr_ad3a20acd1eacb7bc57bcdf6fb708c5b8}} 
+\index{CScoreMgr@{CScoreMgr}!Map\_SetNewRecord@{Map\_SetNewRecord}}
+\index{Map\_SetNewRecord@{Map\_SetNewRecord}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_SetNewRecord()}{Map\_SetNewRecord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_task_result}{C\+Task\+Result}} C\+Score\+Mgr\+::\+Map\+\_\+\+Set\+New\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Context,  }\item[{\mbox{\hyperlink{struct_c_ghost}{C\+Ghost}}}]{Ghost }\end{DoxyParamCaption})}
+
+Set a new record for a map. \mbox{\Hypertarget{struct_c_score_mgr_a199d5b757e2efb1ed47242d473a046c9}\label{struct_c_score_mgr_a199d5b757e2efb1ed47242d473a046c9}} 
+\index{CScoreMgr@{CScoreMgr}!MapLeaderBoard\_GetPlayerCount@{MapLeaderBoard\_GetPlayerCount}}
+\index{MapLeaderBoard\_GetPlayerCount@{MapLeaderBoard\_GetPlayerCount}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{MapLeaderBoard\_GetPlayerCount()}{MapLeaderBoard\_GetPlayerCount()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Map\+Leader\+Board\+\_\+\+Get\+Player\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Context,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Zone }\end{DoxyParamCaption})}
+
+Returns the number of user ranked on a map. \mbox{\Hypertarget{struct_c_score_mgr_a458b0e5f0ed2613619241c77fc052019}\label{struct_c_score_mgr_a458b0e5f0ed2613619241c77fc052019}} 
+\index{CScoreMgr@{CScoreMgr}!MapLeaderBoard\_GetPlayerList@{MapLeaderBoard\_GetPlayerList}}
+\index{MapLeaderBoard\_GetPlayerList@{MapLeaderBoard\_GetPlayerList}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{MapLeaderBoard\_GetPlayerList()}{MapLeaderBoard\_GetPlayerList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_task_result___natural_leader_board_info_list}{C\+Task\+Result\+\_\+\+Natural\+Leader\+Board\+Info\+List}} C\+Score\+Mgr\+::\+Map\+Leader\+Board\+\_\+\+Get\+Player\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Context,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Zone,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{From\+Index,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Count }\end{DoxyParamCaption})}
+
+Returns a part of the map leaderboard. \mbox{\Hypertarget{struct_c_score_mgr_a038078e470d9d9f1a5d24bcdd7fc765f}\label{struct_c_score_mgr_a038078e470d9d9f1a5d24bcdd7fc765f}} 
+\index{CScoreMgr@{CScoreMgr}!MapLeaderBoard\_GetPlayerRanking@{MapLeaderBoard\_GetPlayerRanking}}
+\index{MapLeaderBoard\_GetPlayerRanking@{MapLeaderBoard\_GetPlayerRanking}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{MapLeaderBoard\_GetPlayerRanking()}{MapLeaderBoard\_GetPlayerRanking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Map\+Leader\+Board\+\_\+\+Get\+Player\+Ranking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Map\+Uid,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Context,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Zone }\end{DoxyParamCaption})}
+
+Returns the user ranking on a map. \mbox{\Hypertarget{struct_c_score_mgr_ac8f59b604c313c92362339213bf63baa}\label{struct_c_score_mgr_ac8f59b604c313c92362339213bf63baa}} 
+\index{CScoreMgr@{CScoreMgr}!Multiplayer\_AddToScore@{Multiplayer\_AddToScore}}
+\index{Multiplayer\_AddToScore@{Multiplayer\_AddToScore}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Multiplayer\_AddToScore()}{Multiplayer\_AddToScore()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Score\+Mgr\+::\+Multiplayer\+\_\+\+Add\+To\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{Score\+Diff,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Timestamp }\end{DoxyParamCaption})}
+
+Add points to multiplayer score. \mbox{\Hypertarget{struct_c_score_mgr_a170086cf6bf88024780e1e83c045e56b}\label{struct_c_score_mgr_a170086cf6bf88024780e1e83c045e56b}} 
+\index{CScoreMgr@{CScoreMgr}!MultiplayerLeaderBoard\_GetPlayerCount@{MultiplayerLeaderBoard\_GetPlayerCount}}
+\index{MultiplayerLeaderBoard\_GetPlayerCount@{MultiplayerLeaderBoard\_GetPlayerCount}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{MultiplayerLeaderBoard\_GetPlayerCount()}{MultiplayerLeaderBoard\_GetPlayerCount()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Multiplayer\+Leader\+Board\+\_\+\+Get\+Player\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Zone }\end{DoxyParamCaption})}
+
+Returns the number of user ranked in multiplayer leaderboard. \mbox{\Hypertarget{struct_c_score_mgr_a2381b8939dc3e226bde59cb9e6ab30f0}\label{struct_c_score_mgr_a2381b8939dc3e226bde59cb9e6ab30f0}} 
+\index{CScoreMgr@{CScoreMgr}!MultiplayerLeaderBoard\_GetPlayerRanking@{MultiplayerLeaderBoard\_GetPlayerRanking}}
+\index{MultiplayerLeaderBoard\_GetPlayerRanking@{MultiplayerLeaderBoard\_GetPlayerRanking}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{MultiplayerLeaderBoard\_GetPlayerRanking()}{MultiplayerLeaderBoard\_GetPlayerRanking()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Score\+Mgr\+::\+Multiplayer\+Leader\+Board\+\_\+\+Get\+Player\+Ranking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Zone }\end{DoxyParamCaption})}
+
+Returns the multiplayer ranking. \mbox{\Hypertarget{struct_c_score_mgr_a9c238d0691d5a8fa4809cf3fdcc381a9}\label{struct_c_score_mgr_a9c238d0691d5a8fa4809cf3fdcc381a9}} 
+\index{CScoreMgr@{CScoreMgr}!Playground\_GetPlayerGhost@{Playground\_GetPlayerGhost}}
+\index{Playground\_GetPlayerGhost@{Playground\_GetPlayerGhost}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{Playground\_GetPlayerGhost()}{Playground\_GetPlayerGhost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_ghost}{C\+Ghost}} C\+Score\+Mgr\+::\+Playground\+\_\+\+Get\+Player\+Ghost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_player}{C\+Player}}}]{Game\+Player }\end{DoxyParamCaption})}
+
+Returns the ghost currently being recorded for a player on the current playground. (or the latest ghost if the player is not playing.) \mbox{\Hypertarget{struct_c_score_mgr_a0a36bb464268cb360f0abab8112be303}\label{struct_c_score_mgr_a0a36bb464268cb360f0abab8112be303}} 
+\index{CScoreMgr@{CScoreMgr}!ScoreStatus\_GetLocalStatus@{ScoreStatus\_GetLocalStatus}}
+\index{ScoreStatus\_GetLocalStatus@{ScoreStatus\_GetLocalStatus}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{ScoreStatus\_GetLocalStatus()}{ScoreStatus\_GetLocalStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_score_mgr_ab6655ef85cffaec3ca8114237b96bcec}{E\+Local\+Score\+Status}} C\+Score\+Mgr\+::\+Score\+Status\+\_\+\+Get\+Local\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id }\end{DoxyParamCaption})}
+
+Returns the local status of user records. \mbox{\Hypertarget{struct_c_score_mgr_ab21d1b195411f76b7af00c1718e9550d}\label{struct_c_score_mgr_ab21d1b195411f76b7af00c1718e9550d}} 
+\index{CScoreMgr@{CScoreMgr}!ScoreStatus\_GetMasterServerStatus@{ScoreStatus\_GetMasterServerStatus}}
+\index{ScoreStatus\_GetMasterServerStatus@{ScoreStatus\_GetMasterServerStatus}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{ScoreStatus\_GetMasterServerStatus()}{ScoreStatus\_GetMasterServerStatus()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_score_mgr_a1d99d57559bf582b0ddbbaf5db7872c2}{E\+Master\+Server\+Score\+Status}} C\+Score\+Mgr\+::\+Score\+Status\+\_\+\+Get\+Master\+Server\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{User\+Id }\end{DoxyParamCaption})}
+
+Returns the masterserver status of user records. \mbox{\Hypertarget{struct_c_score_mgr_ac9db5a3147bdbe6da625d697f4c1d9e7}\label{struct_c_score_mgr_ac9db5a3147bdbe6da625d697f4c1d9e7}} 
+\index{CScoreMgr@{CScoreMgr}!TaskResult\_Release@{TaskResult\_Release}}
+\index{TaskResult\_Release@{TaskResult\_Release}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{TaskResult\_Release()}{TaskResult\_Release()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Score\+Mgr\+::\+Task\+Result\+\_\+\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Task\+Id }\end{DoxyParamCaption})}
+
+Release a task result no more used. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_score_mgr_a24e6d8b63a0c80dddea57e47681a92d1}\label{struct_c_score_mgr_a24e6d8b63a0c80dddea57e47681a92d1}} 
+\index{CScoreMgr@{CScoreMgr}!TaskResults@{TaskResults}}
+\index{TaskResults@{TaskResults}!CScoreMgr@{CScoreMgr}}
+\doxysubsubsection{\texorpdfstring{TaskResults}{TaskResults}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_task_result}{C\+Task\+Result}} \mbox{[}$\,$\mbox{]} C\+Score\+Mgr\+::\+Task\+Results}
+
+Array of task results. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

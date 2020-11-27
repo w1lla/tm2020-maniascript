@@ -1,0 +1,1383 @@
+\hypertarget{struct_c_u_i_config}{}\doxysection{C\+U\+I\+Config Struct Reference}
+\label{struct_c_u_i_config}\index{CUIConfig@{CUIConfig}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+U\+I\+Config\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_c_u_i_config}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829e}{E\+U\+I\+Sequence}} \{ \newline
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}{None}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea94056c65911c0c0edef3573d10aeccf2}{Playing}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829eab0cdcd13ad66f7d8a9c1b0a7f7c95e1b}{Intro}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829eae1c4c071cff18236588f81c4c7b85938}{Outro}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea3fe39e061c7ed2b90fbf617a643e0662}{Podium}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea80d366671189e059f8be7fd911f03945}{Custom\+M\+T\+Clip}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfab571538c7480f67cbcb11649d794c8c5}{End\+Round}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea302b291e1957718c1dc0af55b905deca}{Players\+Presentation}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829eae49b6f4c787e02bcc282225684c4c379}{U\+I\+Interaction}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea8a422a771c8ef7155aa1f6ddb88e4dfe}{Rolling\+Background\+Intro}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea35cc4428198b9306d87b2eb9dfb8c79d}{Custom\+M\+T\+Clip\+\_\+\+With\+U\+I\+Interaction}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8c}{E\+U\+I\+Status}} \{ \newline
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}{None}}, 
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393baee4e9f82cb8f27d01809bd590b00059c}{Normal}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfac8522ed50081185538373da0d2039b22}{Warning}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8ca263707f429da13f0240c4df81779c3ef}{Error}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8ca603a104b450ccd21d9183cc82f23a550}{Official}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} \{ \newline
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}{None}}, 
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393baee4e9f82cb8f27d01809bd590b00059c}{Normal}}, 
+\mbox{\hyperlink{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a0df005801911732675b6d9b887162aa4}{Manual}}, 
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393ba20645c2f3ae875f4fa73a926316ac3ea}{Forced\+Hidden}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393ba5ba3f95c88779eab1ec3e9a1b8c3f253}{Forced\+Visible}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7}{E\+Labels\+Visibility}} \{ \newline
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}{None}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7ad15be5fbaf66e79721108beaee63da31}{Never}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7af1c9cb629cc7041dc4987cb3350b45b6}{Always}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7adf81d59d635e23e78cbd68edadf2524c}{When\+In\+Frustum}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7afd0ed24f00fece4ed254dac03e67d706}{When\+Visible}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7a7a34e190ad7e96dc87306f76726d2ad4}{When\+In\+Middle\+Of\+Screen}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1d}{E\+Avatar\+Variant}} \{ \mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}{Default}}, 
+\mbox{\hyperlink{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1dabf060293132c7ae9bfed502839d80930}{Sad}}, 
+\mbox{\hyperlink{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1dae9fc799888540825a4b1f5a6db6d3b69}{Happy}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}{E\+U\+I\+Sound}} \{ \newline
+\mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}{Default}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa30446bfe63b9dd3ffc2b1e74e35a5530}{Silence}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa0be7ad1483d820fe6f8d7f1bb8865002}{Start\+Match}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa848b938bc1c0182040b1e581a4b99f06}{End\+Match}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfae2e9affe0a92e9bbccf335be01ac9b11}{Start\+Round}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfab571538c7480f67cbcb11649d794c8c5}{End\+Round}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa82f84ef781d7462d64546c5c682a047f}{Phase\+Change}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa52660eaee024cbf213e6973e190c62ed}{Tie\+Break\+Point}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfabdb06c51856017f7d19ac1a852bb4a59}{Tie\+Point}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfaaf28dd8b6d989e1a4aaa414c29ac454c}{Victory\+Point}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfaee9b31d8bac989ea666b4f4e069d961d}{Capture}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa24bb82865f36c456edbd9a35378ed647}{Time\+Out}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa01ecbe5722d4d6e1e2a7cb3cb28ddeee}{Notice}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfac8522ed50081185538373da0d2039b22}{Warning}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfaead255ef3052fc0a44637e8ea9b3db51}{Player\+Eliminated}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfad1274ae42b3ffc0225f542cc0b4a291b}{Player\+Hit}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa853b2aa1588ff9b8b43e757f0730208b}{Checkpoint}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa60ab0f20517bf4a1bc3be645c10c6dca}{Finish}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa42ed6bf886864f679acf305de77604f0}{Record}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfab2397966057d7202d999ed6f07507738}{Score\+Progress}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa237700c2c3ee1e3c789114f5b16bd8e5}{Rank\+Change}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfabca41064952084b9a83a42973de17c9b}{Bonus}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfadd599054e328b0afa03a3d181aacdab5}{First\+Hit}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa499013f525cf541c532d9b8117c57433}{Combo}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa3fa0a825227029dbb2523b647ea6bb50}{Players\+Remaining}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa7b2811ee649f48f816f810cc1e7bc389}{Custom1}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa97ca25dadd55736e3726fefe288c1469}{Custom2}}, 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa42dc313389cf3243c66d3a9ab44fcfbc}{Custom3}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa9b346e96e4ccda344359d4687cb30de6}{Custom4}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbe}{E\+Notice\+Level}} \{ \newline
+\mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}{Default}}, 
+\mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea5b3b5c8e99fc470d526be1937c9d6ff5}{Player\+Info}}, 
+\mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea046dbd59d4e7e49d79b419c4883629b2}{Player\+Warning}}, 
+\mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbeaf298989d196ea06721e290761646ce22}{Map\+Info}}, 
+\newline
+\mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea6e85a2ccfb74756e2022506bc5686d36}{Map\+Warning}}, 
+\mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea746375bec32d7f1d06abd0350d232544}{Match\+Info}}, 
+\mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea6b5feb327b8df8552fd4b6e7d8e897bb}{Match\+Warning}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4d}{E\+Message\+Display}} \{ \mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4da7173c1c3844738af668f2c0ce0fa6b66}{Chat}}, 
+\mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4dac9ad19991febb99f13b62957bc1d4dc9}{Small}}, 
+\mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4daefc0237946b87d7c864605bc8fedffe7}{Status}}, 
+\mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4da5a9cda91dde6a22f9d8799d9f00f9e87}{Big}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24}{E\+Observer\+Mode}} \{ \mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}{Default}}, 
+\mbox{\hyperlink{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a1fe5ceeba52c0c7fcf516fe21f8d5933}{Forced}}, 
+\mbox{\hyperlink{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a8ee20d49b1e1b143d750c634da718019}{Forbidden}}, 
+\mbox{\hyperlink{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a0df005801911732675b6d9b887162aa4}{Manual}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562}{E\+Hud\+Visibility}} \{ \mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a1b252e369c8138de8870505d393d3c18}{Nothing}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562aa28603fe467ff887fc011c2f607c0960}{Everything}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a84ec8b00155fb63dc2bedd164b247b2b}{Markers\+Only}}, 
+\mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}{Default}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_u_i_config_a60f29bff16160930fc8c284c14d0da2d}{Send\+Chat}} (\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{class_text}{Text}})
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_u_i_config_ac5fd902c740c26bf05a54666d536a61e}{Send\+Notice}} (\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{class_text}{Text}}, \mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbe}{E\+Notice\+Level}} Level, \mbox{\hyperlink{struct_c_user}{C\+User}} Avatar, \mbox{\hyperlink{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1d}{E\+Avatar\+Variant}} Avatar\+Variant, \mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}{E\+U\+I\+Sound}} Sound, \mbox{\hyperlink{class_integer}{Integer}} Sound\+Variant)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_a02c571d26b1909197e907270aca96e25}{Get\+Layer\+Manialink\+Action}} (\mbox{\hyperlink{struct_c_u_i_layer}{C\+U\+I\+Layer}} Layer)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_u_i_config_a53f3c173e77834f21c682cf14f9b8d5d}{Clear\+Layer\+Manialink\+Action}} (\mbox{\hyperlink{struct_c_u_i_layer}{C\+U\+I\+Layer}} Layer)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_u_i_config_a21bc114a5c947126e8f89744fab9f13a}{Queue\+Message}} (\mbox{\hyperlink{class_integer}{Integer}} Duration, \mbox{\hyperlink{class_integer}{Integer}} Priority, \mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4d}{E\+Message\+Display}} Level, \mbox{\hyperlink{class_text}{Text}} Message, \mbox{\hyperlink{struct_c_user}{C\+User}} Avatar, \mbox{\hyperlink{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1d}{E\+Avatar\+Variant}} Avatar\+Variant, \mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}{E\+U\+I\+Sound}} Sound, \mbox{\hyperlink{class_integer}{Integer}} Sound\+Variant)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_u_i_config_af1eead2eac465a2b8fe7865d77be8ffe}{Queue\+Message}} (\mbox{\hyperlink{class_integer}{Integer}} Duration, \mbox{\hyperlink{class_integer}{Integer}} Priority, \mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4d}{E\+Message\+Display}} Level, \mbox{\hyperlink{class_text}{Text}} Message, \mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}{E\+U\+I\+Sound}} Sound, \mbox{\hyperlink{class_integer}{Integer}} Sound\+Variant)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_u_i_config_abf24c5d0724b25042492983b08aa9a95}{Queue\+Message}} (\mbox{\hyperlink{class_integer}{Integer}} Duration, \mbox{\hyperlink{class_integer}{Integer}} Priority, \mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4d}{E\+Message\+Display}} Level, \mbox{\hyperlink{class_text}{Text}} Message)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_u_i_config_a3e5d32e9b80c33b6182138b5e807987d}{Clear\+Messages}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829e}{E\+U\+I\+Sequence}} \mbox{\hyperlink{struct_c_u_i_config_af53b665aef6b2e6ad189b9b6ffaba654}{U\+I\+Sequence}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_ac389e6788419e7b0e25f8d981dab4756}{U\+I\+Sequence\+Is\+Completed}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_a663119c2524d2667d22a7d68167ad60b}{U\+I\+Sequence\+\_\+\+Custom\+M\+T\+Clip}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_a5aa0c247197456e3a08fb47bf94ea4f5}{U\+I\+Sequence\+\_\+\+Custom\+M\+T\+Ref\+Time}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a7c1ad4669ffa4a5c5e81c53c14616a2f}{U\+I\+Sequence\+\_\+\+Can\+Skip\+Intro\+MT}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_a36cb5164c194f31633589a54d05515f3}{U\+I\+Sequence\+\_\+\+Podium\+Players\+Win}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_a9a33583965dce359c0610c0a00855d84}{U\+I\+Sequence\+\_\+\+Podium\+Players\+Lose}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_a4ddc988e6572a63fa911b2a2f50a86d2}{Manialink\+Page}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_a51eb13dda7264edb29eb33c6a315f95e}{Big\+Message}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_a633a983d40af59113bae9830dd4e618e}{Big\+Message\+Avatar\+Login}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1d}{E\+Avatar\+Variant}} \mbox{\hyperlink{struct_c_u_i_config_a64f8ac31122c0699c9336e1dc87cf9c7}{Big\+Message\+Avatar\+Variant}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}{E\+U\+I\+Sound}} \mbox{\hyperlink{struct_c_u_i_config_a9a0102e1371711283032bccb801c99c1}{Big\+Message\+Sound}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_a41c40e3742f998f8298a55f24e0aafbe}{Big\+Message\+Sound\+Variant}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_a4e2fb368fc735c8357e9446f3a1b0c85}{Status\+Message}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_a2991193806f6ad14ab15da8c6eda8542}{Gauge\+Message}}
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_u_i_config_a176a478292551eddc4c3df64049a9f83}{Gauge\+Ratio}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_a2b211934c155eef5c5a07c8c48b5a3cb}{Gauge\+Clan}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_abe44898fead515fff807e2fafbb66369}{Markers\+X\+ML}}
+\item 
+const \mbox{\hyperlink{struct_c_u_i_layer}{C\+U\+I\+Layer}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_u_i_config_a2179ccea555e6c6a2f6c6e383d41385d}{U\+I\+Layers}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a40c546a10466c383b2f76139036c6455}{Overlay\+Hide\+Notices}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a74b579f61c801a4f433d8854547d0a56}{Overlay\+Hide\+Map\+Info}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a31a0f8012f364470a6aace15fa712967}{Overlay\+Hide\+Opponents\+Info}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a7592e7850734856e115a95f4533d4f71}{Overlay\+Hide\+Chat}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a2b84c59e64a409a90e8caba62397857d}{Overlay\+Hide\+Check\+Point\+List}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a156ec9f9da451a2f23f876f47e693a46}{Overlay\+Hide\+Round\+Scores}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a8ab172425b873cec5834cdc76c1c4fa9}{Overlay\+Hide\+Countdown}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a055406a1982b206e7a5b2a05e85cf835}{Overlay\+Hide\+Crosshair}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a695f6b04d839443f3cbde86530cd0149}{Overlay\+Hide\+Gauges}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_aadcd7de9964ac2968f32373148db23d0}{Overlay\+Hide\+Consumables}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a42c25ad16cd40859eb618e10e0aee9e9}{Overlay\+Hide321\+Go}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a75051505a2b0d77d6f6c9ac2fbdcd617}{Overlay\+Hide\+Background}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a459316903dbf38d91c0a62f974745151}{Overlay\+Hide\+Chrono}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_aceb275ffb351bd2d517ac19b72da40d0}{Overlay\+Hide\+Speed\+And\+Dist}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a4fd0d192a74b9d7fe65e700beedeecb4}{Overlay\+Hide\+Personnal\+Best\+And\+Rank}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a82af32b8cb8c26931eb5bef3bd02db12}{Overlay\+Hide\+Position}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_af78de7d94a1c75967f751f9a1d825f3b}{Overlay\+Hide\+Check\+Point\+Time}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_abea3a00b179b21107c9ec50addce8542}{Overlay\+Hide\+End\+Map\+Ladder\+Recap}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a1eadf5e87e45881a0d2eeeeb2af80a28}{Overlay\+Hide\+Multilap\+Infos}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_ac8cb9b247c49ec2c1fcd9c1766b9b2fc}{Overlay\+Hide\+Spectator\+Controllers}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_acedbc8d646e9c849a4c65f9e8c854e37}{Overlay\+Hide\+Spectator\+Infos}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a49f9779973a9dc724d423eba43adb204}{Overlay\+Chat\+Hide\+Avatar}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_a9b5e9798078146c75f069c6b17e8d907}{Overlay\+Chat\+Line\+Count}}
+\item 
+\mbox{\hyperlink{class_vec2}{Vec2}} \mbox{\hyperlink{struct_c_u_i_config_a2c9ea590b0a30bf724152dbf1a2291a0}{Overlay\+Chat\+Offset}}
+\item 
+\mbox{\hyperlink{class_vec2}{Vec2}} \mbox{\hyperlink{struct_c_u_i_config_ad6cf10d1b1f0f53bcaec6cbb5da4b1db}{Countdown\+Coord}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a989683dd6f87bc55db4da8262a51092d}{Notices\+Filter\+\_\+\+Hide\+Player\+Info}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_aa327b1606685e97999cbfa8059fda263}{Notices\+Filter\+\_\+\+Hide\+Player\+Warning}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a0de0e2010d45d966e98f27999054198b}{Notices\+Filter\+\_\+\+Hide\+Player\+Info\+If\+Not\+Me}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_abf5751bef01b9abc7cea87cdba5e0c77}{Notices\+Filter\+\_\+\+Hide\+Player\+Warning\+If\+Not\+Me}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a26f86782fbb90e297059dcea137c56e1}{Notices\+Filter\+\_\+\+Hide\+Map\+Info}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_ac6b4ea8874ee5faa40bf8ec2fd37c37e}{Notices\+Filter\+\_\+\+Hide\+Map\+Warning}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_aed36e749f67e9af7b1b6b906227a16f2}{Notices\+Filter\+\_\+\+Hide\+Match\+Info}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a375a5547bb79d8d05da2394da7318bea}{Notices\+Filter\+\_\+\+Hide\+Match\+Warning}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbe}{E\+Notice\+Level}} \mbox{\hyperlink{struct_c_u_i_config_a63daaaad724e23d8f3e8d124e2023f0c}{Notices\+Filter\+\_\+\+Level\+To\+Show\+As\+Big\+Message}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_a855564129bd74e10be9fe7d4a82a323d}{Score\+Table}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_a9c68f2d008c8ef1932acb6efc56564cd}{Score\+Table\+Visibility}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_u_i_config_af44d412c757c48bf280d94d6c1785ada}{Small\+Score\+Table}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_a6288ea5c87f954d00ac02a8828c0fda7}{Small\+Score\+Table\+Visibility}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a89caa3a55a26f35483bddd062256511a}{Score\+Table\+Only\+Manialink}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_aca58be9eedaa2369beeb24717211f974}{Alt\+Menu\+No\+Default\+Scores}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_aeaff8c84a116d70e743d30561716f273}{Alt\+Menu\+No\+Custom\+Scores}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a887f9aab7ebdb6482ee560eed4daeee8}{Overlay\+Score\+Summary}}
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_u_i_config_a86c94e82cb2c64874cdb80418db97592}{Score\+Summary\+\_\+\+Player1}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_a16dcd2fc071f373712077646962e1b4e}{Score\+Summary\+\_\+\+Points1}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_acb0bdedbd29fbe10cfe7edf712bfaea1}{Score\+Summary\+\_\+\+Round\+Points1}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_aa83a347c4412b3515d926c9fe7514e56}{Score\+Summary\+\_\+\+Match\+Points1}}
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_u_i_config_a4590ecafdc4b6689b2680ad1c072057e}{Score\+Summary\+\_\+\+Gauge1}}
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_u_i_config_a9b9b11872617d35bdf06806b9687bb61}{Score\+Summary\+\_\+\+Player2}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_a018c30521a193306b4272de34acad0a0}{Score\+Summary\+\_\+\+Points2}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_a835e9a41e804c2468d86553a267b2358}{Score\+Summary\+\_\+\+Round\+Points2}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_a78b96f3091196552b476d9cb10f43374}{Score\+Summary\+\_\+\+Match\+Points2}}
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_u_i_config_a577794820b3f7719c69164c1213b5eb2}{Score\+Summary\+\_\+\+Gauge2}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_adb3a904d6b76dbc8ded745a204507801}{Screen\+In3d\+Hide\+Score\+Summary}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_a3dfeeb00b9f0a1c17f216eeb2f90f1af}{Screen\+In3d\+Hide\+Versus}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_a10ff8e6de6ba970d9beea81a0e1e64ff}{Countdown\+End\+Time}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8c}{E\+U\+I\+Status}} \mbox{\hyperlink{struct_c_u_i_config_a8719d8165b4178ab7e5be3e237fbc705}{U\+I\+Status}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562}{E\+Hud\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_a4bc86838b128ca3d436f309e89c5b3f5}{Labels\+Visibility}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7}{E\+Labels\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_ac226f28637a0d9c664eaa4a0121d95ab}{Allies\+Labels\+Visibility}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_acaac7b261464e7da64f01510b388fe8b}{Allies\+Labels\+Show\+Gauges}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_a2305ee78b9b2c385126ab39119ce7467}{Allies\+Labels\+Show\+Names}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_a328ef2f782349177dc14230365ffa27c}{Allies\+Labels\+Max\+Count}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7}{E\+Labels\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_a4e677a4b331247e0797b5976b5093ba5}{Team\+Labels\+Visibility}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_a863a73305d9160ebd4f5ac2a47f6a49b}{Team\+Labels\+Show\+Gauges}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_a9ae875128232ceac53f9ce600acb78b8}{Team\+Labels\+Show\+Names}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7}{E\+Labels\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_ac07cb67c9e741ad738d731921643e4af}{Opposing\+Team\+Labels\+Visibility}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_a771b7e8221bcd0e20569d8679ba24d51}{Opposing\+Team\+Labels\+Show\+Gauges}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} \mbox{\hyperlink{struct_c_u_i_config_aef4c3391c644d8fbfaab1cfab64b608b}{Opposing\+Team\+Labels\+Show\+Names}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_u_i_config_ad4e82a7c4d813fca00bf37dd4b1f6bae}{Force\+Spectator}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_ad1a4bcdf120d2ff5aa5b761f54423645}{Spectator\+Force\+Camera\+Type}}
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_u_i_config_ab16da3435fa8421f5bf85c93db517c4c}{Spectator\+Auto\+Target}}
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_u_i_config_a82be715996812d090f1ffff05c34625b}{Spectator\+Forced\+Target}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_u_i_config_ab8e9afd675b0e9b8f5145399b5152996}{Spectator\+Forced\+Clan}}
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_u_i_config_ad81c3f5065f3611680b888c83b66ca94}{Spectator\+Cam\+Auto\+Latitude}}
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_u_i_config_a0f484315d96bae8407d95385a2efb7af}{Spectator\+Cam\+Auto\+Longitude}}
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_u_i_config_a4a7dc1985f93cc02f87daf46ff6fbbe1}{Spectator\+Cam\+Auto\+Radius}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24}{E\+Observer\+Mode}} \mbox{\hyperlink{struct_c_u_i_config_ae487c67ad6a4e0dcf406c427144350fa}{Spectator\+Observer\+Mode}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Supported declare modes \+: Local Network\+Read Network\+Write This object handles the interface. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1d}\label{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1d}} 
+\index{CUIConfig@{CUIConfig}!EAvatarVariant@{EAvatarVariant}}
+\index{EAvatarVariant@{EAvatarVariant}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{EAvatarVariant}{EAvatarVariant}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1d}{C\+U\+I\+Config\+::\+E\+Avatar\+Variant}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Default@{Default}}}\mbox{\Hypertarget{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}\label{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}} 
+Default&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sad@{Sad}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Sad@{Sad}}}\mbox{\Hypertarget{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1dabf060293132c7ae9bfed502839d80930}\label{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1dabf060293132c7ae9bfed502839d80930}} 
+Sad&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Happy@{Happy}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Happy@{Happy}}}\mbox{\Hypertarget{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1dae9fc799888540825a4b1f5a6db6d3b69}\label{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1dae9fc799888540825a4b1f5a6db6d3b69}} 
+Happy&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562}\label{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562}} 
+\index{CUIConfig@{CUIConfig}!EHudVisibility@{EHudVisibility}}
+\index{EHudVisibility@{EHudVisibility}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{EHudVisibility}{EHudVisibility}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562}{C\+U\+I\+Config\+::\+E\+Hud\+Visibility}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Nothing@{Nothing}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Nothing@{Nothing}}}\mbox{\Hypertarget{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a1b252e369c8138de8870505d393d3c18}\label{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a1b252e369c8138de8870505d393d3c18}} 
+Nothing&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Everything@{Everything}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Everything@{Everything}}}\mbox{\Hypertarget{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562aa28603fe467ff887fc011c2f607c0960}\label{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562aa28603fe467ff887fc011c2f607c0960}} 
+Everything&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MarkersOnly@{MarkersOnly}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!MarkersOnly@{MarkersOnly}}}\mbox{\Hypertarget{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a84ec8b00155fb63dc2bedd164b247b2b}\label{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a84ec8b00155fb63dc2bedd164b247b2b}} 
+Markers\+Only&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Default@{Default}}}\mbox{\Hypertarget{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}\label{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}} 
+Default&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7}\label{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7}} 
+\index{CUIConfig@{CUIConfig}!ELabelsVisibility@{ELabelsVisibility}}
+\index{ELabelsVisibility@{ELabelsVisibility}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ELabelsVisibility}{ELabelsVisibility}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7}{C\+U\+I\+Config\+::\+E\+Labels\+Visibility}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!None@{None}}}\mbox{\Hypertarget{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}\label{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Never@{Never}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Never@{Never}}}\mbox{\Hypertarget{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7ad15be5fbaf66e79721108beaee63da31}\label{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7ad15be5fbaf66e79721108beaee63da31}} 
+Never&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Always@{Always}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Always@{Always}}}\mbox{\Hypertarget{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7af1c9cb629cc7041dc4987cb3350b45b6}\label{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7af1c9cb629cc7041dc4987cb3350b45b6}} 
+Always&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WhenInFrustum@{WhenInFrustum}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!WhenInFrustum@{WhenInFrustum}}}\mbox{\Hypertarget{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7adf81d59d635e23e78cbd68edadf2524c}\label{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7adf81d59d635e23e78cbd68edadf2524c}} 
+When\+In\+Frustum&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WhenVisible@{WhenVisible}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!WhenVisible@{WhenVisible}}}\mbox{\Hypertarget{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7afd0ed24f00fece4ed254dac03e67d706}\label{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7afd0ed24f00fece4ed254dac03e67d706}} 
+When\+Visible&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WhenInMiddleOfScreen@{WhenInMiddleOfScreen}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!WhenInMiddleOfScreen@{WhenInMiddleOfScreen}}}\mbox{\Hypertarget{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7a7a34e190ad7e96dc87306f76726d2ad4}\label{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7a7a34e190ad7e96dc87306f76726d2ad4}} 
+When\+In\+Middle\+Of\+Screen&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4d}\label{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4d}} 
+\index{CUIConfig@{CUIConfig}!EMessageDisplay@{EMessageDisplay}}
+\index{EMessageDisplay@{EMessageDisplay}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{EMessageDisplay}{EMessageDisplay}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4d}{C\+U\+I\+Config\+::\+E\+Message\+Display}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Chat@{Chat}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Chat@{Chat}}}\mbox{\Hypertarget{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4da7173c1c3844738af668f2c0ce0fa6b66}\label{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4da7173c1c3844738af668f2c0ce0fa6b66}} 
+Chat&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Small@{Small}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Small@{Small}}}\mbox{\Hypertarget{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4dac9ad19991febb99f13b62957bc1d4dc9}\label{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4dac9ad19991febb99f13b62957bc1d4dc9}} 
+Small&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Status@{Status}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Status@{Status}}}\mbox{\Hypertarget{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4daefc0237946b87d7c864605bc8fedffe7}\label{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4daefc0237946b87d7c864605bc8fedffe7}} 
+Status&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Big@{Big}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Big@{Big}}}\mbox{\Hypertarget{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4da5a9cda91dde6a22f9d8799d9f00f9e87}\label{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4da5a9cda91dde6a22f9d8799d9f00f9e87}} 
+Big&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbe}\label{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbe}} 
+\index{CUIConfig@{CUIConfig}!ENoticeLevel@{ENoticeLevel}}
+\index{ENoticeLevel@{ENoticeLevel}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ENoticeLevel}{ENoticeLevel}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbe}{C\+U\+I\+Config\+::\+E\+Notice\+Level}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Default@{Default}}}\mbox{\Hypertarget{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}\label{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}} 
+Default&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayerInfo@{PlayerInfo}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!PlayerInfo@{PlayerInfo}}}\mbox{\Hypertarget{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea5b3b5c8e99fc470d526be1937c9d6ff5}\label{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea5b3b5c8e99fc470d526be1937c9d6ff5}} 
+Player\+Info&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayerWarning@{PlayerWarning}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!PlayerWarning@{PlayerWarning}}}\mbox{\Hypertarget{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea046dbd59d4e7e49d79b419c4883629b2}\label{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea046dbd59d4e7e49d79b419c4883629b2}} 
+Player\+Warning&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MapInfo@{MapInfo}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!MapInfo@{MapInfo}}}\mbox{\Hypertarget{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbeaf298989d196ea06721e290761646ce22}\label{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbeaf298989d196ea06721e290761646ce22}} 
+Map\+Info&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MapWarning@{MapWarning}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!MapWarning@{MapWarning}}}\mbox{\Hypertarget{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea6e85a2ccfb74756e2022506bc5686d36}\label{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea6e85a2ccfb74756e2022506bc5686d36}} 
+Map\+Warning&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MatchInfo@{MatchInfo}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!MatchInfo@{MatchInfo}}}\mbox{\Hypertarget{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea746375bec32d7f1d06abd0350d232544}\label{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea746375bec32d7f1d06abd0350d232544}} 
+Match\+Info&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MatchWarning@{MatchWarning}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!MatchWarning@{MatchWarning}}}\mbox{\Hypertarget{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea6b5feb327b8df8552fd4b6e7d8e897bb}\label{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbea6b5feb327b8df8552fd4b6e7d8e897bb}} 
+Match\+Warning&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24}\label{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24}} 
+\index{CUIConfig@{CUIConfig}!EObserverMode@{EObserverMode}}
+\index{EObserverMode@{EObserverMode}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{EObserverMode}{EObserverMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24}{C\+U\+I\+Config\+::\+E\+Observer\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Default@{Default}}}\mbox{\Hypertarget{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}\label{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}} 
+Default&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Forced@{Forced}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Forced@{Forced}}}\mbox{\Hypertarget{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a1fe5ceeba52c0c7fcf516fe21f8d5933}\label{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a1fe5ceeba52c0c7fcf516fe21f8d5933}} 
+Forced&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Forbidden@{Forbidden}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Forbidden@{Forbidden}}}\mbox{\Hypertarget{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a8ee20d49b1e1b143d750c634da718019}\label{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a8ee20d49b1e1b143d750c634da718019}} 
+Forbidden&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Manual@{Manual}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Manual@{Manual}}}\mbox{\Hypertarget{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a0df005801911732675b6d9b887162aa4}\label{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a0df005801911732675b6d9b887162aa4}} 
+Manual&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829e}\label{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829e}} 
+\index{CUIConfig@{CUIConfig}!EUISequence@{EUISequence}}
+\index{EUISequence@{EUISequence}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{EUISequence}{EUISequence}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829e}{C\+U\+I\+Config\+::\+E\+U\+I\+Sequence}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!None@{None}}}\mbox{\Hypertarget{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}\label{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Playing@{Playing}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Playing@{Playing}}}\mbox{\Hypertarget{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea94056c65911c0c0edef3573d10aeccf2}\label{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea94056c65911c0c0edef3573d10aeccf2}} 
+Playing&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Intro@{Intro}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Intro@{Intro}}}\mbox{\Hypertarget{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829eab0cdcd13ad66f7d8a9c1b0a7f7c95e1b}\label{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829eab0cdcd13ad66f7d8a9c1b0a7f7c95e1b}} 
+Intro&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Outro@{Outro}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Outro@{Outro}}}\mbox{\Hypertarget{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829eae1c4c071cff18236588f81c4c7b85938}\label{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829eae1c4c071cff18236588f81c4c7b85938}} 
+Outro&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Podium@{Podium}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Podium@{Podium}}}\mbox{\Hypertarget{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea3fe39e061c7ed2b90fbf617a643e0662}\label{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea3fe39e061c7ed2b90fbf617a643e0662}} 
+Podium&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CustomMTClip@{CustomMTClip}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!CustomMTClip@{CustomMTClip}}}\mbox{\Hypertarget{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea80d366671189e059f8be7fd911f03945}\label{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea80d366671189e059f8be7fd911f03945}} 
+Custom\+M\+T\+Clip&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EndRound@{EndRound}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!EndRound@{EndRound}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfab571538c7480f67cbcb11649d794c8c5}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfab571538c7480f67cbcb11649d794c8c5}} 
+End\+Round&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayersPresentation@{PlayersPresentation}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!PlayersPresentation@{PlayersPresentation}}}\mbox{\Hypertarget{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea302b291e1957718c1dc0af55b905deca}\label{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea302b291e1957718c1dc0af55b905deca}} 
+Players\+Presentation&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UIInteraction@{UIInteraction}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!UIInteraction@{UIInteraction}}}\mbox{\Hypertarget{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829eae49b6f4c787e02bcc282225684c4c379}\label{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829eae49b6f4c787e02bcc282225684c4c379}} 
+U\+I\+Interaction&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RollingBackgroundIntro@{RollingBackgroundIntro}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!RollingBackgroundIntro@{RollingBackgroundIntro}}}\mbox{\Hypertarget{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea8a422a771c8ef7155aa1f6ddb88e4dfe}\label{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea8a422a771c8ef7155aa1f6ddb88e4dfe}} 
+Rolling\+Background\+Intro&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CustomMTClip\_WithUIInteraction@{CustomMTClip\_WithUIInteraction}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!CustomMTClip\_WithUIInteraction@{CustomMTClip\_WithUIInteraction}}}\mbox{\Hypertarget{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea35cc4428198b9306d87b2eb9dfb8c79d}\label{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829ea35cc4428198b9306d87b2eb9dfb8c79d}} 
+Custom\+M\+T\+Clip\+\_\+\+With\+U\+I\+Interaction&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}} 
+\index{CUIConfig@{CUIConfig}!EUISound@{EUISound}}
+\index{EUISound@{EUISound}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{EUISound}{EUISound}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}{C\+U\+I\+Config\+::\+E\+U\+I\+Sound}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Default@{Default}}}\mbox{\Hypertarget{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}\label{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562a2e5673f9a7c6af62f71b7c838b227d85}} 
+Default&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Silence@{Silence}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Silence@{Silence}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa30446bfe63b9dd3ffc2b1e74e35a5530}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa30446bfe63b9dd3ffc2b1e74e35a5530}} 
+Silence&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StartMatch@{StartMatch}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!StartMatch@{StartMatch}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa0be7ad1483d820fe6f8d7f1bb8865002}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa0be7ad1483d820fe6f8d7f1bb8865002}} 
+Start\+Match&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EndMatch@{EndMatch}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!EndMatch@{EndMatch}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa848b938bc1c0182040b1e581a4b99f06}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa848b938bc1c0182040b1e581a4b99f06}} 
+End\+Match&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StartRound@{StartRound}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!StartRound@{StartRound}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfae2e9affe0a92e9bbccf335be01ac9b11}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfae2e9affe0a92e9bbccf335be01ac9b11}} 
+Start\+Round&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EndRound@{EndRound}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!EndRound@{EndRound}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfab571538c7480f67cbcb11649d794c8c5}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfab571538c7480f67cbcb11649d794c8c5}} 
+End\+Round&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PhaseChange@{PhaseChange}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!PhaseChange@{PhaseChange}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa82f84ef781d7462d64546c5c682a047f}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa82f84ef781d7462d64546c5c682a047f}} 
+Phase\+Change&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TieBreakPoint@{TieBreakPoint}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!TieBreakPoint@{TieBreakPoint}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa52660eaee024cbf213e6973e190c62ed}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa52660eaee024cbf213e6973e190c62ed}} 
+Tie\+Break\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TiePoint@{TiePoint}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!TiePoint@{TiePoint}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfabdb06c51856017f7d19ac1a852bb4a59}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfabdb06c51856017f7d19ac1a852bb4a59}} 
+Tie\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VictoryPoint@{VictoryPoint}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!VictoryPoint@{VictoryPoint}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfaaf28dd8b6d989e1a4aaa414c29ac454c}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfaaf28dd8b6d989e1a4aaa414c29ac454c}} 
+Victory\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Capture@{Capture}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Capture@{Capture}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfaee9b31d8bac989ea666b4f4e069d961d}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfaee9b31d8bac989ea666b4f4e069d961d}} 
+Capture&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TimeOut@{TimeOut}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!TimeOut@{TimeOut}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa24bb82865f36c456edbd9a35378ed647}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa24bb82865f36c456edbd9a35378ed647}} 
+Time\+Out&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Notice@{Notice}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Notice@{Notice}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa01ecbe5722d4d6e1e2a7cb3cb28ddeee}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa01ecbe5722d4d6e1e2a7cb3cb28ddeee}} 
+Notice&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Warning@{Warning}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Warning@{Warning}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfac8522ed50081185538373da0d2039b22}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfac8522ed50081185538373da0d2039b22}} 
+Warning&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayerEliminated@{PlayerEliminated}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!PlayerEliminated@{PlayerEliminated}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfaead255ef3052fc0a44637e8ea9b3db51}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfaead255ef3052fc0a44637e8ea9b3db51}} 
+Player\+Eliminated&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayerHit@{PlayerHit}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!PlayerHit@{PlayerHit}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfad1274ae42b3ffc0225f542cc0b4a291b}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfad1274ae42b3ffc0225f542cc0b4a291b}} 
+Player\+Hit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Checkpoint@{Checkpoint}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Checkpoint@{Checkpoint}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa853b2aa1588ff9b8b43e757f0730208b}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa853b2aa1588ff9b8b43e757f0730208b}} 
+Checkpoint&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Finish@{Finish}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Finish@{Finish}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa60ab0f20517bf4a1bc3be645c10c6dca}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa60ab0f20517bf4a1bc3be645c10c6dca}} 
+Finish&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Record@{Record}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Record@{Record}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa42ed6bf886864f679acf305de77604f0}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa42ed6bf886864f679acf305de77604f0}} 
+Record&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ScoreProgress@{ScoreProgress}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!ScoreProgress@{ScoreProgress}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfab2397966057d7202d999ed6f07507738}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfab2397966057d7202d999ed6f07507738}} 
+Score\+Progress&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RankChange@{RankChange}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!RankChange@{RankChange}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa237700c2c3ee1e3c789114f5b16bd8e5}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa237700c2c3ee1e3c789114f5b16bd8e5}} 
+Rank\+Change&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bonus@{Bonus}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Bonus@{Bonus}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfabca41064952084b9a83a42973de17c9b}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfabca41064952084b9a83a42973de17c9b}} 
+Bonus&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FirstHit@{FirstHit}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!FirstHit@{FirstHit}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfadd599054e328b0afa03a3d181aacdab5}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfadd599054e328b0afa03a3d181aacdab5}} 
+First\+Hit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Combo@{Combo}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Combo@{Combo}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa499013f525cf541c532d9b8117c57433}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa499013f525cf541c532d9b8117c57433}} 
+Combo&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayersRemaining@{PlayersRemaining}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!PlayersRemaining@{PlayersRemaining}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa3fa0a825227029dbb2523b647ea6bb50}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa3fa0a825227029dbb2523b647ea6bb50}} 
+Players\+Remaining&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom1@{Custom1}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Custom1@{Custom1}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa7b2811ee649f48f816f810cc1e7bc389}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa7b2811ee649f48f816f810cc1e7bc389}} 
+Custom1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom2@{Custom2}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Custom2@{Custom2}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa97ca25dadd55736e3726fefe288c1469}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa97ca25dadd55736e3726fefe288c1469}} 
+Custom2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom3@{Custom3}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Custom3@{Custom3}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa42dc313389cf3243c66d3a9ab44fcfbc}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa42dc313389cf3243c66d3a9ab44fcfbc}} 
+Custom3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom4@{Custom4}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Custom4@{Custom4}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa9b346e96e4ccda344359d4687cb30de6}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfa9b346e96e4ccda344359d4687cb30de6}} 
+Custom4&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8c}\label{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8c}} 
+\index{CUIConfig@{CUIConfig}!EUIStatus@{EUIStatus}}
+\index{EUIStatus@{EUIStatus}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{EUIStatus}{EUIStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8c}{C\+U\+I\+Config\+::\+E\+U\+I\+Status}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!None@{None}}}\mbox{\Hypertarget{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}\label{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Normal@{Normal}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Normal@{Normal}}}\mbox{\Hypertarget{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393baee4e9f82cb8f27d01809bd590b00059c}\label{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393baee4e9f82cb8f27d01809bd590b00059c}} 
+Normal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Warning@{Warning}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Warning@{Warning}}}\mbox{\Hypertarget{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfac8522ed50081185538373da0d2039b22}\label{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cfac8522ed50081185538373da0d2039b22}} 
+Warning&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Error@{Error}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Error@{Error}}}\mbox{\Hypertarget{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8ca263707f429da13f0240c4df81779c3ef}\label{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8ca263707f429da13f0240c4df81779c3ef}} 
+Error&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Official@{Official}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Official@{Official}}}\mbox{\Hypertarget{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8ca603a104b450ccd21d9183cc82f23a550}\label{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8ca603a104b450ccd21d9183cc82f23a550}} 
+Official&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}\label{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}} 
+\index{CUIConfig@{CUIConfig}!EVisibility@{EVisibility}}
+\index{EVisibility@{EVisibility}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{EVisibility}{EVisibility}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{C\+U\+I\+Config\+::\+E\+Visibility}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!None@{None}}}\mbox{\Hypertarget{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}\label{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7aa277833da00d0d545494de741472e82d}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Normal@{Normal}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Normal@{Normal}}}\mbox{\Hypertarget{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393baee4e9f82cb8f27d01809bd590b00059c}\label{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393baee4e9f82cb8f27d01809bd590b00059c}} 
+Normal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Manual@{Manual}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!Manual@{Manual}}}\mbox{\Hypertarget{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a0df005801911732675b6d9b887162aa4}\label{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24a0df005801911732675b6d9b887162aa4}} 
+Manual&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ForcedHidden@{ForcedHidden}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!ForcedHidden@{ForcedHidden}}}\mbox{\Hypertarget{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393ba20645c2f3ae875f4fa73a926316ac3ea}\label{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393ba20645c2f3ae875f4fa73a926316ac3ea}} 
+Forced\+Hidden&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ForcedVisible@{ForcedVisible}!CUIConfig@{CUIConfig}}\index{CUIConfig@{CUIConfig}!ForcedVisible@{ForcedVisible}}}\mbox{\Hypertarget{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393ba5ba3f95c88779eab1ec3e9a1b8c3f253}\label{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393ba5ba3f95c88779eab1ec3e9a1b8c3f253}} 
+Forced\+Visible&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_u_i_config_a53f3c173e77834f21c682cf14f9b8d5d}\label{struct_c_u_i_config_a53f3c173e77834f21c682cf14f9b8d5d}} 
+\index{CUIConfig@{CUIConfig}!ClearLayerManialinkAction@{ClearLayerManialinkAction}}
+\index{ClearLayerManialinkAction@{ClearLayerManialinkAction}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ClearLayerManialinkAction()}{ClearLayerManialinkAction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+U\+I\+Config\+::\+Clear\+Layer\+Manialink\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_u_i_layer}{C\+U\+I\+Layer}}}]{Layer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a3e5d32e9b80c33b6182138b5e807987d}\label{struct_c_u_i_config_a3e5d32e9b80c33b6182138b5e807987d}} 
+\index{CUIConfig@{CUIConfig}!ClearMessages@{ClearMessages}}
+\index{ClearMessages@{ClearMessages}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ClearMessages()}{ClearMessages()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+U\+I\+Config\+::\+Clear\+Messages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a02c571d26b1909197e907270aca96e25}\label{struct_c_u_i_config_a02c571d26b1909197e907270aca96e25}} 
+\index{CUIConfig@{CUIConfig}!GetLayerManialinkAction@{GetLayerManialinkAction}}
+\index{GetLayerManialinkAction@{GetLayerManialinkAction}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{GetLayerManialinkAction()}{GetLayerManialinkAction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+Get\+Layer\+Manialink\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_u_i_layer}{C\+U\+I\+Layer}}}]{Layer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_u_i_config_abf24c5d0724b25042492983b08aa9a95}\label{struct_c_u_i_config_abf24c5d0724b25042492983b08aa9a95}} 
+\index{CUIConfig@{CUIConfig}!QueueMessage@{QueueMessage}}
+\index{QueueMessage@{QueueMessage}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{QueueMessage()}{QueueMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+U\+I\+Config\+::\+Queue\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Duration,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Priority,  }\item[{\mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4d}{E\+Message\+Display}}}]{Level,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Message }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a21bc114a5c947126e8f89744fab9f13a}\label{struct_c_u_i_config_a21bc114a5c947126e8f89744fab9f13a}} 
+\index{CUIConfig@{CUIConfig}!QueueMessage@{QueueMessage}}
+\index{QueueMessage@{QueueMessage}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{QueueMessage()}{QueueMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+U\+I\+Config\+::\+Queue\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Duration,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Priority,  }\item[{\mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4d}{E\+Message\+Display}}}]{Level,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Message,  }\item[{\mbox{\hyperlink{struct_c_user}{C\+User}}}]{Avatar,  }\item[{\mbox{\hyperlink{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1d}{E\+Avatar\+Variant}}}]{Avatar\+Variant,  }\item[{\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}{E\+U\+I\+Sound}}}]{Sound,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Sound\+Variant }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_u_i_config_af1eead2eac465a2b8fe7865d77be8ffe}\label{struct_c_u_i_config_af1eead2eac465a2b8fe7865d77be8ffe}} 
+\index{CUIConfig@{CUIConfig}!QueueMessage@{QueueMessage}}
+\index{QueueMessage@{QueueMessage}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{QueueMessage()}{QueueMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+U\+I\+Config\+::\+Queue\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Duration,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Priority,  }\item[{\mbox{\hyperlink{struct_c_u_i_config_aeca36d227222274a17ec48dbc0f06c4d}{E\+Message\+Display}}}]{Level,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Message,  }\item[{\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}{E\+U\+I\+Sound}}}]{Sound,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Sound\+Variant }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a60f29bff16160930fc8c284c14d0da2d}\label{struct_c_u_i_config_a60f29bff16160930fc8c284c14d0da2d}} 
+\index{CUIConfig@{CUIConfig}!SendChat@{SendChat}}
+\index{SendChat@{SendChat}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SendChat()}{SendChat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+U\+I\+Config\+::\+Send\+Chat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ac5fd902c740c26bf05a54666d536a61e}\label{struct_c_u_i_config_ac5fd902c740c26bf05a54666d536a61e}} 
+\index{CUIConfig@{CUIConfig}!SendNotice@{SendNotice}}
+\index{SendNotice@{SendNotice}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SendNotice()}{SendNotice()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+U\+I\+Config\+::\+Send\+Notice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Text,  }\item[{\mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbe}{E\+Notice\+Level}}}]{Level,  }\item[{\mbox{\hyperlink{struct_c_user}{C\+User}}}]{Avatar,  }\item[{\mbox{\hyperlink{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1d}{E\+Avatar\+Variant}}}]{Avatar\+Variant,  }\item[{\mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}{E\+U\+I\+Sound}}}]{Sound,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Sound\+Variant }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_u_i_config_a328ef2f782349177dc14230365ffa27c}\label{struct_c_u_i_config_a328ef2f782349177dc14230365ffa27c}} 
+\index{CUIConfig@{CUIConfig}!AlliesLabelsMaxCount@{AlliesLabelsMaxCount}}
+\index{AlliesLabelsMaxCount@{AlliesLabelsMaxCount}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{AlliesLabelsMaxCount}{AlliesLabelsMaxCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Allies\+Labels\+Max\+Count}
+
+Values in range (0 -\/ 250) \mbox{\Hypertarget{struct_c_u_i_config_acaac7b261464e7da64f01510b388fe8b}\label{struct_c_u_i_config_acaac7b261464e7da64f01510b388fe8b}} 
+\index{CUIConfig@{CUIConfig}!AlliesLabelsShowGauges@{AlliesLabelsShowGauges}}
+\index{AlliesLabelsShowGauges@{AlliesLabelsShowGauges}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{AlliesLabelsShowGauges}{AlliesLabelsShowGauges}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} C\+U\+I\+Config\+::\+Allies\+Labels\+Show\+Gauges}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a2305ee78b9b2c385126ab39119ce7467}\label{struct_c_u_i_config_a2305ee78b9b2c385126ab39119ce7467}} 
+\index{CUIConfig@{CUIConfig}!AlliesLabelsShowNames@{AlliesLabelsShowNames}}
+\index{AlliesLabelsShowNames@{AlliesLabelsShowNames}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{AlliesLabelsShowNames}{AlliesLabelsShowNames}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} C\+U\+I\+Config\+::\+Allies\+Labels\+Show\+Names}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ac226f28637a0d9c664eaa4a0121d95ab}\label{struct_c_u_i_config_ac226f28637a0d9c664eaa4a0121d95ab}} 
+\index{CUIConfig@{CUIConfig}!AlliesLabelsVisibility@{AlliesLabelsVisibility}}
+\index{AlliesLabelsVisibility@{AlliesLabelsVisibility}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{AlliesLabelsVisibility}{AlliesLabelsVisibility}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7}{E\+Labels\+Visibility}} C\+U\+I\+Config\+::\+Allies\+Labels\+Visibility}
+
+\mbox{\Hypertarget{struct_c_u_i_config_aeaff8c84a116d70e743d30561716f273}\label{struct_c_u_i_config_aeaff8c84a116d70e743d30561716f273}} 
+\index{CUIConfig@{CUIConfig}!AltMenuNoCustomScores@{AltMenuNoCustomScores}}
+\index{AltMenuNoCustomScores@{AltMenuNoCustomScores}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{AltMenuNoCustomScores}{AltMenuNoCustomScores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Alt\+Menu\+No\+Custom\+Scores}
+
+\mbox{\Hypertarget{struct_c_u_i_config_aca58be9eedaa2369beeb24717211f974}\label{struct_c_u_i_config_aca58be9eedaa2369beeb24717211f974}} 
+\index{CUIConfig@{CUIConfig}!AltMenuNoDefaultScores@{AltMenuNoDefaultScores}}
+\index{AltMenuNoDefaultScores@{AltMenuNoDefaultScores}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{AltMenuNoDefaultScores}{AltMenuNoDefaultScores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Alt\+Menu\+No\+Default\+Scores}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a51eb13dda7264edb29eb33c6a315f95e}\label{struct_c_u_i_config_a51eb13dda7264edb29eb33c6a315f95e}} 
+\index{CUIConfig@{CUIConfig}!BigMessage@{BigMessage}}
+\index{BigMessage@{BigMessage}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{BigMessage}{BigMessage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+Big\+Message}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a633a983d40af59113bae9830dd4e618e}\label{struct_c_u_i_config_a633a983d40af59113bae9830dd4e618e}} 
+\index{CUIConfig@{CUIConfig}!BigMessageAvatarLogin@{BigMessageAvatarLogin}}
+\index{BigMessageAvatarLogin@{BigMessageAvatarLogin}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{BigMessageAvatarLogin}{BigMessageAvatarLogin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+Big\+Message\+Avatar\+Login}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a64f8ac31122c0699c9336e1dc87cf9c7}\label{struct_c_u_i_config_a64f8ac31122c0699c9336e1dc87cf9c7}} 
+\index{CUIConfig@{CUIConfig}!BigMessageAvatarVariant@{BigMessageAvatarVariant}}
+\index{BigMessageAvatarVariant@{BigMessageAvatarVariant}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{BigMessageAvatarVariant}{BigMessageAvatarVariant}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_af108c0db11d574205ccadaa5e1e71e1d}{E\+Avatar\+Variant}} C\+U\+I\+Config\+::\+Big\+Message\+Avatar\+Variant}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a9a0102e1371711283032bccb801c99c1}\label{struct_c_u_i_config_a9a0102e1371711283032bccb801c99c1}} 
+\index{CUIConfig@{CUIConfig}!BigMessageSound@{BigMessageSound}}
+\index{BigMessageSound@{BigMessageSound}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{BigMessageSound}{BigMessageSound}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_adbe295669674a531f7a99442f36ae8cf}{E\+U\+I\+Sound}} C\+U\+I\+Config\+::\+Big\+Message\+Sound}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a41c40e3742f998f8298a55f24e0aafbe}\label{struct_c_u_i_config_a41c40e3742f998f8298a55f24e0aafbe}} 
+\index{CUIConfig@{CUIConfig}!BigMessageSoundVariant@{BigMessageSoundVariant}}
+\index{BigMessageSoundVariant@{BigMessageSoundVariant}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{BigMessageSoundVariant}{BigMessageSoundVariant}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Big\+Message\+Sound\+Variant}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ad6cf10d1b1f0f53bcaec6cbb5da4b1db}\label{struct_c_u_i_config_ad6cf10d1b1f0f53bcaec6cbb5da4b1db}} 
+\index{CUIConfig@{CUIConfig}!CountdownCoord@{CountdownCoord}}
+\index{CountdownCoord@{CountdownCoord}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{CountdownCoord}{CountdownCoord}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec2}{Vec2}} C\+U\+I\+Config\+::\+Countdown\+Coord}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a10ff8e6de6ba970d9beea81a0e1e64ff}\label{struct_c_u_i_config_a10ff8e6de6ba970d9beea81a0e1e64ff}} 
+\index{CUIConfig@{CUIConfig}!CountdownEndTime@{CountdownEndTime}}
+\index{CountdownEndTime@{CountdownEndTime}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{CountdownEndTime}{CountdownEndTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Countdown\+End\+Time}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ad4e82a7c4d813fca00bf37dd4b1f6bae}\label{struct_c_u_i_config_ad4e82a7c4d813fca00bf37dd4b1f6bae}} 
+\index{CUIConfig@{CUIConfig}!ForceSpectator@{ForceSpectator}}
+\index{ForceSpectator@{ForceSpectator}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ForceSpectator}{ForceSpectator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Force\+Spectator}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a2b211934c155eef5c5a07c8c48b5a3cb}\label{struct_c_u_i_config_a2b211934c155eef5c5a07c8c48b5a3cb}} 
+\index{CUIConfig@{CUIConfig}!GaugeClan@{GaugeClan}}
+\index{GaugeClan@{GaugeClan}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{GaugeClan}{GaugeClan}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Gauge\+Clan}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a2991193806f6ad14ab15da8c6eda8542}\label{struct_c_u_i_config_a2991193806f6ad14ab15da8c6eda8542}} 
+\index{CUIConfig@{CUIConfig}!GaugeMessage@{GaugeMessage}}
+\index{GaugeMessage@{GaugeMessage}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{GaugeMessage}{GaugeMessage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+Gauge\+Message}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a176a478292551eddc4c3df64049a9f83}\label{struct_c_u_i_config_a176a478292551eddc4c3df64049a9f83}} 
+\index{CUIConfig@{CUIConfig}!GaugeRatio@{GaugeRatio}}
+\index{GaugeRatio@{GaugeRatio}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{GaugeRatio}{GaugeRatio}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} C\+U\+I\+Config\+::\+Gauge\+Ratio}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a4bc86838b128ca3d436f309e89c5b3f5}\label{struct_c_u_i_config_a4bc86838b128ca3d436f309e89c5b3f5}} 
+\index{CUIConfig@{CUIConfig}!LabelsVisibility@{LabelsVisibility}}
+\index{LabelsVisibility@{LabelsVisibility}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{LabelsVisibility}{LabelsVisibility}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_a0f02c555590f68dfb30a60932c78a562}{E\+Hud\+Visibility}} C\+U\+I\+Config\+::\+Labels\+Visibility}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a4ddc988e6572a63fa911b2a2f50a86d2}\label{struct_c_u_i_config_a4ddc988e6572a63fa911b2a2f50a86d2}} 
+\index{CUIConfig@{CUIConfig}!ManialinkPage@{ManialinkPage}}
+\index{ManialinkPage@{ManialinkPage}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ManialinkPage}{ManialinkPage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+Manialink\+Page}
+
+\mbox{\Hypertarget{struct_c_u_i_config_abe44898fead515fff807e2fafbb66369}\label{struct_c_u_i_config_abe44898fead515fff807e2fafbb66369}} 
+\index{CUIConfig@{CUIConfig}!MarkersXML@{MarkersXML}}
+\index{MarkersXML@{MarkersXML}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{MarkersXML}{MarkersXML}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+Markers\+X\+ML}
+
+An X\+ML text describing the map tooltips appearing in the H\+UD.~\newline
+It\textquotesingle{}s a set of $<$marker/$>$ elements which can have the following attributes \+: 
+\begin{DoxyEnumerate}
+\item label \+: a text to display
+\item pos \+: a vector of 3 world coordinates desribing the position of the marker
+\item playerlogin \+: alternatively, instead of using pos, you can use a player login. The marker will smoothly follow the player
+\item playerid \+: similar to playerlogin. Fill it with Player.\+Id. The marker will smoothly follow the player
+\item box \+: a vector of 3 dimensions describing the size of the marked object (allows a better placement of the marker on the screen)
+\item gauge \+: a \mbox{\hyperlink{class_real}{Real}}. If between 0. and 1. a gauge will be shown undeneath the text
+\item imageurl \+: a string. U\+RL of an image to use
+\item distmax \+: a real. The marker will disappear if the dist to it is greater than distmax
+\item isturning \+: a bool. Only for markers attached to players. If the marker appear on a minimap, it will turn around to reflect the player orientation.
+\end{DoxyEnumerate}\mbox{\Hypertarget{struct_c_u_i_config_a26f86782fbb90e297059dcea137c56e1}\label{struct_c_u_i_config_a26f86782fbb90e297059dcea137c56e1}} 
+\index{CUIConfig@{CUIConfig}!NoticesFilter\_HideMapInfo@{NoticesFilter\_HideMapInfo}}
+\index{NoticesFilter\_HideMapInfo@{NoticesFilter\_HideMapInfo}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{NoticesFilter\_HideMapInfo}{NoticesFilter\_HideMapInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Notices\+Filter\+\_\+\+Hide\+Map\+Info}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ac6b4ea8874ee5faa40bf8ec2fd37c37e}\label{struct_c_u_i_config_ac6b4ea8874ee5faa40bf8ec2fd37c37e}} 
+\index{CUIConfig@{CUIConfig}!NoticesFilter\_HideMapWarning@{NoticesFilter\_HideMapWarning}}
+\index{NoticesFilter\_HideMapWarning@{NoticesFilter\_HideMapWarning}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{NoticesFilter\_HideMapWarning}{NoticesFilter\_HideMapWarning}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Notices\+Filter\+\_\+\+Hide\+Map\+Warning}
+
+\mbox{\Hypertarget{struct_c_u_i_config_aed36e749f67e9af7b1b6b906227a16f2}\label{struct_c_u_i_config_aed36e749f67e9af7b1b6b906227a16f2}} 
+\index{CUIConfig@{CUIConfig}!NoticesFilter\_HideMatchInfo@{NoticesFilter\_HideMatchInfo}}
+\index{NoticesFilter\_HideMatchInfo@{NoticesFilter\_HideMatchInfo}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{NoticesFilter\_HideMatchInfo}{NoticesFilter\_HideMatchInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Notices\+Filter\+\_\+\+Hide\+Match\+Info}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a375a5547bb79d8d05da2394da7318bea}\label{struct_c_u_i_config_a375a5547bb79d8d05da2394da7318bea}} 
+\index{CUIConfig@{CUIConfig}!NoticesFilter\_HideMatchWarning@{NoticesFilter\_HideMatchWarning}}
+\index{NoticesFilter\_HideMatchWarning@{NoticesFilter\_HideMatchWarning}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{NoticesFilter\_HideMatchWarning}{NoticesFilter\_HideMatchWarning}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Notices\+Filter\+\_\+\+Hide\+Match\+Warning}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a989683dd6f87bc55db4da8262a51092d}\label{struct_c_u_i_config_a989683dd6f87bc55db4da8262a51092d}} 
+\index{CUIConfig@{CUIConfig}!NoticesFilter\_HidePlayerInfo@{NoticesFilter\_HidePlayerInfo}}
+\index{NoticesFilter\_HidePlayerInfo@{NoticesFilter\_HidePlayerInfo}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{NoticesFilter\_HidePlayerInfo}{NoticesFilter\_HidePlayerInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Notices\+Filter\+\_\+\+Hide\+Player\+Info}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a0de0e2010d45d966e98f27999054198b}\label{struct_c_u_i_config_a0de0e2010d45d966e98f27999054198b}} 
+\index{CUIConfig@{CUIConfig}!NoticesFilter\_HidePlayerInfoIfNotMe@{NoticesFilter\_HidePlayerInfoIfNotMe}}
+\index{NoticesFilter\_HidePlayerInfoIfNotMe@{NoticesFilter\_HidePlayerInfoIfNotMe}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{NoticesFilter\_HidePlayerInfoIfNotMe}{NoticesFilter\_HidePlayerInfoIfNotMe}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Notices\+Filter\+\_\+\+Hide\+Player\+Info\+If\+Not\+Me}
+
+\mbox{\Hypertarget{struct_c_u_i_config_aa327b1606685e97999cbfa8059fda263}\label{struct_c_u_i_config_aa327b1606685e97999cbfa8059fda263}} 
+\index{CUIConfig@{CUIConfig}!NoticesFilter\_HidePlayerWarning@{NoticesFilter\_HidePlayerWarning}}
+\index{NoticesFilter\_HidePlayerWarning@{NoticesFilter\_HidePlayerWarning}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{NoticesFilter\_HidePlayerWarning}{NoticesFilter\_HidePlayerWarning}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Notices\+Filter\+\_\+\+Hide\+Player\+Warning}
+
+\mbox{\Hypertarget{struct_c_u_i_config_abf5751bef01b9abc7cea87cdba5e0c77}\label{struct_c_u_i_config_abf5751bef01b9abc7cea87cdba5e0c77}} 
+\index{CUIConfig@{CUIConfig}!NoticesFilter\_HidePlayerWarningIfNotMe@{NoticesFilter\_HidePlayerWarningIfNotMe}}
+\index{NoticesFilter\_HidePlayerWarningIfNotMe@{NoticesFilter\_HidePlayerWarningIfNotMe}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{NoticesFilter\_HidePlayerWarningIfNotMe}{NoticesFilter\_HidePlayerWarningIfNotMe}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Notices\+Filter\+\_\+\+Hide\+Player\+Warning\+If\+Not\+Me}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a63daaaad724e23d8f3e8d124e2023f0c}\label{struct_c_u_i_config_a63daaaad724e23d8f3e8d124e2023f0c}} 
+\index{CUIConfig@{CUIConfig}!NoticesFilter\_LevelToShowAsBigMessage@{NoticesFilter\_LevelToShowAsBigMessage}}
+\index{NoticesFilter\_LevelToShowAsBigMessage@{NoticesFilter\_LevelToShowAsBigMessage}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{NoticesFilter\_LevelToShowAsBigMessage}{NoticesFilter\_LevelToShowAsBigMessage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_aad2dd70b3a1d5d075eb966f31a020bbe}{E\+Notice\+Level}} C\+U\+I\+Config\+::\+Notices\+Filter\+\_\+\+Level\+To\+Show\+As\+Big\+Message}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a771b7e8221bcd0e20569d8679ba24d51}\label{struct_c_u_i_config_a771b7e8221bcd0e20569d8679ba24d51}} 
+\index{CUIConfig@{CUIConfig}!OpposingTeamLabelsShowGauges@{OpposingTeamLabelsShowGauges}}
+\index{OpposingTeamLabelsShowGauges@{OpposingTeamLabelsShowGauges}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OpposingTeamLabelsShowGauges}{OpposingTeamLabelsShowGauges}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} C\+U\+I\+Config\+::\+Opposing\+Team\+Labels\+Show\+Gauges}
+
+\mbox{\Hypertarget{struct_c_u_i_config_aef4c3391c644d8fbfaab1cfab64b608b}\label{struct_c_u_i_config_aef4c3391c644d8fbfaab1cfab64b608b}} 
+\index{CUIConfig@{CUIConfig}!OpposingTeamLabelsShowNames@{OpposingTeamLabelsShowNames}}
+\index{OpposingTeamLabelsShowNames@{OpposingTeamLabelsShowNames}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OpposingTeamLabelsShowNames}{OpposingTeamLabelsShowNames}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} C\+U\+I\+Config\+::\+Opposing\+Team\+Labels\+Show\+Names}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ac07cb67c9e741ad738d731921643e4af}\label{struct_c_u_i_config_ac07cb67c9e741ad738d731921643e4af}} 
+\index{CUIConfig@{CUIConfig}!OpposingTeamLabelsVisibility@{OpposingTeamLabelsVisibility}}
+\index{OpposingTeamLabelsVisibility@{OpposingTeamLabelsVisibility}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OpposingTeamLabelsVisibility}{OpposingTeamLabelsVisibility}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7}{E\+Labels\+Visibility}} C\+U\+I\+Config\+::\+Opposing\+Team\+Labels\+Visibility}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a49f9779973a9dc724d423eba43adb204}\label{struct_c_u_i_config_a49f9779973a9dc724d423eba43adb204}} 
+\index{CUIConfig@{CUIConfig}!OverlayChatHideAvatar@{OverlayChatHideAvatar}}
+\index{OverlayChatHideAvatar@{OverlayChatHideAvatar}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayChatHideAvatar}{OverlayChatHideAvatar}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Chat\+Hide\+Avatar}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a9b5e9798078146c75f069c6b17e8d907}\label{struct_c_u_i_config_a9b5e9798078146c75f069c6b17e8d907}} 
+\index{CUIConfig@{CUIConfig}!OverlayChatLineCount@{OverlayChatLineCount}}
+\index{OverlayChatLineCount@{OverlayChatLineCount}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayChatLineCount}{OverlayChatLineCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Overlay\+Chat\+Line\+Count}
+
+Values in range (0 -\/ 40) \mbox{\Hypertarget{struct_c_u_i_config_a2c9ea590b0a30bf724152dbf1a2291a0}\label{struct_c_u_i_config_a2c9ea590b0a30bf724152dbf1a2291a0}} 
+\index{CUIConfig@{CUIConfig}!OverlayChatOffset@{OverlayChatOffset}}
+\index{OverlayChatOffset@{OverlayChatOffset}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayChatOffset}{OverlayChatOffset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vec2}{Vec2}} C\+U\+I\+Config\+::\+Overlay\+Chat\+Offset}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a42c25ad16cd40859eb618e10e0aee9e9}\label{struct_c_u_i_config_a42c25ad16cd40859eb618e10e0aee9e9}} 
+\index{CUIConfig@{CUIConfig}!OverlayHide321Go@{OverlayHide321Go}}
+\index{OverlayHide321Go@{OverlayHide321Go}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHide321Go}{OverlayHide321Go}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide321\+Go}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a75051505a2b0d77d6f6c9ac2fbdcd617}\label{struct_c_u_i_config_a75051505a2b0d77d6f6c9ac2fbdcd617}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideBackground@{OverlayHideBackground}}
+\index{OverlayHideBackground@{OverlayHideBackground}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideBackground}{OverlayHideBackground}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Background}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a7592e7850734856e115a95f4533d4f71}\label{struct_c_u_i_config_a7592e7850734856e115a95f4533d4f71}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideChat@{OverlayHideChat}}
+\index{OverlayHideChat@{OverlayHideChat}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideChat}{OverlayHideChat}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Chat}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a2b84c59e64a409a90e8caba62397857d}\label{struct_c_u_i_config_a2b84c59e64a409a90e8caba62397857d}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideCheckPointList@{OverlayHideCheckPointList}}
+\index{OverlayHideCheckPointList@{OverlayHideCheckPointList}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideCheckPointList}{OverlayHideCheckPointList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Check\+Point\+List}
+
+\mbox{\Hypertarget{struct_c_u_i_config_af78de7d94a1c75967f751f9a1d825f3b}\label{struct_c_u_i_config_af78de7d94a1c75967f751f9a1d825f3b}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideCheckPointTime@{OverlayHideCheckPointTime}}
+\index{OverlayHideCheckPointTime@{OverlayHideCheckPointTime}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideCheckPointTime}{OverlayHideCheckPointTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Check\+Point\+Time}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a459316903dbf38d91c0a62f974745151}\label{struct_c_u_i_config_a459316903dbf38d91c0a62f974745151}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideChrono@{OverlayHideChrono}}
+\index{OverlayHideChrono@{OverlayHideChrono}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideChrono}{OverlayHideChrono}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Chrono}
+
+\mbox{\Hypertarget{struct_c_u_i_config_aadcd7de9964ac2968f32373148db23d0}\label{struct_c_u_i_config_aadcd7de9964ac2968f32373148db23d0}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideConsumables@{OverlayHideConsumables}}
+\index{OverlayHideConsumables@{OverlayHideConsumables}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideConsumables}{OverlayHideConsumables}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Consumables}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a8ab172425b873cec5834cdc76c1c4fa9}\label{struct_c_u_i_config_a8ab172425b873cec5834cdc76c1c4fa9}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideCountdown@{OverlayHideCountdown}}
+\index{OverlayHideCountdown@{OverlayHideCountdown}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideCountdown}{OverlayHideCountdown}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Countdown}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a055406a1982b206e7a5b2a05e85cf835}\label{struct_c_u_i_config_a055406a1982b206e7a5b2a05e85cf835}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideCrosshair@{OverlayHideCrosshair}}
+\index{OverlayHideCrosshair@{OverlayHideCrosshair}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideCrosshair}{OverlayHideCrosshair}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Crosshair}
+
+\mbox{\Hypertarget{struct_c_u_i_config_abea3a00b179b21107c9ec50addce8542}\label{struct_c_u_i_config_abea3a00b179b21107c9ec50addce8542}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideEndMapLadderRecap@{OverlayHideEndMapLadderRecap}}
+\index{OverlayHideEndMapLadderRecap@{OverlayHideEndMapLadderRecap}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideEndMapLadderRecap}{OverlayHideEndMapLadderRecap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+End\+Map\+Ladder\+Recap}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a695f6b04d839443f3cbde86530cd0149}\label{struct_c_u_i_config_a695f6b04d839443f3cbde86530cd0149}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideGauges@{OverlayHideGauges}}
+\index{OverlayHideGauges@{OverlayHideGauges}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideGauges}{OverlayHideGauges}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Gauges}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a74b579f61c801a4f433d8854547d0a56}\label{struct_c_u_i_config_a74b579f61c801a4f433d8854547d0a56}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideMapInfo@{OverlayHideMapInfo}}
+\index{OverlayHideMapInfo@{OverlayHideMapInfo}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideMapInfo}{OverlayHideMapInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Map\+Info}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a1eadf5e87e45881a0d2eeeeb2af80a28}\label{struct_c_u_i_config_a1eadf5e87e45881a0d2eeeeb2af80a28}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideMultilapInfos@{OverlayHideMultilapInfos}}
+\index{OverlayHideMultilapInfos@{OverlayHideMultilapInfos}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideMultilapInfos}{OverlayHideMultilapInfos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Multilap\+Infos}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a40c546a10466c383b2f76139036c6455}\label{struct_c_u_i_config_a40c546a10466c383b2f76139036c6455}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideNotices@{OverlayHideNotices}}
+\index{OverlayHideNotices@{OverlayHideNotices}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideNotices}{OverlayHideNotices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Notices}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a31a0f8012f364470a6aace15fa712967}\label{struct_c_u_i_config_a31a0f8012f364470a6aace15fa712967}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideOpponentsInfo@{OverlayHideOpponentsInfo}}
+\index{OverlayHideOpponentsInfo@{OverlayHideOpponentsInfo}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideOpponentsInfo}{OverlayHideOpponentsInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Opponents\+Info}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a4fd0d192a74b9d7fe65e700beedeecb4}\label{struct_c_u_i_config_a4fd0d192a74b9d7fe65e700beedeecb4}} 
+\index{CUIConfig@{CUIConfig}!OverlayHidePersonnalBestAndRank@{OverlayHidePersonnalBestAndRank}}
+\index{OverlayHidePersonnalBestAndRank@{OverlayHidePersonnalBestAndRank}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHidePersonnalBestAndRank}{OverlayHidePersonnalBestAndRank}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Personnal\+Best\+And\+Rank}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a82af32b8cb8c26931eb5bef3bd02db12}\label{struct_c_u_i_config_a82af32b8cb8c26931eb5bef3bd02db12}} 
+\index{CUIConfig@{CUIConfig}!OverlayHidePosition@{OverlayHidePosition}}
+\index{OverlayHidePosition@{OverlayHidePosition}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHidePosition}{OverlayHidePosition}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Position}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a156ec9f9da451a2f23f876f47e693a46}\label{struct_c_u_i_config_a156ec9f9da451a2f23f876f47e693a46}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideRoundScores@{OverlayHideRoundScores}}
+\index{OverlayHideRoundScores@{OverlayHideRoundScores}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideRoundScores}{OverlayHideRoundScores}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Round\+Scores}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ac8cb9b247c49ec2c1fcd9c1766b9b2fc}\label{struct_c_u_i_config_ac8cb9b247c49ec2c1fcd9c1766b9b2fc}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideSpectatorControllers@{OverlayHideSpectatorControllers}}
+\index{OverlayHideSpectatorControllers@{OverlayHideSpectatorControllers}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideSpectatorControllers}{OverlayHideSpectatorControllers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Spectator\+Controllers}
+
+\mbox{\Hypertarget{struct_c_u_i_config_acedbc8d646e9c849a4c65f9e8c854e37}\label{struct_c_u_i_config_acedbc8d646e9c849a4c65f9e8c854e37}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideSpectatorInfos@{OverlayHideSpectatorInfos}}
+\index{OverlayHideSpectatorInfos@{OverlayHideSpectatorInfos}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideSpectatorInfos}{OverlayHideSpectatorInfos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Spectator\+Infos}
+
+\mbox{\Hypertarget{struct_c_u_i_config_aceb275ffb351bd2d517ac19b72da40d0}\label{struct_c_u_i_config_aceb275ffb351bd2d517ac19b72da40d0}} 
+\index{CUIConfig@{CUIConfig}!OverlayHideSpeedAndDist@{OverlayHideSpeedAndDist}}
+\index{OverlayHideSpeedAndDist@{OverlayHideSpeedAndDist}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayHideSpeedAndDist}{OverlayHideSpeedAndDist}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Hide\+Speed\+And\+Dist}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a887f9aab7ebdb6482ee560eed4daeee8}\label{struct_c_u_i_config_a887f9aab7ebdb6482ee560eed4daeee8}} 
+\index{CUIConfig@{CUIConfig}!OverlayScoreSummary@{OverlayScoreSummary}}
+\index{OverlayScoreSummary@{OverlayScoreSummary}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{OverlayScoreSummary}{OverlayScoreSummary}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Overlay\+Score\+Summary}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a4590ecafdc4b6689b2680ad1c072057e}\label{struct_c_u_i_config_a4590ecafdc4b6689b2680ad1c072057e}} 
+\index{CUIConfig@{CUIConfig}!ScoreSummary\_Gauge1@{ScoreSummary\_Gauge1}}
+\index{ScoreSummary\_Gauge1@{ScoreSummary\_Gauge1}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreSummary\_Gauge1}{ScoreSummary\_Gauge1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} C\+U\+I\+Config\+::\+Score\+Summary\+\_\+\+Gauge1}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a577794820b3f7719c69164c1213b5eb2}\label{struct_c_u_i_config_a577794820b3f7719c69164c1213b5eb2}} 
+\index{CUIConfig@{CUIConfig}!ScoreSummary\_Gauge2@{ScoreSummary\_Gauge2}}
+\index{ScoreSummary\_Gauge2@{ScoreSummary\_Gauge2}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreSummary\_Gauge2}{ScoreSummary\_Gauge2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} C\+U\+I\+Config\+::\+Score\+Summary\+\_\+\+Gauge2}
+
+\mbox{\Hypertarget{struct_c_u_i_config_aa83a347c4412b3515d926c9fe7514e56}\label{struct_c_u_i_config_aa83a347c4412b3515d926c9fe7514e56}} 
+\index{CUIConfig@{CUIConfig}!ScoreSummary\_MatchPoints1@{ScoreSummary\_MatchPoints1}}
+\index{ScoreSummary\_MatchPoints1@{ScoreSummary\_MatchPoints1}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreSummary\_MatchPoints1}{ScoreSummary\_MatchPoints1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Score\+Summary\+\_\+\+Match\+Points1}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a78b96f3091196552b476d9cb10f43374}\label{struct_c_u_i_config_a78b96f3091196552b476d9cb10f43374}} 
+\index{CUIConfig@{CUIConfig}!ScoreSummary\_MatchPoints2@{ScoreSummary\_MatchPoints2}}
+\index{ScoreSummary\_MatchPoints2@{ScoreSummary\_MatchPoints2}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreSummary\_MatchPoints2}{ScoreSummary\_MatchPoints2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Score\+Summary\+\_\+\+Match\+Points2}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a86c94e82cb2c64874cdb80418db97592}\label{struct_c_u_i_config_a86c94e82cb2c64874cdb80418db97592}} 
+\index{CUIConfig@{CUIConfig}!ScoreSummary\_Player1@{ScoreSummary\_Player1}}
+\index{ScoreSummary\_Player1@{ScoreSummary\_Player1}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreSummary\_Player1}{ScoreSummary\_Player1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+U\+I\+Config\+::\+Score\+Summary\+\_\+\+Player1}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a9b9b11872617d35bdf06806b9687bb61}\label{struct_c_u_i_config_a9b9b11872617d35bdf06806b9687bb61}} 
+\index{CUIConfig@{CUIConfig}!ScoreSummary\_Player2@{ScoreSummary\_Player2}}
+\index{ScoreSummary\_Player2@{ScoreSummary\_Player2}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreSummary\_Player2}{ScoreSummary\_Player2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+U\+I\+Config\+::\+Score\+Summary\+\_\+\+Player2}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a16dcd2fc071f373712077646962e1b4e}\label{struct_c_u_i_config_a16dcd2fc071f373712077646962e1b4e}} 
+\index{CUIConfig@{CUIConfig}!ScoreSummary\_Points1@{ScoreSummary\_Points1}}
+\index{ScoreSummary\_Points1@{ScoreSummary\_Points1}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreSummary\_Points1}{ScoreSummary\_Points1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Score\+Summary\+\_\+\+Points1}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a018c30521a193306b4272de34acad0a0}\label{struct_c_u_i_config_a018c30521a193306b4272de34acad0a0}} 
+\index{CUIConfig@{CUIConfig}!ScoreSummary\_Points2@{ScoreSummary\_Points2}}
+\index{ScoreSummary\_Points2@{ScoreSummary\_Points2}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreSummary\_Points2}{ScoreSummary\_Points2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Score\+Summary\+\_\+\+Points2}
+
+\mbox{\Hypertarget{struct_c_u_i_config_acb0bdedbd29fbe10cfe7edf712bfaea1}\label{struct_c_u_i_config_acb0bdedbd29fbe10cfe7edf712bfaea1}} 
+\index{CUIConfig@{CUIConfig}!ScoreSummary\_RoundPoints1@{ScoreSummary\_RoundPoints1}}
+\index{ScoreSummary\_RoundPoints1@{ScoreSummary\_RoundPoints1}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreSummary\_RoundPoints1}{ScoreSummary\_RoundPoints1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Score\+Summary\+\_\+\+Round\+Points1}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a835e9a41e804c2468d86553a267b2358}\label{struct_c_u_i_config_a835e9a41e804c2468d86553a267b2358}} 
+\index{CUIConfig@{CUIConfig}!ScoreSummary\_RoundPoints2@{ScoreSummary\_RoundPoints2}}
+\index{ScoreSummary\_RoundPoints2@{ScoreSummary\_RoundPoints2}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreSummary\_RoundPoints2}{ScoreSummary\_RoundPoints2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Score\+Summary\+\_\+\+Round\+Points2}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a855564129bd74e10be9fe7d4a82a323d}\label{struct_c_u_i_config_a855564129bd74e10be9fe7d4a82a323d}} 
+\index{CUIConfig@{CUIConfig}!ScoreTable@{ScoreTable}}
+\index{ScoreTable@{ScoreTable}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreTable}{ScoreTable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+Score\+Table}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a89caa3a55a26f35483bddd062256511a}\label{struct_c_u_i_config_a89caa3a55a26f35483bddd062256511a}} 
+\index{CUIConfig@{CUIConfig}!ScoreTableOnlyManialink@{ScoreTableOnlyManialink}}
+\index{ScoreTableOnlyManialink@{ScoreTableOnlyManialink}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreTableOnlyManialink}{ScoreTableOnlyManialink}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Score\+Table\+Only\+Manialink}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a9c68f2d008c8ef1932acb6efc56564cd}\label{struct_c_u_i_config_a9c68f2d008c8ef1932acb6efc56564cd}} 
+\index{CUIConfig@{CUIConfig}!ScoreTableVisibility@{ScoreTableVisibility}}
+\index{ScoreTableVisibility@{ScoreTableVisibility}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScoreTableVisibility}{ScoreTableVisibility}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} C\+U\+I\+Config\+::\+Score\+Table\+Visibility}
+
+\mbox{\Hypertarget{struct_c_u_i_config_adb3a904d6b76dbc8ded745a204507801}\label{struct_c_u_i_config_adb3a904d6b76dbc8ded745a204507801}} 
+\index{CUIConfig@{CUIConfig}!ScreenIn3dHideScoreSummary@{ScreenIn3dHideScoreSummary}}
+\index{ScreenIn3dHideScoreSummary@{ScreenIn3dHideScoreSummary}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScreenIn3dHideScoreSummary}{ScreenIn3dHideScoreSummary}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Screen\+In3d\+Hide\+Score\+Summary}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a3dfeeb00b9f0a1c17f216eeb2f90f1af}\label{struct_c_u_i_config_a3dfeeb00b9f0a1c17f216eeb2f90f1af}} 
+\index{CUIConfig@{CUIConfig}!ScreenIn3dHideVersus@{ScreenIn3dHideVersus}}
+\index{ScreenIn3dHideVersus@{ScreenIn3dHideVersus}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{ScreenIn3dHideVersus}{ScreenIn3dHideVersus}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+Screen\+In3d\+Hide\+Versus}
+
+\mbox{\Hypertarget{struct_c_u_i_config_af44d412c757c48bf280d94d6c1785ada}\label{struct_c_u_i_config_af44d412c757c48bf280d94d6c1785ada}} 
+\index{CUIConfig@{CUIConfig}!SmallScoreTable@{SmallScoreTable}}
+\index{SmallScoreTable@{SmallScoreTable}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SmallScoreTable}{SmallScoreTable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+Small\+Score\+Table}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a6288ea5c87f954d00ac02a8828c0fda7}\label{struct_c_u_i_config_a6288ea5c87f954d00ac02a8828c0fda7}} 
+\index{CUIConfig@{CUIConfig}!SmallScoreTableVisibility@{SmallScoreTableVisibility}}
+\index{SmallScoreTableVisibility@{SmallScoreTableVisibility}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SmallScoreTableVisibility}{SmallScoreTableVisibility}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} C\+U\+I\+Config\+::\+Small\+Score\+Table\+Visibility}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ab16da3435fa8421f5bf85c93db517c4c}\label{struct_c_u_i_config_ab16da3435fa8421f5bf85c93db517c4c}} 
+\index{CUIConfig@{CUIConfig}!SpectatorAutoTarget@{SpectatorAutoTarget}}
+\index{SpectatorAutoTarget@{SpectatorAutoTarget}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SpectatorAutoTarget}{SpectatorAutoTarget}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+U\+I\+Config\+::\+Spectator\+Auto\+Target}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ad81c3f5065f3611680b888c83b66ca94}\label{struct_c_u_i_config_ad81c3f5065f3611680b888c83b66ca94}} 
+\index{CUIConfig@{CUIConfig}!SpectatorCamAutoLatitude@{SpectatorCamAutoLatitude}}
+\index{SpectatorCamAutoLatitude@{SpectatorCamAutoLatitude}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SpectatorCamAutoLatitude}{SpectatorCamAutoLatitude}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} C\+U\+I\+Config\+::\+Spectator\+Cam\+Auto\+Latitude}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a0f484315d96bae8407d95385a2efb7af}\label{struct_c_u_i_config_a0f484315d96bae8407d95385a2efb7af}} 
+\index{CUIConfig@{CUIConfig}!SpectatorCamAutoLongitude@{SpectatorCamAutoLongitude}}
+\index{SpectatorCamAutoLongitude@{SpectatorCamAutoLongitude}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SpectatorCamAutoLongitude}{SpectatorCamAutoLongitude}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} C\+U\+I\+Config\+::\+Spectator\+Cam\+Auto\+Longitude}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a4a7dc1985f93cc02f87daf46ff6fbbe1}\label{struct_c_u_i_config_a4a7dc1985f93cc02f87daf46ff6fbbe1}} 
+\index{CUIConfig@{CUIConfig}!SpectatorCamAutoRadius@{SpectatorCamAutoRadius}}
+\index{SpectatorCamAutoRadius@{SpectatorCamAutoRadius}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SpectatorCamAutoRadius}{SpectatorCamAutoRadius}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} C\+U\+I\+Config\+::\+Spectator\+Cam\+Auto\+Radius}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ad1a4bcdf120d2ff5aa5b761f54423645}\label{struct_c_u_i_config_ad1a4bcdf120d2ff5aa5b761f54423645}} 
+\index{CUIConfig@{CUIConfig}!SpectatorForceCameraType@{SpectatorForceCameraType}}
+\index{SpectatorForceCameraType@{SpectatorForceCameraType}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SpectatorForceCameraType}{SpectatorForceCameraType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Spectator\+Force\+Camera\+Type}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ab8e9afd675b0e9b8f5145399b5152996}\label{struct_c_u_i_config_ab8e9afd675b0e9b8f5145399b5152996}} 
+\index{CUIConfig@{CUIConfig}!SpectatorForcedClan@{SpectatorForcedClan}}
+\index{SpectatorForcedClan@{SpectatorForcedClan}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SpectatorForcedClan}{SpectatorForcedClan}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+Spectator\+Forced\+Clan}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a82be715996812d090f1ffff05c34625b}\label{struct_c_u_i_config_a82be715996812d090f1ffff05c34625b}} 
+\index{CUIConfig@{CUIConfig}!SpectatorForcedTarget@{SpectatorForcedTarget}}
+\index{SpectatorForcedTarget@{SpectatorForcedTarget}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SpectatorForcedTarget}{SpectatorForcedTarget}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+U\+I\+Config\+::\+Spectator\+Forced\+Target}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ae487c67ad6a4e0dcf406c427144350fa}\label{struct_c_u_i_config_ae487c67ad6a4e0dcf406c427144350fa}} 
+\index{CUIConfig@{CUIConfig}!SpectatorObserverMode@{SpectatorObserverMode}}
+\index{SpectatorObserverMode@{SpectatorObserverMode}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{SpectatorObserverMode}{SpectatorObserverMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_ab71668c42e1f9c0ab8f5b213389bfb24}{E\+Observer\+Mode}} C\+U\+I\+Config\+::\+Spectator\+Observer\+Mode}
+
+When not in spectator mode, allow/forbid to change the camera to observe other players. (in Trackmania there\textquotesingle{}s no \textquotesingle{}Manual\textquotesingle{} mode.) \mbox{\Hypertarget{struct_c_u_i_config_a4e2fb368fc735c8357e9446f3a1b0c85}\label{struct_c_u_i_config_a4e2fb368fc735c8357e9446f3a1b0c85}} 
+\index{CUIConfig@{CUIConfig}!StatusMessage@{StatusMessage}}
+\index{StatusMessage@{StatusMessage}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{StatusMessage}{StatusMessage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+Status\+Message}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a863a73305d9160ebd4f5ac2a47f6a49b}\label{struct_c_u_i_config_a863a73305d9160ebd4f5ac2a47f6a49b}} 
+\index{CUIConfig@{CUIConfig}!TeamLabelsShowGauges@{TeamLabelsShowGauges}}
+\index{TeamLabelsShowGauges@{TeamLabelsShowGauges}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{TeamLabelsShowGauges}{TeamLabelsShowGauges}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} C\+U\+I\+Config\+::\+Team\+Labels\+Show\+Gauges}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a9ae875128232ceac53f9ce600acb78b8}\label{struct_c_u_i_config_a9ae875128232ceac53f9ce600acb78b8}} 
+\index{CUIConfig@{CUIConfig}!TeamLabelsShowNames@{TeamLabelsShowNames}}
+\index{TeamLabelsShowNames@{TeamLabelsShowNames}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{TeamLabelsShowNames}{TeamLabelsShowNames}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_ad379dff55a76d1ef08477b7fd891393b}{E\+Visibility}} C\+U\+I\+Config\+::\+Team\+Labels\+Show\+Names}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a4e677a4b331247e0797b5976b5093ba5}\label{struct_c_u_i_config_a4e677a4b331247e0797b5976b5093ba5}} 
+\index{CUIConfig@{CUIConfig}!TeamLabelsVisibility@{TeamLabelsVisibility}}
+\index{TeamLabelsVisibility@{TeamLabelsVisibility}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{TeamLabelsVisibility}{TeamLabelsVisibility}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_a7b438c9e68ed142b7cbeb20126289fb7}{E\+Labels\+Visibility}} C\+U\+I\+Config\+::\+Team\+Labels\+Visibility}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a2179ccea555e6c6a2f6c6e383d41385d}\label{struct_c_u_i_config_a2179ccea555e6c6a2f6c6e383d41385d}} 
+\index{CUIConfig@{CUIConfig}!UILayers@{UILayers}}
+\index{UILayers@{UILayers}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{UILayers}{UILayers}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_u_i_layer}{C\+U\+I\+Layer}} \mbox{[}$\,$\mbox{]} C\+U\+I\+Config\+::\+U\+I\+Layers}
+
+\mbox{\Hypertarget{struct_c_u_i_config_af53b665aef6b2e6ad189b9b6ffaba654}\label{struct_c_u_i_config_af53b665aef6b2e6ad189b9b6ffaba654}} 
+\index{CUIConfig@{CUIConfig}!UISequence@{UISequence}}
+\index{UISequence@{UISequence}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{UISequence}{UISequence}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_a2bb50fe7f240513e0506421ea7cc829e}{E\+U\+I\+Sequence}} C\+U\+I\+Config\+::\+U\+I\+Sequence}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a7c1ad4669ffa4a5c5e81c53c14616a2f}\label{struct_c_u_i_config_a7c1ad4669ffa4a5c5e81c53c14616a2f}} 
+\index{CUIConfig@{CUIConfig}!UISequence\_CanSkipIntroMT@{UISequence\_CanSkipIntroMT}}
+\index{UISequence\_CanSkipIntroMT@{UISequence\_CanSkipIntroMT}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{UISequence\_CanSkipIntroMT}{UISequence\_CanSkipIntroMT}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+U\+I\+Sequence\+\_\+\+Can\+Skip\+Intro\+MT}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a663119c2524d2667d22a7d68167ad60b}\label{struct_c_u_i_config_a663119c2524d2667d22a7d68167ad60b}} 
+\index{CUIConfig@{CUIConfig}!UISequence\_CustomMTClip@{UISequence\_CustomMTClip}}
+\index{UISequence\_CustomMTClip@{UISequence\_CustomMTClip}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{UISequence\_CustomMTClip}{UISequence\_CustomMTClip}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+U\+I\+Sequence\+\_\+\+Custom\+M\+T\+Clip}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a5aa0c247197456e3a08fb47bf94ea4f5}\label{struct_c_u_i_config_a5aa0c247197456e3a08fb47bf94ea4f5}} 
+\index{CUIConfig@{CUIConfig}!UISequence\_CustomMTRefTime@{UISequence\_CustomMTRefTime}}
+\index{UISequence\_CustomMTRefTime@{UISequence\_CustomMTRefTime}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{UISequence\_CustomMTRefTime}{UISequence\_CustomMTRefTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+U\+I\+Config\+::\+U\+I\+Sequence\+\_\+\+Custom\+M\+T\+Ref\+Time}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a9a33583965dce359c0610c0a00855d84}\label{struct_c_u_i_config_a9a33583965dce359c0610c0a00855d84}} 
+\index{CUIConfig@{CUIConfig}!UISequence\_PodiumPlayersLose@{UISequence\_PodiumPlayersLose}}
+\index{UISequence\_PodiumPlayersLose@{UISequence\_PodiumPlayersLose}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{UISequence\_PodiumPlayersLose}{UISequence\_PodiumPlayersLose}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+U\+I\+Sequence\+\_\+\+Podium\+Players\+Lose}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a36cb5164c194f31633589a54d05515f3}\label{struct_c_u_i_config_a36cb5164c194f31633589a54d05515f3}} 
+\index{CUIConfig@{CUIConfig}!UISequence\_PodiumPlayersWin@{UISequence\_PodiumPlayersWin}}
+\index{UISequence\_PodiumPlayersWin@{UISequence\_PodiumPlayersWin}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{UISequence\_PodiumPlayersWin}{UISequence\_PodiumPlayersWin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+U\+I\+Config\+::\+U\+I\+Sequence\+\_\+\+Podium\+Players\+Win}
+
+\mbox{\Hypertarget{struct_c_u_i_config_ac389e6788419e7b0e25f8d981dab4756}\label{struct_c_u_i_config_ac389e6788419e7b0e25f8d981dab4756}} 
+\index{CUIConfig@{CUIConfig}!UISequenceIsCompleted@{UISequenceIsCompleted}}
+\index{UISequenceIsCompleted@{UISequenceIsCompleted}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{UISequenceIsCompleted}{UISequenceIsCompleted}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+U\+I\+Config\+::\+U\+I\+Sequence\+Is\+Completed}
+
+\mbox{\Hypertarget{struct_c_u_i_config_a8719d8165b4178ab7e5be3e237fbc705}\label{struct_c_u_i_config_a8719d8165b4178ab7e5be3e237fbc705}} 
+\index{CUIConfig@{CUIConfig}!UIStatus@{UIStatus}}
+\index{UIStatus@{UIStatus}!CUIConfig@{CUIConfig}}
+\doxysubsubsection{\texorpdfstring{UIStatus}{UIStatus}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config_a199222523d2efeb91fcca1948927da8c}{E\+U\+I\+Status}} C\+U\+I\+Config\+::\+U\+I\+Status}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{struct_c_task_result}{}\doxysection{C\+Task\+Result Struct Reference}
+\label{struct_c_task_result}\index{CTaskResult@{CTaskResult}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Task\+Result\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.666667cm]{struct_c_task_result}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_task_result_abde707fdaf46dad1653de82ca4126258}{Cancel}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_task_result_ac452826240f4af779f80f5526fd13140}{Id}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_task_result_aafe94d3c0226d5e6147eca39997e4e0e}{Is\+Processing}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_task_result_a8be2910c13ee628ebb587c3514769b2a}{Has\+Succeeded}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_task_result_afe64aff9fb277ce73ce65724263078df}{Has\+Failed}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_task_result_ad38cdc7f70da8fb0ffa3186178270c3d}{Is\+Canceled}}
+\item 
+const \mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_task_result_a8c99e2767b57b45deb3f61fe46c16c2d}{Error\+Type}}
+\item 
+const \mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_task_result_aaf03c0038403b79b7b72fee7a3c4dc58}{Error\+Code}}
+\item 
+const \mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_task_result_a7ab56fb301e207e8d49da118873526d4}{Error\+Description}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Asynchronous task result. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_task_result_abde707fdaf46dad1653de82ca4126258}\label{struct_c_task_result_abde707fdaf46dad1653de82ca4126258}} 
+\index{CTaskResult@{CTaskResult}!Cancel@{Cancel}}
+\index{Cancel@{Cancel}!CTaskResult@{CTaskResult}}
+\doxysubsubsection{\texorpdfstring{Cancel()}{Cancel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Task\+Result\+::\+Cancel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_task_result_aaf03c0038403b79b7b72fee7a3c4dc58}\label{struct_c_task_result_aaf03c0038403b79b7b72fee7a3c4dc58}} 
+\index{CTaskResult@{CTaskResult}!ErrorCode@{ErrorCode}}
+\index{ErrorCode@{ErrorCode}!CTaskResult@{CTaskResult}}
+\doxysubsubsection{\texorpdfstring{ErrorCode}{ErrorCode}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_text}{Text}} C\+Task\+Result\+::\+Error\+Code}
+
+Returns the code of the error if the task has failed. \mbox{\Hypertarget{struct_c_task_result_a7ab56fb301e207e8d49da118873526d4}\label{struct_c_task_result_a7ab56fb301e207e8d49da118873526d4}} 
+\index{CTaskResult@{CTaskResult}!ErrorDescription@{ErrorDescription}}
+\index{ErrorDescription@{ErrorDescription}!CTaskResult@{CTaskResult}}
+\doxysubsubsection{\texorpdfstring{ErrorDescription}{ErrorDescription}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_text}{Text}} C\+Task\+Result\+::\+Error\+Description}
+
+Returns the description of the error if the task has failed. \mbox{\Hypertarget{struct_c_task_result_a8c99e2767b57b45deb3f61fe46c16c2d}\label{struct_c_task_result_a8c99e2767b57b45deb3f61fe46c16c2d}} 
+\index{CTaskResult@{CTaskResult}!ErrorType@{ErrorType}}
+\index{ErrorType@{ErrorType}!CTaskResult@{CTaskResult}}
+\doxysubsubsection{\texorpdfstring{ErrorType}{ErrorType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_text}{Text}} C\+Task\+Result\+::\+Error\+Type}
+
+Returns the type of the error if the task has failed. \mbox{\Hypertarget{struct_c_task_result_afe64aff9fb277ce73ce65724263078df}\label{struct_c_task_result_afe64aff9fb277ce73ce65724263078df}} 
+\index{CTaskResult@{CTaskResult}!HasFailed@{HasFailed}}
+\index{HasFailed@{HasFailed}!CTaskResult@{CTaskResult}}
+\doxysubsubsection{\texorpdfstring{HasFailed}{HasFailed}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Task\+Result\+::\+Has\+Failed}
+
+Returns a boolean indicating if the task has failed or has been canceled. \mbox{\Hypertarget{struct_c_task_result_a8be2910c13ee628ebb587c3514769b2a}\label{struct_c_task_result_a8be2910c13ee628ebb587c3514769b2a}} 
+\index{CTaskResult@{CTaskResult}!HasSucceeded@{HasSucceeded}}
+\index{HasSucceeded@{HasSucceeded}!CTaskResult@{CTaskResult}}
+\doxysubsubsection{\texorpdfstring{HasSucceeded}{HasSucceeded}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Task\+Result\+::\+Has\+Succeeded}
+
+Returns a boolean indicating if the task has succeeded. \mbox{\Hypertarget{struct_c_task_result_ac452826240f4af779f80f5526fd13140}\label{struct_c_task_result_ac452826240f4af779f80f5526fd13140}} 
+\index{CTaskResult@{CTaskResult}!Id@{Id}}
+\index{Id@{Id}!CTaskResult@{CTaskResult}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_ident}{Ident}} C\+Task\+Result\+::\+Id}
+
+\mbox{\Hypertarget{struct_c_task_result_ad38cdc7f70da8fb0ffa3186178270c3d}\label{struct_c_task_result_ad38cdc7f70da8fb0ffa3186178270c3d}} 
+\index{CTaskResult@{CTaskResult}!IsCanceled@{IsCanceled}}
+\index{IsCanceled@{IsCanceled}!CTaskResult@{CTaskResult}}
+\doxysubsubsection{\texorpdfstring{IsCanceled}{IsCanceled}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Task\+Result\+::\+Is\+Canceled}
+
+Returns a boolean indicating if the task has been canceled. \mbox{\Hypertarget{struct_c_task_result_aafe94d3c0226d5e6147eca39997e4e0e}\label{struct_c_task_result_aafe94d3c0226d5e6147eca39997e4e0e}} 
+\index{CTaskResult@{CTaskResult}!IsProcessing@{IsProcessing}}
+\index{IsProcessing@{IsProcessing}!CTaskResult@{CTaskResult}}
+\doxysubsubsection{\texorpdfstring{IsProcessing}{IsProcessing}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Task\+Result\+::\+Is\+Processing}
+
+Returns a boolean indicating if the task is still processing. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{struct_c_mania_app_playground_common}{}\doxysection{C\+Mania\+App\+Playground\+Common Struct Reference}
+\label{struct_c_mania_app_playground_common}\index{CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Mania\+App\+Playground\+Common\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{struct_c_mania_app_playground_common}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_mania_app_playground_common_a67f186d6f08a851eda98e0ea76e2edc3}{Split\+Screen\+Assign\+Layer}} (\mbox{\hyperlink{struct_c_u_i_layer}{C\+U\+I\+Layer}} U\+I\+Layer, \mbox{\hyperlink{class_integer}{Integer}} Screen\+Num)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_c_mania_app_playground_event}{C\+Mania\+App\+Playground\+Event}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_mania_app_playground_common_a4d4884e970b0df4955255367ccbd268e}{Pending\+Events}}
+\item 
+const \mbox{\hyperlink{struct_c_playground_client}{C\+Playground\+Client}} \mbox{\hyperlink{struct_c_mania_app_playground_common_a37ab43d85288a12948aac9bba49d7b3b}{Playground}}
+\item 
+const \mbox{\hyperlink{struct_c_map}{C\+Map}} \mbox{\hyperlink{struct_c_mania_app_playground_common_a6b1cdd1867f48059e0367efb1135d601}{Map}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config}{C\+U\+I\+Config}} \mbox{\hyperlink{struct_c_mania_app_playground_common_a4113aa2ce5c98b3af18e9f72d442199e}{UI}}
+\item 
+\mbox{\hyperlink{struct_c_u_i_config}{C\+U\+I\+Config}} \mbox{\hyperlink{struct_c_mania_app_playground_common_a6037b1e2f261105912f5453f7a07e0c0}{Client\+UI}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_mania_app_playground_common_a199a754daed6db73c2b0c0b9ffe96f38}{Split\+Screen\+Count}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Supported declare modes \+: Local Persistent A\+PI for game interface client scripts 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_mania_app_playground_common_a67f186d6f08a851eda98e0ea76e2edc3}\label{struct_c_mania_app_playground_common_a67f186d6f08a851eda98e0ea76e2edc3}} 
+\index{CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}!SplitScreenAssignLayer@{SplitScreenAssignLayer}}
+\index{SplitScreenAssignLayer@{SplitScreenAssignLayer}!CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}}
+\doxysubsubsection{\texorpdfstring{SplitScreenAssignLayer()}{SplitScreenAssignLayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Mania\+App\+Playground\+Common\+::\+Split\+Screen\+Assign\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_u_i_layer}{C\+U\+I\+Layer}}}]{U\+I\+Layer,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Screen\+Num }\end{DoxyParamCaption})}
+
+Set a layer to be displayed on a subscreen. Screen\+Num\+: 0=global, 1,2.... = screen index. Limitation\+: a local layer can only be one screen at a time. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_mania_app_playground_common_a6037b1e2f261105912f5453f7a07e0c0}\label{struct_c_mania_app_playground_common_a6037b1e2f261105912f5453f7a07e0c0}} 
+\index{CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}!ClientUI@{ClientUI}}
+\index{ClientUI@{ClientUI}!CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}}
+\doxysubsubsection{\texorpdfstring{ClientUI}{ClientUI}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config}{C\+U\+I\+Config}} C\+Mania\+App\+Playground\+Common\+::\+Client\+UI}
+
+Locally accessible by the client script to locally override settings from the server. \mbox{\Hypertarget{struct_c_mania_app_playground_common_a6b1cdd1867f48059e0367efb1135d601}\label{struct_c_mania_app_playground_common_a6b1cdd1867f48059e0367efb1135d601}} 
+\index{CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}!Map@{Map}}
+\index{Map@{Map}!CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}}
+\doxysubsubsection{\texorpdfstring{Map}{Map}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_map}{C\+Map}} C\+Mania\+App\+Playground\+Common\+::\+Map}
+
+\mbox{\Hypertarget{struct_c_mania_app_playground_common_a4d4884e970b0df4955255367ccbd268e}\label{struct_c_mania_app_playground_common_a4d4884e970b0df4955255367ccbd268e}} 
+\index{CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}!PendingEvents@{PendingEvents}}
+\index{PendingEvents@{PendingEvents}!CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}}
+\doxysubsubsection{\texorpdfstring{PendingEvents}{PendingEvents}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_mania_app_playground_event}{C\+Mania\+App\+Playground\+Event}} \mbox{[}$\,$\mbox{]} C\+Mania\+App\+Playground\+Common\+::\+Pending\+Events}
+
+\mbox{\Hypertarget{struct_c_mania_app_playground_common_a37ab43d85288a12948aac9bba49d7b3b}\label{struct_c_mania_app_playground_common_a37ab43d85288a12948aac9bba49d7b3b}} 
+\index{CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}!Playground@{Playground}}
+\index{Playground@{Playground}!CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}}
+\doxysubsubsection{\texorpdfstring{Playground}{Playground}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_playground_client}{C\+Playground\+Client}} C\+Mania\+App\+Playground\+Common\+::\+Playground}
+
+\mbox{\Hypertarget{struct_c_mania_app_playground_common_a199a754daed6db73c2b0c0b9ffe96f38}\label{struct_c_mania_app_playground_common_a199a754daed6db73c2b0c0b9ffe96f38}} 
+\index{CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}!SplitScreenCount@{SplitScreenCount}}
+\index{SplitScreenCount@{SplitScreenCount}!CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}}
+\doxysubsubsection{\texorpdfstring{SplitScreenCount}{SplitScreenCount}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Mania\+App\+Playground\+Common\+::\+Split\+Screen\+Count}
+
+\mbox{\Hypertarget{struct_c_mania_app_playground_common_a4113aa2ce5c98b3af18e9f72d442199e}\label{struct_c_mania_app_playground_common_a4113aa2ce5c98b3af18e9f72d442199e}} 
+\index{CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}!UI@{UI}}
+\index{UI@{UI}!CManiaAppPlaygroundCommon@{CManiaAppPlaygroundCommon}}
+\doxysubsubsection{\texorpdfstring{UI}{UI}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_u_i_config}{C\+U\+I\+Config}} C\+Mania\+App\+Playground\+Common\+::\+UI}
+
+(read-\/only) UI actually displayed, as defined by the server. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

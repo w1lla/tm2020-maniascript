@@ -1,0 +1,231 @@
+\hypertarget{struct_c_editor_module}{}\doxysection{C\+Editor\+Module Struct Reference}
+\label{struct_c_editor_module}\index{CEditorModule@{CEditorModule}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Editor\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{struct_c_editor_module}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1}{E\+Module\+Type}} \{ \newline
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a2169197db2d54f62cf3f8bc0e7457b26}{Undefined}}, 
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a623aae8fa335b1f6be2f138f43580172}{Hud}}, 
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab1df72f3b1b0308cda93cecd9e4558fb}{Inventory}}, 
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a5aae916f3d8c6527021bb4a1d2aa699c}{Store}}, 
+\newline
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab001a78a769f65a37fba6a6dc03bdbad}{Scores\+Table}}, 
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a3b74037ea25507351eb8acce9b31447d}{Equipment}}, 
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a4948d12cada3589dd449195796f61ab0}{Menu\+Base}}, 
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a0519eabf3a459b62c1c79bca1e28323e}{Menu\+Page}}, 
+\newline
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab65a494d857f562729d3b1727e6a70ab}{Chrono}}, 
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a2a84b32fa6ec8b9ac42a15ed8334f8a3}{Speed\+Meter}}, 
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab53ab565522bdb25eb95bb92f92262d3}{Player\+State}}, 
+\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a7b96a6512da27c06a79cbb96b5686d6c}{Team\+State}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_editor_module_a4d816e550d1150eb07e7b9a99a9646a2}{New\+Module}} (\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1}{E\+Module\+Type}} Module\+Type)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_editor_module_a519271e6ba815afad08c6ddca57b46ed}{Open\+Module}} (\mbox{\hyperlink{class_text}{Text}} Path)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_editor_module_a95faf39b4ea0fbbed1176ad9de9adab0}{Save}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_editor_module_a58036f3dd9540ec218c6c56acbb6378f}{Save\+As}} (\mbox{\hyperlink{class_text}{Text}} Path)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_editor_module_a1a66f3a72108317fb11b7871c292c00b}{Save\+Copy\+As}} (\mbox{\hyperlink{class_text}{Text}} Path)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_editor_module_a625bd6400f1b6c42908a05fd34970473}{Force\+Exit}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_editor_module_ae67e3935d9f506cd634b0477443eab92}{Edited\+Playground\+Hud\+\_\+\+Set\+Preview\+Context}} (\mbox{\hyperlink{class_ident}{Ident}} Context\+Id)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_editor_module_a879be35aac9f43363f2638b29e1785d5}{File\+Browser\+\_\+\+Open}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_c_module_menu_model}{C\+Module\+Menu\+Model}} \mbox{\hyperlink{struct_c_editor_module_acc2670d4d8f57e5036f0870180cdbd42}{Edited\+Menu}}
+\item 
+const \mbox{\hyperlink{struct_c_module_menu_page_model}{C\+Module\+Menu\+Page\+Model}} \mbox{\hyperlink{struct_c_editor_module_a27503d6a5f740543566191aab34270e3}{Edited\+Menu\+Page}}
+\item 
+const \mbox{\hyperlink{struct_c_module_playground_hud_model}{C\+Module\+Playground\+Hud\+Model}} \mbox{\hyperlink{struct_c_editor_module_a64dfc09fd9cc24e6a6b0051a5021d2a6}{Edited\+Playground\+Hud}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_editor_module_ab8d097ea43725cbf9971e3a9d8c202fb}{File\+Browser\+\_\+\+Is\+Running}}
+\item 
+const \mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_editor_module_a07eeef620eaf86983c19a47f5533fbd3}{File\+Browser\+\_\+\+File\+Path}}
+\item 
+const \mbox{\hyperlink{struct_c_editor_plugin_module_event}{C\+Editor\+Plugin\+Module\+Event}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_editor_module_a83b0bab1010fedf57c6389b7995e0289}{Pending\+Events}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_editor_module_aae562ae1d82159cb120cf6a26c420c7b}{Is\+Preview\+Mode}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Supported declare modes \+: Metadata 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1}} 
+\index{CEditorModule@{CEditorModule}!EModuleType@{EModuleType}}
+\index{EModuleType@{EModuleType}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{EModuleType}{EModuleType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1}{C\+Editor\+Module\+::\+E\+Module\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Undefined@{Undefined}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!Undefined@{Undefined}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a2169197db2d54f62cf3f8bc0e7457b26}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a2169197db2d54f62cf3f8bc0e7457b26}} 
+Undefined&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Hud@{Hud}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!Hud@{Hud}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a623aae8fa335b1f6be2f138f43580172}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a623aae8fa335b1f6be2f138f43580172}} 
+Hud&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Inventory@{Inventory}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!Inventory@{Inventory}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab1df72f3b1b0308cda93cecd9e4558fb}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab1df72f3b1b0308cda93cecd9e4558fb}} 
+Inventory&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Store@{Store}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!Store@{Store}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a5aae916f3d8c6527021bb4a1d2aa699c}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a5aae916f3d8c6527021bb4a1d2aa699c}} 
+Store&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ScoresTable@{ScoresTable}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!ScoresTable@{ScoresTable}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab001a78a769f65a37fba6a6dc03bdbad}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab001a78a769f65a37fba6a6dc03bdbad}} 
+Scores\+Table&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Equipment@{Equipment}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!Equipment@{Equipment}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a3b74037ea25507351eb8acce9b31447d}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a3b74037ea25507351eb8acce9b31447d}} 
+Equipment&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MenuBase@{MenuBase}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!MenuBase@{MenuBase}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a4948d12cada3589dd449195796f61ab0}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a4948d12cada3589dd449195796f61ab0}} 
+Menu\+Base&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MenuPage@{MenuPage}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!MenuPage@{MenuPage}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a0519eabf3a459b62c1c79bca1e28323e}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a0519eabf3a459b62c1c79bca1e28323e}} 
+Menu\+Page&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Chrono@{Chrono}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!Chrono@{Chrono}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab65a494d857f562729d3b1727e6a70ab}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab65a494d857f562729d3b1727e6a70ab}} 
+Chrono&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpeedMeter@{SpeedMeter}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!SpeedMeter@{SpeedMeter}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a2a84b32fa6ec8b9ac42a15ed8334f8a3}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a2a84b32fa6ec8b9ac42a15ed8334f8a3}} 
+Speed\+Meter&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayerState@{PlayerState}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!PlayerState@{PlayerState}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab53ab565522bdb25eb95bb92f92262d3}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1ab53ab565522bdb25eb95bb92f92262d3}} 
+Player\+State&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TeamState@{TeamState}!CEditorModule@{CEditorModule}}\index{CEditorModule@{CEditorModule}!TeamState@{TeamState}}}\mbox{\Hypertarget{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a7b96a6512da27c06a79cbb96b5686d6c}\label{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1a7b96a6512da27c06a79cbb96b5686d6c}} 
+Team\+State&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_editor_module_ae67e3935d9f506cd634b0477443eab92}\label{struct_c_editor_module_ae67e3935d9f506cd634b0477443eab92}} 
+\index{CEditorModule@{CEditorModule}!EditedPlaygroundHud\_SetPreviewContext@{EditedPlaygroundHud\_SetPreviewContext}}
+\index{EditedPlaygroundHud\_SetPreviewContext@{EditedPlaygroundHud\_SetPreviewContext}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{EditedPlaygroundHud\_SetPreviewContext()}{EditedPlaygroundHud\_SetPreviewContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Editor\+Module\+::\+Edited\+Playground\+Hud\+\_\+\+Set\+Preview\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Context\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_editor_module_a879be35aac9f43363f2638b29e1785d5}\label{struct_c_editor_module_a879be35aac9f43363f2638b29e1785d5}} 
+\index{CEditorModule@{CEditorModule}!FileBrowser\_Open@{FileBrowser\_Open}}
+\index{FileBrowser\_Open@{FileBrowser\_Open}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{FileBrowser\_Open()}{FileBrowser\_Open()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Editor\+Module\+::\+File\+Browser\+\_\+\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_editor_module_a625bd6400f1b6c42908a05fd34970473}\label{struct_c_editor_module_a625bd6400f1b6c42908a05fd34970473}} 
+\index{CEditorModule@{CEditorModule}!ForceExit@{ForceExit}}
+\index{ForceExit@{ForceExit}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{ForceExit()}{ForceExit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Editor\+Module\+::\+Force\+Exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_editor_module_a4d816e550d1150eb07e7b9a99a9646a2}\label{struct_c_editor_module_a4d816e550d1150eb07e7b9a99a9646a2}} 
+\index{CEditorModule@{CEditorModule}!NewModule@{NewModule}}
+\index{NewModule@{NewModule}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{NewModule()}{NewModule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Editor\+Module\+::\+New\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_editor_module_a2f7873156c745148df4f05fc2b57c8c1}{E\+Module\+Type}}}]{Module\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_editor_module_a519271e6ba815afad08c6ddca57b46ed}\label{struct_c_editor_module_a519271e6ba815afad08c6ddca57b46ed}} 
+\index{CEditorModule@{CEditorModule}!OpenModule@{OpenModule}}
+\index{OpenModule@{OpenModule}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{OpenModule()}{OpenModule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Editor\+Module\+::\+Open\+Module (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_editor_module_a95faf39b4ea0fbbed1176ad9de9adab0}\label{struct_c_editor_module_a95faf39b4ea0fbbed1176ad9de9adab0}} 
+\index{CEditorModule@{CEditorModule}!Save@{Save}}
+\index{Save@{Save}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Editor\+Module\+::\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_editor_module_a58036f3dd9540ec218c6c56acbb6378f}\label{struct_c_editor_module_a58036f3dd9540ec218c6c56acbb6378f}} 
+\index{CEditorModule@{CEditorModule}!SaveAs@{SaveAs}}
+\index{SaveAs@{SaveAs}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{SaveAs()}{SaveAs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Editor\+Module\+::\+Save\+As (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_editor_module_a1a66f3a72108317fb11b7871c292c00b}\label{struct_c_editor_module_a1a66f3a72108317fb11b7871c292c00b}} 
+\index{CEditorModule@{CEditorModule}!SaveCopyAs@{SaveCopyAs}}
+\index{SaveCopyAs@{SaveCopyAs}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{SaveCopyAs()}{SaveCopyAs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Editor\+Module\+::\+Save\+Copy\+As (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Path }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_editor_module_acc2670d4d8f57e5036f0870180cdbd42}\label{struct_c_editor_module_acc2670d4d8f57e5036f0870180cdbd42}} 
+\index{CEditorModule@{CEditorModule}!EditedMenu@{EditedMenu}}
+\index{EditedMenu@{EditedMenu}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{EditedMenu}{EditedMenu}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_module_menu_model}{C\+Module\+Menu\+Model}} C\+Editor\+Module\+::\+Edited\+Menu}
+
+\mbox{\Hypertarget{struct_c_editor_module_a27503d6a5f740543566191aab34270e3}\label{struct_c_editor_module_a27503d6a5f740543566191aab34270e3}} 
+\index{CEditorModule@{CEditorModule}!EditedMenuPage@{EditedMenuPage}}
+\index{EditedMenuPage@{EditedMenuPage}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{EditedMenuPage}{EditedMenuPage}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_module_menu_page_model}{C\+Module\+Menu\+Page\+Model}} C\+Editor\+Module\+::\+Edited\+Menu\+Page}
+
+\mbox{\Hypertarget{struct_c_editor_module_a64dfc09fd9cc24e6a6b0051a5021d2a6}\label{struct_c_editor_module_a64dfc09fd9cc24e6a6b0051a5021d2a6}} 
+\index{CEditorModule@{CEditorModule}!EditedPlaygroundHud@{EditedPlaygroundHud}}
+\index{EditedPlaygroundHud@{EditedPlaygroundHud}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{EditedPlaygroundHud}{EditedPlaygroundHud}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_module_playground_hud_model}{C\+Module\+Playground\+Hud\+Model}} C\+Editor\+Module\+::\+Edited\+Playground\+Hud}
+
+\mbox{\Hypertarget{struct_c_editor_module_a07eeef620eaf86983c19a47f5533fbd3}\label{struct_c_editor_module_a07eeef620eaf86983c19a47f5533fbd3}} 
+\index{CEditorModule@{CEditorModule}!FileBrowser\_FilePath@{FileBrowser\_FilePath}}
+\index{FileBrowser\_FilePath@{FileBrowser\_FilePath}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{FileBrowser\_FilePath}{FileBrowser\_FilePath}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_text}{Text}} C\+Editor\+Module\+::\+File\+Browser\+\_\+\+File\+Path}
+
+\mbox{\Hypertarget{struct_c_editor_module_ab8d097ea43725cbf9971e3a9d8c202fb}\label{struct_c_editor_module_ab8d097ea43725cbf9971e3a9d8c202fb}} 
+\index{CEditorModule@{CEditorModule}!FileBrowser\_IsRunning@{FileBrowser\_IsRunning}}
+\index{FileBrowser\_IsRunning@{FileBrowser\_IsRunning}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{FileBrowser\_IsRunning}{FileBrowser\_IsRunning}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Editor\+Module\+::\+File\+Browser\+\_\+\+Is\+Running}
+
+\mbox{\Hypertarget{struct_c_editor_module_aae562ae1d82159cb120cf6a26c420c7b}\label{struct_c_editor_module_aae562ae1d82159cb120cf6a26c420c7b}} 
+\index{CEditorModule@{CEditorModule}!IsPreviewMode@{IsPreviewMode}}
+\index{IsPreviewMode@{IsPreviewMode}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{IsPreviewMode}{IsPreviewMode}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Editor\+Module\+::\+Is\+Preview\+Mode}
+
+\mbox{\Hypertarget{struct_c_editor_module_a83b0bab1010fedf57c6389b7995e0289}\label{struct_c_editor_module_a83b0bab1010fedf57c6389b7995e0289}} 
+\index{CEditorModule@{CEditorModule}!PendingEvents@{PendingEvents}}
+\index{PendingEvents@{PendingEvents}!CEditorModule@{CEditorModule}}
+\doxysubsubsection{\texorpdfstring{PendingEvents}{PendingEvents}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_editor_plugin_module_event}{C\+Editor\+Plugin\+Module\+Event}} \mbox{[}$\,$\mbox{]} C\+Editor\+Module\+::\+Pending\+Events}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

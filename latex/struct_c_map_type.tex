@@ -1,0 +1,151 @@
+\hypertarget{struct_c_map_type}{}\doxysection{C\+Map\+Type Struct Reference}
+\label{struct_c_map_type}\index{CMapType@{CMapType}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Map\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{struct_c_map_type}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03a}{Validation\+Status}} \{ \mbox{\hyperlink{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03aa66d30df7d133d1bea70a79cddb3249c5}{Not\+Validable}}, 
+\mbox{\hyperlink{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03aaecb44a5282737df71f0f333f9a52f2cf}{Validable}}, 
+\mbox{\hyperlink{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03aa4c7aa5e983bffeda4a6ba26f9d8c3863}{Validated}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_type_a181117e0a4f1dd340efd97b78d2fc06c}{Clear\+Map\+Metadata}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_type_a1e2f13a8d626c298eba860dbac167c79}{Request\+Enter\+Playground}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_type_a125ac76455f9d41f173786e4066e8293}{Request\+Leave\+Playground}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_map_type_a13d498b02d3df519abd87490353ea363}{Custom\+Edit\+Anchor\+Data}}
+\item 
+\mbox{\hyperlink{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03a}{Validation\+Status}} \mbox{\hyperlink{struct_c_map_type_adc2cb0388e0eca5c9524a8bd999bce33}{Validation\+Status}}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_map_type_ac4a06b7185edd41f1f16f681ca74bdc5}{Validability\+Requirements\+Message}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_map_type_a5c92267eeb90ed375b68b6f6033c44b9}{Validation\+End\+Requested}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_map_type_ae053bb6879002118ad605bd383c1a761}{Validation\+End\+No\+Confirm}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_map_type_a4e80f5dd4ec6efe471a8944f53251abe}{Is\+Switched\+To\+Playground}}
+\item 
+const \mbox{\hyperlink{struct_c_u_i_config_mgr}{C\+U\+I\+Config\+Mgr}} \mbox{\hyperlink{struct_c_map_type_ab8b31dc2aa20021ad30b864c7d05e74f}{U\+I\+Manager}}
+\item 
+const \mbox{\hyperlink{struct_c_user}{C\+User}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_map_type_ab5c44dd79945fc31f5e0bb7216f3c4f8}{Users}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Supported declare modes \+: Local Persistent A\+PI for the plugins of the map editor. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03a}\label{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03a}} 
+\index{CMapType@{CMapType}!ValidationStatus@{ValidationStatus}}
+\index{ValidationStatus@{ValidationStatus}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{ValidationStatus}{ValidationStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03a}{C\+Map\+Type\+::\+Validation\+Status}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotValidable@{NotValidable}!CMapType@{CMapType}}\index{CMapType@{CMapType}!NotValidable@{NotValidable}}}\mbox{\Hypertarget{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03aa66d30df7d133d1bea70a79cddb3249c5}\label{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03aa66d30df7d133d1bea70a79cddb3249c5}} 
+Not\+Validable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Validable@{Validable}!CMapType@{CMapType}}\index{CMapType@{CMapType}!Validable@{Validable}}}\mbox{\Hypertarget{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03aaecb44a5282737df71f0f333f9a52f2cf}\label{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03aaecb44a5282737df71f0f333f9a52f2cf}} 
+Validable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Validated@{Validated}!CMapType@{CMapType}}\index{CMapType@{CMapType}!Validated@{Validated}}}\mbox{\Hypertarget{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03aa4c7aa5e983bffeda4a6ba26f9d8c3863}\label{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03aa4c7aa5e983bffeda4a6ba26f9d8c3863}} 
+Validated&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_map_type_a181117e0a4f1dd340efd97b78d2fc06c}\label{struct_c_map_type_a181117e0a4f1dd340efd97b78d2fc06c}} 
+\index{CMapType@{CMapType}!ClearMapMetadata@{ClearMapMetadata}}
+\index{ClearMapMetadata@{ClearMapMetadata}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{ClearMapMetadata()}{ClearMapMetadata()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Type\+::\+Clear\+Map\+Metadata (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_type_a1e2f13a8d626c298eba860dbac167c79}\label{struct_c_map_type_a1e2f13a8d626c298eba860dbac167c79}} 
+\index{CMapType@{CMapType}!RequestEnterPlayground@{RequestEnterPlayground}}
+\index{RequestEnterPlayground@{RequestEnterPlayground}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{RequestEnterPlayground()}{RequestEnterPlayground()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Type\+::\+Request\+Enter\+Playground (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_type_a125ac76455f9d41f173786e4066e8293}\label{struct_c_map_type_a125ac76455f9d41f173786e4066e8293}} 
+\index{CMapType@{CMapType}!RequestLeavePlayground@{RequestLeavePlayground}}
+\index{RequestLeavePlayground@{RequestLeavePlayground}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{RequestLeavePlayground()}{RequestLeavePlayground()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Type\+::\+Request\+Leave\+Playground (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_map_type_a13d498b02d3df519abd87490353ea363}\label{struct_c_map_type_a13d498b02d3df519abd87490353ea363}} 
+\index{CMapType@{CMapType}!CustomEditAnchorData@{CustomEditAnchorData}}
+\index{CustomEditAnchorData@{CustomEditAnchorData}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{CustomEditAnchorData}{CustomEditAnchorData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Map\+Type\+::\+Custom\+Edit\+Anchor\+Data}
+
+\mbox{\Hypertarget{struct_c_map_type_a4e80f5dd4ec6efe471a8944f53251abe}\label{struct_c_map_type_a4e80f5dd4ec6efe471a8944f53251abe}} 
+\index{CMapType@{CMapType}!IsSwitchedToPlayground@{IsSwitchedToPlayground}}
+\index{IsSwitchedToPlayground@{IsSwitchedToPlayground}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{IsSwitchedToPlayground}{IsSwitchedToPlayground}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Map\+Type\+::\+Is\+Switched\+To\+Playground}
+
+\mbox{\Hypertarget{struct_c_map_type_ab8b31dc2aa20021ad30b864c7d05e74f}\label{struct_c_map_type_ab8b31dc2aa20021ad30b864c7d05e74f}} 
+\index{CMapType@{CMapType}!UIManager@{UIManager}}
+\index{UIManager@{UIManager}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{UIManager}{UIManager}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_u_i_config_mgr}{C\+U\+I\+Config\+Mgr}} C\+Map\+Type\+::\+U\+I\+Manager}
+
+\mbox{\Hypertarget{struct_c_map_type_ab5c44dd79945fc31f5e0bb7216f3c4f8}\label{struct_c_map_type_ab5c44dd79945fc31f5e0bb7216f3c4f8}} 
+\index{CMapType@{CMapType}!Users@{Users}}
+\index{Users@{Users}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{Users}{Users}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_user}{C\+User}} \mbox{[}$\,$\mbox{]} C\+Map\+Type\+::\+Users}
+
+\mbox{\Hypertarget{struct_c_map_type_ac4a06b7185edd41f1f16f681ca74bdc5}\label{struct_c_map_type_ac4a06b7185edd41f1f16f681ca74bdc5}} 
+\index{CMapType@{CMapType}!ValidabilityRequirementsMessage@{ValidabilityRequirementsMessage}}
+\index{ValidabilityRequirementsMessage@{ValidabilityRequirementsMessage}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{ValidabilityRequirementsMessage}{ValidabilityRequirementsMessage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+Map\+Type\+::\+Validability\+Requirements\+Message}
+
+\mbox{\Hypertarget{struct_c_map_type_ae053bb6879002118ad605bd383c1a761}\label{struct_c_map_type_ae053bb6879002118ad605bd383c1a761}} 
+\index{CMapType@{CMapType}!ValidationEndNoConfirm@{ValidationEndNoConfirm}}
+\index{ValidationEndNoConfirm@{ValidationEndNoConfirm}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{ValidationEndNoConfirm}{ValidationEndNoConfirm}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Map\+Type\+::\+Validation\+End\+No\+Confirm}
+
+\mbox{\Hypertarget{struct_c_map_type_a5c92267eeb90ed375b68b6f6033c44b9}\label{struct_c_map_type_a5c92267eeb90ed375b68b6f6033c44b9}} 
+\index{CMapType@{CMapType}!ValidationEndRequested@{ValidationEndRequested}}
+\index{ValidationEndRequested@{ValidationEndRequested}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{ValidationEndRequested}{ValidationEndRequested}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Map\+Type\+::\+Validation\+End\+Requested}
+
+\mbox{\Hypertarget{struct_c_map_type_adc2cb0388e0eca5c9524a8bd999bce33}\label{struct_c_map_type_adc2cb0388e0eca5c9524a8bd999bce33}} 
+\index{CMapType@{CMapType}!ValidationStatus@{ValidationStatus}}
+\index{ValidationStatus@{ValidationStatus}!CMapType@{CMapType}}
+\doxysubsubsection{\texorpdfstring{ValidationStatus}{ValidationStatus}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03a}{Validation\+Status}} \mbox{\hyperlink{struct_c_map_type_a35ddb5dcf9a886ee3fb05381555bd03a}{C\+Map\+Type\+::\+Validation\+Status}}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

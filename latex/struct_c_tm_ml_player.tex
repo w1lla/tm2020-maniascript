@@ -1,0 +1,1045 @@
+\hypertarget{struct_c_tm_ml_player}{}\doxysection{C\+Tm\+Ml\+Player Struct Reference}
+\label{struct_c_tm_ml_player}\index{CTmMlPlayer@{CTmMlPlayer}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Tm\+Ml\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{struct_c_tm_ml_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048}{E\+Race\+State}} \{ \mbox{\hyperlink{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a46d5e0ea7b28982d0354439d17e8c1f5}{Before\+Start}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a98675fcbaa595386e7a53bed9ad5989f}{Running}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a3205cb68af66aea20bbd1703a4bea7ab}{Finished}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a4ac11a60cc1b3e1070340353256ce5e3}{Eliminated}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8}{E\+Tm\+Bonus\+Mode\+Event\+Type}} \{ \newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ada7955cdf112ecb36e740f5bc5fe29ea}{None}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8aea5b1469f6fad7b818db766ca245a44d}{Bumps}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8a3411c7e6e6e7dbe99351da7bebe801a2}{Low\+Gravity}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8ad502030de41a9220c3715b697f7c246a}{Free\+Wheeling}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8ade60c58dfa01c428e70d2a8c93c2caed}{Locked\+Directions}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227}{E\+Scene\+Vehicle\+Phy\+Stunt\+Figure}} \{ \newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ada7955cdf112ecb36e740f5bc5fe29ea}{None}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a7d308f8933c63d18204b1174bee001d0}{Straight\+Jump}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a2e05db44953f1f426cd409a55ee9f1de}{Flip}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a1d1eef3ca1f490cc4b71432d1b0146fd}{Back\+Flip}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a0cadcc18beebac55fd54e75eb195ff08}{Spin}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a41772581b33ce3758438b322e75621f5}{Aerial}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a3b023f87ece833e915908c42a7a26dab}{Alley\+Oop}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4245c3a2cacd88b409f7f3051643197b}{Roll}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227abe7916e2179dd039ff57f64187558768}{Corkscrew}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ada2eb8ab6663384608bb6fc9653a7177}{Spin\+Off}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a080c84b69c381e46b6b1aa5ec4e7ce15}{Rodeo}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227af73d568d52bf6fc794424d526682c7e0}{Flip\+Flap}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a17fa4e895f54b6ef782c37de7b2f59ca}{Twister}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a6eafbeeab9e46e0b2558ec35882c5b1e}{Free\+Style}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ae201259508ede6f5c5d24f21f1ef2b64}{Spinning\+Mix}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4a53bfdef60f5fecc39f1b292ba7210f}{Flipping\+Chaos}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a5b1938189c453d99c2a163c8e0318afc}{Rolling\+Madness}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a478388320322c7c1f25260e8c0898c3a}{Wreck\+None}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a7e1c7088654e100b67c07de4e76097e7}{Wreck\+Straight\+Jump}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a5ff26f53070205e4f7354c750455e6f0}{Wreck\+Flip}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a7b1b1b2e4e29074abea0686371ce2666}{Wreck\+Back\+Flip}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227aef4d444b1837026f0fb008a3280bef2a}{Wreck\+Spin}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a44e8cc8ced3904dfe5ca0c13d463ab08}{Wreck\+Aerial}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ac9bdd1fb80eedee72b0cb195739cec52}{Wreck\+Alley\+Oop}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227aeedc86be262a129bbba75e836723aeb8}{Wreck\+Roll}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a6ef8e096359ab57df31b51a79987d8e7}{Wreck\+Corkscrew}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a2e5da0e099f79f16803bafc880e5072c}{Wreck\+Spin\+Off}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a02aebdbce3064f45315edb2a5e2049cd}{Wreck\+Rodeo}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a0c5243d7dfc833e766e840056cafaa7e}{Wreck\+Flip\+Flap}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4559d55acf751bf021cba4bf246b00f8}{Wreck\+Twister}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227af1d0712a3c92e9b34769c700f66668e3}{Wreck\+Free\+Style}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a49cda71640668db502ee528288705968}{Wreck\+Spinning\+Mix}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4969da5a8ba7e53014112cceae1273ef}{Wreck\+Flipping\+Chaos}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a86a9a0784b6538ad916a0348efb1489b}{Wreck\+Rolling\+Madness}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a8c15d88abbb05e61add688faf9e83b19}{Time\+Penalty}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ab2dcc1fd3364fafa1510269b4b7d81da}{Respawn\+Penalty}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a9b77e19a6c9565cfb11736df7ff057a7}{Grind}}, 
+\mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227aad8c0c8efaabbdca64ed60a538826b4d}{Reset}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a745405b507158a2b36c01b77d912e69c}{Current\+Clan}}
+\item 
+const \mbox{\hyperlink{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048}{E\+Race\+State}} \mbox{\hyperlink{struct_c_tm_ml_player_a44f6d6f0f776a7d50943e9f98ee86193}{Race\+State}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_a27c855dc568cb1037ec25ba57bc1be34}{Is\+Spawned}}
+\item 
+const \mbox{\hyperlink{struct_c_track_mania_score}{C\+Track\+Mania\+Score}} \mbox{\hyperlink{struct_c_tm_ml_player_a4446c0594856d1fc27b4e53536ec111c}{Score}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a1bece17602b2ee4096b9e9f85717008b}{Race\+Start\+Time}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_ae2c369a29de1df0ae8d38bb582a795f2}{Lap\+Start\+Time}}
+\item 
+\mbox{\hyperlink{struct_c_tm_result}{C\+Tm\+Result}} \mbox{\hyperlink{struct_c_tm_ml_player_a6aa8e5971f8be8b9f1a3dd26af60128a}{Cur\+Race}}
+\item 
+\mbox{\hyperlink{struct_c_tm_result}{C\+Tm\+Result}} \mbox{\hyperlink{struct_c_tm_ml_player_ad0d40130363194be4e52366e2222d4ce}{Cur\+Lap}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_aaa750a7dec575551bee7096d65518a9a}{Current\+Nb\+Laps}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_ab799c07e73c1aef79c1c7f0fdc79b79a}{Cur\+Trigger\+Index}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a3963a07789bbd2377d2386bafd467ef5}{Cur\+Checkpoint\+Race\+Time}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a558211b182da3b4fe3ae6036220d2b91}{Cur\+Checkpoint\+Lap\+Time}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a29adcece1e3e5ab6c48a52566171392b}{Coop\+Symbiosys\+Percent\+Total}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_abce4cfc007d4155d62e4f72e0723b270}{Coop\+Checkpoint\+Cur\+Controller}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_a75b4dc8ab8eabc5189b5b5abdd214e05}{Accel\+Coef}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_a32f0b6bed4478b8c3837132892020fdc}{Control\+Coef}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_a1bf58b35d1c7923ffe2edc90cda640ae}{Gravity\+Coef}}
+\item 
+const \mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{struct_c_tm_ml_player_a4ca1e858e0f7fc2e2e3ad263f504c6e0}{Position}}
+\item 
+const \mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{struct_c_tm_ml_player_ac2049a1e7933c7f44f4c842255f1c423}{Aim\+Direction}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_a65be3cfabf62db393fde883f92edd8d9}{Aim\+Yaw}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_ae2894a56d204a9142a949bb7c0e37d18}{Aim\+Pitch}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_afc750030e6222cabd2db07400f69865b}{Upwardness}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_ab1b51af3bb168bb260f8f22628fb35bc}{Cur\+Race\+Continuous\+Rank}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_a40aa671c01265fe5005afc98e90a3aa3}{Distance}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_a66712ca155545ab7f9bd20f1094f4eed}{Speed}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a360cd95bbf9f71685271f1b6ba5cf766}{Display\+Speed}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_aae43130cf48f1e0efb36347877334bb7}{Input\+Steer}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_aba6906049f966479e7cd4374fcff7755}{Input\+Gas\+Pedal}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_ae439f5aa8d4e4c60c0b0ccee3b2a230f}{Input\+Is\+Braking}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_afcaf797c56fccd5317aef53f5d9862e9}{Engine\+Rpm}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_aacf48cbe6ef34a7dd6380671e7bf21f6}{Engine\+Cur\+Gear}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_a2da12792043d74a13946fa7d7e98652f}{Engine\+Turbo\+Ratio}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a9e6395753c52f72522c103b60b3f162a}{Wheels\+Contact\+Count}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a94ba3081a2b636cc374d5a19228ad403}{Wheels\+Skidding\+Count}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_a342eb92ebc3dab56594001a16a2295bd}{Damage\+Hull\+Ratio}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_ade80501ac712e850cfb2780b8a112579}{Damage\+Window\+Ratio}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a845c161b853b946efaf0e650172b3f31}{In\+Water\+Duration}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a2abce8dbb99d3948c7b8a1492fb51c44}{Free\+Wheeling\+Duration}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a5d7b047631d71cdc44f2f6fb805a03c8}{Flying\+Duration}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a39e40575478c597bee12ca29314930f4}{Sparkling\+Duration}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_ae59c42b65f278b235e0498d81a394fa5}{Light\+Trails\+Duration}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_ae4b28f8d0cfddf82eaddb127a29215fd}{Skidding\+Duration}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_a5ebd68b122b53d1ed8e1c77e715356ca}{Skidding\+Distance}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_ad640c71fc45cc7af726ea4b8b65aa80b}{Flying\+Distance}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a247979f41696b11bf2b431a33ef4b914}{Handicap\+No\+Gas\+Duration}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a508f1ac61130769a7f4e84beba0b1a36}{Handicap\+Full\+Gas\+Duration}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a9e25b20e090088ffa295c4f28f43bbbc}{Handicap\+No\+Brakes\+Duration}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a2e1ef1e9538438ede0995098cffe7f84}{Handicap\+No\+Steering\+Duration}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_aa3344ac8f67d6208d2bfe27581fa1b9a}{Handicap\+No\+Grip\+Duration}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a0f0cc9b00f7867fa9dfb42d3a085da48}{Stunt\+Last\+Time}}
+\item 
+const \mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227}{E\+Scene\+Vehicle\+Phy\+Stunt\+Figure}} \mbox{\hyperlink{struct_c_tm_ml_player_aad841d5b3a01072697c3091cfd0be44a}{Stunt\+Last}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_aa7f611e4745cace52db37e0a645e7e24}{Stunt\+Angle}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a839b60cccc1da9e62d8b5772f07fb885}{Stunt\+Points}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_ab6045d23d58165d7a48c5a36f5cf0acf}{Stunt\+Combo}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_a56ece346536f9ee80663558077914cdc}{Stunt\+Factor}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_a90c1ebb0c80e11678b1e5dece47fd917}{Stunt\+Straight\+Landing}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_ad8063a2c5683b89b09ca7aaab8fadb92}{Stunt\+Reverse\+Landing}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_a4def62324056c096a03c96f43e103a95}{Stunt\+Perfect\+Landing}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_a7dcf7852911d572876a8560e289e2633}{Stunt\+Master\+Jump}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_a8463687043123292208cb4e6fef04cc9}{Stunt\+Master\+Landing}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_a50dc98fe60ccc22d1533ab98eecf955d}{Stunt\+Epic\+Landing}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_aa2e1c3f509d0508aea8cf024201fad97}{Stunt\+Is\+In\+Figure}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_ad91a77a5d95d3a644453e974d9c7961c}{Stunt\+Cur\+Figure\+Master\+Jump}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_a7f758a759bfb553fb2ece5a49a81983f}{Stunt\+Cur\+Figure\+Master\+Gauge}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_ml_player_ade08303ea0cc46b295e90d08005ef385}{Stunt\+Cur\+Figure\+Epic\+Gauge}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_afdc37239785028b57b75a3d3ed1efc79}{Stunt\+Cur\+Combo\+Chain\+Counter}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_ad989af7aed69f193dc941b85641ee7c4}{Time\+Left\+For\+Stunt\+Combo}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a4cfcc526abaf0846db730ca7100abad5}{Time\+Elapsed\+Since\+Last\+Stunt}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_a284c9d1cc4ae1ad242856902b4ec4a21}{Bonus\+Mode\+Is\+Jump}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_aff3faadd2c47681b7f024e925138fae4}{Bonus\+Mode\+Is\+Turbo}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_abc17efe777352cd69821af5be38cec68}{Bonus\+Mode\+Is\+Mini\+Car}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_ae71d836aadf9ed88e33e12d09ae29031}{Bonus\+Mode\+Is\+Big\+Car}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_aad87d9618027aa30cf4fbfe28863db84}{Bonus\+Mode\+Is\+Empty\+Cars}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_a6c01582aef314462df4205d41fa97fb1}{Bonus\+Mode\+Is\+Speedy\+Cars}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_aa44bf49d1fc48fa24efd4988c5003db6}{Bonus\+Mode\+Is\+Gold}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a6abfafd4c891e9ace0f54b5be2c10d35}{Bonus\+Mode\+Empty\+Cars\+Stock}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a6971b62f284fbeb8f161bfde443cedbe}{Bonus\+Mode\+Turbo\+Stock}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a00957e411bcf3f21a65debac2e9b4b5e}{Bonus\+Mode\+Jump\+Stock}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a2479e0dc1e701e60672cf95832292213}{Bonus\+Bump\+Cooldown}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_aa5d5ce9eaf321f95bef93c96097e535d}{Bonus\+Is\+Possible}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_afd5708d9fa6ac2625be5a28305e3ec36}{Bonus\+Mode\+Time\+Till\+Event}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a3add4dd547b9518688bb23b7cf64a1be}{Bonus\+Mode\+Time\+Till\+End\+Event}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_aed8d30fe71957a05118ee82fdcf2bf98}{Bonus\+Mode\+Time\+Till\+Event\+Warning}}
+\item 
+const \mbox{\hyperlink{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8}{E\+Tm\+Bonus\+Mode\+Event\+Type}} \mbox{\hyperlink{struct_c_tm_ml_player_a9c2bb30f4f5405d240b2fdb683be01ca}{Bonus\+Mode\+Event\+Type}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_a1fb5e7f37b0f7d73cae08b17d32f441b}{Bonus\+Mode\+Event\+Is\+Gold}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a70f1f7dffa5f57ab749cfe3b63cd4943}{Unique\+Camera\+Respawn\+Count}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a35d987268b97970135a91847891a3781}{Unique\+Camera\+Available\+Respawn\+Left}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_ab003e371033a86e3ab7bca850ba72094}{Time\+Till\+Smash\+Respawn}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_ad0cf32bf023a8e9b3abcc33905f592f8}{Time\+Till\+Smash\+Give\+Up}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_a61409338947ff9d6300b0fa45b1d6e96}{Smash\+Need\+Help}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_ml_player_a5496a3d290ec7074a6c2c28a549da862}{Time\+Before\+Deadly\+Zone}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_ml_player_a2c5ad0332d6ce84d0e38ddd5ab0d7961}{Is\+Deadly\+Zone\+Active}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Supported declare modes \+: Local Network\+Read Network\+Write Player for \mbox{\hyperlink{struct_c_tm_ml_script_ingame}{C\+Tm\+Ml\+Script\+Ingame}}. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048}\label{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!ERaceState@{ERaceState}}
+\index{ERaceState@{ERaceState}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{ERaceState}{ERaceState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048}{C\+Tm\+Ml\+Player\+::\+E\+Race\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BeforeStart@{BeforeStart}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!BeforeStart@{BeforeStart}}}\mbox{\Hypertarget{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a46d5e0ea7b28982d0354439d17e8c1f5}\label{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a46d5e0ea7b28982d0354439d17e8c1f5}} 
+Before\+Start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Running@{Running}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Running@{Running}}}\mbox{\Hypertarget{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a98675fcbaa595386e7a53bed9ad5989f}\label{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a98675fcbaa595386e7a53bed9ad5989f}} 
+Running&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Finished@{Finished}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Finished@{Finished}}}\mbox{\Hypertarget{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a3205cb68af66aea20bbd1703a4bea7ab}\label{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a3205cb68af66aea20bbd1703a4bea7ab}} 
+Finished&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Eliminated@{Eliminated}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Eliminated@{Eliminated}}}\mbox{\Hypertarget{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a4ac11a60cc1b3e1070340353256ce5e3}\label{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048a4ac11a60cc1b3e1070340353256ce5e3}} 
+Eliminated&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!ESceneVehiclePhyStuntFigure@{ESceneVehiclePhyStuntFigure}}
+\index{ESceneVehiclePhyStuntFigure@{ESceneVehiclePhyStuntFigure}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{ESceneVehiclePhyStuntFigure}{ESceneVehiclePhyStuntFigure}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227}{C\+Tm\+Ml\+Player\+::\+E\+Scene\+Vehicle\+Phy\+Stunt\+Figure}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!None@{None}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ada7955cdf112ecb36e740f5bc5fe29ea}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ada7955cdf112ecb36e740f5bc5fe29ea}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StraightJump@{StraightJump}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!StraightJump@{StraightJump}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a7d308f8933c63d18204b1174bee001d0}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a7d308f8933c63d18204b1174bee001d0}} 
+Straight\+Jump&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Flip@{Flip}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Flip@{Flip}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a2e05db44953f1f426cd409a55ee9f1de}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a2e05db44953f1f426cd409a55ee9f1de}} 
+Flip&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BackFlip@{BackFlip}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!BackFlip@{BackFlip}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a1d1eef3ca1f490cc4b71432d1b0146fd}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a1d1eef3ca1f490cc4b71432d1b0146fd}} 
+Back\+Flip&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Spin@{Spin}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Spin@{Spin}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a0cadcc18beebac55fd54e75eb195ff08}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a0cadcc18beebac55fd54e75eb195ff08}} 
+Spin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Aerial@{Aerial}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Aerial@{Aerial}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a41772581b33ce3758438b322e75621f5}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a41772581b33ce3758438b322e75621f5}} 
+Aerial&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AlleyOop@{AlleyOop}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!AlleyOop@{AlleyOop}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a3b023f87ece833e915908c42a7a26dab}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a3b023f87ece833e915908c42a7a26dab}} 
+Alley\+Oop&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Roll@{Roll}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Roll@{Roll}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4245c3a2cacd88b409f7f3051643197b}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4245c3a2cacd88b409f7f3051643197b}} 
+Roll&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Corkscrew@{Corkscrew}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Corkscrew@{Corkscrew}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227abe7916e2179dd039ff57f64187558768}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227abe7916e2179dd039ff57f64187558768}} 
+Corkscrew&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpinOff@{SpinOff}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!SpinOff@{SpinOff}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ada2eb8ab6663384608bb6fc9653a7177}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ada2eb8ab6663384608bb6fc9653a7177}} 
+Spin\+Off&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Rodeo@{Rodeo}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Rodeo@{Rodeo}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a080c84b69c381e46b6b1aa5ec4e7ce15}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a080c84b69c381e46b6b1aa5ec4e7ce15}} 
+Rodeo&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FlipFlap@{FlipFlap}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!FlipFlap@{FlipFlap}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227af73d568d52bf6fc794424d526682c7e0}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227af73d568d52bf6fc794424d526682c7e0}} 
+Flip\+Flap&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Twister@{Twister}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Twister@{Twister}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a17fa4e895f54b6ef782c37de7b2f59ca}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a17fa4e895f54b6ef782c37de7b2f59ca}} 
+Twister&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FreeStyle@{FreeStyle}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!FreeStyle@{FreeStyle}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a6eafbeeab9e46e0b2558ec35882c5b1e}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a6eafbeeab9e46e0b2558ec35882c5b1e}} 
+Free\+Style&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpinningMix@{SpinningMix}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!SpinningMix@{SpinningMix}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ae201259508ede6f5c5d24f21f1ef2b64}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ae201259508ede6f5c5d24f21f1ef2b64}} 
+Spinning\+Mix&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FlippingChaos@{FlippingChaos}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!FlippingChaos@{FlippingChaos}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4a53bfdef60f5fecc39f1b292ba7210f}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4a53bfdef60f5fecc39f1b292ba7210f}} 
+Flipping\+Chaos&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RollingMadness@{RollingMadness}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!RollingMadness@{RollingMadness}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a5b1938189c453d99c2a163c8e0318afc}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a5b1938189c453d99c2a163c8e0318afc}} 
+Rolling\+Madness&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckNone@{WreckNone}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckNone@{WreckNone}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a478388320322c7c1f25260e8c0898c3a}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a478388320322c7c1f25260e8c0898c3a}} 
+Wreck\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckStraightJump@{WreckStraightJump}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckStraightJump@{WreckStraightJump}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a7e1c7088654e100b67c07de4e76097e7}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a7e1c7088654e100b67c07de4e76097e7}} 
+Wreck\+Straight\+Jump&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckFlip@{WreckFlip}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckFlip@{WreckFlip}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a5ff26f53070205e4f7354c750455e6f0}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a5ff26f53070205e4f7354c750455e6f0}} 
+Wreck\+Flip&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckBackFlip@{WreckBackFlip}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckBackFlip@{WreckBackFlip}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a7b1b1b2e4e29074abea0686371ce2666}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a7b1b1b2e4e29074abea0686371ce2666}} 
+Wreck\+Back\+Flip&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckSpin@{WreckSpin}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckSpin@{WreckSpin}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227aef4d444b1837026f0fb008a3280bef2a}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227aef4d444b1837026f0fb008a3280bef2a}} 
+Wreck\+Spin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckAerial@{WreckAerial}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckAerial@{WreckAerial}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a44e8cc8ced3904dfe5ca0c13d463ab08}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a44e8cc8ced3904dfe5ca0c13d463ab08}} 
+Wreck\+Aerial&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckAlleyOop@{WreckAlleyOop}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckAlleyOop@{WreckAlleyOop}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ac9bdd1fb80eedee72b0cb195739cec52}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ac9bdd1fb80eedee72b0cb195739cec52}} 
+Wreck\+Alley\+Oop&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckRoll@{WreckRoll}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckRoll@{WreckRoll}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227aeedc86be262a129bbba75e836723aeb8}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227aeedc86be262a129bbba75e836723aeb8}} 
+Wreck\+Roll&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckCorkscrew@{WreckCorkscrew}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckCorkscrew@{WreckCorkscrew}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a6ef8e096359ab57df31b51a79987d8e7}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a6ef8e096359ab57df31b51a79987d8e7}} 
+Wreck\+Corkscrew&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckSpinOff@{WreckSpinOff}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckSpinOff@{WreckSpinOff}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a2e5da0e099f79f16803bafc880e5072c}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a2e5da0e099f79f16803bafc880e5072c}} 
+Wreck\+Spin\+Off&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckRodeo@{WreckRodeo}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckRodeo@{WreckRodeo}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a02aebdbce3064f45315edb2a5e2049cd}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a02aebdbce3064f45315edb2a5e2049cd}} 
+Wreck\+Rodeo&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckFlipFlap@{WreckFlipFlap}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckFlipFlap@{WreckFlipFlap}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a0c5243d7dfc833e766e840056cafaa7e}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a0c5243d7dfc833e766e840056cafaa7e}} 
+Wreck\+Flip\+Flap&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckTwister@{WreckTwister}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckTwister@{WreckTwister}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4559d55acf751bf021cba4bf246b00f8}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4559d55acf751bf021cba4bf246b00f8}} 
+Wreck\+Twister&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckFreeStyle@{WreckFreeStyle}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckFreeStyle@{WreckFreeStyle}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227af1d0712a3c92e9b34769c700f66668e3}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227af1d0712a3c92e9b34769c700f66668e3}} 
+Wreck\+Free\+Style&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckSpinningMix@{WreckSpinningMix}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckSpinningMix@{WreckSpinningMix}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a49cda71640668db502ee528288705968}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a49cda71640668db502ee528288705968}} 
+Wreck\+Spinning\+Mix&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckFlippingChaos@{WreckFlippingChaos}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckFlippingChaos@{WreckFlippingChaos}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4969da5a8ba7e53014112cceae1273ef}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a4969da5a8ba7e53014112cceae1273ef}} 
+Wreck\+Flipping\+Chaos&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckRollingMadness@{WreckRollingMadness}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!WreckRollingMadness@{WreckRollingMadness}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a86a9a0784b6538ad916a0348efb1489b}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a86a9a0784b6538ad916a0348efb1489b}} 
+Wreck\+Rolling\+Madness&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TimePenalty@{TimePenalty}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!TimePenalty@{TimePenalty}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a8c15d88abbb05e61add688faf9e83b19}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a8c15d88abbb05e61add688faf9e83b19}} 
+Time\+Penalty&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RespawnPenalty@{RespawnPenalty}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!RespawnPenalty@{RespawnPenalty}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ab2dcc1fd3364fafa1510269b4b7d81da}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ab2dcc1fd3364fafa1510269b4b7d81da}} 
+Respawn\+Penalty&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Grind@{Grind}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Grind@{Grind}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a9b77e19a6c9565cfb11736df7ff057a7}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227a9b77e19a6c9565cfb11736df7ff057a7}} 
+Grind&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Reset@{Reset}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Reset@{Reset}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227aad8c0c8efaabbdca64ed60a538826b4d}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227aad8c0c8efaabbdca64ed60a538826b4d}} 
+Reset&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8}\label{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!ETmBonusModeEventType@{ETmBonusModeEventType}}
+\index{ETmBonusModeEventType@{ETmBonusModeEventType}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{ETmBonusModeEventType}{ETmBonusModeEventType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8}{C\+Tm\+Ml\+Player\+::\+E\+Tm\+Bonus\+Mode\+Event\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!None@{None}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ada7955cdf112ecb36e740f5bc5fe29ea}\label{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227ada7955cdf112ecb36e740f5bc5fe29ea}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bumps@{Bumps}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!Bumps@{Bumps}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8aea5b1469f6fad7b818db766ca245a44d}\label{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8aea5b1469f6fad7b818db766ca245a44d}} 
+Bumps&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LowGravity@{LowGravity}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!LowGravity@{LowGravity}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8a3411c7e6e6e7dbe99351da7bebe801a2}\label{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8a3411c7e6e6e7dbe99351da7bebe801a2}} 
+Low\+Gravity&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FreeWheeling@{FreeWheeling}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!FreeWheeling@{FreeWheeling}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8ad502030de41a9220c3715b697f7c246a}\label{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8ad502030de41a9220c3715b697f7c246a}} 
+Free\+Wheeling&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LockedDirections@{LockedDirections}!CTmMlPlayer@{CTmMlPlayer}}\index{CTmMlPlayer@{CTmMlPlayer}!LockedDirections@{LockedDirections}}}\mbox{\Hypertarget{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8ade60c58dfa01c428e70d2a8c93c2caed}\label{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8ade60c58dfa01c428e70d2a8c93c2caed}} 
+Locked\+Directions&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_tm_ml_player_a75b4dc8ab8eabc5189b5b5abdd214e05}\label{struct_c_tm_ml_player_a75b4dc8ab8eabc5189b5b5abdd214e05}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!AccelCoef@{AccelCoef}}
+\index{AccelCoef@{AccelCoef}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{AccelCoef}{AccelCoef}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Accel\+Coef}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ac2049a1e7933c7f44f4c842255f1c423}\label{struct_c_tm_ml_player_ac2049a1e7933c7f44f4c842255f1c423}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!AimDirection@{AimDirection}}
+\index{AimDirection@{AimDirection}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{AimDirection}{AimDirection}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vec3}{Vec3}} C\+Tm\+Ml\+Player\+::\+Aim\+Direction}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ae2894a56d204a9142a949bb7c0e37d18}\label{struct_c_tm_ml_player_ae2894a56d204a9142a949bb7c0e37d18}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!AimPitch@{AimPitch}}
+\index{AimPitch@{AimPitch}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{AimPitch}{AimPitch}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Aim\+Pitch}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a65be3cfabf62db393fde883f92edd8d9}\label{struct_c_tm_ml_player_a65be3cfabf62db393fde883f92edd8d9}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!AimYaw@{AimYaw}}
+\index{AimYaw@{AimYaw}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{AimYaw}{AimYaw}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Aim\+Yaw}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a2479e0dc1e701e60672cf95832292213}\label{struct_c_tm_ml_player_a2479e0dc1e701e60672cf95832292213}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusBumpCooldown@{BonusBumpCooldown}}
+\index{BonusBumpCooldown@{BonusBumpCooldown}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusBumpCooldown}{BonusBumpCooldown}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Bonus\+Bump\+Cooldown}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aa5d5ce9eaf321f95bef93c96097e535d}\label{struct_c_tm_ml_player_aa5d5ce9eaf321f95bef93c96097e535d}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusIsPossible@{BonusIsPossible}}
+\index{BonusIsPossible@{BonusIsPossible}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusIsPossible}{BonusIsPossible}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Bonus\+Is\+Possible}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a6abfafd4c891e9ace0f54b5be2c10d35}\label{struct_c_tm_ml_player_a6abfafd4c891e9ace0f54b5be2c10d35}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeEmptyCarsStock@{BonusModeEmptyCarsStock}}
+\index{BonusModeEmptyCarsStock@{BonusModeEmptyCarsStock}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeEmptyCarsStock}{BonusModeEmptyCarsStock}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Empty\+Cars\+Stock}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a1fb5e7f37b0f7d73cae08b17d32f441b}\label{struct_c_tm_ml_player_a1fb5e7f37b0f7d73cae08b17d32f441b}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeEventIsGold@{BonusModeEventIsGold}}
+\index{BonusModeEventIsGold@{BonusModeEventIsGold}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeEventIsGold}{BonusModeEventIsGold}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Event\+Is\+Gold}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a9c2bb30f4f5405d240b2fdb683be01ca}\label{struct_c_tm_ml_player_a9c2bb30f4f5405d240b2fdb683be01ca}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeEventType@{BonusModeEventType}}
+\index{BonusModeEventType@{BonusModeEventType}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeEventType}{BonusModeEventType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_tm_ml_player_a401bed8af0fd51ee8a0b92afc09bfab8}{E\+Tm\+Bonus\+Mode\+Event\+Type}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Event\+Type}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ae71d836aadf9ed88e33e12d09ae29031}\label{struct_c_tm_ml_player_ae71d836aadf9ed88e33e12d09ae29031}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeIsBigCar@{BonusModeIsBigCar}}
+\index{BonusModeIsBigCar@{BonusModeIsBigCar}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeIsBigCar}{BonusModeIsBigCar}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Is\+Big\+Car}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aad87d9618027aa30cf4fbfe28863db84}\label{struct_c_tm_ml_player_aad87d9618027aa30cf4fbfe28863db84}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeIsEmptyCars@{BonusModeIsEmptyCars}}
+\index{BonusModeIsEmptyCars@{BonusModeIsEmptyCars}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeIsEmptyCars}{BonusModeIsEmptyCars}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Is\+Empty\+Cars}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aa44bf49d1fc48fa24efd4988c5003db6}\label{struct_c_tm_ml_player_aa44bf49d1fc48fa24efd4988c5003db6}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeIsGold@{BonusModeIsGold}}
+\index{BonusModeIsGold@{BonusModeIsGold}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeIsGold}{BonusModeIsGold}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Is\+Gold}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a284c9d1cc4ae1ad242856902b4ec4a21}\label{struct_c_tm_ml_player_a284c9d1cc4ae1ad242856902b4ec4a21}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeIsJump@{BonusModeIsJump}}
+\index{BonusModeIsJump@{BonusModeIsJump}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeIsJump}{BonusModeIsJump}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Is\+Jump}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_abc17efe777352cd69821af5be38cec68}\label{struct_c_tm_ml_player_abc17efe777352cd69821af5be38cec68}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeIsMiniCar@{BonusModeIsMiniCar}}
+\index{BonusModeIsMiniCar@{BonusModeIsMiniCar}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeIsMiniCar}{BonusModeIsMiniCar}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Is\+Mini\+Car}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a6c01582aef314462df4205d41fa97fb1}\label{struct_c_tm_ml_player_a6c01582aef314462df4205d41fa97fb1}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeIsSpeedyCars@{BonusModeIsSpeedyCars}}
+\index{BonusModeIsSpeedyCars@{BonusModeIsSpeedyCars}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeIsSpeedyCars}{BonusModeIsSpeedyCars}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Is\+Speedy\+Cars}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aff3faadd2c47681b7f024e925138fae4}\label{struct_c_tm_ml_player_aff3faadd2c47681b7f024e925138fae4}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeIsTurbo@{BonusModeIsTurbo}}
+\index{BonusModeIsTurbo@{BonusModeIsTurbo}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeIsTurbo}{BonusModeIsTurbo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Is\+Turbo}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a00957e411bcf3f21a65debac2e9b4b5e}\label{struct_c_tm_ml_player_a00957e411bcf3f21a65debac2e9b4b5e}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeJumpStock@{BonusModeJumpStock}}
+\index{BonusModeJumpStock@{BonusModeJumpStock}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeJumpStock}{BonusModeJumpStock}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Jump\+Stock}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a3add4dd547b9518688bb23b7cf64a1be}\label{struct_c_tm_ml_player_a3add4dd547b9518688bb23b7cf64a1be}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeTimeTillEndEvent@{BonusModeTimeTillEndEvent}}
+\index{BonusModeTimeTillEndEvent@{BonusModeTimeTillEndEvent}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeTimeTillEndEvent}{BonusModeTimeTillEndEvent}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Time\+Till\+End\+Event}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_afd5708d9fa6ac2625be5a28305e3ec36}\label{struct_c_tm_ml_player_afd5708d9fa6ac2625be5a28305e3ec36}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeTimeTillEvent@{BonusModeTimeTillEvent}}
+\index{BonusModeTimeTillEvent@{BonusModeTimeTillEvent}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeTimeTillEvent}{BonusModeTimeTillEvent}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Time\+Till\+Event}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aed8d30fe71957a05118ee82fdcf2bf98}\label{struct_c_tm_ml_player_aed8d30fe71957a05118ee82fdcf2bf98}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeTimeTillEventWarning@{BonusModeTimeTillEventWarning}}
+\index{BonusModeTimeTillEventWarning@{BonusModeTimeTillEventWarning}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeTimeTillEventWarning}{BonusModeTimeTillEventWarning}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Time\+Till\+Event\+Warning}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a6971b62f284fbeb8f161bfde443cedbe}\label{struct_c_tm_ml_player_a6971b62f284fbeb8f161bfde443cedbe}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!BonusModeTurboStock@{BonusModeTurboStock}}
+\index{BonusModeTurboStock@{BonusModeTurboStock}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{BonusModeTurboStock}{BonusModeTurboStock}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Bonus\+Mode\+Turbo\+Stock}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a32f0b6bed4478b8c3837132892020fdc}\label{struct_c_tm_ml_player_a32f0b6bed4478b8c3837132892020fdc}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!ControlCoef@{ControlCoef}}
+\index{ControlCoef@{ControlCoef}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{ControlCoef}{ControlCoef}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Control\+Coef}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_abce4cfc007d4155d62e4f72e0723b270}\label{struct_c_tm_ml_player_abce4cfc007d4155d62e4f72e0723b270}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!CoopCheckpointCurController@{CoopCheckpointCurController}}
+\index{CoopCheckpointCurController@{CoopCheckpointCurController}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{CoopCheckpointCurController}{CoopCheckpointCurController}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Coop\+Checkpoint\+Cur\+Controller}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a29adcece1e3e5ab6c48a52566171392b}\label{struct_c_tm_ml_player_a29adcece1e3e5ab6c48a52566171392b}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!CoopSymbiosysPercentTotal@{CoopSymbiosysPercentTotal}}
+\index{CoopSymbiosysPercentTotal@{CoopSymbiosysPercentTotal}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{CoopSymbiosysPercentTotal}{CoopSymbiosysPercentTotal}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Coop\+Symbiosys\+Percent\+Total}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a558211b182da3b4fe3ae6036220d2b91}\label{struct_c_tm_ml_player_a558211b182da3b4fe3ae6036220d2b91}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!CurCheckpointLapTime@{CurCheckpointLapTime}}
+\index{CurCheckpointLapTime@{CurCheckpointLapTime}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{CurCheckpointLapTime}{CurCheckpointLapTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Cur\+Checkpoint\+Lap\+Time}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a3963a07789bbd2377d2386bafd467ef5}\label{struct_c_tm_ml_player_a3963a07789bbd2377d2386bafd467ef5}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!CurCheckpointRaceTime@{CurCheckpointRaceTime}}
+\index{CurCheckpointRaceTime@{CurCheckpointRaceTime}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{CurCheckpointRaceTime}{CurCheckpointRaceTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Cur\+Checkpoint\+Race\+Time}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ad0d40130363194be4e52366e2222d4ce}\label{struct_c_tm_ml_player_ad0d40130363194be4e52366e2222d4ce}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!CurLap@{CurLap}}
+\index{CurLap@{CurLap}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{CurLap}{CurLap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_tm_result}{C\+Tm\+Result}} C\+Tm\+Ml\+Player\+::\+Cur\+Lap}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a6aa8e5971f8be8b9f1a3dd26af60128a}\label{struct_c_tm_ml_player_a6aa8e5971f8be8b9f1a3dd26af60128a}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!CurRace@{CurRace}}
+\index{CurRace@{CurRace}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{CurRace}{CurRace}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_tm_result}{C\+Tm\+Result}} C\+Tm\+Ml\+Player\+::\+Cur\+Race}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ab1b51af3bb168bb260f8f22628fb35bc}\label{struct_c_tm_ml_player_ab1b51af3bb168bb260f8f22628fb35bc}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!CurRaceContinuousRank@{CurRaceContinuousRank}}
+\index{CurRaceContinuousRank@{CurRaceContinuousRank}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{CurRaceContinuousRank}{CurRaceContinuousRank}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Cur\+Race\+Continuous\+Rank}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a745405b507158a2b36c01b77d912e69c}\label{struct_c_tm_ml_player_a745405b507158a2b36c01b77d912e69c}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!CurrentClan@{CurrentClan}}
+\index{CurrentClan@{CurrentClan}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{CurrentClan}{CurrentClan}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Current\+Clan}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aaa750a7dec575551bee7096d65518a9a}\label{struct_c_tm_ml_player_aaa750a7dec575551bee7096d65518a9a}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!CurrentNbLaps@{CurrentNbLaps}}
+\index{CurrentNbLaps@{CurrentNbLaps}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{CurrentNbLaps}{CurrentNbLaps}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Current\+Nb\+Laps}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ab799c07e73c1aef79c1c7f0fdc79b79a}\label{struct_c_tm_ml_player_ab799c07e73c1aef79c1c7f0fdc79b79a}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!CurTriggerIndex@{CurTriggerIndex}}
+\index{CurTriggerIndex@{CurTriggerIndex}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{CurTriggerIndex}{CurTriggerIndex}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Cur\+Trigger\+Index}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a342eb92ebc3dab56594001a16a2295bd}\label{struct_c_tm_ml_player_a342eb92ebc3dab56594001a16a2295bd}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!DamageHullRatio@{DamageHullRatio}}
+\index{DamageHullRatio@{DamageHullRatio}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{DamageHullRatio}{DamageHullRatio}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Damage\+Hull\+Ratio}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ade80501ac712e850cfb2780b8a112579}\label{struct_c_tm_ml_player_ade80501ac712e850cfb2780b8a112579}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!DamageWindowRatio@{DamageWindowRatio}}
+\index{DamageWindowRatio@{DamageWindowRatio}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{DamageWindowRatio}{DamageWindowRatio}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Damage\+Window\+Ratio}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a360cd95bbf9f71685271f1b6ba5cf766}\label{struct_c_tm_ml_player_a360cd95bbf9f71685271f1b6ba5cf766}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!DisplaySpeed@{DisplaySpeed}}
+\index{DisplaySpeed@{DisplaySpeed}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{DisplaySpeed}{DisplaySpeed}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Display\+Speed}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a40aa671c01265fe5005afc98e90a3aa3}\label{struct_c_tm_ml_player_a40aa671c01265fe5005afc98e90a3aa3}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!Distance@{Distance}}
+\index{Distance@{Distance}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{Distance}{Distance}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Distance}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aacf48cbe6ef34a7dd6380671e7bf21f6}\label{struct_c_tm_ml_player_aacf48cbe6ef34a7dd6380671e7bf21f6}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!EngineCurGear@{EngineCurGear}}
+\index{EngineCurGear@{EngineCurGear}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{EngineCurGear}{EngineCurGear}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Engine\+Cur\+Gear}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_afcaf797c56fccd5317aef53f5d9862e9}\label{struct_c_tm_ml_player_afcaf797c56fccd5317aef53f5d9862e9}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!EngineRpm@{EngineRpm}}
+\index{EngineRpm@{EngineRpm}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{EngineRpm}{EngineRpm}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Engine\+Rpm}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a2da12792043d74a13946fa7d7e98652f}\label{struct_c_tm_ml_player_a2da12792043d74a13946fa7d7e98652f}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!EngineTurboRatio@{EngineTurboRatio}}
+\index{EngineTurboRatio@{EngineTurboRatio}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{EngineTurboRatio}{EngineTurboRatio}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Engine\+Turbo\+Ratio}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ad640c71fc45cc7af726ea4b8b65aa80b}\label{struct_c_tm_ml_player_ad640c71fc45cc7af726ea4b8b65aa80b}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!FlyingDistance@{FlyingDistance}}
+\index{FlyingDistance@{FlyingDistance}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{FlyingDistance}{FlyingDistance}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Flying\+Distance}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a5d7b047631d71cdc44f2f6fb805a03c8}\label{struct_c_tm_ml_player_a5d7b047631d71cdc44f2f6fb805a03c8}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!FlyingDuration@{FlyingDuration}}
+\index{FlyingDuration@{FlyingDuration}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{FlyingDuration}{FlyingDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Flying\+Duration}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a2abce8dbb99d3948c7b8a1492fb51c44}\label{struct_c_tm_ml_player_a2abce8dbb99d3948c7b8a1492fb51c44}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!FreeWheelingDuration@{FreeWheelingDuration}}
+\index{FreeWheelingDuration@{FreeWheelingDuration}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{FreeWheelingDuration}{FreeWheelingDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Free\+Wheeling\+Duration}
+
+alias of Handicap\+No\+Gas\+Duration \mbox{\Hypertarget{struct_c_tm_ml_player_a1bf58b35d1c7923ffe2edc90cda640ae}\label{struct_c_tm_ml_player_a1bf58b35d1c7923ffe2edc90cda640ae}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!GravityCoef@{GravityCoef}}
+\index{GravityCoef@{GravityCoef}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{GravityCoef}{GravityCoef}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Gravity\+Coef}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a508f1ac61130769a7f4e84beba0b1a36}\label{struct_c_tm_ml_player_a508f1ac61130769a7f4e84beba0b1a36}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!HandicapFullGasDuration@{HandicapFullGasDuration}}
+\index{HandicapFullGasDuration@{HandicapFullGasDuration}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{HandicapFullGasDuration}{HandicapFullGasDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Handicap\+Full\+Gas\+Duration}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a9e25b20e090088ffa295c4f28f43bbbc}\label{struct_c_tm_ml_player_a9e25b20e090088ffa295c4f28f43bbbc}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!HandicapNoBrakesDuration@{HandicapNoBrakesDuration}}
+\index{HandicapNoBrakesDuration@{HandicapNoBrakesDuration}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{HandicapNoBrakesDuration}{HandicapNoBrakesDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Handicap\+No\+Brakes\+Duration}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a247979f41696b11bf2b431a33ef4b914}\label{struct_c_tm_ml_player_a247979f41696b11bf2b431a33ef4b914}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!HandicapNoGasDuration@{HandicapNoGasDuration}}
+\index{HandicapNoGasDuration@{HandicapNoGasDuration}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{HandicapNoGasDuration}{HandicapNoGasDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Handicap\+No\+Gas\+Duration}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aa3344ac8f67d6208d2bfe27581fa1b9a}\label{struct_c_tm_ml_player_aa3344ac8f67d6208d2bfe27581fa1b9a}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!HandicapNoGripDuration@{HandicapNoGripDuration}}
+\index{HandicapNoGripDuration@{HandicapNoGripDuration}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{HandicapNoGripDuration}{HandicapNoGripDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Handicap\+No\+Grip\+Duration}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a2e1ef1e9538438ede0995098cffe7f84}\label{struct_c_tm_ml_player_a2e1ef1e9538438ede0995098cffe7f84}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!HandicapNoSteeringDuration@{HandicapNoSteeringDuration}}
+\index{HandicapNoSteeringDuration@{HandicapNoSteeringDuration}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{HandicapNoSteeringDuration}{HandicapNoSteeringDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Handicap\+No\+Steering\+Duration}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aba6906049f966479e7cd4374fcff7755}\label{struct_c_tm_ml_player_aba6906049f966479e7cd4374fcff7755}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!InputGasPedal@{InputGasPedal}}
+\index{InputGasPedal@{InputGasPedal}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{InputGasPedal}{InputGasPedal}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Input\+Gas\+Pedal}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ae439f5aa8d4e4c60c0b0ccee3b2a230f}\label{struct_c_tm_ml_player_ae439f5aa8d4e4c60c0b0ccee3b2a230f}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!InputIsBraking@{InputIsBraking}}
+\index{InputIsBraking@{InputIsBraking}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{InputIsBraking}{InputIsBraking}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Input\+Is\+Braking}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aae43130cf48f1e0efb36347877334bb7}\label{struct_c_tm_ml_player_aae43130cf48f1e0efb36347877334bb7}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!InputSteer@{InputSteer}}
+\index{InputSteer@{InputSteer}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{InputSteer}{InputSteer}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Input\+Steer}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a845c161b853b946efaf0e650172b3f31}\label{struct_c_tm_ml_player_a845c161b853b946efaf0e650172b3f31}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!InWaterDuration@{InWaterDuration}}
+\index{InWaterDuration@{InWaterDuration}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{InWaterDuration}{InWaterDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+In\+Water\+Duration}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a2c5ad0332d6ce84d0e38ddd5ab0d7961}\label{struct_c_tm_ml_player_a2c5ad0332d6ce84d0e38ddd5ab0d7961}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!IsDeadlyZoneActive@{IsDeadlyZoneActive}}
+\index{IsDeadlyZoneActive@{IsDeadlyZoneActive}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{IsDeadlyZoneActive}{IsDeadlyZoneActive}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Is\+Deadly\+Zone\+Active}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a27c855dc568cb1037ec25ba57bc1be34}\label{struct_c_tm_ml_player_a27c855dc568cb1037ec25ba57bc1be34}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!IsSpawned@{IsSpawned}}
+\index{IsSpawned@{IsSpawned}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{IsSpawned}{IsSpawned}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Is\+Spawned}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ae2c369a29de1df0ae8d38bb582a795f2}\label{struct_c_tm_ml_player_ae2c369a29de1df0ae8d38bb582a795f2}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!LapStartTime@{LapStartTime}}
+\index{LapStartTime@{LapStartTime}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{LapStartTime}{LapStartTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Lap\+Start\+Time}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ae59c42b65f278b235e0498d81a394fa5}\label{struct_c_tm_ml_player_ae59c42b65f278b235e0498d81a394fa5}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!LightTrailsDuration@{LightTrailsDuration}}
+\index{LightTrailsDuration@{LightTrailsDuration}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{LightTrailsDuration}{LightTrailsDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Light\+Trails\+Duration}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a4ca1e858e0f7fc2e2e3ad263f504c6e0}\label{struct_c_tm_ml_player_a4ca1e858e0f7fc2e2e3ad263f504c6e0}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!Position@{Position}}
+\index{Position@{Position}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vec3}{Vec3}} C\+Tm\+Ml\+Player\+::\+Position}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a1bece17602b2ee4096b9e9f85717008b}\label{struct_c_tm_ml_player_a1bece17602b2ee4096b9e9f85717008b}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!RaceStartTime@{RaceStartTime}}
+\index{RaceStartTime@{RaceStartTime}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{RaceStartTime}{RaceStartTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Race\+Start\+Time}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a44f6d6f0f776a7d50943e9f98ee86193}\label{struct_c_tm_ml_player_a44f6d6f0f776a7d50943e9f98ee86193}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!RaceState@{RaceState}}
+\index{RaceState@{RaceState}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{RaceState}{RaceState}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_tm_ml_player_ac5345baaa4e3f5d6a6c0fe4fd89dc048}{E\+Race\+State}} C\+Tm\+Ml\+Player\+::\+Race\+State}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a4446c0594856d1fc27b4e53536ec111c}\label{struct_c_tm_ml_player_a4446c0594856d1fc27b4e53536ec111c}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!Score@{Score}}
+\index{Score@{Score}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{Score}{Score}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_track_mania_score}{C\+Track\+Mania\+Score}} C\+Tm\+Ml\+Player\+::\+Score}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a5ebd68b122b53d1ed8e1c77e715356ca}\label{struct_c_tm_ml_player_a5ebd68b122b53d1ed8e1c77e715356ca}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!SkiddingDistance@{SkiddingDistance}}
+\index{SkiddingDistance@{SkiddingDistance}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{SkiddingDistance}{SkiddingDistance}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Skidding\+Distance}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ae4b28f8d0cfddf82eaddb127a29215fd}\label{struct_c_tm_ml_player_ae4b28f8d0cfddf82eaddb127a29215fd}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!SkiddingDuration@{SkiddingDuration}}
+\index{SkiddingDuration@{SkiddingDuration}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{SkiddingDuration}{SkiddingDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Skidding\+Duration}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a61409338947ff9d6300b0fa45b1d6e96}\label{struct_c_tm_ml_player_a61409338947ff9d6300b0fa45b1d6e96}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!SmashNeedHelp@{SmashNeedHelp}}
+\index{SmashNeedHelp@{SmashNeedHelp}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{SmashNeedHelp}{SmashNeedHelp}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Smash\+Need\+Help}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a39e40575478c597bee12ca29314930f4}\label{struct_c_tm_ml_player_a39e40575478c597bee12ca29314930f4}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!SparklingDuration@{SparklingDuration}}
+\index{SparklingDuration@{SparklingDuration}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{SparklingDuration}{SparklingDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Sparkling\+Duration}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a66712ca155545ab7f9bd20f1094f4eed}\label{struct_c_tm_ml_player_a66712ca155545ab7f9bd20f1094f4eed}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!Speed@{Speed}}
+\index{Speed@{Speed}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Speed}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aa7f611e4745cace52db37e0a645e7e24}\label{struct_c_tm_ml_player_aa7f611e4745cace52db37e0a645e7e24}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntAngle@{StuntAngle}}
+\index{StuntAngle@{StuntAngle}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntAngle}{StuntAngle}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Stunt\+Angle}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ab6045d23d58165d7a48c5a36f5cf0acf}\label{struct_c_tm_ml_player_ab6045d23d58165d7a48c5a36f5cf0acf}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntCombo@{StuntCombo}}
+\index{StuntCombo@{StuntCombo}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntCombo}{StuntCombo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Stunt\+Combo}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_afdc37239785028b57b75a3d3ed1efc79}\label{struct_c_tm_ml_player_afdc37239785028b57b75a3d3ed1efc79}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntCurComboChainCounter@{StuntCurComboChainCounter}}
+\index{StuntCurComboChainCounter@{StuntCurComboChainCounter}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntCurComboChainCounter}{StuntCurComboChainCounter}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Stunt\+Cur\+Combo\+Chain\+Counter}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ade08303ea0cc46b295e90d08005ef385}\label{struct_c_tm_ml_player_ade08303ea0cc46b295e90d08005ef385}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntCurFigureEpicGauge@{StuntCurFigureEpicGauge}}
+\index{StuntCurFigureEpicGauge@{StuntCurFigureEpicGauge}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntCurFigureEpicGauge}{StuntCurFigureEpicGauge}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Stunt\+Cur\+Figure\+Epic\+Gauge}
+
+Values in range (0.\+000000-\/1.\+000000) \mbox{\Hypertarget{struct_c_tm_ml_player_a7f758a759bfb553fb2ece5a49a81983f}\label{struct_c_tm_ml_player_a7f758a759bfb553fb2ece5a49a81983f}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntCurFigureMasterGauge@{StuntCurFigureMasterGauge}}
+\index{StuntCurFigureMasterGauge@{StuntCurFigureMasterGauge}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntCurFigureMasterGauge}{StuntCurFigureMasterGauge}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Stunt\+Cur\+Figure\+Master\+Gauge}
+
+Values in range (0.\+000000-\/1.\+000000) \mbox{\Hypertarget{struct_c_tm_ml_player_ad91a77a5d95d3a644453e974d9c7961c}\label{struct_c_tm_ml_player_ad91a77a5d95d3a644453e974d9c7961c}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntCurFigureMasterJump@{StuntCurFigureMasterJump}}
+\index{StuntCurFigureMasterJump@{StuntCurFigureMasterJump}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntCurFigureMasterJump}{StuntCurFigureMasterJump}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Stunt\+Cur\+Figure\+Master\+Jump}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a50dc98fe60ccc22d1533ab98eecf955d}\label{struct_c_tm_ml_player_a50dc98fe60ccc22d1533ab98eecf955d}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntEpicLanding@{StuntEpicLanding}}
+\index{StuntEpicLanding@{StuntEpicLanding}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntEpicLanding}{StuntEpicLanding}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Stunt\+Epic\+Landing}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a56ece346536f9ee80663558077914cdc}\label{struct_c_tm_ml_player_a56ece346536f9ee80663558077914cdc}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntFactor@{StuntFactor}}
+\index{StuntFactor@{StuntFactor}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntFactor}{StuntFactor}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Stunt\+Factor}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aa2e1c3f509d0508aea8cf024201fad97}\label{struct_c_tm_ml_player_aa2e1c3f509d0508aea8cf024201fad97}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntIsInFigure@{StuntIsInFigure}}
+\index{StuntIsInFigure@{StuntIsInFigure}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntIsInFigure}{StuntIsInFigure}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Stunt\+Is\+In\+Figure}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_aad841d5b3a01072697c3091cfd0be44a}\label{struct_c_tm_ml_player_aad841d5b3a01072697c3091cfd0be44a}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntLast@{StuntLast}}
+\index{StuntLast@{StuntLast}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntLast}{StuntLast}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_tm_ml_player_a477970c1f9ef2d9a294bff1ea2edf227}{E\+Scene\+Vehicle\+Phy\+Stunt\+Figure}} C\+Tm\+Ml\+Player\+::\+Stunt\+Last}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a0f0cc9b00f7867fa9dfb42d3a085da48}\label{struct_c_tm_ml_player_a0f0cc9b00f7867fa9dfb42d3a085da48}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntLastTime@{StuntLastTime}}
+\index{StuntLastTime@{StuntLastTime}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntLastTime}{StuntLastTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Stunt\+Last\+Time}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a7dcf7852911d572876a8560e289e2633}\label{struct_c_tm_ml_player_a7dcf7852911d572876a8560e289e2633}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntMasterJump@{StuntMasterJump}}
+\index{StuntMasterJump@{StuntMasterJump}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntMasterJump}{StuntMasterJump}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Stunt\+Master\+Jump}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a8463687043123292208cb4e6fef04cc9}\label{struct_c_tm_ml_player_a8463687043123292208cb4e6fef04cc9}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntMasterLanding@{StuntMasterLanding}}
+\index{StuntMasterLanding@{StuntMasterLanding}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntMasterLanding}{StuntMasterLanding}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Stunt\+Master\+Landing}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a4def62324056c096a03c96f43e103a95}\label{struct_c_tm_ml_player_a4def62324056c096a03c96f43e103a95}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntPerfectLanding@{StuntPerfectLanding}}
+\index{StuntPerfectLanding@{StuntPerfectLanding}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntPerfectLanding}{StuntPerfectLanding}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Stunt\+Perfect\+Landing}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a839b60cccc1da9e62d8b5772f07fb885}\label{struct_c_tm_ml_player_a839b60cccc1da9e62d8b5772f07fb885}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntPoints@{StuntPoints}}
+\index{StuntPoints@{StuntPoints}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntPoints}{StuntPoints}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Stunt\+Points}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ad8063a2c5683b89b09ca7aaab8fadb92}\label{struct_c_tm_ml_player_ad8063a2c5683b89b09ca7aaab8fadb92}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntReverseLanding@{StuntReverseLanding}}
+\index{StuntReverseLanding@{StuntReverseLanding}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntReverseLanding}{StuntReverseLanding}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Stunt\+Reverse\+Landing}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a90c1ebb0c80e11678b1e5dece47fd917}\label{struct_c_tm_ml_player_a90c1ebb0c80e11678b1e5dece47fd917}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!StuntStraightLanding@{StuntStraightLanding}}
+\index{StuntStraightLanding@{StuntStraightLanding}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{StuntStraightLanding}{StuntStraightLanding}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Ml\+Player\+::\+Stunt\+Straight\+Landing}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a5496a3d290ec7074a6c2c28a549da862}\label{struct_c_tm_ml_player_a5496a3d290ec7074a6c2c28a549da862}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!TimeBeforeDeadlyZone@{TimeBeforeDeadlyZone}}
+\index{TimeBeforeDeadlyZone@{TimeBeforeDeadlyZone}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{TimeBeforeDeadlyZone}{TimeBeforeDeadlyZone}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Time\+Before\+Deadly\+Zone}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a4cfcc526abaf0846db730ca7100abad5}\label{struct_c_tm_ml_player_a4cfcc526abaf0846db730ca7100abad5}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!TimeElapsedSinceLastStunt@{TimeElapsedSinceLastStunt}}
+\index{TimeElapsedSinceLastStunt@{TimeElapsedSinceLastStunt}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{TimeElapsedSinceLastStunt}{TimeElapsedSinceLastStunt}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Time\+Elapsed\+Since\+Last\+Stunt}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ad989af7aed69f193dc941b85641ee7c4}\label{struct_c_tm_ml_player_ad989af7aed69f193dc941b85641ee7c4}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!TimeLeftForStuntCombo@{TimeLeftForStuntCombo}}
+\index{TimeLeftForStuntCombo@{TimeLeftForStuntCombo}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{TimeLeftForStuntCombo}{TimeLeftForStuntCombo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Time\+Left\+For\+Stunt\+Combo}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ad0cf32bf023a8e9b3abcc33905f592f8}\label{struct_c_tm_ml_player_ad0cf32bf023a8e9b3abcc33905f592f8}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!TimeTillSmashGiveUp@{TimeTillSmashGiveUp}}
+\index{TimeTillSmashGiveUp@{TimeTillSmashGiveUp}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{TimeTillSmashGiveUp}{TimeTillSmashGiveUp}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Time\+Till\+Smash\+Give\+Up}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_ab003e371033a86e3ab7bca850ba72094}\label{struct_c_tm_ml_player_ab003e371033a86e3ab7bca850ba72094}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!TimeTillSmashRespawn@{TimeTillSmashRespawn}}
+\index{TimeTillSmashRespawn@{TimeTillSmashRespawn}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{TimeTillSmashRespawn}{TimeTillSmashRespawn}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Time\+Till\+Smash\+Respawn}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a35d987268b97970135a91847891a3781}\label{struct_c_tm_ml_player_a35d987268b97970135a91847891a3781}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!UniqueCameraAvailableRespawnLeft@{UniqueCameraAvailableRespawnLeft}}
+\index{UniqueCameraAvailableRespawnLeft@{UniqueCameraAvailableRespawnLeft}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{UniqueCameraAvailableRespawnLeft}{UniqueCameraAvailableRespawnLeft}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Unique\+Camera\+Available\+Respawn\+Left}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a70f1f7dffa5f57ab749cfe3b63cd4943}\label{struct_c_tm_ml_player_a70f1f7dffa5f57ab749cfe3b63cd4943}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!UniqueCameraRespawnCount@{UniqueCameraRespawnCount}}
+\index{UniqueCameraRespawnCount@{UniqueCameraRespawnCount}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{UniqueCameraRespawnCount}{UniqueCameraRespawnCount}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Unique\+Camera\+Respawn\+Count}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_afc750030e6222cabd2db07400f69865b}\label{struct_c_tm_ml_player_afc750030e6222cabd2db07400f69865b}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!Upwardness@{Upwardness}}
+\index{Upwardness@{Upwardness}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{Upwardness}{Upwardness}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Ml\+Player\+::\+Upwardness}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a9e6395753c52f72522c103b60b3f162a}\label{struct_c_tm_ml_player_a9e6395753c52f72522c103b60b3f162a}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!WheelsContactCount@{WheelsContactCount}}
+\index{WheelsContactCount@{WheelsContactCount}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{WheelsContactCount}{WheelsContactCount}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Wheels\+Contact\+Count}
+
+\mbox{\Hypertarget{struct_c_tm_ml_player_a94ba3081a2b636cc374d5a19228ad403}\label{struct_c_tm_ml_player_a94ba3081a2b636cc374d5a19228ad403}} 
+\index{CTmMlPlayer@{CTmMlPlayer}!WheelsSkiddingCount@{WheelsSkiddingCount}}
+\index{WheelsSkiddingCount@{WheelsSkiddingCount}!CTmMlPlayer@{CTmMlPlayer}}
+\doxysubsubsection{\texorpdfstring{WheelsSkiddingCount}{WheelsSkiddingCount}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Ml\+Player\+::\+Wheels\+Skidding\+Count}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

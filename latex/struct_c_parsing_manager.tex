@@ -1,0 +1,208 @@
+\hypertarget{struct_c_parsing_manager}{}\doxysection{C\+Parsing\+Manager Struct Reference}
+\label{struct_c_parsing_manager}\index{CParsingManager@{CParsingManager}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Parsing\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_c_parsing_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}} \mbox{\hyperlink{struct_c_parsing_manager_a3bdadcb2b9a6f9b1ef61bcf763edcb9d}{Create}} (\mbox{\hyperlink{class_text}{Text}} Contents)
+\item 
+\mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}} \mbox{\hyperlink{struct_c_parsing_manager_a35e80a69a015c84dfaebe4e2bb439c00}{Create}} (\mbox{\hyperlink{class_text}{Text}} Contents, \mbox{\hyperlink{class_boolean}{Boolean}} Generate\+Text, \mbox{\hyperlink{class_boolean}{Boolean}} Generate\+Text\+Raw, \mbox{\hyperlink{class_boolean}{Boolean}} Generate\+Text\+Resursive)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_acab30065dce40bfe7cab6071465ebbd7}{Destroy}} (\mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}} Document)
+\item 
+\mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}} \mbox{\hyperlink{struct_c_parsing_manager_a7cbfd3cd14e3d8de6d0089ad14f42e84}{Parse\+\_\+\+Xml}} (\mbox{\hyperlink{class_text}{Text}} Contents)
+\item 
+\mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}} \mbox{\hyperlink{struct_c_parsing_manager_adf8acb06ab31ff3c13bd3a5f2a3fb428}{Parse\+\_\+\+Xml}} (\mbox{\hyperlink{class_text}{Text}} Contents, \mbox{\hyperlink{class_boolean}{Boolean}} Generate\+Text, \mbox{\hyperlink{class_boolean}{Boolean}} Generate\+Text\+Raw, \mbox{\hyperlink{class_boolean}{Boolean}} Generate\+Text\+Resursive)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_a7ec7f7ddd4983b56fc13e6396adaac4f}{Parse\+\_\+\+Destroy}} (\mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}} Document)
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_parsing_manager_a9a0eb699588c515811ed204f9d69aed0}{Compose\+\_\+\+Start\+\_\+\+Xml}} (\mbox{\hyperlink{class_boolean}{Boolean}} Compact)
+\item 
+\mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_parsing_manager_a8eabb7e0c2fe225ad76dba059e42a015}{Compose\+\_\+\+Start\+\_\+\+Json}} (\mbox{\hyperlink{class_boolean}{Boolean}} Compact)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_a7db1b9296a7ab3e73c3286ede7f32d39}{Compose\+\_\+\+End}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_a3475e5815a0d0208bae3c86ec3b2e0ec}{Compose\+\_\+\+Destroy}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_a6d7c7ae2e2f5c44a5dea6792ee9e40c4}{Compose\+\_\+\+Node\+\_\+\+Open}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id, \mbox{\hyperlink{class_text}{Text}} Name)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_a1fe6710849efc4fec070243c9c2ca23d}{Compose\+\_\+\+Node\+\_\+\+Close}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_acaa57fc902d1e16819fb6a1557c5c07a}{Compose\+\_\+\+Array\+\_\+\+Open}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id, \mbox{\hyperlink{class_text}{Text}} Name)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_a857ddfe2e047b88026eb2fce001306d1}{Compose\+\_\+\+Array\+\_\+\+Close}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_a49f1b783f81614e28ef443d39872bfe2}{Compose\+\_\+\+Attribute}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id, \mbox{\hyperlink{class_text}{Text}} Name, \mbox{\hyperlink{class_text}{Text}} Value)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_acc61570f9b6306f87cc61062a779b027}{Compose\+\_\+\+Attribute}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id, \mbox{\hyperlink{class_text}{Text}} Name, \mbox{\hyperlink{class_integer}{Integer}} Value)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_a6ae6db36202400b28e280f5a6feed1f6}{Compose\+\_\+\+Attribute}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id, \mbox{\hyperlink{class_text}{Text}} Name, \mbox{\hyperlink{class_real}{Real}} Value)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_a8ce7a7bbd1a8e0f6a4e19bd96f480834}{Compose\+\_\+\+Attribute}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id, \mbox{\hyperlink{class_text}{Text}} Name, \mbox{\hyperlink{class_boolean}{Boolean}} Value)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_parsing_manager_a73098ac9bf806c1074222728ac0bcb87}{Compose\+\_\+\+Value}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id, \mbox{\hyperlink{class_text}{Text}} Name, \mbox{\hyperlink{class_text}{Text}} Value)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_parsing_manager_a95e826b9a850515535214a264fc043de}{Compose\+\_\+\+Get\+Result}} (\mbox{\hyperlink{class_ident}{Ident}} Composer\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_parsing_manager_af8b9e1a5664d713440a971099a563514}{Documents\+Slots\+Limit}}
+\item 
+const \mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_parsing_manager_aa84e931a45f0fce970e19e07f101685c}{Documents\+Xml}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Tool for parsing document 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_parsing_manager_a857ddfe2e047b88026eb2fce001306d1}\label{struct_c_parsing_manager_a857ddfe2e047b88026eb2fce001306d1}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Array\_Close@{Compose\_Array\_Close}}
+\index{Compose\_Array\_Close@{Compose\_Array\_Close}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Array\_Close()}{Compose\_Array\_Close()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Array\+\_\+\+Close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_acaa57fc902d1e16819fb6a1557c5c07a}\label{struct_c_parsing_manager_acaa57fc902d1e16819fb6a1557c5c07a}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Array\_Open@{Compose\_Array\_Open}}
+\index{Compose\_Array\_Open@{Compose\_Array\_Open}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Array\_Open()}{Compose\_Array\_Open()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Array\+\_\+\+Open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a8ce7a7bbd1a8e0f6a4e19bd96f480834}\label{struct_c_parsing_manager_a8ce7a7bbd1a8e0f6a4e19bd96f480834}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Attribute@{Compose\_Attribute}}
+\index{Compose\_Attribute@{Compose\_Attribute}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Attribute()}{Compose\_Attribute()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Name,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_acc61570f9b6306f87cc61062a779b027}\label{struct_c_parsing_manager_acc61570f9b6306f87cc61062a779b027}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Attribute@{Compose\_Attribute}}
+\index{Compose\_Attribute@{Compose\_Attribute}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Attribute()}{Compose\_Attribute()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Name,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a6ae6db36202400b28e280f5a6feed1f6}\label{struct_c_parsing_manager_a6ae6db36202400b28e280f5a6feed1f6}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Attribute@{Compose\_Attribute}}
+\index{Compose\_Attribute@{Compose\_Attribute}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Attribute()}{Compose\_Attribute()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Name,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a49f1b783f81614e28ef443d39872bfe2}\label{struct_c_parsing_manager_a49f1b783f81614e28ef443d39872bfe2}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Attribute@{Compose\_Attribute}}
+\index{Compose\_Attribute@{Compose\_Attribute}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Attribute()}{Compose\_Attribute()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Attribute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Name,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a3475e5815a0d0208bae3c86ec3b2e0ec}\label{struct_c_parsing_manager_a3475e5815a0d0208bae3c86ec3b2e0ec}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Destroy@{Compose\_Destroy}}
+\index{Compose\_Destroy@{Compose\_Destroy}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Destroy()}{Compose\_Destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a7db1b9296a7ab3e73c3286ede7f32d39}\label{struct_c_parsing_manager_a7db1b9296a7ab3e73c3286ede7f32d39}} 
+\index{CParsingManager@{CParsingManager}!Compose\_End@{Compose\_End}}
+\index{Compose\_End@{Compose\_End}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_End()}{Compose\_End()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a95e826b9a850515535214a264fc043de}\label{struct_c_parsing_manager_a95e826b9a850515535214a264fc043de}} 
+\index{CParsingManager@{CParsingManager}!Compose\_GetResult@{Compose\_GetResult}}
+\index{Compose\_GetResult@{Compose\_GetResult}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_GetResult()}{Compose\_GetResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Get\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a1fe6710849efc4fec070243c9c2ca23d}\label{struct_c_parsing_manager_a1fe6710849efc4fec070243c9c2ca23d}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Node\_Close@{Compose\_Node\_Close}}
+\index{Compose\_Node\_Close@{Compose\_Node\_Close}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Node\_Close()}{Compose\_Node\_Close()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Node\+\_\+\+Close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a6d7c7ae2e2f5c44a5dea6792ee9e40c4}\label{struct_c_parsing_manager_a6d7c7ae2e2f5c44a5dea6792ee9e40c4}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Node\_Open@{Compose\_Node\_Open}}
+\index{Compose\_Node\_Open@{Compose\_Node\_Open}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Node\_Open()}{Compose\_Node\_Open()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Node\+\_\+\+Open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a8eabb7e0c2fe225ad76dba059e42a015}\label{struct_c_parsing_manager_a8eabb7e0c2fe225ad76dba059e42a015}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Start\_Json@{Compose\_Start\_Json}}
+\index{Compose\_Start\_Json@{Compose\_Start\_Json}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Start\_Json()}{Compose\_Start\_Json()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Start\+\_\+\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Compact }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a9a0eb699588c515811ed204f9d69aed0}\label{struct_c_parsing_manager_a9a0eb699588c515811ed204f9d69aed0}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Start\_Xml@{Compose\_Start\_Xml}}
+\index{Compose\_Start\_Xml@{Compose\_Start\_Xml}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Start\_Xml()}{Compose\_Start\_Xml()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ident}{Ident}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Start\+\_\+\+Xml (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Compact }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a73098ac9bf806c1074222728ac0bcb87}\label{struct_c_parsing_manager_a73098ac9bf806c1074222728ac0bcb87}} 
+\index{CParsingManager@{CParsingManager}!Compose\_Value@{Compose\_Value}}
+\index{Compose\_Value@{Compose\_Value}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Compose\_Value()}{Compose\_Value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Compose\+\_\+\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ident}{Ident}}}]{Composer\+Id,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Name,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a3bdadcb2b9a6f9b1ef61bcf763edcb9d}\label{struct_c_parsing_manager_a3bdadcb2b9a6f9b1ef61bcf763edcb9d}} 
+\index{CParsingManager@{CParsingManager}!Create@{Create}}
+\index{Create@{Create}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}} C\+Parsing\+Manager\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Contents }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a35e80a69a015c84dfaebe4e2bb439c00}\label{struct_c_parsing_manager_a35e80a69a015c84dfaebe4e2bb439c00}} 
+\index{CParsingManager@{CParsingManager}!Create@{Create}}
+\index{Create@{Create}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}} C\+Parsing\+Manager\+::\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Contents,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Generate\+Text,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Generate\+Text\+Raw,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Generate\+Text\+Resursive }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_acab30065dce40bfe7cab6071465ebbd7}\label{struct_c_parsing_manager_acab30065dce40bfe7cab6071465ebbd7}} 
+\index{CParsingManager@{CParsingManager}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}}}]{Document }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a7ec7f7ddd4983b56fc13e6396adaac4f}\label{struct_c_parsing_manager_a7ec7f7ddd4983b56fc13e6396adaac4f}} 
+\index{CParsingManager@{CParsingManager}!Parse\_Destroy@{Parse\_Destroy}}
+\index{Parse\_Destroy@{Parse\_Destroy}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Parse\_Destroy()}{Parse\_Destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Parsing\+Manager\+::\+Parse\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}}}]{Document }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_a7cbfd3cd14e3d8de6d0089ad14f42e84}\label{struct_c_parsing_manager_a7cbfd3cd14e3d8de6d0089ad14f42e84}} 
+\index{CParsingManager@{CParsingManager}!Parse\_Xml@{Parse\_Xml}}
+\index{Parse\_Xml@{Parse\_Xml}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Parse\_Xml()}{Parse\_Xml()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}} C\+Parsing\+Manager\+::\+Parse\+\_\+\+Xml (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Contents }\end{DoxyParamCaption})}
+
+Parses an X\+ML document \mbox{\Hypertarget{struct_c_parsing_manager_adf8acb06ab31ff3c13bd3a5f2a3fb428}\label{struct_c_parsing_manager_adf8acb06ab31ff3c13bd3a5f2a3fb428}} 
+\index{CParsingManager@{CParsingManager}!Parse\_Xml@{Parse\_Xml}}
+\index{Parse\_Xml@{Parse\_Xml}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{Parse\_Xml()}{Parse\_Xml()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}} C\+Parsing\+Manager\+::\+Parse\+\_\+\+Xml (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Contents,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Generate\+Text,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Generate\+Text\+Raw,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Generate\+Text\+Resursive }\end{DoxyParamCaption})}
+
+Parses an X\+ML document 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_parsing_manager_af8b9e1a5664d713440a971099a563514}\label{struct_c_parsing_manager_af8b9e1a5664d713440a971099a563514}} 
+\index{CParsingManager@{CParsingManager}!DocumentsSlotsLimit@{DocumentsSlotsLimit}}
+\index{DocumentsSlotsLimit@{DocumentsSlotsLimit}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{DocumentsSlotsLimit}{DocumentsSlotsLimit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Parsing\+Manager\+::\+Documents\+Slots\+Limit}
+
+\mbox{\Hypertarget{struct_c_parsing_manager_aa84e931a45f0fce970e19e07f101685c}\label{struct_c_parsing_manager_aa84e931a45f0fce970e19e07f101685c}} 
+\index{CParsingManager@{CParsingManager}!DocumentsXml@{DocumentsXml}}
+\index{DocumentsXml@{DocumentsXml}!CParsingManager@{CParsingManager}}
+\doxysubsubsection{\texorpdfstring{DocumentsXml}{DocumentsXml}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}} \mbox{[}$\,$\mbox{]} C\+Parsing\+Manager\+::\+Documents\+Xml}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

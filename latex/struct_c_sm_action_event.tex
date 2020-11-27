@@ -1,0 +1,162 @@
+\hypertarget{struct_c_sm_action_event}{}\doxysection{C\+Sm\+Action\+Event Struct Reference}
+\label{struct_c_sm_action_event}\index{CSmActionEvent@{CSmActionEvent}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Sm\+Action\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{struct_c_sm_action_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}{E\+Type}} \{ \newline
+\mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22af5c6c81c382d0e6df9c1991eab0d985c}{On\+Hit\+Player}}, 
+\mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a109f961eaf67a41f96c18cdc1ad89ae3}{On\+Projectile\+End}}, 
+\mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a5ca27ddd3b01930cedb1b991a405e696}{On\+Projectile\+Destroyed}}, 
+\mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a3dc682af60c9a3eea4aa37a2e88dc86b}{On\+Active\+Change}}, 
+\newline
+\mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ac6de047a51f8d2692f7f3d881e542567}{On\+Hit\+Object}}, 
+\mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a3ed512739fcb2b8717b992b5be19901b}{On\+Hit\+Shield}}, 
+\mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ae989daa0fad8e8bfc9f4408836e86acb}{On\+Hit\+Vehicle}}, 
+\mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a191b88b134b37eea98953ed1d2cb98f3}{On\+Shield\+End}}, 
+\newline
+\mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a88afb0f73b5d803a9a052baf91bc8ec3}{On\+Hit\+Turret}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}{E\+Type}} \mbox{\hyperlink{struct_c_sm_action_event_a42216971e4b0bed8bf304b44e7abcb9b}{Type}}
+\item 
+const \mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_sm_action_event_a96c8c38ed0927ec51dad0ac7e844f86d}{Projectile\+Model\+Id}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_event_a3e0710a22ffc6edbd6e27a5f502c2ead}{Damage}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_event_a13c4dd6b32d6135682bf6585bc014e7f}{Context\+Id}}
+\item 
+const \mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{struct_c_sm_action_event_a67ef5b9a55ae13e11c8e58dbb09ccbd5}{Position}}
+\item 
+const \mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{struct_c_sm_action_event_a9b9b25a4dc01baa57ff0efeac72080d8}{Direction}}
+\item 
+const \mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{struct_c_sm_action_event_a3663d3f6c4ab5a04ab87d34ca1952318}{Normal}}
+\item 
+const \mbox{\hyperlink{struct_c_entity}{C\+Entity}} \mbox{\hyperlink{struct_c_sm_action_event_a5902ec4b003892adab69f552f9af7017}{Victim}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_sm_action_event_a27addb2657a81e33de9e7a2ed309e5fd}{Shield}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Supported declare modes \+: Local An action event 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}\label{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}} 
+\index{CSmActionEvent@{CSmActionEvent}!EType@{EType}}
+\index{EType@{EType}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{EType}{EType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}{C\+Sm\+Action\+Event\+::\+E\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnHitPlayer@{OnHitPlayer}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnHitPlayer@{OnHitPlayer}}}\mbox{\Hypertarget{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22af5c6c81c382d0e6df9c1991eab0d985c}\label{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22af5c6c81c382d0e6df9c1991eab0d985c}} 
+On\+Hit\+Player&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnProjectileEnd@{OnProjectileEnd}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnProjectileEnd@{OnProjectileEnd}}}\mbox{\Hypertarget{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a109f961eaf67a41f96c18cdc1ad89ae3}\label{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a109f961eaf67a41f96c18cdc1ad89ae3}} 
+On\+Projectile\+End&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnProjectileDestroyed@{OnProjectileDestroyed}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnProjectileDestroyed@{OnProjectileDestroyed}}}\mbox{\Hypertarget{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a5ca27ddd3b01930cedb1b991a405e696}\label{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a5ca27ddd3b01930cedb1b991a405e696}} 
+On\+Projectile\+Destroyed&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnActiveChange@{OnActiveChange}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnActiveChange@{OnActiveChange}}}\mbox{\Hypertarget{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a3dc682af60c9a3eea4aa37a2e88dc86b}\label{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a3dc682af60c9a3eea4aa37a2e88dc86b}} 
+On\+Active\+Change&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnHitObject@{OnHitObject}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnHitObject@{OnHitObject}}}\mbox{\Hypertarget{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ac6de047a51f8d2692f7f3d881e542567}\label{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ac6de047a51f8d2692f7f3d881e542567}} 
+On\+Hit\+Object&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnHitShield@{OnHitShield}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnHitShield@{OnHitShield}}}\mbox{\Hypertarget{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a3ed512739fcb2b8717b992b5be19901b}\label{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a3ed512739fcb2b8717b992b5be19901b}} 
+On\+Hit\+Shield&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnHitVehicle@{OnHitVehicle}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnHitVehicle@{OnHitVehicle}}}\mbox{\Hypertarget{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ae989daa0fad8e8bfc9f4408836e86acb}\label{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ae989daa0fad8e8bfc9f4408836e86acb}} 
+On\+Hit\+Vehicle&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnShieldEnd@{OnShieldEnd}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnShieldEnd@{OnShieldEnd}}}\mbox{\Hypertarget{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a191b88b134b37eea98953ed1d2cb98f3}\label{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a191b88b134b37eea98953ed1d2cb98f3}} 
+On\+Shield\+End&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnHitTurret@{OnHitTurret}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnHitTurret@{OnHitTurret}}}\mbox{\Hypertarget{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a88afb0f73b5d803a9a052baf91bc8ec3}\label{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a88afb0f73b5d803a9a052baf91bc8ec3}} 
+On\+Hit\+Turret&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_sm_action_event_a13c4dd6b32d6135682bf6585bc014e7f}\label{struct_c_sm_action_event_a13c4dd6b32d6135682bf6585bc014e7f}} 
+\index{CSmActionEvent@{CSmActionEvent}!ContextId@{ContextId}}
+\index{ContextId@{ContextId}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{ContextId}{ContextId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+Event\+::\+Context\+Id}
+
+\mbox{\Hypertarget{struct_c_sm_action_event_a3e0710a22ffc6edbd6e27a5f502c2ead}\label{struct_c_sm_action_event_a3e0710a22ffc6edbd6e27a5f502c2ead}} 
+\index{CSmActionEvent@{CSmActionEvent}!Damage@{Damage}}
+\index{Damage@{Damage}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Damage}{Damage}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+Event\+::\+Damage}
+
+\mbox{\Hypertarget{struct_c_sm_action_event_a9b9b25a4dc01baa57ff0efeac72080d8}\label{struct_c_sm_action_event_a9b9b25a4dc01baa57ff0efeac72080d8}} 
+\index{CSmActionEvent@{CSmActionEvent}!Direction@{Direction}}
+\index{Direction@{Direction}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Direction}{Direction}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vec3}{Vec3}} C\+Sm\+Action\+Event\+::\+Direction}
+
+\mbox{\Hypertarget{struct_c_sm_action_event_a3663d3f6c4ab5a04ab87d34ca1952318}\label{struct_c_sm_action_event_a3663d3f6c4ab5a04ab87d34ca1952318}} 
+\index{CSmActionEvent@{CSmActionEvent}!Normal@{Normal}}
+\index{Normal@{Normal}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Normal}{Normal}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vec3}{Vec3}} C\+Sm\+Action\+Event\+::\+Normal}
+
+\mbox{\Hypertarget{struct_c_sm_action_event_a67ef5b9a55ae13e11c8e58dbb09ccbd5}\label{struct_c_sm_action_event_a67ef5b9a55ae13e11c8e58dbb09ccbd5}} 
+\index{CSmActionEvent@{CSmActionEvent}!Position@{Position}}
+\index{Position@{Position}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_vec3}{Vec3}} C\+Sm\+Action\+Event\+::\+Position}
+
+\mbox{\Hypertarget{struct_c_sm_action_event_a96c8c38ed0927ec51dad0ac7e844f86d}\label{struct_c_sm_action_event_a96c8c38ed0927ec51dad0ac7e844f86d}} 
+\index{CSmActionEvent@{CSmActionEvent}!ProjectileModelId@{ProjectileModelId}}
+\index{ProjectileModelId@{ProjectileModelId}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{ProjectileModelId}{ProjectileModelId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_ident}{Ident}} C\+Sm\+Action\+Event\+::\+Projectile\+Model\+Id}
+
+\mbox{\Hypertarget{struct_c_sm_action_event_a27addb2657a81e33de9e7a2ed309e5fd}\label{struct_c_sm_action_event_a27addb2657a81e33de9e7a2ed309e5fd}} 
+\index{CSmActionEvent@{CSmActionEvent}!Shield@{Shield}}
+\index{Shield@{Shield}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Shield}{Shield}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Sm\+Action\+Event\+::\+Shield}
+
+\mbox{\Hypertarget{struct_c_sm_action_event_a42216971e4b0bed8bf304b44e7abcb9b}\label{struct_c_sm_action_event_a42216971e4b0bed8bf304b44e7abcb9b}} 
+\index{CSmActionEvent@{CSmActionEvent}!Type@{Type}}
+\index{Type@{Type}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}{E\+Type}} C\+Sm\+Action\+Event\+::\+Type}
+
+\mbox{\Hypertarget{struct_c_sm_action_event_a5902ec4b003892adab69f552f9af7017}\label{struct_c_sm_action_event_a5902ec4b003892adab69f552f9af7017}} 
+\index{CSmActionEvent@{CSmActionEvent}!Victim@{Victim}}
+\index{Victim@{Victim}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Victim}{Victim}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_entity}{C\+Entity}} C\+Sm\+Action\+Event\+::\+Victim}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

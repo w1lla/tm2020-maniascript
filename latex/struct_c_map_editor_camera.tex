@@ -1,0 +1,436 @@
+\hypertarget{struct_c_map_editor_camera}{}\doxysection{C\+Map\+Editor\+Camera Struct Reference}
+\label{struct_c_map_editor_camera}\index{CMapEditorCamera@{CMapEditorCamera}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Map\+Editor\+Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_c_map_editor_camera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62}{E\+Zoom\+Level}} \{ \mbox{\hyperlink{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62af1d723b1623df07de65d15bc27195c65}{Close}}, 
+\mbox{\hyperlink{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1ace0613f588845b8b9a8c269bbb732a0e}{Medium}}, 
+\mbox{\hyperlink{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62ab0ef5c4d3406e7664d0b42765b90739f}{Far}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1}{E\+Camera\+V\+Step}} \{ \newline
+\mbox{\hyperlink{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1a1aaa88a9e53cdabb0b1bae1b906b96aa}{Low}}, 
+\mbox{\hyperlink{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1a4b83dbedc825dcd1db6d30f6734389d5}{Medium\+Low}}, 
+\mbox{\hyperlink{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1ace0613f588845b8b9a8c269bbb732a0e}{Medium}}, 
+\mbox{\hyperlink{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1a4a2f2296295226bf67e1fd6cdff351aa}{Medium\+High}}, 
+\newline
+\mbox{\hyperlink{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1aedbeeb52c2a67de80f72574b704ebc2a}{High}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_ae398d2a646100acfdbc19a35ca40da29}{Release\+Lock}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_aaadc4010557645b84b96917f86fed8d2}{Center\+On\+Cursor}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_aebbf8cdd4514b5b69880c9231232d5c2}{Watch\+Start}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_adfeb163854391f827d1706a3c8abcffb}{Watch\+Closest\+Finish\+Line}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a3856582bfcc2a156e81b6e5f949e6c3f}{Watch\+Closest\+Checkpoint}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_aefebe71a766fcea8059ff145a017ecf2}{Watch\+Whole\+Map}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a3c5d6c4a081d81aa4035af9e53d9e8de}{Watch\+Custom\+Selection}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a9dc8e85f7681b30f3acf5bbc2a0d694c}{Move\+To\+Map\+Center}} ()
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_map_editor_camera_aa19e46fa5ba14be115ec048d805eba4b}{Get\+Lock}} ()
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_map_editor_camera_a874cc4472f1ef2d6aa510c9c8a4a8ca4}{Can\+Use}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a3bcbd14092069cbddf6b6c8a81be544d}{TurnH}} (\mbox{\hyperlink{class_boolean}{Boolean}} Clockwise)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a8e75225c5a486d37f0f21e8d1aa91ede}{TurnH}} (\mbox{\hyperlink{class_boolean}{Boolean}} Clockwise, \mbox{\hyperlink{class_boolean}{Boolean}} Half\+Steps)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a9947840c4c9d3306f9d91c22f48b5f30}{TurnH}} (\mbox{\hyperlink{class_boolean}{Boolean}} Clockwise, \mbox{\hyperlink{class_boolean}{Boolean}} Half\+Steps, \mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a0e40100e557f74355212a047c8b55ba7}{TurnV}} (\mbox{\hyperlink{class_boolean}{Boolean}} Up\+Or\+Else\+Down)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_ae97968b22361af3615503c7f250c8f57}{TurnV}} (\mbox{\hyperlink{class_boolean}{Boolean}} Up\+Or\+Else\+Down, \mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a0a21c8b7e3c7c4b8a3caafbed60639bc}{Move}} (\mbox{\hyperlink{struct_c_map_editor_plugin_a37b9cb5dc1a3b33a111112b10337a7d9}{C\+Map\+Editor\+Plugin\+::\+Relative\+Directions}} Relative\+Dir)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a88790f99cc316d979ef285568a79d70e}{Follow\+Cursor}} (\mbox{\hyperlink{class_boolean}{Boolean}} Follow)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_ac67c3c17014b8434d3ae155ca2fa4442}{Center\+On\+Cursor}} (\mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a1255227f6a146ed995115929acdf3f68}{Move\+To\+Map\+Center}} (\mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_aab858e04558dff1bcacca5abc7e3b308}{Watch}} (\mbox{\hyperlink{struct_c_block}{C\+Block}} Block)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_af08a1b4ca0fc3c2a8730cfd02ee1cd5d}{Watch}} (\mbox{\hyperlink{struct_c_block}{C\+Block}} Block, \mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a213908057c81074a7c5b1dcacf55dea3}{Watch}} (\mbox{\hyperlink{struct_c_macroblock_instance}{C\+Macroblock\+Instance}} Macroblock)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_abd2e7eea2f56fc689e2477547d4a70fd}{Watch}} (\mbox{\hyperlink{struct_c_macroblock_instance}{C\+Macroblock\+Instance}} Macroblock, \mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a610a7153d8be8386178e61fc0496d9ae}{Watch}} (\mbox{\hyperlink{struct_c_block_clip}{C\+Block\+Clip}} Clip)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_af0f6298e050729782b3b2f7c3f525501}{Watch}} (\mbox{\hyperlink{struct_c_block_clip}{C\+Block\+Clip}} Clip, \mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a7ad52ca160c58181bd372e8143706134}{Watch\+Start}} (\mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a9e3fab716493fc86aa8a6915d50d577c}{Watch\+Closest\+Finish\+Line}} (\mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a11ec71f26e471fb303597db06e06fd1d}{Watch\+Closest\+Checkpoint}} (\mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a6d8d33d6b8f34eb915cb99327c0c6aa5}{Watch\+Whole\+Map}} (\mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a7f1767897c4f4861e3f252020eb5d50f}{Watch\+Macroblocks}} (\mbox{\hyperlink{class_integer}{Integer}} User\+Data)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a201580e01611272c970276e0b26a1868}{Watch\+Macroblocks}} (\mbox{\hyperlink{class_integer}{Integer}} User\+Data, \mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a794e2fb8652904612d0f00992900b74f}{Zoom\+In}} (\mbox{\hyperlink{class_boolean}{Boolean}} Loop)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_aa02e369959d7c187875054276eccd61a}{Zoom\+In}} (\mbox{\hyperlink{class_boolean}{Boolean}} Loop, \mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a871789809e4bcd293c5ad10e8fe0ebff}{Zoom\+Out}} (\mbox{\hyperlink{class_boolean}{Boolean}} Loop)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a691fb2a67df794e6a6db8bebd47768a4}{Zoom\+Out}} (\mbox{\hyperlink{class_boolean}{Boolean}} Loop, \mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_aa5a16b33ad4d92c3c2a9eadc730ee6a2}{Zoom}} (\mbox{\hyperlink{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62}{E\+Zoom\+Level}} Level)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_ad9493a1122628009e3a0a9430cf4110a}{Zoom}} (\mbox{\hyperlink{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62}{E\+Zoom\+Level}} Level, \mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a12c0e97610931fec6899d55f411153f2}{Look}} (\mbox{\hyperlink{struct_c_map_editor_plugin_a6f77168ec7d59b0f95cd7fdc441c3e48}{C\+Map\+Editor\+Plugin\+::\+Cardinal\+Directions8}} Direction)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a98774b8251ac43da73dfda3bfe4a33bc}{Look}} (\mbox{\hyperlink{struct_c_map_editor_plugin_a6f77168ec7d59b0f95cd7fdc441c3e48}{C\+Map\+Editor\+Plugin\+::\+Cardinal\+Directions8}} Direction, \mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a908b9c2727550ec6815007e9f315cd72}{Look}} (\mbox{\hyperlink{struct_c_map_editor_plugin_a6e0ac52ee0ab64b0df1d01aeed483053}{C\+Map\+Editor\+Plugin\+::\+Cardinal\+Directions}} Direction)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a1cb7aa1079476afb6a287a7db2600d0e}{Look}} (\mbox{\hyperlink{struct_c_map_editor_plugin_a6e0ac52ee0ab64b0df1d01aeed483053}{C\+Map\+Editor\+Plugin\+::\+Cardinal\+Directions}} Direction, \mbox{\hyperlink{class_boolean}{Boolean}} Smooth)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_aba81fac117a391d3b32745a684f46c1e}{Set\+V\+Step}} (\mbox{\hyperlink{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1}{E\+Camera\+V\+Step}} Step)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_map_editor_camera_a0984cede4196b44122c157e1ccd406e9}{Watch\+Custom\+Selection}} (\mbox{\hyperlink{class_boolean}{Boolean}} Watch\+Custom\+Selection)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1}\label{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!ECameraVStep@{ECameraVStep}}
+\index{ECameraVStep@{ECameraVStep}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{ECameraVStep}{ECameraVStep}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1}{C\+Map\+Editor\+Camera\+::\+E\+Camera\+V\+Step}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Low@{Low}!CMapEditorCamera@{CMapEditorCamera}}\index{CMapEditorCamera@{CMapEditorCamera}!Low@{Low}}}\mbox{\Hypertarget{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1a1aaa88a9e53cdabb0b1bae1b906b96aa}\label{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1a1aaa88a9e53cdabb0b1bae1b906b96aa}} 
+Low&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MediumLow@{MediumLow}!CMapEditorCamera@{CMapEditorCamera}}\index{CMapEditorCamera@{CMapEditorCamera}!MediumLow@{MediumLow}}}\mbox{\Hypertarget{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1a4b83dbedc825dcd1db6d30f6734389d5}\label{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1a4b83dbedc825dcd1db6d30f6734389d5}} 
+Medium\+Low&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Medium@{Medium}!CMapEditorCamera@{CMapEditorCamera}}\index{CMapEditorCamera@{CMapEditorCamera}!Medium@{Medium}}}\mbox{\Hypertarget{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1ace0613f588845b8b9a8c269bbb732a0e}\label{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1ace0613f588845b8b9a8c269bbb732a0e}} 
+Medium&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MediumHigh@{MediumHigh}!CMapEditorCamera@{CMapEditorCamera}}\index{CMapEditorCamera@{CMapEditorCamera}!MediumHigh@{MediumHigh}}}\mbox{\Hypertarget{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1a4a2f2296295226bf67e1fd6cdff351aa}\label{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1a4a2f2296295226bf67e1fd6cdff351aa}} 
+Medium\+High&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{High@{High}!CMapEditorCamera@{CMapEditorCamera}}\index{CMapEditorCamera@{CMapEditorCamera}!High@{High}}}\mbox{\Hypertarget{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1aedbeeb52c2a67de80f72574b704ebc2a}\label{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1aedbeeb52c2a67de80f72574b704ebc2a}} 
+High&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62}\label{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!EZoomLevel@{EZoomLevel}}
+\index{EZoomLevel@{EZoomLevel}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{EZoomLevel}{EZoomLevel}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62}{C\+Map\+Editor\+Camera\+::\+E\+Zoom\+Level}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Close@{Close}!CMapEditorCamera@{CMapEditorCamera}}\index{CMapEditorCamera@{CMapEditorCamera}!Close@{Close}}}\mbox{\Hypertarget{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62af1d723b1623df07de65d15bc27195c65}\label{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62af1d723b1623df07de65d15bc27195c65}} 
+Close&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Medium@{Medium}!CMapEditorCamera@{CMapEditorCamera}}\index{CMapEditorCamera@{CMapEditorCamera}!Medium@{Medium}}}\mbox{\Hypertarget{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1ace0613f588845b8b9a8c269bbb732a0e}\label{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1ace0613f588845b8b9a8c269bbb732a0e}} 
+Medium&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Far@{Far}!CMapEditorCamera@{CMapEditorCamera}}\index{CMapEditorCamera@{CMapEditorCamera}!Far@{Far}}}\mbox{\Hypertarget{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62ab0ef5c4d3406e7664d0b42765b90739f}\label{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62ab0ef5c4d3406e7664d0b42765b90739f}} 
+Far&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_map_editor_camera_a874cc4472f1ef2d6aa510c9c8a4a8ca4}\label{struct_c_map_editor_camera_a874cc4472f1ef2d6aa510c9c8a4a8ca4}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!CanUse@{CanUse}}
+\index{CanUse@{CanUse}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{CanUse()}{CanUse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Map\+Editor\+Camera\+::\+Can\+Use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_aaadc4010557645b84b96917f86fed8d2}\label{struct_c_map_editor_camera_aaadc4010557645b84b96917f86fed8d2}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!CenterOnCursor@{CenterOnCursor}}
+\index{CenterOnCursor@{CenterOnCursor}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{CenterOnCursor()}{CenterOnCursor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Center\+On\+Cursor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_ac67c3c17014b8434d3ae155ca2fa4442}\label{struct_c_map_editor_camera_ac67c3c17014b8434d3ae155ca2fa4442}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!CenterOnCursor@{CenterOnCursor}}
+\index{CenterOnCursor@{CenterOnCursor}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{CenterOnCursor()}{CenterOnCursor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Center\+On\+Cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a88790f99cc316d979ef285568a79d70e}\label{struct_c_map_editor_camera_a88790f99cc316d979ef285568a79d70e}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!FollowCursor@{FollowCursor}}
+\index{FollowCursor@{FollowCursor}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{FollowCursor()}{FollowCursor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Follow\+Cursor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Follow }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_aa19e46fa5ba14be115ec048d805eba4b}\label{struct_c_map_editor_camera_aa19e46fa5ba14be115ec048d805eba4b}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!GetLock@{GetLock}}
+\index{GetLock@{GetLock}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{GetLock()}{GetLock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Map\+Editor\+Camera\+::\+Get\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a908b9c2727550ec6815007e9f315cd72}\label{struct_c_map_editor_camera_a908b9c2727550ec6815007e9f315cd72}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Look@{Look}}
+\index{Look@{Look}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Look()}{Look()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Look (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_map_editor_plugin_a6e0ac52ee0ab64b0df1d01aeed483053}{C\+Map\+Editor\+Plugin\+::\+Cardinal\+Directions}}}]{Direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a1cb7aa1079476afb6a287a7db2600d0e}\label{struct_c_map_editor_camera_a1cb7aa1079476afb6a287a7db2600d0e}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Look@{Look}}
+\index{Look@{Look}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Look()}{Look()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Look (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_map_editor_plugin_a6e0ac52ee0ab64b0df1d01aeed483053}{C\+Map\+Editor\+Plugin\+::\+Cardinal\+Directions}}}]{Direction,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a12c0e97610931fec6899d55f411153f2}\label{struct_c_map_editor_camera_a12c0e97610931fec6899d55f411153f2}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Look@{Look}}
+\index{Look@{Look}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Look()}{Look()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Look (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_map_editor_plugin_a6f77168ec7d59b0f95cd7fdc441c3e48}{C\+Map\+Editor\+Plugin\+::\+Cardinal\+Directions8}}}]{Direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a98774b8251ac43da73dfda3bfe4a33bc}\label{struct_c_map_editor_camera_a98774b8251ac43da73dfda3bfe4a33bc}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Look@{Look}}
+\index{Look@{Look}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Look()}{Look()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Look (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_map_editor_plugin_a6f77168ec7d59b0f95cd7fdc441c3e48}{C\+Map\+Editor\+Plugin\+::\+Cardinal\+Directions8}}}]{Direction,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a0a21c8b7e3c7c4b8a3caafbed60639bc}\label{struct_c_map_editor_camera_a0a21c8b7e3c7c4b8a3caafbed60639bc}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Move@{Move}}
+\index{Move@{Move}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_map_editor_plugin_a37b9cb5dc1a3b33a111112b10337a7d9}{C\+Map\+Editor\+Plugin\+::\+Relative\+Directions}}}]{Relative\+Dir }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a9dc8e85f7681b30f3acf5bbc2a0d694c}\label{struct_c_map_editor_camera_a9dc8e85f7681b30f3acf5bbc2a0d694c}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!MoveToMapCenter@{MoveToMapCenter}}
+\index{MoveToMapCenter@{MoveToMapCenter}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{MoveToMapCenter()}{MoveToMapCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Move\+To\+Map\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a1255227f6a146ed995115929acdf3f68}\label{struct_c_map_editor_camera_a1255227f6a146ed995115929acdf3f68}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!MoveToMapCenter@{MoveToMapCenter}}
+\index{MoveToMapCenter@{MoveToMapCenter}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{MoveToMapCenter()}{MoveToMapCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Move\+To\+Map\+Center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_ae398d2a646100acfdbc19a35ca40da29}\label{struct_c_map_editor_camera_ae398d2a646100acfdbc19a35ca40da29}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!ReleaseLock@{ReleaseLock}}
+\index{ReleaseLock@{ReleaseLock}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{ReleaseLock()}{ReleaseLock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Release\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_aba81fac117a391d3b32745a684f46c1e}\label{struct_c_map_editor_camera_aba81fac117a391d3b32745a684f46c1e}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!SetVStep@{SetVStep}}
+\index{SetVStep@{SetVStep}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{SetVStep()}{SetVStep()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Set\+V\+Step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_map_editor_camera_aa29cad54d081b7c9e4c4dda50676dcb1}{E\+Camera\+V\+Step}}}]{Step }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a3bcbd14092069cbddf6b6c8a81be544d}\label{struct_c_map_editor_camera_a3bcbd14092069cbddf6b6c8a81be544d}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!TurnH@{TurnH}}
+\index{TurnH@{TurnH}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{TurnH()}{TurnH()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+TurnH (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Clockwise }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a8e75225c5a486d37f0f21e8d1aa91ede}\label{struct_c_map_editor_camera_a8e75225c5a486d37f0f21e8d1aa91ede}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!TurnH@{TurnH}}
+\index{TurnH@{TurnH}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{TurnH()}{TurnH()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+TurnH (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Clockwise,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Half\+Steps }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a9947840c4c9d3306f9d91c22f48b5f30}\label{struct_c_map_editor_camera_a9947840c4c9d3306f9d91c22f48b5f30}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!TurnH@{TurnH}}
+\index{TurnH@{TurnH}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{TurnH()}{TurnH()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+TurnH (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Clockwise,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Half\+Steps,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a0e40100e557f74355212a047c8b55ba7}\label{struct_c_map_editor_camera_a0e40100e557f74355212a047c8b55ba7}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!TurnV@{TurnV}}
+\index{TurnV@{TurnV}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{TurnV()}{TurnV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+TurnV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Up\+Or\+Else\+Down }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_ae97968b22361af3615503c7f250c8f57}\label{struct_c_map_editor_camera_ae97968b22361af3615503c7f250c8f57}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!TurnV@{TurnV}}
+\index{TurnV@{TurnV}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{TurnV()}{TurnV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+TurnV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Up\+Or\+Else\+Down,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_aab858e04558dff1bcacca5abc7e3b308}\label{struct_c_map_editor_camera_aab858e04558dff1bcacca5abc7e3b308}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Watch@{Watch}}
+\index{Watch@{Watch}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Watch()}{Watch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_block}{C\+Block}}}]{Block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_af08a1b4ca0fc3c2a8730cfd02ee1cd5d}\label{struct_c_map_editor_camera_af08a1b4ca0fc3c2a8730cfd02ee1cd5d}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Watch@{Watch}}
+\index{Watch@{Watch}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Watch()}{Watch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_block}{C\+Block}}}]{Block,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a610a7153d8be8386178e61fc0496d9ae}\label{struct_c_map_editor_camera_a610a7153d8be8386178e61fc0496d9ae}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Watch@{Watch}}
+\index{Watch@{Watch}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Watch()}{Watch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_block_clip}{C\+Block\+Clip}}}]{Clip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_af0f6298e050729782b3b2f7c3f525501}\label{struct_c_map_editor_camera_af0f6298e050729782b3b2f7c3f525501}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Watch@{Watch}}
+\index{Watch@{Watch}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Watch()}{Watch()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_block_clip}{C\+Block\+Clip}}}]{Clip,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a213908057c81074a7c5b1dcacf55dea3}\label{struct_c_map_editor_camera_a213908057c81074a7c5b1dcacf55dea3}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Watch@{Watch}}
+\index{Watch@{Watch}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Watch()}{Watch()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_macroblock_instance}{C\+Macroblock\+Instance}}}]{Macroblock }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_abd2e7eea2f56fc689e2477547d4a70fd}\label{struct_c_map_editor_camera_abd2e7eea2f56fc689e2477547d4a70fd}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Watch@{Watch}}
+\index{Watch@{Watch}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Watch()}{Watch()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_macroblock_instance}{C\+Macroblock\+Instance}}}]{Macroblock,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a3856582bfcc2a156e81b6e5f949e6c3f}\label{struct_c_map_editor_camera_a3856582bfcc2a156e81b6e5f949e6c3f}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchClosestCheckpoint@{WatchClosestCheckpoint}}
+\index{WatchClosestCheckpoint@{WatchClosestCheckpoint}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchClosestCheckpoint()}{WatchClosestCheckpoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Closest\+Checkpoint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a11ec71f26e471fb303597db06e06fd1d}\label{struct_c_map_editor_camera_a11ec71f26e471fb303597db06e06fd1d}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchClosestCheckpoint@{WatchClosestCheckpoint}}
+\index{WatchClosestCheckpoint@{WatchClosestCheckpoint}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchClosestCheckpoint()}{WatchClosestCheckpoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Closest\+Checkpoint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_adfeb163854391f827d1706a3c8abcffb}\label{struct_c_map_editor_camera_adfeb163854391f827d1706a3c8abcffb}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchClosestFinishLine@{WatchClosestFinishLine}}
+\index{WatchClosestFinishLine@{WatchClosestFinishLine}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchClosestFinishLine()}{WatchClosestFinishLine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Closest\+Finish\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a9e3fab716493fc86aa8a6915d50d577c}\label{struct_c_map_editor_camera_a9e3fab716493fc86aa8a6915d50d577c}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchClosestFinishLine@{WatchClosestFinishLine}}
+\index{WatchClosestFinishLine@{WatchClosestFinishLine}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchClosestFinishLine()}{WatchClosestFinishLine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Closest\+Finish\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a3c5d6c4a081d81aa4035af9e53d9e8de}\label{struct_c_map_editor_camera_a3c5d6c4a081d81aa4035af9e53d9e8de}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchCustomSelection@{WatchCustomSelection}}
+\index{WatchCustomSelection@{WatchCustomSelection}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchCustomSelection()}{WatchCustomSelection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Custom\+Selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a0984cede4196b44122c157e1ccd406e9}\label{struct_c_map_editor_camera_a0984cede4196b44122c157e1ccd406e9}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchCustomSelection@{WatchCustomSelection}}
+\index{WatchCustomSelection@{WatchCustomSelection}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchCustomSelection()}{WatchCustomSelection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Custom\+Selection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Watch\+Custom\+Selection }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a7f1767897c4f4861e3f252020eb5d50f}\label{struct_c_map_editor_camera_a7f1767897c4f4861e3f252020eb5d50f}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchMacroblocks@{WatchMacroblocks}}
+\index{WatchMacroblocks@{WatchMacroblocks}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchMacroblocks()}{WatchMacroblocks()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Macroblocks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{User\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a201580e01611272c970276e0b26a1868}\label{struct_c_map_editor_camera_a201580e01611272c970276e0b26a1868}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchMacroblocks@{WatchMacroblocks}}
+\index{WatchMacroblocks@{WatchMacroblocks}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchMacroblocks()}{WatchMacroblocks()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Macroblocks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{User\+Data,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_aebbf8cdd4514b5b69880c9231232d5c2}\label{struct_c_map_editor_camera_aebbf8cdd4514b5b69880c9231232d5c2}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchStart@{WatchStart}}
+\index{WatchStart@{WatchStart}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchStart()}{WatchStart()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a7ad52ca160c58181bd372e8143706134}\label{struct_c_map_editor_camera_a7ad52ca160c58181bd372e8143706134}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchStart@{WatchStart}}
+\index{WatchStart@{WatchStart}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchStart()}{WatchStart()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_aefebe71a766fcea8059ff145a017ecf2}\label{struct_c_map_editor_camera_aefebe71a766fcea8059ff145a017ecf2}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchWholeMap@{WatchWholeMap}}
+\index{WatchWholeMap@{WatchWholeMap}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchWholeMap()}{WatchWholeMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Whole\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a6d8d33d6b8f34eb915cb99327c0c6aa5}\label{struct_c_map_editor_camera_a6d8d33d6b8f34eb915cb99327c0c6aa5}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!WatchWholeMap@{WatchWholeMap}}
+\index{WatchWholeMap@{WatchWholeMap}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{WatchWholeMap()}{WatchWholeMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Watch\+Whole\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_aa5a16b33ad4d92c3c2a9eadc730ee6a2}\label{struct_c_map_editor_camera_aa5a16b33ad4d92c3c2a9eadc730ee6a2}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Zoom@{Zoom}}
+\index{Zoom@{Zoom}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Zoom()}{Zoom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Zoom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62}{E\+Zoom\+Level}}}]{Level }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_ad9493a1122628009e3a0a9430cf4110a}\label{struct_c_map_editor_camera_ad9493a1122628009e3a0a9430cf4110a}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!Zoom@{Zoom}}
+\index{Zoom@{Zoom}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{Zoom()}{Zoom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Zoom (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_c_map_editor_camera_a2919966bdc3607710a7bd98498c27c62}{E\+Zoom\+Level}}}]{Level,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a794e2fb8652904612d0f00992900b74f}\label{struct_c_map_editor_camera_a794e2fb8652904612d0f00992900b74f}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!ZoomIn@{ZoomIn}}
+\index{ZoomIn@{ZoomIn}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{ZoomIn()}{ZoomIn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Zoom\+In (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Loop }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_aa02e369959d7c187875054276eccd61a}\label{struct_c_map_editor_camera_aa02e369959d7c187875054276eccd61a}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!ZoomIn@{ZoomIn}}
+\index{ZoomIn@{ZoomIn}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{ZoomIn()}{ZoomIn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Zoom\+In (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Loop,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a871789809e4bcd293c5ad10e8fe0ebff}\label{struct_c_map_editor_camera_a871789809e4bcd293c5ad10e8fe0ebff}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!ZoomOut@{ZoomOut}}
+\index{ZoomOut@{ZoomOut}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{ZoomOut()}{ZoomOut()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Zoom\+Out (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Loop }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_map_editor_camera_a691fb2a67df794e6a6db8bebd47768a4}\label{struct_c_map_editor_camera_a691fb2a67df794e6a6db8bebd47768a4}} 
+\index{CMapEditorCamera@{CMapEditorCamera}!ZoomOut@{ZoomOut}}
+\index{ZoomOut@{ZoomOut}!CMapEditorCamera@{CMapEditorCamera}}
+\doxysubsubsection{\texorpdfstring{ZoomOut()}{ZoomOut()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Map\+Editor\+Camera\+::\+Zoom\+Out (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Loop,  }\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Smooth }\end{DoxyParamCaption})}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

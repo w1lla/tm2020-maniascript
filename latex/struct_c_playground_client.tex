@@ -1,0 +1,200 @@
+\hypertarget{struct_c_playground_client}{}\doxysection{C\+Playground\+Client Struct Reference}
+\label{struct_c_playground_client}\index{CPlaygroundClient@{CPlaygroundClient}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Playground\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_c_playground_client}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_playground_client_a659612f23a1a1f4594dc9418ef287eed}{Quit\+Server}} (\mbox{\hyperlink{class_boolean}{Boolean}} Silent)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_playground_client_a887960b55be2d4e1b67ce027a1484dda}{Quit\+Server\+And\+Set\+Result}} (\mbox{\hyperlink{class_boolean}{Boolean}} Silent, \mbox{\hyperlink{class_text}{Text}} Type, \mbox{\hyperlink{class_text}{Text}}\mbox{[}$\,$\mbox{]} Data)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_playground_client_a5f0e430795b1b103d01529a142eb0e6f}{Join\+Team1}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_playground_client_a4834a1e7095e60b7dc580f95f29b93f9}{Join\+Team2}} ()
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_playground_client_aa0a5f834e1dfce7f1ee4cad448d6dbae}{Request\+Spectator\+Client}} (\mbox{\hyperlink{class_boolean}{Boolean}} Spectator)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_playground_client_a168153087eceecd97eb6b619e1cc2ec7}{Set\+Spectate\+Target}} (\mbox{\hyperlink{class_text}{Text}} Player)
+\item 
+\mbox{\hyperlink{class_void}{Void}} \mbox{\hyperlink{struct_c_playground_client_a7d3ce2bde6346933487156f87379480f}{Show\+Profile}} (\mbox{\hyperlink{class_text}{Text}} Player)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_c_map}{C\+Map}} \mbox{\hyperlink{struct_c_playground_client_a3394944e456a991d2e323c19a71c7a93}{Map}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_playground_client_a9cf9c1d00ec4ab11764afcbfb59f73f6}{Game\+Time}}
+\item 
+const \mbox{\hyperlink{struct_c_user}{C\+User}} \mbox{\hyperlink{struct_c_playground_client_ad3e3c769189103a0d2fa2d0e9a724bbb}{Local\+User}}
+\item 
+const \mbox{\hyperlink{struct_c_u_i_config}{C\+U\+I\+Config}} \mbox{\hyperlink{struct_c_playground_client_a50bde07490784f5960761064246fe233}{UI}}
+\item 
+const \mbox{\hyperlink{struct_c_server_info}{C\+Server\+Info}} \mbox{\hyperlink{struct_c_playground_client_a97d4a02eb08a764ea56fb147e28e9707}{Server\+Info}}
+\item 
+const \mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_playground_client_a29a28783757a5be372fd545ccf2df440}{Settings\+Player\+Model\+Id}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_playground_client_ae6a59e5c816c72deee15ace90b31f538}{Is\+Spectator}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_playground_client_a43c33ac502649c6cc9c7f44c82c6c939}{Is\+Spectator\+Client}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_playground_client_a0174c04b168633f42a7fc77900fc8e4f}{Use\+Clans}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_playground_client_a23c46bbfb8c3825bef0e9915cfc80e89}{Use\+Forced\+Clans}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_playground_client_abdc162d0016b6664a09b0f39939549f2}{Is\+Loading\+Screen}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_playground_client_ad8f617f5703358a5c9d0fb9305b8e65d}{Is\+In\+Game\+Menu\+Displayed}}
+\item 
+const \mbox{\hyperlink{struct_c_team}{C\+Team}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{struct_c_playground_client_a21e8c731e871258a926f86c514ef55ae}{Teams}}
+\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_playground_client_ab288b5b40d344b8c72f8fc66bed31c5d}{Disable\+Playing\+State\+Tracking}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Supported declare modes \+: Local Persistent A\+PI for plugins to get playground info. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_c_playground_client_a5f0e430795b1b103d01529a142eb0e6f}\label{struct_c_playground_client_a5f0e430795b1b103d01529a142eb0e6f}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!JoinTeam1@{JoinTeam1}}
+\index{JoinTeam1@{JoinTeam1}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{JoinTeam1()}{JoinTeam1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Playground\+Client\+::\+Join\+Team1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_playground_client_a4834a1e7095e60b7dc580f95f29b93f9}\label{struct_c_playground_client_a4834a1e7095e60b7dc580f95f29b93f9}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!JoinTeam2@{JoinTeam2}}
+\index{JoinTeam2@{JoinTeam2}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{JoinTeam2()}{JoinTeam2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Playground\+Client\+::\+Join\+Team2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_playground_client_a659612f23a1a1f4594dc9418ef287eed}\label{struct_c_playground_client_a659612f23a1a1f4594dc9418ef287eed}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!QuitServer@{QuitServer}}
+\index{QuitServer@{QuitServer}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{QuitServer()}{QuitServer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Playground\+Client\+::\+Quit\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Silent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_playground_client_a887960b55be2d4e1b67ce027a1484dda}\label{struct_c_playground_client_a887960b55be2d4e1b67ce027a1484dda}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!QuitServerAndSetResult@{QuitServerAndSetResult}}
+\index{QuitServerAndSetResult@{QuitServerAndSetResult}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{QuitServerAndSetResult()}{QuitServerAndSetResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Playground\+Client\+::\+Quit\+Server\+And\+Set\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Silent,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{Type,  }\item[{\mbox{\hyperlink{class_text}{Text}}\mbox{[}$\,$\mbox{]}}]{Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_playground_client_aa0a5f834e1dfce7f1ee4cad448d6dbae}\label{struct_c_playground_client_aa0a5f834e1dfce7f1ee4cad448d6dbae}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!RequestSpectatorClient@{RequestSpectatorClient}}
+\index{RequestSpectatorClient@{RequestSpectatorClient}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{RequestSpectatorClient()}{RequestSpectatorClient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Playground\+Client\+::\+Request\+Spectator\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_boolean}{Boolean}}}]{Spectator }\end{DoxyParamCaption})}
+
+Request change of Is\+Spectator\+Client (not immediate, and it may be refused). \mbox{\Hypertarget{struct_c_playground_client_a168153087eceecd97eb6b619e1cc2ec7}\label{struct_c_playground_client_a168153087eceecd97eb6b619e1cc2ec7}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!SetSpectateTarget@{SetSpectateTarget}}
+\index{SetSpectateTarget@{SetSpectateTarget}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{SetSpectateTarget()}{SetSpectateTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Playground\+Client\+::\+Set\+Spectate\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Player }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{struct_c_playground_client_a7d3ce2bde6346933487156f87379480f}\label{struct_c_playground_client_a7d3ce2bde6346933487156f87379480f}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!ShowProfile@{ShowProfile}}
+\index{ShowProfile@{ShowProfile}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{ShowProfile()}{ShowProfile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_void}{Void}} C\+Playground\+Client\+::\+Show\+Profile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{Player }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_playground_client_ab288b5b40d344b8c72f8fc66bed31c5d}\label{struct_c_playground_client_ab288b5b40d344b8c72f8fc66bed31c5d}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!DisablePlayingStateTracking@{DisablePlayingStateTracking}}
+\index{DisablePlayingStateTracking@{DisablePlayingStateTracking}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{DisablePlayingStateTracking}{DisablePlayingStateTracking}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_boolean}{Boolean}} C\+Playground\+Client\+::\+Disable\+Playing\+State\+Tracking}
+
+\mbox{\Hypertarget{struct_c_playground_client_a9cf9c1d00ec4ab11764afcbfb59f73f6}\label{struct_c_playground_client_a9cf9c1d00ec4ab11764afcbfb59f73f6}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!GameTime@{GameTime}}
+\index{GameTime@{GameTime}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{GameTime}{GameTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Playground\+Client\+::\+Game\+Time}
+
+\mbox{\Hypertarget{struct_c_playground_client_ad8f617f5703358a5c9d0fb9305b8e65d}\label{struct_c_playground_client_ad8f617f5703358a5c9d0fb9305b8e65d}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!IsInGameMenuDisplayed@{IsInGameMenuDisplayed}}
+\index{IsInGameMenuDisplayed@{IsInGameMenuDisplayed}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{IsInGameMenuDisplayed}{IsInGameMenuDisplayed}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Playground\+Client\+::\+Is\+In\+Game\+Menu\+Displayed}
+
+\mbox{\Hypertarget{struct_c_playground_client_abdc162d0016b6664a09b0f39939549f2}\label{struct_c_playground_client_abdc162d0016b6664a09b0f39939549f2}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!IsLoadingScreen@{IsLoadingScreen}}
+\index{IsLoadingScreen@{IsLoadingScreen}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{IsLoadingScreen}{IsLoadingScreen}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Playground\+Client\+::\+Is\+Loading\+Screen}
+
+\mbox{\Hypertarget{struct_c_playground_client_ae6a59e5c816c72deee15ace90b31f538}\label{struct_c_playground_client_ae6a59e5c816c72deee15ace90b31f538}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!IsSpectator@{IsSpectator}}
+\index{IsSpectator@{IsSpectator}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{IsSpectator}{IsSpectator}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Playground\+Client\+::\+Is\+Spectator}
+
+Is in spectator mode -\/ may be only for a short time between rounds. \mbox{\Hypertarget{struct_c_playground_client_a43c33ac502649c6cc9c7f44c82c6c939}\label{struct_c_playground_client_a43c33ac502649c6cc9c7f44c82c6c939}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!IsSpectatorClient@{IsSpectatorClient}}
+\index{IsSpectatorClient@{IsSpectatorClient}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{IsSpectatorClient}{IsSpectatorClient}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Playground\+Client\+::\+Is\+Spectator\+Client}
+
+Client actually desires to spectate instead of playing. \mbox{\Hypertarget{struct_c_playground_client_ad3e3c769189103a0d2fa2d0e9a724bbb}\label{struct_c_playground_client_ad3e3c769189103a0d2fa2d0e9a724bbb}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!LocalUser@{LocalUser}}
+\index{LocalUser@{LocalUser}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{LocalUser}{LocalUser}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_user}{C\+User}} C\+Playground\+Client\+::\+Local\+User}
+
+\mbox{\Hypertarget{struct_c_playground_client_a3394944e456a991d2e323c19a71c7a93}\label{struct_c_playground_client_a3394944e456a991d2e323c19a71c7a93}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!Map@{Map}}
+\index{Map@{Map}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{Map}{Map}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_map}{C\+Map}} C\+Playground\+Client\+::\+Map}
+
+Null when no map loaded. \mbox{\Hypertarget{struct_c_playground_client_a97d4a02eb08a764ea56fb147e28e9707}\label{struct_c_playground_client_a97d4a02eb08a764ea56fb147e28e9707}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!ServerInfo@{ServerInfo}}
+\index{ServerInfo@{ServerInfo}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{ServerInfo}{ServerInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_server_info}{C\+Server\+Info}} C\+Playground\+Client\+::\+Server\+Info}
+
+\mbox{\Hypertarget{struct_c_playground_client_a29a28783757a5be372fd545ccf2df440}\label{struct_c_playground_client_a29a28783757a5be372fd545ccf2df440}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!SettingsPlayerModelId@{SettingsPlayerModelId}}
+\index{SettingsPlayerModelId@{SettingsPlayerModelId}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{SettingsPlayerModelId}{SettingsPlayerModelId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_ident}{Ident}} C\+Playground\+Client\+::\+Settings\+Player\+Model\+Id}
+
+\mbox{\Hypertarget{struct_c_playground_client_a21e8c731e871258a926f86c514ef55ae}\label{struct_c_playground_client_a21e8c731e871258a926f86c514ef55ae}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!Teams@{Teams}}
+\index{Teams@{Teams}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{Teams}{Teams}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_team}{C\+Team}} \mbox{[}$\,$\mbox{]} C\+Playground\+Client\+::\+Teams}
+
+\mbox{\Hypertarget{struct_c_playground_client_a50bde07490784f5960761064246fe233}\label{struct_c_playground_client_a50bde07490784f5960761064246fe233}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!UI@{UI}}
+\index{UI@{UI}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{UI}{UI}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_u_i_config}{C\+U\+I\+Config}} C\+Playground\+Client\+::\+UI}
+
+\mbox{\Hypertarget{struct_c_playground_client_a0174c04b168633f42a7fc77900fc8e4f}\label{struct_c_playground_client_a0174c04b168633f42a7fc77900fc8e4f}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!UseClans@{UseClans}}
+\index{UseClans@{UseClans}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{UseClans}{UseClans}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Playground\+Client\+::\+Use\+Clans}
+
+\mbox{\Hypertarget{struct_c_playground_client_a23c46bbfb8c3825bef0e9915cfc80e89}\label{struct_c_playground_client_a23c46bbfb8c3825bef0e9915cfc80e89}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!UseForcedClans@{UseForcedClans}}
+\index{UseForcedClans@{UseForcedClans}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{UseForcedClans}{UseForcedClans}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Playground\+Client\+::\+Use\+Forced\+Clans}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

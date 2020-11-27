@@ -1,0 +1,561 @@
+\hypertarget{struct_c_tm_mode_event}{}\doxysection{C\+Tm\+Mode\+Event Struct Reference}
+\label{struct_c_tm_mode_event}\index{CTmModeEvent@{CTmModeEvent}}
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Tm\+Mode\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{struct_c_tm_mode_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dd}{E\+Type}} \{ \newline
+\mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dda1b4ae6f4f28f7214634464106653451f}{Unknown}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddaded6bc4a40360211de188aca8a9fa7c1}{Start\+Line}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddae23c0b399d84952feeacabda05884099}{Way\+Point}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddaae572eea2fc91d76838b840f0b0f4629}{Give\+Up}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddabdb218f0f2119b16523966976c90c104}{Respawn}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddadc60feebabc5c60021b2221aca599c5e}{Stunt}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddab41080fb0802cacd259c292098c16b1b}{On\+Player\+Added}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dda3823ef0d497fa27df27251105f321e30}{On\+Player\+Removed}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dda159cec7384285861e4fa610108230251}{On\+Command}}
+ \}
+\item 
+enum \mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9fa}{E\+Stunt\+Figure}} \{ \newline
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa1078f240511295637a79604b6fc922c6}{None}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa139a8f3a945143b57d86788d9feac0b2}{Straight\+Jump}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faad6158273f85dd59f6c06fcb48cb78b4e}{Flip}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faac8fa4ca8442618679f810ddb3e261bdc}{Back\+Flip}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa393f1f8cf45b822e96f8f7380f0c7f0e}{Spin}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa913f7fb7e8339b00ab0eebb4d86c667f}{Aerial}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa1b77b3222e70fba11cf025766ca95ed5}{Alley\+Oop}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa9092a2448a81c34dab1582d4cea58e23}{Roll}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa203f39153ebadb69bd82489969cb2575}{Corkscrew}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa645f4b0ef4ae40569442e7d18ff6eb65}{Spin\+Off}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa1bac5712c08164ad65ee7dc512161291}{Rodeo}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa0664bbd292effc9e48a69580ece61753}{Flip\+Flap}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa244661798927d76b8a612e8c6071c9b4}{Twister}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa291ab5b5d6435f0607968c13219a99c9}{Free\+Style}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa97b931d443b95580f5400f4ba08761cb}{Spinning\+Mix}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa9bf1456137274cd303a8740af946e7c6}{Flipping\+Chaos}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaa3af90183cbfcaea5ff9b25acdffa3e3}{Rolling\+Madness}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaaac7ac193c117a1ec1c8ecd71098a2e4}{Wreck\+None}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa125ad0c7afe38f003a2c3ee27e17f39b}{Wreck\+Straight\+Jump}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaec41b589617968f6d92b2c87f8ff160a}{Wreck\+Flip}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaf84fb43ec71929244c2d03c58c5771d9}{Wreck\+Back\+Flip}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa5304464ebd59b45cd3a3b874303f7030}{Wreck\+Spin}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faab1ffa36d6091b9794341afeea0fb19e3}{Wreck\+Aerial}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faad88a4efa3a524208049dc2b804fbf02f}{Wreck\+Alley\+Oop}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa5b7f8ffbe8efccc9d045a98c77d494b7}{Wreck\+Roll}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa5b3996d9896325e9d339f7df749ee383}{Wreck\+Corkscrew}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6149b4fc93ca3024d7c71df0a7154574}{Wreck\+Spin\+Off}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6e5d3bf71c5bbcf557b5ccfa280f6ca3}{Wreck\+Rodeo}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa756a1cbbe0422199afd3cdc4bdbce691}{Wreck\+Flip\+Flap}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faadc103186bce3821b6088e68274dfa349}{Wreck\+Twister}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa2e04a30d6e5f5f327eb7a6665e319466}{Wreck\+Free\+Style}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6d126c0144d0e687c204392106b35713}{Wreck\+Spinning\+Mix}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6e095ffe421babac2845089d3910409f}{Wreck\+Flipping\+Chaos}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaa582c102f49d550857bd5de32dfdf061}{Wreck\+Rolling\+Madness}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa02b19b4f7e24eaf82666b68faf965d53}{Time\+Penalty}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faacceaff8d389c36bb7a6a8290b3b4ae62}{Respawn\+Penalty}}, 
+\newline
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaf58d6f543577e78a48e78a09bc59a155}{Grind}}, 
+\mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa9854d1bce86250e8f6b9ed62d859bbf8}{Reset}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dd}{E\+Type}} \mbox{\hyperlink{struct_c_tm_mode_event_af6771af8b65f80eec2e9ec550f79f729}{Type}}
+\item 
+const \mbox{\hyperlink{struct_c_tm_player}{C\+Tm\+Player}} \mbox{\hyperlink{struct_c_tm_mode_event_af7e6bb7974181afae02cb7801d482792}{Player}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_mode_event_a2e6c35996fc7033d284dc694be794e82}{Race\+Time}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_mode_event_a68aa1fb75fafcf4e05ae3e50e2d49f55}{Checkpoint\+In\+Race}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_mode_event_a2df3e83f2eebfd17b143d2dee602af73}{Checkpoint\+In\+Lap}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_mode_event_a224717b523158c472d6b75baaac900f0}{Is\+End\+Lap}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_mode_event_af9bc1372b9cedc4b1742a8c68dfb6004}{Is\+End\+Race}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_mode_event_ac1a9fac1420e948bc2117538d0a20d71}{Lap\+Time}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_mode_event_a4d814e1dce255879f0ae75b5fb16c7de}{Stunts\+Score}}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_mode_event_ac2db1bf9c98e51961feb2f7a0acfe8ba}{Nb\+Respawns}}
+\item 
+const \mbox{\hyperlink{class_ident}{Ident}} \mbox{\hyperlink{struct_c_tm_mode_event_a6756c6bd419c1288df04ff42b73795ec}{Block\+Id}}
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_mode_event_a1bcb189dc23a8d78d11b68a4af49c466}{Speed}}
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_mode_event_a28a8ea900b521440e1bb4b65fabdb649}{Distance}}
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_mode_event_ad0ea05ff22cb75cdf58074f439e6531b}{Damages}}
+\item 
+const \mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9fa}{E\+Stunt\+Figure}} \mbox{\hyperlink{struct_c_tm_mode_event_a628ab2db00f34ae2d3eed53b3e3c740a}{Stunt\+Figure}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_mode_event_a92af020798f16f054a6960d6bf90e7e2}{Angle}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_mode_event_a6036b14f19233722cdb646f903d6e971}{Points}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_mode_event_ac0d9dd3a14f86c6802ea063998fa4936}{Factor}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_mode_event_a110c25567d633d7e718aa3e2a26f8a2f}{Combo}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_mode_event_a221aaeea7cfdcaa4fcf92a876777cc26}{Is\+Straight}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_mode_event_a23cc0042e0865a89b9536d5927de0dfc}{Is\+Reverse}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_mode_event_a84702d6e16c361c3c9ed3d78d0ca73d5}{Is\+Perfect\+Landing}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_mode_event_ab8a1f12d9bb3bd49cf35e2e6c2adc687}{Is\+Master\+Jump}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_mode_event_a8d306138091cd70d6a5a583cab835677}{Is\+Master\+Landing}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_mode_event_a73d116b46049b29bc7499b86c9b63cb3}{Is\+Epic\+Landing}}
+\item 
+const \mbox{\hyperlink{struct_c_user}{C\+User}} \mbox{\hyperlink{struct_c_tm_mode_event_a7167966fdf0e2e9121760c03c2a8eec5}{User}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_mode_event_afb309ca288cd67beef01ff43ada4341c}{Player\+Was\+Spawned}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_mode_event_a20cb18975c1e3f05d4ea3ac8c2db055d}{Player\+Was\+In\+Ladder\+Match}}
+\item 
+const \mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_tm_mode_event_a92947bd86586e0f2986c30be96ba9a0b}{Command\+Name}}
+\item 
+const \mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{struct_c_tm_mode_event_a7f39d66869b3bd454fcad406659f6d55}{Command\+Value\+Boolean}}
+\item 
+const \mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{struct_c_tm_mode_event_ae16e1877246bd6b418602eb63720bd60}{Command\+Value\+Integer}}
+\item 
+const \mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{struct_c_tm_mode_event_ab01419bedea79352d632a87500608f85}{Command\+Value\+Real}}
+\item 
+const \mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{struct_c_tm_mode_event_a939cfc12ba9cc89606f7e383a8ccb656}{Command\+Value\+Text}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9fa}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9fa}} 
+\index{CTmModeEvent@{CTmModeEvent}!EStuntFigure@{EStuntFigure}}
+\index{EStuntFigure@{EStuntFigure}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{EStuntFigure}{EStuntFigure}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9fa}{C\+Tm\+Mode\+Event\+::\+E\+Stunt\+Figure}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!None@{None}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa1078f240511295637a79604b6fc922c6}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa1078f240511295637a79604b6fc922c6}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StraightJump@{StraightJump}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!StraightJump@{StraightJump}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa139a8f3a945143b57d86788d9feac0b2}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa139a8f3a945143b57d86788d9feac0b2}} 
+Straight\+Jump&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Flip@{Flip}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Flip@{Flip}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faad6158273f85dd59f6c06fcb48cb78b4e}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faad6158273f85dd59f6c06fcb48cb78b4e}} 
+Flip&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BackFlip@{BackFlip}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!BackFlip@{BackFlip}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faac8fa4ca8442618679f810ddb3e261bdc}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faac8fa4ca8442618679f810ddb3e261bdc}} 
+Back\+Flip&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Spin@{Spin}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Spin@{Spin}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa393f1f8cf45b822e96f8f7380f0c7f0e}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa393f1f8cf45b822e96f8f7380f0c7f0e}} 
+Spin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Aerial@{Aerial}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Aerial@{Aerial}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa913f7fb7e8339b00ab0eebb4d86c667f}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa913f7fb7e8339b00ab0eebb4d86c667f}} 
+Aerial&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AlleyOop@{AlleyOop}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!AlleyOop@{AlleyOop}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa1b77b3222e70fba11cf025766ca95ed5}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa1b77b3222e70fba11cf025766ca95ed5}} 
+Alley\+Oop&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Roll@{Roll}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Roll@{Roll}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa9092a2448a81c34dab1582d4cea58e23}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa9092a2448a81c34dab1582d4cea58e23}} 
+Roll&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Corkscrew@{Corkscrew}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Corkscrew@{Corkscrew}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa203f39153ebadb69bd82489969cb2575}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa203f39153ebadb69bd82489969cb2575}} 
+Corkscrew&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpinOff@{SpinOff}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!SpinOff@{SpinOff}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa645f4b0ef4ae40569442e7d18ff6eb65}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa645f4b0ef4ae40569442e7d18ff6eb65}} 
+Spin\+Off&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Rodeo@{Rodeo}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Rodeo@{Rodeo}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa1bac5712c08164ad65ee7dc512161291}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa1bac5712c08164ad65ee7dc512161291}} 
+Rodeo&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FlipFlap@{FlipFlap}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!FlipFlap@{FlipFlap}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa0664bbd292effc9e48a69580ece61753}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa0664bbd292effc9e48a69580ece61753}} 
+Flip\+Flap&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Twister@{Twister}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Twister@{Twister}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa244661798927d76b8a612e8c6071c9b4}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa244661798927d76b8a612e8c6071c9b4}} 
+Twister&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FreeStyle@{FreeStyle}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!FreeStyle@{FreeStyle}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa291ab5b5d6435f0607968c13219a99c9}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa291ab5b5d6435f0607968c13219a99c9}} 
+Free\+Style&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpinningMix@{SpinningMix}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!SpinningMix@{SpinningMix}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa97b931d443b95580f5400f4ba08761cb}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa97b931d443b95580f5400f4ba08761cb}} 
+Spinning\+Mix&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FlippingChaos@{FlippingChaos}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!FlippingChaos@{FlippingChaos}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa9bf1456137274cd303a8740af946e7c6}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa9bf1456137274cd303a8740af946e7c6}} 
+Flipping\+Chaos&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RollingMadness@{RollingMadness}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!RollingMadness@{RollingMadness}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaa3af90183cbfcaea5ff9b25acdffa3e3}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaa3af90183cbfcaea5ff9b25acdffa3e3}} 
+Rolling\+Madness&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckNone@{WreckNone}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckNone@{WreckNone}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaaac7ac193c117a1ec1c8ecd71098a2e4}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaaac7ac193c117a1ec1c8ecd71098a2e4}} 
+Wreck\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckStraightJump@{WreckStraightJump}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckStraightJump@{WreckStraightJump}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa125ad0c7afe38f003a2c3ee27e17f39b}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa125ad0c7afe38f003a2c3ee27e17f39b}} 
+Wreck\+Straight\+Jump&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckFlip@{WreckFlip}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckFlip@{WreckFlip}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaec41b589617968f6d92b2c87f8ff160a}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaec41b589617968f6d92b2c87f8ff160a}} 
+Wreck\+Flip&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckBackFlip@{WreckBackFlip}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckBackFlip@{WreckBackFlip}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaf84fb43ec71929244c2d03c58c5771d9}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaf84fb43ec71929244c2d03c58c5771d9}} 
+Wreck\+Back\+Flip&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckSpin@{WreckSpin}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckSpin@{WreckSpin}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa5304464ebd59b45cd3a3b874303f7030}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa5304464ebd59b45cd3a3b874303f7030}} 
+Wreck\+Spin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckAerial@{WreckAerial}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckAerial@{WreckAerial}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faab1ffa36d6091b9794341afeea0fb19e3}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faab1ffa36d6091b9794341afeea0fb19e3}} 
+Wreck\+Aerial&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckAlleyOop@{WreckAlleyOop}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckAlleyOop@{WreckAlleyOop}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faad88a4efa3a524208049dc2b804fbf02f}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faad88a4efa3a524208049dc2b804fbf02f}} 
+Wreck\+Alley\+Oop&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckRoll@{WreckRoll}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckRoll@{WreckRoll}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa5b7f8ffbe8efccc9d045a98c77d494b7}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa5b7f8ffbe8efccc9d045a98c77d494b7}} 
+Wreck\+Roll&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckCorkscrew@{WreckCorkscrew}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckCorkscrew@{WreckCorkscrew}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa5b3996d9896325e9d339f7df749ee383}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa5b3996d9896325e9d339f7df749ee383}} 
+Wreck\+Corkscrew&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckSpinOff@{WreckSpinOff}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckSpinOff@{WreckSpinOff}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6149b4fc93ca3024d7c71df0a7154574}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6149b4fc93ca3024d7c71df0a7154574}} 
+Wreck\+Spin\+Off&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckRodeo@{WreckRodeo}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckRodeo@{WreckRodeo}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6e5d3bf71c5bbcf557b5ccfa280f6ca3}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6e5d3bf71c5bbcf557b5ccfa280f6ca3}} 
+Wreck\+Rodeo&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckFlipFlap@{WreckFlipFlap}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckFlipFlap@{WreckFlipFlap}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa756a1cbbe0422199afd3cdc4bdbce691}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa756a1cbbe0422199afd3cdc4bdbce691}} 
+Wreck\+Flip\+Flap&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckTwister@{WreckTwister}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckTwister@{WreckTwister}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faadc103186bce3821b6088e68274dfa349}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faadc103186bce3821b6088e68274dfa349}} 
+Wreck\+Twister&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckFreeStyle@{WreckFreeStyle}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckFreeStyle@{WreckFreeStyle}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa2e04a30d6e5f5f327eb7a6665e319466}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa2e04a30d6e5f5f327eb7a6665e319466}} 
+Wreck\+Free\+Style&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckSpinningMix@{WreckSpinningMix}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckSpinningMix@{WreckSpinningMix}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6d126c0144d0e687c204392106b35713}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6d126c0144d0e687c204392106b35713}} 
+Wreck\+Spinning\+Mix&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckFlippingChaos@{WreckFlippingChaos}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckFlippingChaos@{WreckFlippingChaos}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6e095ffe421babac2845089d3910409f}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa6e095ffe421babac2845089d3910409f}} 
+Wreck\+Flipping\+Chaos&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WreckRollingMadness@{WreckRollingMadness}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WreckRollingMadness@{WreckRollingMadness}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaa582c102f49d550857bd5de32dfdf061}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaa582c102f49d550857bd5de32dfdf061}} 
+Wreck\+Rolling\+Madness&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TimePenalty@{TimePenalty}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!TimePenalty@{TimePenalty}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa02b19b4f7e24eaf82666b68faf965d53}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa02b19b4f7e24eaf82666b68faf965d53}} 
+Time\+Penalty&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RespawnPenalty@{RespawnPenalty}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!RespawnPenalty@{RespawnPenalty}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faacceaff8d389c36bb7a6a8290b3b4ae62}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faacceaff8d389c36bb7a6a8290b3b4ae62}} 
+Respawn\+Penalty&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Grind@{Grind}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Grind@{Grind}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaf58d6f543577e78a48e78a09bc59a155}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faaf58d6f543577e78a48e78a09bc59a155}} 
+Grind&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Reset@{Reset}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Reset@{Reset}}}\mbox{\Hypertarget{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa9854d1bce86250e8f6b9ed62d859bbf8}\label{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9faa9854d1bce86250e8f6b9ed62d859bbf8}} 
+Reset&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dd}\label{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dd}} 
+\index{CTmModeEvent@{CTmModeEvent}!EType@{EType}}
+\index{EType@{EType}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{EType}{EType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dd}{C\+Tm\+Mode\+Event\+::\+E\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unknown@{Unknown}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Unknown@{Unknown}}}\mbox{\Hypertarget{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dda1b4ae6f4f28f7214634464106653451f}\label{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dda1b4ae6f4f28f7214634464106653451f}} 
+Unknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StartLine@{StartLine}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!StartLine@{StartLine}}}\mbox{\Hypertarget{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddaded6bc4a40360211de188aca8a9fa7c1}\label{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddaded6bc4a40360211de188aca8a9fa7c1}} 
+Start\+Line&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WayPoint@{WayPoint}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!WayPoint@{WayPoint}}}\mbox{\Hypertarget{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddae23c0b399d84952feeacabda05884099}\label{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddae23c0b399d84952feeacabda05884099}} 
+Way\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GiveUp@{GiveUp}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!GiveUp@{GiveUp}}}\mbox{\Hypertarget{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddaae572eea2fc91d76838b840f0b0f4629}\label{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddaae572eea2fc91d76838b840f0b0f4629}} 
+Give\+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Respawn@{Respawn}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Respawn@{Respawn}}}\mbox{\Hypertarget{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddabdb218f0f2119b16523966976c90c104}\label{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddabdb218f0f2119b16523966976c90c104}} 
+Respawn&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Stunt@{Stunt}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!Stunt@{Stunt}}}\mbox{\Hypertarget{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddadc60feebabc5c60021b2221aca599c5e}\label{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddadc60feebabc5c60021b2221aca599c5e}} 
+Stunt&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnPlayerAdded@{OnPlayerAdded}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!OnPlayerAdded@{OnPlayerAdded}}}\mbox{\Hypertarget{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddab41080fb0802cacd259c292098c16b1b}\label{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35ddab41080fb0802cacd259c292098c16b1b}} 
+On\+Player\+Added&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnPlayerRemoved@{OnPlayerRemoved}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!OnPlayerRemoved@{OnPlayerRemoved}}}\mbox{\Hypertarget{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dda3823ef0d497fa27df27251105f321e30}\label{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dda3823ef0d497fa27df27251105f321e30}} 
+On\+Player\+Removed&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnCommand@{OnCommand}!CTmModeEvent@{CTmModeEvent}}\index{CTmModeEvent@{CTmModeEvent}!OnCommand@{OnCommand}}}\mbox{\Hypertarget{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dda159cec7384285861e4fa610108230251}\label{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dda159cec7384285861e4fa610108230251}} 
+On\+Command&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_c_tm_mode_event_a92af020798f16f054a6960d6bf90e7e2}\label{struct_c_tm_mode_event_a92af020798f16f054a6960d6bf90e7e2}} 
+\index{CTmModeEvent@{CTmModeEvent}!Angle@{Angle}}
+\index{Angle@{Angle}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{Angle}{Angle}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Mode\+Event\+::\+Angle}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a6756c6bd419c1288df04ff42b73795ec}\label{struct_c_tm_mode_event_a6756c6bd419c1288df04ff42b73795ec}} 
+\index{CTmModeEvent@{CTmModeEvent}!BlockId@{BlockId}}
+\index{BlockId@{BlockId}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{BlockId}{BlockId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_ident}{Ident}} C\+Tm\+Mode\+Event\+::\+Block\+Id}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a2df3e83f2eebfd17b143d2dee602af73}\label{struct_c_tm_mode_event_a2df3e83f2eebfd17b143d2dee602af73}} 
+\index{CTmModeEvent@{CTmModeEvent}!CheckpointInLap@{CheckpointInLap}}
+\index{CheckpointInLap@{CheckpointInLap}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{CheckpointInLap}{CheckpointInLap}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Mode\+Event\+::\+Checkpoint\+In\+Lap}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a68aa1fb75fafcf4e05ae3e50e2d49f55}\label{struct_c_tm_mode_event_a68aa1fb75fafcf4e05ae3e50e2d49f55}} 
+\index{CTmModeEvent@{CTmModeEvent}!CheckpointInRace@{CheckpointInRace}}
+\index{CheckpointInRace@{CheckpointInRace}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{CheckpointInRace}{CheckpointInRace}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Mode\+Event\+::\+Checkpoint\+In\+Race}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a110c25567d633d7e718aa3e2a26f8a2f}\label{struct_c_tm_mode_event_a110c25567d633d7e718aa3e2a26f8a2f}} 
+\index{CTmModeEvent@{CTmModeEvent}!Combo@{Combo}}
+\index{Combo@{Combo}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{Combo}{Combo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Mode\+Event\+::\+Combo}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a92947bd86586e0f2986c30be96ba9a0b}\label{struct_c_tm_mode_event_a92947bd86586e0f2986c30be96ba9a0b}} 
+\index{CTmModeEvent@{CTmModeEvent}!CommandName@{CommandName}}
+\index{CommandName@{CommandName}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{CommandName}{CommandName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_text}{Text}} C\+Tm\+Mode\+Event\+::\+Command\+Name}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a7f39d66869b3bd454fcad406659f6d55}\label{struct_c_tm_mode_event_a7f39d66869b3bd454fcad406659f6d55}} 
+\index{CTmModeEvent@{CTmModeEvent}!CommandValueBoolean@{CommandValueBoolean}}
+\index{CommandValueBoolean@{CommandValueBoolean}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{CommandValueBoolean}{CommandValueBoolean}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Mode\+Event\+::\+Command\+Value\+Boolean}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_ae16e1877246bd6b418602eb63720bd60}\label{struct_c_tm_mode_event_ae16e1877246bd6b418602eb63720bd60}} 
+\index{CTmModeEvent@{CTmModeEvent}!CommandValueInteger@{CommandValueInteger}}
+\index{CommandValueInteger@{CommandValueInteger}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{CommandValueInteger}{CommandValueInteger}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Mode\+Event\+::\+Command\+Value\+Integer}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_ab01419bedea79352d632a87500608f85}\label{struct_c_tm_mode_event_ab01419bedea79352d632a87500608f85}} 
+\index{CTmModeEvent@{CTmModeEvent}!CommandValueReal@{CommandValueReal}}
+\index{CommandValueReal@{CommandValueReal}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{CommandValueReal}{CommandValueReal}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Mode\+Event\+::\+Command\+Value\+Real}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a939cfc12ba9cc89606f7e383a8ccb656}\label{struct_c_tm_mode_event_a939cfc12ba9cc89606f7e383a8ccb656}} 
+\index{CTmModeEvent@{CTmModeEvent}!CommandValueText@{CommandValueText}}
+\index{CommandValueText@{CommandValueText}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{CommandValueText}{CommandValueText}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_text}{Text}} C\+Tm\+Mode\+Event\+::\+Command\+Value\+Text}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_ad0ea05ff22cb75cdf58074f439e6531b}\label{struct_c_tm_mode_event_ad0ea05ff22cb75cdf58074f439e6531b}} 
+\index{CTmModeEvent@{CTmModeEvent}!Damages@{Damages}}
+\index{Damages@{Damages}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{Damages}{Damages}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Mode\+Event\+::\+Damages}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a28a8ea900b521440e1bb4b65fabdb649}\label{struct_c_tm_mode_event_a28a8ea900b521440e1bb4b65fabdb649}} 
+\index{CTmModeEvent@{CTmModeEvent}!Distance@{Distance}}
+\index{Distance@{Distance}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{Distance}{Distance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Mode\+Event\+::\+Distance}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_ac0d9dd3a14f86c6802ea063998fa4936}\label{struct_c_tm_mode_event_ac0d9dd3a14f86c6802ea063998fa4936}} 
+\index{CTmModeEvent@{CTmModeEvent}!Factor@{Factor}}
+\index{Factor@{Factor}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{Factor}{Factor}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Mode\+Event\+::\+Factor}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a224717b523158c472d6b75baaac900f0}\label{struct_c_tm_mode_event_a224717b523158c472d6b75baaac900f0}} 
+\index{CTmModeEvent@{CTmModeEvent}!IsEndLap@{IsEndLap}}
+\index{IsEndLap@{IsEndLap}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{IsEndLap}{IsEndLap}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Mode\+Event\+::\+Is\+End\+Lap}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_af9bc1372b9cedc4b1742a8c68dfb6004}\label{struct_c_tm_mode_event_af9bc1372b9cedc4b1742a8c68dfb6004}} 
+\index{CTmModeEvent@{CTmModeEvent}!IsEndRace@{IsEndRace}}
+\index{IsEndRace@{IsEndRace}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{IsEndRace}{IsEndRace}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Mode\+Event\+::\+Is\+End\+Race}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a73d116b46049b29bc7499b86c9b63cb3}\label{struct_c_tm_mode_event_a73d116b46049b29bc7499b86c9b63cb3}} 
+\index{CTmModeEvent@{CTmModeEvent}!IsEpicLanding@{IsEpicLanding}}
+\index{IsEpicLanding@{IsEpicLanding}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{IsEpicLanding}{IsEpicLanding}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Mode\+Event\+::\+Is\+Epic\+Landing}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_ab8a1f12d9bb3bd49cf35e2e6c2adc687}\label{struct_c_tm_mode_event_ab8a1f12d9bb3bd49cf35e2e6c2adc687}} 
+\index{CTmModeEvent@{CTmModeEvent}!IsMasterJump@{IsMasterJump}}
+\index{IsMasterJump@{IsMasterJump}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{IsMasterJump}{IsMasterJump}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Mode\+Event\+::\+Is\+Master\+Jump}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a8d306138091cd70d6a5a583cab835677}\label{struct_c_tm_mode_event_a8d306138091cd70d6a5a583cab835677}} 
+\index{CTmModeEvent@{CTmModeEvent}!IsMasterLanding@{IsMasterLanding}}
+\index{IsMasterLanding@{IsMasterLanding}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{IsMasterLanding}{IsMasterLanding}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Mode\+Event\+::\+Is\+Master\+Landing}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a84702d6e16c361c3c9ed3d78d0ca73d5}\label{struct_c_tm_mode_event_a84702d6e16c361c3c9ed3d78d0ca73d5}} 
+\index{CTmModeEvent@{CTmModeEvent}!IsPerfectLanding@{IsPerfectLanding}}
+\index{IsPerfectLanding@{IsPerfectLanding}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{IsPerfectLanding}{IsPerfectLanding}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Mode\+Event\+::\+Is\+Perfect\+Landing}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a23cc0042e0865a89b9536d5927de0dfc}\label{struct_c_tm_mode_event_a23cc0042e0865a89b9536d5927de0dfc}} 
+\index{CTmModeEvent@{CTmModeEvent}!IsReverse@{IsReverse}}
+\index{IsReverse@{IsReverse}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{IsReverse}{IsReverse}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Mode\+Event\+::\+Is\+Reverse}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a221aaeea7cfdcaa4fcf92a876777cc26}\label{struct_c_tm_mode_event_a221aaeea7cfdcaa4fcf92a876777cc26}} 
+\index{CTmModeEvent@{CTmModeEvent}!IsStraight@{IsStraight}}
+\index{IsStraight@{IsStraight}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{IsStraight}{IsStraight}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Mode\+Event\+::\+Is\+Straight}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_ac1a9fac1420e948bc2117538d0a20d71}\label{struct_c_tm_mode_event_ac1a9fac1420e948bc2117538d0a20d71}} 
+\index{CTmModeEvent@{CTmModeEvent}!LapTime@{LapTime}}
+\index{LapTime@{LapTime}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{LapTime}{LapTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Mode\+Event\+::\+Lap\+Time}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_ac2db1bf9c98e51961feb2f7a0acfe8ba}\label{struct_c_tm_mode_event_ac2db1bf9c98e51961feb2f7a0acfe8ba}} 
+\index{CTmModeEvent@{CTmModeEvent}!NbRespawns@{NbRespawns}}
+\index{NbRespawns@{NbRespawns}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{NbRespawns}{NbRespawns}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Mode\+Event\+::\+Nb\+Respawns}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_af7e6bb7974181afae02cb7801d482792}\label{struct_c_tm_mode_event_af7e6bb7974181afae02cb7801d482792}} 
+\index{CTmModeEvent@{CTmModeEvent}!Player@{Player}}
+\index{Player@{Player}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_tm_player}{C\+Tm\+Player}} C\+Tm\+Mode\+Event\+::\+Player}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a20cb18975c1e3f05d4ea3ac8c2db055d}\label{struct_c_tm_mode_event_a20cb18975c1e3f05d4ea3ac8c2db055d}} 
+\index{CTmModeEvent@{CTmModeEvent}!PlayerWasInLadderMatch@{PlayerWasInLadderMatch}}
+\index{PlayerWasInLadderMatch@{PlayerWasInLadderMatch}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{PlayerWasInLadderMatch}{PlayerWasInLadderMatch}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Mode\+Event\+::\+Player\+Was\+In\+Ladder\+Match}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_afb309ca288cd67beef01ff43ada4341c}\label{struct_c_tm_mode_event_afb309ca288cd67beef01ff43ada4341c}} 
+\index{CTmModeEvent@{CTmModeEvent}!PlayerWasSpawned@{PlayerWasSpawned}}
+\index{PlayerWasSpawned@{PlayerWasSpawned}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{PlayerWasSpawned}{PlayerWasSpawned}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_boolean}{Boolean}} C\+Tm\+Mode\+Event\+::\+Player\+Was\+Spawned}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a6036b14f19233722cdb646f903d6e971}\label{struct_c_tm_mode_event_a6036b14f19233722cdb646f903d6e971}} 
+\index{CTmModeEvent@{CTmModeEvent}!Points@{Points}}
+\index{Points@{Points}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{Points}{Points}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Mode\+Event\+::\+Points}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a2e6c35996fc7033d284dc694be794e82}\label{struct_c_tm_mode_event_a2e6c35996fc7033d284dc694be794e82}} 
+\index{CTmModeEvent@{CTmModeEvent}!RaceTime@{RaceTime}}
+\index{RaceTime@{RaceTime}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{RaceTime}{RaceTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Mode\+Event\+::\+Race\+Time}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a1bcb189dc23a8d78d11b68a4af49c466}\label{struct_c_tm_mode_event_a1bcb189dc23a8d78d11b68a4af49c466}} 
+\index{CTmModeEvent@{CTmModeEvent}!Speed@{Speed}}
+\index{Speed@{Speed}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} C\+Tm\+Mode\+Event\+::\+Speed}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a628ab2db00f34ae2d3eed53b3e3c740a}\label{struct_c_tm_mode_event_a628ab2db00f34ae2d3eed53b3e3c740a}} 
+\index{CTmModeEvent@{CTmModeEvent}!StuntFigure@{StuntFigure}}
+\index{StuntFigure@{StuntFigure}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{StuntFigure}{StuntFigure}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_tm_mode_event_ac9740bcb1c7d12ee789cb98aba09d9fa}{E\+Stunt\+Figure}} C\+Tm\+Mode\+Event\+::\+Stunt\+Figure}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a4d814e1dce255879f0ae75b5fb16c7de}\label{struct_c_tm_mode_event_a4d814e1dce255879f0ae75b5fb16c7de}} 
+\index{CTmModeEvent@{CTmModeEvent}!StuntsScore@{StuntsScore}}
+\index{StuntsScore@{StuntsScore}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{StuntsScore}{StuntsScore}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} C\+Tm\+Mode\+Event\+::\+Stunts\+Score}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_af6771af8b65f80eec2e9ec550f79f729}\label{struct_c_tm_mode_event_af6771af8b65f80eec2e9ec550f79f729}} 
+\index{CTmModeEvent@{CTmModeEvent}!Type@{Type}}
+\index{Type@{Type}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_tm_mode_event_a8f8e2301c21e90787805f01d60dd35dd}{E\+Type}} C\+Tm\+Mode\+Event\+::\+Type}
+
+\mbox{\Hypertarget{struct_c_tm_mode_event_a7167966fdf0e2e9121760c03c2a8eec5}\label{struct_c_tm_mode_event_a7167966fdf0e2e9121760c03c2a8eec5}} 
+\index{CTmModeEvent@{CTmModeEvent}!User@{User}}
+\index{User@{User}!CTmModeEvent@{CTmModeEvent}}
+\doxysubsubsection{\texorpdfstring{User}{User}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_user}{C\+User}} C\+Tm\+Mode\+Event\+::\+User}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

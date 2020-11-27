@@ -1,0 +1,216 @@
+\hypertarget{namespace_time_lib}{}\doxysection{Time\+Lib Namespace Reference}
+\label{namespace_time_lib}\index{TimeLib@{TimeLib}}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}{E\+Date\+Formats}} \{ \newline
+\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863ab5b1faa8f7c472ba7924d30f1c388c0d}{Full}}, 
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8ad5b286bd51f81c9f3a94e22fd2ea454a}{Date}}, 
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8ae98580d1de92f5bdd721b0cd29aabdea}{Date\+Short}}, 
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8aedafb5d851179a36730ea4db4c19e7fb}{Time}}, 
+\newline
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8a1e8c8a5cbf3b9b315b17484a1ebb4bcf}{Time\+Short}}, 
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8a26ce2a7252b9467bdfce39641e4407cc}{Relative}}, 
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8afb7fc9e36486c354860125684ade6d30}{Relative\+Short}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}} \{ \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863ab5b1faa8f7c472ba7924d30f1c388c0d}{Full}}, 
+\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863abafe98bedafdd809474349897f30c8f9}{Abbreviated}}, 
+\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863aa18795b03128b9986319e966fb570739}{Chrono}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_ae1c55491218e93c7a92295f4867e66bd}{Format\+Date}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp, \mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}{E\+Date\+Formats}} \+\_\+\+Format)
+\begin{DoxyCompactList}\small\item\em Returns the date corresponding to a timestamp, formatted according to the locale. Not available on servers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_a9a36b23165d90326d3278547c4c6a8c2}{Format\+Delta}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp2, \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}} \+\_\+\+Format)
+\begin{DoxyCompactList}\small\item\em Returns the duration between 2 timestamps, formatted according to the locale. Not available on servers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_ad11de83d1793ad46f46a25b394cfcbfb}{Format\+Delta}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Delta, \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}} \+\_\+\+Format)
+\begin{DoxyCompactList}\small\item\em Returns the duration Delta formatted according to the locale. Not available on servers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_time_lib_ad802f0c578558ee75aa8bce738ec8f6f}{Compare}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp2)
+\begin{DoxyCompactList}\small\item\em Compares 2 timestamps. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_time_lib_a9a26b6eb869f43c3e5319025a280edf2}{Clamp01}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Boundary1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Boundary2, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp)
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{class_real}{Real}} between 0 and 1, given an interval and a timestamp. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_a1717b5cebb9be21540e240308894ffa3}{Get\+Current}} ()
+\begin{DoxyCompactList}\small\item\em Gets current timestamp. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_time_lib_a44ea3b8bdac601cc2ca87b11ca3dfee1}{Get\+Delta}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp2)
+\begin{DoxyCompactList}\small\item\em Returns the duration in seconds between 2 timestamps. May be clamped if huge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}\label{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}} 
+\index{TimeLib@{TimeLib}!EDateFormats@{EDateFormats}}
+\index{EDateFormats@{EDateFormats}!TimeLib@{TimeLib}}
+\doxysubsubsection{\texorpdfstring{EDateFormats}{EDateFormats}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}{Time\+Lib\+::\+E\+Date\+Formats}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Full@{Full}!TimeLib@{TimeLib}}\index{TimeLib@{TimeLib}!Full@{Full}}}\mbox{\Hypertarget{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863ab5b1faa8f7c472ba7924d30f1c388c0d}\label{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863ab5b1faa8f7c472ba7924d30f1c388c0d}} 
+Full&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Date@{Date}!TimeLib@{TimeLib}}\index{TimeLib@{TimeLib}!Date@{Date}}}\mbox{\Hypertarget{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8ad5b286bd51f81c9f3a94e22fd2ea454a}\label{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8ad5b286bd51f81c9f3a94e22fd2ea454a}} 
+Date&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DateShort@{DateShort}!TimeLib@{TimeLib}}\index{TimeLib@{TimeLib}!DateShort@{DateShort}}}\mbox{\Hypertarget{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8ae98580d1de92f5bdd721b0cd29aabdea}\label{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8ae98580d1de92f5bdd721b0cd29aabdea}} 
+Date\+Short&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Time@{Time}!TimeLib@{TimeLib}}\index{TimeLib@{TimeLib}!Time@{Time}}}\mbox{\Hypertarget{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8aedafb5d851179a36730ea4db4c19e7fb}\label{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8aedafb5d851179a36730ea4db4c19e7fb}} 
+Time&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TimeShort@{TimeShort}!TimeLib@{TimeLib}}\index{TimeLib@{TimeLib}!TimeShort@{TimeShort}}}\mbox{\Hypertarget{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8a1e8c8a5cbf3b9b315b17484a1ebb4bcf}\label{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8a1e8c8a5cbf3b9b315b17484a1ebb4bcf}} 
+Time\+Short&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Relative@{Relative}!TimeLib@{TimeLib}}\index{TimeLib@{TimeLib}!Relative@{Relative}}}\mbox{\Hypertarget{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8a26ce2a7252b9467bdfce39641e4407cc}\label{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8a26ce2a7252b9467bdfce39641e4407cc}} 
+Relative&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RelativeShort@{RelativeShort}!TimeLib@{TimeLib}}\index{TimeLib@{TimeLib}!RelativeShort@{RelativeShort}}}\mbox{\Hypertarget{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8afb7fc9e36486c354860125684ade6d30}\label{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8afb7fc9e36486c354860125684ade6d30}} 
+Relative\+Short&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}\label{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}} 
+\index{TimeLib@{TimeLib}!EDurationFormats@{EDurationFormats}}
+\index{EDurationFormats@{EDurationFormats}!TimeLib@{TimeLib}}
+\doxysubsubsection{\texorpdfstring{EDurationFormats}{EDurationFormats}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{Time\+Lib\+::\+E\+Duration\+Formats}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Full@{Full}!TimeLib@{TimeLib}}\index{TimeLib@{TimeLib}!Full@{Full}}}\mbox{\Hypertarget{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863ab5b1faa8f7c472ba7924d30f1c388c0d}\label{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863ab5b1faa8f7c472ba7924d30f1c388c0d}} 
+Full&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Abbreviated@{Abbreviated}!TimeLib@{TimeLib}}\index{TimeLib@{TimeLib}!Abbreviated@{Abbreviated}}}\mbox{\Hypertarget{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863abafe98bedafdd809474349897f30c8f9}\label{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863abafe98bedafdd809474349897f30c8f9}} 
+Abbreviated&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Chrono@{Chrono}!TimeLib@{TimeLib}}\index{TimeLib@{TimeLib}!Chrono@{Chrono}}}\mbox{\Hypertarget{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863aa18795b03128b9986319e966fb570739}\label{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863aa18795b03128b9986319e966fb570739}} 
+Chrono&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_time_lib_a9a26b6eb869f43c3e5319025a280edf2}\label{namespace_time_lib_a9a26b6eb869f43c3e5319025a280edf2}} 
+\index{TimeLib@{TimeLib}!Clamp01@{Clamp01}}
+\index{Clamp01@{Clamp01}!TimeLib@{TimeLib}}
+\doxysubsubsection{\texorpdfstring{Clamp01()}{Clamp01()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Time\+Lib\+::\+Clamp01 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Boundary1,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Boundary2,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp }\end{DoxyParamCaption})}
+
+
+
+Returns a \mbox{\hyperlink{class_real}{Real}} between 0 and 1, given an interval and a timestamp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Boundary1} & \+: Lower boundary defining the time interval \\
+\hline
+{\em \+\_\+\+Boundary2} & \+: Higher boundary defining the time interval \\
+\hline
+{\em \+\_\+\+Timestamp} & \+: Timestamp to check \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_time_lib_ad802f0c578558ee75aa8bce738ec8f6f}\label{namespace_time_lib_ad802f0c578558ee75aa8bce738ec8f6f}} 
+\index{TimeLib@{TimeLib}!Compare@{Compare}}
+\index{Compare@{Compare}!TimeLib@{TimeLib}}
+\doxysubsubsection{\texorpdfstring{Compare()}{Compare()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Time\+Lib\+::\+Compare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp1,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp2 }\end{DoxyParamCaption})}
+
+
+
+Compares 2 timestamps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Timestamp1} & \+: Unix timestamp \\
+\hline
+{\em \+\_\+\+Timestamp2} & \+: Unix timestamp \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_time_lib_ae1c55491218e93c7a92295f4867e66bd}\label{namespace_time_lib_ae1c55491218e93c7a92295f4867e66bd}} 
+\index{TimeLib@{TimeLib}!FormatDate@{FormatDate}}
+\index{FormatDate@{FormatDate}!TimeLib@{TimeLib}}
+\doxysubsubsection{\texorpdfstring{FormatDate()}{FormatDate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} Time\+Lib\+::\+Format\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp,  }\item[{\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}{E\+Date\+Formats}}}]{\+\_\+\+Format }\end{DoxyParamCaption})}
+
+
+
+Returns the date corresponding to a timestamp, formatted according to the locale. Not available on servers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Timestamp} & \+: Timestamp to format \\
+\hline
+{\em \+\_\+\+Format} & \+: Format \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_time_lib_ad11de83d1793ad46f46a25b394cfcbfb}\label{namespace_time_lib_ad11de83d1793ad46f46a25b394cfcbfb}} 
+\index{TimeLib@{TimeLib}!FormatDelta@{FormatDelta}}
+\index{FormatDelta@{FormatDelta}!TimeLib@{TimeLib}}
+\doxysubsubsection{\texorpdfstring{FormatDelta()}{FormatDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} Time\+Lib\+::\+Format\+Delta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Delta,  }\item[{\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}}}]{\+\_\+\+Format }\end{DoxyParamCaption})}
+
+
+
+Returns the duration Delta formatted according to the locale. Not available on servers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Delta} & \+: Delta in seconds \\
+\hline
+{\em \+\_\+\+Format} & \+: Format \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_time_lib_a9a36b23165d90326d3278547c4c6a8c2}\label{namespace_time_lib_a9a36b23165d90326d3278547c4c6a8c2}} 
+\index{TimeLib@{TimeLib}!FormatDelta@{FormatDelta}}
+\index{FormatDelta@{FormatDelta}!TimeLib@{TimeLib}}
+\doxysubsubsection{\texorpdfstring{FormatDelta()}{FormatDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} Time\+Lib\+::\+Format\+Delta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp1,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp2,  }\item[{\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}}}]{\+\_\+\+Format }\end{DoxyParamCaption})}
+
+
+
+Returns the duration between 2 timestamps, formatted according to the locale. Not available on servers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Timestamp1} & \+: Timestamp1 \\
+\hline
+{\em \+\_\+\+Timestamp2} & \+: Timestamp2 \\
+\hline
+{\em \+\_\+\+Format} & \+: Format \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_time_lib_a1717b5cebb9be21540e240308894ffa3}\label{namespace_time_lib_a1717b5cebb9be21540e240308894ffa3}} 
+\index{TimeLib@{TimeLib}!GetCurrent@{GetCurrent}}
+\index{GetCurrent@{GetCurrent}!TimeLib@{TimeLib}}
+\doxysubsubsection{\texorpdfstring{GetCurrent()}{GetCurrent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} Time\+Lib\+::\+Get\+Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets current timestamp. 
+
+\mbox{\Hypertarget{namespace_time_lib_a44ea3b8bdac601cc2ca87b11ca3dfee1}\label{namespace_time_lib_a44ea3b8bdac601cc2ca87b11ca3dfee1}} 
+\index{TimeLib@{TimeLib}!GetDelta@{GetDelta}}
+\index{GetDelta@{GetDelta}!TimeLib@{TimeLib}}
+\doxysubsubsection{\texorpdfstring{GetDelta()}{GetDelta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Time\+Lib\+::\+Get\+Delta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp1,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp2 }\end{DoxyParamCaption})}
+
+
+
+Returns the duration in seconds between 2 timestamps. May be clamped if huge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Timestamp1} & \+: First timestamp. Result will be positive if this one is bigger/more recent \\
+\hline
+{\em \+\_\+\+Timestamp2} & \+: Second timestamp \\
+\hline
+\end{DoxyParams}

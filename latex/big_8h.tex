@@ -1,0 +1,786 @@
+\hypertarget{big_8h}{}\doxysection{input/big.h File Reference}
+\label{big_8h}\index{input/big.h@{input/big.h}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_void}{Void}}
+\item 
+class \mbox{\hyperlink{class_integer}{Integer}}
+\item 
+class \mbox{\hyperlink{class_real}{Real}}
+\item 
+class \mbox{\hyperlink{class_boolean}{Boolean}}
+\item 
+class \mbox{\hyperlink{class_text}{Text}}
+\item 
+class \mbox{\hyperlink{class_vec2}{Vec2}}
+\item 
+class \mbox{\hyperlink{class_vec3}{Vec3}}
+\item 
+class \mbox{\hyperlink{class_int3}{Int3}}
+\item 
+class \mbox{\hyperlink{class_ident}{Ident}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_script}{C\+Ml\+Script}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_entry}{C\+Ml\+Entry}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_file_entry}{C\+Ml\+File\+Entry}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_text_edit}{C\+Ml\+Text\+Edit}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_label}{C\+Ml\+Label}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_media_player}{C\+Ml\+Media\+Player}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_quad}{C\+Ml\+Quad}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_gauge}{C\+Ml\+Gauge}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_graph}{C\+Ml\+Graph}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_minimap}{C\+Ml\+Minimap}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_camera}{C\+Ml\+Camera}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_browser}{C\+Ml\+Browser}}
+\item 
+struct \mbox{\hyperlink{struct_c_mania_app}{C\+Mania\+App}}
+\item 
+struct \mbox{\hyperlink{struct_c_mania_app_title_layer}{C\+Mania\+App\+Title\+Layer}}
+\item 
+struct \mbox{\hyperlink{struct_c_mania_app_event}{C\+Mania\+App\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_mania_app_title}{C\+Mania\+App\+Title}}
+\item 
+struct \mbox{\hyperlink{struct_c_mania_app_playground}{C\+Mania\+App\+Playground}}
+\item 
+struct \mbox{\hyperlink{struct_c_mania_app_station}{C\+Mania\+App\+Station}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_playground}{C\+Module\+Playground}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_playground_inventory}{C\+Module\+Playground\+Inventory}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_playground_store}{C\+Module\+Playground\+Store}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_playground_scores_table}{C\+Module\+Playground\+Scores\+Table}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_playground_chrono}{C\+Module\+Playground\+Chrono}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_playground_speed_meter}{C\+Module\+Playground\+Speed\+Meter}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_playground_player_state}{C\+Module\+Playground\+Player\+State}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_playground_team_state}{C\+Module\+Playground\+Team\+State}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_menu}{C\+Module\+Menu}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_menu_component}{C\+Module\+Menu\+Component}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_menu_layer}{C\+Module\+Menu\+Layer}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_menu_file_browser}{C\+Module\+Menu\+File\+Browser}}
+\item 
+struct \mbox{\hyperlink{struct_c_station}{C\+Station}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_station}{C\+Ml\+Station}}
+\item 
+struct \mbox{\hyperlink{struct_c_editor_main_plugin}{C\+Editor\+Main\+Plugin}}
+\item 
+struct \mbox{\hyperlink{struct_c_any_editor_plugin}{C\+Any\+Editor\+Plugin}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_editor_plugin}{C\+Map\+Editor\+Plugin}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_editor_plugin_layer}{C\+Map\+Editor\+Plugin\+Layer}}
+\item 
+struct \mbox{\hyperlink{struct_c_badge_editor}{C\+Badge\+Editor}}
+\item 
+struct \mbox{\hyperlink{struct_c_server_plugin}{C\+Server\+Plugin}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_mode}{C\+Sm\+Mode}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_ml_script_ingame}{C\+Sm\+Ml\+Script\+Ingame}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_action}{C\+Sm\+Action}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_map_type}{C\+Sm\+Map\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_c_tm_ml_script_ingame}{C\+Tm\+Ml\+Script\+Ingame}}
+\item 
+struct \mbox{\hyperlink{struct_c_tm_mode}{C\+Tm\+Mode}}
+\item 
+struct \mbox{\hyperlink{struct_c_tm_map_type}{C\+Tm\+Map\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_c_track_mania_app_playground}{C\+Track\+Mania\+App\+Playground}}
+\item 
+struct \mbox{\hyperlink{struct_c_nod}{C\+Nod}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_page}{C\+Ml\+Page}}
+\item 
+struct \mbox{\hyperlink{struct_c_user}{C\+User}}
+\item 
+struct \mbox{\hyperlink{struct_c_title}{C\+Title}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_script_event}{C\+Ml\+Script\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_parsing_manager}{C\+Parsing\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_http_manager}{C\+Http\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_video_manager}{C\+Video\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_audio_manager}{C\+Audio\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_input_manager}{C\+Input\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_data_file_mgr}{C\+Data\+File\+Mgr}}
+\item 
+struct \mbox{\hyperlink{struct_c_score_mgr}{C\+Score\+Mgr}}
+\item 
+struct \mbox{\hyperlink{struct_c_anim_manager}{C\+Anim\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_system_platform}{C\+System\+Platform}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_control}{C\+Ml\+Control}}
+\item 
+struct \mbox{\hyperlink{struct_c_image}{C\+Image}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_graph_curve}{C\+Ml\+Graph\+Curve}}
+\item 
+struct \mbox{\hyperlink{struct_c_mania_app_browser}{C\+Mania\+App\+Browser}}
+\item 
+struct \mbox{\hyperlink{struct_c_map}{C\+Map}}
+\item 
+struct \mbox{\hyperlink{struct_c_u_i_layer}{C\+U\+I\+Layer}}
+\item 
+struct \mbox{\hyperlink{struct_c_user_v2_manager}{C\+User\+V2\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_title_control}{C\+Title\+Control}}
+\item 
+struct \mbox{\hyperlink{struct_c_base_const_event}{C\+Base\+Const\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_title_edition}{C\+Title\+Edition}}
+\item 
+struct \mbox{\hyperlink{struct_c_notifications_consumer}{C\+Notifications\+Consumer}}
+\item 
+struct \mbox{\hyperlink{struct_c_achievements_manager}{C\+Achievements\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_badge_manager}{C\+Badge\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_match_settings_manager}{C\+Match\+Settings\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_mania_app_playground_common}{C\+Mania\+App\+Playground\+Common}}
+\item 
+struct \mbox{\hyperlink{struct_c_mania_app_base}{C\+Mania\+App\+Base}}
+\item 
+struct \mbox{\hyperlink{struct_c_pack_creator_title_info}{C\+Pack\+Creator\+Title\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_c_editor_plugin_handle}{C\+Editor\+Plugin\+Handle}}
+\item 
+struct \mbox{\hyperlink{struct_c_editor_module}{C\+Editor\+Module}}
+\item 
+struct \mbox{\hyperlink{struct_c_editor_mesh}{C\+Editor\+Mesh}}
+\item 
+struct \mbox{\hyperlink{struct_c_editor_editor}{C\+Editor\+Editor}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_editor_plugin_event}{C\+Map\+Editor\+Plugin\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_editor_inventory}{C\+Map\+Editor\+Inventory}}
+\item 
+struct \mbox{\hyperlink{struct_c_block}{C\+Block}}
+\item 
+struct \mbox{\hyperlink{struct_c_macroblock_model}{C\+Macroblock\+Model}}
+\item 
+struct \mbox{\hyperlink{struct_c_block_model}{C\+Block\+Model}}
+\item 
+struct \mbox{\hyperlink{struct_c_block_clip_list}{C\+Block\+Clip\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_macroblock_instance}{C\+Macroblock\+Instance}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_editor_camera}{C\+Map\+Editor\+Camera}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_editor_cursor}{C\+Map\+Editor\+Cursor}}
+\item 
+struct \mbox{\hyperlink{struct_c_item_anchor}{C\+Item\+Anchor}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_editor_connect_results}{C\+Map\+Editor\+Connect\+Results}}
+\item 
+struct \mbox{\hyperlink{struct_c_anchor_data}{C\+Anchor\+Data}}
+\item 
+struct \mbox{\hyperlink{struct_c_badge}{C\+Badge}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_info}{C\+Map\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_c_client}{C\+Client}}
+\item 
+struct \mbox{\hyperlink{struct_c_score}{C\+Score}}
+\item 
+struct \mbox{\hyperlink{struct_c_team}{C\+Team}}
+\item 
+struct \mbox{\hyperlink{struct_c_server_plugin_event}{C\+Server\+Plugin\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_u_i_config_mgr}{C\+U\+I\+Config\+Mgr}}
+\item 
+struct \mbox{\hyperlink{struct_c_server_admin}{C\+Server\+Admin}}
+\item 
+struct \mbox{\hyperlink{struct_c_xml_rpc}{C\+Xml\+Rpc}}
+\item 
+struct \mbox{\hyperlink{struct_c_mode}{C\+Mode}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_player}{C\+Sm\+Player}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_mode_event}{C\+Sm\+Mode\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_map_base}{C\+Sm\+Map\+Base}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_map_landmark}{C\+Sm\+Map\+Landmark}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_score}{C\+Sm\+Score}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_object}{C\+Sm\+Object}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_script_ingame}{C\+Ml\+Script\+Ingame}}
+\item 
+struct \mbox{\hyperlink{struct_c_mode_vehicle}{C\+Mode\+Vehicle}}
+\item 
+struct \mbox{\hyperlink{struct_c_action}{C\+Action}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_action_event}{C\+Sm\+Action\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_type}{C\+Map\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_c_tm_ml_player}{C\+Tm\+Ml\+Player}}
+\item 
+struct \mbox{\hyperlink{struct_c_tm_race_client_event}{C\+Tm\+Race\+Client\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_tm_score}{C\+Tm\+Score}}
+\item 
+struct \mbox{\hyperlink{struct_c_tm_player}{C\+Tm\+Player}}
+\item 
+struct \mbox{\hyperlink{struct_c_tm_mode_event}{C\+Tm\+Mode\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_ml_frame}{C\+Ml\+Frame}}
+\item 
+struct \mbox{\hyperlink{struct_c_parsing_document}{C\+Parsing\+Document}}
+\item 
+struct \mbox{\hyperlink{struct_c_http_request}{C\+Http\+Request}}
+\item 
+struct \mbox{\hyperlink{struct_c_http_event}{C\+Http\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_video}{C\+Video}}
+\item 
+struct \mbox{\hyperlink{struct_c_audio_source}{C\+Audio\+Source}}
+\item 
+struct \mbox{\hyperlink{struct_c_audio_source_music}{C\+Audio\+Source\+Music}}
+\item 
+struct \mbox{\hyperlink{struct_c_input_event}{C\+Input\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_input_pad}{C\+Input\+Pad}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result}{C\+Task\+Result}}
+\item 
+struct \mbox{\hyperlink{struct_c_campaign}{C\+Campaign}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___map_list}{C\+Task\+Result\+\_\+\+Map\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_ghost}{C\+Ghost}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___ghost}{C\+Task\+Result\+\_\+\+Ghost}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___replay_list}{C\+Task\+Result\+\_\+\+Replay\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___ghost_list}{C\+Task\+Result\+\_\+\+Ghost\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___file_list}{C\+Task\+Result\+\_\+\+File\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___game_mode_list}{C\+Task\+Result\+\_\+\+Game\+Mode\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___natural_leader_board_info_list}{C\+Task\+Result\+\_\+\+Natural\+Leader\+Board\+Info\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___map_record_list}{C\+Task\+Result\+\_\+\+Map\+Record\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___buddies_challenge_record}{C\+Task\+Result\+\_\+\+Buddies\+Challenge\+Record}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___buddies_challenge_records_comparison}{C\+Task\+Result\+\_\+\+Buddies\+Challenge\+Records\+Comparison}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___buddy_challenge_records_comparison}{C\+Task\+Result\+\_\+\+Buddy\+Challenge\+Records\+Comparison}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___real_leader_board_info_list}{C\+Task\+Result\+\_\+\+Real\+Leader\+Board\+Info\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_plug}{C\+Plug}}
+\item 
+struct \mbox{\hyperlink{struct_c_user_v2_profile}{C\+User\+V2\+Profile}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___string_int_list}{C\+Task\+Result\+\_\+\+String\+Int\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_server_info}{C\+Server\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_c_pack_creator}{C\+Pack\+Creator}}
+\item 
+struct \mbox{\hyperlink{struct_c_notifications_consumer_event}{C\+Notifications\+Consumer\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_notifications_consumer_notification}{C\+Notifications\+Consumer\+Notification}}
+\item 
+struct \mbox{\hyperlink{struct_c_achievements_event}{C\+Achievements\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_achievements_achievement}{C\+Achievements\+Achievement}}
+\item 
+struct \mbox{\hyperlink{struct_c_achievements_stat}{C\+Achievements\+Stat}}
+\item 
+struct \mbox{\hyperlink{struct_c_achievements_achievement_desc}{C\+Achievements\+Achievement\+Desc}}
+\item 
+struct \mbox{\hyperlink{struct_c_achievements_stat_desc}{C\+Achievements\+Stat\+Desc}}
+\item 
+struct \mbox{\hyperlink{struct_c_match_settings}{C\+Match\+Settings}}
+\item 
+struct \mbox{\hyperlink{struct_c_mania_app_playground_event}{C\+Mania\+App\+Playground\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_playground_client}{C\+Playground\+Client}}
+\item 
+struct \mbox{\hyperlink{struct_c_u_i_config}{C\+U\+I\+Config}}
+\item 
+struct \mbox{\hyperlink{struct_c_editor_base}{C\+Editor\+Base}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_menu_model}{C\+Module\+Menu\+Model}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_menu_page_model}{C\+Module\+Menu\+Page\+Model}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_playground_hud_model}{C\+Module\+Playground\+Hud\+Model}}
+\item 
+struct \mbox{\hyperlink{struct_c_editor_plugin_module_event}{C\+Editor\+Plugin\+Module\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_editor_asset}{C\+Editor\+Asset}}
+\item 
+struct \mbox{\hyperlink{struct_c_editor_event}{C\+Editor\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_editor_inventory_directory}{C\+Map\+Editor\+Inventory\+Directory}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_editor_inventory_node}{C\+Map\+Editor\+Inventory\+Node}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_editor_inventory_article}{C\+Map\+Editor\+Inventory\+Article}}
+\item 
+struct \mbox{\hyperlink{struct_c_block_unit}{C\+Block\+Unit}}
+\item 
+struct \mbox{\hyperlink{struct_c_collector}{C\+Collector}}
+\item 
+struct \mbox{\hyperlink{struct_c_block_model_variant_ground}{C\+Block\+Model\+Variant\+Ground}}
+\item 
+struct \mbox{\hyperlink{struct_c_block_model_variant_air}{C\+Block\+Model\+Variant\+Air}}
+\item 
+struct \mbox{\hyperlink{struct_c_block_clip}{C\+Block\+Clip}}
+\item 
+struct \mbox{\hyperlink{struct_c_u_i_config_event}{C\+U\+I\+Config\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_xml_rpc_event}{C\+Xml\+Rpc\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_module_playground_hud}{C\+Module\+Playground\+Hud}}
+\item 
+struct \mbox{\hyperlink{struct_c_mode_turret_manager}{C\+Mode\+Turret\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_mode_vehicle_manager}{C\+Mode\+Vehicle\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_action_manager}{C\+Action\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_c_player}{C\+Player}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_player_driver}{C\+Sm\+Player\+Driver}}
+\item 
+struct \mbox{\hyperlink{struct_c_base_event}{C\+Base\+Event}}
+\item 
+struct \mbox{\hyperlink{struct_c_entity}{C\+Entity}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_block_pole}{C\+Sm\+Block\+Pole}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_landmark}{C\+Map\+Landmark}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_map_gate}{C\+Sm\+Map\+Gate}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_map_gauge}{C\+Sm\+Map\+Gauge}}
+\item 
+struct \mbox{\hyperlink{struct_c_track_mania_score}{C\+Track\+Mania\+Score}}
+\item 
+struct \mbox{\hyperlink{struct_c_tm_result}{C\+Tm\+Result}}
+\item 
+struct \mbox{\hyperlink{struct_c_parsing_node}{C\+Parsing\+Node}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_group}{C\+Map\+Group}}
+\item 
+struct \mbox{\hyperlink{struct_c_replay_info}{C\+Replay\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___mode_info}{C\+Task\+Result\+\_\+\+Mode\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___natural_leader_board_info_list}{C\+Task\+Result\+\_\+\+Natural\+Leader\+Board\+Info\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_natural_leader_board_info}{C\+Natural\+Leader\+Board\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___player_map_records}{C\+Task\+Result\+\_\+\+Player\+Map\+Records}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___map_record}{C\+Task\+Result\+\_\+\+Map\+Record}}
+\item 
+struct \mbox{\hyperlink{struct_c_high_score_comparison}{C\+High\+Score\+Comparison}}
+\item 
+struct \mbox{\hyperlink{struct_c_high_score_comparison_summary}{C\+High\+Score\+Comparison\+Summary}}
+\item 
+struct \mbox{\hyperlink{struct_c_task_result___real_leader_board_info_list}{C\+Task\+Result\+\_\+\+Real\+Leader\+Board\+Info\+List}}
+\item 
+struct \mbox{\hyperlink{struct_c_real_leader_board_info}{C\+Real\+Leader\+Board\+Info}}
+\item 
+struct \mbox{\hyperlink{struct_c_vehicle_settings}{C\+Vehicle\+Settings}}
+\item 
+struct \mbox{\hyperlink{struct_c_pack_creator_pack}{C\+Pack\+Creator\+Pack}}
+\item 
+struct \mbox{\hyperlink{struct_c_match_settings_playlist_item}{C\+Match\+Settings\+Playlist\+Item}}
+\item 
+struct \mbox{\hyperlink{struct_s_hud_module}{S\+Hud\+Module}}
+\item 
+struct \mbox{\hyperlink{struct_c_block_unit_model}{C\+Block\+Unit\+Model}}
+\item 
+struct \mbox{\hyperlink{struct_c_block_model_variant}{C\+Block\+Model\+Variant}}
+\item 
+struct \mbox{\hyperlink{struct_c_mode_turret}{C\+Mode\+Turret}}
+\item 
+struct \mbox{\hyperlink{struct_c_action_interface}{C\+Action\+Interface}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_block}{C\+Sm\+Block}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_sector}{C\+Sm\+Sector}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_gauge}{C\+Sm\+Gauge}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_sector}{C\+Map\+Sector}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_waypoint}{C\+Map\+Waypoint}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_spawn}{C\+Map\+Spawn}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_bot_path}{C\+Map\+Bot\+Path}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_bot_spawn}{C\+Map\+Bot\+Spawn}}
+\item 
+struct \mbox{\hyperlink{struct_c_map_object_anchor}{C\+Map\+Object\+Anchor}}
+\item 
+struct \mbox{\hyperlink{struct_c_pack_creator_recipient}{C\+Pack\+Creator\+Recipient}}
+\item 
+struct \mbox{\hyperlink{struct_c_block_model_clip}{C\+Block\+Model\+Clip}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_landmark}{C\+Sm\+Landmark}}
+\item 
+struct \mbox{\hyperlink{struct_c_sm_base}{C\+Sm\+Base}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_math_lib}{Math\+Lib}}
+\item 
+ \mbox{\hyperlink{namespace_text_lib}{Text\+Lib}}
+\item 
+ \mbox{\hyperlink{namespace_map_units}{Map\+Units}}
+\item 
+ \mbox{\hyperlink{namespace_anim_lib}{Anim\+Lib}}
+\item 
+ \mbox{\hyperlink{namespace_time_lib}{Time\+Lib}}
+\item 
+ \mbox{\hyperlink{namespace_color_lib}{Color\+Lib}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}{Time\+Lib\+::\+E\+Date\+Formats}} \{ \newline
+\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863ab5b1faa8f7c472ba7924d30f1c388c0d}{Time\+Lib\+::\+Full}}, 
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8ad5b286bd51f81c9f3a94e22fd2ea454a}{Time\+Lib\+::\+Date}}, 
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8ae98580d1de92f5bdd721b0cd29aabdea}{Time\+Lib\+::\+Date\+Short}}, 
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8aedafb5d851179a36730ea4db4c19e7fb}{Time\+Lib\+::\+Time}}, 
+\newline
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8a1e8c8a5cbf3b9b315b17484a1ebb4bcf}{Time\+Lib\+::\+Time\+Short}}, 
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8a26ce2a7252b9467bdfce39641e4407cc}{Time\+Lib\+::\+Relative}}, 
+\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8afb7fc9e36486c354860125684ade6d30}{Time\+Lib\+::\+Relative\+Short}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{Time\+Lib\+::\+E\+Duration\+Formats}} \{ \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863ab5b1faa8f7c472ba7924d30f1c388c0d}{Time\+Lib\+::\+Full}}, 
+\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863abafe98bedafdd809474349897f30c8f9}{Time\+Lib\+::\+Abbreviated}}, 
+\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863aa18795b03128b9986319e966fb570739}{Time\+Lib\+::\+Chrono}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_af0db166c5f92d64ce3efa931b96bbb87}{Math\+Lib\+::\+Abs}} (\mbox{\hyperlink{class_integer}{Integer}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a82671e85b2146fd59dff7d8318763ddf}{Math\+Lib\+::\+Abs}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_aa99b79fc356289e59a7d1b7c416c53f1}{Math\+Lib\+::\+To\+Real}} (\mbox{\hyperlink{class_integer}{Integer}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a7c6ce63d2c882e6e38ec9ee6b2e44c5c}{Math\+Lib\+::\+Deg\+To\+Rad}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a3a5c390b0543e90a23fab3c9df908600}{Math\+Lib\+::\+Rad\+To\+Deg}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_af4ab071b26c049fe170ed021a526973b}{Math\+Lib\+::\+Sin}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a62e31fc724f12f18f72088e2ae84a1c1}{Math\+Lib\+::\+Cos}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a775c75cf4480707c6f02f1ee0d93cdf3}{Math\+Lib\+::\+Tan}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a4aab0176feec2947f129613deb109df5}{Math\+Lib\+::\+Atan2}} (\mbox{\hyperlink{class_real}{Real}} Argument1, \mbox{\hyperlink{class_real}{Real}} Argument2)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ac0be71fc98349fd7f1464367f6db55d7}{Math\+Lib\+::\+Exp}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a889b57d15412780c14dba4127e5b8f33}{Math\+Lib\+::\+Rand}} (\mbox{\hyperlink{class_real}{Real}} Argument1, \mbox{\hyperlink{class_real}{Real}} Argument2)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a3b44b79fa32ad2a96f191576ce8eb729}{Math\+Lib\+::\+Rand}} (\mbox{\hyperlink{class_real}{Real}} Argument1, \mbox{\hyperlink{class_real}{Real}} Argument2, \mbox{\hyperlink{class_integer}{Integer}} Argument3)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a4ed5596dac2a280d6f8fff313d33519e}{Math\+Lib\+::\+Rand}} (\mbox{\hyperlink{class_integer}{Integer}} Argument1, \mbox{\hyperlink{class_integer}{Integer}} Argument2)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a38a5db168ce9b1fc2ea144fa65fc1a54}{Math\+Lib\+::\+Rand}} (\mbox{\hyperlink{class_integer}{Integer}} Argument1, \mbox{\hyperlink{class_integer}{Integer}} Argument2, \mbox{\hyperlink{class_integer}{Integer}} Argument3)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_affe75fa0f9dd156f06f02584b82c1649}{Math\+Lib\+::\+Nearest\+Real}} (\mbox{\hyperlink{class_integer}{Integer}} Argument1)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_aaff43751c3cffb6c6ba9f1d4a899a087}{Math\+Lib\+::\+Nearest\+Integer}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a3733fa45b5bf39e542aee0aa58b5c862}{Math\+Lib\+::\+Floor\+Integer}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a25c832e4f5998f1d0874473dd63f7dbf}{Math\+Lib\+::\+Trunc\+Integer}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a2dcf7697c2e11d4174982bd99f820c3b}{Math\+Lib\+::\+Ceiling\+Integer}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a38fa98d0ab0f93c0d20927487b2315f4}{Math\+Lib\+::\+Distance}} (\mbox{\hyperlink{class_real}{Real}} Argument1, \mbox{\hyperlink{class_real}{Real}} Argument2)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a972866ad51ee9fd0d9661b2366f7730b}{Math\+Lib\+::\+Distance}} (\mbox{\hyperlink{class_vec2}{Vec2}} Argument1, \mbox{\hyperlink{class_vec2}{Vec2}} Argument2)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a9c2fba2c358f21d2558c32922869bd18}{Math\+Lib\+::\+Distance}} (\mbox{\hyperlink{class_vec3}{Vec3}} Argument1, \mbox{\hyperlink{class_vec3}{Vec3}} Argument2)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a96301ebe4d434ea704c5cb4671a0c49a}{Math\+Lib\+::\+Dot\+Product}} (\mbox{\hyperlink{class_vec3}{Vec3}} Argument1, \mbox{\hyperlink{class_vec3}{Vec3}} Argument2)
+\item 
+\mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{namespace_math_lib_a3413e02c98669d69f46bb41d26967f32}{Math\+Lib\+::\+Cross\+Product}} (\mbox{\hyperlink{class_vec3}{Vec3}} Argument1, \mbox{\hyperlink{class_vec3}{Vec3}} Argument2)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ae87167929340edc45db6fc85985dab89}{Math\+Lib\+::\+Angle}} (\mbox{\hyperlink{class_vec3}{Vec3}} Argument1, \mbox{\hyperlink{class_vec3}{Vec3}} Argument2)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ad276ced981dd829d11bbd83c9f7445ec}{Math\+Lib\+::\+Oriented\+Angle}} (\mbox{\hyperlink{class_vec3}{Vec3}} Argument1, \mbox{\hyperlink{class_vec3}{Vec3}} Argument2)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ab1dd71351db053e2601feb682480ef97}{Math\+Lib\+::\+Angle}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+\+Radian1, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Radian2)
+\begin{DoxyCompactList}\small\item\em Returns the smallest angle from A to B. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ab1aeed6c8556e73eda5c8f8ddabd3057}{Math\+Lib\+::\+Angle}} (\mbox{\hyperlink{class_vec2}{Vec2}} Argument1, \mbox{\hyperlink{class_vec2}{Vec2}} Argument2)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_abcbc3599ce503c93f2fb44259dc25661}{Math\+Lib\+::\+Oriented\+Angle}} (\mbox{\hyperlink{class_vec2}{Vec2}} Argument1, \mbox{\hyperlink{class_vec2}{Vec2}} Argument2)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a7fed6b63e6aabb344d6fd4c30d60a63e}{Math\+Lib\+::\+PI}} ()
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_acdbca57896208c8b17afce00c1fe7911}{Math\+Lib\+::\+Asin}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ad347b9f2e988824797dc1e968b96b88d}{Math\+Lib\+::\+Acos}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ac8c75c2e319d1ffcaa0d0702cdf00d0f}{Math\+Lib\+::\+Pow}} (\mbox{\hyperlink{class_real}{Real}} Argument1, \mbox{\hyperlink{class_real}{Real}} Argument2)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ad58b9177a5f905f543cb87a46e6c5fff}{Math\+Lib\+::\+Ln}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a2bd4b87a898cc3cce512b05cefc4c6c3}{Math\+Lib\+::\+Sqrt}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a30248e36f296afcc3385a324c75e346f}{Math\+Lib\+::\+Max}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+A, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+B)
+\begin{DoxyCompactList}\small\item\em Returns the maximum between A and B. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_aba69fc1fe37b433485e7c4c0a08b3bb5}{Math\+Lib\+::\+Min}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+A, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+B)
+\begin{DoxyCompactList}\small\item\em Returns the minimum between A and B. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a019cf62676ef930db57822d90707c503}{Math\+Lib\+::\+Clamp}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+X, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Min, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Max)
+\begin{DoxyCompactList}\small\item\em Returns the value X clamped to the range Min..Max. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_af07e59491d69f20a778ec2ea417736d4}{Math\+Lib\+::\+Max}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+A, \mbox{\hyperlink{class_real}{Real}} \+\_\+B)
+\begin{DoxyCompactList}\small\item\em Returns the maximum between A and B. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a0a82921bf198d6aa713b2a945894ab09}{Math\+Lib\+::\+Min}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+A, \mbox{\hyperlink{class_real}{Real}} \+\_\+B)
+\begin{DoxyCompactList}\small\item\em Returns the minimum between A and B. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a5a6f6e95ff0906ea2f93e870e6391f72}{Math\+Lib\+::\+Clamp}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+X, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Min, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Max)
+\begin{DoxyCompactList}\small\item\em Returns the value X clamped to the range Min..Max. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_aff82d7a4c0acc8442d9b7b285b858fba}{Math\+Lib\+::\+Mod}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+X, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Min, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Max)
+\begin{DoxyCompactList}\small\item\em Returns the modulus of X in the range Min..Max. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_text_lib_a1f91ce03fb082d4d44d852670da79ebc}{Text\+Lib\+::\+To\+Real}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_real}{Real}} corresponding to \+\_\+\+Text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_text_lib_af252abfdf12050f7cea997f08970671c}{Text\+Lib\+::\+To\+Integer}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_integer}{Integer}} corresponding to \+\_\+\+Text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{namespace_text_lib_a019b69c8afbd09febd8e14d0ba415748}{Text\+Lib\+::\+To\+Color}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text)
+\begin{DoxyCompactList}\small\item\em Returns the R\+GB color corresponding to \+\_\+\+Text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a0925ebe0935728ddc77e195641467eb3}{Text\+Lib\+::\+Sub\+String}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Start, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Length)
+\begin{DoxyCompactList}\small\item\em Returns a substring of \+\_\+\+Text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_afeae37b0a5f485d105753c4de183d1c1}{Text\+Lib\+::\+Sub\+Text}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Start, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Length)
+\begin{DoxyCompactList}\small\item\em Returns a substring of \+\_\+\+Text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_text_lib_a52b38fab64f0cca6b75628ca3ba91b8f}{Text\+Lib\+::\+Length}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text)
+\begin{DoxyCompactList}\small\item\em Returns the length of \+\_\+\+Text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a68c7a09164bda05974214d80cc6d3ac5}{Text\+Lib\+::\+To\+Text}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Integer)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_text}{Text}} corresponding to \+\_\+\+Integer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_af4d6ddc428ae2337ab55fae20584b2e6}{Text\+Lib\+::\+To\+Text}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+\+Real)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_text}{Text}} corresponding to \+\_\+\+Real. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a81c31a1592bae2848a566df227a6fb7d}{Text\+Lib\+::\+To\+Text}} (\mbox{\hyperlink{class_boolean}{Boolean}} \+\_\+\+Boolean)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_text}{Text}} corresponding to \+\_\+\+Boolean. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_aef12ef2e2bf4345efe6b07198cc6c3b1}{Text\+Lib\+::\+To\+Text}} (\mbox{\hyperlink{class_int3}{Int3}} \+\_\+\+Int3)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_text}{Text}} corresponding to \+\_\+\+Int3. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a32eede1667c80a92975421f1c23ad853}{Text\+Lib\+::\+To\+Text}} (\mbox{\hyperlink{class_vec3}{Vec3}} \+\_\+\+Vec3)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_text}{Text}} corresponding to \+\_\+\+Vec3. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a8111bcbacc876d23dcccef36cbe4afd2}{Text\+Lib\+::\+Time\+To\+Text}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Time, \mbox{\hyperlink{class_boolean}{Boolean}} \+\_\+\+Include\+Centi\+Seconds)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_text}{Text}} corresponding to \+\_\+\+Time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_ae8941e0dd63e379e7dae0ffbef7e77a6}{Text\+Lib\+::\+Time\+To\+Text}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Time)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_text}{Text}} corresponding to \+\_\+\+Time. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a7784bd71435d94a4babe8ba2517d8d9a}{Text\+Lib\+::\+Color\+To\+Text}} (\mbox{\hyperlink{class_vec3}{Vec3}} \+\_\+\+Color)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_text}{Text}} corresponding to \+\_\+\+Color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a55fd2d35fae41950c91b87aab433d32e}{Text\+Lib\+::\+Format\+Integer}} (\mbox{\hyperlink{class_integer}{Integer}} Argument1, \mbox{\hyperlink{class_integer}{Integer}} Argument2)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_ad49b4b938e23d6312673c2a55342ff88}{Text\+Lib\+::\+Format\+Real}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+\+Value, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+F\+Part\+Length, \mbox{\hyperlink{class_boolean}{Boolean}} \+\_\+\+Hide\+Zeroes, \mbox{\hyperlink{class_boolean}{Boolean}} \+\_\+\+Hide\+Dot)
+\begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{class_text}{Text}} corresponding to a \mbox{\hyperlink{class_real}{Real}}. With formatting. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_ac7f7f51832f3b03983ee6df01fade71a}{Text\+Lib\+::\+To\+Upper\+Case}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Change)
+\begin{DoxyCompactList}\small\item\em Changes lower case characters to upper case characters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a524bcc0f3877375a91fd66d168e4c085}{Text\+Lib\+::\+To\+Lower\+Case}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Change)
+\begin{DoxyCompactList}\small\item\em Changes upper case characters to lower case characters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_ae9bbc77f1909307e35ed4589aaa89b40}{Text\+Lib\+::\+Close\+Style\+Tags}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+String)
+\begin{DoxyCompactList}\small\item\em Return a string where the previously unclosed \$$<$ tags have their \$$>$ counterpart. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{namespace_text_lib_adad4bc0e72733238dde6abdeb689b8e2}{Text\+Lib\+::\+Compare\+Without\+Format}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text2, \mbox{\hyperlink{class_boolean}{Boolean}} \+\_\+\+Is\+Case\+Sensitive)
+\begin{DoxyCompactList}\small\item\em Compares texts without taking format characters in account. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{namespace_text_lib_aa3394faa58dcd78926864ffff96bd82a}{Text\+Lib\+::\+Find}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Find, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Search\+In, \mbox{\hyperlink{class_boolean}{Boolean}} \+\_\+\+Is\+Format\+Sensitive, \mbox{\hyperlink{class_boolean}{Boolean}} \+\_\+\+Is\+Case\+Sensitive)
+\begin{DoxyCompactList}\small\item\em Returns True if the searched text is found in the text to search in. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{namespace_text_lib_a138bb95a5d15730a69b5a1164e28c2de}{Text\+Lib\+::\+Ends\+With}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Find, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Search\+In)
+\begin{DoxyCompactList}\small\item\em Return True if the \mbox{\hyperlink{class_text}{Text}} ends with the Text\+To\+Find. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{namespace_text_lib_a61b88e8a2694f63e9bb62f2c11c81693}{Text\+Lib\+::\+Ends\+With}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Find, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Search\+In, \mbox{\hyperlink{class_boolean}{Boolean}} \+\_\+\+Is\+Format\+Sensitive, \mbox{\hyperlink{class_boolean}{Boolean}} \+\_\+\+Is\+Case\+Sensitive)
+\begin{DoxyCompactList}\small\item\em Return True if the \mbox{\hyperlink{class_text}{Text}} ends with the Text\+To\+Find. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{namespace_text_lib_a9213f0081d0b66fb03dbb1f389418b19}{Text\+Lib\+::\+Starts\+With}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Find, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Search\+In)
+\begin{DoxyCompactList}\small\item\em Return True if the \mbox{\hyperlink{class_text}{Text}} starts with the Text\+To\+Find. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boolean}{Boolean}} \mbox{\hyperlink{namespace_text_lib_aa6d3f06afcd0160f5cadba69756eea21}{Text\+Lib\+::\+Starts\+With}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Find, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text\+To\+Search\+In, \mbox{\hyperlink{class_boolean}{Boolean}} \+\_\+\+Is\+Format\+Sensitive, \mbox{\hyperlink{class_boolean}{Boolean}} \+\_\+\+Is\+Case\+Sensitive)
+\begin{DoxyCompactList}\small\item\em Return True if the \mbox{\hyperlink{class_text}{Text}} starts with the Text\+To\+Find. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_ad49f362578c45b41b8fc9323dc880404}{Text\+Lib\+::\+Compose}} (\mbox{\hyperlink{class_text}{Text}} Argument1)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_add971e99800f4d9a2a12be8067f1f16e}{Text\+Lib\+::\+Compose}} (\mbox{\hyperlink{class_text}{Text}} Argument1, \mbox{\hyperlink{class_text}{Text}} Argument2)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a54bc6b98f2405b17204f13777e1637a1}{Text\+Lib\+::\+Compose}} (\mbox{\hyperlink{class_text}{Text}} Argument1, \mbox{\hyperlink{class_text}{Text}} Argument2, \mbox{\hyperlink{class_text}{Text}} Argument3)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_aa94f2caef65c72e2c0768ac11b70ebbf}{Text\+Lib\+::\+Compose}} (\mbox{\hyperlink{class_text}{Text}} Argument1, \mbox{\hyperlink{class_text}{Text}} Argument2, \mbox{\hyperlink{class_text}{Text}} Argument3, \mbox{\hyperlink{class_text}{Text}} Argument4)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a5b67046d902e5a888e789abc9f8dc141}{Text\+Lib\+::\+Compose}} (\mbox{\hyperlink{class_text}{Text}} Argument1, \mbox{\hyperlink{class_text}{Text}} Argument2, \mbox{\hyperlink{class_text}{Text}} Argument3, \mbox{\hyperlink{class_text}{Text}} Argument4, \mbox{\hyperlink{class_text}{Text}} Argument5)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a3bcb7ca3a2ee22f04c11eb099f4cc575}{Text\+Lib\+::\+Compose}} (\mbox{\hyperlink{class_text}{Text}} Argument1, \mbox{\hyperlink{class_text}{Text}} Argument2, \mbox{\hyperlink{class_text}{Text}} Argument3, \mbox{\hyperlink{class_text}{Text}} Argument4, \mbox{\hyperlink{class_text}{Text}} Argument5, \mbox{\hyperlink{class_text}{Text}} Argument6)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a7641c429b2589c45a7749e8cce047443}{Text\+Lib\+::\+M\+L\+Encode}} (\mbox{\hyperlink{class_text}{Text}} Argument1)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a2958eb6fb85d049a59b6a01d3a796800}{Text\+Lib\+::\+U\+R\+L\+Encode}} (\mbox{\hyperlink{class_text}{Text}} Argument1)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a4e8501e2aef42ece13950b078fc25176}{Text\+Lib\+::\+Strip\+Formatting}} (\mbox{\hyperlink{class_text}{Text}} Argument1)
+\item 
+\mbox{\hyperlink{class_text}{Text}}\mbox{[}\mbox{\hyperlink{class_void}{Void}}\mbox{]} \mbox{\hyperlink{namespace_text_lib_afccf793afd7079bd2c9f9cfec6b29cc5}{Text\+Lib\+::\+Split}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Separators, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text)
+\begin{DoxyCompactList}\small\item\em Splits a given text based on a given separators set. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_ab6d4340528c74431117c42ed1e8663bf}{Text\+Lib\+::\+Join}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Separator, \mbox{\hyperlink{class_text}{Text}}\mbox{[}\mbox{\hyperlink{class_void}{Void}}\mbox{]} \+\_\+\+Texts)
+\begin{DoxyCompactList}\small\item\em Joins a set of texts with the given separator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_aee99a14e422de3a68114f658fd164161}{Text\+Lib\+::\+Trim}} (\mbox{\hyperlink{class_text}{Text}} Argument1)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a73e47db87525a2cbca556001d12c4c34}{Text\+Lib\+::\+Replace\+Chars}} (\mbox{\hyperlink{class_text}{Text}} Argument1, \mbox{\hyperlink{class_text}{Text}} Argument2, \mbox{\hyperlink{class_text}{Text}} Argument3)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_ab4d1be88a57ba627dc8f8e5cf6ddf158}{Text\+Lib\+::\+Replace}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+To\+Replace, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Replacement)
+\begin{DoxyCompactList}\small\item\em Replaces occurences of \+\_\+\+To\+Replace in \+\_\+\+Text with \+\_\+\+Replacement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}}\mbox{[}\mbox{\hyperlink{class_void}{Void}}\mbox{]} \mbox{\hyperlink{namespace_text_lib_a487972f737c08906646fc021963be641}{Text\+Lib\+::\+Regex\+Find}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Pattern, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Flags)
+\begin{DoxyCompactList}\small\item\em Find occurences of the \+\_\+\+Pattern in the \+\_\+\+Text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}}\mbox{[}\mbox{\hyperlink{class_void}{Void}}\mbox{]} \mbox{\hyperlink{namespace_text_lib_a064c55ff6ae91d948ad00702685ab5ba}{Text\+Lib\+::\+Regex\+Match}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Pattern, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Flags)
+\begin{DoxyCompactList}\small\item\em Captures the groups of the \+\_\+\+Pattern in the matching \+\_\+\+Text. group\mbox{[}0\mbox{]} is the whole pattern match. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a4fdf7498e8adc6fcd964f16883ee65d7}{Text\+Lib\+::\+Regex\+Replace}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Pattern, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Flags, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Replacement)
+\begin{DoxyCompactList}\small\item\em Replace the \+\_\+\+Pattern in the matching text with \+\_\+\+Replacement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_text_lib_a8ac560083612601a624ce9a9beedfb18}{Text\+Lib\+::\+Get\+Translated\+Text}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text)
+\begin{DoxyCompactList}\small\item\em Lookup the text in the current translation dictionary. \end{DoxyCompactList}\item 
+Cardinal\+Directions \mbox{\hyperlink{namespace_map_units_ae7be2a07ec3f4f5ddf9c575ab00a59ed}{Map\+Units\+::\+Get\+Next\+Dir}} (Cardinal\+Directions Argument1)
+\item 
+Cardinal\+Directions \mbox{\hyperlink{namespace_map_units_a7842331d963808ba45ea5635410a2b66}{Map\+Units\+::\+Get\+Previous\+Dir}} (Cardinal\+Directions Argument1)
+\item 
+Cardinal\+Directions \mbox{\hyperlink{namespace_map_units_ac65eabd89d7465db922dbd990ec05cdb}{Map\+Units\+::\+Get\+Opposed\+Dir}} (Cardinal\+Directions Argument1)
+\item 
+Cardinal\+Directions \mbox{\hyperlink{namespace_map_units_a73dc108b31566c274dc356031f12c7b9}{Map\+Units\+::\+Add\+Dirs}} (Cardinal\+Directions Argument1, Cardinal\+Directions Argument2)
+\item 
+Cardinal\+Directions \mbox{\hyperlink{namespace_map_units_a0f7d8bbef12936930b6270258dda9004}{Map\+Units\+::\+Sub\+Dirs}} (Cardinal\+Directions Argument1, Cardinal\+Directions Argument2)
+\item 
+\mbox{\hyperlink{class_int3}{Int3}} \mbox{\hyperlink{namespace_map_units_a2d0461acd1bfa63b9c7215be57bd6400}{Map\+Units\+::\+Get\+Neighbour\+Coord}} (\mbox{\hyperlink{class_int3}{Int3}} Argument1, Cardinal\+Directions Argument2)
+\item 
+\mbox{\hyperlink{class_int3}{Int3}} \mbox{\hyperlink{namespace_map_units_ad61fdf804aeae871727d0698691d3fc5}{Map\+Units\+::\+Get\+Rotated\+Offset}} (\mbox{\hyperlink{class_int3}{Int3}} Argument1, Cardinal\+Directions Argument2)
+\item 
+\mbox{\hyperlink{class_int3}{Int3}} \mbox{\hyperlink{namespace_map_units_a60310620cec2110699207796ceb7a924}{Map\+Units\+::\+Get\+Rotated\+Offset\+Positive}} (\mbox{\hyperlink{class_int3}{Int3}} Argument1, Cardinal\+Directions Argument2, \mbox{\hyperlink{class_int3}{Int3}} Argument3)
+\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a75c08d703db002ee254ce9e5e537966f}{Anim\+Lib\+::\+Smooth\+Step}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+X)
+\begin{DoxyCompactList}\small\item\em Returns the value smoothly transitionning from 0 to 1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a90f8c910ffac71303b8a31fd64ac8b8f}{Anim\+Lib\+::\+Ease}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Function, \mbox{\hyperlink{class_real}{Real}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using Robert Penner easing functions. Function must be one of\+: \char`\"{}\+Linear\char`\"{}, \char`\"{}\+Quad\+In\char`\"{}, \char`\"{}\+Quad\+Out\char`\"{}, \char`\"{}\+Quad\+In\+Out\char`\"{}, \char`\"{}\+Cubic\+In\char`\"{}, \char`\"{}\+Cubic\+Out\char`\"{}, \char`\"{}\+Cubic\+In\+Out\char`\"{}, \char`\"{}\+Quart\+In\char`\"{}, \char`\"{}\+Quart\+Out\char`\"{}, \char`\"{}\+Quart\+In\+Out\char`\"{}, \char`\"{}\+Quint\+In\char`\"{}, \char`\"{}\+Quint\+Out\char`\"{}, \char`\"{}\+Quint\+In\+Out\char`\"{}, \char`\"{}\+Sine\+In\char`\"{}, \char`\"{}\+Sine\+Out\char`\"{}, \char`\"{}\+Sine\+In\+Out\char`\"{}, \char`\"{}\+Exp\+In\char`\"{}, \char`\"{}\+Exp\+Out\char`\"{}, \char`\"{}\+Exp\+In\+Out\char`\"{}, \char`\"{}\+Circ\+In\char`\"{}, \char`\"{}\+Circ\+Out\char`\"{}, \char`\"{}\+Circ\+In\+Out\char`\"{}, \char`\"{}\+Back\+In\char`\"{}, \char`\"{}\+Back\+Out\char`\"{}, \char`\"{}\+Back\+In\+Out\char`\"{}, \char`\"{}\+Elastic\+In\char`\"{}, \char`\"{}\+Elastic\+Out\char`\"{}, \char`\"{}\+Elastic\+In\+Out\char`\"{}, \char`\"{}\+Elastic\+In2\char`\"{}, \char`\"{}\+Elastic\+Out2\char`\"{}, \char`\"{}\+Elastic\+In\+Out2\char`\"{}, \char`\"{}\+Bounce\+In\char`\"{}, \char`\"{}\+Bounce\+Out\char`\"{}, \char`\"{}\+Bounce\+In\+Out\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a45be357961f5fbdc96c7bea9500db9a0}{Anim\+Lib\+::\+Ease\+Linear}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_ad7e2fa5b8c6a210587c4c91b07354a37}{Anim\+Lib\+::\+Ease\+In\+Quad}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_af5203799e1e7739c9c8ac08b0e9f826a}{Anim\+Lib\+::\+Ease\+Out\+Quad}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a51b86a68ccbfbf70a8475fb8c77a1331}{Anim\+Lib\+::\+Ease\+In\+Out\+Quad}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a444de8fdc216ab0c30f8f05fc33da185}{Anim\+Lib\+::\+Ease\+In\+Cubic}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a2028aaeecfa69d798315764f48a2a857}{Anim\+Lib\+::\+Ease\+Out\+Cubic}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a7af5b9a81bf9bf33af455d063a7d9e65}{Anim\+Lib\+::\+Ease\+In\+Out\+Cubic}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a3e3e489c471d970c434042cfa442fe68}{Anim\+Lib\+::\+Ease\+In\+Quart}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a69daacf17cc159e5ffa502fa37fc383f}{Anim\+Lib\+::\+Ease\+Out\+Quart}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_abc652d33baa78bec32b12e1e1187ecbb}{Anim\+Lib\+::\+Ease\+In\+Out\+Quart}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_ab9d6db6c51ae309b4b38b1ac9f49813e}{Anim\+Lib\+::\+Ease\+In\+Quint}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a43d42db5267ba9ff7410e3ada259b179}{Anim\+Lib\+::\+Ease\+Out\+Quint}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a67a0c693c9e034d6a3016e51e88f2163}{Anim\+Lib\+::\+Ease\+In\+Out\+Quint}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a22aee4a1444fef34ccc7abcedbe37555}{Anim\+Lib\+::\+Ease\+In\+Sine}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a8b30ecfbd645d0648ddfca42a154496c}{Anim\+Lib\+::\+Ease\+Out\+Sine}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a33421e5033c9ebd0b5eb862ddbe5b04b}{Anim\+Lib\+::\+Ease\+In\+Out\+Sine}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_af9533053f9e547a6811c4bbd55e59eb0}{Anim\+Lib\+::\+Ease\+In\+Exp}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a8a99308eba64d23db10b4b0ee995f8e3}{Anim\+Lib\+::\+Ease\+Out\+Exp}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_aa967e85194d5cc26011820ca0d39b9dd}{Anim\+Lib\+::\+Ease\+In\+Out\+Exp}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a76f6106ef1fb7395ad662ee3ad975b25}{Anim\+Lib\+::\+Ease\+In\+Circ}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_ae647f6ecec4c502627d4828276648c02}{Anim\+Lib\+::\+Ease\+Out\+Circ}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a1fd77cd724dadbee10e348dae92a7c85}{Anim\+Lib\+::\+Ease\+In\+Out\+Circ}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_ab2773a2776e5b80e71e10f3c8a5dc338}{Anim\+Lib\+::\+Ease\+In\+Back}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a66ad7e4cd59672df8e353625f61e0275}{Anim\+Lib\+::\+Ease\+Out\+Back}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a6f55e5d950212aae6034d8f59d354725}{Anim\+Lib\+::\+Ease\+In\+Out\+Back}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a709540954052f4712ecc455f8b647646}{Anim\+Lib\+::\+Ease\+In\+Elastic}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a20aaeaa0f94ef838b3f5c6825d90c75f}{Anim\+Lib\+::\+Ease\+Out\+Elastic}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a41996aa0752497e418fd7d8155432a25}{Anim\+Lib\+::\+Ease\+In\+Out\+Elastic}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_aea53c34fa16cae60546e21cc096ad5fc}{Anim\+Lib\+::\+Ease\+In\+Elastic2}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a564d8cc97a8d9042f26f518e02bd4ed6}{Anim\+Lib\+::\+Ease\+Out\+Elastic2}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_aadbbeea00127b61c124b08c9b10aa4fb}{Anim\+Lib\+::\+Ease\+In\+Out\+Elastic2}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a1ca218aa7804f2a53d5329816b5d3e1c}{Anim\+Lib\+::\+Ease\+In\+Bounce}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_a677802bcfdec9e1700bd3bc936987629}{Anim\+Lib\+::\+Ease\+Out\+Bounce}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_anim_lib_ab630997917433d1455555d4b2cf60b2c}{Anim\+Lib\+::\+Ease\+In\+Out\+Bounce}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+T, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Base, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Change, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Duration)
+\begin{DoxyCompactList}\small\item\em Returns the value animated from Base to Base+\+Delta using R. Penner easing functions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_ae1c55491218e93c7a92295f4867e66bd}{Time\+Lib\+::\+Format\+Date}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp, E\+Date\+Formats \+\_\+\+Format)
+\begin{DoxyCompactList}\small\item\em Returns the date corresponding to a timestamp, formatted according to the locale. Not available on servers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_a9a36b23165d90326d3278547c4c6a8c2}{Time\+Lib\+::\+Format\+Delta}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp2, E\+Duration\+Formats \+\_\+\+Format)
+\begin{DoxyCompactList}\small\item\em Returns the duration between 2 timestamps, formatted according to the locale. Not available on servers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_ad11de83d1793ad46f46a25b394cfcbfb}{Time\+Lib\+::\+Format\+Delta}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Delta, E\+Duration\+Formats \+\_\+\+Format)
+\begin{DoxyCompactList}\small\item\em Returns the duration Delta formatted according to the locale. Not available on servers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_time_lib_ad802f0c578558ee75aa8bce738ec8f6f}{Time\+Lib\+::\+Compare}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp2)
+\begin{DoxyCompactList}\small\item\em Compares 2 timestamps. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_time_lib_a9a26b6eb869f43c3e5319025a280edf2}{Time\+Lib\+::\+Clamp01}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Boundary1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Boundary2, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp)
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{class_real}{Real}} between 0 and 1, given an interval and a timestamp. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_a1717b5cebb9be21540e240308894ffa3}{Time\+Lib\+::\+Get\+Current}} ()
+\begin{DoxyCompactList}\small\item\em Gets current timestamp. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_time_lib_a44ea3b8bdac601cc2ca87b11ca3dfee1}{Time\+Lib\+::\+Get\+Delta}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp2)
+\begin{DoxyCompactList}\small\item\em Returns the duration in seconds between 2 timestamps. May be clamped if huge. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{namespace_color_lib_ace566f437e3688e3a495fae0f9969c9a}{Color\+Lib\+::\+Hsv\+To\+Rgb}} (\mbox{\hyperlink{class_vec3}{Vec3}} \+\_\+\+\_\+\+Hsv)
+\item 
+\mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{namespace_color_lib_a4e9865adab51a6a470f126b0e2928152}{Color\+Lib\+::\+Rgb\+To\+Hsv}} (\mbox{\hyperlink{class_vec3}{Vec3}} \+\_\+\+\_\+\+Rgb)
+\item 
+\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_color_lib_a357ae4f8286e09df4a4c84b7640338ec}{Color\+Lib\+::\+Rgb\+To\+Hex}} (\mbox{\hyperlink{class_vec3}{Vec3}} \+\_\+\+\_\+\+Rgb)
+\item 
+\mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{namespace_color_lib_a718b5c29a8a60431d2d88c107a6c86ff}{Color\+Lib\+::\+Hex\+To\+Rgb}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text)
+\begin{DoxyCompactList}\small\item\em Returns the R\+GB color corresponding to \+\_\+\+Text. \end{DoxyCompactList}\end{DoxyCompactItemize}
