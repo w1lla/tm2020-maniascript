@@ -1,0 +1,1127 @@
+\hypertarget{class_c_editor_media_tracker}{}\doxysection{C\+Editor\+Media\+Tracker Class Reference}
+\label{class_c_editor_media_tracker}\index{CEditorMediaTracker@{CEditorMediaTracker}}
+
+
+Documentation for class \mbox{\hyperlink{class_c_editor_media_tracker}{C\+Editor\+Media\+Tracker}}.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Editor\+Media\+Tracker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_editor_media_tracker}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0c}{E\+Media\+Tracker\+Block\+Type}} \{ \newline
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cae3596a2d80fdf69b3e8f198a793cda2e}{Ghost}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca87d02d8612a120029894450018239ee8}{Camera\+Custom}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca25082181cf82c8c75465231113bd9628}{Camera\+Path}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca1b35db59b03568d476470b5a4357fcb3}{Time}}, 
+\newline
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cae67c86db7997716abec7215eb88e63c9}{Fx\+Colors}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caff1280b28e61277b75730b3de3727627}{Sound}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca4da5c1ea2be09aa8dd136f2396235fc1}{Fog}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cac4fd3f1e17f57c76cfdfedd5f706edbb}{Transition\+Fade}}, 
+\newline
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca2eff68865d4857f0f1f6276904f230cf}{Camera\+Effect\+Shake}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cad62389ed3b10923e3e2e3a60d7c97ecd}{Camera\+Effect\+Script}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca3ed3068e53f5a845f5c1f9efb47134fc}{Stereo3d}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca4e2f69abeb7c8968c2782650669e5676}{D\+OF}}, 
+\newline
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca164573ebf7ba690c107a8f13912726ce}{Tone\+Mapping}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caef0a08fcec0df38dbdcd3db3fa656e41}{Bloom\+Hdr}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caf022284ae52b4917d66525fd4eba3808}{Dirty\+Lens}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca4551ec5a5b49657ee93185f749ab71be}{Color\+Grading}}, 
+\newline
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca71e5648fac9befd8061a395a82e92d5f}{Fx\+Camera\+Blend}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca703725461c748b09629663221b11297d}{Music\+Effect}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca810ed214de74149e0476cd03f07f65ef}{Time\+Speed}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca44413dfdd7205eb83effe656ddc70930}{Text\+Block}}, 
+\newline
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca25f4ae8393bbbf2a1cde9f29b352bafe}{Image}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caa31b7cb35cd9547d3a6696b2c649595a}{Coloring\+Capturable}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca50087af0806a38c938e30b39591f5ef5}{Coloring\+Base}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca6daee1ff42a600b010d5ff0a6e4d3994}{Camera\+Game}}, 
+\newline
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cacebd19b89901925e302be12d1f0d0784}{Trails}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca260dc14ee725c94c326a17b1ca80c48b}{Manialink}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca07889df91fb7a9163917116a62d65993}{Editing\+Cut}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca910011e479b9cb7ebf8487367dfe1607}{Cam\+Fx\+Inertial\+Tracking}}, 
+\newline
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca041bf836f4838d07e85d372499df3d3c}{Vehicle\+Light}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca932574fb9570954f97b02b3c47f3f098}{Interface}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cae7c4f9ea66d6695e731adc303a17fa1f}{Triangles2D}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca333f940f01443219a71f39348a092c38}{Triangles3D}}, 
+\newline
+\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca06272d129de59227b64ca13fc3ae3ec9}{Camera\+Orbital}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ff}{E\+Media\+Tracker\+Copy\+Type}} \{ \mbox{\hyperlink{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a7da20a717ef684927f90e0304c854cd9}{None}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa61e53553b50a46b9fb90df175873b811}{Key}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa93640a4b1554055ee775afa8bdb4642c}{Block}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0}{E\+Media\+Tracker\+Paste\+Type}} \{ \newline
+\mbox{\hyperlink{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a7da20a717ef684927f90e0304c854cd9}{None}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a68d988d5fc868c19414220ce05f647f6}{Key\+Info}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0ac8689e545693b1020d513265ec714c9e}{New\+Key}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0afc9eb437090be4d81b8a1e4e3674dc03}{Block\+Current\+Track}}, 
+\newline
+\mbox{\hyperlink{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a36a922cb41a3e48e124b7e963348b18d}{Block\+New\+Track}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{E\+Media\+Tracker\+Ghost\+Ref}} \{ \mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554a504fdd6dab0058be0067f98a3e6a7b45}{Author}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554a3dd43bb72a67b6c20d6940dbb7eaf6a4}{Ghost1}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554ad3c719a6eb71145be476d2202ffdec44}{Ghost2}}, 
+\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554aabe85509c54a3a0c4629aa7113b367a6}{Ghost3}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_aacc90b7570c0342dc91e25840e3d95af}{Time\+Play}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a760be8543d37ef7ba83154ac9b509110}{Time\+Stop}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_af0a54841a62bfc9ffc35742a2b37f78b}{Time\+Toggle}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a1db2826cbb4bdd98eb4d8c06be926fcb}{Rewind}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a7e4aeacfc54b49b9497404a2927b849d}{Quit}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ab545e668ddaca0f3cd9c2759bf51409f}{Update\+Property\+List\+Read\+Only}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a0d9816ed051c424f19b9033f46753d0a}{Create\+Block}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a0f4cff70021bb0cd8c50ad1d35dbfded}{Create\+Key}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a399ab858108beab3a3c51aa51576bd7e}{Toggle\+Triggers\+Mode}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a3e53c0de8be45efc75be0e23adf6590d}{Create\+Clip}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ab3560f71d29ee4260c3d3294004b78e7}{Remove\+Clip}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a0fc64d3db34f9d4c3fca62289c77d4cd}{Undo}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ac13c38fb55d5d834b9403f3e7e48e6d7}{Redo}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a1ca38d3e28debab0c4f0af302747f5a1}{Import\+Clip}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a3e76091f3d0a752523b9f9e1041d29f7}{Export\+Clip}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a7f0dcbecf95036a5520e8bf018893d38}{Import\+Ghosts}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ab7aa197bd9daeed305aa2b862bf21e42}{Toggle\+Record\+Ghost\+Mode}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a6f484178a2418581d01e9db2426c8b85}{Shoot\+Video}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a706ccae9e7404fbfdc455bb46443a65a}{Shoot\+Screen}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a204c6d2448a74d15c482dfd6e6f6c652}{Compute\+Shadows}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ae83a913f99d7477368676aedc32593e0}{Toggle\+Display\+Player\+Names}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a7d47b63056f9dc8a73fa865b0734ddbc}{Inform\+Interface\+Is\+Hidden}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a89529593f4d7ea0e1e9347f4415f8ebc}{Toggle\+Ghost\+Ref}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a107d98d7c4cdcbc23502577d1a0cdf4d}{Stop\+Ghost\+Ref\+Preview}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a4311f5075eb4b6f544bfc8b5b7db832a}{Toggle\+Clip\+Condition}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_aa01bdb7dc30e33bb12cc0fb2ce9f0e53}{Copy}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a3d65f3df231806ed88aac450d7b70443}{Paste}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a01419e7928253444e99c752a2ebb1369}{Cut}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_adddd9942026d48268bbeb19c73603950}{Duplicate\+Track}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a2d9e8f52c598189f226df6f670142659}{Split\+Block}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ae41122a97c686ed0adfbe655b596da04}{Toggle\+Always\+Show\+Trigger\+Zone}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a5770ff2593f1af2bfdcbc8f19bee679b}{Reset\+Trigger\+Zone}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ac4b26c38621e4c454b45ef02a118f223}{Remove\+All\+Tracks}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a255a6387a6b89731d8cef3206420ede3}{Set\+Clip}} (\mbox{\hyperlink{class_c_media_tracker_clip}{C\+Media\+Tracker\+Clip}} \mbox{\hyperlink{class_c_editor_media_tracker_af0beaf3ccbec0594e21973daf920014c}{Clip}})
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a03f07ef4797f7ffaed708e3f55f6ca2d}{Is\+Playing}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_aaaa0acfd28e43eaf67df501386eea28d}{Set\+Camera\+Draw\+Rect}} (\mbox{\hyperlink{struct_vec2}{Vec2}} Pos, \mbox{\hyperlink{struct_vec2}{Vec2}} Size)
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a053ea06fca77bcaeb5127f1519b7574f}{Get\+Selected\+Clip}} ()
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a27035ff8d8562323d38c451d00151493}{Get\+Selected\+Track}} ()
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a751e8ec89891f04df79db24d6b323678}{Get\+Selected\+Block}} ()
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_aed43e496920aabc1337711eb7b84c3fa}{Get\+Selected\+Key}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_aad10f44b396ae42607d585a440d37f74}{Select\+Item}} (\mbox{\hyperlink{struct_integer}{Integer}} Track, \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa93640a4b1554055ee775afa8bdb4642c}{Block}}, \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa61e53553b50a46b9fb90df175873b811}{Key}})
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a79c3644a6d07b87b04d8304b68a2b92e}{Create\+Track}} (\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0c}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Block\+Type}} Type)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_aa3d77e923f3c8b3910ad864be3327b0a}{Can\+Create\+Track}} (\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0c}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Block\+Type}} Type)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a627a65637032f7c4ac84d7b45a1dabab}{Is\+Key\+Start\+End}} (\mbox{\hyperlink{struct_integer}{Integer}} Track, \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa93640a4b1554055ee775afa8bdb4642c}{Block}}, \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa61e53553b50a46b9fb90df175873b811}{Key}})
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a21f6d790be3fffdcd035265e40db8c59}{Remove\+Track}} (\mbox{\hyperlink{struct_integer}{Integer}} Track)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a2c57949ff8d4f293d132bf1c44b70024}{Remove\+Block}} (\mbox{\hyperlink{struct_integer}{Integer}} Track, \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa93640a4b1554055ee775afa8bdb4642c}{Block}})
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a4f026350de55bfc42e2e80525b27a258}{Remove\+Key}} (\mbox{\hyperlink{struct_integer}{Integer}} Track, \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa93640a4b1554055ee775afa8bdb4642c}{Block}}, \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa61e53553b50a46b9fb90df175873b811}{Key}})
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a6bf0aebf2ef961abc085f9f7a19d0276}{Can\+Remove\+All\+Keys}} (\mbox{\hyperlink{struct_integer}{Integer}} Track, \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa93640a4b1554055ee775afa8bdb4642c}{Block}})
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a93f724116328b3c2c718e6fedc974e18}{Remove\+All\+Keys}} (\mbox{\hyperlink{struct_integer}{Integer}} Track, \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa93640a4b1554055ee775afa8bdb4642c}{Block}})
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a47963c1556446fd566b792675e5fa987}{Set\+Process\+Cam\+Inputs}} (\mbox{\hyperlink{struct_boolean}{Boolean}} Process\+Cam\+Inputs)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a436b442db1cedc56a9dc7d3fedc39c91}{Tool\+Bar\+Set\+Visible}} (\mbox{\hyperlink{struct_boolean}{Boolean}} Visible)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a12706c3ec5dad62b19d1c1038ba7080f}{Is\+Triggers\+Mode\+On}} ()
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_aa2f830ff476283827447219e848a1548}{Is\+Record\+Ghost\+Mode\+On}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ac018b1e1b7b235c368ed1caf68b40aaf}{Set\+Temp\+Hide\+Property\+List}} (\mbox{\hyperlink{struct_boolean}{Boolean}} Temp\+Hide)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ac54836d6e406f156cb6149eaf3c360bc}{Set\+Clip\+Name}} (\mbox{\hyperlink{struct_integer}{Integer}} Index, \mbox{\hyperlink{struct_text}{Text}} Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a092ca4e1949fa9087dcab92245e4ba36}{Set\+Track\+Name}} (\mbox{\hyperlink{struct_integer}{Integer}} Index, \mbox{\hyperlink{struct_text}{Text}} Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_aa5c02d61bc44b91ee2cb14b5df812cb9}{Set\+Track\+Is\+Cycling}} (\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}} Track, \mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Cycling)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a7429a48981517bf1fdba7ee407e7cab9}{Set\+Track\+Is\+Keep\+Playing}} (\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}} Track, \mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Keep\+Playing)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a6a1e870f3a9c8da5e45a36447ed88716}{Get\+Track\+Is\+Cycling}} (\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}} Track)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a0444f857135a20f22697be0894cdf1de}{Get\+Track\+Is\+Keep\+Playing}} (\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}} Track)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ac2ae3d74c4fc37e73b53fb26a409e4d9}{Set\+Start\+Is\+Cycling}} (\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}} Track)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_afc17965aaeabf05889ba32dac5b568af}{Set\+Stop\+Is\+Cycling}} (\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}} Track)
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_editor_media_tracker_afaa26bfe251367ea023a6c2af2537ff2}{Get\+Start\+Is\+Cycling}} (\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}} Track)
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_editor_media_tracker_acc9a10df146cbc4419acc4ce1b40b97f}{Get\+Stop\+Is\+Cycling}} (\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}} Track)
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_editor_media_tracker_afb386891557436046d0d7e6978b8564f}{Get\+Ghost\+Ref\+Name}} ()
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_editor_media_tracker_ae212f5c851a1ef4f16d74afd97d2911f}{Get\+Clip\+Condition\+Name}} ()
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_ab1a34d8527080de941e505f6c066e630}{Has\+Clip\+Condition}} ()
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_editor_media_tracker_a086795a5729ad958cdd4ae3ccf2a4a6f}{Get\+Time\+Limit}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a084ecbeacb26b37569435ae5b516583d}{Set\+Timer}} (\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca1b35db59b03568d476470b5a4357fcb3}{Time}})
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_aab02a89be3f0c9c7490497500c80d3c1}{Set\+Current\+Block\+Start}} (\mbox{\hyperlink{struct_text}{Text}} Start)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a44983ac07f1e367b3f5537ab9bb8f569}{Set\+Current\+Block\+End}} (\mbox{\hyperlink{struct_text}{Text}} End)
+\item 
+\mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ff}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Copy\+Type}} \mbox{\hyperlink{class_c_editor_media_tracker_a38e5db0910f51d1e6bf40b8d0f5b5625}{Can\+Copy}} ()
+\item 
+\mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ff}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Copy\+Type}} \mbox{\hyperlink{class_c_editor_media_tracker_a8e6aad357acf2cf3911e1c198507a61c}{Can\+Cut}} ()
+\item 
+\mbox{\hyperlink{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Paste\+Type}} \mbox{\hyperlink{class_c_editor_media_tracker_a224aa166b4b63b6cd399c17e81de22b4}{Can\+Paste}} ()
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a8f8c61ab311f0dea86d4d8a6039c0330}{Has\+Copied\+Item}} ()
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a63a5ccf3895ee70e48a0ae0255da4d84}{Is\+Property\+List\+Read\+Only\+And\+Visible}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a27db52e3406f7b0d8ad3b49f9bf83867}{Select\+Ghost\+Ref}} (\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}} Type)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_afd72909485ddd2340dd8eb02a91aac69}{Delete\+Ghost\+Ref}} (\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}} Type)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ae9b9942cc926a3b5a41a1f6ac6fce09b}{Record\+Ghost\+Ref}} (\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}} Type)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_ad76281834acf70654bcd513c847d4626}{Ghost\+Ref\+Exists}} (\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}} Type)
+\item 
+\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}} \mbox{\hyperlink{class_c_editor_media_tracker_a810b4f47f8f5b090120656f90ed3cc76}{Get\+Selected\+Ghost\+Ref}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a0010981cf45e954f8f3f88d844a5a303}{Start\+Ghost\+Ref\+Preview}} (\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}} Type)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a0fca65e345530b47966937c5af68d6af}{Remove\+All\+Ghost\+Tracks\+Except}} (\mbox{\hyperlink{struct_integer}{Integer}} Track)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_a38aa2b2030c861c8e2361d0f7a745f6b}{Remove\+All\+Camera\+Tracks\+Except}} (\mbox{\hyperlink{struct_integer}{Integer}} Track)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a0c3d89afc34070ae78bb60c9aa7b40fe}{Can\+Remove\+All\+Ghost\+Tracks}} ()
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a415b0438d4a97bb2344f75b0db45889d}{Can\+Remove\+All\+Camera\+Tracks}} ()
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a2ad497fd454f7831f49aad58f401d799}{Is\+Ghost\+Ref\+Preview}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_media_tracker_ad9366b04b7d6265b0fb205a226a2e891}{Set\+Profile\+Theme}} (\mbox{\hyperlink{struct_integer}{Integer}} Theme)
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_media_tracker_a363949947756757c16cd4400fb6a55bf}{Get\+Profile\+Theme}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_editor_media_tracker_a90f329349cd11fdff1871405c90ed6d2}{Current\+Timer}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_a514c0d097b5308dd7ee5507ac55a0de3}{Use\+Orbital\+Instead\+Of\+Free\+Cam}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_ab6df8fe4abd30439bf5aba4a21f4c5fa}{Use\+Clip\+Cam\+When\+Available}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_media_tracker_aeeac2fe76cbc4091edf308924dbab43c}{Can\+Use\+Clip\+Cam}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_editor_media_tracker_aa22b4f91645f175a1bdaf57756c1f248}{Play\+Speed}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_editor_media_tracker_abf75747474e170fbdde88bd4b3047036}{Camera\+Speed}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_editor_media_tracker_a5332dc5efd22daf7bd3c3df704d6f001}{Clip\+Condition\+Value}}
+\item 
+const \mbox{\hyperlink{class_c_media_tracker_clip}{C\+Media\+Tracker\+Clip}} \mbox{\hyperlink{class_c_editor_media_tracker_af0beaf3ccbec0594e21973daf920014c}{Clip}}
+\item 
+const \mbox{\hyperlink{class_c_media_tracker_clip_group}{C\+Media\+Tracker\+Clip\+Group}} \mbox{\hyperlink{class_c_editor_media_tracker_a96ba44f51d6fdfb4794b098d35731553}{Clip\+Group}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_editor_event}{C\+Editor\+Event}} $>$ \mbox{\hyperlink{class_c_editor_media_tracker_a7ee94c9a92bb650e87374f9e8a17c1b1}{Pending\+Events}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_editor_media_tracker_aa3a54e1808ec1554709a00fe8b84b5d4}{Pop\+Up\+Message}}
+\item 
+const \mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0c}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Block\+Type}} \mbox{\hyperlink{class_c_editor_media_tracker_a2fed707c3b077e2d9676188da26a6935}{Edit\+Mode}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Documentation for class \mbox{\hyperlink{class_c_editor_media_tracker}{C\+Editor\+Media\+Tracker}}. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0c}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0c}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!EMediaTrackerBlockType@{EMediaTrackerBlockType}}
+\index{EMediaTrackerBlockType@{EMediaTrackerBlockType}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{EMediaTrackerBlockType}{EMediaTrackerBlockType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0c}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Block\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ghost@{Ghost}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Ghost@{Ghost}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cae3596a2d80fdf69b3e8f198a793cda2e}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cae3596a2d80fdf69b3e8f198a793cda2e}} 
+Ghost&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CameraCustom@{CameraCustom}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!CameraCustom@{CameraCustom}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca87d02d8612a120029894450018239ee8}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca87d02d8612a120029894450018239ee8}} 
+Camera\+Custom&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CameraPath@{CameraPath}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!CameraPath@{CameraPath}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca25082181cf82c8c75465231113bd9628}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca25082181cf82c8c75465231113bd9628}} 
+Camera\+Path&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Time@{Time}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Time@{Time}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca1b35db59b03568d476470b5a4357fcb3}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca1b35db59b03568d476470b5a4357fcb3}} 
+Time&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FxColors@{FxColors}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!FxColors@{FxColors}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cae67c86db7997716abec7215eb88e63c9}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cae67c86db7997716abec7215eb88e63c9}} 
+Fx\+Colors&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sound@{Sound}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Sound@{Sound}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caff1280b28e61277b75730b3de3727627}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caff1280b28e61277b75730b3de3727627}} 
+Sound&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fog@{Fog}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Fog@{Fog}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca4da5c1ea2be09aa8dd136f2396235fc1}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca4da5c1ea2be09aa8dd136f2396235fc1}} 
+Fog&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TransitionFade@{TransitionFade}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!TransitionFade@{TransitionFade}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cac4fd3f1e17f57c76cfdfedd5f706edbb}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cac4fd3f1e17f57c76cfdfedd5f706edbb}} 
+Transition\+Fade&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CameraEffectShake@{CameraEffectShake}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!CameraEffectShake@{CameraEffectShake}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca2eff68865d4857f0f1f6276904f230cf}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca2eff68865d4857f0f1f6276904f230cf}} 
+Camera\+Effect\+Shake&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CameraEffectScript@{CameraEffectScript}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!CameraEffectScript@{CameraEffectScript}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cad62389ed3b10923e3e2e3a60d7c97ecd}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cad62389ed3b10923e3e2e3a60d7c97ecd}} 
+Camera\+Effect\+Script&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Stereo3d@{Stereo3d}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Stereo3d@{Stereo3d}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca3ed3068e53f5a845f5c1f9efb47134fc}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca3ed3068e53f5a845f5c1f9efb47134fc}} 
+Stereo3d&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOF@{DOF}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!DOF@{DOF}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca4e2f69abeb7c8968c2782650669e5676}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca4e2f69abeb7c8968c2782650669e5676}} 
+D\+OF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ToneMapping@{ToneMapping}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!ToneMapping@{ToneMapping}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca164573ebf7ba690c107a8f13912726ce}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca164573ebf7ba690c107a8f13912726ce}} 
+Tone\+Mapping&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BloomHdr@{BloomHdr}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!BloomHdr@{BloomHdr}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caef0a08fcec0df38dbdcd3db3fa656e41}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caef0a08fcec0df38dbdcd3db3fa656e41}} 
+Bloom\+Hdr&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirtyLens@{DirtyLens}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!DirtyLens@{DirtyLens}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caf022284ae52b4917d66525fd4eba3808}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caf022284ae52b4917d66525fd4eba3808}} 
+Dirty\+Lens&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ColorGrading@{ColorGrading}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!ColorGrading@{ColorGrading}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca4551ec5a5b49657ee93185f749ab71be}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca4551ec5a5b49657ee93185f749ab71be}} 
+Color\+Grading&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FxCameraBlend@{FxCameraBlend}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!FxCameraBlend@{FxCameraBlend}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca71e5648fac9befd8061a395a82e92d5f}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca71e5648fac9befd8061a395a82e92d5f}} 
+Fx\+Camera\+Blend&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MusicEffect@{MusicEffect}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!MusicEffect@{MusicEffect}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca703725461c748b09629663221b11297d}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca703725461c748b09629663221b11297d}} 
+Music\+Effect&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TimeSpeed@{TimeSpeed}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!TimeSpeed@{TimeSpeed}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca810ed214de74149e0476cd03f07f65ef}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca810ed214de74149e0476cd03f07f65ef}} 
+Time\+Speed&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TextBlock@{TextBlock}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!TextBlock@{TextBlock}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca44413dfdd7205eb83effe656ddc70930}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca44413dfdd7205eb83effe656ddc70930}} 
+Text\+Block&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Image@{Image}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Image@{Image}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca25f4ae8393bbbf2a1cde9f29b352bafe}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca25f4ae8393bbbf2a1cde9f29b352bafe}} 
+Image&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ColoringCapturable@{ColoringCapturable}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!ColoringCapturable@{ColoringCapturable}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caa31b7cb35cd9547d3a6696b2c649595a}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0caa31b7cb35cd9547d3a6696b2c649595a}} 
+Coloring\+Capturable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ColoringBase@{ColoringBase}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!ColoringBase@{ColoringBase}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca50087af0806a38c938e30b39591f5ef5}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca50087af0806a38c938e30b39591f5ef5}} 
+Coloring\+Base&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CameraGame@{CameraGame}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!CameraGame@{CameraGame}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca6daee1ff42a600b010d5ff0a6e4d3994}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca6daee1ff42a600b010d5ff0a6e4d3994}} 
+Camera\+Game&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Trails@{Trails}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Trails@{Trails}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cacebd19b89901925e302be12d1f0d0784}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cacebd19b89901925e302be12d1f0d0784}} 
+Trails&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Manialink@{Manialink}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Manialink@{Manialink}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca260dc14ee725c94c326a17b1ca80c48b}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca260dc14ee725c94c326a17b1ca80c48b}} 
+Manialink&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EditingCut@{EditingCut}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!EditingCut@{EditingCut}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca07889df91fb7a9163917116a62d65993}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca07889df91fb7a9163917116a62d65993}} 
+Editing\+Cut&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CamFxInertialTracking@{CamFxInertialTracking}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!CamFxInertialTracking@{CamFxInertialTracking}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca910011e479b9cb7ebf8487367dfe1607}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca910011e479b9cb7ebf8487367dfe1607}} 
+Cam\+Fx\+Inertial\+Tracking&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VehicleLight@{VehicleLight}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!VehicleLight@{VehicleLight}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca041bf836f4838d07e85d372499df3d3c}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca041bf836f4838d07e85d372499df3d3c}} 
+Vehicle\+Light&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Interface@{Interface}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Interface@{Interface}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca932574fb9570954f97b02b3c47f3f098}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca932574fb9570954f97b02b3c47f3f098}} 
+Interface&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Triangles2D@{Triangles2D}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Triangles2D@{Triangles2D}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cae7c4f9ea66d6695e731adc303a17fa1f}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0cae7c4f9ea66d6695e731adc303a17fa1f}} 
+Triangles2D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Triangles3D@{Triangles3D}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Triangles3D@{Triangles3D}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca333f940f01443219a71f39348a092c38}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca333f940f01443219a71f39348a092c38}} 
+Triangles3D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CameraOrbital@{CameraOrbital}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!CameraOrbital@{CameraOrbital}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca06272d129de59227b64ca13fc3ae3ec9}\label{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0ca06272d129de59227b64ca13fc3ae3ec9}} 
+Camera\+Orbital&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ff}\label{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ff}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!EMediaTrackerCopyType@{EMediaTrackerCopyType}}
+\index{EMediaTrackerCopyType@{EMediaTrackerCopyType}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{EMediaTrackerCopyType}{EMediaTrackerCopyType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ff}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Copy\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!None@{None}}}\mbox{\Hypertarget{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a7da20a717ef684927f90e0304c854cd9}\label{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a7da20a717ef684927f90e0304c854cd9}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Key@{Key}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Key@{Key}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa61e53553b50a46b9fb90df175873b811}\label{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa61e53553b50a46b9fb90df175873b811}} 
+Key&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Block@{Block}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Block@{Block}}}\mbox{\Hypertarget{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa93640a4b1554055ee775afa8bdb4642c}\label{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ffa93640a4b1554055ee775afa8bdb4642c}} 
+Block&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}\label{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!EMediaTrackerGhostRef@{EMediaTrackerGhostRef}}
+\index{EMediaTrackerGhostRef@{EMediaTrackerGhostRef}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{EMediaTrackerGhostRef}{EMediaTrackerGhostRef}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Author@{Author}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Author@{Author}}}\mbox{\Hypertarget{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554a504fdd6dab0058be0067f98a3e6a7b45}\label{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554a504fdd6dab0058be0067f98a3e6a7b45}} 
+Author&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ghost1@{Ghost1}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Ghost1@{Ghost1}}}\mbox{\Hypertarget{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554a3dd43bb72a67b6c20d6940dbb7eaf6a4}\label{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554a3dd43bb72a67b6c20d6940dbb7eaf6a4}} 
+Ghost1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ghost2@{Ghost2}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Ghost2@{Ghost2}}}\mbox{\Hypertarget{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554ad3c719a6eb71145be476d2202ffdec44}\label{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554ad3c719a6eb71145be476d2202ffdec44}} 
+Ghost2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ghost3@{Ghost3}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!Ghost3@{Ghost3}}}\mbox{\Hypertarget{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554aabe85509c54a3a0c4629aa7113b367a6}\label{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554aabe85509c54a3a0c4629aa7113b367a6}} 
+Ghost3&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0}\label{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!EMediaTrackerPasteType@{EMediaTrackerPasteType}}
+\index{EMediaTrackerPasteType@{EMediaTrackerPasteType}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{EMediaTrackerPasteType}{EMediaTrackerPasteType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Paste\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!None@{None}}}\mbox{\Hypertarget{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a7da20a717ef684927f90e0304c854cd9}\label{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a7da20a717ef684927f90e0304c854cd9}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KeyInfo@{KeyInfo}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!KeyInfo@{KeyInfo}}}\mbox{\Hypertarget{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a68d988d5fc868c19414220ce05f647f6}\label{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a68d988d5fc868c19414220ce05f647f6}} 
+Key\+Info&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NewKey@{NewKey}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!NewKey@{NewKey}}}\mbox{\Hypertarget{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0ac8689e545693b1020d513265ec714c9e}\label{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0ac8689e545693b1020d513265ec714c9e}} 
+New\+Key&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BlockCurrentTrack@{BlockCurrentTrack}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!BlockCurrentTrack@{BlockCurrentTrack}}}\mbox{\Hypertarget{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0afc9eb437090be4d81b8a1e4e3674dc03}\label{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0afc9eb437090be4d81b8a1e4e3674dc03}} 
+Block\+Current\+Track&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BlockNewTrack@{BlockNewTrack}!CEditorMediaTracker@{CEditorMediaTracker}}\index{CEditorMediaTracker@{CEditorMediaTracker}!BlockNewTrack@{BlockNewTrack}}}\mbox{\Hypertarget{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a36a922cb41a3e48e124b7e963348b18d}\label{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0a36a922cb41a3e48e124b7e963348b18d}} 
+Block\+New\+Track&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_editor_media_tracker_a38e5db0910f51d1e6bf40b8d0f5b5625}\label{class_c_editor_media_tracker_a38e5db0910f51d1e6bf40b8d0f5b5625}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CanCopy@{CanCopy}}
+\index{CanCopy@{CanCopy}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CanCopy()}{CanCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ff}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Copy\+Type}} C\+Editor\+Media\+Tracker\+::\+Can\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aa3d77e923f3c8b3910ad864be3327b0a}\label{class_c_editor_media_tracker_aa3d77e923f3c8b3910ad864be3327b0a}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CanCreateTrack@{CanCreateTrack}}
+\index{CanCreateTrack@{CanCreateTrack}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CanCreateTrack()}{CanCreateTrack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Can\+Create\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0c}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Block\+Type}}}]{Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a8e6aad357acf2cf3911e1c198507a61c}\label{class_c_editor_media_tracker_a8e6aad357acf2cf3911e1c198507a61c}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CanCut@{CanCut}}
+\index{CanCut@{CanCut}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CanCut()}{CanCut()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_editor_media_tracker_a7fae3b15c7a32de87fb79601214687ff}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Copy\+Type}} C\+Editor\+Media\+Tracker\+::\+Can\+Cut (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a224aa166b4b63b6cd399c17e81de22b4}\label{class_c_editor_media_tracker_a224aa166b4b63b6cd399c17e81de22b4}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CanPaste@{CanPaste}}
+\index{CanPaste@{CanPaste}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CanPaste()}{CanPaste()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_editor_media_tracker_acdcc3db20c8ba22789b8f5da12e78aa0}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Paste\+Type}} C\+Editor\+Media\+Tracker\+::\+Can\+Paste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a415b0438d4a97bb2344f75b0db45889d}\label{class_c_editor_media_tracker_a415b0438d4a97bb2344f75b0db45889d}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CanRemoveAllCameraTracks@{CanRemoveAllCameraTracks}}
+\index{CanRemoveAllCameraTracks@{CanRemoveAllCameraTracks}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CanRemoveAllCameraTracks()}{CanRemoveAllCameraTracks()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Can\+Remove\+All\+Camera\+Tracks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a0c3d89afc34070ae78bb60c9aa7b40fe}\label{class_c_editor_media_tracker_a0c3d89afc34070ae78bb60c9aa7b40fe}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CanRemoveAllGhostTracks@{CanRemoveAllGhostTracks}}
+\index{CanRemoveAllGhostTracks@{CanRemoveAllGhostTracks}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CanRemoveAllGhostTracks()}{CanRemoveAllGhostTracks()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Can\+Remove\+All\+Ghost\+Tracks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a6bf0aebf2ef961abc085f9f7a19d0276}\label{class_c_editor_media_tracker_a6bf0aebf2ef961abc085f9f7a19d0276}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CanRemoveAllKeys@{CanRemoveAllKeys}}
+\index{CanRemoveAllKeys@{CanRemoveAllKeys}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CanRemoveAllKeys()}{CanRemoveAllKeys()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Can\+Remove\+All\+Keys (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Track,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a204c6d2448a74d15c482dfd6e6f6c652}\label{class_c_editor_media_tracker_a204c6d2448a74d15c482dfd6e6f6c652}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ComputeShadows@{ComputeShadows}}
+\index{ComputeShadows@{ComputeShadows}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ComputeShadows()}{ComputeShadows()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Compute\+Shadows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aa01bdb7dc30e33bb12cc0fb2ce9f0e53}\label{class_c_editor_media_tracker_aa01bdb7dc30e33bb12cc0fb2ce9f0e53}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!Copy@{Copy}}
+\index{Copy@{Copy}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a0d9816ed051c424f19b9033f46753d0a}\label{class_c_editor_media_tracker_a0d9816ed051c424f19b9033f46753d0a}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CreateBlock@{CreateBlock}}
+\index{CreateBlock@{CreateBlock}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CreateBlock()}{CreateBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Create\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a3e53c0de8be45efc75be0e23adf6590d}\label{class_c_editor_media_tracker_a3e53c0de8be45efc75be0e23adf6590d}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CreateClip@{CreateClip}}
+\index{CreateClip@{CreateClip}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CreateClip()}{CreateClip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Create\+Clip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a0f4cff70021bb0cd8c50ad1d35dbfded}\label{class_c_editor_media_tracker_a0f4cff70021bb0cd8c50ad1d35dbfded}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CreateKey@{CreateKey}}
+\index{CreateKey@{CreateKey}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CreateKey()}{CreateKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Create\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a79c3644a6d07b87b04d8304b68a2b92e}\label{class_c_editor_media_tracker_a79c3644a6d07b87b04d8304b68a2b92e}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CreateTrack@{CreateTrack}}
+\index{CreateTrack@{CreateTrack}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CreateTrack()}{CreateTrack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Create\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0c}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Block\+Type}}}]{Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a01419e7928253444e99c752a2ebb1369}\label{class_c_editor_media_tracker_a01419e7928253444e99c752a2ebb1369}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!Cut@{Cut}}
+\index{Cut@{Cut}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{Cut()}{Cut()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Cut (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_afd72909485ddd2340dd8eb02a91aac69}\label{class_c_editor_media_tracker_afd72909485ddd2340dd8eb02a91aac69}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!DeleteGhostRef@{DeleteGhostRef}}
+\index{DeleteGhostRef@{DeleteGhostRef}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{DeleteGhostRef()}{DeleteGhostRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Delete\+Ghost\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}}}]{Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_adddd9942026d48268bbeb19c73603950}\label{class_c_editor_media_tracker_adddd9942026d48268bbeb19c73603950}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!DuplicateTrack@{DuplicateTrack}}
+\index{DuplicateTrack@{DuplicateTrack}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{DuplicateTrack()}{DuplicateTrack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Duplicate\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a3e76091f3d0a752523b9f9e1041d29f7}\label{class_c_editor_media_tracker_a3e76091f3d0a752523b9f9e1041d29f7}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ExportClip@{ExportClip}}
+\index{ExportClip@{ExportClip}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ExportClip()}{ExportClip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Export\+Clip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ae212f5c851a1ef4f16d74afd97d2911f}\label{class_c_editor_media_tracker_ae212f5c851a1ef4f16d74afd97d2911f}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetClipConditionName@{GetClipConditionName}}
+\index{GetClipConditionName@{GetClipConditionName}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetClipConditionName()}{GetClipConditionName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Editor\+Media\+Tracker\+::\+Get\+Clip\+Condition\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_afb386891557436046d0d7e6978b8564f}\label{class_c_editor_media_tracker_afb386891557436046d0d7e6978b8564f}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetGhostRefName@{GetGhostRefName}}
+\index{GetGhostRefName@{GetGhostRefName}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetGhostRefName()}{GetGhostRefName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Editor\+Media\+Tracker\+::\+Get\+Ghost\+Ref\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a363949947756757c16cd4400fb6a55bf}\label{class_c_editor_media_tracker_a363949947756757c16cd4400fb6a55bf}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetProfileTheme@{GetProfileTheme}}
+\index{GetProfileTheme@{GetProfileTheme}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetProfileTheme()}{GetProfileTheme()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Media\+Tracker\+::\+Get\+Profile\+Theme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a751e8ec89891f04df79db24d6b323678}\label{class_c_editor_media_tracker_a751e8ec89891f04df79db24d6b323678}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetSelectedBlock@{GetSelectedBlock}}
+\index{GetSelectedBlock@{GetSelectedBlock}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetSelectedBlock()}{GetSelectedBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Media\+Tracker\+::\+Get\+Selected\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a053ea06fca77bcaeb5127f1519b7574f}\label{class_c_editor_media_tracker_a053ea06fca77bcaeb5127f1519b7574f}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetSelectedClip@{GetSelectedClip}}
+\index{GetSelectedClip@{GetSelectedClip}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetSelectedClip()}{GetSelectedClip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Media\+Tracker\+::\+Get\+Selected\+Clip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a810b4f47f8f5b090120656f90ed3cc76}\label{class_c_editor_media_tracker_a810b4f47f8f5b090120656f90ed3cc76}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetSelectedGhostRef@{GetSelectedGhostRef}}
+\index{GetSelectedGhostRef@{GetSelectedGhostRef}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetSelectedGhostRef()}{GetSelectedGhostRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}} C\+Editor\+Media\+Tracker\+::\+Get\+Selected\+Ghost\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aed43e496920aabc1337711eb7b84c3fa}\label{class_c_editor_media_tracker_aed43e496920aabc1337711eb7b84c3fa}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetSelectedKey@{GetSelectedKey}}
+\index{GetSelectedKey@{GetSelectedKey}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetSelectedKey()}{GetSelectedKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Media\+Tracker\+::\+Get\+Selected\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a27035ff8d8562323d38c451d00151493}\label{class_c_editor_media_tracker_a27035ff8d8562323d38c451d00151493}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetSelectedTrack@{GetSelectedTrack}}
+\index{GetSelectedTrack@{GetSelectedTrack}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetSelectedTrack()}{GetSelectedTrack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Media\+Tracker\+::\+Get\+Selected\+Track (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_afaa26bfe251367ea023a6c2af2537ff2}\label{class_c_editor_media_tracker_afaa26bfe251367ea023a6c2af2537ff2}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetStartIsCycling@{GetStartIsCycling}}
+\index{GetStartIsCycling@{GetStartIsCycling}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetStartIsCycling()}{GetStartIsCycling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Editor\+Media\+Tracker\+::\+Get\+Start\+Is\+Cycling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}}}]{Track }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_acc9a10df146cbc4419acc4ce1b40b97f}\label{class_c_editor_media_tracker_acc9a10df146cbc4419acc4ce1b40b97f}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetStopIsCycling@{GetStopIsCycling}}
+\index{GetStopIsCycling@{GetStopIsCycling}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetStopIsCycling()}{GetStopIsCycling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Editor\+Media\+Tracker\+::\+Get\+Stop\+Is\+Cycling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}}}]{Track }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a086795a5729ad958cdd4ae3ccf2a4a6f}\label{class_c_editor_media_tracker_a086795a5729ad958cdd4ae3ccf2a4a6f}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetTimeLimit@{GetTimeLimit}}
+\index{GetTimeLimit@{GetTimeLimit}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetTimeLimit()}{GetTimeLimit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Editor\+Media\+Tracker\+::\+Get\+Time\+Limit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a6a1e870f3a9c8da5e45a36447ed88716}\label{class_c_editor_media_tracker_a6a1e870f3a9c8da5e45a36447ed88716}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetTrackIsCycling@{GetTrackIsCycling}}
+\index{GetTrackIsCycling@{GetTrackIsCycling}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetTrackIsCycling()}{GetTrackIsCycling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Get\+Track\+Is\+Cycling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}}}]{Track }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a0444f857135a20f22697be0894cdf1de}\label{class_c_editor_media_tracker_a0444f857135a20f22697be0894cdf1de}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GetTrackIsKeepPlaying@{GetTrackIsKeepPlaying}}
+\index{GetTrackIsKeepPlaying@{GetTrackIsKeepPlaying}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GetTrackIsKeepPlaying()}{GetTrackIsKeepPlaying()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Get\+Track\+Is\+Keep\+Playing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}}}]{Track }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ad76281834acf70654bcd513c847d4626}\label{class_c_editor_media_tracker_ad76281834acf70654bcd513c847d4626}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!GhostRefExists@{GhostRefExists}}
+\index{GhostRefExists@{GhostRefExists}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{GhostRefExists()}{GhostRefExists()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Ghost\+Ref\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}}}]{Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ab1a34d8527080de941e505f6c066e630}\label{class_c_editor_media_tracker_ab1a34d8527080de941e505f6c066e630}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!HasClipCondition@{HasClipCondition}}
+\index{HasClipCondition@{HasClipCondition}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{HasClipCondition()}{HasClipCondition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Has\+Clip\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a8f8c61ab311f0dea86d4d8a6039c0330}\label{class_c_editor_media_tracker_a8f8c61ab311f0dea86d4d8a6039c0330}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!HasCopiedItem@{HasCopiedItem}}
+\index{HasCopiedItem@{HasCopiedItem}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{HasCopiedItem()}{HasCopiedItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Has\+Copied\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a1ca38d3e28debab0c4f0af302747f5a1}\label{class_c_editor_media_tracker_a1ca38d3e28debab0c4f0af302747f5a1}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ImportClip@{ImportClip}}
+\index{ImportClip@{ImportClip}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ImportClip()}{ImportClip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Import\+Clip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a7f0dcbecf95036a5520e8bf018893d38}\label{class_c_editor_media_tracker_a7f0dcbecf95036a5520e8bf018893d38}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ImportGhosts@{ImportGhosts}}
+\index{ImportGhosts@{ImportGhosts}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ImportGhosts()}{ImportGhosts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Import\+Ghosts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a7d47b63056f9dc8a73fa865b0734ddbc}\label{class_c_editor_media_tracker_a7d47b63056f9dc8a73fa865b0734ddbc}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!InformInterfaceIsHidden@{InformInterfaceIsHidden}}
+\index{InformInterfaceIsHidden@{InformInterfaceIsHidden}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{InformInterfaceIsHidden()}{InformInterfaceIsHidden()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Inform\+Interface\+Is\+Hidden (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a2ad497fd454f7831f49aad58f401d799}\label{class_c_editor_media_tracker_a2ad497fd454f7831f49aad58f401d799}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!IsGhostRefPreview@{IsGhostRefPreview}}
+\index{IsGhostRefPreview@{IsGhostRefPreview}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{IsGhostRefPreview()}{IsGhostRefPreview()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Is\+Ghost\+Ref\+Preview (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a627a65637032f7c4ac84d7b45a1dabab}\label{class_c_editor_media_tracker_a627a65637032f7c4ac84d7b45a1dabab}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!IsKeyStartEnd@{IsKeyStartEnd}}
+\index{IsKeyStartEnd@{IsKeyStartEnd}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{IsKeyStartEnd()}{IsKeyStartEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Is\+Key\+Start\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Track,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Block,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a03f07ef4797f7ffaed708e3f55f6ca2d}\label{class_c_editor_media_tracker_a03f07ef4797f7ffaed708e3f55f6ca2d}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!IsPlaying@{IsPlaying}}
+\index{IsPlaying@{IsPlaying}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{IsPlaying()}{IsPlaying()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a63a5ccf3895ee70e48a0ae0255da4d84}\label{class_c_editor_media_tracker_a63a5ccf3895ee70e48a0ae0255da4d84}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!IsPropertyListReadOnlyAndVisible@{IsPropertyListReadOnlyAndVisible}}
+\index{IsPropertyListReadOnlyAndVisible@{IsPropertyListReadOnlyAndVisible}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{IsPropertyListReadOnlyAndVisible()}{IsPropertyListReadOnlyAndVisible()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Is\+Property\+List\+Read\+Only\+And\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aa2f830ff476283827447219e848a1548}\label{class_c_editor_media_tracker_aa2f830ff476283827447219e848a1548}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!IsRecordGhostModeOn@{IsRecordGhostModeOn}}
+\index{IsRecordGhostModeOn@{IsRecordGhostModeOn}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{IsRecordGhostModeOn()}{IsRecordGhostModeOn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Is\+Record\+Ghost\+Mode\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a12706c3ec5dad62b19d1c1038ba7080f}\label{class_c_editor_media_tracker_a12706c3ec5dad62b19d1c1038ba7080f}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!IsTriggersModeOn@{IsTriggersModeOn}}
+\index{IsTriggersModeOn@{IsTriggersModeOn}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{IsTriggersModeOn()}{IsTriggersModeOn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Is\+Triggers\+Mode\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a3d65f3df231806ed88aac450d7b70443}\label{class_c_editor_media_tracker_a3d65f3df231806ed88aac450d7b70443}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!Paste@{Paste}}
+\index{Paste@{Paste}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{Paste()}{Paste()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Paste (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a7e4aeacfc54b49b9497404a2927b849d}\label{class_c_editor_media_tracker_a7e4aeacfc54b49b9497404a2927b849d}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!Quit@{Quit}}
+\index{Quit@{Quit}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{Quit()}{Quit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ae9b9942cc926a3b5a41a1f6ac6fce09b}\label{class_c_editor_media_tracker_ae9b9942cc926a3b5a41a1f6ac6fce09b}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!RecordGhostRef@{RecordGhostRef}}
+\index{RecordGhostRef@{RecordGhostRef}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{RecordGhostRef()}{RecordGhostRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Record\+Ghost\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}}}]{Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ac13c38fb55d5d834b9403f3e7e48e6d7}\label{class_c_editor_media_tracker_ac13c38fb55d5d834b9403f3e7e48e6d7}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!Redo@{Redo}}
+\index{Redo@{Redo}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{Redo()}{Redo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Redo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a38aa2b2030c861c8e2361d0f7a745f6b}\label{class_c_editor_media_tracker_a38aa2b2030c861c8e2361d0f7a745f6b}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!RemoveAllCameraTracksExcept@{RemoveAllCameraTracksExcept}}
+\index{RemoveAllCameraTracksExcept@{RemoveAllCameraTracksExcept}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{RemoveAllCameraTracksExcept()}{RemoveAllCameraTracksExcept()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Remove\+All\+Camera\+Tracks\+Except (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Track }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a0fca65e345530b47966937c5af68d6af}\label{class_c_editor_media_tracker_a0fca65e345530b47966937c5af68d6af}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!RemoveAllGhostTracksExcept@{RemoveAllGhostTracksExcept}}
+\index{RemoveAllGhostTracksExcept@{RemoveAllGhostTracksExcept}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{RemoveAllGhostTracksExcept()}{RemoveAllGhostTracksExcept()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Remove\+All\+Ghost\+Tracks\+Except (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Track }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a93f724116328b3c2c718e6fedc974e18}\label{class_c_editor_media_tracker_a93f724116328b3c2c718e6fedc974e18}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!RemoveAllKeys@{RemoveAllKeys}}
+\index{RemoveAllKeys@{RemoveAllKeys}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{RemoveAllKeys()}{RemoveAllKeys()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Remove\+All\+Keys (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Track,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ac4b26c38621e4c454b45ef02a118f223}\label{class_c_editor_media_tracker_ac4b26c38621e4c454b45ef02a118f223}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!RemoveAllTracks@{RemoveAllTracks}}
+\index{RemoveAllTracks@{RemoveAllTracks}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{RemoveAllTracks()}{RemoveAllTracks()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Remove\+All\+Tracks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a2c57949ff8d4f293d132bf1c44b70024}\label{class_c_editor_media_tracker_a2c57949ff8d4f293d132bf1c44b70024}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!RemoveBlock@{RemoveBlock}}
+\index{RemoveBlock@{RemoveBlock}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{RemoveBlock()}{RemoveBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Remove\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Track,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Block }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ab3560f71d29ee4260c3d3294004b78e7}\label{class_c_editor_media_tracker_ab3560f71d29ee4260c3d3294004b78e7}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!RemoveClip@{RemoveClip}}
+\index{RemoveClip@{RemoveClip}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{RemoveClip()}{RemoveClip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Remove\+Clip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a4f026350de55bfc42e2e80525b27a258}\label{class_c_editor_media_tracker_a4f026350de55bfc42e2e80525b27a258}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!RemoveKey@{RemoveKey}}
+\index{RemoveKey@{RemoveKey}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{RemoveKey()}{RemoveKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Remove\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Track,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Block,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a21f6d790be3fffdcd035265e40db8c59}\label{class_c_editor_media_tracker_a21f6d790be3fffdcd035265e40db8c59}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!RemoveTrack@{RemoveTrack}}
+\index{RemoveTrack@{RemoveTrack}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{RemoveTrack()}{RemoveTrack()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Remove\+Track (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Track }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a5770ff2593f1af2bfdcbc8f19bee679b}\label{class_c_editor_media_tracker_a5770ff2593f1af2bfdcbc8f19bee679b}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ResetTriggerZone@{ResetTriggerZone}}
+\index{ResetTriggerZone@{ResetTriggerZone}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ResetTriggerZone()}{ResetTriggerZone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Reset\+Trigger\+Zone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a1db2826cbb4bdd98eb4d8c06be926fcb}\label{class_c_editor_media_tracker_a1db2826cbb4bdd98eb4d8c06be926fcb}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!Rewind@{Rewind}}
+\index{Rewind@{Rewind}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{Rewind()}{Rewind()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Rewind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a27db52e3406f7b0d8ad3b49f9bf83867}\label{class_c_editor_media_tracker_a27db52e3406f7b0d8ad3b49f9bf83867}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SelectGhostRef@{SelectGhostRef}}
+\index{SelectGhostRef@{SelectGhostRef}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SelectGhostRef()}{SelectGhostRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Select\+Ghost\+Ref (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}}}]{Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aad10f44b396ae42607d585a440d37f74}\label{class_c_editor_media_tracker_aad10f44b396ae42607d585a440d37f74}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SelectItem@{SelectItem}}
+\index{SelectItem@{SelectItem}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SelectItem()}{SelectItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Select\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Track,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Block,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Key }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aaaa0acfd28e43eaf67df501386eea28d}\label{class_c_editor_media_tracker_aaaa0acfd28e43eaf67df501386eea28d}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetCameraDrawRect@{SetCameraDrawRect}}
+\index{SetCameraDrawRect@{SetCameraDrawRect}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetCameraDrawRect()}{SetCameraDrawRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Camera\+Draw\+Rect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec2}{Vec2}}}]{Pos,  }\item[{\mbox{\hyperlink{struct_vec2}{Vec2}}}]{Size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a255a6387a6b89731d8cef3206420ede3}\label{class_c_editor_media_tracker_a255a6387a6b89731d8cef3206420ede3}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetClip@{SetClip}}
+\index{SetClip@{SetClip}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetClip()}{SetClip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Clip (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_media_tracker_clip}{C\+Media\+Tracker\+Clip}}}]{Clip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ac54836d6e406f156cb6149eaf3c360bc}\label{class_c_editor_media_tracker_ac54836d6e406f156cb6149eaf3c360bc}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetClipName@{SetClipName}}
+\index{SetClipName@{SetClipName}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetClipName()}{SetClipName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Clip\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a44983ac07f1e367b3f5537ab9bb8f569}\label{class_c_editor_media_tracker_a44983ac07f1e367b3f5537ab9bb8f569}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetCurrentBlockEnd@{SetCurrentBlockEnd}}
+\index{SetCurrentBlockEnd@{SetCurrentBlockEnd}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetCurrentBlockEnd()}{SetCurrentBlockEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Current\+Block\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{End }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aab02a89be3f0c9c7490497500c80d3c1}\label{class_c_editor_media_tracker_aab02a89be3f0c9c7490497500c80d3c1}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetCurrentBlockStart@{SetCurrentBlockStart}}
+\index{SetCurrentBlockStart@{SetCurrentBlockStart}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetCurrentBlockStart()}{SetCurrentBlockStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Current\+Block\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Start }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a47963c1556446fd566b792675e5fa987}\label{class_c_editor_media_tracker_a47963c1556446fd566b792675e5fa987}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetProcessCamInputs@{SetProcessCamInputs}}
+\index{SetProcessCamInputs@{SetProcessCamInputs}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetProcessCamInputs()}{SetProcessCamInputs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Process\+Cam\+Inputs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Process\+Cam\+Inputs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ad9366b04b7d6265b0fb205a226a2e891}\label{class_c_editor_media_tracker_ad9366b04b7d6265b0fb205a226a2e891}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetProfileTheme@{SetProfileTheme}}
+\index{SetProfileTheme@{SetProfileTheme}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetProfileTheme()}{SetProfileTheme()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Profile\+Theme (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Theme }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ac2ae3d74c4fc37e73b53fb26a409e4d9}\label{class_c_editor_media_tracker_ac2ae3d74c4fc37e73b53fb26a409e4d9}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetStartIsCycling@{SetStartIsCycling}}
+\index{SetStartIsCycling@{SetStartIsCycling}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetStartIsCycling()}{SetStartIsCycling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Start\+Is\+Cycling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}}}]{Track }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_afc17965aaeabf05889ba32dac5b568af}\label{class_c_editor_media_tracker_afc17965aaeabf05889ba32dac5b568af}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetStopIsCycling@{SetStopIsCycling}}
+\index{SetStopIsCycling@{SetStopIsCycling}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetStopIsCycling()}{SetStopIsCycling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Stop\+Is\+Cycling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}}}]{Track }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ac018b1e1b7b235c368ed1caf68b40aaf}\label{class_c_editor_media_tracker_ac018b1e1b7b235c368ed1caf68b40aaf}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetTempHidePropertyList@{SetTempHidePropertyList}}
+\index{SetTempHidePropertyList@{SetTempHidePropertyList}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetTempHidePropertyList()}{SetTempHidePropertyList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Temp\+Hide\+Property\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Temp\+Hide }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a084ecbeacb26b37569435ae5b516583d}\label{class_c_editor_media_tracker_a084ecbeacb26b37569435ae5b516583d}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetTimer@{SetTimer}}
+\index{SetTimer@{SetTimer}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetTimer()}{SetTimer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Timer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aa5c02d61bc44b91ee2cb14b5df812cb9}\label{class_c_editor_media_tracker_aa5c02d61bc44b91ee2cb14b5df812cb9}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetTrackIsCycling@{SetTrackIsCycling}}
+\index{SetTrackIsCycling@{SetTrackIsCycling}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetTrackIsCycling()}{SetTrackIsCycling()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Track\+Is\+Cycling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}}}]{Track,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Cycling }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a7429a48981517bf1fdba7ee407e7cab9}\label{class_c_editor_media_tracker_a7429a48981517bf1fdba7ee407e7cab9}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetTrackIsKeepPlaying@{SetTrackIsKeepPlaying}}
+\index{SetTrackIsKeepPlaying@{SetTrackIsKeepPlaying}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetTrackIsKeepPlaying()}{SetTrackIsKeepPlaying()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Track\+Is\+Keep\+Playing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_media_tracker_track}{C\+Media\+Tracker\+Track}}}]{Track,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Keep\+Playing }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a092ca4e1949fa9087dcab92245e4ba36}\label{class_c_editor_media_tracker_a092ca4e1949fa9087dcab92245e4ba36}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SetTrackName@{SetTrackName}}
+\index{SetTrackName@{SetTrackName}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SetTrackName()}{SetTrackName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Set\+Track\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a706ccae9e7404fbfdc455bb46443a65a}\label{class_c_editor_media_tracker_a706ccae9e7404fbfdc455bb46443a65a}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ShootScreen@{ShootScreen}}
+\index{ShootScreen@{ShootScreen}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ShootScreen()}{ShootScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Shoot\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a6f484178a2418581d01e9db2426c8b85}\label{class_c_editor_media_tracker_a6f484178a2418581d01e9db2426c8b85}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ShootVideo@{ShootVideo}}
+\index{ShootVideo@{ShootVideo}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ShootVideo()}{ShootVideo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Shoot\+Video (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a2d9e8f52c598189f226df6f670142659}\label{class_c_editor_media_tracker_a2d9e8f52c598189f226df6f670142659}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!SplitBlock@{SplitBlock}}
+\index{SplitBlock@{SplitBlock}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{SplitBlock()}{SplitBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Split\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a0010981cf45e954f8f3f88d844a5a303}\label{class_c_editor_media_tracker_a0010981cf45e954f8f3f88d844a5a303}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!StartGhostRefPreview@{StartGhostRefPreview}}
+\index{StartGhostRefPreview@{StartGhostRefPreview}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{StartGhostRefPreview()}{StartGhostRefPreview()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Start\+Ghost\+Ref\+Preview (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_editor_media_tracker_aa3abc1a433c425a183a4541a5af12554}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Ghost\+Ref}}}]{Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a107d98d7c4cdcbc23502577d1a0cdf4d}\label{class_c_editor_media_tracker_a107d98d7c4cdcbc23502577d1a0cdf4d}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!StopGhostRefPreview@{StopGhostRefPreview}}
+\index{StopGhostRefPreview@{StopGhostRefPreview}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{StopGhostRefPreview()}{StopGhostRefPreview()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Stop\+Ghost\+Ref\+Preview (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aacc90b7570c0342dc91e25840e3d95af}\label{class_c_editor_media_tracker_aacc90b7570c0342dc91e25840e3d95af}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!TimePlay@{TimePlay}}
+\index{TimePlay@{TimePlay}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{TimePlay()}{TimePlay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Time\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a760be8543d37ef7ba83154ac9b509110}\label{class_c_editor_media_tracker_a760be8543d37ef7ba83154ac9b509110}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!TimeStop@{TimeStop}}
+\index{TimeStop@{TimeStop}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{TimeStop()}{TimeStop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Time\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_af0a54841a62bfc9ffc35742a2b37f78b}\label{class_c_editor_media_tracker_af0a54841a62bfc9ffc35742a2b37f78b}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!TimeToggle@{TimeToggle}}
+\index{TimeToggle@{TimeToggle}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{TimeToggle()}{TimeToggle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Time\+Toggle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ae41122a97c686ed0adfbe655b596da04}\label{class_c_editor_media_tracker_ae41122a97c686ed0adfbe655b596da04}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ToggleAlwaysShowTriggerZone@{ToggleAlwaysShowTriggerZone}}
+\index{ToggleAlwaysShowTriggerZone@{ToggleAlwaysShowTriggerZone}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ToggleAlwaysShowTriggerZone()}{ToggleAlwaysShowTriggerZone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Toggle\+Always\+Show\+Trigger\+Zone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a4311f5075eb4b6f544bfc8b5b7db832a}\label{class_c_editor_media_tracker_a4311f5075eb4b6f544bfc8b5b7db832a}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ToggleClipCondition@{ToggleClipCondition}}
+\index{ToggleClipCondition@{ToggleClipCondition}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ToggleClipCondition()}{ToggleClipCondition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Toggle\+Clip\+Condition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ae83a913f99d7477368676aedc32593e0}\label{class_c_editor_media_tracker_ae83a913f99d7477368676aedc32593e0}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ToggleDisplayPlayerNames@{ToggleDisplayPlayerNames}}
+\index{ToggleDisplayPlayerNames@{ToggleDisplayPlayerNames}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ToggleDisplayPlayerNames()}{ToggleDisplayPlayerNames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Toggle\+Display\+Player\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a89529593f4d7ea0e1e9347f4415f8ebc}\label{class_c_editor_media_tracker_a89529593f4d7ea0e1e9347f4415f8ebc}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ToggleGhostRef@{ToggleGhostRef}}
+\index{ToggleGhostRef@{ToggleGhostRef}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ToggleGhostRef()}{ToggleGhostRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Toggle\+Ghost\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ab7aa197bd9daeed305aa2b862bf21e42}\label{class_c_editor_media_tracker_ab7aa197bd9daeed305aa2b862bf21e42}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ToggleRecordGhostMode@{ToggleRecordGhostMode}}
+\index{ToggleRecordGhostMode@{ToggleRecordGhostMode}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ToggleRecordGhostMode()}{ToggleRecordGhostMode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Toggle\+Record\+Ghost\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a399ab858108beab3a3c51aa51576bd7e}\label{class_c_editor_media_tracker_a399ab858108beab3a3c51aa51576bd7e}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ToggleTriggersMode@{ToggleTriggersMode}}
+\index{ToggleTriggersMode@{ToggleTriggersMode}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ToggleTriggersMode()}{ToggleTriggersMode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Toggle\+Triggers\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a436b442db1cedc56a9dc7d3fedc39c91}\label{class_c_editor_media_tracker_a436b442db1cedc56a9dc7d3fedc39c91}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ToolBarSetVisible@{ToolBarSetVisible}}
+\index{ToolBarSetVisible@{ToolBarSetVisible}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ToolBarSetVisible()}{ToolBarSetVisible()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Tool\+Bar\+Set\+Visible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Visible }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a0fc64d3db34f9d4c3fca62289c77d4cd}\label{class_c_editor_media_tracker_a0fc64d3db34f9d4c3fca62289c77d4cd}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!Undo@{Undo}}
+\index{Undo@{Undo}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{Undo()}{Undo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ab545e668ddaca0f3cd9c2759bf51409f}\label{class_c_editor_media_tracker_ab545e668ddaca0f3cd9c2759bf51409f}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!UpdatePropertyListReadOnly@{UpdatePropertyListReadOnly}}
+\index{UpdatePropertyListReadOnly@{UpdatePropertyListReadOnly}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{UpdatePropertyListReadOnly()}{UpdatePropertyListReadOnly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Media\+Tracker\+::\+Update\+Property\+List\+Read\+Only (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_editor_media_tracker_abf75747474e170fbdde88bd4b3047036}\label{class_c_editor_media_tracker_abf75747474e170fbdde88bd4b3047036}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CameraSpeed@{CameraSpeed}}
+\index{CameraSpeed@{CameraSpeed}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CameraSpeed}{CameraSpeed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Editor\+Media\+Tracker\+::\+Camera\+Speed}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aeeac2fe76cbc4091edf308924dbab43c}\label{class_c_editor_media_tracker_aeeac2fe76cbc4091edf308924dbab43c}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CanUseClipCam@{CanUseClipCam}}
+\index{CanUseClipCam@{CanUseClipCam}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CanUseClipCam}{CanUseClipCam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Can\+Use\+Clip\+Cam}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_af0beaf3ccbec0594e21973daf920014c}\label{class_c_editor_media_tracker_af0beaf3ccbec0594e21973daf920014c}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!Clip@{Clip}}
+\index{Clip@{Clip}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{Clip}{Clip}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_media_tracker_clip}{C\+Media\+Tracker\+Clip}} C\+Editor\+Media\+Tracker\+::\+Clip}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a5332dc5efd22daf7bd3c3df704d6f001}\label{class_c_editor_media_tracker_a5332dc5efd22daf7bd3c3df704d6f001}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ClipConditionValue@{ClipConditionValue}}
+\index{ClipConditionValue@{ClipConditionValue}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ClipConditionValue}{ClipConditionValue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Editor\+Media\+Tracker\+::\+Clip\+Condition\+Value}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a96ba44f51d6fdfb4794b098d35731553}\label{class_c_editor_media_tracker_a96ba44f51d6fdfb4794b098d35731553}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!ClipGroup@{ClipGroup}}
+\index{ClipGroup@{ClipGroup}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{ClipGroup}{ClipGroup}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_media_tracker_clip_group}{C\+Media\+Tracker\+Clip\+Group}} C\+Editor\+Media\+Tracker\+::\+Clip\+Group}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a90f329349cd11fdff1871405c90ed6d2}\label{class_c_editor_media_tracker_a90f329349cd11fdff1871405c90ed6d2}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!CurrentTimer@{CurrentTimer}}
+\index{CurrentTimer@{CurrentTimer}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{CurrentTimer}{CurrentTimer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Editor\+Media\+Tracker\+::\+Current\+Timer}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a2fed707c3b077e2d9676188da26a6935}\label{class_c_editor_media_tracker_a2fed707c3b077e2d9676188da26a6935}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!EditMode@{EditMode}}
+\index{EditMode@{EditMode}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{EditMode}{EditMode}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_editor_media_tracker_a45faebaf291a4017a99d24e504823c0c}{C\+Editor\+Media\+Tracker\+::\+E\+Media\+Tracker\+Block\+Type}} C\+Editor\+Media\+Tracker\+::\+Edit\+Mode}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a7ee94c9a92bb650e87374f9e8a17c1b1}\label{class_c_editor_media_tracker_a7ee94c9a92bb650e87374f9e8a17c1b1}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!PendingEvents@{PendingEvents}}
+\index{PendingEvents@{PendingEvents}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{PendingEvents}{PendingEvents}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_editor_event}{C\+Editor\+Event}}$>$ C\+Editor\+Media\+Tracker\+::\+Pending\+Events}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aa22b4f91645f175a1bdaf57756c1f248}\label{class_c_editor_media_tracker_aa22b4f91645f175a1bdaf57756c1f248}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!PlaySpeed@{PlaySpeed}}
+\index{PlaySpeed@{PlaySpeed}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{PlaySpeed}{PlaySpeed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Editor\+Media\+Tracker\+::\+Play\+Speed}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_aa3a54e1808ec1554709a00fe8b84b5d4}\label{class_c_editor_media_tracker_aa3a54e1808ec1554709a00fe8b84b5d4}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!PopUpMessage@{PopUpMessage}}
+\index{PopUpMessage@{PopUpMessage}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{PopUpMessage}{PopUpMessage}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Editor\+Media\+Tracker\+::\+Pop\+Up\+Message}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_ab6df8fe4abd30439bf5aba4a21f4c5fa}\label{class_c_editor_media_tracker_ab6df8fe4abd30439bf5aba4a21f4c5fa}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!UseClipCamWhenAvailable@{UseClipCamWhenAvailable}}
+\index{UseClipCamWhenAvailable@{UseClipCamWhenAvailable}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{UseClipCamWhenAvailable}{UseClipCamWhenAvailable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Use\+Clip\+Cam\+When\+Available}
+
+\mbox{\Hypertarget{class_c_editor_media_tracker_a514c0d097b5308dd7ee5507ac55a0de3}\label{class_c_editor_media_tracker_a514c0d097b5308dd7ee5507ac55a0de3}} 
+\index{CEditorMediaTracker@{CEditorMediaTracker}!UseOrbitalInsteadOfFreeCam@{UseOrbitalInsteadOfFreeCam}}
+\index{UseOrbitalInsteadOfFreeCam@{UseOrbitalInsteadOfFreeCam}!CEditorMediaTracker@{CEditorMediaTracker}}
+\doxysubsubsection{\texorpdfstring{UseOrbitalInsteadOfFreeCam}{UseOrbitalInsteadOfFreeCam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Media\+Tracker\+::\+Use\+Orbital\+Instead\+Of\+Free\+Cam}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

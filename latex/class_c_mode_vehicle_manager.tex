@@ -1,0 +1,188 @@
+\hypertarget{class_c_mode_vehicle_manager}{}\doxysection{C\+Mode\+Vehicle\+Manager Class Reference}
+\label{class_c_mode_vehicle_manager}\index{CModeVehicleManager@{CModeVehicleManager}}
+
+
+Documentation for class \mbox{\hyperlink{class_c_mode_vehicle_manager}{C\+Mode\+Vehicle\+Manager}}.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Mode\+Vehicle\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_mode_vehicle_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4d}{E\+Armor\+Use}} \{ \newline
+\mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da4a0560b91085ecdb9eafb9c8a336cac2}{Self}}, 
+\mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da4a790d4de4d09955db41f2478e1dd7fa}{Group}}, 
+\mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da045c9c517cb561e5a4eddc3240b64f95}{Owner}}, 
+\mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da4cf68cf0d19e8c857cb43202c225bc45}{Children}}, 
+\newline
+\mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da5c13cb8723572047c0694cf6bced294a}{Mine}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19c}{E\+Slot\+Type}} \{ \mbox{\hyperlink{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19ca6e544a0486eeccd228e5de156a7543c9}{Driver}}, 
+\mbox{\hyperlink{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19ca2ce4be7144aa7d2362e146b6c400af31}{Passenger}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_vehicle_manager_a5d75d2ef7300ae06ba3adbbf2fd4f47b}{Map\+Vehicles\+\_\+\+Reset}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_vehicle_manager_a54d8de2699eb59512dd30c7f4500ac3a}{Destroy\+All\+Vehicles}} ()
+\item 
+\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} \mbox{\hyperlink{class_c_mode_vehicle_manager_abad922bb18f7958a7e99edee7235058b}{Vehicle\+\_\+\+Create}} (\mbox{\hyperlink{struct_ident}{Ident}} Model\+Id, \mbox{\hyperlink{struct_integer}{Integer}} Clan, \mbox{\hyperlink{struct_integer}{Integer}} Armor, \mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4d}{C\+Mode\+Vehicle\+Manager\+::\+E\+Armor\+Use}} Armor\+Use, \mbox{\hyperlink{class_c_map_spawn}{C\+Map\+Spawn}} Spawn)
+\item 
+\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} \mbox{\hyperlink{class_c_mode_vehicle_manager_a4ce26e9cbde777503c3ddae217d383ee}{Vehicle\+\_\+\+Create}} (\mbox{\hyperlink{struct_ident}{Ident}} Model\+Id, \mbox{\hyperlink{struct_vec3}{Vec3}} Offset, \mbox{\hyperlink{struct_integer}{Integer}} Armor, \mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4d}{C\+Mode\+Vehicle\+Manager\+::\+E\+Armor\+Use}} Armor\+Use, \mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} \mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da045c9c517cb561e5a4eddc3240b64f95}{Owner}})
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_vehicle_manager_a62ee9db52750f0e4fa04ff2239d128de}{Vehicle\+\_\+\+Destroy}} (\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} Vehicle)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_vehicle_manager_abe2cc7120d840545f8445391990b9b38}{Vehicle\+\_\+\+Assign\+\_\+\+Auto\+Pilot}} (\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} Vehicle, \mbox{\hyperlink{struct_text}{Text}} Model\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_vehicle_manager_a20298a66159814ac90f341259f950a5a}{Vehicle\+\_\+\+Assign\+\_\+\+Auto\+Pilot}} (\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} Vehicle, \mbox{\hyperlink{struct_text}{Text}} Model\+Name, \mbox{\hyperlink{struct_boolean}{Boolean}} Loop\+Path)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_vehicle_manager_ab866b12cb52160fcea2f23891d37a710}{Vehicle\+\_\+\+Set\+Trail\+Visible}} (\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} Vehicle, \mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Visible)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_vehicle_manager_ab31ad6c18300d0c1c963c15ed72b3881}{Vehicle\+\_\+\+Set\+Shield\+Visible}} (\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} Vehicle, \mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Visible)
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mode_vehicle_manager_ac07bc7b04f2cfdca6f962631929ac52b}{Vehicle\+Model\+\_\+\+Get\+Slots\+Count}} (\mbox{\hyperlink{struct_ident}{Ident}} Model\+Id, \mbox{\hyperlink{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19c}{C\+Mode\+Vehicle\+Manager\+::\+E\+Slot\+Type}} Slot\+Type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} $>$ \mbox{\hyperlink{class_c_mode_vehicle_manager_a7952fed6d59c6746cabdfd36bce6b717}{Vehicles}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Documentation for class \mbox{\hyperlink{class_c_mode_vehicle_manager}{C\+Mode\+Vehicle\+Manager}}. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4d}\label{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4d}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!EArmorUse@{EArmorUse}}
+\index{EArmorUse@{EArmorUse}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{EArmorUse}{EArmorUse}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4d}{C\+Mode\+Vehicle\+Manager\+::\+E\+Armor\+Use}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Self@{Self}!CModeVehicleManager@{CModeVehicleManager}}\index{CModeVehicleManager@{CModeVehicleManager}!Self@{Self}}}\mbox{\Hypertarget{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da4a0560b91085ecdb9eafb9c8a336cac2}\label{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da4a0560b91085ecdb9eafb9c8a336cac2}} 
+Self&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Group@{Group}!CModeVehicleManager@{CModeVehicleManager}}\index{CModeVehicleManager@{CModeVehicleManager}!Group@{Group}}}\mbox{\Hypertarget{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da4a790d4de4d09955db41f2478e1dd7fa}\label{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da4a790d4de4d09955db41f2478e1dd7fa}} 
+Group&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Owner@{Owner}!CModeVehicleManager@{CModeVehicleManager}}\index{CModeVehicleManager@{CModeVehicleManager}!Owner@{Owner}}}\mbox{\Hypertarget{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da045c9c517cb561e5a4eddc3240b64f95}\label{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da045c9c517cb561e5a4eddc3240b64f95}} 
+Owner&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Children@{Children}!CModeVehicleManager@{CModeVehicleManager}}\index{CModeVehicleManager@{CModeVehicleManager}!Children@{Children}}}\mbox{\Hypertarget{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da4cf68cf0d19e8c857cb43202c225bc45}\label{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da4cf68cf0d19e8c857cb43202c225bc45}} 
+Children&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Mine@{Mine}!CModeVehicleManager@{CModeVehicleManager}}\index{CModeVehicleManager@{CModeVehicleManager}!Mine@{Mine}}}\mbox{\Hypertarget{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da5c13cb8723572047c0694cf6bced294a}\label{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4da5c13cb8723572047c0694cf6bced294a}} 
+Mine&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19c}\label{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19c}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!ESlotType@{ESlotType}}
+\index{ESlotType@{ESlotType}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{ESlotType}{ESlotType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19c}{C\+Mode\+Vehicle\+Manager\+::\+E\+Slot\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Driver@{Driver}!CModeVehicleManager@{CModeVehicleManager}}\index{CModeVehicleManager@{CModeVehicleManager}!Driver@{Driver}}}\mbox{\Hypertarget{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19ca6e544a0486eeccd228e5de156a7543c9}\label{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19ca6e544a0486eeccd228e5de156a7543c9}} 
+Driver&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Passenger@{Passenger}!CModeVehicleManager@{CModeVehicleManager}}\index{CModeVehicleManager@{CModeVehicleManager}!Passenger@{Passenger}}}\mbox{\Hypertarget{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19ca2ce4be7144aa7d2362e146b6c400af31}\label{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19ca2ce4be7144aa7d2362e146b6c400af31}} 
+Passenger&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_a54d8de2699eb59512dd30c7f4500ac3a}\label{class_c_mode_vehicle_manager_a54d8de2699eb59512dd30c7f4500ac3a}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!DestroyAllVehicles@{DestroyAllVehicles}}
+\index{DestroyAllVehicles@{DestroyAllVehicles}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{DestroyAllVehicles()}{DestroyAllVehicles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Vehicle\+Manager\+::\+Destroy\+All\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_a5d75d2ef7300ae06ba3adbbf2fd4f47b}\label{class_c_mode_vehicle_manager_a5d75d2ef7300ae06ba3adbbf2fd4f47b}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!MapVehicles\_Reset@{MapVehicles\_Reset}}
+\index{MapVehicles\_Reset@{MapVehicles\_Reset}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{MapVehicles\_Reset()}{MapVehicles\_Reset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Vehicle\+Manager\+::\+Map\+Vehicles\+\_\+\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_abe2cc7120d840545f8445391990b9b38}\label{class_c_mode_vehicle_manager_abe2cc7120d840545f8445391990b9b38}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!Vehicle\_Assign\_AutoPilot@{Vehicle\_Assign\_AutoPilot}}
+\index{Vehicle\_Assign\_AutoPilot@{Vehicle\_Assign\_AutoPilot}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{Vehicle\_Assign\_AutoPilot()}{Vehicle\_Assign\_AutoPilot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Vehicle\+Manager\+::\+Vehicle\+\_\+\+Assign\+\_\+\+Auto\+Pilot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}}}]{Vehicle,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Model\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_a20298a66159814ac90f341259f950a5a}\label{class_c_mode_vehicle_manager_a20298a66159814ac90f341259f950a5a}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!Vehicle\_Assign\_AutoPilot@{Vehicle\_Assign\_AutoPilot}}
+\index{Vehicle\_Assign\_AutoPilot@{Vehicle\_Assign\_AutoPilot}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{Vehicle\_Assign\_AutoPilot()}{Vehicle\_Assign\_AutoPilot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Vehicle\+Manager\+::\+Vehicle\+\_\+\+Assign\+\_\+\+Auto\+Pilot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}}}]{Vehicle,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Model\+Name,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Loop\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_abad922bb18f7958a7e99edee7235058b}\label{class_c_mode_vehicle_manager_abad922bb18f7958a7e99edee7235058b}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!Vehicle\_Create@{Vehicle\_Create}}
+\index{Vehicle\_Create@{Vehicle\_Create}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{Vehicle\_Create()}{Vehicle\_Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} C\+Mode\+Vehicle\+Manager\+::\+Vehicle\+\_\+\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Model\+Id,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Clan,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Armor,  }\item[{\mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4d}{C\+Mode\+Vehicle\+Manager\+::\+E\+Armor\+Use}}}]{Armor\+Use,  }\item[{\mbox{\hyperlink{class_c_map_spawn}{C\+Map\+Spawn}}}]{Spawn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_a4ce26e9cbde777503c3ddae217d383ee}\label{class_c_mode_vehicle_manager_a4ce26e9cbde777503c3ddae217d383ee}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!Vehicle\_Create@{Vehicle\_Create}}
+\index{Vehicle\_Create@{Vehicle\_Create}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{Vehicle\_Create()}{Vehicle\_Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} C\+Mode\+Vehicle\+Manager\+::\+Vehicle\+\_\+\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Model\+Id,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Offset,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Armor,  }\item[{\mbox{\hyperlink{class_c_mode_vehicle_manager_ac0a7d6209b172e2d2c91d2c68b32be4d}{C\+Mode\+Vehicle\+Manager\+::\+E\+Armor\+Use}}}]{Armor\+Use,  }\item[{\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}}}]{Owner }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_a62ee9db52750f0e4fa04ff2239d128de}\label{class_c_mode_vehicle_manager_a62ee9db52750f0e4fa04ff2239d128de}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!Vehicle\_Destroy@{Vehicle\_Destroy}}
+\index{Vehicle\_Destroy@{Vehicle\_Destroy}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{Vehicle\_Destroy()}{Vehicle\_Destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Vehicle\+Manager\+::\+Vehicle\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}}}]{Vehicle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_ab31ad6c18300d0c1c963c15ed72b3881}\label{class_c_mode_vehicle_manager_ab31ad6c18300d0c1c963c15ed72b3881}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!Vehicle\_SetShieldVisible@{Vehicle\_SetShieldVisible}}
+\index{Vehicle\_SetShieldVisible@{Vehicle\_SetShieldVisible}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{Vehicle\_SetShieldVisible()}{Vehicle\_SetShieldVisible()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Vehicle\+Manager\+::\+Vehicle\+\_\+\+Set\+Shield\+Visible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}}}]{Vehicle,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Visible }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_ab866b12cb52160fcea2f23891d37a710}\label{class_c_mode_vehicle_manager_ab866b12cb52160fcea2f23891d37a710}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!Vehicle\_SetTrailVisible@{Vehicle\_SetTrailVisible}}
+\index{Vehicle\_SetTrailVisible@{Vehicle\_SetTrailVisible}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{Vehicle\_SetTrailVisible()}{Vehicle\_SetTrailVisible()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Vehicle\+Manager\+::\+Vehicle\+\_\+\+Set\+Trail\+Visible (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}}}]{Vehicle,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Visible }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_ac07bc7b04f2cfdca6f962631929ac52b}\label{class_c_mode_vehicle_manager_ac07bc7b04f2cfdca6f962631929ac52b}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!VehicleModel\_GetSlotsCount@{VehicleModel\_GetSlotsCount}}
+\index{VehicleModel\_GetSlotsCount@{VehicleModel\_GetSlotsCount}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{VehicleModel\_GetSlotsCount()}{VehicleModel\_GetSlotsCount()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Mode\+Vehicle\+Manager\+::\+Vehicle\+Model\+\_\+\+Get\+Slots\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Model\+Id,  }\item[{\mbox{\hyperlink{class_c_mode_vehicle_manager_a18b48dfe3149c6814930acab0c90d19c}{C\+Mode\+Vehicle\+Manager\+::\+E\+Slot\+Type}}}]{Slot\+Type }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_mode_vehicle_manager_a7952fed6d59c6746cabdfd36bce6b717}\label{class_c_mode_vehicle_manager_a7952fed6d59c6746cabdfd36bce6b717}} 
+\index{CModeVehicleManager@{CModeVehicleManager}!Vehicles@{Vehicles}}
+\index{Vehicles@{Vehicles}!CModeVehicleManager@{CModeVehicleManager}}
+\doxysubsubsection{\texorpdfstring{Vehicles}{Vehicles}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}}$>$ C\+Mode\+Vehicle\+Manager\+::\+Vehicles}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

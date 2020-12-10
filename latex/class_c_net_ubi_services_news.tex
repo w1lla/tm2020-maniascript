@@ -1,0 +1,149 @@
+\hypertarget{class_c_net_ubi_services_news}{}\doxysection{C\+Net\+Ubi\+Services\+News Class Reference}
+\label{class_c_net_ubi_services_news}\index{CNetUbiServicesNews@{CNetUbiServicesNews}}
+
+
+Ubi\+Services news.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Net\+Ubi\+Services\+News\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_net_ubi_services_news}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_net_ubi_services_news_a0979aa7549a5e4ab7e6b8de59fbf03b6}{Get\+Publication\+Date}} (\mbox{\hyperlink{struct_integer}{Integer}} Month, \mbox{\hyperlink{struct_integer}{Integer}} Day, \mbox{\hyperlink{struct_integer}{Integer}} Hour, \mbox{\hyperlink{struct_integer}{Integer}} Minute, \mbox{\hyperlink{struct_integer}{Integer}} Second)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_net_ubi_services_news_aeee76bb1c43659d7cd036fb42369666f}{Get\+Link\+Info}} (\mbox{\hyperlink{struct_integer}{Integer}} Link\+Index, \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_net_ubi_services_news_a38ef4a219ce33d5bfca3b4851490f801}{Type}}, \mbox{\hyperlink{struct_text}{Text}} Param, \mbox{\hyperlink{struct_text}{Text}} Action\+Name, \mbox{\hyperlink{struct_text}{Text}} Action\+Description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_net_ubi_services_news_a4254ef20314bd7abfb1d82ff49fe2ced}{Id}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_net_ubi_services_news_a553e9694e4f56cad9254dfd0138de9fe}{News\+Id}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_net_ubi_services_news_a38ef4a219ce33d5bfca3b4851490f801}{Type}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_net_ubi_services_news_a40e6f815bb8132cef8d7f130b5cd17f4}{Placement}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_net_ubi_services_news_a602b963eb662ff80d1337334ccaa55b0}{Locale}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_net_ubi_services_news_a137a485c39c1c1a2ccc690da89bf6ddd}{Title}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_net_ubi_services_news_a680832f15675fd0aecbf0fe70f65fb58}{Body}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_net_ubi_services_news_a3d1c4be411b0d41f530063d77ceb5178}{Media\+Url}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_net_ubi_services_news_ac53e224e15a79f2c0ff90eb2b45cf031}{Media\+Type}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_net_ubi_services_news_ac1e5ee0b647e6086fde9d4182767da2a}{Priority}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_net_ubi_services_news_aa3d7dcec07e84daa7150e19946b1297b}{Display\+Time}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_net_ubi_services_news_a3123a170b4b47702ace34fd1bc920b37}{Links\+Count}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ubi\+Services news. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_net_ubi_services_news_aeee76bb1c43659d7cd036fb42369666f}\label{class_c_net_ubi_services_news_aeee76bb1c43659d7cd036fb42369666f}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!GetLinkInfo@{GetLinkInfo}}
+\index{GetLinkInfo@{GetLinkInfo}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{GetLinkInfo()}{GetLinkInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Net\+Ubi\+Services\+News\+::\+Get\+Link\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Link\+Index,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Type,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Param,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Action\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Action\+Description }\end{DoxyParamCaption})}
+
+Returns Type, Param, Action\+Name and Action\+Description of the link. Type allows the game to correctly interpret param. The value may be game-\/specific but there are the following predefined types\+: \char`\"{}pstore\char`\"{} means that the param field contains the D\+LC ID related to the news content, \char`\"{}sstore\char`\"{} means that the param field contains an Offer ID related to an offer being available on the secondary store. \char`\"{}weblink\char`\"{} means that the param field should be an U\+RL to a web page. Param defines the parameter value of the action. For a \char`\"{}pstore\char`\"{} type, value must be the D\+LC ID of the 1st party store (platform specific). For example, P\+S3 would look like \char`\"{}\+U\+P0001-\/\+N\+P\+U\+B90687\+\_\+00-\/\+A\+C\+E\+M\+B\+E\+R\+S\+V\+I\+D\+E\+O001\char`\"{}, while on Xbox, it would look like\+: \char`\"{}0x555308796ea1e800\char`\"{}. For a \char`\"{}sstore\char`\"{} type, value must be an Offer ID of the secondary store. This depends on the Secondary Store implementation of the game. For a \char`\"{}weblink\char`\"{} type, value must be a valid H\+T\+TP address. Action\+Name is The name of the action for tracking purposes. Action\+Description is the description of the action the game should display. The game must support default descriptions such as \char`\"{}\+Buy\char`\"{} for a store link. \mbox{\Hypertarget{class_c_net_ubi_services_news_a0979aa7549a5e4ab7e6b8de59fbf03b6}\label{class_c_net_ubi_services_news_a0979aa7549a5e4ab7e6b8de59fbf03b6}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!GetPublicationDate@{GetPublicationDate}}
+\index{GetPublicationDate@{GetPublicationDate}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{GetPublicationDate()}{GetPublicationDate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Net\+Ubi\+Services\+News\+::\+Get\+Publication\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Month,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Day,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Hour,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Minute,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Second }\end{DoxyParamCaption})}
+
+Returns the date and (U\+TC) time at which the news was published. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_net_ubi_services_news_a680832f15675fd0aecbf0fe70f65fb58}\label{class_c_net_ubi_services_news_a680832f15675fd0aecbf0fe70f65fb58}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!Body@{Body}}
+\index{Body@{Body}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{Body}{Body}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Net\+Ubi\+Services\+News\+::\+Body}
+
+Localized body of the news \mbox{\Hypertarget{class_c_net_ubi_services_news_aa3d7dcec07e84daa7150e19946b1297b}\label{class_c_net_ubi_services_news_aa3d7dcec07e84daa7150e19946b1297b}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!DisplayTime@{DisplayTime}}
+\index{DisplayTime@{DisplayTime}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{DisplayTime}{DisplayTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Net\+Ubi\+Services\+News\+::\+Display\+Time}
+
+The minimum time in seconds at which this news item should be displayed. \mbox{\Hypertarget{class_c_net_ubi_services_news_a4254ef20314bd7abfb1d82ff49fe2ced}\label{class_c_net_ubi_services_news_a4254ef20314bd7abfb1d82ff49fe2ced}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!Id@{Id}}
+\index{Id@{Id}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_ident}{Ident}} C\+Net\+Ubi\+Services\+News\+::\+Id}
+
+\mbox{\Hypertarget{class_c_net_ubi_services_news_a3123a170b4b47702ace34fd1bc920b37}\label{class_c_net_ubi_services_news_a3123a170b4b47702ace34fd1bc920b37}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!LinksCount@{LinksCount}}
+\index{LinksCount@{LinksCount}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{LinksCount}{LinksCount}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Net\+Ubi\+Services\+News\+::\+Links\+Count}
+
+The number of links attached to this news. Links are mandatory for given types. For example, D\+L\+C\+Offer should have a mandatory storelink type link. \mbox{\Hypertarget{class_c_net_ubi_services_news_a602b963eb662ff80d1337334ccaa55b0}\label{class_c_net_ubi_services_news_a602b963eb662ff80d1337334ccaa55b0}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!Locale@{Locale}}
+\index{Locale@{Locale}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{Locale}{Locale}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Net\+Ubi\+Services\+News\+::\+Locale}
+
+Localization string of the news, e.\+g. \char`\"{}en-\/\+U\+S\char`\"{} \mbox{\Hypertarget{class_c_net_ubi_services_news_ac53e224e15a79f2c0ff90eb2b45cf031}\label{class_c_net_ubi_services_news_ac53e224e15a79f2c0ff90eb2b45cf031}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!MediaType@{MediaType}}
+\index{MediaType@{MediaType}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{MediaType}{MediaType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Net\+Ubi\+Services\+News\+::\+Media\+Type}
+
+M\+I\+ME type of the media object to display. e.\+g. \char`\"{}image/png\char`\"{} or \char`\"{}video/mp4\char`\"{} \mbox{\Hypertarget{class_c_net_ubi_services_news_a3d1c4be411b0d41f530063d77ceb5178}\label{class_c_net_ubi_services_news_a3d1c4be411b0d41f530063d77ceb5178}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!MediaUrl@{MediaUrl}}
+\index{MediaUrl@{MediaUrl}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{MediaUrl}{MediaUrl}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Net\+Ubi\+Services\+News\+::\+Media\+Url}
+
+Link to an image or video to be displayed with the news. Format of the media is placement specific. \mbox{\Hypertarget{class_c_net_ubi_services_news_a553e9694e4f56cad9254dfd0138de9fe}\label{class_c_net_ubi_services_news_a553e9694e4f56cad9254dfd0138de9fe}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!NewsId@{NewsId}}
+\index{NewsId@{NewsId}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{NewsId}{NewsId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Net\+Ubi\+Services\+News\+::\+News\+Id}
+
+A globally unique ID for the news item. \mbox{\Hypertarget{class_c_net_ubi_services_news_a40e6f815bb8132cef8d7f130b5cd17f4}\label{class_c_net_ubi_services_news_a40e6f815bb8132cef8d7f130b5cd17f4}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!Placement@{Placement}}
+\index{Placement@{Placement}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{Placement}{Placement}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Net\+Ubi\+Services\+News\+::\+Placement}
+
+Specifies where the news should be placed in-\/game. \mbox{\Hypertarget{class_c_net_ubi_services_news_ac1e5ee0b647e6086fde9d4182767da2a}\label{class_c_net_ubi_services_news_ac1e5ee0b647e6086fde9d4182767da2a}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!Priority@{Priority}}
+\index{Priority@{Priority}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{Priority}{Priority}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Net\+Ubi\+Services\+News\+::\+Priority}
+
+The priority that should be given to that news. \mbox{\Hypertarget{class_c_net_ubi_services_news_a137a485c39c1c1a2ccc690da89bf6ddd}\label{class_c_net_ubi_services_news_a137a485c39c1c1a2ccc690da89bf6ddd}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!Title@{Title}}
+\index{Title@{Title}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{Title}{Title}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Net\+Ubi\+Services\+News\+::\+Title}
+
+Localized title of the news \mbox{\Hypertarget{class_c_net_ubi_services_news_a38ef4a219ce33d5bfca3b4851490f801}\label{class_c_net_ubi_services_news_a38ef4a219ce33d5bfca3b4851490f801}} 
+\index{CNetUbiServicesNews@{CNetUbiServicesNews}!Type@{Type}}
+\index{Type@{Type}!CNetUbiServicesNews@{CNetUbiServicesNews}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Net\+Ubi\+Services\+News\+::\+Type}
+
+There is no predefined value, it is a contract between the producer and the consumer to define game specific. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

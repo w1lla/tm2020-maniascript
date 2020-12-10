@@ -1,49 +1,113 @@
 \hypertarget{namespace_color_lib}{}\doxysection{Color\+Lib Namespace Reference}
 \label{namespace_color_lib}\index{ColorLib@{ColorLib}}
+
+
+Standard color manipulation functions.  
+
+
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{namespace_color_lib_ace566f437e3688e3a495fae0f9969c9a}{Hsv\+To\+Rgb}} (\mbox{\hyperlink{class_vec3}{Vec3}} \+\_\+\+\_\+\+Hsv)
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{namespace_color_lib_acfdfe1f61963bbac20e64665e23f2c14}{Hsv\+To\+Rgb}} (\mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Hsv)
 \item 
-\mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{namespace_color_lib_a4e9865adab51a6a470f126b0e2928152}{Rgb\+To\+Hsv}} (\mbox{\hyperlink{class_vec3}{Vec3}} \+\_\+\+\_\+\+Rgb)
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{namespace_color_lib_aea229e433793beb712648d5800aad245}{Rgb\+To\+Hsv}} (\mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Rgb)
 \item 
-\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_color_lib_a357ae4f8286e09df4a4c84b7640338ec}{Rgb\+To\+Hex}} (\mbox{\hyperlink{class_vec3}{Vec3}} \+\_\+\+\_\+\+Rgb)
-\item 
-\mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{namespace_color_lib_a718b5c29a8a60431d2d88c107a6c86ff}{Hex\+To\+Rgb}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Text)
-\begin{DoxyCompactList}\small\item\em Returns the R\+GB color corresponding to \+\_\+\+Text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{namespace_color_lib_a49cd2c71e9e0670ece21d6cfc23951fd}{Rgb\+To\+Hex3}} (\mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Rgb)
+\begin{DoxyCompactList}\small\item\em Returns the Hexa3 corresponding to the R\+GB given. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{namespace_color_lib_ad32ca7c73c58e9531af252d571b8c541}{Rgb\+To\+Hex6}} (\mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Rrggbb)
+\begin{DoxyCompactList}\small\item\em Returns the Hexa6 corresponding to the R\+GB given. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{namespace_color_lib_ad70b8a514507f3cc060c75d46e4dc708}{Hex3\+To\+Rgb}} (\mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Text)
+\begin{DoxyCompactList}\small\item\em Returns the R\+GB color corresponding to Hex3. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{namespace_color_lib_aa99ac4c2c60bdf680ac14c3e98102d88}{Hex6\+To\+Rgb}} (\mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Text)
+\begin{DoxyCompactList}\small\item\em Returns the R\+GB color corresponding to Hex6. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{namespace_color_lib_a718b5c29a8a60431d2d88c107a6c86ff}{Hex\+To\+Rgb}} (\mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Text)
+\begin{DoxyCompactList}\small\item\em Returns the R\+GB color corresponding to Hex. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Standard color manipulation functions. 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespace_color_lib_ad70b8a514507f3cc060c75d46e4dc708}\label{namespace_color_lib_ad70b8a514507f3cc060c75d46e4dc708}} 
+\index{ColorLib@{ColorLib}!Hex3ToRgb@{Hex3ToRgb}}
+\index{Hex3ToRgb@{Hex3ToRgb}!ColorLib@{ColorLib}}
+\doxysubsubsection{\texorpdfstring{Hex3ToRgb()}{Hex3ToRgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} Color\+Lib\+::\+Hex3\+To\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Text }\end{DoxyParamCaption})}
+
+
+
+Returns the R\+GB color corresponding to Hex3. 
+
+Returns an empty \mbox{\hyperlink{struct_vec3}{Vec3}} if an invalid \mbox{\hyperlink{struct_text}{Text}} is given.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Text} & \+: The text you want to convert into a R\+GB color. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_color_lib_aa99ac4c2c60bdf680ac14c3e98102d88}\label{namespace_color_lib_aa99ac4c2c60bdf680ac14c3e98102d88}} 
+\index{ColorLib@{ColorLib}!Hex6ToRgb@{Hex6ToRgb}}
+\index{Hex6ToRgb@{Hex6ToRgb}!ColorLib@{ColorLib}}
+\doxysubsubsection{\texorpdfstring{Hex6ToRgb()}{Hex6ToRgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} Color\+Lib\+::\+Hex6\+To\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Text }\end{DoxyParamCaption})}
+
+
+
+Returns the R\+GB color corresponding to Hex6. 
+
+Returns an empty \mbox{\hyperlink{struct_vec3}{Vec3}} if an invalid \mbox{\hyperlink{struct_text}{Text}} is given.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Text} & \+: The text you want to convert into a R\+GB color. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{namespace_color_lib_a718b5c29a8a60431d2d88c107a6c86ff}\label{namespace_color_lib_a718b5c29a8a60431d2d88c107a6c86ff}} 
 \index{ColorLib@{ColorLib}!HexToRgb@{HexToRgb}}
 \index{HexToRgb@{HexToRgb}!ColorLib@{ColorLib}}
 \doxysubsubsection{\texorpdfstring{HexToRgb()}{HexToRgb()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vec3}{Vec3}} Color\+Lib\+::\+Hex\+To\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Text }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} Color\+Lib\+::\+Hex\+To\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Text }\end{DoxyParamCaption})}
 
 
 
-Returns the R\+GB color corresponding to \+\_\+\+Text. 
+Returns the R\+GB color corresponding to Hex. 
 
-Returns an empty \mbox{\hyperlink{class_vec3}{Vec3}} if an invalid \mbox{\hyperlink{class_text}{Text}} is given 
+Returns an empty \mbox{\hyperlink{struct_vec3}{Vec3}} if an invalid \mbox{\hyperlink{struct_text}{Text}} is given.
+
+
 \begin{DoxyParams}{Parameters}
-{\em \+\_\+\+Text} & \+: The text you want to convert into a R\+GB color \\
+{\em \+\_\+\+Text} & \+: The text you want to convert into a R\+GB color. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{namespace_color_lib_ace566f437e3688e3a495fae0f9969c9a}\label{namespace_color_lib_ace566f437e3688e3a495fae0f9969c9a}} 
+\mbox{\Hypertarget{namespace_color_lib_acfdfe1f61963bbac20e64665e23f2c14}\label{namespace_color_lib_acfdfe1f61963bbac20e64665e23f2c14}} 
 \index{ColorLib@{ColorLib}!HsvToRgb@{HsvToRgb}}
 \index{HsvToRgb@{HsvToRgb}!ColorLib@{ColorLib}}
 \doxysubsubsection{\texorpdfstring{HsvToRgb()}{HsvToRgb()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vec3}{Vec3}} Color\+Lib\+::\+Hsv\+To\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{\+\_\+\+\_\+\+Hsv }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} Color\+Lib\+::\+Hsv\+To\+Rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Hsv }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_color_lib_a357ae4f8286e09df4a4c84b7640338ec}\label{namespace_color_lib_a357ae4f8286e09df4a4c84b7640338ec}} 
-\index{ColorLib@{ColorLib}!RgbToHex@{RgbToHex}}
-\index{RgbToHex@{RgbToHex}!ColorLib@{ColorLib}}
-\doxysubsubsection{\texorpdfstring{RgbToHex()}{RgbToHex()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} Color\+Lib\+::\+Rgb\+To\+Hex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{\+\_\+\+\_\+\+Rgb }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{namespace_color_lib_a49cd2c71e9e0670ece21d6cfc23951fd}\label{namespace_color_lib_a49cd2c71e9e0670ece21d6cfc23951fd}} 
+\index{ColorLib@{ColorLib}!RgbToHex3@{RgbToHex3}}
+\index{RgbToHex3@{RgbToHex3}!ColorLib@{ColorLib}}
+\doxysubsubsection{\texorpdfstring{RgbToHex3()}{RgbToHex3()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} Color\+Lib\+::\+Rgb\+To\+Hex3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Rgb }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_color_lib_a4e9865adab51a6a470f126b0e2928152}\label{namespace_color_lib_a4e9865adab51a6a470f126b0e2928152}} 
+
+
+Returns the Hexa3 corresponding to the R\+GB given. 
+
+\mbox{\Hypertarget{namespace_color_lib_ad32ca7c73c58e9531af252d571b8c541}\label{namespace_color_lib_ad32ca7c73c58e9531af252d571b8c541}} 
+\index{ColorLib@{ColorLib}!RgbToHex6@{RgbToHex6}}
+\index{RgbToHex6@{RgbToHex6}!ColorLib@{ColorLib}}
+\doxysubsubsection{\texorpdfstring{RgbToHex6()}{RgbToHex6()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} Color\+Lib\+::\+Rgb\+To\+Hex6 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Rrggbb }\end{DoxyParamCaption})}
+
+
+
+Returns the Hexa6 corresponding to the R\+GB given. 
+
+\mbox{\Hypertarget{namespace_color_lib_aea229e433793beb712648d5800aad245}\label{namespace_color_lib_aea229e433793beb712648d5800aad245}} 
 \index{ColorLib@{ColorLib}!RgbToHsv@{RgbToHsv}}
 \index{RgbToHsv@{RgbToHsv}!ColorLib@{ColorLib}}
 \doxysubsubsection{\texorpdfstring{RgbToHsv()}{RgbToHsv()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vec3}{Vec3}} Color\+Lib\+::\+Rgb\+To\+Hsv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{\+\_\+\+\_\+\+Rgb }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} Color\+Lib\+::\+Rgb\+To\+Hsv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Rgb }\end{DoxyParamCaption})}
 

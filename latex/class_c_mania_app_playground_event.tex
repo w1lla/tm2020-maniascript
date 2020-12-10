@@ -1,0 +1,368 @@
+\hypertarget{class_c_mania_app_playground_event}{}\doxysection{C\+Mania\+App\+Playground\+Event Class Reference}
+\label{class_c_mania_app_playground_event}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+
+
+An event.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Mania\+App\+Playground\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_mania_app_playground_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1be}{Type}} \{ \newline
+\mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beaf90be53668649a82a7c2897fb87243bf}{Layer\+Custom\+Event}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea1bc06f6191501acac08ad715ea6abde1}{Key\+Press}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea70a2499e16c12063efcbc48c6a2cd9aa}{Menu\+Navigation}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea64be289df3691ad62f000571c8b62311}{Playground\+Script\+Event}}, 
+\newline
+\mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beafc477f7e9332ff8ac6ab8109ece20255}{Ghost\+Added}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea563f028517ff6814aaf6244bf8b8a238}{Record\+Updated}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beaf92021bc9d61753bd7dca2fa4b226caf}{Records\+Updated}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beab8dcde778473959e836fce63912b09f6}{On\+Player\+Trigger\+Special}}, 
+\newline
+\mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beaea2e85d2d18f235c3460ee054532532a}{On\+Player\+Trigger\+Waypoint}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dc}{Gameplay\+Special\+Type}} \{ \newline
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaac5402fbff056e53ac05b54921ad491b}{None}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcad3a6efd6c1187e69db1f10068b4bc973}{Turbo}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcabbaf6726d0c46d1d13c3a704cc5c3271}{Turbo2}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaf71db01a5a9a5cecbeecf6bcc9777e38}{Turbo\+Roulette}}, 
+\newline
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca5beaea29450a471df39a661102220739}{Free\+Wheeling}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaf546ad02f3c16862bab4cca2b51c2f52}{No\+Grip}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca80061705ed8cfa9cea8c8e05dbe8867b}{No\+Steering}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaa2c5c5bb981cfed4ffc8833c87dfa93d}{Force\+Acceleration}}, 
+\newline
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca723c371448f1cd242ed863af314a416e}{Reset}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca5f423e4435890e97bab409ec19b9cc1d}{Slow\+Motion}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcab752c4a24a0672ac23d118326d52535e}{Bumper}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca0c7af7cea1c84366c89ebf34209ce7af}{Bumper2}}, 
+\newline
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca5875432ecf7d9ae7fee3e360c3bb4ac2}{Reactor\+Boost}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca2c4dceb111a7da0695a4b483b31ef803}{Fragile}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca0db2f7e733ea93271d988d9304ed3948}{Reactor\+Boost2}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca10076a65c234d112f8f48327674bc606}{Null}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99}{Gameplay\+Turbo\+Roulette}} \{ \mbox{\hyperlink{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99aec851ae99d8ba43924f7ed3d68d478a7}{Turbo\+Roulette\+\_\+\+None}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99ac9c1185f55ec3a341a38d85eabeda23c}{Turbo\+Roulette\+\_\+1}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99a3cdbcc1f860908d4e777b4177c6c91f4}{Turbo\+Roulette\+\_\+2}}, 
+\mbox{\hyperlink{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99ad232e7d4ae6b68d9b5cb84e9df0291a0}{Turbo\+Roulette\+\_\+3}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1be}{C\+Mania\+App\+Playground\+Event\+::\+Type}} \mbox{\hyperlink{class_c_mania_app_playground_event_a1495c2e927240109f02593e89691b250}{Playground\+Type}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mania_app_playground_event_adcde962cbde3150deb271fa880995a34}{Playground\+Script\+Event\+Type}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ \mbox{\hyperlink{class_c_mania_app_playground_event_a7189f2b7e948aec91c89838b74cef857}{Playground\+Script\+Event\+Data}}
+\item 
+const \mbox{\hyperlink{class_c_ghost}{C\+Ghost}} \mbox{\hyperlink{class_c_mania_app_playground_event_a87a26dfc125df06d8de78c65f2928553}{Ghost}}
+\item 
+const \mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dc}{C\+Mania\+App\+Playground\+Event\+::\+Gameplay\+Special\+Type}} \mbox{\hyperlink{class_c_mania_app_playground_event_a52d8eb67f99151ff77f8971e1a5650a1}{Gameplay\+Special\+Type}}
+\item 
+const \mbox{\hyperlink{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99}{C\+Mania\+App\+Playground\+Event\+::\+Gameplay\+Turbo\+Roulette}} \mbox{\hyperlink{class_c_mania_app_playground_event_a2426f7436ef95a8827e66f2171c351c7}{Gameplay\+Turbo\+Roulette}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mania_app_playground_event_a4ec3d491f563019fe1a95075df188208}{Is\+Boost\+Up\+Else\+Down}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mania_app_playground_event_a6d8d9fdfca16873ec01d782f4b264cfe}{Waypoint\+Landmark\+Index}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mania_app_playground_event_ab8c1c7e78996d9786ee1236b1cede22d}{Race\+Waypoint\+Time}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mania_app_playground_event_a0eaf97dbdd272141b607747ab0ffdd71}{Race\+Waypoint\+Index}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mania_app_playground_event_af4349bbe38d85a50ee4fc8e71a841131}{Diff\+With\+Best\+Race}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mania_app_playground_event_ad3b9a1114bd47ea301623ed0aae650ee}{Diff\+With\+Best\+Race\+\_\+\+Is\+Valid}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mania_app_playground_event_a5cf40183cc55e5eff76575a53cc246c7}{Lap\+Waypoint\+Time}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mania_app_playground_event_a50b7aa2e26de55ff6461a724ea879921}{Lap\+Waypoint\+Index}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mania_app_playground_event_a80bf98b95f82f3e5e69eadd41b3a406b}{Diff\+With\+Best\+Lap}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mania_app_playground_event_a839ece35c495ff6b6a7ac9a87d2a6403}{Diff\+With\+Best\+Lap\+\_\+\+Is\+Valid}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mania_app_playground_event_a57772ee3a13731322edd49c4587d5ef0}{Is\+Finish}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mania_app_playground_event_ad9925f210a461e8721d4c0a6fdd8c3d6}{Is\+New\+Lap}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An event. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Local 
+\end{DoxyItemize}
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dc}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dc}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!GameplaySpecialType@{GameplaySpecialType}}
+\index{GameplaySpecialType@{GameplaySpecialType}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{GameplaySpecialType}{GameplaySpecialType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dc}{C\+Mania\+App\+Playground\+Event\+::\+Gameplay\+Special\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!None@{None}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaac5402fbff056e53ac05b54921ad491b}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaac5402fbff056e53ac05b54921ad491b}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Turbo@{Turbo}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!Turbo@{Turbo}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcad3a6efd6c1187e69db1f10068b4bc973}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcad3a6efd6c1187e69db1f10068b4bc973}} 
+Turbo&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Turbo2@{Turbo2}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!Turbo2@{Turbo2}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcabbaf6726d0c46d1d13c3a704cc5c3271}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcabbaf6726d0c46d1d13c3a704cc5c3271}} 
+Turbo2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TurboRoulette@{TurboRoulette}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!TurboRoulette@{TurboRoulette}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaf71db01a5a9a5cecbeecf6bcc9777e38}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaf71db01a5a9a5cecbeecf6bcc9777e38}} 
+Turbo\+Roulette&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FreeWheeling@{FreeWheeling}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!FreeWheeling@{FreeWheeling}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca5beaea29450a471df39a661102220739}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca5beaea29450a471df39a661102220739}} 
+Free\+Wheeling&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NoGrip@{NoGrip}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!NoGrip@{NoGrip}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaf546ad02f3c16862bab4cca2b51c2f52}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaf546ad02f3c16862bab4cca2b51c2f52}} 
+No\+Grip&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NoSteering@{NoSteering}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!NoSteering@{NoSteering}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca80061705ed8cfa9cea8c8e05dbe8867b}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca80061705ed8cfa9cea8c8e05dbe8867b}} 
+No\+Steering&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ForceAcceleration@{ForceAcceleration}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!ForceAcceleration@{ForceAcceleration}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaa2c5c5bb981cfed4ffc8833c87dfa93d}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcaa2c5c5bb981cfed4ffc8833c87dfa93d}} 
+Force\+Acceleration&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Reset@{Reset}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!Reset@{Reset}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca723c371448f1cd242ed863af314a416e}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca723c371448f1cd242ed863af314a416e}} 
+Reset&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SlowMotion@{SlowMotion}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!SlowMotion@{SlowMotion}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca5f423e4435890e97bab409ec19b9cc1d}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca5f423e4435890e97bab409ec19b9cc1d}} 
+Slow\+Motion&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bumper@{Bumper}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!Bumper@{Bumper}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcab752c4a24a0672ac23d118326d52535e}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dcab752c4a24a0672ac23d118326d52535e}} 
+Bumper&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bumper2@{Bumper2}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!Bumper2@{Bumper2}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca0c7af7cea1c84366c89ebf34209ce7af}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca0c7af7cea1c84366c89ebf34209ce7af}} 
+Bumper2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ReactorBoost@{ReactorBoost}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!ReactorBoost@{ReactorBoost}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca5875432ecf7d9ae7fee3e360c3bb4ac2}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca5875432ecf7d9ae7fee3e360c3bb4ac2}} 
+Reactor\+Boost&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fragile@{Fragile}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!Fragile@{Fragile}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca2c4dceb111a7da0695a4b483b31ef803}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca2c4dceb111a7da0695a4b483b31ef803}} 
+Fragile&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ReactorBoost2@{ReactorBoost2}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!ReactorBoost2@{ReactorBoost2}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca0db2f7e733ea93271d988d9304ed3948}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca0db2f7e733ea93271d988d9304ed3948}} 
+Reactor\+Boost2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Null@{Null}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!Null@{Null}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca10076a65c234d112f8f48327674bc606}\label{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dca10076a65c234d112f8f48327674bc606}} 
+Null&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99}\label{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!GameplayTurboRoulette@{GameplayTurboRoulette}}
+\index{GameplayTurboRoulette@{GameplayTurboRoulette}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{GameplayTurboRoulette}{GameplayTurboRoulette}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99}{C\+Mania\+App\+Playground\+Event\+::\+Gameplay\+Turbo\+Roulette}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TurboRoulette\_None@{TurboRoulette\_None}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!TurboRoulette\_None@{TurboRoulette\_None}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99aec851ae99d8ba43924f7ed3d68d478a7}\label{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99aec851ae99d8ba43924f7ed3d68d478a7}} 
+Turbo\+Roulette\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TurboRoulette\_1@{TurboRoulette\_1}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!TurboRoulette\_1@{TurboRoulette\_1}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99ac9c1185f55ec3a341a38d85eabeda23c}\label{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99ac9c1185f55ec3a341a38d85eabeda23c}} 
+Turbo\+Roulette\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TurboRoulette\_2@{TurboRoulette\_2}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!TurboRoulette\_2@{TurboRoulette\_2}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99a3cdbcc1f860908d4e777b4177c6c91f4}\label{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99a3cdbcc1f860908d4e777b4177c6c91f4}} 
+Turbo\+Roulette\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TurboRoulette\_3@{TurboRoulette\_3}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!TurboRoulette\_3@{TurboRoulette\_3}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99ad232e7d4ae6b68d9b5cb84e9df0291a0}\label{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99ad232e7d4ae6b68d9b5cb84e9df0291a0}} 
+Turbo\+Roulette\+\_\+3&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1be}\label{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1be}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!Type@{Type}}
+\index{Type@{Type}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1be}{C\+Mania\+App\+Playground\+Event\+::\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LayerCustomEvent@{LayerCustomEvent}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!LayerCustomEvent@{LayerCustomEvent}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beaf90be53668649a82a7c2897fb87243bf}\label{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beaf90be53668649a82a7c2897fb87243bf}} 
+Layer\+Custom\+Event&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KeyPress@{KeyPress}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!KeyPress@{KeyPress}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea1bc06f6191501acac08ad715ea6abde1}\label{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea1bc06f6191501acac08ad715ea6abde1}} 
+Key\+Press&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MenuNavigation@{MenuNavigation}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!MenuNavigation@{MenuNavigation}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea70a2499e16c12063efcbc48c6a2cd9aa}\label{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea70a2499e16c12063efcbc48c6a2cd9aa}} 
+Menu\+Navigation&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlaygroundScriptEvent@{PlaygroundScriptEvent}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!PlaygroundScriptEvent@{PlaygroundScriptEvent}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea64be289df3691ad62f000571c8b62311}\label{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea64be289df3691ad62f000571c8b62311}} 
+Playground\+Script\+Event&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GhostAdded@{GhostAdded}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!GhostAdded@{GhostAdded}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beafc477f7e9332ff8ac6ab8109ece20255}\label{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beafc477f7e9332ff8ac6ab8109ece20255}} 
+Ghost\+Added&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RecordUpdated@{RecordUpdated}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!RecordUpdated@{RecordUpdated}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea563f028517ff6814aaf6244bf8b8a238}\label{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1bea563f028517ff6814aaf6244bf8b8a238}} 
+Record\+Updated&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RecordsUpdated@{RecordsUpdated}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!RecordsUpdated@{RecordsUpdated}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beaf92021bc9d61753bd7dca2fa4b226caf}\label{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beaf92021bc9d61753bd7dca2fa4b226caf}} 
+Records\+Updated&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnPlayerTriggerSpecial@{OnPlayerTriggerSpecial}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!OnPlayerTriggerSpecial@{OnPlayerTriggerSpecial}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beab8dcde778473959e836fce63912b09f6}\label{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beab8dcde778473959e836fce63912b09f6}} 
+On\+Player\+Trigger\+Special&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnPlayerTriggerWaypoint@{OnPlayerTriggerWaypoint}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!OnPlayerTriggerWaypoint@{OnPlayerTriggerWaypoint}}}\mbox{\Hypertarget{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beaea2e85d2d18f235c3460ee054532532a}\label{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1beaea2e85d2d18f235c3460ee054532532a}} 
+On\+Player\+Trigger\+Waypoint&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a80bf98b95f82f3e5e69eadd41b3a406b}\label{class_c_mania_app_playground_event_a80bf98b95f82f3e5e69eadd41b3a406b}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!DiffWithBestLap@{DiffWithBestLap}}
+\index{DiffWithBestLap@{DiffWithBestLap}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{DiffWithBestLap}{DiffWithBestLap}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Mania\+App\+Playground\+Event\+::\+Diff\+With\+Best\+Lap}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a839ece35c495ff6b6a7ac9a87d2a6403}\label{class_c_mania_app_playground_event_a839ece35c495ff6b6a7ac9a87d2a6403}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!DiffWithBestLap\_IsValid@{DiffWithBestLap\_IsValid}}
+\index{DiffWithBestLap\_IsValid@{DiffWithBestLap\_IsValid}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{DiffWithBestLap\_IsValid}{DiffWithBestLap\_IsValid}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mania\+App\+Playground\+Event\+::\+Diff\+With\+Best\+Lap\+\_\+\+Is\+Valid}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_af4349bbe38d85a50ee4fc8e71a841131}\label{class_c_mania_app_playground_event_af4349bbe38d85a50ee4fc8e71a841131}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!DiffWithBestRace@{DiffWithBestRace}}
+\index{DiffWithBestRace@{DiffWithBestRace}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{DiffWithBestRace}{DiffWithBestRace}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Mania\+App\+Playground\+Event\+::\+Diff\+With\+Best\+Race}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_ad3b9a1114bd47ea301623ed0aae650ee}\label{class_c_mania_app_playground_event_ad3b9a1114bd47ea301623ed0aae650ee}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!DiffWithBestRace\_IsValid@{DiffWithBestRace\_IsValid}}
+\index{DiffWithBestRace\_IsValid@{DiffWithBestRace\_IsValid}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{DiffWithBestRace\_IsValid}{DiffWithBestRace\_IsValid}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mania\+App\+Playground\+Event\+::\+Diff\+With\+Best\+Race\+\_\+\+Is\+Valid}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a52d8eb67f99151ff77f8971e1a5650a1}\label{class_c_mania_app_playground_event_a52d8eb67f99151ff77f8971e1a5650a1}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!GameplaySpecialType@{GameplaySpecialType}}
+\index{GameplaySpecialType@{GameplaySpecialType}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{GameplaySpecialType}{GameplaySpecialType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dc}{C\+Mania\+App\+Playground\+Event\+::\+Gameplay\+Special\+Type}} \mbox{\hyperlink{class_c_mania_app_playground_event_a941213ba9000c1df6b94cb2e330e41dc}{C\+Mania\+App\+Playground\+Event\+::\+Gameplay\+Special\+Type}}}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a2426f7436ef95a8827e66f2171c351c7}\label{class_c_mania_app_playground_event_a2426f7436ef95a8827e66f2171c351c7}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!GameplayTurboRoulette@{GameplayTurboRoulette}}
+\index{GameplayTurboRoulette@{GameplayTurboRoulette}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{GameplayTurboRoulette}{GameplayTurboRoulette}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99}{C\+Mania\+App\+Playground\+Event\+::\+Gameplay\+Turbo\+Roulette}} \mbox{\hyperlink{class_c_mania_app_playground_event_a78763fe677b74def3701478feb2d0e99}{C\+Mania\+App\+Playground\+Event\+::\+Gameplay\+Turbo\+Roulette}}}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a87a26dfc125df06d8de78c65f2928553}\label{class_c_mania_app_playground_event_a87a26dfc125df06d8de78c65f2928553}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!Ghost@{Ghost}}
+\index{Ghost@{Ghost}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{Ghost}{Ghost}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_ghost}{C\+Ghost}} C\+Mania\+App\+Playground\+Event\+::\+Ghost}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a4ec3d491f563019fe1a95075df188208}\label{class_c_mania_app_playground_event_a4ec3d491f563019fe1a95075df188208}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!IsBoostUpElseDown@{IsBoostUpElseDown}}
+\index{IsBoostUpElseDown@{IsBoostUpElseDown}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{IsBoostUpElseDown}{IsBoostUpElseDown}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mania\+App\+Playground\+Event\+::\+Is\+Boost\+Up\+Else\+Down}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a57772ee3a13731322edd49c4587d5ef0}\label{class_c_mania_app_playground_event_a57772ee3a13731322edd49c4587d5ef0}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!IsFinish@{IsFinish}}
+\index{IsFinish@{IsFinish}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{IsFinish}{IsFinish}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mania\+App\+Playground\+Event\+::\+Is\+Finish}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_ad9925f210a461e8721d4c0a6fdd8c3d6}\label{class_c_mania_app_playground_event_ad9925f210a461e8721d4c0a6fdd8c3d6}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!IsNewLap@{IsNewLap}}
+\index{IsNewLap@{IsNewLap}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{IsNewLap}{IsNewLap}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mania\+App\+Playground\+Event\+::\+Is\+New\+Lap}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a50b7aa2e26de55ff6461a724ea879921}\label{class_c_mania_app_playground_event_a50b7aa2e26de55ff6461a724ea879921}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!LapWaypointIndex@{LapWaypointIndex}}
+\index{LapWaypointIndex@{LapWaypointIndex}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{LapWaypointIndex}{LapWaypointIndex}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Mania\+App\+Playground\+Event\+::\+Lap\+Waypoint\+Index}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a5cf40183cc55e5eff76575a53cc246c7}\label{class_c_mania_app_playground_event_a5cf40183cc55e5eff76575a53cc246c7}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!LapWaypointTime@{LapWaypointTime}}
+\index{LapWaypointTime@{LapWaypointTime}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{LapWaypointTime}{LapWaypointTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Mania\+App\+Playground\+Event\+::\+Lap\+Waypoint\+Time}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a7189f2b7e948aec91c89838b74cef857}\label{class_c_mania_app_playground_event_a7189f2b7e948aec91c89838b74cef857}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!PlaygroundScriptEventData@{PlaygroundScriptEventData}}
+\index{PlaygroundScriptEventData@{PlaygroundScriptEventData}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{PlaygroundScriptEventData}{PlaygroundScriptEventData}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_text}{Text}}$>$ C\+Mania\+App\+Playground\+Event\+::\+Playground\+Script\+Event\+Data}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_adcde962cbde3150deb271fa880995a34}\label{class_c_mania_app_playground_event_adcde962cbde3150deb271fa880995a34}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!PlaygroundScriptEventType@{PlaygroundScriptEventType}}
+\index{PlaygroundScriptEventType@{PlaygroundScriptEventType}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{PlaygroundScriptEventType}{PlaygroundScriptEventType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Mania\+App\+Playground\+Event\+::\+Playground\+Script\+Event\+Type}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a1495c2e927240109f02593e89691b250}\label{class_c_mania_app_playground_event_a1495c2e927240109f02593e89691b250}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!PlaygroundType@{PlaygroundType}}
+\index{PlaygroundType@{PlaygroundType}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{PlaygroundType}{PlaygroundType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_mania_app_playground_event_ab6defe6d426fff0afd803102fe63b1be}{C\+Mania\+App\+Playground\+Event\+::\+Type}} C\+Mania\+App\+Playground\+Event\+::\+Playground\+Type}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a0eaf97dbdd272141b607747ab0ffdd71}\label{class_c_mania_app_playground_event_a0eaf97dbdd272141b607747ab0ffdd71}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!RaceWaypointIndex@{RaceWaypointIndex}}
+\index{RaceWaypointIndex@{RaceWaypointIndex}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{RaceWaypointIndex}{RaceWaypointIndex}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Mania\+App\+Playground\+Event\+::\+Race\+Waypoint\+Index}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_ab8c1c7e78996d9786ee1236b1cede22d}\label{class_c_mania_app_playground_event_ab8c1c7e78996d9786ee1236b1cede22d}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!RaceWaypointTime@{RaceWaypointTime}}
+\index{RaceWaypointTime@{RaceWaypointTime}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{RaceWaypointTime}{RaceWaypointTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Mania\+App\+Playground\+Event\+::\+Race\+Waypoint\+Time}
+
+\mbox{\Hypertarget{class_c_mania_app_playground_event_a6d8d9fdfca16873ec01d782f4b264cfe}\label{class_c_mania_app_playground_event_a6d8d9fdfca16873ec01d782f4b264cfe}} 
+\index{CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}!WaypointLandmarkIndex@{WaypointLandmarkIndex}}
+\index{WaypointLandmarkIndex@{WaypointLandmarkIndex}!CManiaAppPlaygroundEvent@{CManiaAppPlaygroundEvent}}
+\doxysubsubsection{\texorpdfstring{WaypointLandmarkIndex}{WaypointLandmarkIndex}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Mania\+App\+Playground\+Event\+::\+Waypoint\+Landmark\+Index}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

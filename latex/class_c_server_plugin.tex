@@ -1,0 +1,403 @@
+\hypertarget{class_c_server_plugin}{}\doxysection{C\+Server\+Plugin Class Reference}
+\label{class_c_server_plugin}\index{CServerPlugin@{CServerPlugin}}
+
+
+Server plugin.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Server\+Plugin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_server_plugin}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_client}{C\+Client}} \mbox{\hyperlink{class_c_server_plugin_a2e789798eb41c0b36938d8afe516095b}{Get\+Client}} (\mbox{\hyperlink{struct_text}{Text}} Login)
+\item 
+\mbox{\hyperlink{class_c_client}{C\+Client}} \mbox{\hyperlink{class_c_server_plugin_ac55fe0a50be9bbdf4fff7c4b82ab2290}{Get\+Client}} (\mbox{\hyperlink{class_c_u_i_config}{C\+U\+I\+Config}} UI)
+\item 
+\mbox{\hyperlink{class_c_client}{C\+Client}} \mbox{\hyperlink{class_c_server_plugin_a88f9887fb9671064a01b961b7adc7b0d}{Get\+Client}} (\mbox{\hyperlink{class_c_user}{C\+User}} Login)
+\item 
+\mbox{\hyperlink{class_c_client}{C\+Client}} \mbox{\hyperlink{class_c_server_plugin_a32a6a1e301f698c0a7c9d083d98d8b86}{Get\+Client\+From\+Web\+Services\+User\+Id}} (\mbox{\hyperlink{struct_text}{Text}} Web\+Services\+User\+Id)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_ac4a4acb4d8aee7bec6538ddeb312c27a}{Tweak\+Team\+Colors\+To\+Avoid\+Hue\+Overlap}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_ad962bd7597d61841feabc4a2465174ac}{Trigger\+Mode\+Script\+Event}} (\mbox{\hyperlink{struct_text}{Text}} Type, \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ Data)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_a00e8cff275e821508f3af4a2ac1d1202}{Send\+Mode\+Script\+Command}} (\mbox{\hyperlink{struct_text}{Text}} Command\+Name, \mbox{\hyperlink{struct_boolean}{Boolean}} Bool\+Val)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_a69b21d9f873b6cfa21ab25d9aa3ea680}{Send\+Mode\+Script\+Command}} (\mbox{\hyperlink{struct_text}{Text}} Command\+Name, \mbox{\hyperlink{struct_integer}{Integer}} Int\+Val)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_ac36b6e3e6e994612b3d6797e497bcab6}{Send\+Mode\+Script\+Command}} (\mbox{\hyperlink{struct_text}{Text}} Command\+Name, \mbox{\hyperlink{struct_real}{Real}} Real\+Val)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_a18b4864e726d705819efe1a2dc301f49}{Send\+Mode\+Script\+Command}} (\mbox{\hyperlink{struct_text}{Text}} Command\+Name, \mbox{\hyperlink{struct_text}{Text}} Text\+Val)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_ae427415f20871901dee0b61cae16274e}{Send\+Mode\+Script\+Command}} (\mbox{\hyperlink{struct_text}{Text}} Command\+Name, \mbox{\hyperlink{struct_vec2}{Vec2}} Vec2\+Val)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_a1d3ce0939bba7752a2b1f63ab44a082b}{Send\+Mode\+Script\+Command}} (\mbox{\hyperlink{struct_text}{Text}} Command\+Name, \mbox{\hyperlink{struct_vec3}{Vec3}} Vec3\+Val)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_acbe5050e05db05fcabc80d07637d7611}{Send\+Mode\+Script\+Command}} (\mbox{\hyperlink{struct_text}{Text}} Command\+Name, \mbox{\hyperlink{struct_int2}{Int2}} Int2\+Val)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_a441d742edacb0bc6774921c29c085d67}{Send\+Mode\+Script\+Command}} (\mbox{\hyperlink{struct_text}{Text}} Command\+Name, \mbox{\hyperlink{struct_int3}{Int3}} Int3\+Val)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_a67ed3ab177622aee625b0c0afe0387ff}{Restart\+Map}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_plugin_a65afddb2827202ef282afcaef9ca6215}{Next\+Map}} ()
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_server_plugin_a65d4ea0f1e84599971727b2e37ec096b}{Dbg\+\_\+\+Dump\+Declare\+For\+Variables}} (\mbox{\hyperlink{class_c_nod}{C\+Nod}} Nod, \mbox{\hyperlink{struct_boolean}{Boolean}} Stats\+Only)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_c_title}{C\+Title}} \mbox{\hyperlink{class_c_server_plugin_a1b97cadbedbdfa7ebe630fc629f9eead}{Loaded\+Title}}
+\item 
+const \mbox{\hyperlink{class_c_map_info}{C\+Map\+Info}} \mbox{\hyperlink{class_c_server_plugin_a90607d7f8aaf2f29dddf61963323b58f}{Map\+Info}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_client}{C\+Client}} $>$ \mbox{\hyperlink{class_c_server_plugin_a2f74efd8f7e342ea2375bc6a4d21c497}{Clients}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_client}{C\+Client}} $>$ \mbox{\hyperlink{class_c_server_plugin_ae207a2dfe6ea0fab56e26543042b2c9b}{Spectators}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_client}{C\+Client}} $>$ \mbox{\hyperlink{class_c_server_plugin_a655f466144b7aafb204d583844f51a90}{Players}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_score}{C\+Score}} $>$ \mbox{\hyperlink{class_c_server_plugin_abf64ac00ac4a7b0dafd431568f4ed550}{Scores}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_user}{C\+User}} $>$ \mbox{\hyperlink{class_c_server_plugin_a6fa404258c5ee9fb2bc66ccf95df3e8e}{Users}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_team}{C\+Team}} $>$ \mbox{\hyperlink{class_c_server_plugin_a2f0bbd35c33e1fb7f793c44a10bd2735}{Teams}}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_server_plugin_ac43cae76995f5442393b07588b8910f3}{Neutral\+Emblem\+Url}}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_server_plugin_ad84feaff9e075ff749903321fb908a47}{Forced\+Club\+Link\+Url1}}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_server_plugin_a80b63a4d95fae7341fdbd308b7bbb748}{Forced\+Club\+Link\+Url2}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ \mbox{\hyperlink{class_c_server_plugin_a132df4e1d40047a1f628538724acf51e}{Clans\+Nb\+Players}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ \mbox{\hyperlink{class_c_server_plugin_a124beb323ef7a1211e601034f14741b1}{Clan\+Scores}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_server_plugin_a48b43c270168340da7ee5b4d09f2c552}{Now}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_server_plugin_event}{C\+Server\+Plugin\+Event}} $>$ \mbox{\hyperlink{class_c_server_plugin_aa9851b1288a346ed206cd144a8144678}{Pending\+Events}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_plugin_ab9acf1736ebbf8b7889b40a19baf89b6}{Map\+Loaded}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_plugin_a961e1f7a920dabbb759d3ff5d1f37e3c}{Map\+Unload\+Requested}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_map_info}{C\+Map\+Info}} $>$ \mbox{\hyperlink{class_c_server_plugin_a5f672cc45a5cb609c102a5c6fdf05abe}{Map\+List}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_server_plugin_a36dc02025859f8479282b529993dc445}{Cur\+Map\+Index}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_server_plugin_a2804940db0f09a5aa4e839477e6ceaad}{Next\+Map\+Index}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_plugin_aa7a3f2ca1ac609423ae04c0ea7689759}{Hold\+Map\+Unload\+Request}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_plugin_a5cc618b0cd912b9a88070ea2c7209d8f}{Client\+\_\+\+Compute\+Minimap}}
+\item 
+const \mbox{\hyperlink{class_c_u_i_config_mgr}{C\+U\+I\+Config\+Mgr}} \mbox{\hyperlink{class_c_server_plugin_a1f3763fd723fa594430a02aed1de421f}{U\+I\+Manager}}
+\item 
+const \mbox{\hyperlink{class_c_server_admin}{C\+Server\+Admin}} \mbox{\hyperlink{class_c_server_plugin_ada77abedd967e8ab147b55091e1372dd}{Server\+Admin}}
+\item 
+const \mbox{\hyperlink{class_c_xml_rpc}{C\+Xml\+Rpc}} \mbox{\hyperlink{class_c_server_plugin_a1a8a4f52c4919bbf8c98e20b13d142cf}{Xml\+Rpc}}
+\item 
+const \mbox{\hyperlink{class_c_parsing_manager}{C\+Parsing\+Manager}} \mbox{\hyperlink{class_c_server_plugin_a96d19fadf1c62cb0e34b89676ccbcebc}{Xml}}
+\item 
+const \mbox{\hyperlink{class_c_http_manager}{C\+Http\+Manager}} \mbox{\hyperlink{class_c_server_plugin_acddb20e41d02f9cd881113e07682514c}{Http}}
+\item 
+const \mbox{\hyperlink{class_c_system_platform}{C\+System\+Platform}} \mbox{\hyperlink{class_c_server_plugin_a779c38953e96f8d3ceb78f5686bf14e7}{System}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Server plugin. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Local
+\item Persistent 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_server_plugin_a65d4ea0f1e84599971727b2e37ec096b}\label{class_c_server_plugin_a65d4ea0f1e84599971727b2e37ec096b}} 
+\index{CServerPlugin@{CServerPlugin}!Dbg\_DumpDeclareForVariables@{Dbg\_DumpDeclareForVariables}}
+\index{Dbg\_DumpDeclareForVariables@{Dbg\_DumpDeclareForVariables}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{Dbg\_DumpDeclareForVariables()}{Dbg\_DumpDeclareForVariables()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Server\+Plugin\+::\+Dbg\+\_\+\+Dump\+Declare\+For\+Variables (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_nod}{C\+Nod}}}]{Nod,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Stats\+Only }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_ac55fe0a50be9bbdf4fff7c4b82ab2290}\label{class_c_server_plugin_ac55fe0a50be9bbdf4fff7c4b82ab2290}} 
+\index{CServerPlugin@{CServerPlugin}!GetClient@{GetClient}}
+\index{GetClient@{GetClient}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{GetClient()}{GetClient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_client}{C\+Client}} C\+Server\+Plugin\+::\+Get\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_u_i_config}{C\+U\+I\+Config}}}]{UI }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_a88f9887fb9671064a01b961b7adc7b0d}\label{class_c_server_plugin_a88f9887fb9671064a01b961b7adc7b0d}} 
+\index{CServerPlugin@{CServerPlugin}!GetClient@{GetClient}}
+\index{GetClient@{GetClient}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{GetClient()}{GetClient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_client}{C\+Client}} C\+Server\+Plugin\+::\+Get\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_user}{C\+User}}}]{Login }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_a2e789798eb41c0b36938d8afe516095b}\label{class_c_server_plugin_a2e789798eb41c0b36938d8afe516095b}} 
+\index{CServerPlugin@{CServerPlugin}!GetClient@{GetClient}}
+\index{GetClient@{GetClient}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{GetClient()}{GetClient()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_client}{C\+Client}} C\+Server\+Plugin\+::\+Get\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Login }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_a32a6a1e301f698c0a7c9d083d98d8b86}\label{class_c_server_plugin_a32a6a1e301f698c0a7c9d083d98d8b86}} 
+\index{CServerPlugin@{CServerPlugin}!GetClientFromWebServicesUserId@{GetClientFromWebServicesUserId}}
+\index{GetClientFromWebServicesUserId@{GetClientFromWebServicesUserId}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{GetClientFromWebServicesUserId()}{GetClientFromWebServicesUserId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_client}{C\+Client}} C\+Server\+Plugin\+::\+Get\+Client\+From\+Web\+Services\+User\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Web\+Services\+User\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_a65afddb2827202ef282afcaef9ca6215}\label{class_c_server_plugin_a65afddb2827202ef282afcaef9ca6215}} 
+\index{CServerPlugin@{CServerPlugin}!NextMap@{NextMap}}
+\index{NextMap@{NextMap}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{NextMap()}{NextMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Next\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_a67ed3ab177622aee625b0c0afe0387ff}\label{class_c_server_plugin_a67ed3ab177622aee625b0c0afe0387ff}} 
+\index{CServerPlugin@{CServerPlugin}!RestartMap@{RestartMap}}
+\index{RestartMap@{RestartMap}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{RestartMap()}{RestartMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Restart\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_a00e8cff275e821508f3af4a2ac1d1202}\label{class_c_server_plugin_a00e8cff275e821508f3af4a2ac1d1202}} 
+\index{CServerPlugin@{CServerPlugin}!SendModeScriptCommand@{SendModeScriptCommand}}
+\index{SendModeScriptCommand@{SendModeScriptCommand}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{SendModeScriptCommand()}{SendModeScriptCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Send\+Mode\+Script\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Command\+Name,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Bool\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_acbe5050e05db05fcabc80d07637d7611}\label{class_c_server_plugin_acbe5050e05db05fcabc80d07637d7611}} 
+\index{CServerPlugin@{CServerPlugin}!SendModeScriptCommand@{SendModeScriptCommand}}
+\index{SendModeScriptCommand@{SendModeScriptCommand}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{SendModeScriptCommand()}{SendModeScriptCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Send\+Mode\+Script\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Command\+Name,  }\item[{\mbox{\hyperlink{struct_int2}{Int2}}}]{Int2\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_a441d742edacb0bc6774921c29c085d67}\label{class_c_server_plugin_a441d742edacb0bc6774921c29c085d67}} 
+\index{CServerPlugin@{CServerPlugin}!SendModeScriptCommand@{SendModeScriptCommand}}
+\index{SendModeScriptCommand@{SendModeScriptCommand}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{SendModeScriptCommand()}{SendModeScriptCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Send\+Mode\+Script\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Command\+Name,  }\item[{\mbox{\hyperlink{struct_int3}{Int3}}}]{Int3\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_a69b21d9f873b6cfa21ab25d9aa3ea680}\label{class_c_server_plugin_a69b21d9f873b6cfa21ab25d9aa3ea680}} 
+\index{CServerPlugin@{CServerPlugin}!SendModeScriptCommand@{SendModeScriptCommand}}
+\index{SendModeScriptCommand@{SendModeScriptCommand}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{SendModeScriptCommand()}{SendModeScriptCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Send\+Mode\+Script\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Command\+Name,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Int\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_ac36b6e3e6e994612b3d6797e497bcab6}\label{class_c_server_plugin_ac36b6e3e6e994612b3d6797e497bcab6}} 
+\index{CServerPlugin@{CServerPlugin}!SendModeScriptCommand@{SendModeScriptCommand}}
+\index{SendModeScriptCommand@{SendModeScriptCommand}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{SendModeScriptCommand()}{SendModeScriptCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Send\+Mode\+Script\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Command\+Name,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{Real\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_a18b4864e726d705819efe1a2dc301f49}\label{class_c_server_plugin_a18b4864e726d705819efe1a2dc301f49}} 
+\index{CServerPlugin@{CServerPlugin}!SendModeScriptCommand@{SendModeScriptCommand}}
+\index{SendModeScriptCommand@{SendModeScriptCommand}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{SendModeScriptCommand()}{SendModeScriptCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Send\+Mode\+Script\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Command\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Text\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_ae427415f20871901dee0b61cae16274e}\label{class_c_server_plugin_ae427415f20871901dee0b61cae16274e}} 
+\index{CServerPlugin@{CServerPlugin}!SendModeScriptCommand@{SendModeScriptCommand}}
+\index{SendModeScriptCommand@{SendModeScriptCommand}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{SendModeScriptCommand()}{SendModeScriptCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Send\+Mode\+Script\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Command\+Name,  }\item[{\mbox{\hyperlink{struct_vec2}{Vec2}}}]{Vec2\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_a1d3ce0939bba7752a2b1f63ab44a082b}\label{class_c_server_plugin_a1d3ce0939bba7752a2b1f63ab44a082b}} 
+\index{CServerPlugin@{CServerPlugin}!SendModeScriptCommand@{SendModeScriptCommand}}
+\index{SendModeScriptCommand@{SendModeScriptCommand}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{SendModeScriptCommand()}{SendModeScriptCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Send\+Mode\+Script\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Command\+Name,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Vec3\+Val }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_ad962bd7597d61841feabc4a2465174ac}\label{class_c_server_plugin_ad962bd7597d61841feabc4a2465174ac}} 
+\index{CServerPlugin@{CServerPlugin}!TriggerModeScriptEvent@{TriggerModeScriptEvent}}
+\index{TriggerModeScriptEvent@{TriggerModeScriptEvent}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{TriggerModeScriptEvent()}{TriggerModeScriptEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Trigger\+Mode\+Script\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Type,  }\item[{\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$}]{Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_plugin_ac4a4acb4d8aee7bec6538ddeb312c27a}\label{class_c_server_plugin_ac4a4acb4d8aee7bec6538ddeb312c27a}} 
+\index{CServerPlugin@{CServerPlugin}!TweakTeamColorsToAvoidHueOverlap@{TweakTeamColorsToAvoidHueOverlap}}
+\index{TweakTeamColorsToAvoidHueOverlap@{TweakTeamColorsToAvoidHueOverlap}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{TweakTeamColorsToAvoidHueOverlap()}{TweakTeamColorsToAvoidHueOverlap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Plugin\+::\+Tweak\+Team\+Colors\+To\+Avoid\+Hue\+Overlap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_server_plugin_a124beb323ef7a1211e601034f14741b1}\label{class_c_server_plugin_a124beb323ef7a1211e601034f14741b1}} 
+\index{CServerPlugin@{CServerPlugin}!ClanScores@{ClanScores}}
+\index{ClanScores@{ClanScores}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{ClanScores}{ClanScores}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_integer}{Integer}}$>$ C\+Server\+Plugin\+::\+Clan\+Scores}
+
+\mbox{\Hypertarget{class_c_server_plugin_a132df4e1d40047a1f628538724acf51e}\label{class_c_server_plugin_a132df4e1d40047a1f628538724acf51e}} 
+\index{CServerPlugin@{CServerPlugin}!ClansNbPlayers@{ClansNbPlayers}}
+\index{ClansNbPlayers@{ClansNbPlayers}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{ClansNbPlayers}{ClansNbPlayers}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_integer}{Integer}}$>$ C\+Server\+Plugin\+::\+Clans\+Nb\+Players}
+
+\mbox{\Hypertarget{class_c_server_plugin_a5cc618b0cd912b9a88070ea2c7209d8f}\label{class_c_server_plugin_a5cc618b0cd912b9a88070ea2c7209d8f}} 
+\index{CServerPlugin@{CServerPlugin}!Client\_ComputeMinimap@{Client\_ComputeMinimap}}
+\index{Client\_ComputeMinimap@{Client\_ComputeMinimap}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{Client\_ComputeMinimap}{Client\_ComputeMinimap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Plugin\+::\+Client\+\_\+\+Compute\+Minimap}
+
+Enable minimap on the clients, even if the mode does not do it. \mbox{\Hypertarget{class_c_server_plugin_a2f74efd8f7e342ea2375bc6a4d21c497}\label{class_c_server_plugin_a2f74efd8f7e342ea2375bc6a4d21c497}} 
+\index{CServerPlugin@{CServerPlugin}!Clients@{Clients}}
+\index{Clients@{Clients}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{Clients}{Clients}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_client}{C\+Client}}$>$ C\+Server\+Plugin\+::\+Clients}
+
+Currently connected Users. \mbox{\Hypertarget{class_c_server_plugin_a36dc02025859f8479282b529993dc445}\label{class_c_server_plugin_a36dc02025859f8479282b529993dc445}} 
+\index{CServerPlugin@{CServerPlugin}!CurMapIndex@{CurMapIndex}}
+\index{CurMapIndex@{CurMapIndex}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{CurMapIndex}{CurMapIndex}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Server\+Plugin\+::\+Cur\+Map\+Index}
+
+\mbox{\Hypertarget{class_c_server_plugin_ad84feaff9e075ff749903321fb908a47}\label{class_c_server_plugin_ad84feaff9e075ff749903321fb908a47}} 
+\index{CServerPlugin@{CServerPlugin}!ForcedClubLinkUrl1@{ForcedClubLinkUrl1}}
+\index{ForcedClubLinkUrl1@{ForcedClubLinkUrl1}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{ForcedClubLinkUrl1}{ForcedClubLinkUrl1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Server\+Plugin\+::\+Forced\+Club\+Link\+Url1}
+
+\mbox{\Hypertarget{class_c_server_plugin_a80b63a4d95fae7341fdbd308b7bbb748}\label{class_c_server_plugin_a80b63a4d95fae7341fdbd308b7bbb748}} 
+\index{CServerPlugin@{CServerPlugin}!ForcedClubLinkUrl2@{ForcedClubLinkUrl2}}
+\index{ForcedClubLinkUrl2@{ForcedClubLinkUrl2}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{ForcedClubLinkUrl2}{ForcedClubLinkUrl2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Server\+Plugin\+::\+Forced\+Club\+Link\+Url2}
+
+\mbox{\Hypertarget{class_c_server_plugin_aa7a3f2ca1ac609423ae04c0ea7689759}\label{class_c_server_plugin_aa7a3f2ca1ac609423ae04c0ea7689759}} 
+\index{CServerPlugin@{CServerPlugin}!HoldMapUnloadRequest@{HoldMapUnloadRequest}}
+\index{HoldMapUnloadRequest@{HoldMapUnloadRequest}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{HoldMapUnloadRequest}{HoldMapUnloadRequest}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Plugin\+::\+Hold\+Map\+Unload\+Request}
+
+\mbox{\Hypertarget{class_c_server_plugin_acddb20e41d02f9cd881113e07682514c}\label{class_c_server_plugin_acddb20e41d02f9cd881113e07682514c}} 
+\index{CServerPlugin@{CServerPlugin}!Http@{Http}}
+\index{Http@{Http}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{Http}{Http}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_http_manager}{C\+Http\+Manager}} C\+Server\+Plugin\+::\+Http}
+
+\mbox{\Hypertarget{class_c_server_plugin_a1b97cadbedbdfa7ebe630fc629f9eead}\label{class_c_server_plugin_a1b97cadbedbdfa7ebe630fc629f9eead}} 
+\index{CServerPlugin@{CServerPlugin}!LoadedTitle@{LoadedTitle}}
+\index{LoadedTitle@{LoadedTitle}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{LoadedTitle}{LoadedTitle}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_title}{C\+Title}} C\+Server\+Plugin\+::\+Loaded\+Title}
+
+\mbox{\Hypertarget{class_c_server_plugin_a90607d7f8aaf2f29dddf61963323b58f}\label{class_c_server_plugin_a90607d7f8aaf2f29dddf61963323b58f}} 
+\index{CServerPlugin@{CServerPlugin}!MapInfo@{MapInfo}}
+\index{MapInfo@{MapInfo}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{MapInfo}{MapInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_map_info}{C\+Map\+Info}} C\+Server\+Plugin\+::\+Map\+Info}
+
+\mbox{\Hypertarget{class_c_server_plugin_a5f672cc45a5cb609c102a5c6fdf05abe}\label{class_c_server_plugin_a5f672cc45a5cb609c102a5c6fdf05abe}} 
+\index{CServerPlugin@{CServerPlugin}!MapList@{MapList}}
+\index{MapList@{MapList}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{MapList}{MapList}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_map_info}{C\+Map\+Info}}$>$ C\+Server\+Plugin\+::\+Map\+List}
+
+\mbox{\Hypertarget{class_c_server_plugin_ab9acf1736ebbf8b7889b40a19baf89b6}\label{class_c_server_plugin_ab9acf1736ebbf8b7889b40a19baf89b6}} 
+\index{CServerPlugin@{CServerPlugin}!MapLoaded@{MapLoaded}}
+\index{MapLoaded@{MapLoaded}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{MapLoaded}{MapLoaded}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Plugin\+::\+Map\+Loaded}
+
+\mbox{\Hypertarget{class_c_server_plugin_a961e1f7a920dabbb759d3ff5d1f37e3c}\label{class_c_server_plugin_a961e1f7a920dabbb759d3ff5d1f37e3c}} 
+\index{CServerPlugin@{CServerPlugin}!MapUnloadRequested@{MapUnloadRequested}}
+\index{MapUnloadRequested@{MapUnloadRequested}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{MapUnloadRequested}{MapUnloadRequested}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Plugin\+::\+Map\+Unload\+Requested}
+
+\mbox{\Hypertarget{class_c_server_plugin_ac43cae76995f5442393b07588b8910f3}\label{class_c_server_plugin_ac43cae76995f5442393b07588b8910f3}} 
+\index{CServerPlugin@{CServerPlugin}!NeutralEmblemUrl@{NeutralEmblemUrl}}
+\index{NeutralEmblemUrl@{NeutralEmblemUrl}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{NeutralEmblemUrl}{NeutralEmblemUrl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Server\+Plugin\+::\+Neutral\+Emblem\+Url}
+
+\mbox{\Hypertarget{class_c_server_plugin_a2804940db0f09a5aa4e839477e6ceaad}\label{class_c_server_plugin_a2804940db0f09a5aa4e839477e6ceaad}} 
+\index{CServerPlugin@{CServerPlugin}!NextMapIndex@{NextMapIndex}}
+\index{NextMapIndex@{NextMapIndex}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{NextMapIndex}{NextMapIndex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Server\+Plugin\+::\+Next\+Map\+Index}
+
+\mbox{\Hypertarget{class_c_server_plugin_a48b43c270168340da7ee5b4d09f2c552}\label{class_c_server_plugin_a48b43c270168340da7ee5b4d09f2c552}} 
+\index{CServerPlugin@{CServerPlugin}!Now@{Now}}
+\index{Now@{Now}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{Now}{Now}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Server\+Plugin\+::\+Now}
+
+\mbox{\Hypertarget{class_c_server_plugin_aa9851b1288a346ed206cd144a8144678}\label{class_c_server_plugin_aa9851b1288a346ed206cd144a8144678}} 
+\index{CServerPlugin@{CServerPlugin}!PendingEvents@{PendingEvents}}
+\index{PendingEvents@{PendingEvents}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{PendingEvents}{PendingEvents}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_server_plugin_event}{C\+Server\+Plugin\+Event}}$>$ C\+Server\+Plugin\+::\+Pending\+Events}
+
+\mbox{\Hypertarget{class_c_server_plugin_a655f466144b7aafb204d583844f51a90}\label{class_c_server_plugin_a655f466144b7aafb204d583844f51a90}} 
+\index{CServerPlugin@{CServerPlugin}!Players@{Players}}
+\index{Players@{Players}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{Players}{Players}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_client}{C\+Client}}$>$ C\+Server\+Plugin\+::\+Players}
+
+Users connected as players. \mbox{\Hypertarget{class_c_server_plugin_abf64ac00ac4a7b0dafd431568f4ed550}\label{class_c_server_plugin_abf64ac00ac4a7b0dafd431568f4ed550}} 
+\index{CServerPlugin@{CServerPlugin}!Scores@{Scores}}
+\index{Scores@{Scores}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{Scores}{Scores}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_score}{C\+Score}}$>$ C\+Server\+Plugin\+::\+Scores}
+
+Sorted scores. \mbox{\Hypertarget{class_c_server_plugin_ada77abedd967e8ab147b55091e1372dd}\label{class_c_server_plugin_ada77abedd967e8ab147b55091e1372dd}} 
+\index{CServerPlugin@{CServerPlugin}!ServerAdmin@{ServerAdmin}}
+\index{ServerAdmin@{ServerAdmin}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{ServerAdmin}{ServerAdmin}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_server_admin}{C\+Server\+Admin}} C\+Server\+Plugin\+::\+Server\+Admin}
+
+\mbox{\Hypertarget{class_c_server_plugin_ae207a2dfe6ea0fab56e26543042b2c9b}\label{class_c_server_plugin_ae207a2dfe6ea0fab56e26543042b2c9b}} 
+\index{CServerPlugin@{CServerPlugin}!Spectators@{Spectators}}
+\index{Spectators@{Spectators}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{Spectators}{Spectators}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_client}{C\+Client}}$>$ C\+Server\+Plugin\+::\+Spectators}
+
+Users connected as spectators. \mbox{\Hypertarget{class_c_server_plugin_a779c38953e96f8d3ceb78f5686bf14e7}\label{class_c_server_plugin_a779c38953e96f8d3ceb78f5686bf14e7}} 
+\index{CServerPlugin@{CServerPlugin}!System@{System}}
+\index{System@{System}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{System}{System}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_system_platform}{C\+System\+Platform}} C\+Server\+Plugin\+::\+System}
+
+\mbox{\Hypertarget{class_c_server_plugin_a2f0bbd35c33e1fb7f793c44a10bd2735}\label{class_c_server_plugin_a2f0bbd35c33e1fb7f793c44a10bd2735}} 
+\index{CServerPlugin@{CServerPlugin}!Teams@{Teams}}
+\index{Teams@{Teams}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{Teams}{Teams}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_team}{C\+Team}}$>$ C\+Server\+Plugin\+::\+Teams}
+
+\mbox{\Hypertarget{class_c_server_plugin_a1f3763fd723fa594430a02aed1de421f}\label{class_c_server_plugin_a1f3763fd723fa594430a02aed1de421f}} 
+\index{CServerPlugin@{CServerPlugin}!UIManager@{UIManager}}
+\index{UIManager@{UIManager}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{UIManager}{UIManager}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_u_i_config_mgr}{C\+U\+I\+Config\+Mgr}} C\+Server\+Plugin\+::\+U\+I\+Manager}
+
+\mbox{\Hypertarget{class_c_server_plugin_a6fa404258c5ee9fb2bc66ccf95df3e8e}\label{class_c_server_plugin_a6fa404258c5ee9fb2bc66ccf95df3e8e}} 
+\index{CServerPlugin@{CServerPlugin}!Users@{Users}}
+\index{Users@{Users}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{Users}{Users}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_user}{C\+User}}$>$ C\+Server\+Plugin\+::\+Users}
+
+\mbox{\Hypertarget{class_c_server_plugin_a96d19fadf1c62cb0e34b89676ccbcebc}\label{class_c_server_plugin_a96d19fadf1c62cb0e34b89676ccbcebc}} 
+\index{CServerPlugin@{CServerPlugin}!Xml@{Xml}}
+\index{Xml@{Xml}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{Xml}{Xml}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_parsing_manager}{C\+Parsing\+Manager}} C\+Server\+Plugin\+::\+Xml}
+
+\mbox{\Hypertarget{class_c_server_plugin_a1a8a4f52c4919bbf8c98e20b13d142cf}\label{class_c_server_plugin_a1a8a4f52c4919bbf8c98e20b13d142cf}} 
+\index{CServerPlugin@{CServerPlugin}!XmlRpc@{XmlRpc}}
+\index{XmlRpc@{XmlRpc}!CServerPlugin@{CServerPlugin}}
+\doxysubsubsection{\texorpdfstring{XmlRpc}{XmlRpc}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_xml_rpc}{C\+Xml\+Rpc}} C\+Server\+Plugin\+::\+Xml\+Rpc}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,437 @@
+\hypertarget{class_c_data_file_mgr}{}\doxysection{C\+Data\+File\+Mgr Class Reference}
+\label{class_c_data_file_mgr}\index{CDataFileMgr@{CDataFileMgr}}
+
+
+Script A\+PI to manage game data.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Data\+File\+Mgr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_data_file_mgr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0e}{E\+Media\+Type}} \{ \newline
+\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0eafd0c9e269e29ac08ce6399ffd47bca01}{Image}}, 
+\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0ead2310f8469c4ed26220b8c48ab435721}{Sound}}, 
+\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0ea81ad66e7bb2a07849da5924071b09365}{Script}}, 
+\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0eae31c7d6bfc284f4f0d13067b0ccaea8c}{Match\+Settings}}, 
+\newline
+\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0eac8e33f43250dfeb91143b19c44edc4ad}{Module}}, 
+\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0ea362d19bf3d7880110efe6b1161dcea37}{Skins}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_data_file_mgr_a54a96c90c99682164b4b6ad0595f702f}{Task\+Result\+\_\+\+Release}} (\mbox{\hyperlink{struct_ident}{Ident}} Task\+Id)
+\item 
+\mbox{\hyperlink{class_c_campaign}{C\+Campaign}} \mbox{\hyperlink{class_c_data_file_mgr_a897088dbfd2d16de3b7a49c3a5a985ea}{Campaign\+\_\+\+Get}} (\mbox{\hyperlink{struct_text}{Text}} Campaign\+Id)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_data_file_mgr_a3e96fc213e61b849c43a4a32aef64708}{Map\+\_\+\+Refresh\+From\+Disk}} ()
+\item 
+\mbox{\hyperlink{class_c_task_result___map_list}{C\+Task\+Result\+\_\+\+Map\+List}} \mbox{\hyperlink{class_c_data_file_mgr_aed31d73319f1ff9b17dd766b3a2d87c2}{Map\+\_\+\+Get\+User\+List}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id)
+\item 
+\mbox{\hyperlink{class_c_task_result___map_list}{C\+Task\+Result\+\_\+\+Map\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a44c177706d0f703f81596d30fa64fb35}{Map\+\_\+\+Get\+Game\+List}} (\mbox{\hyperlink{struct_text}{Text}} Path, \mbox{\hyperlink{struct_boolean}{Boolean}} Flatten)
+\item 
+\mbox{\hyperlink{class_c_task_result___map_list}{C\+Task\+Result\+\_\+\+Map\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a84736dc311725c9c3acd85d4a2ad60b0}{Map\+\_\+\+Get\+Game\+List}} (\mbox{\hyperlink{struct_text}{Text}} Path, \mbox{\hyperlink{struct_boolean}{Boolean}} Flatten, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+By\+Name\+Else\+By\+Date, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+Order\+Asc)
+\item 
+\mbox{\hyperlink{class_c_task_result___map_list}{C\+Task\+Result\+\_\+\+Map\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a47ee0218ab49b85fcf3396ee6f7e3e9b}{Map\+\_\+\+Get\+Filtered\+Game\+List}} (\mbox{\hyperlink{struct_integer}{Integer}} Scope, \mbox{\hyperlink{struct_text}{Text}} Path, \mbox{\hyperlink{struct_boolean}{Boolean}} Flatten, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+By\+Name\+Else\+By\+Date, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+Order\+Asc)
+\item 
+\mbox{\hyperlink{class_c_ghost}{C\+Ghost}} \mbox{\hyperlink{class_c_data_file_mgr_a376e397551f2eb10f5880e1769c79fd0}{Map\+\_\+\+Get\+Author\+Ghost}} (\mbox{\hyperlink{class_c_map}{C\+Map}} Map)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_map}{C\+Task\+Result\+\_\+\+N\+S\+Map}} \mbox{\hyperlink{class_c_data_file_mgr_a07d2de660a22f618d9d85688c4b54d43}{Map\+\_\+\+Nadeo\+Services\+\_\+\+Get}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Map\+Id)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_map}{C\+Task\+Result\+\_\+\+N\+S\+Map}} \mbox{\hyperlink{class_c_data_file_mgr_aee86895262b0970d4864a46c5fedcfe8}{Map\+\_\+\+Nadeo\+Services\+\_\+\+Get\+From\+Uid}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Map\+Uid)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_map_list}{C\+Task\+Result\+\_\+\+N\+S\+Map\+List}} \mbox{\hyperlink{class_c_data_file_mgr_ac526e5ec876ab75260ec0c702a475fbe}{Map\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ Map\+Id\+List)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_map_list}{C\+Task\+Result\+\_\+\+N\+S\+Map\+List}} \mbox{\hyperlink{class_c_data_file_mgr_ac038863a3fc41287b31e3f29e7805131}{Map\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List\+From\+Uid}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ Map\+Uid\+List)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_map_list}{C\+Task\+Result\+\_\+\+N\+S\+Map\+List}} \mbox{\hyperlink{class_c_data_file_mgr_aa3b752cf65c64aa39100c32cabd356ab}{Map\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List\+From\+User}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Web\+Services\+User\+Id)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_map}{C\+Task\+Result\+\_\+\+N\+S\+Map}} \mbox{\hyperlink{class_c_data_file_mgr_a18dc5c60055f45fd00862793f2d529e8}{Map\+\_\+\+Nadeo\+Services\+\_\+\+Register}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Map\+Uid)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_skin}{C\+Task\+Result\+\_\+\+N\+S\+Skin}} \mbox{\hyperlink{class_c_data_file_mgr_a8a29e45ba71639d24591b14f750c7669}{Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Skin\+Id)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_skin}{C\+Task\+Result\+\_\+\+N\+S\+Skin}} \mbox{\hyperlink{class_c_data_file_mgr_a02d5138f7fcd66f96f386fe0ef7dc12b}{Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+From\+Checksum}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Skin\+Checksum)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_skin_list}{C\+Task\+Result\+\_\+\+N\+S\+Skin\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a62a57bac95eadb22b340a07a6f8a36a8}{Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ Skin\+Id\+List)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_skin_list}{C\+Task\+Result\+\_\+\+N\+S\+Skin\+List}} \mbox{\hyperlink{class_c_data_file_mgr_acd1ba985d98646c30fdc8e8b7b9f099c}{Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List\+From\+Checksum}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ Skin\+Checksum\+List)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_skin_list}{C\+Task\+Result\+\_\+\+N\+S\+Skin\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a98f4353297d91a83856a6f2e4b47e1de}{Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List\+From\+User}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Web\+Services\+User\+Id)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_skin}{C\+Task\+Result\+\_\+\+N\+S\+Skin}} \mbox{\hyperlink{class_c_data_file_mgr_a10fae2603b4a3e41844b6f6cdd8fe604}{Skin\+\_\+\+Nadeo\+Services\+\_\+\+Register}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Skin\+Display\+Name, \mbox{\hyperlink{struct_text}{Text}} Skin\+File\+Name)
+\item 
+\mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} \mbox{\hyperlink{class_c_data_file_mgr_aa5ac96f99dbcc83a8c12f330ed6be5ef}{Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Add\+Favorite}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Skin\+Id)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_skin_list}{C\+Task\+Result\+\_\+\+N\+S\+Skin\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a0c13b6ad73e94f43b016cbbbdef91dc2}{Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+Favorite\+List}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_skin_list}{C\+Task\+Result\+\_\+\+N\+S\+Skin\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a465fff088879e5f334b2e0475963fbb0}{Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id)
+\item 
+\mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} \mbox{\hyperlink{class_c_data_file_mgr_ad4c7f89182a08a7d7b74546b21e1d98f}{Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Remove\+Favorite}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Skin\+Id)
+\item 
+\mbox{\hyperlink{class_c_task_result___n_s_skin}{C\+Task\+Result\+\_\+\+N\+S\+Skin}} \mbox{\hyperlink{class_c_data_file_mgr_a4f9d334ffcb4ffc2ce9a52ccaa122acc}{Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Set}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Skin\+Id)
+\item 
+\mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} \mbox{\hyperlink{class_c_data_file_mgr_a0bc6acf7ba76c54716cb839858a1de01}{Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Unset}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Skin\+Type)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_data_file_mgr_a3414e4ed51248a916aea8d0272f57278}{Ghost\+\_\+\+Release}} (\mbox{\hyperlink{struct_ident}{Ident}} Ghost\+Id)
+\item 
+\mbox{\hyperlink{class_c_task_result___ghost}{C\+Task\+Result\+\_\+\+Ghost}} \mbox{\hyperlink{class_c_data_file_mgr_a33fde69d911bbdb8854fbd960da77693}{Ghost\+\_\+\+Download}} (\mbox{\hyperlink{struct_text}{Text}} File\+Name, \mbox{\hyperlink{struct_text}{Text}} Url)
+\item 
+\mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} \mbox{\hyperlink{class_c_data_file_mgr_aa0c2e3bf640a6220e177fc506d2cf0b7}{Ghost\+\_\+\+Upload}} (\mbox{\hyperlink{struct_text}{Text}} Url, \mbox{\hyperlink{class_c_ghost}{C\+Ghost}} Ghost, \mbox{\hyperlink{struct_text}{Text}} Additional\+Headers)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_data_file_mgr_ad924929b95fb71bb4b526d633c307206}{Replay\+\_\+\+Refresh\+From\+Disk}} ()
+\item 
+\mbox{\hyperlink{class_c_task_result___replay_list}{C\+Task\+Result\+\_\+\+Replay\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a024f454939c806b9bfe20cc539523259}{Replay\+\_\+\+Get\+Game\+List}} (\mbox{\hyperlink{struct_text}{Text}} Path, \mbox{\hyperlink{struct_boolean}{Boolean}} Flatten)
+\item 
+\mbox{\hyperlink{class_c_task_result___replay_list}{C\+Task\+Result\+\_\+\+Replay\+List}} \mbox{\hyperlink{class_c_data_file_mgr_ad0582a02457711fc55c1402c615d0396}{Replay\+\_\+\+Get\+Game\+List}} (\mbox{\hyperlink{struct_text}{Text}} Path, \mbox{\hyperlink{struct_boolean}{Boolean}} Flatten, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+By\+Name\+Else\+By\+Date, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+Order\+Asc)
+\item 
+\mbox{\hyperlink{class_c_task_result___replay_list}{C\+Task\+Result\+\_\+\+Replay\+List}} \mbox{\hyperlink{class_c_data_file_mgr_ab343ebe751ab4cba48e4f856130a26cf}{Replay\+\_\+\+Get\+Filtered\+Game\+List}} (\mbox{\hyperlink{struct_integer}{Integer}} Scope, \mbox{\hyperlink{struct_text}{Text}} Path, \mbox{\hyperlink{struct_boolean}{Boolean}} Flatten, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+By\+Name\+Else\+By\+Date, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+Order\+Asc)
+\item 
+\mbox{\hyperlink{class_c_task_result___ghost_list}{C\+Task\+Result\+\_\+\+Ghost\+List}} \mbox{\hyperlink{class_c_data_file_mgr_aea036184108318f2e4f607d851bd4462}{Replay\+\_\+\+Load}} (\mbox{\hyperlink{struct_text}{Text}} Path)
+\item 
+\mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} \mbox{\hyperlink{class_c_data_file_mgr_a6a9acb591af1a863cf9b3bb01e2326c4}{Replay\+\_\+\+Save}} (\mbox{\hyperlink{struct_text}{Text}} Path, \mbox{\hyperlink{class_c_map}{C\+Map}} Map, \mbox{\hyperlink{class_c_ghost}{C\+Ghost}} Ghost)
+\item 
+\mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} \mbox{\hyperlink{class_c_data_file_mgr_a11104be92670ef7515e13bea7ecc7df4}{Replay\+\_\+\+Author\+\_\+\+Save}} (\mbox{\hyperlink{class_c_map}{C\+Map}} Map, \mbox{\hyperlink{class_c_ghost}{C\+Ghost}} Ghost)
+\item 
+\mbox{\hyperlink{class_c_task_result___file_list}{C\+Task\+Result\+\_\+\+File\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a40ba4f61d595732f85f46a83b45d26f2}{Media\+\_\+\+Get\+Game\+List}} (\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0e}{C\+Data\+File\+Mgr\+::\+E\+Media\+Type}} Type, \mbox{\hyperlink{struct_text}{Text}} Path, \mbox{\hyperlink{struct_boolean}{Boolean}} Flatten)
+\item 
+\mbox{\hyperlink{class_c_task_result___file_list}{C\+Task\+Result\+\_\+\+File\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a81203b481294198111943cf76c4ab4af}{Media\+\_\+\+Get\+Game\+List}} (\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0e}{C\+Data\+File\+Mgr\+::\+E\+Media\+Type}} Type, \mbox{\hyperlink{struct_text}{Text}} Path, \mbox{\hyperlink{struct_boolean}{Boolean}} Flatten, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+By\+Name\+Else\+By\+Date, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+Order\+Asc)
+\item 
+\mbox{\hyperlink{class_c_task_result___file_list}{C\+Task\+Result\+\_\+\+File\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a67b01bf7e2eab329ead1671cc9be1c7d}{Media\+\_\+\+Get\+Filtered\+Game\+List}} (\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0e}{C\+Data\+File\+Mgr\+::\+E\+Media\+Type}} Type, \mbox{\hyperlink{struct_integer}{Integer}} Scope, \mbox{\hyperlink{struct_text}{Text}} Path, \mbox{\hyperlink{struct_boolean}{Boolean}} Flatten, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+By\+Name\+Else\+By\+Date, \mbox{\hyperlink{struct_boolean}{Boolean}} Sort\+Order\+Asc)
+\item 
+\mbox{\hyperlink{class_c_task_result___game_mode_list}{C\+Task\+Result\+\_\+\+Game\+Mode\+List}} \mbox{\hyperlink{class_c_data_file_mgr_a79e2153b0e5ca66bedfa7b2a9e706335}{Game\+Mode\+\_\+\+Get\+Game\+List}} (\mbox{\hyperlink{struct_integer}{Integer}} Scope, \mbox{\hyperlink{struct_text}{Text}} Path, \mbox{\hyperlink{struct_boolean}{Boolean}} Flatten)
+\item 
+\mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} \mbox{\hyperlink{class_c_data_file_mgr_a7cddbc5bfedd329fd8b5e44e9ba24936}{Pack\+\_\+\+Download\+Or\+Update}} (\mbox{\hyperlink{struct_text}{Text}} Display\+Name, \mbox{\hyperlink{struct_text}{Text}} Url)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} $>$ \mbox{\hyperlink{class_c_data_file_mgr_afd7a4a931a309f7876668e5d514f879e}{Task\+Results}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_campaign}{C\+Campaign}} $>$ \mbox{\hyperlink{class_c_data_file_mgr_a2c841aac6e46e8d5f3ef27be330acf5e}{Campaigns}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_ghost}{C\+Ghost}} $>$ \mbox{\hyperlink{class_c_data_file_mgr_acc7e307d74b35b80a3a9a854247fd6cb}{Ghosts}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script A\+PI to manage game data. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0e}\label{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0e}} 
+\index{CDataFileMgr@{CDataFileMgr}!EMediaType@{EMediaType}}
+\index{EMediaType@{EMediaType}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{EMediaType}{EMediaType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0e}{C\+Data\+File\+Mgr\+::\+E\+Media\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Image@{Image}!CDataFileMgr@{CDataFileMgr}}\index{CDataFileMgr@{CDataFileMgr}!Image@{Image}}}\mbox{\Hypertarget{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0eafd0c9e269e29ac08ce6399ffd47bca01}\label{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0eafd0c9e269e29ac08ce6399ffd47bca01}} 
+Image&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sound@{Sound}!CDataFileMgr@{CDataFileMgr}}\index{CDataFileMgr@{CDataFileMgr}!Sound@{Sound}}}\mbox{\Hypertarget{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0ead2310f8469c4ed26220b8c48ab435721}\label{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0ead2310f8469c4ed26220b8c48ab435721}} 
+Sound&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Script@{Script}!CDataFileMgr@{CDataFileMgr}}\index{CDataFileMgr@{CDataFileMgr}!Script@{Script}}}\mbox{\Hypertarget{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0ea81ad66e7bb2a07849da5924071b09365}\label{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0ea81ad66e7bb2a07849da5924071b09365}} 
+Script&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MatchSettings@{MatchSettings}!CDataFileMgr@{CDataFileMgr}}\index{CDataFileMgr@{CDataFileMgr}!MatchSettings@{MatchSettings}}}\mbox{\Hypertarget{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0eae31c7d6bfc284f4f0d13067b0ccaea8c}\label{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0eae31c7d6bfc284f4f0d13067b0ccaea8c}} 
+Match\+Settings&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Module@{Module}!CDataFileMgr@{CDataFileMgr}}\index{CDataFileMgr@{CDataFileMgr}!Module@{Module}}}\mbox{\Hypertarget{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0eac8e33f43250dfeb91143b19c44edc4ad}\label{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0eac8e33f43250dfeb91143b19c44edc4ad}} 
+Module&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Skins@{Skins}!CDataFileMgr@{CDataFileMgr}}\index{CDataFileMgr@{CDataFileMgr}!Skins@{Skins}}}\mbox{\Hypertarget{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0ea362d19bf3d7880110efe6b1161dcea37}\label{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0ea362d19bf3d7880110efe6b1161dcea37}} 
+Skins&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_data_file_mgr_aa5ac96f99dbcc83a8c12f330ed6be5ef}\label{class_c_data_file_mgr_aa5ac96f99dbcc83a8c12f330ed6be5ef}} 
+\index{CDataFileMgr@{CDataFileMgr}!AccountSkin\_NadeoServices\_AddFavorite@{AccountSkin\_NadeoServices\_AddFavorite}}
+\index{AccountSkin\_NadeoServices\_AddFavorite@{AccountSkin\_NadeoServices\_AddFavorite}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{AccountSkin\_NadeoServices\_AddFavorite()}{AccountSkin\_NadeoServices\_AddFavorite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} C\+Data\+File\+Mgr\+::\+Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Add\+Favorite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Skin\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a0c13b6ad73e94f43b016cbbbdef91dc2}\label{class_c_data_file_mgr_a0c13b6ad73e94f43b016cbbbdef91dc2}} 
+\index{CDataFileMgr@{CDataFileMgr}!AccountSkin\_NadeoServices\_GetFavoriteList@{AccountSkin\_NadeoServices\_GetFavoriteList}}
+\index{AccountSkin\_NadeoServices\_GetFavoriteList@{AccountSkin\_NadeoServices\_GetFavoriteList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{AccountSkin\_NadeoServices\_GetFavoriteList()}{AccountSkin\_NadeoServices\_GetFavoriteList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_skin_list}{C\+Task\+Result\+\_\+\+N\+S\+Skin\+List}} C\+Data\+File\+Mgr\+::\+Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+Favorite\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a465fff088879e5f334b2e0475963fbb0}\label{class_c_data_file_mgr_a465fff088879e5f334b2e0475963fbb0}} 
+\index{CDataFileMgr@{CDataFileMgr}!AccountSkin\_NadeoServices\_GetList@{AccountSkin\_NadeoServices\_GetList}}
+\index{AccountSkin\_NadeoServices\_GetList@{AccountSkin\_NadeoServices\_GetList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{AccountSkin\_NadeoServices\_GetList()}{AccountSkin\_NadeoServices\_GetList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_skin_list}{C\+Task\+Result\+\_\+\+N\+S\+Skin\+List}} C\+Data\+File\+Mgr\+::\+Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_ad4c7f89182a08a7d7b74546b21e1d98f}\label{class_c_data_file_mgr_ad4c7f89182a08a7d7b74546b21e1d98f}} 
+\index{CDataFileMgr@{CDataFileMgr}!AccountSkin\_NadeoServices\_RemoveFavorite@{AccountSkin\_NadeoServices\_RemoveFavorite}}
+\index{AccountSkin\_NadeoServices\_RemoveFavorite@{AccountSkin\_NadeoServices\_RemoveFavorite}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{AccountSkin\_NadeoServices\_RemoveFavorite()}{AccountSkin\_NadeoServices\_RemoveFavorite()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} C\+Data\+File\+Mgr\+::\+Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Remove\+Favorite (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Skin\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a4f9d334ffcb4ffc2ce9a52ccaa122acc}\label{class_c_data_file_mgr_a4f9d334ffcb4ffc2ce9a52ccaa122acc}} 
+\index{CDataFileMgr@{CDataFileMgr}!AccountSkin\_NadeoServices\_Set@{AccountSkin\_NadeoServices\_Set}}
+\index{AccountSkin\_NadeoServices\_Set@{AccountSkin\_NadeoServices\_Set}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{AccountSkin\_NadeoServices\_Set()}{AccountSkin\_NadeoServices\_Set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_skin}{C\+Task\+Result\+\_\+\+N\+S\+Skin}} C\+Data\+File\+Mgr\+::\+Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Skin\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a0bc6acf7ba76c54716cb839858a1de01}\label{class_c_data_file_mgr_a0bc6acf7ba76c54716cb839858a1de01}} 
+\index{CDataFileMgr@{CDataFileMgr}!AccountSkin\_NadeoServices\_Unset@{AccountSkin\_NadeoServices\_Unset}}
+\index{AccountSkin\_NadeoServices\_Unset@{AccountSkin\_NadeoServices\_Unset}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{AccountSkin\_NadeoServices\_Unset()}{AccountSkin\_NadeoServices\_Unset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} C\+Data\+File\+Mgr\+::\+Account\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Unset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Skin\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a897088dbfd2d16de3b7a49c3a5a985ea}\label{class_c_data_file_mgr_a897088dbfd2d16de3b7a49c3a5a985ea}} 
+\index{CDataFileMgr@{CDataFileMgr}!Campaign\_Get@{Campaign\_Get}}
+\index{Campaign\_Get@{Campaign\_Get}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Campaign\_Get()}{Campaign\_Get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_campaign}{C\+Campaign}} C\+Data\+File\+Mgr\+::\+Campaign\+\_\+\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Campaign\+Id }\end{DoxyParamCaption})}
+
+Get a campaign from its id. \mbox{\Hypertarget{class_c_data_file_mgr_a79e2153b0e5ca66bedfa7b2a9e706335}\label{class_c_data_file_mgr_a79e2153b0e5ca66bedfa7b2a9e706335}} 
+\index{CDataFileMgr@{CDataFileMgr}!GameMode\_GetGameList@{GameMode\_GetGameList}}
+\index{GameMode\_GetGameList@{GameMode\_GetGameList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{GameMode\_GetGameList()}{GameMode\_GetGameList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___game_mode_list}{C\+Task\+Result\+\_\+\+Game\+Mode\+List}} C\+Data\+File\+Mgr\+::\+Game\+Mode\+\_\+\+Get\+Game\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Scope,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Flatten }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a33fde69d911bbdb8854fbd960da77693}\label{class_c_data_file_mgr_a33fde69d911bbdb8854fbd960da77693}} 
+\index{CDataFileMgr@{CDataFileMgr}!Ghost\_Download@{Ghost\_Download}}
+\index{Ghost\_Download@{Ghost\_Download}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Ghost\_Download()}{Ghost\_Download()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___ghost}{C\+Task\+Result\+\_\+\+Ghost}} C\+Data\+File\+Mgr\+::\+Ghost\+\_\+\+Download (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Url }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a3414e4ed51248a916aea8d0272f57278}\label{class_c_data_file_mgr_a3414e4ed51248a916aea8d0272f57278}} 
+\index{CDataFileMgr@{CDataFileMgr}!Ghost\_Release@{Ghost\_Release}}
+\index{Ghost\_Release@{Ghost\_Release}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Ghost\_Release()}{Ghost\_Release()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Data\+File\+Mgr\+::\+Ghost\+\_\+\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Ghost\+Id }\end{DoxyParamCaption})}
+
+Release a downloaded ghost no longer needed. \mbox{\Hypertarget{class_c_data_file_mgr_aa0c2e3bf640a6220e177fc506d2cf0b7}\label{class_c_data_file_mgr_aa0c2e3bf640a6220e177fc506d2cf0b7}} 
+\index{CDataFileMgr@{CDataFileMgr}!Ghost\_Upload@{Ghost\_Upload}}
+\index{Ghost\_Upload@{Ghost\_Upload}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Ghost\_Upload()}{Ghost\_Upload()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} C\+Data\+File\+Mgr\+::\+Ghost\+\_\+\+Upload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Url,  }\item[{\mbox{\hyperlink{class_c_ghost}{C\+Ghost}}}]{Ghost,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Additional\+Headers }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a376e397551f2eb10f5880e1769c79fd0}\label{class_c_data_file_mgr_a376e397551f2eb10f5880e1769c79fd0}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_GetAuthorGhost@{Map\_GetAuthorGhost}}
+\index{Map\_GetAuthorGhost@{Map\_GetAuthorGhost}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_GetAuthorGhost()}{Map\_GetAuthorGhost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_ghost}{C\+Ghost}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Get\+Author\+Ghost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_map}{C\+Map}}}]{Map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a47ee0218ab49b85fcf3396ee6f7e3e9b}\label{class_c_data_file_mgr_a47ee0218ab49b85fcf3396ee6f7e3e9b}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_GetFilteredGameList@{Map\_GetFilteredGameList}}
+\index{Map\_GetFilteredGameList@{Map\_GetFilteredGameList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_GetFilteredGameList()}{Map\_GetFilteredGameList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___map_list}{C\+Task\+Result\+\_\+\+Map\+List}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Get\+Filtered\+Game\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Scope,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Flatten,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+By\+Name\+Else\+By\+Date,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+Order\+Asc }\end{DoxyParamCaption})}
+
+Get the list of map stored in the specified path. Scope is used to specify if the list is retrieved from game data (1), title data (2) or user data (4), which can be added). \mbox{\Hypertarget{class_c_data_file_mgr_a44c177706d0f703f81596d30fa64fb35}\label{class_c_data_file_mgr_a44c177706d0f703f81596d30fa64fb35}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_GetGameList@{Map\_GetGameList}}
+\index{Map\_GetGameList@{Map\_GetGameList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_GetGameList()}{Map\_GetGameList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___map_list}{C\+Task\+Result\+\_\+\+Map\+List}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Get\+Game\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Flatten }\end{DoxyParamCaption})}
+
+Get the list of map stored in the specified path. \mbox{\Hypertarget{class_c_data_file_mgr_a84736dc311725c9c3acd85d4a2ad60b0}\label{class_c_data_file_mgr_a84736dc311725c9c3acd85d4a2ad60b0}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_GetGameList@{Map\_GetGameList}}
+\index{Map\_GetGameList@{Map\_GetGameList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_GetGameList()}{Map\_GetGameList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___map_list}{C\+Task\+Result\+\_\+\+Map\+List}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Get\+Game\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Flatten,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+By\+Name\+Else\+By\+Date,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+Order\+Asc }\end{DoxyParamCaption})}
+
+Get the list of map stored according to the filters in the specified path. \mbox{\Hypertarget{class_c_data_file_mgr_aed31d73319f1ff9b17dd766b3a2d87c2}\label{class_c_data_file_mgr_aed31d73319f1ff9b17dd766b3a2d87c2}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_GetUserList@{Map\_GetUserList}}
+\index{Map\_GetUserList@{Map\_GetUserList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_GetUserList()}{Map\_GetUserList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___map_list}{C\+Task\+Result\+\_\+\+Map\+List}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Get\+User\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id }\end{DoxyParamCaption})}
+
+Get the list of map stored in the user slot/dir. \mbox{\Hypertarget{class_c_data_file_mgr_a07d2de660a22f618d9d85688c4b54d43}\label{class_c_data_file_mgr_a07d2de660a22f618d9d85688c4b54d43}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_NadeoServices\_Get@{Map\_NadeoServices\_Get}}
+\index{Map\_NadeoServices\_Get@{Map\_NadeoServices\_Get}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_NadeoServices\_Get()}{Map\_NadeoServices\_Get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_map}{C\+Task\+Result\+\_\+\+N\+S\+Map}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Nadeo\+Services\+\_\+\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Map\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_aee86895262b0970d4864a46c5fedcfe8}\label{class_c_data_file_mgr_aee86895262b0970d4864a46c5fedcfe8}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_NadeoServices\_GetFromUid@{Map\_NadeoServices\_GetFromUid}}
+\index{Map\_NadeoServices\_GetFromUid@{Map\_NadeoServices\_GetFromUid}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_NadeoServices\_GetFromUid()}{Map\_NadeoServices\_GetFromUid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_map}{C\+Task\+Result\+\_\+\+N\+S\+Map}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Nadeo\+Services\+\_\+\+Get\+From\+Uid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Map\+Uid }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_ac526e5ec876ab75260ec0c702a475fbe}\label{class_c_data_file_mgr_ac526e5ec876ab75260ec0c702a475fbe}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_NadeoServices\_GetList@{Map\_NadeoServices\_GetList}}
+\index{Map\_NadeoServices\_GetList@{Map\_NadeoServices\_GetList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_NadeoServices\_GetList()}{Map\_NadeoServices\_GetList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_map_list}{C\+Task\+Result\+\_\+\+N\+S\+Map\+List}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$}]{Map\+Id\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_ac038863a3fc41287b31e3f29e7805131}\label{class_c_data_file_mgr_ac038863a3fc41287b31e3f29e7805131}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_NadeoServices\_GetListFromUid@{Map\_NadeoServices\_GetListFromUid}}
+\index{Map\_NadeoServices\_GetListFromUid@{Map\_NadeoServices\_GetListFromUid}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_NadeoServices\_GetListFromUid()}{Map\_NadeoServices\_GetListFromUid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_map_list}{C\+Task\+Result\+\_\+\+N\+S\+Map\+List}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List\+From\+Uid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$}]{Map\+Uid\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_aa3b752cf65c64aa39100c32cabd356ab}\label{class_c_data_file_mgr_aa3b752cf65c64aa39100c32cabd356ab}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_NadeoServices\_GetListFromUser@{Map\_NadeoServices\_GetListFromUser}}
+\index{Map\_NadeoServices\_GetListFromUser@{Map\_NadeoServices\_GetListFromUser}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_NadeoServices\_GetListFromUser()}{Map\_NadeoServices\_GetListFromUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_map_list}{C\+Task\+Result\+\_\+\+N\+S\+Map\+List}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List\+From\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Web\+Services\+User\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a18dc5c60055f45fd00862793f2d529e8}\label{class_c_data_file_mgr_a18dc5c60055f45fd00862793f2d529e8}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_NadeoServices\_Register@{Map\_NadeoServices\_Register}}
+\index{Map\_NadeoServices\_Register@{Map\_NadeoServices\_Register}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_NadeoServices\_Register()}{Map\_NadeoServices\_Register()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_map}{C\+Task\+Result\+\_\+\+N\+S\+Map}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Nadeo\+Services\+\_\+\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Map\+Uid }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a3e96fc213e61b849c43a4a32aef64708}\label{class_c_data_file_mgr_a3e96fc213e61b849c43a4a32aef64708}} 
+\index{CDataFileMgr@{CDataFileMgr}!Map\_RefreshFromDisk@{Map\_RefreshFromDisk}}
+\index{Map\_RefreshFromDisk@{Map\_RefreshFromDisk}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Map\_RefreshFromDisk()}{Map\_RefreshFromDisk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Data\+File\+Mgr\+::\+Map\+\_\+\+Refresh\+From\+Disk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a67b01bf7e2eab329ead1671cc9be1c7d}\label{class_c_data_file_mgr_a67b01bf7e2eab329ead1671cc9be1c7d}} 
+\index{CDataFileMgr@{CDataFileMgr}!Media\_GetFilteredGameList@{Media\_GetFilteredGameList}}
+\index{Media\_GetFilteredGameList@{Media\_GetFilteredGameList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Media\_GetFilteredGameList()}{Media\_GetFilteredGameList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___file_list}{C\+Task\+Result\+\_\+\+File\+List}} C\+Data\+File\+Mgr\+::\+Media\+\_\+\+Get\+Filtered\+Game\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0e}{C\+Data\+File\+Mgr\+::\+E\+Media\+Type}}}]{Type,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Scope,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Flatten,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+By\+Name\+Else\+By\+Date,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+Order\+Asc }\end{DoxyParamCaption})}
+
+Get the list of media stored in the specified path. Scope is used to specify if the list is retrieved from game data (1), title data (2) or user data (4), which can be added. \mbox{\Hypertarget{class_c_data_file_mgr_a40ba4f61d595732f85f46a83b45d26f2}\label{class_c_data_file_mgr_a40ba4f61d595732f85f46a83b45d26f2}} 
+\index{CDataFileMgr@{CDataFileMgr}!Media\_GetGameList@{Media\_GetGameList}}
+\index{Media\_GetGameList@{Media\_GetGameList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Media\_GetGameList()}{Media\_GetGameList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___file_list}{C\+Task\+Result\+\_\+\+File\+List}} C\+Data\+File\+Mgr\+::\+Media\+\_\+\+Get\+Game\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0e}{C\+Data\+File\+Mgr\+::\+E\+Media\+Type}}}]{Type,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Flatten }\end{DoxyParamCaption})}
+
+Get the list of media stored in the specified path. \mbox{\Hypertarget{class_c_data_file_mgr_a81203b481294198111943cf76c4ab4af}\label{class_c_data_file_mgr_a81203b481294198111943cf76c4ab4af}} 
+\index{CDataFileMgr@{CDataFileMgr}!Media\_GetGameList@{Media\_GetGameList}}
+\index{Media\_GetGameList@{Media\_GetGameList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Media\_GetGameList()}{Media\_GetGameList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___file_list}{C\+Task\+Result\+\_\+\+File\+List}} C\+Data\+File\+Mgr\+::\+Media\+\_\+\+Get\+Game\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_data_file_mgr_a8d044930c5b1d83e51f7bf0ccdc08b0e}{C\+Data\+File\+Mgr\+::\+E\+Media\+Type}}}]{Type,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Flatten,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+By\+Name\+Else\+By\+Date,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+Order\+Asc }\end{DoxyParamCaption})}
+
+Get the list of media stored according to the filters in the specified path. \mbox{\Hypertarget{class_c_data_file_mgr_a7cddbc5bfedd329fd8b5e44e9ba24936}\label{class_c_data_file_mgr_a7cddbc5bfedd329fd8b5e44e9ba24936}} 
+\index{CDataFileMgr@{CDataFileMgr}!Pack\_DownloadOrUpdate@{Pack\_DownloadOrUpdate}}
+\index{Pack\_DownloadOrUpdate@{Pack\_DownloadOrUpdate}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Pack\_DownloadOrUpdate()}{Pack\_DownloadOrUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} C\+Data\+File\+Mgr\+::\+Pack\+\_\+\+Download\+Or\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Display\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Url }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a11104be92670ef7515e13bea7ecc7df4}\label{class_c_data_file_mgr_a11104be92670ef7515e13bea7ecc7df4}} 
+\index{CDataFileMgr@{CDataFileMgr}!Replay\_Author\_Save@{Replay\_Author\_Save}}
+\index{Replay\_Author\_Save@{Replay\_Author\_Save}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Replay\_Author\_Save()}{Replay\_Author\_Save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} C\+Data\+File\+Mgr\+::\+Replay\+\_\+\+Author\+\_\+\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_map}{C\+Map}}}]{Map,  }\item[{\mbox{\hyperlink{class_c_ghost}{C\+Ghost}}}]{Ghost }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_ab343ebe751ab4cba48e4f856130a26cf}\label{class_c_data_file_mgr_ab343ebe751ab4cba48e4f856130a26cf}} 
+\index{CDataFileMgr@{CDataFileMgr}!Replay\_GetFilteredGameList@{Replay\_GetFilteredGameList}}
+\index{Replay\_GetFilteredGameList@{Replay\_GetFilteredGameList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Replay\_GetFilteredGameList()}{Replay\_GetFilteredGameList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___replay_list}{C\+Task\+Result\+\_\+\+Replay\+List}} C\+Data\+File\+Mgr\+::\+Replay\+\_\+\+Get\+Filtered\+Game\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Scope,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Flatten,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+By\+Name\+Else\+By\+Date,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+Order\+Asc }\end{DoxyParamCaption})}
+
+Get the list of replay stored in the specified path. Scope is used to specify if the list is retrieved from game data (1), title data (2) or user data (4), which can be added. \mbox{\Hypertarget{class_c_data_file_mgr_a024f454939c806b9bfe20cc539523259}\label{class_c_data_file_mgr_a024f454939c806b9bfe20cc539523259}} 
+\index{CDataFileMgr@{CDataFileMgr}!Replay\_GetGameList@{Replay\_GetGameList}}
+\index{Replay\_GetGameList@{Replay\_GetGameList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Replay\_GetGameList()}{Replay\_GetGameList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___replay_list}{C\+Task\+Result\+\_\+\+Replay\+List}} C\+Data\+File\+Mgr\+::\+Replay\+\_\+\+Get\+Game\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Flatten }\end{DoxyParamCaption})}
+
+Get the list of replay stored in the specified path. \mbox{\Hypertarget{class_c_data_file_mgr_ad0582a02457711fc55c1402c615d0396}\label{class_c_data_file_mgr_ad0582a02457711fc55c1402c615d0396}} 
+\index{CDataFileMgr@{CDataFileMgr}!Replay\_GetGameList@{Replay\_GetGameList}}
+\index{Replay\_GetGameList@{Replay\_GetGameList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Replay\_GetGameList()}{Replay\_GetGameList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___replay_list}{C\+Task\+Result\+\_\+\+Replay\+List}} C\+Data\+File\+Mgr\+::\+Replay\+\_\+\+Get\+Game\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Flatten,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+By\+Name\+Else\+By\+Date,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Sort\+Order\+Asc }\end{DoxyParamCaption})}
+
+Get the list of replay stored according to the filters in the specified path. \mbox{\Hypertarget{class_c_data_file_mgr_aea036184108318f2e4f607d851bd4462}\label{class_c_data_file_mgr_aea036184108318f2e4f607d851bd4462}} 
+\index{CDataFileMgr@{CDataFileMgr}!Replay\_Load@{Replay\_Load}}
+\index{Replay\_Load@{Replay\_Load}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Replay\_Load()}{Replay\_Load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___ghost_list}{C\+Task\+Result\+\_\+\+Ghost\+List}} C\+Data\+File\+Mgr\+::\+Replay\+\_\+\+Load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path }\end{DoxyParamCaption})}
+
+Get the list of ghosts from the replay stored at the specified file path. \mbox{\Hypertarget{class_c_data_file_mgr_ad924929b95fb71bb4b526d633c307206}\label{class_c_data_file_mgr_ad924929b95fb71bb4b526d633c307206}} 
+\index{CDataFileMgr@{CDataFileMgr}!Replay\_RefreshFromDisk@{Replay\_RefreshFromDisk}}
+\index{Replay\_RefreshFromDisk@{Replay\_RefreshFromDisk}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Replay\_RefreshFromDisk()}{Replay\_RefreshFromDisk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Data\+File\+Mgr\+::\+Replay\+\_\+\+Refresh\+From\+Disk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a6a9acb591af1a863cf9b3bb01e2326c4}\label{class_c_data_file_mgr_a6a9acb591af1a863cf9b3bb01e2326c4}} 
+\index{CDataFileMgr@{CDataFileMgr}!Replay\_Save@{Replay\_Save}}
+\index{Replay\_Save@{Replay\_Save}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Replay\_Save()}{Replay\_Save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} C\+Data\+File\+Mgr\+::\+Replay\+\_\+\+Save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Path,  }\item[{\mbox{\hyperlink{class_c_map}{C\+Map}}}]{Map,  }\item[{\mbox{\hyperlink{class_c_ghost}{C\+Ghost}}}]{Ghost }\end{DoxyParamCaption})}
+
+Save the map and the ghost into a replay file stored at the specified path. \mbox{\Hypertarget{class_c_data_file_mgr_a8a29e45ba71639d24591b14f750c7669}\label{class_c_data_file_mgr_a8a29e45ba71639d24591b14f750c7669}} 
+\index{CDataFileMgr@{CDataFileMgr}!Skin\_NadeoServices\_Get@{Skin\_NadeoServices\_Get}}
+\index{Skin\_NadeoServices\_Get@{Skin\_NadeoServices\_Get}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Skin\_NadeoServices\_Get()}{Skin\_NadeoServices\_Get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_skin}{C\+Task\+Result\+\_\+\+N\+S\+Skin}} C\+Data\+File\+Mgr\+::\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Skin\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a02d5138f7fcd66f96f386fe0ef7dc12b}\label{class_c_data_file_mgr_a02d5138f7fcd66f96f386fe0ef7dc12b}} 
+\index{CDataFileMgr@{CDataFileMgr}!Skin\_NadeoServices\_GetFromChecksum@{Skin\_NadeoServices\_GetFromChecksum}}
+\index{Skin\_NadeoServices\_GetFromChecksum@{Skin\_NadeoServices\_GetFromChecksum}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Skin\_NadeoServices\_GetFromChecksum()}{Skin\_NadeoServices\_GetFromChecksum()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_skin}{C\+Task\+Result\+\_\+\+N\+S\+Skin}} C\+Data\+File\+Mgr\+::\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+From\+Checksum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Skin\+Checksum }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a62a57bac95eadb22b340a07a6f8a36a8}\label{class_c_data_file_mgr_a62a57bac95eadb22b340a07a6f8a36a8}} 
+\index{CDataFileMgr@{CDataFileMgr}!Skin\_NadeoServices\_GetList@{Skin\_NadeoServices\_GetList}}
+\index{Skin\_NadeoServices\_GetList@{Skin\_NadeoServices\_GetList}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Skin\_NadeoServices\_GetList()}{Skin\_NadeoServices\_GetList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_skin_list}{C\+Task\+Result\+\_\+\+N\+S\+Skin\+List}} C\+Data\+File\+Mgr\+::\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$}]{Skin\+Id\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_acd1ba985d98646c30fdc8e8b7b9f099c}\label{class_c_data_file_mgr_acd1ba985d98646c30fdc8e8b7b9f099c}} 
+\index{CDataFileMgr@{CDataFileMgr}!Skin\_NadeoServices\_GetListFromChecksum@{Skin\_NadeoServices\_GetListFromChecksum}}
+\index{Skin\_NadeoServices\_GetListFromChecksum@{Skin\_NadeoServices\_GetListFromChecksum}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Skin\_NadeoServices\_GetListFromChecksum()}{Skin\_NadeoServices\_GetListFromChecksum()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_skin_list}{C\+Task\+Result\+\_\+\+N\+S\+Skin\+List}} C\+Data\+File\+Mgr\+::\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List\+From\+Checksum (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$}]{Skin\+Checksum\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a98f4353297d91a83856a6f2e4b47e1de}\label{class_c_data_file_mgr_a98f4353297d91a83856a6f2e4b47e1de}} 
+\index{CDataFileMgr@{CDataFileMgr}!Skin\_NadeoServices\_GetListFromUser@{Skin\_NadeoServices\_GetListFromUser}}
+\index{Skin\_NadeoServices\_GetListFromUser@{Skin\_NadeoServices\_GetListFromUser}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Skin\_NadeoServices\_GetListFromUser()}{Skin\_NadeoServices\_GetListFromUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_skin_list}{C\+Task\+Result\+\_\+\+N\+S\+Skin\+List}} C\+Data\+File\+Mgr\+::\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Get\+List\+From\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Web\+Services\+User\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a10fae2603b4a3e41844b6f6cdd8fe604}\label{class_c_data_file_mgr_a10fae2603b4a3e41844b6f6cdd8fe604}} 
+\index{CDataFileMgr@{CDataFileMgr}!Skin\_NadeoServices\_Register@{Skin\_NadeoServices\_Register}}
+\index{Skin\_NadeoServices\_Register@{Skin\_NadeoServices\_Register}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Skin\_NadeoServices\_Register()}{Skin\_NadeoServices\_Register()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___n_s_skin}{C\+Task\+Result\+\_\+\+N\+S\+Skin}} C\+Data\+File\+Mgr\+::\+Skin\+\_\+\+Nadeo\+Services\+\_\+\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Skin\+Display\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Skin\+File\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_data_file_mgr_a54a96c90c99682164b4b6ad0595f702f}\label{class_c_data_file_mgr_a54a96c90c99682164b4b6ad0595f702f}} 
+\index{CDataFileMgr@{CDataFileMgr}!TaskResult\_Release@{TaskResult\_Release}}
+\index{TaskResult\_Release@{TaskResult\_Release}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{TaskResult\_Release()}{TaskResult\_Release()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Data\+File\+Mgr\+::\+Task\+Result\+\_\+\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Task\+Id }\end{DoxyParamCaption})}
+
+Release a task result no more used. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_data_file_mgr_a2c841aac6e46e8d5f3ef27be330acf5e}\label{class_c_data_file_mgr_a2c841aac6e46e8d5f3ef27be330acf5e}} 
+\index{CDataFileMgr@{CDataFileMgr}!Campaigns@{Campaigns}}
+\index{Campaigns@{Campaigns}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Campaigns}{Campaigns}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_campaign}{C\+Campaign}}$>$ C\+Data\+File\+Mgr\+::\+Campaigns}
+
+\mbox{\hyperlink{struct_array}{Array}} of campaigns. \mbox{\Hypertarget{class_c_data_file_mgr_acc7e307d74b35b80a3a9a854247fd6cb}\label{class_c_data_file_mgr_acc7e307d74b35b80a3a9a854247fd6cb}} 
+\index{CDataFileMgr@{CDataFileMgr}!Ghosts@{Ghosts}}
+\index{Ghosts@{Ghosts}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{Ghosts}{Ghosts}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_ghost}{C\+Ghost}}$>$ C\+Data\+File\+Mgr\+::\+Ghosts}
+
+\mbox{\hyperlink{struct_array}{Array}} of ghosts. \mbox{\Hypertarget{class_c_data_file_mgr_afd7a4a931a309f7876668e5d514f879e}\label{class_c_data_file_mgr_afd7a4a931a309f7876668e5d514f879e}} 
+\index{CDataFileMgr@{CDataFileMgr}!TaskResults@{TaskResults}}
+\index{TaskResults@{TaskResults}!CDataFileMgr@{CDataFileMgr}}
+\doxysubsubsection{\texorpdfstring{TaskResults}{TaskResults}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}}$>$ C\+Data\+File\+Mgr\+::\+Task\+Results}
+
+\mbox{\hyperlink{struct_array}{Array}} of task results. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

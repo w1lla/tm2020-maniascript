@@ -1,0 +1,220 @@
+\hypertarget{class_c_title_edition}{}\doxysection{C\+Title\+Edition Class Reference}
+\label{class_c_title_edition}\index{CTitleEdition@{CTitleEdition}}
+
+
+A\+PI for titles in edition mode.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Title\+Edition\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_title_edition}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_title_edition_a210f7ae54e223d828227be675193ff4c}{E\+Drive}} \{ \mbox{\hyperlink{class_c_title_edition_a210f7ae54e223d828227be675193ff4cad73b34f4669980bee35cfafbc6e6e46e}{Title\+Readable}}, 
+\mbox{\hyperlink{class_c_title_edition_a210f7ae54e223d828227be675193ff4cab962977e812e933604e681ff63e1471a}{Title}}, 
+\mbox{\hyperlink{class_c_title_edition_a210f7ae54e223d828227be675193ff4caa3d0fd56fd3d690646aa279fe1885419}{User}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_title_edition_af9001db786edfd953afe2bfbb27ff417}{File\+\_\+\+Import\+From\+User}} (\mbox{\hyperlink{struct_text}{Text}} File\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_title_edition_ab1f405e206735748f4849872eece3bfd}{File\+\_\+\+Move}} (\mbox{\hyperlink{struct_text}{Text}} Orig\+Name, \mbox{\hyperlink{struct_text}{Text}} Dest\+Name\+Or\+Folder, \mbox{\hyperlink{struct_boolean}{Boolean}} Keep\+Original\+Copy)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_title_edition_a4c3fa3f78268de6d03c77cfb5ac13bed}{File\+\_\+\+Exists}} (\mbox{\hyperlink{struct_text}{Text}} File\+Name, \mbox{\hyperlink{class_c_title_edition_a210f7ae54e223d828227be675193ff4c}{C\+Title\+Edition\+::\+E\+Drive}} In\+Drive)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_title_edition_abc0a76a802f839893e6a7bb06aed421b}{File\+\_\+\+Delete}} (\mbox{\hyperlink{struct_text}{Text}} Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_title_edition_a679627a192081de69818078a77f9cb7a}{File\+\_\+\+Write\+Text}} (\mbox{\hyperlink{struct_text}{Text}} File\+Name, \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{struct_text}{Text}})
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_title_edition_a0fce53bbe07692ffb062b0b9f46ea02c}{File\+\_\+\+Read\+Text}} (\mbox{\hyperlink{struct_text}{Text}} File\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_title_edition_aece3a146b0eba4765375e51eb94a7595}{Dialog\+\_\+\+Import\+Files}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_title_edition_a23d68de812233a0e4dd8757503d5ad1c}{Open\+Title\+Folder\+In\+Explorer}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_title_edition_a5be435d0ffa0dd006a2092490831e4d0}{Reload\+Title\+Desc}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_title_edition_ac9abfd0aac766e524700d5b222f9cea9}{Save\+Title\+Desc}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_title_edition_a28391c9a47a541b7877c5745d8e1e519}{Set\+Title\+Campaign}} (\mbox{\hyperlink{struct_integer}{Integer}} Campaign\+Num, \mbox{\hyperlink{struct_text}{Text}} Score\+Context, \mbox{\hyperlink{struct_text}{Text}} Maps\+Folder\+Name\+Or\+Play\+List\+Name, \mbox{\hyperlink{struct_boolean}{Boolean}} Official\+Record\+Enabled)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_title_edition_a2e24e417d823eac6e3dd0abb06ef1056}{Set\+Title\+Campaign}} (\mbox{\hyperlink{struct_integer}{Integer}} Campaign\+Num, \mbox{\hyperlink{struct_text}{Text}} Score\+Context, \mbox{\hyperlink{struct_text}{Text}} Maps\+Folder\+Name\+Or\+Play\+List\+Name, \mbox{\hyperlink{struct_boolean}{Boolean}} Official\+Record\+Enabled, \mbox{\hyperlink{struct_boolean}{Boolean}} Disable\+Unlock\+System)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_c_title}{C\+Title}} \mbox{\hyperlink{class_c_title_edition_a53aa4c5ee6de93fb70ad21d65d0df108}{Title\+Maker}}
+\item 
+const \mbox{\hyperlink{class_c_pack_creator}{C\+Pack\+Creator}} \mbox{\hyperlink{class_c_title_edition_a680a8379575153c266d7a367896c4754}{Pack\+Creator}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_title_edition_ae739f11e6ab90515989403bff8f04c96}{Edited\+Title\+Id}}
+\item 
+const \mbox{\hyperlink{class_c_pack_creator_title_info}{C\+Pack\+Creator\+Title\+Info}} \mbox{\hyperlink{class_c_title_edition_a54229adf39c9a81e661440370dd6ff93}{Edited\+Title\+Info}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_title_edition_a52a8a779c8eaef5b6d81e885a900c2b8}{Dialog\+\_\+\+Is\+Finished}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_title_edition_a77ea63059339fc42065a5f63be95f29f}{Dialog\+\_\+\+Success}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_title_edition_af773addd9aed272d00c828772f73ef65}{Dialog\+\_\+\+Aborted}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A\+PI for titles in edition mode. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_title_edition_a210f7ae54e223d828227be675193ff4c}\label{class_c_title_edition_a210f7ae54e223d828227be675193ff4c}} 
+\index{CTitleEdition@{CTitleEdition}!EDrive@{EDrive}}
+\index{EDrive@{EDrive}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{EDrive}{EDrive}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_title_edition_a210f7ae54e223d828227be675193ff4c}{C\+Title\+Edition\+::\+E\+Drive}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TitleReadable@{TitleReadable}!CTitleEdition@{CTitleEdition}}\index{CTitleEdition@{CTitleEdition}!TitleReadable@{TitleReadable}}}\mbox{\Hypertarget{class_c_title_edition_a210f7ae54e223d828227be675193ff4cad73b34f4669980bee35cfafbc6e6e46e}\label{class_c_title_edition_a210f7ae54e223d828227be675193ff4cad73b34f4669980bee35cfafbc6e6e46e}} 
+Title\+Readable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Title@{Title}!CTitleEdition@{CTitleEdition}}\index{CTitleEdition@{CTitleEdition}!Title@{Title}}}\mbox{\Hypertarget{class_c_title_edition_a210f7ae54e223d828227be675193ff4cab962977e812e933604e681ff63e1471a}\label{class_c_title_edition_a210f7ae54e223d828227be675193ff4cab962977e812e933604e681ff63e1471a}} 
+Title&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{User@{User}!CTitleEdition@{CTitleEdition}}\index{CTitleEdition@{CTitleEdition}!User@{User}}}\mbox{\Hypertarget{class_c_title_edition_a210f7ae54e223d828227be675193ff4caa3d0fd56fd3d690646aa279fe1885419}\label{class_c_title_edition_a210f7ae54e223d828227be675193ff4caa3d0fd56fd3d690646aa279fe1885419}} 
+User&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_title_edition_aece3a146b0eba4765375e51eb94a7595}\label{class_c_title_edition_aece3a146b0eba4765375e51eb94a7595}} 
+\index{CTitleEdition@{CTitleEdition}!Dialog\_ImportFiles@{Dialog\_ImportFiles}}
+\index{Dialog\_ImportFiles@{Dialog\_ImportFiles}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{Dialog\_ImportFiles()}{Dialog\_ImportFiles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Title\+Edition\+::\+Dialog\+\_\+\+Import\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_title_edition_abc0a76a802f839893e6a7bb06aed421b}\label{class_c_title_edition_abc0a76a802f839893e6a7bb06aed421b}} 
+\index{CTitleEdition@{CTitleEdition}!File\_Delete@{File\_Delete}}
+\index{File\_Delete@{File\_Delete}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{File\_Delete()}{File\_Delete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Title\+Edition\+::\+File\+\_\+\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_title_edition_a4c3fa3f78268de6d03c77cfb5ac13bed}\label{class_c_title_edition_a4c3fa3f78268de6d03c77cfb5ac13bed}} 
+\index{CTitleEdition@{CTitleEdition}!File\_Exists@{File\_Exists}}
+\index{File\_Exists@{File\_Exists}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{File\_Exists()}{File\_Exists()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Title\+Edition\+::\+File\+\_\+\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File\+Name,  }\item[{\mbox{\hyperlink{class_c_title_edition_a210f7ae54e223d828227be675193ff4c}{C\+Title\+Edition\+::\+E\+Drive}}}]{In\+Drive }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_title_edition_af9001db786edfd953afe2bfbb27ff417}\label{class_c_title_edition_af9001db786edfd953afe2bfbb27ff417}} 
+\index{CTitleEdition@{CTitleEdition}!File\_ImportFromUser@{File\_ImportFromUser}}
+\index{File\_ImportFromUser@{File\_ImportFromUser}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{File\_ImportFromUser()}{File\_ImportFromUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Title\+Edition\+::\+File\+\_\+\+Import\+From\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File\+Name }\end{DoxyParamCaption})}
+
+Will copy file \textquotesingle{}File\+Name\textquotesingle{} from the User\+Dir to the Title\+Dir, including its dependencies. \mbox{\Hypertarget{class_c_title_edition_ab1f405e206735748f4849872eece3bfd}\label{class_c_title_edition_ab1f405e206735748f4849872eece3bfd}} 
+\index{CTitleEdition@{CTitleEdition}!File\_Move@{File\_Move}}
+\index{File\_Move@{File\_Move}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{File\_Move()}{File\_Move()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Title\+Edition\+::\+File\+\_\+\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Orig\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Dest\+Name\+Or\+Folder,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Keep\+Original\+Copy }\end{DoxyParamCaption})}
+
+Will move or copy file \textquotesingle{}Orig\+Name\textquotesingle{} to \textquotesingle{}Dest\+Name\textquotesingle{}. If Dest\+Name is a \textquotesingle{}\textbackslash{}\textquotesingle{} terminated folder path, keeps the orginial short name. \mbox{\Hypertarget{class_c_title_edition_a0fce53bbe07692ffb062b0b9f46ea02c}\label{class_c_title_edition_a0fce53bbe07692ffb062b0b9f46ea02c}} 
+\index{CTitleEdition@{CTitleEdition}!File\_ReadText@{File\_ReadText}}
+\index{File\_ReadText@{File\_ReadText}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{File\_ReadText()}{File\_ReadText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Title\+Edition\+::\+File\+\_\+\+Read\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_title_edition_a679627a192081de69818078a77f9cb7a}\label{class_c_title_edition_a679627a192081de69818078a77f9cb7a}} 
+\index{CTitleEdition@{CTitleEdition}!File\_WriteText@{File\_WriteText}}
+\index{File\_WriteText@{File\_WriteText}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{File\_WriteText()}{File\_WriteText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Title\+Edition\+::\+File\+\_\+\+Write\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Text }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_title_edition_a23d68de812233a0e4dd8757503d5ad1c}\label{class_c_title_edition_a23d68de812233a0e4dd8757503d5ad1c}} 
+\index{CTitleEdition@{CTitleEdition}!OpenTitleFolderInExplorer@{OpenTitleFolderInExplorer}}
+\index{OpenTitleFolderInExplorer@{OpenTitleFolderInExplorer}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{OpenTitleFolderInExplorer()}{OpenTitleFolderInExplorer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Title\+Edition\+::\+Open\+Title\+Folder\+In\+Explorer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_title_edition_a5be435d0ffa0dd006a2092490831e4d0}\label{class_c_title_edition_a5be435d0ffa0dd006a2092490831e4d0}} 
+\index{CTitleEdition@{CTitleEdition}!ReloadTitleDesc@{ReloadTitleDesc}}
+\index{ReloadTitleDesc@{ReloadTitleDesc}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{ReloadTitleDesc()}{ReloadTitleDesc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Title\+Edition\+::\+Reload\+Title\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_title_edition_ac9abfd0aac766e524700d5b222f9cea9}\label{class_c_title_edition_ac9abfd0aac766e524700d5b222f9cea9}} 
+\index{CTitleEdition@{CTitleEdition}!SaveTitleDesc@{SaveTitleDesc}}
+\index{SaveTitleDesc@{SaveTitleDesc}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{SaveTitleDesc()}{SaveTitleDesc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Title\+Edition\+::\+Save\+Title\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_title_edition_a28391c9a47a541b7877c5745d8e1e519}\label{class_c_title_edition_a28391c9a47a541b7877c5745d8e1e519}} 
+\index{CTitleEdition@{CTitleEdition}!SetTitleCampaign@{SetTitleCampaign}}
+\index{SetTitleCampaign@{SetTitleCampaign}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{SetTitleCampaign()}{SetTitleCampaign()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Title\+Edition\+::\+Set\+Title\+Campaign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Campaign\+Num,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Score\+Context,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Maps\+Folder\+Name\+Or\+Play\+List\+Name,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Official\+Record\+Enabled }\end{DoxyParamCaption})}
+
+nb\+: The maps from the campaign are automatically added to the pack, no need to Build\+\_\+\+Add\+File(). \mbox{\Hypertarget{class_c_title_edition_a2e24e417d823eac6e3dd0abb06ef1056}\label{class_c_title_edition_a2e24e417d823eac6e3dd0abb06ef1056}} 
+\index{CTitleEdition@{CTitleEdition}!SetTitleCampaign@{SetTitleCampaign}}
+\index{SetTitleCampaign@{SetTitleCampaign}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{SetTitleCampaign()}{SetTitleCampaign()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Title\+Edition\+::\+Set\+Title\+Campaign (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Campaign\+Num,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Score\+Context,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Maps\+Folder\+Name\+Or\+Play\+List\+Name,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Official\+Record\+Enabled,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Disable\+Unlock\+System }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_title_edition_af773addd9aed272d00c828772f73ef65}\label{class_c_title_edition_af773addd9aed272d00c828772f73ef65}} 
+\index{CTitleEdition@{CTitleEdition}!Dialog\_Aborted@{Dialog\_Aborted}}
+\index{Dialog\_Aborted@{Dialog\_Aborted}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{Dialog\_Aborted}{Dialog\_Aborted}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Title\+Edition\+::\+Dialog\+\_\+\+Aborted}
+
+\mbox{\Hypertarget{class_c_title_edition_a52a8a779c8eaef5b6d81e885a900c2b8}\label{class_c_title_edition_a52a8a779c8eaef5b6d81e885a900c2b8}} 
+\index{CTitleEdition@{CTitleEdition}!Dialog\_IsFinished@{Dialog\_IsFinished}}
+\index{Dialog\_IsFinished@{Dialog\_IsFinished}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{Dialog\_IsFinished}{Dialog\_IsFinished}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Title\+Edition\+::\+Dialog\+\_\+\+Is\+Finished}
+
+\mbox{\Hypertarget{class_c_title_edition_a77ea63059339fc42065a5f63be95f29f}\label{class_c_title_edition_a77ea63059339fc42065a5f63be95f29f}} 
+\index{CTitleEdition@{CTitleEdition}!Dialog\_Success@{Dialog\_Success}}
+\index{Dialog\_Success@{Dialog\_Success}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{Dialog\_Success}{Dialog\_Success}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Title\+Edition\+::\+Dialog\+\_\+\+Success}
+
+\mbox{\Hypertarget{class_c_title_edition_ae739f11e6ab90515989403bff8f04c96}\label{class_c_title_edition_ae739f11e6ab90515989403bff8f04c96}} 
+\index{CTitleEdition@{CTitleEdition}!EditedTitleId@{EditedTitleId}}
+\index{EditedTitleId@{EditedTitleId}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{EditedTitleId}{EditedTitleId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Title\+Edition\+::\+Edited\+Title\+Id}
+
+\mbox{\Hypertarget{class_c_title_edition_a54229adf39c9a81e661440370dd6ff93}\label{class_c_title_edition_a54229adf39c9a81e661440370dd6ff93}} 
+\index{CTitleEdition@{CTitleEdition}!EditedTitleInfo@{EditedTitleInfo}}
+\index{EditedTitleInfo@{EditedTitleInfo}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{EditedTitleInfo}{EditedTitleInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_pack_creator_title_info}{C\+Pack\+Creator\+Title\+Info}} C\+Title\+Edition\+::\+Edited\+Title\+Info}
+
+\mbox{\Hypertarget{class_c_title_edition_a680a8379575153c266d7a367896c4754}\label{class_c_title_edition_a680a8379575153c266d7a367896c4754}} 
+\index{CTitleEdition@{CTitleEdition}!PackCreator@{PackCreator}}
+\index{PackCreator@{PackCreator}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{PackCreator}{PackCreator}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_pack_creator}{C\+Pack\+Creator}} C\+Title\+Edition\+::\+Pack\+Creator}
+
+Pack\+Creator -\/ only available when the title author is the current logged user. \mbox{\Hypertarget{class_c_title_edition_a53aa4c5ee6de93fb70ad21d65d0df108}\label{class_c_title_edition_a53aa4c5ee6de93fb70ad21d65d0df108}} 
+\index{CTitleEdition@{CTitleEdition}!TitleMaker@{TitleMaker}}
+\index{TitleMaker@{TitleMaker}!CTitleEdition@{CTitleEdition}}
+\doxysubsubsection{\texorpdfstring{TitleMaker}{TitleMaker}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_title}{C\+Title}} C\+Title\+Edition\+::\+Title\+Maker}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

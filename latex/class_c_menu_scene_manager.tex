@@ -1,0 +1,64 @@
+\hypertarget{class_c_menu_scene_manager}{}\doxysection{C\+Menu\+Scene\+Manager Class Reference}
+\label{class_c_menu_scene_manager}\index{CMenuSceneManager@{CMenuSceneManager}}
+
+
+Create scenes for use in menus with $<$\+Camera$>$ manialink element.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Menu\+Scene\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_menu_scene_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_menu_scene_manager_aa5486420a2f7cd5ea166b466234b7b83}{Scene\+Create}} (\mbox{\hyperlink{struct_text}{Text}} Layout\+File\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_menu_scene_manager_aa80e6241b483ca0369435521b3e6085a}{Scene\+Destroy}} (\mbox{\hyperlink{struct_ident}{Ident}} Scene\+Id)
+\item 
+\mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_menu_scene_manager_a2bbe9afae9bd4ee32ebdccf545f24196}{Item\+Create}} (\mbox{\hyperlink{struct_ident}{Ident}} Scene\+Id, \mbox{\hyperlink{struct_text}{Text}} Model\+Name, \mbox{\hyperlink{struct_text}{Text}} Skin\+Name, \mbox{\hyperlink{struct_text}{Text}} Skin\+Url)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_menu_scene_manager_a988592eb4b33aae15681aa14be4eb0d1}{Item\+Destroy}} (\mbox{\hyperlink{struct_ident}{Ident}} Scene\+Id, \mbox{\hyperlink{struct_ident}{Ident}} Item\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Create scenes for use in menus with $<$\+Camera$>$ manialink element. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_menu_scene_manager_a2bbe9afae9bd4ee32ebdccf545f24196}\label{class_c_menu_scene_manager_a2bbe9afae9bd4ee32ebdccf545f24196}} 
+\index{CMenuSceneManager@{CMenuSceneManager}!ItemCreate@{ItemCreate}}
+\index{ItemCreate@{ItemCreate}!CMenuSceneManager@{CMenuSceneManager}}
+\doxysubsubsection{\texorpdfstring{ItemCreate()}{ItemCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ident}{Ident}} C\+Menu\+Scene\+Manager\+::\+Item\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Scene\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Model\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Skin\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Skin\+Url }\end{DoxyParamCaption})}
+
+Skin\+Name\+Or\+Url\+: can be \textquotesingle{}Skins/\+Model/....\textquotesingle{}, \textquotesingle{}\href{http://....'}{\texttt{ http\+://....\textquotesingle{}}}, \textquotesingle{}Default\textquotesingle{} (or \textquotesingle{}\textquotesingle{}) for item default skin, \textquotesingle{}Profile\textquotesingle{} for the user choice for the model. Model\+Name\+: item filename. \mbox{\Hypertarget{class_c_menu_scene_manager_a988592eb4b33aae15681aa14be4eb0d1}\label{class_c_menu_scene_manager_a988592eb4b33aae15681aa14be4eb0d1}} 
+\index{CMenuSceneManager@{CMenuSceneManager}!ItemDestroy@{ItemDestroy}}
+\index{ItemDestroy@{ItemDestroy}!CMenuSceneManager@{CMenuSceneManager}}
+\doxysubsubsection{\texorpdfstring{ItemDestroy()}{ItemDestroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Menu\+Scene\+Manager\+::\+Item\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Scene\+Id,  }\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Item\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_menu_scene_manager_aa5486420a2f7cd5ea166b466234b7b83}\label{class_c_menu_scene_manager_aa5486420a2f7cd5ea166b466234b7b83}} 
+\index{CMenuSceneManager@{CMenuSceneManager}!SceneCreate@{SceneCreate}}
+\index{SceneCreate@{SceneCreate}!CMenuSceneManager@{CMenuSceneManager}}
+\doxysubsubsection{\texorpdfstring{SceneCreate()}{SceneCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ident}{Ident}} C\+Menu\+Scene\+Manager\+::\+Scene\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Layout\+File\+Name }\end{DoxyParamCaption})}
+
+Layout\+File\+Name\+: can be \textquotesingle{}Default\textquotesingle{} (or \textquotesingle{}\textquotesingle{}) for default painter scene, \textquotesingle{}Empty\textquotesingle{} for a simple empty scene, or a filename to game data. \mbox{\Hypertarget{class_c_menu_scene_manager_aa80e6241b483ca0369435521b3e6085a}\label{class_c_menu_scene_manager_aa80e6241b483ca0369435521b3e6085a}} 
+\index{CMenuSceneManager@{CMenuSceneManager}!SceneDestroy@{SceneDestroy}}
+\index{SceneDestroy@{SceneDestroy}!CMenuSceneManager@{CMenuSceneManager}}
+\doxysubsubsection{\texorpdfstring{SceneDestroy()}{SceneDestroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Menu\+Scene\+Manager\+::\+Scene\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Scene\+Id }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,361 @@
+\hypertarget{class_c_input_manager}{}\doxysection{C\+Input\+Manager Class Reference}
+\label{class_c_input_manager}\index{CInputManager@{CInputManager}}
+
+
+Input devices.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Input\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_input_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebc}{E\+Button}} \{ \newline
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcab745c3db70756acfdd72199e2d827885}{Left}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca9964962a2db2dfc1ec9468c129352e8b}{Right}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcafd5e7273bb8557a43e4bfa9374ae0c2a}{Up}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca7437950dc3eaec809aeb0ba6e6e2a39b}{Down}}, 
+\newline
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca7ee189906a7a44ba933efb3ded45642f}{A}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcaeee9afd02e35626919b1238b02460d14}{B}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca8e45f65ce154dbb4bc1927609414ae14}{X}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca0fa6c89c0ab3172e15155319dae7f664}{Y}}, 
+\newline
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca37f8acbd039dcfcf0a3ffccd3f6e3a7b}{L1}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca05f13b46eb30922078b09d843af5d5b4}{R1}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca0c4b01df56704af465bca598b443366d}{Left\+Stick}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcaa0963bc8819e4dcdc8a9759f08d87bcc}{Right\+Stick}}, 
+\newline
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca9a7ecd0453a8a1cc3d7ed8ef1f07835f}{Menu}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcae21b7a8d95cf44c93ad36d21557e1568}{View}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca07771282b3a95c6564ffa2c1d5823a6b}{Left\+Stick\+\_\+\+Left}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca900955be077d434fccff6f7ccdaa91d6}{Left\+Stick\+\_\+\+Right}}, 
+\newline
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcac2f6dfead7ff7994cfce427758d90582}{Left\+Stick\+\_\+\+Up}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca696ea4f313576ee4bf84d338909ba18a}{Left\+Stick\+\_\+\+Down}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcae89b40afa480788fb34daa2b01b740a6}{Right\+Stick\+\_\+\+Left}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca12cc3dcbae5ebd901beb03af50b06f84}{Right\+Stick\+\_\+\+Right}}, 
+\newline
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca9110a1082fdf3cbf6ca71327f306c7fd}{Right\+Stick\+\_\+\+Up}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca6970f4fcd5f65cddde1eb73b3b8c6915}{Right\+Stick\+\_\+\+Down}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca6a3fa8cd50fb13700460380fe85ea6a8}{L2}}, 
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca1d292d262005f6e49421ba05e9ad6a24}{R2}}, 
+\newline
+\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca65d628744078c0ecf396b7a24ef962fc}{None}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_input_manager_a783b8d4a45da6751cbc37b23d8f77889}{Get\+Pad\+Button\+Playground\+Binding}} (\mbox{\hyperlink{class_c_input_pad}{C\+Input\+Pad}} Pad, \mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebc}{C\+Input\+Manager\+::\+E\+Button}} Button)
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_input_manager_aa1f51429fc95141cb3879966d64c46e9}{Get\+Pad\+Button\+Current\+Binding}} (\mbox{\hyperlink{class_c_input_pad}{C\+Input\+Pad}} Pad, \mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebc}{C\+Input\+Manager\+::\+E\+Button}} Button)
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_input_manager_a34b0f32ba7944567b039f46700f42a8e}{Get\+Action\+Binding}} (\mbox{\hyperlink{class_c_input_pad}{C\+Input\+Pad}} Pad, \mbox{\hyperlink{struct_text}{Text}} Action\+Map, \mbox{\hyperlink{struct_text}{Text}} Action\+Id)
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_input_manager_a45c03e1d21c1d670d6d53669c5b4c816}{Get\+Action\+Display\+Name}} (\mbox{\hyperlink{struct_text}{Text}} Action\+Map, \mbox{\hyperlink{struct_text}{Text}} Action\+Id)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_input_manager_a9da9dee03f531ef4e3869bacb927744d}{Is\+Key\+Pressed}} (\mbox{\hyperlink{struct_integer}{Integer}} Key\+Code)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_input_event}{C\+Input\+Event}} $>$ \mbox{\hyperlink{class_c_input_manager_a88b9a13be0af487179a32bde4591e6a5}{Pending\+Events}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_manager_a6d3f47c6880fc3f08af58a744bf2fbfd}{Now}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_manager_a7f07e0b5f4922a210f95cdfc5bf5d3b0}{Period}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_input_pad}{C\+Input\+Pad}} $>$ \mbox{\hyperlink{class_c_input_manager_a9831050a8638d05d2e7fc0c778b90851}{Pads}}
+\item 
+const \mbox{\hyperlink{struct_vec2}{Vec2}} \mbox{\hyperlink{class_c_input_manager_a62e6742393cba2493f89590fabaecb4b}{Mouse\+Pos}}
+\item 
+const \mbox{\hyperlink{struct_vec2}{Vec2}} \mbox{\hyperlink{class_c_input_manager_a4e9f52745bc8b74a7fbd4107cebc635a}{Mouse\+Kinetic\+Scroll\+Vel}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_input_manager_ac7be890ae0e221b4a34b46898d5e7ab1}{Mouse\+Left\+Button}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_input_manager_a3544e4bcafea3f141f3a7331c927193f}{Mouse\+Right\+Button}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_input_manager_a5bae0dd630522688114f53e21455b30e}{Mouse\+Middle\+Button}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_vec2}{Vec2}} $>$ \mbox{\hyperlink{class_c_input_manager_a9c012cdd86a380949375a4239da59b69}{Touch\+Points\+\_\+\+Cur}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_vec2}{Vec2}} $>$ \mbox{\hyperlink{class_c_input_manager_a9829927c8eeeac2f08bda425902ccbb0}{Touch\+Points\+\_\+\+Init}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_input_manager_aa2d4c5f02b479a0a3bdc46f91664a362}{Exclusive\+Mode}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_manager_afc08bda5d2689ed3f6828feb56ea169d}{Time\+Since\+Latest\+Activity}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_manager_ad9c15f0576ac38c52879fbf9e2d53de1}{Time\+Since\+Latest\+Mouse\+Activity}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_manager_a99cd8d9124059243f1a1d466e08179ae}{Time\+Since\+Latest\+Touch\+Activity}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_manager_a470545af1838f9db0dcd7f960b7d54b3}{Time\+Since\+Latest\+Keyboard\+Activity}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_manager_ac4e94928b003cc20828c315421701697}{Time\+Since\+Latest\+Pad\+Activity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Input devices. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebc}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebc}} 
+\index{CInputManager@{CInputManager}!EButton@{EButton}}
+\index{EButton@{EButton}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{EButton}{EButton}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebc}{C\+Input\+Manager\+::\+E\+Button}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!Left@{Left}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcab745c3db70756acfdd72199e2d827885}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcab745c3db70756acfdd72199e2d827885}} 
+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!Right@{Right}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca9964962a2db2dfc1ec9468c129352e8b}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca9964962a2db2dfc1ec9468c129352e8b}} 
+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Up@{Up}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!Up@{Up}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcafd5e7273bb8557a43e4bfa9374ae0c2a}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcafd5e7273bb8557a43e4bfa9374ae0c2a}} 
+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Down@{Down}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!Down@{Down}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca7437950dc3eaec809aeb0ba6e6e2a39b}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca7437950dc3eaec809aeb0ba6e6e2a39b}} 
+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A@{A}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!A@{A}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca7ee189906a7a44ba933efb3ded45642f}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca7ee189906a7a44ba933efb3ded45642f}} 
+A&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!B@{B}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcaeee9afd02e35626919b1238b02460d14}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcaeee9afd02e35626919b1238b02460d14}} 
+B&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X@{X}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!X@{X}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca8e45f65ce154dbb4bc1927609414ae14}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca8e45f65ce154dbb4bc1927609414ae14}} 
+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y@{Y}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!Y@{Y}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca0fa6c89c0ab3172e15155319dae7f664}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca0fa6c89c0ab3172e15155319dae7f664}} 
+Y&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L1@{L1}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!L1@{L1}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca37f8acbd039dcfcf0a3ffccd3f6e3a7b}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca37f8acbd039dcfcf0a3ffccd3f6e3a7b}} 
+L1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R1@{R1}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!R1@{R1}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca05f13b46eb30922078b09d843af5d5b4}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca05f13b46eb30922078b09d843af5d5b4}} 
+R1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftStick@{LeftStick}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!LeftStick@{LeftStick}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca0c4b01df56704af465bca598b443366d}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca0c4b01df56704af465bca598b443366d}} 
+Left\+Stick&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightStick@{RightStick}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!RightStick@{RightStick}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcaa0963bc8819e4dcdc8a9759f08d87bcc}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcaa0963bc8819e4dcdc8a9759f08d87bcc}} 
+Right\+Stick&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Menu@{Menu}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!Menu@{Menu}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca9a7ecd0453a8a1cc3d7ed8ef1f07835f}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca9a7ecd0453a8a1cc3d7ed8ef1f07835f}} 
+Menu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{View@{View}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!View@{View}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcae21b7a8d95cf44c93ad36d21557e1568}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcae21b7a8d95cf44c93ad36d21557e1568}} 
+View&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftStick\_Left@{LeftStick\_Left}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!LeftStick\_Left@{LeftStick\_Left}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca07771282b3a95c6564ffa2c1d5823a6b}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca07771282b3a95c6564ffa2c1d5823a6b}} 
+Left\+Stick\+\_\+\+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftStick\_Right@{LeftStick\_Right}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!LeftStick\_Right@{LeftStick\_Right}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca900955be077d434fccff6f7ccdaa91d6}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca900955be077d434fccff6f7ccdaa91d6}} 
+Left\+Stick\+\_\+\+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftStick\_Up@{LeftStick\_Up}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!LeftStick\_Up@{LeftStick\_Up}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcac2f6dfead7ff7994cfce427758d90582}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcac2f6dfead7ff7994cfce427758d90582}} 
+Left\+Stick\+\_\+\+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftStick\_Down@{LeftStick\_Down}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!LeftStick\_Down@{LeftStick\_Down}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca696ea4f313576ee4bf84d338909ba18a}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca696ea4f313576ee4bf84d338909ba18a}} 
+Left\+Stick\+\_\+\+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightStick\_Left@{RightStick\_Left}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!RightStick\_Left@{RightStick\_Left}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcae89b40afa480788fb34daa2b01b740a6}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebcae89b40afa480788fb34daa2b01b740a6}} 
+Right\+Stick\+\_\+\+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightStick\_Right@{RightStick\_Right}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!RightStick\_Right@{RightStick\_Right}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca12cc3dcbae5ebd901beb03af50b06f84}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca12cc3dcbae5ebd901beb03af50b06f84}} 
+Right\+Stick\+\_\+\+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightStick\_Up@{RightStick\_Up}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!RightStick\_Up@{RightStick\_Up}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca9110a1082fdf3cbf6ca71327f306c7fd}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca9110a1082fdf3cbf6ca71327f306c7fd}} 
+Right\+Stick\+\_\+\+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightStick\_Down@{RightStick\_Down}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!RightStick\_Down@{RightStick\_Down}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca6970f4fcd5f65cddde1eb73b3b8c6915}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca6970f4fcd5f65cddde1eb73b3b8c6915}} 
+Right\+Stick\+\_\+\+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L2@{L2}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!L2@{L2}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca6a3fa8cd50fb13700460380fe85ea6a8}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca6a3fa8cd50fb13700460380fe85ea6a8}} 
+L2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R2@{R2}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!R2@{R2}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca1d292d262005f6e49421ba05e9ad6a24}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca1d292d262005f6e49421ba05e9ad6a24}} 
+R2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CInputManager@{CInputManager}}\index{CInputManager@{CInputManager}!None@{None}}}\mbox{\Hypertarget{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca65d628744078c0ecf396b7a24ef962fc}\label{class_c_input_manager_a25712104af13a6238172a2bdedcbaebca65d628744078c0ecf396b7a24ef962fc}} 
+None&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_input_manager_a34b0f32ba7944567b039f46700f42a8e}\label{class_c_input_manager_a34b0f32ba7944567b039f46700f42a8e}} 
+\index{CInputManager@{CInputManager}!GetActionBinding@{GetActionBinding}}
+\index{GetActionBinding@{GetActionBinding}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{GetActionBinding()}{GetActionBinding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Input\+Manager\+::\+Get\+Action\+Binding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_input_pad}{C\+Input\+Pad}}}]{Pad,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Action\+Map,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Action\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_input_manager_a45c03e1d21c1d670d6d53669c5b4c816}\label{class_c_input_manager_a45c03e1d21c1d670d6d53669c5b4c816}} 
+\index{CInputManager@{CInputManager}!GetActionDisplayName@{GetActionDisplayName}}
+\index{GetActionDisplayName@{GetActionDisplayName}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{GetActionDisplayName()}{GetActionDisplayName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Input\+Manager\+::\+Get\+Action\+Display\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Action\+Map,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Action\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_input_manager_aa1f51429fc95141cb3879966d64c46e9}\label{class_c_input_manager_aa1f51429fc95141cb3879966d64c46e9}} 
+\index{CInputManager@{CInputManager}!GetPadButtonCurrentBinding@{GetPadButtonCurrentBinding}}
+\index{GetPadButtonCurrentBinding@{GetPadButtonCurrentBinding}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{GetPadButtonCurrentBinding()}{GetPadButtonCurrentBinding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Input\+Manager\+::\+Get\+Pad\+Button\+Current\+Binding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_input_pad}{C\+Input\+Pad}}}]{Pad,  }\item[{\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebc}{C\+Input\+Manager\+::\+E\+Button}}}]{Button }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_input_manager_a783b8d4a45da6751cbc37b23d8f77889}\label{class_c_input_manager_a783b8d4a45da6751cbc37b23d8f77889}} 
+\index{CInputManager@{CInputManager}!GetPadButtonPlaygroundBinding@{GetPadButtonPlaygroundBinding}}
+\index{GetPadButtonPlaygroundBinding@{GetPadButtonPlaygroundBinding}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{GetPadButtonPlaygroundBinding()}{GetPadButtonPlaygroundBinding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Input\+Manager\+::\+Get\+Pad\+Button\+Playground\+Binding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_input_pad}{C\+Input\+Pad}}}]{Pad,  }\item[{\mbox{\hyperlink{class_c_input_manager_a25712104af13a6238172a2bdedcbaebc}{C\+Input\+Manager\+::\+E\+Button}}}]{Button }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_input_manager_a9da9dee03f531ef4e3869bacb927744d}\label{class_c_input_manager_a9da9dee03f531ef4e3869bacb927744d}} 
+\index{CInputManager@{CInputManager}!IsKeyPressed@{IsKeyPressed}}
+\index{IsKeyPressed@{IsKeyPressed}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{IsKeyPressed()}{IsKeyPressed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Input\+Manager\+::\+Is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Key\+Code }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_input_manager_aa2d4c5f02b479a0a3bdc46f91664a362}\label{class_c_input_manager_aa2d4c5f02b479a0a3bdc46f91664a362}} 
+\index{CInputManager@{CInputManager}!ExclusiveMode@{ExclusiveMode}}
+\index{ExclusiveMode@{ExclusiveMode}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{ExclusiveMode}{ExclusiveMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Input\+Manager\+::\+Exclusive\+Mode}
+
+\mbox{\Hypertarget{class_c_input_manager_a4e9f52745bc8b74a7fbd4107cebc635a}\label{class_c_input_manager_a4e9f52745bc8b74a7fbd4107cebc635a}} 
+\index{CInputManager@{CInputManager}!MouseKineticScrollVel@{MouseKineticScrollVel}}
+\index{MouseKineticScrollVel@{MouseKineticScrollVel}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{MouseKineticScrollVel}{MouseKineticScrollVel}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_vec2}{Vec2}} C\+Input\+Manager\+::\+Mouse\+Kinetic\+Scroll\+Vel}
+
+\mbox{\Hypertarget{class_c_input_manager_ac7be890ae0e221b4a34b46898d5e7ab1}\label{class_c_input_manager_ac7be890ae0e221b4a34b46898d5e7ab1}} 
+\index{CInputManager@{CInputManager}!MouseLeftButton@{MouseLeftButton}}
+\index{MouseLeftButton@{MouseLeftButton}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{MouseLeftButton}{MouseLeftButton}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Input\+Manager\+::\+Mouse\+Left\+Button}
+
+\mbox{\Hypertarget{class_c_input_manager_a5bae0dd630522688114f53e21455b30e}\label{class_c_input_manager_a5bae0dd630522688114f53e21455b30e}} 
+\index{CInputManager@{CInputManager}!MouseMiddleButton@{MouseMiddleButton}}
+\index{MouseMiddleButton@{MouseMiddleButton}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{MouseMiddleButton}{MouseMiddleButton}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Input\+Manager\+::\+Mouse\+Middle\+Button}
+
+\mbox{\Hypertarget{class_c_input_manager_a62e6742393cba2493f89590fabaecb4b}\label{class_c_input_manager_a62e6742393cba2493f89590fabaecb4b}} 
+\index{CInputManager@{CInputManager}!MousePos@{MousePos}}
+\index{MousePos@{MousePos}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{MousePos}{MousePos}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_vec2}{Vec2}} C\+Input\+Manager\+::\+Mouse\+Pos}
+
+\mbox{\Hypertarget{class_c_input_manager_a3544e4bcafea3f141f3a7331c927193f}\label{class_c_input_manager_a3544e4bcafea3f141f3a7331c927193f}} 
+\index{CInputManager@{CInputManager}!MouseRightButton@{MouseRightButton}}
+\index{MouseRightButton@{MouseRightButton}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{MouseRightButton}{MouseRightButton}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Input\+Manager\+::\+Mouse\+Right\+Button}
+
+\mbox{\Hypertarget{class_c_input_manager_a6d3f47c6880fc3f08af58a744bf2fbfd}\label{class_c_input_manager_a6d3f47c6880fc3f08af58a744bf2fbfd}} 
+\index{CInputManager@{CInputManager}!Now@{Now}}
+\index{Now@{Now}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{Now}{Now}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Manager\+::\+Now}
+
+\mbox{\Hypertarget{class_c_input_manager_a9831050a8638d05d2e7fc0c778b90851}\label{class_c_input_manager_a9831050a8638d05d2e7fc0c778b90851}} 
+\index{CInputManager@{CInputManager}!Pads@{Pads}}
+\index{Pads@{Pads}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{Pads}{Pads}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_input_pad}{C\+Input\+Pad}}$>$ C\+Input\+Manager\+::\+Pads}
+
+\mbox{\Hypertarget{class_c_input_manager_a88b9a13be0af487179a32bde4591e6a5}\label{class_c_input_manager_a88b9a13be0af487179a32bde4591e6a5}} 
+\index{CInputManager@{CInputManager}!PendingEvents@{PendingEvents}}
+\index{PendingEvents@{PendingEvents}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{PendingEvents}{PendingEvents}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_input_event}{C\+Input\+Event}}$>$ C\+Input\+Manager\+::\+Pending\+Events}
+
+\mbox{\Hypertarget{class_c_input_manager_a7f07e0b5f4922a210f95cdfc5bf5d3b0}\label{class_c_input_manager_a7f07e0b5f4922a210f95cdfc5bf5d3b0}} 
+\index{CInputManager@{CInputManager}!Period@{Period}}
+\index{Period@{Period}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{Period}{Period}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Manager\+::\+Period}
+
+\mbox{\Hypertarget{class_c_input_manager_afc08bda5d2689ed3f6828feb56ea169d}\label{class_c_input_manager_afc08bda5d2689ed3f6828feb56ea169d}} 
+\index{CInputManager@{CInputManager}!TimeSinceLatestActivity@{TimeSinceLatestActivity}}
+\index{TimeSinceLatestActivity@{TimeSinceLatestActivity}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{TimeSinceLatestActivity}{TimeSinceLatestActivity}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Manager\+::\+Time\+Since\+Latest\+Activity}
+
+Duration (ms) elapsed since latest user interraction on any device. \mbox{\Hypertarget{class_c_input_manager_a470545af1838f9db0dcd7f960b7d54b3}\label{class_c_input_manager_a470545af1838f9db0dcd7f960b7d54b3}} 
+\index{CInputManager@{CInputManager}!TimeSinceLatestKeyboardActivity@{TimeSinceLatestKeyboardActivity}}
+\index{TimeSinceLatestKeyboardActivity@{TimeSinceLatestKeyboardActivity}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{TimeSinceLatestKeyboardActivity}{TimeSinceLatestKeyboardActivity}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Manager\+::\+Time\+Since\+Latest\+Keyboard\+Activity}
+
+\mbox{\Hypertarget{class_c_input_manager_ad9c15f0576ac38c52879fbf9e2d53de1}\label{class_c_input_manager_ad9c15f0576ac38c52879fbf9e2d53de1}} 
+\index{CInputManager@{CInputManager}!TimeSinceLatestMouseActivity@{TimeSinceLatestMouseActivity}}
+\index{TimeSinceLatestMouseActivity@{TimeSinceLatestMouseActivity}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{TimeSinceLatestMouseActivity}{TimeSinceLatestMouseActivity}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Manager\+::\+Time\+Since\+Latest\+Mouse\+Activity}
+
+\mbox{\Hypertarget{class_c_input_manager_ac4e94928b003cc20828c315421701697}\label{class_c_input_manager_ac4e94928b003cc20828c315421701697}} 
+\index{CInputManager@{CInputManager}!TimeSinceLatestPadActivity@{TimeSinceLatestPadActivity}}
+\index{TimeSinceLatestPadActivity@{TimeSinceLatestPadActivity}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{TimeSinceLatestPadActivity}{TimeSinceLatestPadActivity}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Manager\+::\+Time\+Since\+Latest\+Pad\+Activity}
+
+\mbox{\Hypertarget{class_c_input_manager_a99cd8d9124059243f1a1d466e08179ae}\label{class_c_input_manager_a99cd8d9124059243f1a1d466e08179ae}} 
+\index{CInputManager@{CInputManager}!TimeSinceLatestTouchActivity@{TimeSinceLatestTouchActivity}}
+\index{TimeSinceLatestTouchActivity@{TimeSinceLatestTouchActivity}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{TimeSinceLatestTouchActivity}{TimeSinceLatestTouchActivity}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Manager\+::\+Time\+Since\+Latest\+Touch\+Activity}
+
+\mbox{\Hypertarget{class_c_input_manager_a9c012cdd86a380949375a4239da59b69}\label{class_c_input_manager_a9c012cdd86a380949375a4239da59b69}} 
+\index{CInputManager@{CInputManager}!TouchPoints\_Cur@{TouchPoints\_Cur}}
+\index{TouchPoints\_Cur@{TouchPoints\_Cur}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{TouchPoints\_Cur}{TouchPoints\_Cur}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_vec2}{Vec2}}$>$ C\+Input\+Manager\+::\+Touch\+Points\+\_\+\+Cur}
+
+\mbox{\Hypertarget{class_c_input_manager_a9829927c8eeeac2f08bda425902ccbb0}\label{class_c_input_manager_a9829927c8eeeac2f08bda425902ccbb0}} 
+\index{CInputManager@{CInputManager}!TouchPoints\_Init@{TouchPoints\_Init}}
+\index{TouchPoints\_Init@{TouchPoints\_Init}!CInputManager@{CInputManager}}
+\doxysubsubsection{\texorpdfstring{TouchPoints\_Init}{TouchPoints\_Init}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_vec2}{Vec2}}$>$ C\+Input\+Manager\+::\+Touch\+Points\+\_\+\+Init}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

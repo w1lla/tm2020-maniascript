@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['linktype_6184',['LinkType',['../struct_c_ml_script.html#aed6dfd4a2b14d2308f90f63c43042fed',1,'CMlScript']]]
+  ['gameplayspecialtype_7562',['GameplaySpecialType',['../class_c_mania_app_playground_event.html#a941213ba9000c1df6b94cb2e330e41dc',1,'CManiaAppPlaygroundEvent']]],
+  ['gameplayturboroulette_7563',['GameplayTurboRoulette',['../class_c_mania_app_playground_event.html#a78763fe677b74def3701478feb2d0e99',1,'CManiaAppPlaygroundEvent']]]
 ];

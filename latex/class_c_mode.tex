@@ -1,0 +1,819 @@
+\hypertarget{class_c_mode}{}\doxysection{C\+Mode Class Reference}
+\label{class_c_mode}\index{CMode@{CMode}}
+
+
+Rules A\+PI for gamemodes.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Mode\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_mode}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_mode_a12abdad45d08121730235428ef376be3}{E\+Medal}} \{ \newline
+\mbox{\hyperlink{class_c_mode_a12abdad45d08121730235428ef376be3acb197e2a05e3c42e6033abfe939f45f0}{None}}, 
+\mbox{\hyperlink{class_c_mode_a12abdad45d08121730235428ef376be3a33dfaf80aec656e87ad5a6b3a1ba0774}{Finished}}, 
+\mbox{\hyperlink{class_c_mode_a12abdad45d08121730235428ef376be3a145f9e604b3251811db2394568e3bcdf}{Bronze}}, 
+\mbox{\hyperlink{class_c_mode_a12abdad45d08121730235428ef376be3a997fcc47b4c0ff61ae74d05cf8963517}{Silver}}, 
+\newline
+\mbox{\hyperlink{class_c_mode_a12abdad45d08121730235428ef376be3ad6ea21ad4a3c2400988c1e45ef2f755d}{Gold}}, 
+\mbox{\hyperlink{class_c_mode_a12abdad45d08121730235428ef376be3a1a810996771c327d22fd02b2ce918cb4}{Author}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_acc4527d8b16331e59f3984975084862a}{Task\+Result\+\_\+\+Release}} (\mbox{\hyperlink{struct_ident}{Ident}} Task\+Id)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_af7b52d6a2a90366513bdeb34acd8e7cb}{Tweak\+Team\+Colors\+To\+Avoid\+Hue\+Overlap}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_aff6a993953583eaff2706a2638e4935b}{Request\+Load\+Map}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a484dddd1e515dc19bfbba15956d0cc33}{Request\+Unload\+Map}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a842acd59c68e595b4e1700581fe36aec}{Hud\+\_\+\+Load}} (\mbox{\hyperlink{struct_text}{Text}} Module\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_af162c7cf1320543556406bcf94a0dc4e}{Pass\+On}} (\mbox{\hyperlink{class_c_u_i_config_event}{C\+U\+I\+Config\+Event}} Event\+To\+Pass\+On)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a87699adba53fdd686297d7e55fa88149}{Discard}} (\mbox{\hyperlink{class_c_u_i_config_event}{C\+U\+I\+Config\+Event}} Event\+To\+Discard)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_ad835bf69d4294aa3ad9da4199ca70fc2}{Ladder\+\_\+\+Open\+Match\+\_\+\+Request}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_ad714c8136604e87560f5ce5cffe48cec}{Ladder\+\_\+\+Add\+Player}} (\mbox{\hyperlink{class_c_score}{C\+Score}} Player\+Score)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a539c9a57eab98fbc05d35db680380a99}{Ladder\+\_\+\+Open\+Match\+\_\+\+Begin\+Request}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_ad9d12aa0441f85e257bdbed15471c624}{Ladder\+\_\+\+Open\+Match\+\_\+\+Add\+Player}} (\mbox{\hyperlink{class_c_score}{C\+Score}} Player\+Score)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_ab05995a051733c2a6c8ac560d8fd35f7}{Ladder\+\_\+\+Open\+Match\+\_\+\+End\+Request}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_ab21de51ba360d66835bae5bb4201f111}{Ladder\+\_\+\+Close\+Match\+Request}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_afa731f08963cffaed254daf582c09f5f}{Ladder\+\_\+\+Cancel\+Match\+Request}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a0cfda24f1e43c5a0fbdfa623681a1d7e}{Ladder\+\_\+\+Set\+Results\+Version}} (\mbox{\hyperlink{struct_integer}{Integer}} Version)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_ae141b574ee04ea9cf3a3eecc87a115ea}{Ladder\+\_\+\+Set\+Match\+Making\+Match\+Id}} (\mbox{\hyperlink{struct_integer}{Integer}} Match\+Id)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_ad2c9d03b51a16e2b54f50b4d3fe00eb9}{Ladder\+\_\+\+Enable\+Challenge\+Mode}} (\mbox{\hyperlink{struct_boolean}{Boolean}} Enable)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a1c1789348362320be8e768309f3b0c5e}{Trophy\+\_\+\+Competition\+Match\+\_\+\+Add\+Result}} (\mbox{\hyperlink{struct_text}{Text}} Web\+Services\+User\+Id, \mbox{\hyperlink{struct_integer}{Integer}} Match\+Rank, \mbox{\hyperlink{struct_integer}{Integer}} Trophy\+Ranking)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a090d1b4eef1b6b7eb2ba4a5657c6e238}{Trophy\+\_\+\+Competition\+Match\+\_\+\+Clear\+Result\+List}} ()
+\item 
+\mbox{\hyperlink{class_c_task_result___account_trophy_gain_list}{C\+Task\+Result\+\_\+\+Account\+Trophy\+Gain\+List}} \mbox{\hyperlink{class_c_mode_a6079e53b8b2c44a8faec6924c792a66c}{Trophy\+\_\+\+Competition\+Match\+\_\+\+Send\+Result\+List}} (\mbox{\hyperlink{struct_text}{Text}} Competition\+Name, \mbox{\hyperlink{struct_text}{Text}} Competition\+Stage, \mbox{\hyperlink{struct_text}{Text}} Competition\+Stage\+Step, \mbox{\hyperlink{struct_text}{Text}} Competition\+Match\+Info)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_aa1e448628318a94efb650a3b731888f4}{Trophy\+\_\+\+Live\+Time\+Attack\+Achievement\+\_\+\+Add\+Result}} (\mbox{\hyperlink{struct_text}{Text}} Web\+Services\+User\+Id, \mbox{\hyperlink{struct_integer}{Integer}} Match\+Rank, \mbox{\hyperlink{struct_integer}{Integer}} Trophy\+Ranking)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_aeaa955756f4b150ab392670d8059bf04}{Trophy\+\_\+\+Live\+Time\+Attack\+Achievement\+\_\+\+Clear\+Result\+List}} ()
+\item 
+\mbox{\hyperlink{class_c_task_result___account_trophy_gain_list}{C\+Task\+Result\+\_\+\+Account\+Trophy\+Gain\+List}} \mbox{\hyperlink{class_c_mode_a2e033c18eef3398d3a1f9eafc267d465}{Trophy\+\_\+\+Live\+Time\+Attack\+Achievement\+\_\+\+Send\+Result\+List}} (\mbox{\hyperlink{struct_integer}{Integer}} Duration)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a901a6935241251fdff75498a029cf153}{Auto\+Team\+Balance}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a26e942805fd2465dc1daf491c949a089}{Solo\+\_\+\+Set\+New\+Record}} (\mbox{\hyperlink{class_c_score}{C\+Score}} Player\+Score, \mbox{\hyperlink{class_c_mode_a12abdad45d08121730235428ef376be3}{C\+Mode\+::\+E\+Medal}} Player\+Score)
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mode_ae8a9fad79db711d000684896cc1e0811}{Synchro\+\_\+\+Add\+Barrier}} ()
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mode_ab8a2c2c0bf4d596da98da2e68e49e9f0}{Synchro\+\_\+\+Barrier\+Reached}} (\mbox{\hyperlink{struct_integer}{Integer}} Barrier)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mode_a68924dd0bc4d818daeb41a7ad0cc36a5}{Users\+\_\+\+Are\+Allies}} (\mbox{\hyperlink{class_c_user}{C\+User}} User1, \mbox{\hyperlink{class_c_user}{C\+User}} User2)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a0f300396238d5eb6af8691f5273fd63c}{Users\+\_\+\+Request\+Switch\+To\+Spectator}} (\mbox{\hyperlink{class_c_user}{C\+User}} User)
+\item 
+\mbox{\hyperlink{class_c_user}{C\+User}} \mbox{\hyperlink{class_c_mode_aadee4db84f8754002589f279a52dd162}{Users\+\_\+\+Create\+Fake}} (\mbox{\hyperlink{struct_text}{Text}} Nick\+Name, \mbox{\hyperlink{struct_integer}{Integer}} Requested\+Team)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_aabee8b4102fe76eaec97507a51b1e342}{Users\+\_\+\+Destroy\+Fake}} (\mbox{\hyperlink{class_c_user}{C\+User}} User)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a8f51f77c9272f4fac1b092e15f9fd463}{Users\+\_\+\+Set\+Nb\+Fake\+Users}} (\mbox{\hyperlink{struct_integer}{Integer}} Nb\+Team1, \mbox{\hyperlink{struct_integer}{Integer}} Nb\+Team2)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a3682d4ef68ec351bbacb4f68cd7f08a8}{Users\+\_\+\+Destroy\+All\+Fakes}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a6f504dcea77ea5521729528585eb4871}{Item\+List\+\_\+\+Begin}} ()
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mode_a4276d586fabacf9b693a32d273db9639}{Item\+List\+\_\+\+Begin}} ()
+\item 
+\mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_mode_a328114846047d2ac20f6972163916262}{Item\+List\+\_\+\+Add}} (\mbox{\hyperlink{struct_text}{Text}} Model\+Name)
+\item 
+\mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_mode_a7b659b1de9866bb3cdf50dfe6da58c8a}{Item\+List\+\_\+\+Add\+With\+Skin}} (\mbox{\hyperlink{struct_text}{Text}} Model\+Name, \mbox{\hyperlink{struct_text}{Text}} Skin\+Name\+Or\+Url)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a23aee95ba2c4ad1f3568ca27cd22cefd}{Item\+List\+\_\+\+End}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a4ee915f483a4ccb3f9d4b04faec38d66}{Demo\+Token\+\_\+\+Start\+Using\+Token}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_aa4e450af9ac9927b3acec6f5ecd1efc5}{Demo\+Token\+\_\+\+Stop\+Using\+Token}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a599514b9c44858b0d9cb242d362b84d7}{Demo\+Token\+\_\+\+Get\+And\+Use\+Token}} (\mbox{\hyperlink{class_c_user}{C\+User}} User)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a73962294d19fb2f317c377604c8b0bf3}{Action\+List\+\_\+\+Begin}} ()
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mode_a6c12fa2b8e4507e9bebe0786d70b6330}{Action\+List\+\_\+\+Begin}} ()
+\item 
+\mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_mode_a28df9784fbdfef9f9bd622d8246322c1}{Action\+List\+\_\+\+Add}} (\mbox{\hyperlink{struct_text}{Text}} Action\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a15cc0b9ca7becadf4ff11e50757a5318}{Action\+List\+\_\+\+End}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a9874c74a7d17fbe9fa6aefa9ac9df476}{Replay\+\_\+\+Start}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_a9ff0bfb800222709dc9d909a608ae066}{Replay\+\_\+\+Stop}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_ab01951e162a42d55a003976ee012e342}{Game\+Scene\+\_\+\+Reset\+All}} ()
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mode_a39aa25003e87cb8981364bee3c7c5478}{Dbg\+\_\+\+Dump\+Declare\+For\+Variables}} (\mbox{\hyperlink{class_c_nod}{C\+Nod}} Nod, \mbox{\hyperlink{struct_boolean}{Boolean}} Stats\+Only)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} $>$ \mbox{\hyperlink{class_c_mode_a0f5b5901a4ea53b37678a035e8084847}{Task\+Results}}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mode_a661d7f2c31627bf372c480237aeed22d}{Mode\+Status\+Message}}
+\item 
+const \mbox{\hyperlink{class_c_title}{C\+Title}} \mbox{\hyperlink{class_c_mode_a474b7d884910d9360796de3729ec3939}{Loaded\+Title}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mode_a9ae6015564428d2e706550ebebbb67c7}{Server\+Login}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mode_a42640ee4066d96ede1529f714baa2341}{Server\+Name}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mode_a1a8ddf1fd9fa0ec037948214debd2279}{Server\+Mode\+Name}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mode_a5832edcf13c2f7aba7388c9622d3b720}{Map\+Name}}
+\item 
+const \mbox{\hyperlink{class_c_map}{C\+Map}} \mbox{\hyperlink{class_c_mode_a40ea2f714f0fe21173a8e8f7676ebe8a}{Map}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mode_a26ab6f87b224ac44aff93ec041e1fe8b}{Map\+Player\+Model\+Name}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_user}{C\+User}} $>$ \mbox{\hyperlink{class_c_mode_a5c6060143d32f7cef7995bfc896cf275}{Users}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_team}{C\+Team}} $>$ \mbox{\hyperlink{class_c_mode_aa5c5cf2a13a154279de9844b6faca5b8}{Teams}}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mode_a81ef639401b8ee82e04017987a5360a6}{Neutral\+Emblem\+Url}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mode_a8e6986fa2e025d96f4a40763df92f1f7}{Forced\+Club\+Link\+Url1}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mode_af0eaf5ee5d3f2fc6ed51131aaebfcb7a}{Forced\+Club\+Link\+Url2}}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_mode_a34193b3a0e1a7828506a429ae014acdc}{Client\+Mania\+App\+Url}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mode_a327b2534f75feaf52805116d29d7bfee}{Now}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mode_a8a62ee732ed22b65b7019c1273e9b367}{Period}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mode_a0aa4905d6d6898613cb082c1887ae883}{Match\+End\+Requested}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mode_ab116a66dcc16a7ecb8fb12eb673a72c4}{Server\+Shutdown\+Requested}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mode_a6a1cbeae896697a096e24c05fd30aa0d}{Map\+Loaded}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_map_info}{C\+Map\+Info}} $>$ \mbox{\hyperlink{class_c_mode_a228938869d3a04ccddc65fc6bbfae4d4}{Map\+List}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mode_a6792e221114a6103384d18ef9286a393}{Next\+Map\+Index}}
+\item 
+const \mbox{\hyperlink{class_c_u_i_config_mgr}{C\+U\+I\+Config\+Mgr}} \mbox{\hyperlink{class_c_mode_ae22d9ed212df8698a620a497bc2f2472}{U\+I\+Manager}}
+\item 
+const \mbox{\hyperlink{class_c_module_playground_hud}{C\+Module\+Playground\+Hud}} \mbox{\hyperlink{class_c_mode_afec7ff710fad50c7b649c3b683ce5de9}{Hud}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mode_aff3f8affd4a1951f8efdfcbd866a78d8}{Ladder\+\_\+\+Request\+In\+Progress}}
+\item 
+const \mbox{\hyperlink{class_c_server_admin}{C\+Server\+Admin}} \mbox{\hyperlink{class_c_mode_a636ea176d59de1c42e6b39335ce075fa}{Server\+Admin}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mode_a48bbb0f29e80eb70034dc247533a6c33}{Solo\+\_\+\+New\+Record\+Sequence\+In\+Progress}}
+\item 
+const \mbox{\hyperlink{class_c_xml_rpc}{C\+Xml\+Rpc}} \mbox{\hyperlink{class_c_mode_aea23de98cf483431ce99716feaa316c9}{Xml\+Rpc}}
+\item 
+const \mbox{\hyperlink{class_c_parsing_manager}{C\+Parsing\+Manager}} \mbox{\hyperlink{class_c_mode_ac1e83a69ff13829571edf0e98b9c68d3}{Xml}}
+\item 
+const \mbox{\hyperlink{class_c_http_manager}{C\+Http\+Manager}} \mbox{\hyperlink{class_c_mode_acee254016b4567376d77a66402f4f02d}{Http}}
+\item 
+const \mbox{\hyperlink{class_c_input_manager}{C\+Input\+Manager}} \mbox{\hyperlink{class_c_mode_a0322c9ca3294c96063878580759a9234}{Input}}
+\item 
+const \mbox{\hyperlink{class_c_data_file_mgr}{C\+Data\+File\+Mgr}} \mbox{\hyperlink{class_c_mode_a4d4b632b150ca61ed5ecbfc682316395}{Data\+File\+Mgr}}
+\item 
+const \mbox{\hyperlink{class_c_score_mgr}{C\+Score\+Mgr}} \mbox{\hyperlink{class_c_mode_adf72f02b83772b4f97dd1cd87a00ac70}{Score\+Mgr}}
+\item 
+const \mbox{\hyperlink{class_c_system_platform}{C\+System\+Platform}} \mbox{\hyperlink{class_c_mode_ae894c1ef2b8177ec377235ab59069133}{System}}
+\item 
+const \mbox{\hyperlink{class_c_user_v2_manager}{C\+User\+V2\+Manager}} \mbox{\hyperlink{class_c_mode_a549c54938fd20e3c348d8a86f2b9fdaf}{User\+Mgr}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mode_a4052832ad12153cd2a3ec6ee566fb780}{Use\+Minimap}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_mode_a1b5b8782c555fc2a740e46a20ec1f49b}{Replay\+\_\+\+Auto\+Start}}
+\item 
+const \mbox{\hyperlink{class_c_achievements_manager}{C\+Achievements\+Manager}} \mbox{\hyperlink{class_c_mode_acba49a03bdc6fb729bbd4ff912cc400e}{Achievements\+Manager}}
+\item 
+const \mbox{\hyperlink{class_c_mode_turret_manager}{C\+Mode\+Turret\+Manager}} \mbox{\hyperlink{class_c_mode_abbdf04d19f50d67a3035c07d00fb7ed4}{Turrets\+Manager}}
+\item 
+const \mbox{\hyperlink{class_c_mode_vehicle_manager}{C\+Mode\+Vehicle\+Manager}} \mbox{\hyperlink{class_c_mode_a0791e90374f0c11247293178a257228c}{Vehicles\+Manager}}
+\item 
+const \mbox{\hyperlink{class_c_action_manager}{C\+Action\+Manager}} \mbox{\hyperlink{class_c_mode_a43ba94797eb05e683e124046b58cedfb}{Actions\+Manager}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_mode_a7c56128ec64d59259a946504f716cbc4}{Ui\+Update\+Period}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rules A\+PI for gamemodes. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Local
+\item Persistent 
+\end{DoxyItemize}
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_mode_a12abdad45d08121730235428ef376be3}\label{class_c_mode_a12abdad45d08121730235428ef376be3}} 
+\index{CMode@{CMode}!EMedal@{EMedal}}
+\index{EMedal@{EMedal}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{EMedal}{EMedal}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_mode_a12abdad45d08121730235428ef376be3}{C\+Mode\+::\+E\+Medal}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CMode@{CMode}}\index{CMode@{CMode}!None@{None}}}\mbox{\Hypertarget{class_c_mode_a12abdad45d08121730235428ef376be3acb197e2a05e3c42e6033abfe939f45f0}\label{class_c_mode_a12abdad45d08121730235428ef376be3acb197e2a05e3c42e6033abfe939f45f0}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Finished@{Finished}!CMode@{CMode}}\index{CMode@{CMode}!Finished@{Finished}}}\mbox{\Hypertarget{class_c_mode_a12abdad45d08121730235428ef376be3a33dfaf80aec656e87ad5a6b3a1ba0774}\label{class_c_mode_a12abdad45d08121730235428ef376be3a33dfaf80aec656e87ad5a6b3a1ba0774}} 
+Finished&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bronze@{Bronze}!CMode@{CMode}}\index{CMode@{CMode}!Bronze@{Bronze}}}\mbox{\Hypertarget{class_c_mode_a12abdad45d08121730235428ef376be3a145f9e604b3251811db2394568e3bcdf}\label{class_c_mode_a12abdad45d08121730235428ef376be3a145f9e604b3251811db2394568e3bcdf}} 
+Bronze&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Silver@{Silver}!CMode@{CMode}}\index{CMode@{CMode}!Silver@{Silver}}}\mbox{\Hypertarget{class_c_mode_a12abdad45d08121730235428ef376be3a997fcc47b4c0ff61ae74d05cf8963517}\label{class_c_mode_a12abdad45d08121730235428ef376be3a997fcc47b4c0ff61ae74d05cf8963517}} 
+Silver&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Gold@{Gold}!CMode@{CMode}}\index{CMode@{CMode}!Gold@{Gold}}}\mbox{\Hypertarget{class_c_mode_a12abdad45d08121730235428ef376be3ad6ea21ad4a3c2400988c1e45ef2f755d}\label{class_c_mode_a12abdad45d08121730235428ef376be3ad6ea21ad4a3c2400988c1e45ef2f755d}} 
+Gold&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Author@{Author}!CMode@{CMode}}\index{CMode@{CMode}!Author@{Author}}}\mbox{\Hypertarget{class_c_mode_a12abdad45d08121730235428ef376be3a1a810996771c327d22fd02b2ce918cb4}\label{class_c_mode_a12abdad45d08121730235428ef376be3a1a810996771c327d22fd02b2ce918cb4}} 
+Author&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_mode_a28df9784fbdfef9f9bd622d8246322c1}\label{class_c_mode_a28df9784fbdfef9f9bd622d8246322c1}} 
+\index{CMode@{CMode}!ActionList\_Add@{ActionList\_Add}}
+\index{ActionList\_Add@{ActionList\_Add}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ActionList\_Add()}{ActionList\_Add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ident}{Ident}} C\+Mode\+::\+Action\+List\+\_\+\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Action\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a73962294d19fb2f317c377604c8b0bf3}\label{class_c_mode_a73962294d19fb2f317c377604c8b0bf3}} 
+\index{CMode@{CMode}!ActionList\_Begin@{ActionList\_Begin}}
+\index{ActionList\_Begin@{ActionList\_Begin}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ActionList\_Begin()}{ActionList\_Begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Action\+List\+\_\+\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a6c12fa2b8e4507e9bebe0786d70b6330}\label{class_c_mode_a6c12fa2b8e4507e9bebe0786d70b6330}} 
+\index{CMode@{CMode}!ActionList\_Begin@{ActionList\_Begin}}
+\index{ActionList\_Begin@{ActionList\_Begin}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ActionList\_Begin()}{ActionList\_Begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mode\+::\+Action\+List\+\_\+\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a15cc0b9ca7becadf4ff11e50757a5318}\label{class_c_mode_a15cc0b9ca7becadf4ff11e50757a5318}} 
+\index{CMode@{CMode}!ActionList\_End@{ActionList\_End}}
+\index{ActionList\_End@{ActionList\_End}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ActionList\_End()}{ActionList\_End()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Action\+List\+\_\+\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a901a6935241251fdff75498a029cf153}\label{class_c_mode_a901a6935241251fdff75498a029cf153}} 
+\index{CMode@{CMode}!AutoTeamBalance@{AutoTeamBalance}}
+\index{AutoTeamBalance@{AutoTeamBalance}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{AutoTeamBalance()}{AutoTeamBalance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Auto\+Team\+Balance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a39aa25003e87cb8981364bee3c7c5478}\label{class_c_mode_a39aa25003e87cb8981364bee3c7c5478}} 
+\index{CMode@{CMode}!Dbg\_DumpDeclareForVariables@{Dbg\_DumpDeclareForVariables}}
+\index{Dbg\_DumpDeclareForVariables@{Dbg\_DumpDeclareForVariables}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Dbg\_DumpDeclareForVariables()}{Dbg\_DumpDeclareForVariables()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Mode\+::\+Dbg\+\_\+\+Dump\+Declare\+For\+Variables (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_nod}{C\+Nod}}}]{Nod,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Stats\+Only }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a599514b9c44858b0d9cb242d362b84d7}\label{class_c_mode_a599514b9c44858b0d9cb242d362b84d7}} 
+\index{CMode@{CMode}!DemoToken\_GetAndUseToken@{DemoToken\_GetAndUseToken}}
+\index{DemoToken\_GetAndUseToken@{DemoToken\_GetAndUseToken}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{DemoToken\_GetAndUseToken()}{DemoToken\_GetAndUseToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Demo\+Token\+\_\+\+Get\+And\+Use\+Token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_user}{C\+User}}}]{User }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a4ee915f483a4ccb3f9d4b04faec38d66}\label{class_c_mode_a4ee915f483a4ccb3f9d4b04faec38d66}} 
+\index{CMode@{CMode}!DemoToken\_StartUsingToken@{DemoToken\_StartUsingToken}}
+\index{DemoToken\_StartUsingToken@{DemoToken\_StartUsingToken}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{DemoToken\_StartUsingToken()}{DemoToken\_StartUsingToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Demo\+Token\+\_\+\+Start\+Using\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_aa4e450af9ac9927b3acec6f5ecd1efc5}\label{class_c_mode_aa4e450af9ac9927b3acec6f5ecd1efc5}} 
+\index{CMode@{CMode}!DemoToken\_StopUsingToken@{DemoToken\_StopUsingToken}}
+\index{DemoToken\_StopUsingToken@{DemoToken\_StopUsingToken}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{DemoToken\_StopUsingToken()}{DemoToken\_StopUsingToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Demo\+Token\+\_\+\+Stop\+Using\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a87699adba53fdd686297d7e55fa88149}\label{class_c_mode_a87699adba53fdd686297d7e55fa88149}} 
+\index{CMode@{CMode}!Discard@{Discard}}
+\index{Discard@{Discard}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Discard()}{Discard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Discard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_u_i_config_event}{C\+U\+I\+Config\+Event}}}]{Event\+To\+Discard }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_ab01951e162a42d55a003976ee012e342}\label{class_c_mode_ab01951e162a42d55a003976ee012e342}} 
+\index{CMode@{CMode}!GameScene\_ResetAll@{GameScene\_ResetAll}}
+\index{GameScene\_ResetAll@{GameScene\_ResetAll}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{GameScene\_ResetAll()}{GameScene\_ResetAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Game\+Scene\+\_\+\+Reset\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a842acd59c68e595b4e1700581fe36aec}\label{class_c_mode_a842acd59c68e595b4e1700581fe36aec}} 
+\index{CMode@{CMode}!Hud\_Load@{Hud\_Load}}
+\index{Hud\_Load@{Hud\_Load}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Hud\_Load()}{Hud\_Load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Hud\+\_\+\+Load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Module\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a328114846047d2ac20f6972163916262}\label{class_c_mode_a328114846047d2ac20f6972163916262}} 
+\index{CMode@{CMode}!ItemList\_Add@{ItemList\_Add}}
+\index{ItemList\_Add@{ItemList\_Add}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ItemList\_Add()}{ItemList\_Add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ident}{Ident}} C\+Mode\+::\+Item\+List\+\_\+\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Model\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a7b659b1de9866bb3cdf50dfe6da58c8a}\label{class_c_mode_a7b659b1de9866bb3cdf50dfe6da58c8a}} 
+\index{CMode@{CMode}!ItemList\_AddWithSkin@{ItemList\_AddWithSkin}}
+\index{ItemList\_AddWithSkin@{ItemList\_AddWithSkin}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ItemList\_AddWithSkin()}{ItemList\_AddWithSkin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ident}{Ident}} C\+Mode\+::\+Item\+List\+\_\+\+Add\+With\+Skin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Model\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Skin\+Name\+Or\+Url }\end{DoxyParamCaption})}
+
+Skin\+Name\+Or\+Url\+: can be \textquotesingle{}Skins/\+Model/....\textquotesingle{}, \textquotesingle{}\href{http://....'}{\texttt{ http\+://....\textquotesingle{}}}, \textquotesingle{}Default\textquotesingle{} (or \textquotesingle{}\textquotesingle{}) for item default skin, \textquotesingle{}Profile\textquotesingle{} for the user choice for the model. Model\+Name\+: \textquotesingle{}Default\+Player\+Model\textquotesingle{} for the default map model, or the item filename. \mbox{\Hypertarget{class_c_mode_a6f504dcea77ea5521729528585eb4871}\label{class_c_mode_a6f504dcea77ea5521729528585eb4871}} 
+\index{CMode@{CMode}!ItemList\_Begin@{ItemList\_Begin}}
+\index{ItemList\_Begin@{ItemList\_Begin}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ItemList\_Begin()}{ItemList\_Begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Item\+List\+\_\+\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a4276d586fabacf9b693a32d273db9639}\label{class_c_mode_a4276d586fabacf9b693a32d273db9639}} 
+\index{CMode@{CMode}!ItemList\_Begin@{ItemList\_Begin}}
+\index{ItemList\_Begin@{ItemList\_Begin}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ItemList\_Begin()}{ItemList\_Begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mode\+::\+Item\+List\+\_\+\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a23aee95ba2c4ad1f3568ca27cd22cefd}\label{class_c_mode_a23aee95ba2c4ad1f3568ca27cd22cefd}} 
+\index{CMode@{CMode}!ItemList\_End@{ItemList\_End}}
+\index{ItemList\_End@{ItemList\_End}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ItemList\_End()}{ItemList\_End()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Item\+List\+\_\+\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_ad714c8136604e87560f5ce5cffe48cec}\label{class_c_mode_ad714c8136604e87560f5ce5cffe48cec}} 
+\index{CMode@{CMode}!Ladder\_AddPlayer@{Ladder\_AddPlayer}}
+\index{Ladder\_AddPlayer@{Ladder\_AddPlayer}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Ladder\_AddPlayer()}{Ladder\_AddPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Ladder\+\_\+\+Add\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_score}{C\+Score}}}]{Player\+Score }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_afa731f08963cffaed254daf582c09f5f}\label{class_c_mode_afa731f08963cffaed254daf582c09f5f}} 
+\index{CMode@{CMode}!Ladder\_CancelMatchRequest@{Ladder\_CancelMatchRequest}}
+\index{Ladder\_CancelMatchRequest@{Ladder\_CancelMatchRequest}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Ladder\_CancelMatchRequest()}{Ladder\_CancelMatchRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Ladder\+\_\+\+Cancel\+Match\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_ab21de51ba360d66835bae5bb4201f111}\label{class_c_mode_ab21de51ba360d66835bae5bb4201f111}} 
+\index{CMode@{CMode}!Ladder\_CloseMatchRequest@{Ladder\_CloseMatchRequest}}
+\index{Ladder\_CloseMatchRequest@{Ladder\_CloseMatchRequest}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Ladder\_CloseMatchRequest()}{Ladder\_CloseMatchRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Ladder\+\_\+\+Close\+Match\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_ad2c9d03b51a16e2b54f50b4d3fe00eb9}\label{class_c_mode_ad2c9d03b51a16e2b54f50b4d3fe00eb9}} 
+\index{CMode@{CMode}!Ladder\_EnableChallengeMode@{Ladder\_EnableChallengeMode}}
+\index{Ladder\_EnableChallengeMode@{Ladder\_EnableChallengeMode}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Ladder\_EnableChallengeMode()}{Ladder\_EnableChallengeMode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Ladder\+\_\+\+Enable\+Challenge\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Enable }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_ad9d12aa0441f85e257bdbed15471c624}\label{class_c_mode_ad9d12aa0441f85e257bdbed15471c624}} 
+\index{CMode@{CMode}!Ladder\_OpenMatch\_AddPlayer@{Ladder\_OpenMatch\_AddPlayer}}
+\index{Ladder\_OpenMatch\_AddPlayer@{Ladder\_OpenMatch\_AddPlayer}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Ladder\_OpenMatch\_AddPlayer()}{Ladder\_OpenMatch\_AddPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Ladder\+\_\+\+Open\+Match\+\_\+\+Add\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_score}{C\+Score}}}]{Player\+Score }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a539c9a57eab98fbc05d35db680380a99}\label{class_c_mode_a539c9a57eab98fbc05d35db680380a99}} 
+\index{CMode@{CMode}!Ladder\_OpenMatch\_BeginRequest@{Ladder\_OpenMatch\_BeginRequest}}
+\index{Ladder\_OpenMatch\_BeginRequest@{Ladder\_OpenMatch\_BeginRequest}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Ladder\_OpenMatch\_BeginRequest()}{Ladder\_OpenMatch\_BeginRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Ladder\+\_\+\+Open\+Match\+\_\+\+Begin\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_ab05995a051733c2a6c8ac560d8fd35f7}\label{class_c_mode_ab05995a051733c2a6c8ac560d8fd35f7}} 
+\index{CMode@{CMode}!Ladder\_OpenMatch\_EndRequest@{Ladder\_OpenMatch\_EndRequest}}
+\index{Ladder\_OpenMatch\_EndRequest@{Ladder\_OpenMatch\_EndRequest}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Ladder\_OpenMatch\_EndRequest()}{Ladder\_OpenMatch\_EndRequest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Ladder\+\_\+\+Open\+Match\+\_\+\+End\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_ad835bf69d4294aa3ad9da4199ca70fc2}\label{class_c_mode_ad835bf69d4294aa3ad9da4199ca70fc2}} 
+\index{CMode@{CMode}!Ladder\_OpenMatch\_Request@{Ladder\_OpenMatch\_Request}}
+\index{Ladder\_OpenMatch\_Request@{Ladder\_OpenMatch\_Request}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Ladder\_OpenMatch\_Request()}{Ladder\_OpenMatch\_Request()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Ladder\+\_\+\+Open\+Match\+\_\+\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_ae141b574ee04ea9cf3a3eecc87a115ea}\label{class_c_mode_ae141b574ee04ea9cf3a3eecc87a115ea}} 
+\index{CMode@{CMode}!Ladder\_SetMatchMakingMatchId@{Ladder\_SetMatchMakingMatchId}}
+\index{Ladder\_SetMatchMakingMatchId@{Ladder\_SetMatchMakingMatchId}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Ladder\_SetMatchMakingMatchId()}{Ladder\_SetMatchMakingMatchId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Ladder\+\_\+\+Set\+Match\+Making\+Match\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Match\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a0cfda24f1e43c5a0fbdfa623681a1d7e}\label{class_c_mode_a0cfda24f1e43c5a0fbdfa623681a1d7e}} 
+\index{CMode@{CMode}!Ladder\_SetResultsVersion@{Ladder\_SetResultsVersion}}
+\index{Ladder\_SetResultsVersion@{Ladder\_SetResultsVersion}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Ladder\_SetResultsVersion()}{Ladder\_SetResultsVersion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Ladder\+\_\+\+Set\+Results\+Version (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Version }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_af162c7cf1320543556406bcf94a0dc4e}\label{class_c_mode_af162c7cf1320543556406bcf94a0dc4e}} 
+\index{CMode@{CMode}!PassOn@{PassOn}}
+\index{PassOn@{PassOn}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{PassOn()}{PassOn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Pass\+On (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_u_i_config_event}{C\+U\+I\+Config\+Event}}}]{Event\+To\+Pass\+On }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a9874c74a7d17fbe9fa6aefa9ac9df476}\label{class_c_mode_a9874c74a7d17fbe9fa6aefa9ac9df476}} 
+\index{CMode@{CMode}!Replay\_Start@{Replay\_Start}}
+\index{Replay\_Start@{Replay\_Start}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Replay\_Start()}{Replay\_Start()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Replay\+\_\+\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a9ff0bfb800222709dc9d909a608ae066}\label{class_c_mode_a9ff0bfb800222709dc9d909a608ae066}} 
+\index{CMode@{CMode}!Replay\_Stop@{Replay\_Stop}}
+\index{Replay\_Stop@{Replay\_Stop}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Replay\_Stop()}{Replay\_Stop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Replay\+\_\+\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_aff6a993953583eaff2706a2638e4935b}\label{class_c_mode_aff6a993953583eaff2706a2638e4935b}} 
+\index{CMode@{CMode}!RequestLoadMap@{RequestLoadMap}}
+\index{RequestLoadMap@{RequestLoadMap}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{RequestLoadMap()}{RequestLoadMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Request\+Load\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a484dddd1e515dc19bfbba15956d0cc33}\label{class_c_mode_a484dddd1e515dc19bfbba15956d0cc33}} 
+\index{CMode@{CMode}!RequestUnloadMap@{RequestUnloadMap}}
+\index{RequestUnloadMap@{RequestUnloadMap}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{RequestUnloadMap()}{RequestUnloadMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Request\+Unload\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a26e942805fd2465dc1daf491c949a089}\label{class_c_mode_a26e942805fd2465dc1daf491c949a089}} 
+\index{CMode@{CMode}!Solo\_SetNewRecord@{Solo\_SetNewRecord}}
+\index{Solo\_SetNewRecord@{Solo\_SetNewRecord}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Solo\_SetNewRecord()}{Solo\_SetNewRecord()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Solo\+\_\+\+Set\+New\+Record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_score}{C\+Score}}}]{Player\+Score,  }\item[{\mbox{\hyperlink{class_c_mode_a12abdad45d08121730235428ef376be3}{C\+Mode\+::\+E\+Medal}}}]{Player\+Score }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_ae8a9fad79db711d000684896cc1e0811}\label{class_c_mode_ae8a9fad79db711d000684896cc1e0811}} 
+\index{CMode@{CMode}!Synchro\_AddBarrier@{Synchro\_AddBarrier}}
+\index{Synchro\_AddBarrier@{Synchro\_AddBarrier}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Synchro\_AddBarrier()}{Synchro\_AddBarrier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Mode\+::\+Synchro\+\_\+\+Add\+Barrier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_ab8a2c2c0bf4d596da98da2e68e49e9f0}\label{class_c_mode_ab8a2c2c0bf4d596da98da2e68e49e9f0}} 
+\index{CMode@{CMode}!Synchro\_BarrierReached@{Synchro\_BarrierReached}}
+\index{Synchro\_BarrierReached@{Synchro\_BarrierReached}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Synchro\_BarrierReached()}{Synchro\_BarrierReached()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mode\+::\+Synchro\+\_\+\+Barrier\+Reached (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Barrier }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_acc4527d8b16331e59f3984975084862a}\label{class_c_mode_acc4527d8b16331e59f3984975084862a}} 
+\index{CMode@{CMode}!TaskResult\_Release@{TaskResult\_Release}}
+\index{TaskResult\_Release@{TaskResult\_Release}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{TaskResult\_Release()}{TaskResult\_Release()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Task\+Result\+\_\+\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Task\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a1c1789348362320be8e768309f3b0c5e}\label{class_c_mode_a1c1789348362320be8e768309f3b0c5e}} 
+\index{CMode@{CMode}!Trophy\_CompetitionMatch\_AddResult@{Trophy\_CompetitionMatch\_AddResult}}
+\index{Trophy\_CompetitionMatch\_AddResult@{Trophy\_CompetitionMatch\_AddResult}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Trophy\_CompetitionMatch\_AddResult()}{Trophy\_CompetitionMatch\_AddResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Trophy\+\_\+\+Competition\+Match\+\_\+\+Add\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Web\+Services\+User\+Id,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Match\+Rank,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Trophy\+Ranking }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a090d1b4eef1b6b7eb2ba4a5657c6e238}\label{class_c_mode_a090d1b4eef1b6b7eb2ba4a5657c6e238}} 
+\index{CMode@{CMode}!Trophy\_CompetitionMatch\_ClearResultList@{Trophy\_CompetitionMatch\_ClearResultList}}
+\index{Trophy\_CompetitionMatch\_ClearResultList@{Trophy\_CompetitionMatch\_ClearResultList}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Trophy\_CompetitionMatch\_ClearResultList()}{Trophy\_CompetitionMatch\_ClearResultList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Trophy\+\_\+\+Competition\+Match\+\_\+\+Clear\+Result\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a6079e53b8b2c44a8faec6924c792a66c}\label{class_c_mode_a6079e53b8b2c44a8faec6924c792a66c}} 
+\index{CMode@{CMode}!Trophy\_CompetitionMatch\_SendResultList@{Trophy\_CompetitionMatch\_SendResultList}}
+\index{Trophy\_CompetitionMatch\_SendResultList@{Trophy\_CompetitionMatch\_SendResultList}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Trophy\_CompetitionMatch\_SendResultList()}{Trophy\_CompetitionMatch\_SendResultList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___account_trophy_gain_list}{C\+Task\+Result\+\_\+\+Account\+Trophy\+Gain\+List}} C\+Mode\+::\+Trophy\+\_\+\+Competition\+Match\+\_\+\+Send\+Result\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Competition\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Competition\+Stage,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Competition\+Stage\+Step,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Competition\+Match\+Info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_aa1e448628318a94efb650a3b731888f4}\label{class_c_mode_aa1e448628318a94efb650a3b731888f4}} 
+\index{CMode@{CMode}!Trophy\_LiveTimeAttackAchievement\_AddResult@{Trophy\_LiveTimeAttackAchievement\_AddResult}}
+\index{Trophy\_LiveTimeAttackAchievement\_AddResult@{Trophy\_LiveTimeAttackAchievement\_AddResult}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Trophy\_LiveTimeAttackAchievement\_AddResult()}{Trophy\_LiveTimeAttackAchievement\_AddResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Trophy\+\_\+\+Live\+Time\+Attack\+Achievement\+\_\+\+Add\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Web\+Services\+User\+Id,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Match\+Rank,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Trophy\+Ranking }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_aeaa955756f4b150ab392670d8059bf04}\label{class_c_mode_aeaa955756f4b150ab392670d8059bf04}} 
+\index{CMode@{CMode}!Trophy\_LiveTimeAttackAchievement\_ClearResultList@{Trophy\_LiveTimeAttackAchievement\_ClearResultList}}
+\index{Trophy\_LiveTimeAttackAchievement\_ClearResultList@{Trophy\_LiveTimeAttackAchievement\_ClearResultList}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Trophy\_LiveTimeAttackAchievement\_ClearResultList()}{Trophy\_LiveTimeAttackAchievement\_ClearResultList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Trophy\+\_\+\+Live\+Time\+Attack\+Achievement\+\_\+\+Clear\+Result\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a2e033c18eef3398d3a1f9eafc267d465}\label{class_c_mode_a2e033c18eef3398d3a1f9eafc267d465}} 
+\index{CMode@{CMode}!Trophy\_LiveTimeAttackAchievement\_SendResultList@{Trophy\_LiveTimeAttackAchievement\_SendResultList}}
+\index{Trophy\_LiveTimeAttackAchievement\_SendResultList@{Trophy\_LiveTimeAttackAchievement\_SendResultList}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Trophy\_LiveTimeAttackAchievement\_SendResultList()}{Trophy\_LiveTimeAttackAchievement\_SendResultList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_task_result___account_trophy_gain_list}{C\+Task\+Result\+\_\+\+Account\+Trophy\+Gain\+List}} C\+Mode\+::\+Trophy\+\_\+\+Live\+Time\+Attack\+Achievement\+\_\+\+Send\+Result\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Duration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_af7b52d6a2a90366513bdeb34acd8e7cb}\label{class_c_mode_af7b52d6a2a90366513bdeb34acd8e7cb}} 
+\index{CMode@{CMode}!TweakTeamColorsToAvoidHueOverlap@{TweakTeamColorsToAvoidHueOverlap}}
+\index{TweakTeamColorsToAvoidHueOverlap@{TweakTeamColorsToAvoidHueOverlap}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{TweakTeamColorsToAvoidHueOverlap()}{TweakTeamColorsToAvoidHueOverlap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Tweak\+Team\+Colors\+To\+Avoid\+Hue\+Overlap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a68924dd0bc4d818daeb41a7ad0cc36a5}\label{class_c_mode_a68924dd0bc4d818daeb41a7ad0cc36a5}} 
+\index{CMode@{CMode}!Users\_AreAllies@{Users\_AreAllies}}
+\index{Users\_AreAllies@{Users\_AreAllies}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Users\_AreAllies()}{Users\_AreAllies()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mode\+::\+Users\+\_\+\+Are\+Allies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_user}{C\+User}}}]{User1,  }\item[{\mbox{\hyperlink{class_c_user}{C\+User}}}]{User2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_aadee4db84f8754002589f279a52dd162}\label{class_c_mode_aadee4db84f8754002589f279a52dd162}} 
+\index{CMode@{CMode}!Users\_CreateFake@{Users\_CreateFake}}
+\index{Users\_CreateFake@{Users\_CreateFake}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Users\_CreateFake()}{Users\_CreateFake()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_user}{C\+User}} C\+Mode\+::\+Users\+\_\+\+Create\+Fake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Nick\+Name,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Requested\+Team }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a3682d4ef68ec351bbacb4f68cd7f08a8}\label{class_c_mode_a3682d4ef68ec351bbacb4f68cd7f08a8}} 
+\index{CMode@{CMode}!Users\_DestroyAllFakes@{Users\_DestroyAllFakes}}
+\index{Users\_DestroyAllFakes@{Users\_DestroyAllFakes}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Users\_DestroyAllFakes()}{Users\_DestroyAllFakes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Users\+\_\+\+Destroy\+All\+Fakes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_aabee8b4102fe76eaec97507a51b1e342}\label{class_c_mode_aabee8b4102fe76eaec97507a51b1e342}} 
+\index{CMode@{CMode}!Users\_DestroyFake@{Users\_DestroyFake}}
+\index{Users\_DestroyFake@{Users\_DestroyFake}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Users\_DestroyFake()}{Users\_DestroyFake()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Users\+\_\+\+Destroy\+Fake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_user}{C\+User}}}]{User }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a0f300396238d5eb6af8691f5273fd63c}\label{class_c_mode_a0f300396238d5eb6af8691f5273fd63c}} 
+\index{CMode@{CMode}!Users\_RequestSwitchToSpectator@{Users\_RequestSwitchToSpectator}}
+\index{Users\_RequestSwitchToSpectator@{Users\_RequestSwitchToSpectator}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Users\_RequestSwitchToSpectator()}{Users\_RequestSwitchToSpectator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Users\+\_\+\+Request\+Switch\+To\+Spectator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_user}{C\+User}}}]{User }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_a8f51f77c9272f4fac1b092e15f9fd463}\label{class_c_mode_a8f51f77c9272f4fac1b092e15f9fd463}} 
+\index{CMode@{CMode}!Users\_SetNbFakeUsers@{Users\_SetNbFakeUsers}}
+\index{Users\_SetNbFakeUsers@{Users\_SetNbFakeUsers}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Users\_SetNbFakeUsers()}{Users\_SetNbFakeUsers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+::\+Users\+\_\+\+Set\+Nb\+Fake\+Users (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Nb\+Team1,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Nb\+Team2 }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_mode_acba49a03bdc6fb729bbd4ff912cc400e}\label{class_c_mode_acba49a03bdc6fb729bbd4ff912cc400e}} 
+\index{CMode@{CMode}!AchievementsManager@{AchievementsManager}}
+\index{AchievementsManager@{AchievementsManager}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{AchievementsManager}{AchievementsManager}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_achievements_manager}{C\+Achievements\+Manager}} C\+Mode\+::\+Achievements\+Manager}
+
+\mbox{\Hypertarget{class_c_mode_a43ba94797eb05e683e124046b58cedfb}\label{class_c_mode_a43ba94797eb05e683e124046b58cedfb}} 
+\index{CMode@{CMode}!ActionsManager@{ActionsManager}}
+\index{ActionsManager@{ActionsManager}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ActionsManager}{ActionsManager}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_action_manager}{C\+Action\+Manager}} C\+Mode\+::\+Actions\+Manager}
+
+\mbox{\Hypertarget{class_c_mode_a34193b3a0e1a7828506a429ae014acdc}\label{class_c_mode_a34193b3a0e1a7828506a429ae014acdc}} 
+\index{CMode@{CMode}!ClientManiaAppUrl@{ClientManiaAppUrl}}
+\index{ClientManiaAppUrl@{ClientManiaAppUrl}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ClientManiaAppUrl}{ClientManiaAppUrl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Mode\+::\+Client\+Mania\+App\+Url}
+
+\mbox{\Hypertarget{class_c_mode_a4d4b632b150ca61ed5ecbfc682316395}\label{class_c_mode_a4d4b632b150ca61ed5ecbfc682316395}} 
+\index{CMode@{CMode}!DataFileMgr@{DataFileMgr}}
+\index{DataFileMgr@{DataFileMgr}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{DataFileMgr}{DataFileMgr}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_data_file_mgr}{C\+Data\+File\+Mgr}} C\+Mode\+::\+Data\+File\+Mgr}
+
+Only available for local solo modes. \mbox{\Hypertarget{class_c_mode_a8e6986fa2e025d96f4a40763df92f1f7}\label{class_c_mode_a8e6986fa2e025d96f4a40763df92f1f7}} 
+\index{CMode@{CMode}!ForcedClubLinkUrl1@{ForcedClubLinkUrl1}}
+\index{ForcedClubLinkUrl1@{ForcedClubLinkUrl1}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ForcedClubLinkUrl1}{ForcedClubLinkUrl1}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Mode\+::\+Forced\+Club\+Link\+Url1}
+
+\mbox{\Hypertarget{class_c_mode_af0eaf5ee5d3f2fc6ed51131aaebfcb7a}\label{class_c_mode_af0eaf5ee5d3f2fc6ed51131aaebfcb7a}} 
+\index{CMode@{CMode}!ForcedClubLinkUrl2@{ForcedClubLinkUrl2}}
+\index{ForcedClubLinkUrl2@{ForcedClubLinkUrl2}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ForcedClubLinkUrl2}{ForcedClubLinkUrl2}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Mode\+::\+Forced\+Club\+Link\+Url2}
+
+\mbox{\Hypertarget{class_c_mode_acee254016b4567376d77a66402f4f02d}\label{class_c_mode_acee254016b4567376d77a66402f4f02d}} 
+\index{CMode@{CMode}!Http@{Http}}
+\index{Http@{Http}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Http}{Http}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_http_manager}{C\+Http\+Manager}} C\+Mode\+::\+Http}
+
+\mbox{\Hypertarget{class_c_mode_afec7ff710fad50c7b649c3b683ce5de9}\label{class_c_mode_afec7ff710fad50c7b649c3b683ce5de9}} 
+\index{CMode@{CMode}!Hud@{Hud}}
+\index{Hud@{Hud}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Hud}{Hud}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_module_playground_hud}{C\+Module\+Playground\+Hud}} C\+Mode\+::\+Hud}
+
+\mbox{\Hypertarget{class_c_mode_a0322c9ca3294c96063878580759a9234}\label{class_c_mode_a0322c9ca3294c96063878580759a9234}} 
+\index{CMode@{CMode}!Input@{Input}}
+\index{Input@{Input}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Input}{Input}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_input_manager}{C\+Input\+Manager}} C\+Mode\+::\+Input}
+
+Only available for local solo modes. \mbox{\Hypertarget{class_c_mode_aff3f8affd4a1951f8efdfcbd866a78d8}\label{class_c_mode_aff3f8affd4a1951f8efdfcbd866a78d8}} 
+\index{CMode@{CMode}!Ladder\_RequestInProgress@{Ladder\_RequestInProgress}}
+\index{Ladder\_RequestInProgress@{Ladder\_RequestInProgress}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Ladder\_RequestInProgress}{Ladder\_RequestInProgress}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mode\+::\+Ladder\+\_\+\+Request\+In\+Progress}
+
+\mbox{\Hypertarget{class_c_mode_a474b7d884910d9360796de3729ec3939}\label{class_c_mode_a474b7d884910d9360796de3729ec3939}} 
+\index{CMode@{CMode}!LoadedTitle@{LoadedTitle}}
+\index{LoadedTitle@{LoadedTitle}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{LoadedTitle}{LoadedTitle}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_title}{C\+Title}} C\+Mode\+::\+Loaded\+Title}
+
+\mbox{\Hypertarget{class_c_mode_a40ea2f714f0fe21173a8e8f7676ebe8a}\label{class_c_mode_a40ea2f714f0fe21173a8e8f7676ebe8a}} 
+\index{CMode@{CMode}!Map@{Map}}
+\index{Map@{Map}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Map}{Map}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_map}{C\+Map}} C\+Mode\+::\+Map}
+
+\mbox{\Hypertarget{class_c_mode_a228938869d3a04ccddc65fc6bbfae4d4}\label{class_c_mode_a228938869d3a04ccddc65fc6bbfae4d4}} 
+\index{CMode@{CMode}!MapList@{MapList}}
+\index{MapList@{MapList}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{MapList}{MapList}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_map_info}{C\+Map\+Info}}$>$ C\+Mode\+::\+Map\+List}
+
+\mbox{\Hypertarget{class_c_mode_a6a1cbeae896697a096e24c05fd30aa0d}\label{class_c_mode_a6a1cbeae896697a096e24c05fd30aa0d}} 
+\index{CMode@{CMode}!MapLoaded@{MapLoaded}}
+\index{MapLoaded@{MapLoaded}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{MapLoaded}{MapLoaded}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mode\+::\+Map\+Loaded}
+
+\mbox{\Hypertarget{class_c_mode_a5832edcf13c2f7aba7388c9622d3b720}\label{class_c_mode_a5832edcf13c2f7aba7388c9622d3b720}} 
+\index{CMode@{CMode}!MapName@{MapName}}
+\index{MapName@{MapName}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{MapName}{MapName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Mode\+::\+Map\+Name}
+
+\mbox{\Hypertarget{class_c_mode_a26ab6f87b224ac44aff93ec041e1fe8b}\label{class_c_mode_a26ab6f87b224ac44aff93ec041e1fe8b}} 
+\index{CMode@{CMode}!MapPlayerModelName@{MapPlayerModelName}}
+\index{MapPlayerModelName@{MapPlayerModelName}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{MapPlayerModelName}{MapPlayerModelName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Mode\+::\+Map\+Player\+Model\+Name}
+
+\mbox{\Hypertarget{class_c_mode_a0aa4905d6d6898613cb082c1887ae883}\label{class_c_mode_a0aa4905d6d6898613cb082c1887ae883}} 
+\index{CMode@{CMode}!MatchEndRequested@{MatchEndRequested}}
+\index{MatchEndRequested@{MatchEndRequested}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{MatchEndRequested}{MatchEndRequested}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mode\+::\+Match\+End\+Requested}
+
+\mbox{\Hypertarget{class_c_mode_a661d7f2c31627bf372c480237aeed22d}\label{class_c_mode_a661d7f2c31627bf372c480237aeed22d}} 
+\index{CMode@{CMode}!ModeStatusMessage@{ModeStatusMessage}}
+\index{ModeStatusMessage@{ModeStatusMessage}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ModeStatusMessage}{ModeStatusMessage}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Mode\+::\+Mode\+Status\+Message}
+
+\mbox{\Hypertarget{class_c_mode_a81ef639401b8ee82e04017987a5360a6}\label{class_c_mode_a81ef639401b8ee82e04017987a5360a6}} 
+\index{CMode@{CMode}!NeutralEmblemUrl@{NeutralEmblemUrl}}
+\index{NeutralEmblemUrl@{NeutralEmblemUrl}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{NeutralEmblemUrl}{NeutralEmblemUrl}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Mode\+::\+Neutral\+Emblem\+Url}
+
+\mbox{\Hypertarget{class_c_mode_a6792e221114a6103384d18ef9286a393}\label{class_c_mode_a6792e221114a6103384d18ef9286a393}} 
+\index{CMode@{CMode}!NextMapIndex@{NextMapIndex}}
+\index{NextMapIndex@{NextMapIndex}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{NextMapIndex}{NextMapIndex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Mode\+::\+Next\+Map\+Index}
+
+\mbox{\Hypertarget{class_c_mode_a327b2534f75feaf52805116d29d7bfee}\label{class_c_mode_a327b2534f75feaf52805116d29d7bfee}} 
+\index{CMode@{CMode}!Now@{Now}}
+\index{Now@{Now}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Now}{Now}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Mode\+::\+Now}
+
+\mbox{\Hypertarget{class_c_mode_a8a62ee732ed22b65b7019c1273e9b367}\label{class_c_mode_a8a62ee732ed22b65b7019c1273e9b367}} 
+\index{CMode@{CMode}!Period@{Period}}
+\index{Period@{Period}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Period}{Period}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Mode\+::\+Period}
+
+\mbox{\Hypertarget{class_c_mode_a1b5b8782c555fc2a740e46a20ec1f49b}\label{class_c_mode_a1b5b8782c555fc2a740e46a20ec1f49b}} 
+\index{CMode@{CMode}!Replay\_AutoStart@{Replay\_AutoStart}}
+\index{Replay\_AutoStart@{Replay\_AutoStart}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Replay\_AutoStart}{Replay\_AutoStart}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mode\+::\+Replay\+\_\+\+Auto\+Start}
+
+\mbox{\Hypertarget{class_c_mode_adf72f02b83772b4f97dd1cd87a00ac70}\label{class_c_mode_adf72f02b83772b4f97dd1cd87a00ac70}} 
+\index{CMode@{CMode}!ScoreMgr@{ScoreMgr}}
+\index{ScoreMgr@{ScoreMgr}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ScoreMgr}{ScoreMgr}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_score_mgr}{C\+Score\+Mgr}} C\+Mode\+::\+Score\+Mgr}
+
+\mbox{\Hypertarget{class_c_mode_a636ea176d59de1c42e6b39335ce075fa}\label{class_c_mode_a636ea176d59de1c42e6b39335ce075fa}} 
+\index{CMode@{CMode}!ServerAdmin@{ServerAdmin}}
+\index{ServerAdmin@{ServerAdmin}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ServerAdmin}{ServerAdmin}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_server_admin}{C\+Server\+Admin}} C\+Mode\+::\+Server\+Admin}
+
+\mbox{\Hypertarget{class_c_mode_a9ae6015564428d2e706550ebebbb67c7}\label{class_c_mode_a9ae6015564428d2e706550ebebbb67c7}} 
+\index{CMode@{CMode}!ServerLogin@{ServerLogin}}
+\index{ServerLogin@{ServerLogin}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ServerLogin}{ServerLogin}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Mode\+::\+Server\+Login}
+
+\mbox{\Hypertarget{class_c_mode_a1a8ddf1fd9fa0ec037948214debd2279}\label{class_c_mode_a1a8ddf1fd9fa0ec037948214debd2279}} 
+\index{CMode@{CMode}!ServerModeName@{ServerModeName}}
+\index{ServerModeName@{ServerModeName}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ServerModeName}{ServerModeName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Mode\+::\+Server\+Mode\+Name}
+
+\mbox{\Hypertarget{class_c_mode_a42640ee4066d96ede1529f714baa2341}\label{class_c_mode_a42640ee4066d96ede1529f714baa2341}} 
+\index{CMode@{CMode}!ServerName@{ServerName}}
+\index{ServerName@{ServerName}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ServerName}{ServerName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Mode\+::\+Server\+Name}
+
+\mbox{\Hypertarget{class_c_mode_ab116a66dcc16a7ecb8fb12eb673a72c4}\label{class_c_mode_ab116a66dcc16a7ecb8fb12eb673a72c4}} 
+\index{CMode@{CMode}!ServerShutdownRequested@{ServerShutdownRequested}}
+\index{ServerShutdownRequested@{ServerShutdownRequested}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{ServerShutdownRequested}{ServerShutdownRequested}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mode\+::\+Server\+Shutdown\+Requested}
+
+\mbox{\Hypertarget{class_c_mode_a48bbb0f29e80eb70034dc247533a6c33}\label{class_c_mode_a48bbb0f29e80eb70034dc247533a6c33}} 
+\index{CMode@{CMode}!Solo\_NewRecordSequenceInProgress@{Solo\_NewRecordSequenceInProgress}}
+\index{Solo\_NewRecordSequenceInProgress@{Solo\_NewRecordSequenceInProgress}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Solo\_NewRecordSequenceInProgress}{Solo\_NewRecordSequenceInProgress}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mode\+::\+Solo\+\_\+\+New\+Record\+Sequence\+In\+Progress}
+
+\mbox{\Hypertarget{class_c_mode_ae894c1ef2b8177ec377235ab59069133}\label{class_c_mode_ae894c1ef2b8177ec377235ab59069133}} 
+\index{CMode@{CMode}!System@{System}}
+\index{System@{System}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{System}{System}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_system_platform}{C\+System\+Platform}} C\+Mode\+::\+System}
+
+\mbox{\Hypertarget{class_c_mode_a0f5b5901a4ea53b37678a035e8084847}\label{class_c_mode_a0f5b5901a4ea53b37678a035e8084847}} 
+\index{CMode@{CMode}!TaskResults@{TaskResults}}
+\index{TaskResults@{TaskResults}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{TaskResults}{TaskResults}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}}$>$ C\+Mode\+::\+Task\+Results}
+
+\mbox{\Hypertarget{class_c_mode_aa5c5cf2a13a154279de9844b6faca5b8}\label{class_c_mode_aa5c5cf2a13a154279de9844b6faca5b8}} 
+\index{CMode@{CMode}!Teams@{Teams}}
+\index{Teams@{Teams}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Teams}{Teams}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_team}{C\+Team}}$>$ C\+Mode\+::\+Teams}
+
+\mbox{\Hypertarget{class_c_mode_abbdf04d19f50d67a3035c07d00fb7ed4}\label{class_c_mode_abbdf04d19f50d67a3035c07d00fb7ed4}} 
+\index{CMode@{CMode}!TurretsManager@{TurretsManager}}
+\index{TurretsManager@{TurretsManager}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{TurretsManager}{TurretsManager}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_mode_turret_manager}{C\+Mode\+Turret\+Manager}} C\+Mode\+::\+Turrets\+Manager}
+
+\mbox{\Hypertarget{class_c_mode_ae22d9ed212df8698a620a497bc2f2472}\label{class_c_mode_ae22d9ed212df8698a620a497bc2f2472}} 
+\index{CMode@{CMode}!UIManager@{UIManager}}
+\index{UIManager@{UIManager}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{UIManager}{UIManager}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_u_i_config_mgr}{C\+U\+I\+Config\+Mgr}} C\+Mode\+::\+U\+I\+Manager}
+
+\mbox{\Hypertarget{class_c_mode_a7c56128ec64d59259a946504f716cbc4}\label{class_c_mode_a7c56128ec64d59259a946504f716cbc4}} 
+\index{CMode@{CMode}!UiUpdatePeriod@{UiUpdatePeriod}}
+\index{UiUpdatePeriod@{UiUpdatePeriod}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{UiUpdatePeriod}{UiUpdatePeriod}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Mode\+::\+Ui\+Update\+Period}
+
+\mbox{\Hypertarget{class_c_mode_a4052832ad12153cd2a3ec6ee566fb780}\label{class_c_mode_a4052832ad12153cd2a3ec6ee566fb780}} 
+\index{CMode@{CMode}!UseMinimap@{UseMinimap}}
+\index{UseMinimap@{UseMinimap}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{UseMinimap}{UseMinimap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Mode\+::\+Use\+Minimap}
+
+\mbox{\Hypertarget{class_c_mode_a549c54938fd20e3c348d8a86f2b9fdaf}\label{class_c_mode_a549c54938fd20e3c348d8a86f2b9fdaf}} 
+\index{CMode@{CMode}!UserMgr@{UserMgr}}
+\index{UserMgr@{UserMgr}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{UserMgr}{UserMgr}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_user_v2_manager}{C\+User\+V2\+Manager}} C\+Mode\+::\+User\+Mgr}
+
+\mbox{\Hypertarget{class_c_mode_a5c6060143d32f7cef7995bfc896cf275}\label{class_c_mode_a5c6060143d32f7cef7995bfc896cf275}} 
+\index{CMode@{CMode}!Users@{Users}}
+\index{Users@{Users}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Users}{Users}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_user}{C\+User}}$>$ C\+Mode\+::\+Users}
+
+\mbox{\Hypertarget{class_c_mode_a0791e90374f0c11247293178a257228c}\label{class_c_mode_a0791e90374f0c11247293178a257228c}} 
+\index{CMode@{CMode}!VehiclesManager@{VehiclesManager}}
+\index{VehiclesManager@{VehiclesManager}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{VehiclesManager}{VehiclesManager}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_mode_vehicle_manager}{C\+Mode\+Vehicle\+Manager}} C\+Mode\+::\+Vehicles\+Manager}
+
+\mbox{\Hypertarget{class_c_mode_ac1e83a69ff13829571edf0e98b9c68d3}\label{class_c_mode_ac1e83a69ff13829571edf0e98b9c68d3}} 
+\index{CMode@{CMode}!Xml@{Xml}}
+\index{Xml@{Xml}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{Xml}{Xml}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_parsing_manager}{C\+Parsing\+Manager}} C\+Mode\+::\+Xml}
+
+\mbox{\Hypertarget{class_c_mode_aea23de98cf483431ce99716feaa316c9}\label{class_c_mode_aea23de98cf483431ce99716feaa316c9}} 
+\index{CMode@{CMode}!XmlRpc@{XmlRpc}}
+\index{XmlRpc@{XmlRpc}!CMode@{CMode}}
+\doxysubsubsection{\texorpdfstring{XmlRpc}{XmlRpc}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_xml_rpc}{C\+Xml\+Rpc}} C\+Mode\+::\+Xml\+Rpc}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

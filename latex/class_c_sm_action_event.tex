@@ -1,0 +1,290 @@
+\hypertarget{class_c_sm_action_event}{}\doxysection{C\+Sm\+Action\+Event Class Reference}
+\label{class_c_sm_action_event}\index{CSmActionEvent@{CSmActionEvent}}
+
+
+An action event.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Sm\+Action\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_sm_action_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}{E\+Type}} \{ \newline
+\mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22af5c6c81c382d0e6df9c1991eab0d985c}{On\+Hit\+Player}}, 
+\mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a109f961eaf67a41f96c18cdc1ad89ae3}{On\+Projectile\+End}}, 
+\mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a5ca27ddd3b01930cedb1b991a405e696}{On\+Projectile\+Destroyed}}, 
+\mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ac6de047a51f8d2692f7f3d881e542567}{On\+Hit\+Object}}, 
+\newline
+\mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a3ed512739fcb2b8717b992b5be19901b}{On\+Hit\+Shield}}, 
+\mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ae989daa0fad8e8bfc9f4408836e86acb}{On\+Hit\+Vehicle}}, 
+\mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a191b88b134b37eea98953ed1d2cb98f3}{On\+Shield\+End}}, 
+\mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a88afb0f73b5d803a9a052baf91bc8ec3}{On\+Hit\+Turret}}, 
+\newline
+\mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22aad831ed91d08f8c5620c3c41d7f483f9}{On\+Input\+Change}}, 
+\mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a82202dc2f6dd01a07bc3d714fe035e56}{On\+Focused\+Scroll}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32}{E\+Input\+Change}} \{ \newline
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32ae0fb15ec917859133add5492345eb19b}{Is\+Active}}, 
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32af415363d5f5d0a3298925349bd25efe7}{Focused\+\_\+\+Main}}, 
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a9d678801ce709dc9a42faae585859e78}{Focused\+\_\+\+Secondary}}, 
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32af35b8005337e93c482c467d49a30f1d9}{Focused\+\_\+\+Activable1}}, 
+\newline
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a5c9a97e407259224966818c10742c021}{Focused\+\_\+\+Activable2}}, 
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a3362331452cd99d7d23cb87ec0704a50}{Focused\+\_\+\+Activable3}}, 
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a551857bda4c9724f3c15e7ef1b79bb1f}{Focused\+\_\+\+Activable4}}, 
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a26c3979e038d899f6584d128ce15712f}{Focused\+\_\+\+Activable5}}, 
+\newline
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a14f56987e47632f294488d47f326ea97}{Focused\+\_\+\+Activable6}}, 
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a3c7ee8cce94909d34910651f62b7e083}{Focused\+\_\+\+Activable7}}, 
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a9b1f5f25cec67b79fd92a10d588716f7}{Focused\+\_\+\+Activable8}}, 
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32af54df0e3e3c4b035acced06c46865146}{Focused\+\_\+\+Activable9}}, 
+\newline
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32ad34b291fe71d94d744f06b0980bd0856}{Focused\+\_\+\+Activable0}}, 
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a3596d89171d5a6998db7d7a2d58f4275}{Focused\+\_\+\+Consumable1}}, 
+\mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32aaabab8f8946dc67c215fe2cc8e6a035c}{Focused\+\_\+\+Consumable2}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}{C\+Sm\+Action\+Event\+::\+E\+Type}} \mbox{\hyperlink{class_c_sm_action_event_ab38f7a8334d5aaa71f46fbe173dacecf}{Type}}
+\item 
+const \mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_sm_action_event_a96c8c38ed0927ec51dad0ac7e844f86d}{Projectile\+Model\+Id}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_action_event_a7d7560aa55cea4389433f16ad499a1d0}{Projectile\+Start\+Date}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_action_event_a3e0710a22ffc6edbd6e27a5f502c2ead}{Damage}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_action_event_a13c4dd6b32d6135682bf6585bc014e7f}{Context\+Id}}
+\item 
+const \mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_action_event_a67ef5b9a55ae13e11c8e58dbb09ccbd5}{Position}}
+\item 
+const \mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_action_event_a9b9b25a4dc01baa57ff0efeac72080d8}{Direction}}
+\item 
+const \mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_action_event_a3663d3f6c4ab5a04ab87d34ca1952318}{Normal}}
+\item 
+const \mbox{\hyperlink{class_c_entity}{C\+Entity}} \mbox{\hyperlink{class_c_sm_action_event_a5902ec4b003892adab69f552f9af7017}{Victim}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_action_event_a27addb2657a81e33de9e7a2ed309e5fd}{Shield}}
+\item 
+const \mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32}{C\+Sm\+Action\+Event\+::\+E\+Input\+Change}} \mbox{\hyperlink{class_c_sm_action_event_adc0228beab8c3cd65a4c11d95e3fe422}{Input}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_action_event_ab3ff24f7ba964accd6ab5fba3c187af0}{Scroll\+Delta}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An action event. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Local 
+\end{DoxyItemize}
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32}} 
+\index{CSmActionEvent@{CSmActionEvent}!EInputChange@{EInputChange}}
+\index{EInputChange@{EInputChange}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{EInputChange}{EInputChange}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32}{C\+Sm\+Action\+Event\+::\+E\+Input\+Change}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IsActive@{IsActive}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!IsActive@{IsActive}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32ae0fb15ec917859133add5492345eb19b}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32ae0fb15ec917859133add5492345eb19b}} 
+Is\+Active&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Main@{Focused\_Main}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Main@{Focused\_Main}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32af415363d5f5d0a3298925349bd25efe7}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32af415363d5f5d0a3298925349bd25efe7}} 
+Focused\+\_\+\+Main&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Secondary@{Focused\_Secondary}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Secondary@{Focused\_Secondary}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a9d678801ce709dc9a42faae585859e78}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a9d678801ce709dc9a42faae585859e78}} 
+Focused\+\_\+\+Secondary&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Activable1@{Focused\_Activable1}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Activable1@{Focused\_Activable1}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32af35b8005337e93c482c467d49a30f1d9}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32af35b8005337e93c482c467d49a30f1d9}} 
+Focused\+\_\+\+Activable1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Activable2@{Focused\_Activable2}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Activable2@{Focused\_Activable2}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a5c9a97e407259224966818c10742c021}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a5c9a97e407259224966818c10742c021}} 
+Focused\+\_\+\+Activable2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Activable3@{Focused\_Activable3}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Activable3@{Focused\_Activable3}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a3362331452cd99d7d23cb87ec0704a50}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a3362331452cd99d7d23cb87ec0704a50}} 
+Focused\+\_\+\+Activable3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Activable4@{Focused\_Activable4}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Activable4@{Focused\_Activable4}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a551857bda4c9724f3c15e7ef1b79bb1f}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a551857bda4c9724f3c15e7ef1b79bb1f}} 
+Focused\+\_\+\+Activable4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Activable5@{Focused\_Activable5}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Activable5@{Focused\_Activable5}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a26c3979e038d899f6584d128ce15712f}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a26c3979e038d899f6584d128ce15712f}} 
+Focused\+\_\+\+Activable5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Activable6@{Focused\_Activable6}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Activable6@{Focused\_Activable6}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a14f56987e47632f294488d47f326ea97}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a14f56987e47632f294488d47f326ea97}} 
+Focused\+\_\+\+Activable6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Activable7@{Focused\_Activable7}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Activable7@{Focused\_Activable7}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a3c7ee8cce94909d34910651f62b7e083}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a3c7ee8cce94909d34910651f62b7e083}} 
+Focused\+\_\+\+Activable7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Activable8@{Focused\_Activable8}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Activable8@{Focused\_Activable8}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a9b1f5f25cec67b79fd92a10d588716f7}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a9b1f5f25cec67b79fd92a10d588716f7}} 
+Focused\+\_\+\+Activable8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Activable9@{Focused\_Activable9}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Activable9@{Focused\_Activable9}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32af54df0e3e3c4b035acced06c46865146}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32af54df0e3e3c4b035acced06c46865146}} 
+Focused\+\_\+\+Activable9&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Activable0@{Focused\_Activable0}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Activable0@{Focused\_Activable0}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32ad34b291fe71d94d744f06b0980bd0856}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32ad34b291fe71d94d744f06b0980bd0856}} 
+Focused\+\_\+\+Activable0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Consumable1@{Focused\_Consumable1}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Consumable1@{Focused\_Consumable1}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a3596d89171d5a6998db7d7a2d58f4275}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32a3596d89171d5a6998db7d7a2d58f4275}} 
+Focused\+\_\+\+Consumable1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Focused\_Consumable2@{Focused\_Consumable2}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!Focused\_Consumable2@{Focused\_Consumable2}}}\mbox{\Hypertarget{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32aaabab8f8946dc67c215fe2cc8e6a035c}\label{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32aaabab8f8946dc67c215fe2cc8e6a035c}} 
+Focused\+\_\+\+Consumable2&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}\label{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}} 
+\index{CSmActionEvent@{CSmActionEvent}!EType@{EType}}
+\index{EType@{EType}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{EType}{EType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}{C\+Sm\+Action\+Event\+::\+E\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnHitPlayer@{OnHitPlayer}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnHitPlayer@{OnHitPlayer}}}\mbox{\Hypertarget{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22af5c6c81c382d0e6df9c1991eab0d985c}\label{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22af5c6c81c382d0e6df9c1991eab0d985c}} 
+On\+Hit\+Player&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnProjectileEnd@{OnProjectileEnd}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnProjectileEnd@{OnProjectileEnd}}}\mbox{\Hypertarget{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a109f961eaf67a41f96c18cdc1ad89ae3}\label{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a109f961eaf67a41f96c18cdc1ad89ae3}} 
+On\+Projectile\+End&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnProjectileDestroyed@{OnProjectileDestroyed}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnProjectileDestroyed@{OnProjectileDestroyed}}}\mbox{\Hypertarget{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a5ca27ddd3b01930cedb1b991a405e696}\label{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a5ca27ddd3b01930cedb1b991a405e696}} 
+On\+Projectile\+Destroyed&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnHitObject@{OnHitObject}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnHitObject@{OnHitObject}}}\mbox{\Hypertarget{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ac6de047a51f8d2692f7f3d881e542567}\label{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ac6de047a51f8d2692f7f3d881e542567}} 
+On\+Hit\+Object&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnHitShield@{OnHitShield}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnHitShield@{OnHitShield}}}\mbox{\Hypertarget{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a3ed512739fcb2b8717b992b5be19901b}\label{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a3ed512739fcb2b8717b992b5be19901b}} 
+On\+Hit\+Shield&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnHitVehicle@{OnHitVehicle}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnHitVehicle@{OnHitVehicle}}}\mbox{\Hypertarget{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ae989daa0fad8e8bfc9f4408836e86acb}\label{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22ae989daa0fad8e8bfc9f4408836e86acb}} 
+On\+Hit\+Vehicle&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnShieldEnd@{OnShieldEnd}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnShieldEnd@{OnShieldEnd}}}\mbox{\Hypertarget{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a191b88b134b37eea98953ed1d2cb98f3}\label{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a191b88b134b37eea98953ed1d2cb98f3}} 
+On\+Shield\+End&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnHitTurret@{OnHitTurret}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnHitTurret@{OnHitTurret}}}\mbox{\Hypertarget{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a88afb0f73b5d803a9a052baf91bc8ec3}\label{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a88afb0f73b5d803a9a052baf91bc8ec3}} 
+On\+Hit\+Turret&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnInputChange@{OnInputChange}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnInputChange@{OnInputChange}}}\mbox{\Hypertarget{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22aad831ed91d08f8c5620c3c41d7f483f9}\label{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22aad831ed91d08f8c5620c3c41d7f483f9}} 
+On\+Input\+Change&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnFocusedScroll@{OnFocusedScroll}!CSmActionEvent@{CSmActionEvent}}\index{CSmActionEvent@{CSmActionEvent}!OnFocusedScroll@{OnFocusedScroll}}}\mbox{\Hypertarget{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a82202dc2f6dd01a07bc3d714fe035e56}\label{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22a82202dc2f6dd01a07bc3d714fe035e56}} 
+On\+Focused\+Scroll&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_sm_action_event_a13c4dd6b32d6135682bf6585bc014e7f}\label{class_c_sm_action_event_a13c4dd6b32d6135682bf6585bc014e7f}} 
+\index{CSmActionEvent@{CSmActionEvent}!ContextId@{ContextId}}
+\index{ContextId@{ContextId}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{ContextId}{ContextId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Action\+Event\+::\+Context\+Id}
+
+\mbox{\Hypertarget{class_c_sm_action_event_a3e0710a22ffc6edbd6e27a5f502c2ead}\label{class_c_sm_action_event_a3e0710a22ffc6edbd6e27a5f502c2ead}} 
+\index{CSmActionEvent@{CSmActionEvent}!Damage@{Damage}}
+\index{Damage@{Damage}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Damage}{Damage}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Action\+Event\+::\+Damage}
+
+\mbox{\Hypertarget{class_c_sm_action_event_a9b9b25a4dc01baa57ff0efeac72080d8}\label{class_c_sm_action_event_a9b9b25a4dc01baa57ff0efeac72080d8}} 
+\index{CSmActionEvent@{CSmActionEvent}!Direction@{Direction}}
+\index{Direction@{Direction}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Direction}{Direction}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Sm\+Action\+Event\+::\+Direction}
+
+\mbox{\Hypertarget{class_c_sm_action_event_adc0228beab8c3cd65a4c11d95e3fe422}\label{class_c_sm_action_event_adc0228beab8c3cd65a4c11d95e3fe422}} 
+\index{CSmActionEvent@{CSmActionEvent}!Input@{Input}}
+\index{Input@{Input}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Input}{Input}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_sm_action_event_aa2b0d98c71d00caf27e7aa5973a22d32}{C\+Sm\+Action\+Event\+::\+E\+Input\+Change}} C\+Sm\+Action\+Event\+::\+Input}
+
+\mbox{\Hypertarget{class_c_sm_action_event_a3663d3f6c4ab5a04ab87d34ca1952318}\label{class_c_sm_action_event_a3663d3f6c4ab5a04ab87d34ca1952318}} 
+\index{CSmActionEvent@{CSmActionEvent}!Normal@{Normal}}
+\index{Normal@{Normal}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Normal}{Normal}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Sm\+Action\+Event\+::\+Normal}
+
+\mbox{\Hypertarget{class_c_sm_action_event_a67ef5b9a55ae13e11c8e58dbb09ccbd5}\label{class_c_sm_action_event_a67ef5b9a55ae13e11c8e58dbb09ccbd5}} 
+\index{CSmActionEvent@{CSmActionEvent}!Position@{Position}}
+\index{Position@{Position}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Sm\+Action\+Event\+::\+Position}
+
+\mbox{\Hypertarget{class_c_sm_action_event_a96c8c38ed0927ec51dad0ac7e844f86d}\label{class_c_sm_action_event_a96c8c38ed0927ec51dad0ac7e844f86d}} 
+\index{CSmActionEvent@{CSmActionEvent}!ProjectileModelId@{ProjectileModelId}}
+\index{ProjectileModelId@{ProjectileModelId}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{ProjectileModelId}{ProjectileModelId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_ident}{Ident}} C\+Sm\+Action\+Event\+::\+Projectile\+Model\+Id}
+
+\mbox{\Hypertarget{class_c_sm_action_event_a7d7560aa55cea4389433f16ad499a1d0}\label{class_c_sm_action_event_a7d7560aa55cea4389433f16ad499a1d0}} 
+\index{CSmActionEvent@{CSmActionEvent}!ProjectileStartDate@{ProjectileStartDate}}
+\index{ProjectileStartDate@{ProjectileStartDate}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{ProjectileStartDate}{ProjectileStartDate}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Action\+Event\+::\+Projectile\+Start\+Date}
+
+\mbox{\Hypertarget{class_c_sm_action_event_ab3ff24f7ba964accd6ab5fba3c187af0}\label{class_c_sm_action_event_ab3ff24f7ba964accd6ab5fba3c187af0}} 
+\index{CSmActionEvent@{CSmActionEvent}!ScrollDelta@{ScrollDelta}}
+\index{ScrollDelta@{ScrollDelta}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{ScrollDelta}{ScrollDelta}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Action\+Event\+::\+Scroll\+Delta}
+
+\mbox{\Hypertarget{class_c_sm_action_event_a27addb2657a81e33de9e7a2ed309e5fd}\label{class_c_sm_action_event_a27addb2657a81e33de9e7a2ed309e5fd}} 
+\index{CSmActionEvent@{CSmActionEvent}!Shield@{Shield}}
+\index{Shield@{Shield}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Shield}{Shield}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Action\+Event\+::\+Shield}
+
+\mbox{\Hypertarget{class_c_sm_action_event_ab38f7a8334d5aaa71f46fbe173dacecf}\label{class_c_sm_action_event_ab38f7a8334d5aaa71f46fbe173dacecf}} 
+\index{CSmActionEvent@{CSmActionEvent}!Type@{Type}}
+\index{Type@{Type}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_sm_action_event_adea0bc4e3b9a4b25c0dcebd93fe73c22}{C\+Sm\+Action\+Event\+::\+E\+Type}} C\+Sm\+Action\+Event\+::\+Type}
+
+Type. \mbox{\Hypertarget{class_c_sm_action_event_a5902ec4b003892adab69f552f9af7017}\label{class_c_sm_action_event_a5902ec4b003892adab69f552f9af7017}} 
+\index{CSmActionEvent@{CSmActionEvent}!Victim@{Victim}}
+\index{Victim@{Victim}!CSmActionEvent@{CSmActionEvent}}
+\doxysubsubsection{\texorpdfstring{Victim}{Victim}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_entity}{C\+Entity}} C\+Sm\+Action\+Event\+::\+Victim}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

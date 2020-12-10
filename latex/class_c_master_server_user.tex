@@ -1,0 +1,185 @@
+\hypertarget{class_c_master_server_user}{}\doxysection{C\+Master\+Server\+User Class Reference}
+\label{class_c_master_server_user}\index{CMasterServerUser@{CMasterServerUser}}
+
+
+Masterserver user info.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Master\+Server\+User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_master_server_user}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45}{E\+Master\+Server\+Connection\+Status}} \{ \mbox{\hyperlink{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45a5e2e7c48bb2864b6468a1a7086c67348}{Not\+Connected}}, 
+\mbox{\hyperlink{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45a96f76046f2e98b21637a77973a3a0062}{Connecting}}, 
+\mbox{\hyperlink{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45aa6f0d6e7c376eb3d7a21be11461ee428}{Connected}}, 
+\mbox{\hyperlink{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45a69395af9d3e42aef78f88a8c6b818e9e}{Disconnecting}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_master_server_user_ac4858c87eeb2277ba680e343fe7ecc6c}{Get\+Zone}} (\mbox{\hyperlink{struct_integer}{Integer}} Zone\+Level)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_master_server_user_a969fd50534cd6d5a9f0736259fadbf99}{Need\+To\+Change\+Zone}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_master_server_user_a4ce57c872ff9b449d08537368bfb0d49}{Zone\+Level\+Count}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_master_server_user_a658dce447a9f1f2a105ade8500c6b379}{Multi\+Internet\+Play\+Time\+Left}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_master_server_user_abf1234a3753094d17dcda3d04d442507}{Login}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_master_server_user_a9bd67722e06fd575a52c7a1049428a9d}{Display\+Name}}
+\item 
+const \mbox{\hyperlink{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45}{C\+Master\+Server\+User\+::\+E\+Master\+Server\+Connection\+Status}} \mbox{\hyperlink{class_c_master_server_user_aa503601437f4d5424e9e0cdb66ac0d63}{Connection\+Status}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_master_server_user_a2e705b570564fe2d38d761abbe89cdbd}{Last\+Connection\+Error\+Type}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_master_server_user_a23e99a7453fc33d60fa3dab7dd1c3dd0}{Last\+Connection\+Error\+Code}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_master_server_user_a0eec49170de0258e79350776a41a1531}{Last\+Connection\+Error\+Description}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_master_server_user_af9d69d0686a462e78b73a59949aac2b4}{Has\+Uplay\+Profile}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_master_server_user_a5a0d189071408e2a2b5b8d8e70ee57c1}{Has\+Accepted\+N\+DA}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_net_ubi_services_news}{C\+Net\+Ubi\+Services\+News}} $>$ \mbox{\hyperlink{class_c_master_server_user_a7140b906bbc95d9c2dde06b7c170a37c}{Ubi\+Services\+Space\+News}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_net_ubi_services_news}{C\+Net\+Ubi\+Services\+News}} $>$ \mbox{\hyperlink{class_c_master_server_user_a2454f7335dcc184f7f5a4b21e55d67c2}{Ubi\+Services\+Profile\+News}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Masterserver user info. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45}\label{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45}} 
+\index{CMasterServerUser@{CMasterServerUser}!EMasterServerConnectionStatus@{EMasterServerConnectionStatus}}
+\index{EMasterServerConnectionStatus@{EMasterServerConnectionStatus}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{EMasterServerConnectionStatus}{EMasterServerConnectionStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45}{C\+Master\+Server\+User\+::\+E\+Master\+Server\+Connection\+Status}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotConnected@{NotConnected}!CMasterServerUser@{CMasterServerUser}}\index{CMasterServerUser@{CMasterServerUser}!NotConnected@{NotConnected}}}\mbox{\Hypertarget{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45a5e2e7c48bb2864b6468a1a7086c67348}\label{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45a5e2e7c48bb2864b6468a1a7086c67348}} 
+Not\+Connected&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Connecting@{Connecting}!CMasterServerUser@{CMasterServerUser}}\index{CMasterServerUser@{CMasterServerUser}!Connecting@{Connecting}}}\mbox{\Hypertarget{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45a96f76046f2e98b21637a77973a3a0062}\label{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45a96f76046f2e98b21637a77973a3a0062}} 
+Connecting&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Connected@{Connected}!CMasterServerUser@{CMasterServerUser}}\index{CMasterServerUser@{CMasterServerUser}!Connected@{Connected}}}\mbox{\Hypertarget{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45aa6f0d6e7c376eb3d7a21be11461ee428}\label{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45aa6f0d6e7c376eb3d7a21be11461ee428}} 
+Connected&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Disconnecting@{Disconnecting}!CMasterServerUser@{CMasterServerUser}}\index{CMasterServerUser@{CMasterServerUser}!Disconnecting@{Disconnecting}}}\mbox{\Hypertarget{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45a69395af9d3e42aef78f88a8c6b818e9e}\label{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45a69395af9d3e42aef78f88a8c6b818e9e}} 
+Disconnecting&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_master_server_user_ac4858c87eeb2277ba680e343fe7ecc6c}\label{class_c_master_server_user_ac4858c87eeb2277ba680e343fe7ecc6c}} 
+\index{CMasterServerUser@{CMasterServerUser}!GetZone@{GetZone}}
+\index{GetZone@{GetZone}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{GetZone()}{GetZone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Master\+Server\+User\+::\+Get\+Zone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Zone\+Level }\end{DoxyParamCaption})}
+
+Returns the zone path of the indicated level. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_master_server_user_aa503601437f4d5424e9e0cdb66ac0d63}\label{class_c_master_server_user_aa503601437f4d5424e9e0cdb66ac0d63}} 
+\index{CMasterServerUser@{CMasterServerUser}!ConnectionStatus@{ConnectionStatus}}
+\index{ConnectionStatus@{ConnectionStatus}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{ConnectionStatus}{ConnectionStatus}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_master_server_user_ab3d3534a9fcc5afeea62b4e1091b4b45}{C\+Master\+Server\+User\+::\+E\+Master\+Server\+Connection\+Status}} C\+Master\+Server\+User\+::\+Connection\+Status}
+
+Connection status\+: Not\+Connected, Connecting, Connected or Disconnecting. \mbox{\Hypertarget{class_c_master_server_user_a9bd67722e06fd575a52c7a1049428a9d}\label{class_c_master_server_user_a9bd67722e06fd575a52c7a1049428a9d}} 
+\index{CMasterServerUser@{CMasterServerUser}!DisplayName@{DisplayName}}
+\index{DisplayName@{DisplayName}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{DisplayName}{DisplayName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Master\+Server\+User\+::\+Display\+Name}
+
+Display name. \mbox{\Hypertarget{class_c_master_server_user_a5a0d189071408e2a2b5b8d8e70ee57c1}\label{class_c_master_server_user_a5a0d189071408e2a2b5b8d8e70ee57c1}} 
+\index{CMasterServerUser@{CMasterServerUser}!HasAcceptedNDA@{HasAcceptedNDA}}
+\index{HasAcceptedNDA@{HasAcceptedNDA}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{HasAcceptedNDA}{HasAcceptedNDA}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Master\+Server\+User\+::\+Has\+Accepted\+N\+DA}
+
+Return if the user has a accepted D\+NA. \mbox{\Hypertarget{class_c_master_server_user_af9d69d0686a462e78b73a59949aac2b4}\label{class_c_master_server_user_af9d69d0686a462e78b73a59949aac2b4}} 
+\index{CMasterServerUser@{CMasterServerUser}!HasUplayProfile@{HasUplayProfile}}
+\index{HasUplayProfile@{HasUplayProfile}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{HasUplayProfile}{HasUplayProfile}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Master\+Server\+User\+::\+Has\+Uplay\+Profile}
+
+Return if the user has a Uplay profile. \mbox{\Hypertarget{class_c_master_server_user_a23e99a7453fc33d60fa3dab7dd1c3dd0}\label{class_c_master_server_user_a23e99a7453fc33d60fa3dab7dd1c3dd0}} 
+\index{CMasterServerUser@{CMasterServerUser}!LastConnectionErrorCode@{LastConnectionErrorCode}}
+\index{LastConnectionErrorCode@{LastConnectionErrorCode}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{LastConnectionErrorCode}{LastConnectionErrorCode}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Master\+Server\+User\+::\+Last\+Connection\+Error\+Code}
+
+\mbox{\Hypertarget{class_c_master_server_user_a0eec49170de0258e79350776a41a1531}\label{class_c_master_server_user_a0eec49170de0258e79350776a41a1531}} 
+\index{CMasterServerUser@{CMasterServerUser}!LastConnectionErrorDescription@{LastConnectionErrorDescription}}
+\index{LastConnectionErrorDescription@{LastConnectionErrorDescription}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{LastConnectionErrorDescription}{LastConnectionErrorDescription}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Master\+Server\+User\+::\+Last\+Connection\+Error\+Description}
+
+\mbox{\Hypertarget{class_c_master_server_user_a2e705b570564fe2d38d761abbe89cdbd}\label{class_c_master_server_user_a2e705b570564fe2d38d761abbe89cdbd}} 
+\index{CMasterServerUser@{CMasterServerUser}!LastConnectionErrorType@{LastConnectionErrorType}}
+\index{LastConnectionErrorType@{LastConnectionErrorType}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{LastConnectionErrorType}{LastConnectionErrorType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Master\+Server\+User\+::\+Last\+Connection\+Error\+Type}
+
+\mbox{\Hypertarget{class_c_master_server_user_abf1234a3753094d17dcda3d04d442507}\label{class_c_master_server_user_abf1234a3753094d17dcda3d04d442507}} 
+\index{CMasterServerUser@{CMasterServerUser}!Login@{Login}}
+\index{Login@{Login}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{Login}{Login}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Master\+Server\+User\+::\+Login}
+
+Login. \mbox{\Hypertarget{class_c_master_server_user_a658dce447a9f1f2a105ade8500c6b379}\label{class_c_master_server_user_a658dce447a9f1f2a105ade8500c6b379}} 
+\index{CMasterServerUser@{CMasterServerUser}!MultiInternetPlayTimeLeft@{MultiInternetPlayTimeLeft}}
+\index{MultiInternetPlayTimeLeft@{MultiInternetPlayTimeLeft}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{MultiInternetPlayTimeLeft}{MultiInternetPlayTimeLeft}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Master\+Server\+User\+::\+Multi\+Internet\+Play\+Time\+Left}
+
+\mbox{\Hypertarget{class_c_master_server_user_a969fd50534cd6d5a9f0736259fadbf99}\label{class_c_master_server_user_a969fd50534cd6d5a9f0736259fadbf99}} 
+\index{CMasterServerUser@{CMasterServerUser}!NeedToChangeZone@{NeedToChangeZone}}
+\index{NeedToChangeZone@{NeedToChangeZone}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{NeedToChangeZone}{NeedToChangeZone}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Master\+Server\+User\+::\+Need\+To\+Change\+Zone}
+
+\mbox{\Hypertarget{class_c_master_server_user_a2454f7335dcc184f7f5a4b21e55d67c2}\label{class_c_master_server_user_a2454f7335dcc184f7f5a4b21e55d67c2}} 
+\index{CMasterServerUser@{CMasterServerUser}!UbiServicesProfileNews@{UbiServicesProfileNews}}
+\index{UbiServicesProfileNews@{UbiServicesProfileNews}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{UbiServicesProfileNews}{UbiServicesProfileNews}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_net_ubi_services_news}{C\+Net\+Ubi\+Services\+News}}$>$ C\+Master\+Server\+User\+::\+Ubi\+Services\+Profile\+News}
+
+\mbox{\Hypertarget{class_c_master_server_user_a7140b906bbc95d9c2dde06b7c170a37c}\label{class_c_master_server_user_a7140b906bbc95d9c2dde06b7c170a37c}} 
+\index{CMasterServerUser@{CMasterServerUser}!UbiServicesSpaceNews@{UbiServicesSpaceNews}}
+\index{UbiServicesSpaceNews@{UbiServicesSpaceNews}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{UbiServicesSpaceNews}{UbiServicesSpaceNews}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_net_ubi_services_news}{C\+Net\+Ubi\+Services\+News}}$>$ C\+Master\+Server\+User\+::\+Ubi\+Services\+Space\+News}
+
+\mbox{\Hypertarget{class_c_master_server_user_a4ce57c872ff9b449d08537368bfb0d49}\label{class_c_master_server_user_a4ce57c872ff9b449d08537368bfb0d49}} 
+\index{CMasterServerUser@{CMasterServerUser}!ZoneLevelCount@{ZoneLevelCount}}
+\index{ZoneLevelCount@{ZoneLevelCount}!CMasterServerUser@{CMasterServerUser}}
+\doxysubsubsection{\texorpdfstring{ZoneLevelCount}{ZoneLevelCount}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Master\+Server\+User\+::\+Zone\+Level\+Count}
+
+Number of level in the full path of the user zone. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

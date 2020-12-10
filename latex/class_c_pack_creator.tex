@@ -1,0 +1,133 @@
+\hypertarget{class_c_pack_creator}{}\doxysection{C\+Pack\+Creator Class Reference}
+\label{class_c_pack_creator}\index{CPackCreator@{CPackCreator}}
+
+
+Script A\+PI to create Packs (can be Titlepacks or plain Mania\+Credited data), and generate new builds of these packs.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Pack\+Creator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_pack_creator}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_pack_creator_a33e7498dbb54a136ade38191e27eb280}{Register\+Pack\+For\+Edited\+Title}} ()
+\item 
+\mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_pack_creator_af626687f3a989bc17f3141be94c612c7}{Build\+\_\+\+Begin}} (\mbox{\hyperlink{class_c_pack_creator_pack}{C\+Pack\+Creator\+Pack}} Pack, \mbox{\hyperlink{class_c_pack_creator_title_info}{C\+Pack\+Creator\+Title\+Info}} Title\+Info)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_pack_creator_ae16de8fab7fc7e05e09b6e973c860238}{Build\+\_\+\+Add\+File}} (\mbox{\hyperlink{struct_ident}{Ident}} Build\+Id, \mbox{\hyperlink{struct_text}{Text}} File\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_pack_creator_aa8d232d432482cc0ed3b33737106e779}{Build\+\_\+\+Add\+Folder}} (\mbox{\hyperlink{struct_ident}{Ident}} Build\+Id, \mbox{\hyperlink{struct_text}{Text}} Folder\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_pack_creator_a6589d90881ee835aa6a6f9ddf9e59765}{Build\+\_\+\+Add\+File}} (\mbox{\hyperlink{struct_ident}{Ident}} Build\+Id, \mbox{\hyperlink{struct_text}{Text}} File\+Name, \mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Public, \mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Internal, \mbox{\hyperlink{struct_boolean}{Boolean}} No\+Automatic\+Deps)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_pack_creator_a59b1372a136061d8cef70ac1e7c24916}{Build\+\_\+\+Add\+Folder}} (\mbox{\hyperlink{struct_ident}{Ident}} Build\+Id, \mbox{\hyperlink{struct_text}{Text}} Folder\+Name, \mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Public, \mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Internal, \mbox{\hyperlink{struct_boolean}{Boolean}} No\+Recursion, \mbox{\hyperlink{struct_boolean}{Boolean}} No\+Automatic\+Deps)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_pack_creator_ad7ab813998592e4bbe2bad8bcea16292}{Build\+\_\+\+Generate}} (\mbox{\hyperlink{struct_ident}{Ident}} Build\+Id, \mbox{\hyperlink{struct_boolean}{Boolean}} Upload)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_pack_creator_a17ee64b81aa3e2ff9ed26cea6c140444}{Build\+\_\+\+Is\+Generated}} (\mbox{\hyperlink{struct_ident}{Ident}} Build\+Id)
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_pack_creator_a4111b2ce3328236ca6fe3edd45779f7d}{Build\+\_\+\+Error\+Message}} (\mbox{\hyperlink{struct_ident}{Ident}} Build\+Id)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_pack_creator_aae77cbc73d5fed5fbe0de192adf25c3a}{Build\+\_\+\+End}} (\mbox{\hyperlink{struct_ident}{Ident}} Build\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_pack_creator_ac78aada4eafd4280762640091a644dba}{Register\+Pack\+\_\+\+Is\+In\+Progess}}
+\item 
+const \mbox{\hyperlink{class_c_pack_creator_pack}{C\+Pack\+Creator\+Pack}} \mbox{\hyperlink{class_c_pack_creator_a22e5d4f47f540fff304537b03162e007}{Current\+Pack}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script A\+PI to create Packs (can be Titlepacks or plain Mania\+Credited data), and generate new builds of these packs. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_pack_creator_ae16de8fab7fc7e05e09b6e973c860238}\label{class_c_pack_creator_ae16de8fab7fc7e05e09b6e973c860238}} 
+\index{CPackCreator@{CPackCreator}!Build\_AddFile@{Build\_AddFile}}
+\index{Build\_AddFile@{Build\_AddFile}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{Build\_AddFile()}{Build\_AddFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Pack\+Creator\+::\+Build\+\_\+\+Add\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Build\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pack_creator_a6589d90881ee835aa6a6f9ddf9e59765}\label{class_c_pack_creator_a6589d90881ee835aa6a6f9ddf9e59765}} 
+\index{CPackCreator@{CPackCreator}!Build\_AddFile@{Build\_AddFile}}
+\index{Build\_AddFile@{Build\_AddFile}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{Build\_AddFile()}{Build\_AddFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Pack\+Creator\+::\+Build\+\_\+\+Add\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Build\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File\+Name,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Public,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Internal,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{No\+Automatic\+Deps }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pack_creator_aa8d232d432482cc0ed3b33737106e779}\label{class_c_pack_creator_aa8d232d432482cc0ed3b33737106e779}} 
+\index{CPackCreator@{CPackCreator}!Build\_AddFolder@{Build\_AddFolder}}
+\index{Build\_AddFolder@{Build\_AddFolder}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{Build\_AddFolder()}{Build\_AddFolder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Pack\+Creator\+::\+Build\+\_\+\+Add\+Folder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Build\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Folder\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pack_creator_a59b1372a136061d8cef70ac1e7c24916}\label{class_c_pack_creator_a59b1372a136061d8cef70ac1e7c24916}} 
+\index{CPackCreator@{CPackCreator}!Build\_AddFolder@{Build\_AddFolder}}
+\index{Build\_AddFolder@{Build\_AddFolder}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{Build\_AddFolder()}{Build\_AddFolder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Pack\+Creator\+::\+Build\+\_\+\+Add\+Folder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Build\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Folder\+Name,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Public,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Internal,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{No\+Recursion,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{No\+Automatic\+Deps }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pack_creator_af626687f3a989bc17f3141be94c612c7}\label{class_c_pack_creator_af626687f3a989bc17f3141be94c612c7}} 
+\index{CPackCreator@{CPackCreator}!Build\_Begin@{Build\_Begin}}
+\index{Build\_Begin@{Build\_Begin}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{Build\_Begin()}{Build\_Begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ident}{Ident}} C\+Pack\+Creator\+::\+Build\+\_\+\+Begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_pack_creator_pack}{C\+Pack\+Creator\+Pack}}}]{Pack,  }\item[{\mbox{\hyperlink{class_c_pack_creator_title_info}{C\+Pack\+Creator\+Title\+Info}}}]{Title\+Info }\end{DoxyParamCaption})}
+
+Start a new build for a pack, optionnaly a titlepack. \mbox{\Hypertarget{class_c_pack_creator_aae77cbc73d5fed5fbe0de192adf25c3a}\label{class_c_pack_creator_aae77cbc73d5fed5fbe0de192adf25c3a}} 
+\index{CPackCreator@{CPackCreator}!Build\_End@{Build\_End}}
+\index{Build\_End@{Build\_End}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{Build\_End()}{Build\_End()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Pack\+Creator\+::\+Build\+\_\+\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Build\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pack_creator_a4111b2ce3328236ca6fe3edd45779f7d}\label{class_c_pack_creator_a4111b2ce3328236ca6fe3edd45779f7d}} 
+\index{CPackCreator@{CPackCreator}!Build\_ErrorMessage@{Build\_ErrorMessage}}
+\index{Build\_ErrorMessage@{Build\_ErrorMessage}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{Build\_ErrorMessage()}{Build\_ErrorMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Pack\+Creator\+::\+Build\+\_\+\+Error\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Build\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pack_creator_ad7ab813998592e4bbe2bad8bcea16292}\label{class_c_pack_creator_ad7ab813998592e4bbe2bad8bcea16292}} 
+\index{CPackCreator@{CPackCreator}!Build\_Generate@{Build\_Generate}}
+\index{Build\_Generate@{Build\_Generate}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{Build\_Generate()}{Build\_Generate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Pack\+Creator\+::\+Build\+\_\+\+Generate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Build\+Id,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Upload }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pack_creator_a17ee64b81aa3e2ff9ed26cea6c140444}\label{class_c_pack_creator_a17ee64b81aa3e2ff9ed26cea6c140444}} 
+\index{CPackCreator@{CPackCreator}!Build\_IsGenerated@{Build\_IsGenerated}}
+\index{Build\_IsGenerated@{Build\_IsGenerated}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{Build\_IsGenerated()}{Build\_IsGenerated()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Pack\+Creator\+::\+Build\+\_\+\+Is\+Generated (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Build\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pack_creator_a33e7498dbb54a136ade38191e27eb280}\label{class_c_pack_creator_a33e7498dbb54a136ade38191e27eb280}} 
+\index{CPackCreator@{CPackCreator}!RegisterPackForEditedTitle@{RegisterPackForEditedTitle}}
+\index{RegisterPackForEditedTitle@{RegisterPackForEditedTitle}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{RegisterPackForEditedTitle()}{RegisterPackForEditedTitle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Pack\+Creator\+::\+Register\+Pack\+For\+Edited\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Register (or retreive) a package for the currently edited title. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_pack_creator_a22e5d4f47f540fff304537b03162e007}\label{class_c_pack_creator_a22e5d4f47f540fff304537b03162e007}} 
+\index{CPackCreator@{CPackCreator}!CurrentPack@{CurrentPack}}
+\index{CurrentPack@{CurrentPack}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{CurrentPack}{CurrentPack}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_pack_creator_pack}{C\+Pack\+Creator\+Pack}} C\+Pack\+Creator\+::\+Current\+Pack}
+
+\mbox{\Hypertarget{class_c_pack_creator_ac78aada4eafd4280762640091a644dba}\label{class_c_pack_creator_ac78aada4eafd4280762640091a644dba}} 
+\index{CPackCreator@{CPackCreator}!RegisterPack\_IsInProgess@{RegisterPack\_IsInProgess}}
+\index{RegisterPack\_IsInProgess@{RegisterPack\_IsInProgess}!CPackCreator@{CPackCreator}}
+\doxysubsubsection{\texorpdfstring{RegisterPack\_IsInProgess}{RegisterPack\_IsInProgess}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Pack\+Creator\+::\+Register\+Pack\+\_\+\+Is\+In\+Progess}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

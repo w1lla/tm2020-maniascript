@@ -1,0 +1,459 @@
+\hypertarget{class_c_input_pad}{}\doxysection{C\+Input\+Pad Class Reference}
+\label{class_c_input_pad}\index{CInputPad@{CInputPad}}
+
+
+game controller.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Input\+Pad\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_input_pad}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41}{E\+Button}} \{ \newline
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a846cae8afe32c56b40358501165161d4}{Left}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a782be0ca81ab5e2e61ad02d4c63e1e7b}{Right}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a098e6a0f53b620cb7aa4bb24cde7865e}{Up}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41acccf8a8fe726f27eb5832f213ac453bc}{Down}}, 
+\newline
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad94c4fd6b98b1106e72dcb1f6cd61ec8}{A}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a67ebacb5113fa89d6c134cec2d1049d5}{B}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a11091fdc0447d33018fbecabe6faa3b0}{X}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a498705ec3e2ff43e50e52afb747a585a}{Y}}, 
+\newline
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a791b3516e34ec4f3c6b5fd41841d92da}{L1}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a5cb8d1762ffdae5edbf9e990f4bcbc8a}{R1}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a51fa6491d78026836c0dc70acaa4905f}{Left\+Stick}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad31785f77fc85f5cb60858e68905e4a5}{Right\+Stick}}, 
+\newline
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a7ff4379ee1291c4ba4718d5270bcf547}{Menu}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a925ffdf9f06134a862eecf3fd1c41ef2}{View}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ab95d1773b026b536c8c85e7898ad9bcc}{Left\+Stick\+\_\+\+Left}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad3221254fd5bb58e093d9ccf47baa9e4}{Left\+Stick\+\_\+\+Right}}, 
+\newline
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a1241fc645f6230dd5c5a17626ed4d4c1}{Left\+Stick\+\_\+\+Up}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41aa71d521b785362a67c5da48418165ec1}{Left\+Stick\+\_\+\+Down}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad2d77c273a8e29d7f82f5975a1c6c4ab}{Right\+Stick\+\_\+\+Left}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ae66b3743fd270a5d0791dbadde5bc0f7}{Right\+Stick\+\_\+\+Right}}, 
+\newline
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a6fb49cdde87f4a45ad798b64c7a33055}{Right\+Stick\+\_\+\+Up}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41af8d2e09319061f0a2d5f97c1cbd86411}{Right\+Stick\+\_\+\+Down}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41af7a4dd06c5800364c004592a74062e96}{L2}}, 
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a3ea1913363566a20673d00133da90960}{R2}}, 
+\newline
+\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a666d5756d3e867602172df2cddb8c584}{None}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_input_pad_a12137c30f421d5227891bc716acf938f}{E\+Pad\+Type}} \{ \newline
+\mbox{\hyperlink{class_c_input_pad_a12137c30f421d5227891bc716acf938facdd0e7d8b7425f750565e95454395422}{Keyboard}}, 
+\mbox{\hyperlink{class_c_input_pad_a12137c30f421d5227891bc716acf938faf4e664bdd27de9c7bbc1ff22abd92110}{Mouse}}, 
+\mbox{\hyperlink{class_c_input_pad_a12137c30f421d5227891bc716acf938fa174bf84e5db1712e750760f7b3ebaed8}{Generic}}, 
+\mbox{\hyperlink{class_c_input_pad_a12137c30f421d5227891bc716acf938fa117c46971ae186a7424402c5ca9f85d0}{X\+Box}}, 
+\newline
+\mbox{\hyperlink{class_c_input_pad_a12137c30f421d5227891bc716acf938facf4db7722f3d31782c0e233e2334cfd4}{Play\+Station}}, 
+\mbox{\hyperlink{class_c_input_pad_a12137c30f421d5227891bc716acf938fa639dcb95f176b2dcdeb96b01bc80dcd8}{Vive}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_input_pad_a0991ff7af7682a9885f238a3b16b8174}{Clear\+Rumble}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_input_pad_ab9cd7828e1ae9f6c46284c53b2298085}{Add\+Rumble}} (\mbox{\hyperlink{struct_integer}{Integer}} Duration, \mbox{\hyperlink{struct_real}{Real}} Large\+Motor, \mbox{\hyperlink{struct_real}{Real}} Small\+Motor)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_input_pad_a7dd7a5e89debb5553402eb75be7869c7}{Set\+Color}} (\mbox{\hyperlink{struct_vec3}{Vec3}} Color)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_a81cf328886c3e23f4317833c36045797}{Controller\+Id}}
+\item 
+const \mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_input_pad_a52cca03fa6bacf05296d9cfd2889054f}{User\+Id}}
+\item 
+const \mbox{\hyperlink{class_c_input_pad_a12137c30f421d5227891bc716acf938f}{C\+Input\+Pad\+::\+E\+Pad\+Type}} \mbox{\hyperlink{class_c_input_pad_a953733045517168d0ad0e1ddea091830}{Type}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_input_pad_ab9cd0fcd71c1feaff86ceb4b8df21d67}{Model\+Name}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_ad91dfd91df1ae92f84f3ec3709e40490}{Idle\+Duration}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_af76566848e34aec1ad2137e07fd01856}{Left}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_ac2b96f27f990dba75474bc9ac476d2b9}{Right}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_a78f3549739f988e8289c2eb38cd33557}{Up}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_a4a20bf8959141eec19d0ccb6efbf912d}{Down}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_af556e6d101c55335d9469ea4f6c56653}{A}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_a452bbccbe83c73f36b11005fb7fb4a14}{B}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_a26aa6efdce753624aa73541aab0158c2}{X}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_ae948f20514b407f9df116f072cefb65e}{Y}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_a347814606ce0636a3283c3086b8ce3ba}{L1}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_a8f8eecb19961d5c05e003d2a6358373d}{R1}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_a296cde657f29ec5c2ff2d31583823489}{Left\+Stick\+But}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_a19bfdd993ff93e5e30fdf2bb0480b237}{Right\+Stick\+But}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_a219ba4142fe911c3646760175e4993f7}{Menu}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_input_pad_a8b2c1c1f5911d3f257ebeb611c0cba4b}{View}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_input_pad_aca0609778b646557013983423febc76a}{Left\+StickX}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_input_pad_a189cb7192a01904ecdb0c5a7cd479bc9}{Left\+StickY}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_input_pad_ae232c1405b17cebf0f3d767672f3c6cd}{Right\+StickX}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_input_pad_a344568030d645904b70116b9ffe12b13}{Right\+StickY}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_input_pad_a38809aa08adc0a95ed945c8aa9be2191}{L2}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_input_pad_a054ae455c3bab3ddf209d2935ef400db}{R2}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41}{C\+Input\+Pad\+::\+E\+Button}} $>$ \mbox{\hyperlink{class_c_input_pad_ace37898a402f9f0d0d616a5b6c82854d}{Button\+Events}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+game controller. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41}} 
+\index{CInputPad@{CInputPad}!EButton@{EButton}}
+\index{EButton@{EButton}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{EButton}{EButton}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41}{C\+Input\+Pad\+::\+E\+Button}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!Left@{Left}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a846cae8afe32c56b40358501165161d4}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a846cae8afe32c56b40358501165161d4}} 
+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!Right@{Right}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a782be0ca81ab5e2e61ad02d4c63e1e7b}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a782be0ca81ab5e2e61ad02d4c63e1e7b}} 
+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Up@{Up}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!Up@{Up}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a098e6a0f53b620cb7aa4bb24cde7865e}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a098e6a0f53b620cb7aa4bb24cde7865e}} 
+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Down@{Down}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!Down@{Down}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41acccf8a8fe726f27eb5832f213ac453bc}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41acccf8a8fe726f27eb5832f213ac453bc}} 
+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A@{A}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!A@{A}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad94c4fd6b98b1106e72dcb1f6cd61ec8}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad94c4fd6b98b1106e72dcb1f6cd61ec8}} 
+A&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B@{B}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!B@{B}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a67ebacb5113fa89d6c134cec2d1049d5}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a67ebacb5113fa89d6c134cec2d1049d5}} 
+B&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{X@{X}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!X@{X}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a11091fdc0447d33018fbecabe6faa3b0}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a11091fdc0447d33018fbecabe6faa3b0}} 
+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Y@{Y}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!Y@{Y}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a498705ec3e2ff43e50e52afb747a585a}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a498705ec3e2ff43e50e52afb747a585a}} 
+Y&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L1@{L1}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!L1@{L1}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a791b3516e34ec4f3c6b5fd41841d92da}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a791b3516e34ec4f3c6b5fd41841d92da}} 
+L1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R1@{R1}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!R1@{R1}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a5cb8d1762ffdae5edbf9e990f4bcbc8a}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a5cb8d1762ffdae5edbf9e990f4bcbc8a}} 
+R1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftStick@{LeftStick}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!LeftStick@{LeftStick}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a51fa6491d78026836c0dc70acaa4905f}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a51fa6491d78026836c0dc70acaa4905f}} 
+Left\+Stick&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightStick@{RightStick}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!RightStick@{RightStick}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad31785f77fc85f5cb60858e68905e4a5}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad31785f77fc85f5cb60858e68905e4a5}} 
+Right\+Stick&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Menu@{Menu}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!Menu@{Menu}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a7ff4379ee1291c4ba4718d5270bcf547}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a7ff4379ee1291c4ba4718d5270bcf547}} 
+Menu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{View@{View}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!View@{View}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a925ffdf9f06134a862eecf3fd1c41ef2}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a925ffdf9f06134a862eecf3fd1c41ef2}} 
+View&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftStick\_Left@{LeftStick\_Left}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!LeftStick\_Left@{LeftStick\_Left}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ab95d1773b026b536c8c85e7898ad9bcc}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ab95d1773b026b536c8c85e7898ad9bcc}} 
+Left\+Stick\+\_\+\+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftStick\_Right@{LeftStick\_Right}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!LeftStick\_Right@{LeftStick\_Right}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad3221254fd5bb58e093d9ccf47baa9e4}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad3221254fd5bb58e093d9ccf47baa9e4}} 
+Left\+Stick\+\_\+\+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftStick\_Up@{LeftStick\_Up}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!LeftStick\_Up@{LeftStick\_Up}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a1241fc645f6230dd5c5a17626ed4d4c1}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a1241fc645f6230dd5c5a17626ed4d4c1}} 
+Left\+Stick\+\_\+\+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LeftStick\_Down@{LeftStick\_Down}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!LeftStick\_Down@{LeftStick\_Down}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41aa71d521b785362a67c5da48418165ec1}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41aa71d521b785362a67c5da48418165ec1}} 
+Left\+Stick\+\_\+\+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightStick\_Left@{RightStick\_Left}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!RightStick\_Left@{RightStick\_Left}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad2d77c273a8e29d7f82f5975a1c6c4ab}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ad2d77c273a8e29d7f82f5975a1c6c4ab}} 
+Right\+Stick\+\_\+\+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightStick\_Right@{RightStick\_Right}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!RightStick\_Right@{RightStick\_Right}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ae66b3743fd270a5d0791dbadde5bc0f7}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41ae66b3743fd270a5d0791dbadde5bc0f7}} 
+Right\+Stick\+\_\+\+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightStick\_Up@{RightStick\_Up}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!RightStick\_Up@{RightStick\_Up}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a6fb49cdde87f4a45ad798b64c7a33055}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a6fb49cdde87f4a45ad798b64c7a33055}} 
+Right\+Stick\+\_\+\+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightStick\_Down@{RightStick\_Down}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!RightStick\_Down@{RightStick\_Down}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41af8d2e09319061f0a2d5f97c1cbd86411}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41af8d2e09319061f0a2d5f97c1cbd86411}} 
+Right\+Stick\+\_\+\+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L2@{L2}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!L2@{L2}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41af7a4dd06c5800364c004592a74062e96}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41af7a4dd06c5800364c004592a74062e96}} 
+L2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R2@{R2}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!R2@{R2}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a3ea1913363566a20673d00133da90960}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a3ea1913363566a20673d00133da90960}} 
+R2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!None@{None}}}\mbox{\Hypertarget{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a666d5756d3e867602172df2cddb8c584}\label{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41a666d5756d3e867602172df2cddb8c584}} 
+None&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_input_pad_a12137c30f421d5227891bc716acf938f}\label{class_c_input_pad_a12137c30f421d5227891bc716acf938f}} 
+\index{CInputPad@{CInputPad}!EPadType@{EPadType}}
+\index{EPadType@{EPadType}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{EPadType}{EPadType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_input_pad_a12137c30f421d5227891bc716acf938f}{C\+Input\+Pad\+::\+E\+Pad\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Keyboard@{Keyboard}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!Keyboard@{Keyboard}}}\mbox{\Hypertarget{class_c_input_pad_a12137c30f421d5227891bc716acf938facdd0e7d8b7425f750565e95454395422}\label{class_c_input_pad_a12137c30f421d5227891bc716acf938facdd0e7d8b7425f750565e95454395422}} 
+Keyboard&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Mouse@{Mouse}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!Mouse@{Mouse}}}\mbox{\Hypertarget{class_c_input_pad_a12137c30f421d5227891bc716acf938faf4e664bdd27de9c7bbc1ff22abd92110}\label{class_c_input_pad_a12137c30f421d5227891bc716acf938faf4e664bdd27de9c7bbc1ff22abd92110}} 
+Mouse&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Generic@{Generic}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!Generic@{Generic}}}\mbox{\Hypertarget{class_c_input_pad_a12137c30f421d5227891bc716acf938fa174bf84e5db1712e750760f7b3ebaed8}\label{class_c_input_pad_a12137c30f421d5227891bc716acf938fa174bf84e5db1712e750760f7b3ebaed8}} 
+Generic&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XBox@{XBox}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!XBox@{XBox}}}\mbox{\Hypertarget{class_c_input_pad_a12137c30f421d5227891bc716acf938fa117c46971ae186a7424402c5ca9f85d0}\label{class_c_input_pad_a12137c30f421d5227891bc716acf938fa117c46971ae186a7424402c5ca9f85d0}} 
+X\+Box&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayStation@{PlayStation}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!PlayStation@{PlayStation}}}\mbox{\Hypertarget{class_c_input_pad_a12137c30f421d5227891bc716acf938facf4db7722f3d31782c0e233e2334cfd4}\label{class_c_input_pad_a12137c30f421d5227891bc716acf938facf4db7722f3d31782c0e233e2334cfd4}} 
+Play\+Station&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Vive@{Vive}!CInputPad@{CInputPad}}\index{CInputPad@{CInputPad}!Vive@{Vive}}}\mbox{\Hypertarget{class_c_input_pad_a12137c30f421d5227891bc716acf938fa639dcb95f176b2dcdeb96b01bc80dcd8}\label{class_c_input_pad_a12137c30f421d5227891bc716acf938fa639dcb95f176b2dcdeb96b01bc80dcd8}} 
+Vive&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_input_pad_ab9cd7828e1ae9f6c46284c53b2298085}\label{class_c_input_pad_ab9cd7828e1ae9f6c46284c53b2298085}} 
+\index{CInputPad@{CInputPad}!AddRumble@{AddRumble}}
+\index{AddRumble@{AddRumble}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{AddRumble()}{AddRumble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Input\+Pad\+::\+Add\+Rumble (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Duration,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{Large\+Motor,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{Small\+Motor }\end{DoxyParamCaption})}
+
+Duration = 0 -\/-\/$>$ forever. \mbox{\Hypertarget{class_c_input_pad_a0991ff7af7682a9885f238a3b16b8174}\label{class_c_input_pad_a0991ff7af7682a9885f238a3b16b8174}} 
+\index{CInputPad@{CInputPad}!ClearRumble@{ClearRumble}}
+\index{ClearRumble@{ClearRumble}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{ClearRumble()}{ClearRumble()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Input\+Pad\+::\+Clear\+Rumble (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_input_pad_a7dd7a5e89debb5553402eb75be7869c7}\label{class_c_input_pad_a7dd7a5e89debb5553402eb75be7869c7}} 
+\index{CInputPad@{CInputPad}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Input\+Pad\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Color }\end{DoxyParamCaption})}
+
+(only works on P\+S4.) set to (0,0,0) to reset back to default color. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_input_pad_af556e6d101c55335d9469ea4f6c56653}\label{class_c_input_pad_af556e6d101c55335d9469ea4f6c56653}} 
+\index{CInputPad@{CInputPad}!A@{A}}
+\index{A@{A}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::A}
+
+\mbox{\Hypertarget{class_c_input_pad_a452bbccbe83c73f36b11005fb7fb4a14}\label{class_c_input_pad_a452bbccbe83c73f36b11005fb7fb4a14}} 
+\index{CInputPad@{CInputPad}!B@{B}}
+\index{B@{B}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::B}
+
+\mbox{\Hypertarget{class_c_input_pad_ace37898a402f9f0d0d616a5b6c82854d}\label{class_c_input_pad_ace37898a402f9f0d0d616a5b6c82854d}} 
+\index{CInputPad@{CInputPad}!ButtonEvents@{ButtonEvents}}
+\index{ButtonEvents@{ButtonEvents}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{ButtonEvents}{ButtonEvents}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_input_pad_aceae22fce8fd6c51d929c2a243946e41}{C\+Input\+Pad\+::\+E\+Button}}$>$ C\+Input\+Pad\+::\+Button\+Events}
+
+\mbox{\Hypertarget{class_c_input_pad_a81cf328886c3e23f4317833c36045797}\label{class_c_input_pad_a81cf328886c3e23f4317833c36045797}} 
+\index{CInputPad@{CInputPad}!ControllerId@{ControllerId}}
+\index{ControllerId@{ControllerId}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{ControllerId}{ControllerId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+Controller\+Id}
+
+\mbox{\Hypertarget{class_c_input_pad_a4a20bf8959141eec19d0ccb6efbf912d}\label{class_c_input_pad_a4a20bf8959141eec19d0ccb6efbf912d}} 
+\index{CInputPad@{CInputPad}!Down@{Down}}
+\index{Down@{Down}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{Down}{Down}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+Down}
+
+\mbox{\Hypertarget{class_c_input_pad_ad91dfd91df1ae92f84f3ec3709e40490}\label{class_c_input_pad_ad91dfd91df1ae92f84f3ec3709e40490}} 
+\index{CInputPad@{CInputPad}!IdleDuration@{IdleDuration}}
+\index{IdleDuration@{IdleDuration}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{IdleDuration}{IdleDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+Idle\+Duration}
+
+\mbox{\Hypertarget{class_c_input_pad_a347814606ce0636a3283c3086b8ce3ba}\label{class_c_input_pad_a347814606ce0636a3283c3086b8ce3ba}} 
+\index{CInputPad@{CInputPad}!L1@{L1}}
+\index{L1@{L1}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{L1}{L1}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+L1}
+
+\mbox{\Hypertarget{class_c_input_pad_a38809aa08adc0a95ed945c8aa9be2191}\label{class_c_input_pad_a38809aa08adc0a95ed945c8aa9be2191}} 
+\index{CInputPad@{CInputPad}!L2@{L2}}
+\index{L2@{L2}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{L2}{L2}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Input\+Pad\+::\+L2}
+
+Values in range (0.\+000000-\/1.\+000000) \mbox{\Hypertarget{class_c_input_pad_af76566848e34aec1ad2137e07fd01856}\label{class_c_input_pad_af76566848e34aec1ad2137e07fd01856}} 
+\index{CInputPad@{CInputPad}!Left@{Left}}
+\index{Left@{Left}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{Left}{Left}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+Left}
+
+\mbox{\Hypertarget{class_c_input_pad_a296cde657f29ec5c2ff2d31583823489}\label{class_c_input_pad_a296cde657f29ec5c2ff2d31583823489}} 
+\index{CInputPad@{CInputPad}!LeftStickBut@{LeftStickBut}}
+\index{LeftStickBut@{LeftStickBut}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{LeftStickBut}{LeftStickBut}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+Left\+Stick\+But}
+
+\mbox{\Hypertarget{class_c_input_pad_aca0609778b646557013983423febc76a}\label{class_c_input_pad_aca0609778b646557013983423febc76a}} 
+\index{CInputPad@{CInputPad}!LeftStickX@{LeftStickX}}
+\index{LeftStickX@{LeftStickX}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{LeftStickX}{LeftStickX}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Input\+Pad\+::\+Left\+StickX}
+
+Values in range (-\/1.\+000000-\/1.\+000000) \mbox{\Hypertarget{class_c_input_pad_a189cb7192a01904ecdb0c5a7cd479bc9}\label{class_c_input_pad_a189cb7192a01904ecdb0c5a7cd479bc9}} 
+\index{CInputPad@{CInputPad}!LeftStickY@{LeftStickY}}
+\index{LeftStickY@{LeftStickY}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{LeftStickY}{LeftStickY}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Input\+Pad\+::\+Left\+StickY}
+
+Values in range (-\/1.\+000000-\/1.\+000000) \mbox{\Hypertarget{class_c_input_pad_a219ba4142fe911c3646760175e4993f7}\label{class_c_input_pad_a219ba4142fe911c3646760175e4993f7}} 
+\index{CInputPad@{CInputPad}!Menu@{Menu}}
+\index{Menu@{Menu}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{Menu}{Menu}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+Menu}
+
+\mbox{\Hypertarget{class_c_input_pad_ab9cd0fcd71c1feaff86ceb4b8df21d67}\label{class_c_input_pad_ab9cd0fcd71c1feaff86ceb4b8df21d67}} 
+\index{CInputPad@{CInputPad}!ModelName@{ModelName}}
+\index{ModelName@{ModelName}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{ModelName}{ModelName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Input\+Pad\+::\+Model\+Name}
+
+\mbox{\Hypertarget{class_c_input_pad_a8f8eecb19961d5c05e003d2a6358373d}\label{class_c_input_pad_a8f8eecb19961d5c05e003d2a6358373d}} 
+\index{CInputPad@{CInputPad}!R1@{R1}}
+\index{R1@{R1}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{R1}{R1}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+R1}
+
+\mbox{\Hypertarget{class_c_input_pad_a054ae455c3bab3ddf209d2935ef400db}\label{class_c_input_pad_a054ae455c3bab3ddf209d2935ef400db}} 
+\index{CInputPad@{CInputPad}!R2@{R2}}
+\index{R2@{R2}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{R2}{R2}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Input\+Pad\+::\+R2}
+
+Values in range (0.\+000000-\/1.\+000000) \mbox{\Hypertarget{class_c_input_pad_ac2b96f27f990dba75474bc9ac476d2b9}\label{class_c_input_pad_ac2b96f27f990dba75474bc9ac476d2b9}} 
+\index{CInputPad@{CInputPad}!Right@{Right}}
+\index{Right@{Right}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{Right}{Right}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+Right}
+
+\mbox{\Hypertarget{class_c_input_pad_a19bfdd993ff93e5e30fdf2bb0480b237}\label{class_c_input_pad_a19bfdd993ff93e5e30fdf2bb0480b237}} 
+\index{CInputPad@{CInputPad}!RightStickBut@{RightStickBut}}
+\index{RightStickBut@{RightStickBut}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{RightStickBut}{RightStickBut}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+Right\+Stick\+But}
+
+\mbox{\Hypertarget{class_c_input_pad_ae232c1405b17cebf0f3d767672f3c6cd}\label{class_c_input_pad_ae232c1405b17cebf0f3d767672f3c6cd}} 
+\index{CInputPad@{CInputPad}!RightStickX@{RightStickX}}
+\index{RightStickX@{RightStickX}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{RightStickX}{RightStickX}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Input\+Pad\+::\+Right\+StickX}
+
+Values in range (-\/1.\+000000-\/1.\+000000) \mbox{\Hypertarget{class_c_input_pad_a344568030d645904b70116b9ffe12b13}\label{class_c_input_pad_a344568030d645904b70116b9ffe12b13}} 
+\index{CInputPad@{CInputPad}!RightStickY@{RightStickY}}
+\index{RightStickY@{RightStickY}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{RightStickY}{RightStickY}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Input\+Pad\+::\+Right\+StickY}
+
+Values in range (-\/1.\+000000-\/1.\+000000) \mbox{\Hypertarget{class_c_input_pad_a953733045517168d0ad0e1ddea091830}\label{class_c_input_pad_a953733045517168d0ad0e1ddea091830}} 
+\index{CInputPad@{CInputPad}!Type@{Type}}
+\index{Type@{Type}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_input_pad_a12137c30f421d5227891bc716acf938f}{C\+Input\+Pad\+::\+E\+Pad\+Type}} C\+Input\+Pad\+::\+Type}
+
+\mbox{\Hypertarget{class_c_input_pad_a78f3549739f988e8289c2eb38cd33557}\label{class_c_input_pad_a78f3549739f988e8289c2eb38cd33557}} 
+\index{CInputPad@{CInputPad}!Up@{Up}}
+\index{Up@{Up}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{Up}{Up}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+Up}
+
+\mbox{\Hypertarget{class_c_input_pad_a52cca03fa6bacf05296d9cfd2889054f}\label{class_c_input_pad_a52cca03fa6bacf05296d9cfd2889054f}} 
+\index{CInputPad@{CInputPad}!UserId@{UserId}}
+\index{UserId@{UserId}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{UserId}{UserId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_ident}{Ident}} C\+Input\+Pad\+::\+User\+Id}
+
+\mbox{\Hypertarget{class_c_input_pad_a8b2c1c1f5911d3f257ebeb611c0cba4b}\label{class_c_input_pad_a8b2c1c1f5911d3f257ebeb611c0cba4b}} 
+\index{CInputPad@{CInputPad}!View@{View}}
+\index{View@{View}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{View}{View}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::\+View}
+
+\mbox{\Hypertarget{class_c_input_pad_a26aa6efdce753624aa73541aab0158c2}\label{class_c_input_pad_a26aa6efdce753624aa73541aab0158c2}} 
+\index{CInputPad@{CInputPad}!X@{X}}
+\index{X@{X}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::X}
+
+\mbox{\Hypertarget{class_c_input_pad_ae948f20514b407f9df116f072cefb65e}\label{class_c_input_pad_ae948f20514b407f9df116f072cefb65e}} 
+\index{CInputPad@{CInputPad}!Y@{Y}}
+\index{Y@{Y}!CInputPad@{CInputPad}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Input\+Pad\+::Y}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

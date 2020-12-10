@@ -23,7 +23,7 @@
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ManiaScript
    </div>
-   <div id="projectbrief">Script language used in ManiaPlanet</div>
+   <div id="projectbrief">Script language used in TrackMania 2020</div>
   </td>
  </tr>
  </tbody>
@@ -68,20 +68,89 @@ $(function() {
 <div class="title">ColorLib Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Standard color manipulation functions.  
+<a href="namespace_color_lib.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ace566f437e3688e3a495fae0f9969c9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_color_lib.html#ace566f437e3688e3a495fae0f9969c9a">HsvToRgb</a> (<a class="el" href="class_vec3.html">Vec3</a> __Hsv)</td></tr>
-<tr class="separator:ace566f437e3688e3a495fae0f9969c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e9865adab51a6a470f126b0e2928152"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_color_lib.html#a4e9865adab51a6a470f126b0e2928152">RgbToHsv</a> (<a class="el" href="class_vec3.html">Vec3</a> __Rgb)</td></tr>
-<tr class="separator:a4e9865adab51a6a470f126b0e2928152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a357ae4f8286e09df4a4c84b7640338ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_color_lib.html#a357ae4f8286e09df4a4c84b7640338ec">RgbToHex</a> (<a class="el" href="class_vec3.html">Vec3</a> __Rgb)</td></tr>
-<tr class="separator:a357ae4f8286e09df4a4c84b7640338ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a718b5c29a8a60431d2d88c107a6c86ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_color_lib.html#a718b5c29a8a60431d2d88c107a6c86ff">HexToRgb</a> (<a class="el" href="class_text.html">Text</a> _Text)</td></tr>
-<tr class="memdesc:a718b5c29a8a60431d2d88c107a6c86ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the RGB color corresponding to _Text.  <a href="namespace_color_lib.html#a718b5c29a8a60431d2d88c107a6c86ff">More...</a><br /></td></tr>
+<tr class="memitem:acfdfe1f61963bbac20e64665e23f2c14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_color_lib.html#acfdfe1f61963bbac20e64665e23f2c14">HsvToRgb</a> (<a class="el" href="struct_vec3.html">Vec3</a> _Hsv)</td></tr>
+<tr class="separator:acfdfe1f61963bbac20e64665e23f2c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea229e433793beb712648d5800aad245"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_color_lib.html#aea229e433793beb712648d5800aad245">RgbToHsv</a> (<a class="el" href="struct_vec3.html">Vec3</a> _Rgb)</td></tr>
+<tr class="separator:aea229e433793beb712648d5800aad245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49cd2c71e9e0670ece21d6cfc23951fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_color_lib.html#a49cd2c71e9e0670ece21d6cfc23951fd">RgbToHex3</a> (<a class="el" href="struct_vec3.html">Vec3</a> _Rgb)</td></tr>
+<tr class="memdesc:a49cd2c71e9e0670ece21d6cfc23951fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Hexa3 corresponding to the RGB given.  <a href="namespace_color_lib.html#a49cd2c71e9e0670ece21d6cfc23951fd">More...</a><br /></td></tr>
+<tr class="separator:a49cd2c71e9e0670ece21d6cfc23951fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32ca7c73c58e9531af252d571b8c541"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_text.html">Text</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_color_lib.html#ad32ca7c73c58e9531af252d571b8c541">RgbToHex6</a> (<a class="el" href="struct_vec3.html">Vec3</a> _Rrggbb)</td></tr>
+<tr class="memdesc:ad32ca7c73c58e9531af252d571b8c541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Hexa6 corresponding to the RGB given.  <a href="namespace_color_lib.html#ad32ca7c73c58e9531af252d571b8c541">More...</a><br /></td></tr>
+<tr class="separator:ad32ca7c73c58e9531af252d571b8c541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad70b8a514507f3cc060c75d46e4dc708"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_color_lib.html#ad70b8a514507f3cc060c75d46e4dc708">Hex3ToRgb</a> (<a class="el" href="struct_text.html">Text</a> _Text)</td></tr>
+<tr class="memdesc:ad70b8a514507f3cc060c75d46e4dc708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the RGB color corresponding to Hex3.  <a href="namespace_color_lib.html#ad70b8a514507f3cc060c75d46e4dc708">More...</a><br /></td></tr>
+<tr class="separator:ad70b8a514507f3cc060c75d46e4dc708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99ac4c2c60bdf680ac14c3e98102d88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_color_lib.html#aa99ac4c2c60bdf680ac14c3e98102d88">Hex6ToRgb</a> (<a class="el" href="struct_text.html">Text</a> _Text)</td></tr>
+<tr class="memdesc:aa99ac4c2c60bdf680ac14c3e98102d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the RGB color corresponding to Hex6.  <a href="namespace_color_lib.html#aa99ac4c2c60bdf680ac14c3e98102d88">More...</a><br /></td></tr>
+<tr class="separator:aa99ac4c2c60bdf680ac14c3e98102d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718b5c29a8a60431d2d88c107a6c86ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_color_lib.html#a718b5c29a8a60431d2d88c107a6c86ff">HexToRgb</a> (<a class="el" href="struct_text.html">Text</a> _Text)</td></tr>
+<tr class="memdesc:a718b5c29a8a60431d2d88c107a6c86ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the RGB color corresponding to Hex.  <a href="namespace_color_lib.html#a718b5c29a8a60431d2d88c107a6c86ff">More...</a><br /></td></tr>
 <tr class="separator:a718b5c29a8a60431d2d88c107a6c86ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Standard color manipulation functions. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ad70b8a514507f3cc060c75d46e4dc708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad70b8a514507f3cc060c75d46e4dc708">&#9670;&nbsp;</a></span>Hex3ToRgb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vec3.html">Vec3</a> ColorLib::Hex3ToRgb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_text.html">Text</a>&#160;</td>
+          <td class="paramname"><em>_Text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the RGB color corresponding to Hex3. </p>
+<p>Returns an empty <a class="el" href="struct_vec3.html">Vec3</a> if an invalid <a class="el" href="struct_text.html">Text</a> is given.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_Text</td><td>: The text you want to convert into a RGB color. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa99ac4c2c60bdf680ac14c3e98102d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa99ac4c2c60bdf680ac14c3e98102d88">&#9670;&nbsp;</a></span>Hex6ToRgb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vec3.html">Vec3</a> ColorLib::Hex6ToRgb </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_text.html">Text</a>&#160;</td>
+          <td class="paramname"><em>_Text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the RGB color corresponding to Hex6. </p>
+<p>Returns an empty <a class="el" href="struct_vec3.html">Vec3</a> if an invalid <a class="el" href="struct_text.html">Text</a> is given.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_Text</td><td>: The text you want to convert into a RGB color. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a718b5c29a8a60431d2d88c107a6c86ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a718b5c29a8a60431d2d88c107a6c86ff">&#9670;&nbsp;</a></span>HexToRgb()</h2>
 
@@ -89,36 +158,37 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_vec3.html">Vec3</a> ColorLib::HexToRgb </td>
+          <td class="memname"><a class="el" href="struct_vec3.html">Vec3</a> ColorLib::HexToRgb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_text.html">Text</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_text.html">Text</a>&#160;</td>
           <td class="paramname"><em>_Text</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the RGB color corresponding to _Text. </p>
-<p>Returns an empty <a class="el" href="class_vec3.html">Vec3</a> if an invalid <a class="el" href="class_text.html">Text</a> is given </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Returns the RGB color corresponding to Hex. </p>
+<p>Returns an empty <a class="el" href="struct_vec3.html">Vec3</a> if an invalid <a class="el" href="struct_text.html">Text</a> is given.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_Text</td><td>: The text you want to convert into a RGB color </td></tr>
+    <tr><td class="paramname">_Text</td><td>: The text you want to convert into a RGB color. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ace566f437e3688e3a495fae0f9969c9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace566f437e3688e3a495fae0f9969c9a">&#9670;&nbsp;</a></span>HsvToRgb()</h2>
+<a id="acfdfe1f61963bbac20e64665e23f2c14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfdfe1f61963bbac20e64665e23f2c14">&#9670;&nbsp;</a></span>HsvToRgb()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_vec3.html">Vec3</a> ColorLib::HsvToRgb </td>
+          <td class="memname"><a class="el" href="struct_vec3.html">Vec3</a> ColorLib::HsvToRgb </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_vec3.html">Vec3</a>&#160;</td>
-          <td class="paramname"><em>__Hsv</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_vec3.html">Vec3</a>&#160;</td>
+          <td class="paramname"><em>_Hsv</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -126,35 +196,57 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a357ae4f8286e09df4a4c84b7640338ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a357ae4f8286e09df4a4c84b7640338ec">&#9670;&nbsp;</a></span>RgbToHex()</h2>
+<a id="a49cd2c71e9e0670ece21d6cfc23951fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49cd2c71e9e0670ece21d6cfc23951fd">&#9670;&nbsp;</a></span>RgbToHex3()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_text.html">Text</a> ColorLib::RgbToHex </td>
+          <td class="memname"><a class="el" href="struct_text.html">Text</a> ColorLib::RgbToHex3 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_vec3.html">Vec3</a>&#160;</td>
-          <td class="paramname"><em>__Rgb</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_vec3.html">Vec3</a>&#160;</td>
+          <td class="paramname"><em>_Rgb</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the Hexa3 corresponding to the RGB given. </p>
+
 </div>
 </div>
-<a id="a4e9865adab51a6a470f126b0e2928152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e9865adab51a6a470f126b0e2928152">&#9670;&nbsp;</a></span>RgbToHsv()</h2>
+<a id="ad32ca7c73c58e9531af252d571b8c541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad32ca7c73c58e9531af252d571b8c541">&#9670;&nbsp;</a></span>RgbToHex6()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_vec3.html">Vec3</a> ColorLib::RgbToHsv </td>
+          <td class="memname"><a class="el" href="struct_text.html">Text</a> ColorLib::RgbToHex6 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_vec3.html">Vec3</a>&#160;</td>
-          <td class="paramname"><em>__Rgb</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_vec3.html">Vec3</a>&#160;</td>
+          <td class="paramname"><em>_Rrggbb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the Hexa6 corresponding to the RGB given. </p>
+
+</div>
+</div>
+<a id="aea229e433793beb712648d5800aad245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea229e433793beb712648d5800aad245">&#9670;&nbsp;</a></span>RgbToHsv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vec3.html">Vec3</a> ColorLib::RgbToHsv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_vec3.html">Vec3</a>&#160;</td>
+          <td class="paramname"><em>_Rgb</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -165,7 +257,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 27 2020 09:24:58 for ManiaScript by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+Generated on Thu Dec 10 2020 13:59:57 for ManiaScript by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
 </small></address>
 </body>
 </html>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['relativedirections_6186',['RelativeDirections',['../struct_c_map_editor_plugin.html#a37b9cb5dc1a3b33a111112b10337a7d9',1,'CMapEditorPlugin']]]
+  ['placemode_7565',['PlaceMode',['../class_c_map_editor_plugin.html#a588b4a11b38fdde8d041e9c055d098bf',1,'CMapEditorPlugin']]]
 ];

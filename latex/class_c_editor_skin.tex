@@ -1,0 +1,781 @@
+\hypertarget{class_c_editor_skin}{}\doxysection{C\+Editor\+Skin Class Reference}
+\label{class_c_editor_skin}\index{CEditorSkin@{CEditorSkin}}
+
+
+Documentation for class \mbox{\hyperlink{class_c_editor_skin}{C\+Editor\+Skin}}.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Editor\+Skin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_editor_skin}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716a}{E\+Painter\+Mode}} \{ \newline
+\mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716aa657a9fdd37a31ab779781f005a57e4e2}{No\+Op}}, 
+\mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716aac378a53e0c04d540a83c8643f823001f}{Fill}}, 
+\mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716aafbbdba901dba7e5e207ad4e37df6c820}{Brush}}, 
+\mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716aaac3b361bef9ec6503cc947f1e3e2433a}{Sticker}}, 
+\newline
+\mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716aac94bed80c0b4f289db47ab041591f859}{Layer}}, 
+\mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716aac703392c0a5deceb468d77dfa3cae502}{Badge\+Slots}}, 
+\mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716aa65b7f1322b62ed607c41e90175dd95a5}{Team}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9c}{E\+Painter\+Solid\+Type}} \{ \newline
+\mbox{\hyperlink{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca26b171a6d4faa4fa2d2b49cb0f11d652}{Other}}, 
+\mbox{\hyperlink{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca6e16929767d62f032db2db2358443702}{Car\+With\+Pilot}}, 
+\mbox{\hyperlink{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9cabc0cba450bff294c16a279294342c2df}{Pilot\+\_\+\+Male}}, 
+\mbox{\hyperlink{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca145544a38cff74498604677b5aa216f9}{Pilot\+\_\+\+Female}}, 
+\newline
+\mbox{\hyperlink{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca77d7630614b0d55d370b385b039e6800}{Helmet}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}{E\+Editor\+Skin\+\_\+\+Icon\+Type}} \{ \mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aa54bdbd71653af7168eb07692afd3920a}{Stickers}}, 
+\mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aa42827677e5c7b9f47fd75fbc78a5727f}{Brushs}}, 
+\mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aac2542a440a90105af2761d9ad07d3b3c}{Layers}}, 
+\mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aafbfd2824f69eef465bcb2f15c2d85f21}{Sub\+Objects}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a7401a10217b445ae0ac1b26decd98711}{Toggle\+Is\+Text\+Enabled}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a039eccc201e1ebc9af08f4558abed459}{Toggle\+Is\+Picking\+Color}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a355ecf0d1826b286d0d9d2eea8635764}{Toggle\+Paint\+Sym\+Mode}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a3ab041d75fffc37dd092ef3682e48114}{Edit\+Current\+Layer\+Selected}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a3faefd3940c703a2feb431366d637620}{Add\+And\+Edit\+Layer}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_ac32290f94b285a74f5aea8eb484299c0}{Close\+Edit\+Selected\+Layer}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a19e3fa737db7402379e83992962ec3f8}{Move\+Selected\+Layer\+Up}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a31769336419c1d9e023bd9655e92d5be}{Move\+Selected\+Layer\+Down}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a32018fe6aeee66076134a6db6c8b6adf}{Delete\+Selected\+Layer}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_afc3f05d8498bb42cf032c7acc286a5d2}{Undo}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_afe183e98875d6e6a9b2abea5a5edfb55}{Redo}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_aecce1e3d9dfe232294528f1e3df6381a}{Export\+Skin}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a5f217409db0bf4d8eb5dd1711662e2cd}{Align\+Brush\+Sticker}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a139ec2c2f31acd1904bee457c4040cd1}{Ask\+Switch\+Edited\+Nod\+Type}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_ab64f86ed9c778fbacd45fb610c5c4072}{Toggle\+Helper}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_ab391aa1c4e6dd8ae67fe8b86ca78fbf3}{Toggle\+Light}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_ad66c2ee1a9d6d2baf7f9da41810461d3}{Export\+Layer\+Edition}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a2a052e8cdb0f9cf4bfc95b4cdf8cf0ec}{Import\+Layer\+Edition}} ()
+\item 
+\mbox{\hyperlink{class_c_image}{C\+Image}} \mbox{\hyperlink{class_c_editor_skin_a84bc4a4beec265b05680c02fb955ba7b}{Get\+All\+Icon\+From\+Id}} (\mbox{\hyperlink{struct_integer}{Integer}} Index, \mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}{C\+Editor\+Skin\+::\+E\+Editor\+Skin\+\_\+\+Icon\+Type}} Icon\+Type)
+\item 
+\mbox{\hyperlink{class_c_image}{C\+Image}} \mbox{\hyperlink{class_c_editor_skin_a3c9defaa2655e8fda0643f058349f1bc}{Get\+Sub\+Folder\+Icon\+From\+Id}} (\mbox{\hyperlink{struct_integer}{Integer}} Folder\+Index, \mbox{\hyperlink{struct_integer}{Integer}} Elem\+Index, \mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}{C\+Editor\+Skin\+::\+E\+Editor\+Skin\+\_\+\+Icon\+Type}} Icon\+Type)
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_editor_skin_a0b37d1f6dbb3a158d259426e35b8114c}{Get\+Layer\+Name\+From\+Index}} (\mbox{\hyperlink{struct_integer}{Integer}} Index)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_a46ebe171e0f6eed9c057072b3da91e62}{Get\+Layer\+Visible\+From\+Index}} (\mbox{\hyperlink{struct_integer}{Integer}} Index)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_ab9b01c0315253a05ed1da822cf1cabc6}{Set\+Layer\+Visible\+From\+Index}} (\mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Visible, \mbox{\hyperlink{struct_integer}{Integer}} Index)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_ab70d789a5fdf08b9f6ffb37990331002}{Set\+Painter\+Mode}} (\mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716a}{C\+Editor\+Skin\+::\+E\+Painter\+Mode}} Mode)
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_skin_ae2bdd6c28778ada514074670c3d0000f}{Get\+Sub\+Object\+Max\+Page}} (\mbox{\hyperlink{struct_integer}{Integer}} Nb\+Per\+Page)
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_skin_adfda4e1d77b948882e8f9a4460935e8c}{Get\+Main\+Frame\+Max\+Page}} (\mbox{\hyperlink{struct_integer}{Integer}} Nb\+Per\+Page)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_aabe94e5dc96c522a0ab820767582e172}{On\+Layer\+Selected}} (\mbox{\hyperlink{struct_integer}{Integer}} Current\+Page, \mbox{\hyperlink{struct_integer}{Integer}} Index)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a1c694c9454a95faaea37681b3f618bb7}{On\+Sticker\+Selected}} (\mbox{\hyperlink{struct_integer}{Integer}} Current\+Page, \mbox{\hyperlink{struct_integer}{Integer}} Index)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a1ba98d40a3fa7c86d1d5f5a15645ffad}{On\+Brush\+Selected}} (\mbox{\hyperlink{struct_integer}{Integer}} Current\+Page, \mbox{\hyperlink{struct_integer}{Integer}} Index)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_ab36c3f1c5c590bc149ea6259aceba450}{On\+Sub\+Folder\+Elem\+Selected}} (\mbox{\hyperlink{struct_integer}{Integer}} Sub\+Folder\+Current\+Page, \mbox{\hyperlink{struct_integer}{Integer}} Elem\+Index)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_aa42e25584bb35370b5f78a90af087509}{Set\+Current\+Layer\+Selected\+Name}} (\mbox{\hyperlink{struct_text}{Text}} Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_aadd14bb055312b9304ac1c22dce685ea}{Add\+Scale}} (\mbox{\hyperlink{struct_real}{Real}} Delta)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_ad5fe7f8b86282cfbe2fad2f929bfd090}{Add\+Angle}} (\mbox{\hyperlink{struct_real}{Real}} Delta\+Rad)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a8c614f32e4dacbde76eae50e6e9dd11c}{Set\+Sub\+Object\+Index\+For\+Layer}} (\mbox{\hyperlink{struct_integer}{Integer}} Sub\+Object\+Index, \mbox{\hyperlink{struct_integer}{Integer}} Layer\+Index, \mbox{\hyperlink{struct_boolean}{Boolean}} Reset\+First)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_a6b47b836df1e56cabe6982d0fdc2621b}{Is\+Elem\+At\+Script\+Index\+Folder}} (\mbox{\hyperlink{struct_integer}{Integer}} Script\+Index, \mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}{C\+Editor\+Skin\+::\+E\+Editor\+Skin\+\_\+\+Icon\+Type}} Icon\+Type)
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_editor_skin_a1f159a44448090827d8bb1d6a529d96f}{Get\+Folder\+Name\+From\+Script\+Index}} (\mbox{\hyperlink{struct_integer}{Integer}} Script\+Index, \mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}{C\+Editor\+Skin\+::\+E\+Editor\+Skin\+\_\+\+Icon\+Type}} Icon\+Type)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_a503b758f0751ad7f4f7f2d1c44f9e180}{Is\+Ctrl\+Down}} ()
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_editor_skin_a52412a8e5210ed780da6b0b0e3875a48}{Get\+Sub\+Object\+Name\+From\+Index}} (\mbox{\hyperlink{struct_integer}{Integer}} Script\+Index)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_a2874b0e3187e54d2cfb632314d17c255}{Open\+Media\+Folder}} (\mbox{\hyperlink{struct_text}{Text}} Sub\+Folder\+Path)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_skin_addb73cf24f8eb80212b81ab0c78ff11e}{Reload\+Resources}} (\mbox{\hyperlink{struct_boolean}{Boolean}} for\+Sub\+Objects)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_image}{C\+Image}} $>$ \mbox{\hyperlink{class_c_editor_skin_af83fad3777d2c81ebdc7fa6f83916883}{All\+Icons}}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_editor_event}{C\+Editor\+Event}} $>$ \mbox{\hyperlink{class_c_editor_skin_af9a56ed51d596943f1e1350324eecfc0}{Pending\+Events}}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_vec3}{Vec3}} $>$ \mbox{\hyperlink{class_c_editor_skin_ab65d3268cc05d9bb30bd8a8a72b22a41}{Custom\+Colors}}
+\item 
+\mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716a}{C\+Editor\+Skin\+::\+E\+Painter\+Mode}} \mbox{\hyperlink{class_c_editor_skin_a1d57fd13be174fa0b3a0362f1f7bce7e}{Painter\+Mode}}
+\item 
+\mbox{\hyperlink{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9c}{C\+Editor\+Skin\+::\+E\+Painter\+Solid\+Type}} \mbox{\hyperlink{class_c_editor_skin_a736ceb158838df80daf388008a4923de}{Painter\+Solid\+Type}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_a29ef362733de101aa1588c7496846c68}{Is\+Text\+Enabled}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_aea4ba2cfe5b3ea8a33017fa71abfe970}{Is\+Picking\+Color}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_a6b23d0d8be61cbde189d7474ef16ac1d}{Is\+Erasing}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_adb77c14a8ba067a0ceffd22904f139da}{Is\+Using\+Shininess\+Only}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_ab981e0def74027400f377ebed75446a6}{Is\+Brush\+Normal}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_acc77479cd636605071b9c9c996820e44}{Is\+Text\+Symmetry}}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ \mbox{\hyperlink{class_c_editor_skin_aeee6cdad00e74731ae4a768693caf57f}{Sub\+Objects\+Selected}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_skin_aa6a8387296c1077353efbb5cb7a18dcd}{Sub\+Objects\+Count}}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ \mbox{\hyperlink{class_c_editor_skin_abe4f5967ea5d07e6a5d54ff798bc1145}{Layers\+Selected}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_skin_afce020d4fa33973c348800b00092d5da}{Layers\+Count}}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ \mbox{\hyperlink{class_c_editor_skin_a3cade07589447110a7d45b642c30dc80}{Stickers\+Selected}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_skin_abf480ada17f5f54ad6e38893ffe90bfa}{Stickers\+Count}}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ \mbox{\hyperlink{class_c_editor_skin_a56ebac6abda38f398ce8cd3171f57987}{Brushs\+Selected}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_skin_af3c5e076ecf41d1228be7a5ca11d2680}{Brushs\+Count}}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ \mbox{\hyperlink{class_c_editor_skin_af40ffe13893773efb04f96bb311177a3}{Sub\+Folder\+Elem\+Selected}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_skin_a60b84a7e522407d495cf1e9ad5c0a063}{Cur\+Sub\+Folder\+Elem\+Count}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_editor_skin_a1519d37f55e5e736aad754a2c46d9db5}{Transparency}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_editor_skin_a8d76b863cd9647c58da5850c3a358335}{Scale}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_editor_skin_a94d8c9ec78f3ba0817f7a1a0deef83fb}{Rough}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_editor_skin_a387cd7ee48c992dade7650ff674b7936}{Metal}}
+\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_editor_skin_ab7182fd06c970d26747f3c75ff8b84ff}{Color}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_skin_ab9896468f9d57a2a4ef8a0b447e5e7d0}{Edition\+Layers\+Count}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_ab0103b97155367bbe6f373fc0adc57e7}{Is\+Editing\+Layer}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_skin_ad15f2a58d9cd97549e0042403bd91246}{Edition\+Layer\+Selected}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_skin_a8b3129017ded690f244793197837f61b}{Sub\+Object\+Hovered}}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ \mbox{\hyperlink{class_c_editor_skin_a673ca9eed8d78a1c5bac625822f69160}{Current\+Layer\+Sub\+Objects\+Selected}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_a16d6b652651acf53720aea66e43543c2}{Can\+Undo}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_a738b88fde98366f794f5482983feb445}{Can\+Redo}}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_editor_skin_a46d0451523b5b0d53150ff65457c49bc}{Text\+To\+Create\+Bitmap}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_a519bf74e4a8bb7f49e230f4b34550785}{Is\+Fill\+With\+Replacement}}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_editor_skin_a2803a32aed3687aa57f142a4d3fbb94a}{Skin\+Name}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_a6e653b4786da680c5240b8ec44e5246f}{Is\+Skin\+Helmet\+Ok}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_skin_ae05284983ac8d3bbf66456d0cb0c15e7}{Is\+Camera\+Button\+On}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Documentation for class \mbox{\hyperlink{class_c_editor_skin}{C\+Editor\+Skin}}. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}\label{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}} 
+\index{CEditorSkin@{CEditorSkin}!EEditorSkin\_IconType@{EEditorSkin\_IconType}}
+\index{EEditorSkin\_IconType@{EEditorSkin\_IconType}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{EEditorSkin\_IconType}{EEditorSkin\_IconType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}{C\+Editor\+Skin\+::\+E\+Editor\+Skin\+\_\+\+Icon\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Stickers@{Stickers}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Stickers@{Stickers}}}\mbox{\Hypertarget{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aa54bdbd71653af7168eb07692afd3920a}\label{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aa54bdbd71653af7168eb07692afd3920a}} 
+Stickers&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Brushs@{Brushs}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Brushs@{Brushs}}}\mbox{\Hypertarget{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aa42827677e5c7b9f47fd75fbc78a5727f}\label{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aa42827677e5c7b9f47fd75fbc78a5727f}} 
+Brushs&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Layers@{Layers}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Layers@{Layers}}}\mbox{\Hypertarget{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aac2542a440a90105af2761d9ad07d3b3c}\label{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aac2542a440a90105af2761d9ad07d3b3c}} 
+Layers&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SubObjects@{SubObjects}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!SubObjects@{SubObjects}}}\mbox{\Hypertarget{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aafbfd2824f69eef465bcb2f15c2d85f21}\label{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778aafbfd2824f69eef465bcb2f15c2d85f21}} 
+Sub\+Objects&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_editor_skin_a45236620fccde4e4485266867f27716a}\label{class_c_editor_skin_a45236620fccde4e4485266867f27716a}} 
+\index{CEditorSkin@{CEditorSkin}!EPainterMode@{EPainterMode}}
+\index{EPainterMode@{EPainterMode}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{EPainterMode}{EPainterMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716a}{C\+Editor\+Skin\+::\+E\+Painter\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NoOp@{NoOp}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!NoOp@{NoOp}}}\mbox{\Hypertarget{class_c_editor_skin_a45236620fccde4e4485266867f27716aa657a9fdd37a31ab779781f005a57e4e2}\label{class_c_editor_skin_a45236620fccde4e4485266867f27716aa657a9fdd37a31ab779781f005a57e4e2}} 
+No\+Op&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fill@{Fill}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Fill@{Fill}}}\mbox{\Hypertarget{class_c_editor_skin_a45236620fccde4e4485266867f27716aac378a53e0c04d540a83c8643f823001f}\label{class_c_editor_skin_a45236620fccde4e4485266867f27716aac378a53e0c04d540a83c8643f823001f}} 
+Fill&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Brush@{Brush}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Brush@{Brush}}}\mbox{\Hypertarget{class_c_editor_skin_a45236620fccde4e4485266867f27716aafbbdba901dba7e5e207ad4e37df6c820}\label{class_c_editor_skin_a45236620fccde4e4485266867f27716aafbbdba901dba7e5e207ad4e37df6c820}} 
+Brush&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sticker@{Sticker}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Sticker@{Sticker}}}\mbox{\Hypertarget{class_c_editor_skin_a45236620fccde4e4485266867f27716aaac3b361bef9ec6503cc947f1e3e2433a}\label{class_c_editor_skin_a45236620fccde4e4485266867f27716aaac3b361bef9ec6503cc947f1e3e2433a}} 
+Sticker&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Layer@{Layer}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Layer@{Layer}}}\mbox{\Hypertarget{class_c_editor_skin_a45236620fccde4e4485266867f27716aac94bed80c0b4f289db47ab041591f859}\label{class_c_editor_skin_a45236620fccde4e4485266867f27716aac94bed80c0b4f289db47ab041591f859}} 
+Layer&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BadgeSlots@{BadgeSlots}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!BadgeSlots@{BadgeSlots}}}\mbox{\Hypertarget{class_c_editor_skin_a45236620fccde4e4485266867f27716aac703392c0a5deceb468d77dfa3cae502}\label{class_c_editor_skin_a45236620fccde4e4485266867f27716aac703392c0a5deceb468d77dfa3cae502}} 
+Badge\+Slots&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Team@{Team}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Team@{Team}}}\mbox{\Hypertarget{class_c_editor_skin_a45236620fccde4e4485266867f27716aa65b7f1322b62ed607c41e90175dd95a5}\label{class_c_editor_skin_a45236620fccde4e4485266867f27716aa65b7f1322b62ed607c41e90175dd95a5}} 
+Team&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9c}\label{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9c}} 
+\index{CEditorSkin@{CEditorSkin}!EPainterSolidType@{EPainterSolidType}}
+\index{EPainterSolidType@{EPainterSolidType}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{EPainterSolidType}{EPainterSolidType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9c}{C\+Editor\+Skin\+::\+E\+Painter\+Solid\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Other@{Other}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Other@{Other}}}\mbox{\Hypertarget{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca26b171a6d4faa4fa2d2b49cb0f11d652}\label{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca26b171a6d4faa4fa2d2b49cb0f11d652}} 
+Other&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CarWithPilot@{CarWithPilot}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!CarWithPilot@{CarWithPilot}}}\mbox{\Hypertarget{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca6e16929767d62f032db2db2358443702}\label{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca6e16929767d62f032db2db2358443702}} 
+Car\+With\+Pilot&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pilot\_Male@{Pilot\_Male}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Pilot\_Male@{Pilot\_Male}}}\mbox{\Hypertarget{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9cabc0cba450bff294c16a279294342c2df}\label{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9cabc0cba450bff294c16a279294342c2df}} 
+Pilot\+\_\+\+Male&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Pilot\_Female@{Pilot\_Female}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Pilot\_Female@{Pilot\_Female}}}\mbox{\Hypertarget{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca145544a38cff74498604677b5aa216f9}\label{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca145544a38cff74498604677b5aa216f9}} 
+Pilot\+\_\+\+Female&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Helmet@{Helmet}!CEditorSkin@{CEditorSkin}}\index{CEditorSkin@{CEditorSkin}!Helmet@{Helmet}}}\mbox{\Hypertarget{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca77d7630614b0d55d370b385b039e6800}\label{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9ca77d7630614b0d55d370b385b039e6800}} 
+Helmet&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_editor_skin_a3faefd3940c703a2feb431366d637620}\label{class_c_editor_skin_a3faefd3940c703a2feb431366d637620}} 
+\index{CEditorSkin@{CEditorSkin}!AddAndEditLayer@{AddAndEditLayer}}
+\index{AddAndEditLayer@{AddAndEditLayer}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{AddAndEditLayer()}{AddAndEditLayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Add\+And\+Edit\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_ad5fe7f8b86282cfbe2fad2f929bfd090}\label{class_c_editor_skin_ad5fe7f8b86282cfbe2fad2f929bfd090}} 
+\index{CEditorSkin@{CEditorSkin}!AddAngle@{AddAngle}}
+\index{AddAngle@{AddAngle}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{AddAngle()}{AddAngle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Add\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{Delta\+Rad }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_aadd14bb055312b9304ac1c22dce685ea}\label{class_c_editor_skin_aadd14bb055312b9304ac1c22dce685ea}} 
+\index{CEditorSkin@{CEditorSkin}!AddScale@{AddScale}}
+\index{AddScale@{AddScale}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{AddScale()}{AddScale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Add\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{Delta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a5f217409db0bf4d8eb5dd1711662e2cd}\label{class_c_editor_skin_a5f217409db0bf4d8eb5dd1711662e2cd}} 
+\index{CEditorSkin@{CEditorSkin}!AlignBrushSticker@{AlignBrushSticker}}
+\index{AlignBrushSticker@{AlignBrushSticker}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{AlignBrushSticker()}{AlignBrushSticker()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Align\+Brush\+Sticker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a139ec2c2f31acd1904bee457c4040cd1}\label{class_c_editor_skin_a139ec2c2f31acd1904bee457c4040cd1}} 
+\index{CEditorSkin@{CEditorSkin}!AskSwitchEditedNodType@{AskSwitchEditedNodType}}
+\index{AskSwitchEditedNodType@{AskSwitchEditedNodType}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{AskSwitchEditedNodType()}{AskSwitchEditedNodType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Ask\+Switch\+Edited\+Nod\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_ac32290f94b285a74f5aea8eb484299c0}\label{class_c_editor_skin_ac32290f94b285a74f5aea8eb484299c0}} 
+\index{CEditorSkin@{CEditorSkin}!CloseEditSelectedLayer@{CloseEditSelectedLayer}}
+\index{CloseEditSelectedLayer@{CloseEditSelectedLayer}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{CloseEditSelectedLayer()}{CloseEditSelectedLayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Close\+Edit\+Selected\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a32018fe6aeee66076134a6db6c8b6adf}\label{class_c_editor_skin_a32018fe6aeee66076134a6db6c8b6adf}} 
+\index{CEditorSkin@{CEditorSkin}!DeleteSelectedLayer@{DeleteSelectedLayer}}
+\index{DeleteSelectedLayer@{DeleteSelectedLayer}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{DeleteSelectedLayer()}{DeleteSelectedLayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Delete\+Selected\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a3ab041d75fffc37dd092ef3682e48114}\label{class_c_editor_skin_a3ab041d75fffc37dd092ef3682e48114}} 
+\index{CEditorSkin@{CEditorSkin}!EditCurrentLayerSelected@{EditCurrentLayerSelected}}
+\index{EditCurrentLayerSelected@{EditCurrentLayerSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{EditCurrentLayerSelected()}{EditCurrentLayerSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Edit\+Current\+Layer\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_ad66c2ee1a9d6d2baf7f9da41810461d3}\label{class_c_editor_skin_ad66c2ee1a9d6d2baf7f9da41810461d3}} 
+\index{CEditorSkin@{CEditorSkin}!ExportLayerEdition@{ExportLayerEdition}}
+\index{ExportLayerEdition@{ExportLayerEdition}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{ExportLayerEdition()}{ExportLayerEdition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Export\+Layer\+Edition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_aecce1e3d9dfe232294528f1e3df6381a}\label{class_c_editor_skin_aecce1e3d9dfe232294528f1e3df6381a}} 
+\index{CEditorSkin@{CEditorSkin}!ExportSkin@{ExportSkin}}
+\index{ExportSkin@{ExportSkin}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{ExportSkin()}{ExportSkin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Export\+Skin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a84bc4a4beec265b05680c02fb955ba7b}\label{class_c_editor_skin_a84bc4a4beec265b05680c02fb955ba7b}} 
+\index{CEditorSkin@{CEditorSkin}!GetAllIconFromId@{GetAllIconFromId}}
+\index{GetAllIconFromId@{GetAllIconFromId}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{GetAllIconFromId()}{GetAllIconFromId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_image}{C\+Image}} C\+Editor\+Skin\+::\+Get\+All\+Icon\+From\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index,  }\item[{\mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}{C\+Editor\+Skin\+::\+E\+Editor\+Skin\+\_\+\+Icon\+Type}}}]{Icon\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a1f159a44448090827d8bb1d6a529d96f}\label{class_c_editor_skin_a1f159a44448090827d8bb1d6a529d96f}} 
+\index{CEditorSkin@{CEditorSkin}!GetFolderNameFromScriptIndex@{GetFolderNameFromScriptIndex}}
+\index{GetFolderNameFromScriptIndex@{GetFolderNameFromScriptIndex}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{GetFolderNameFromScriptIndex()}{GetFolderNameFromScriptIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Editor\+Skin\+::\+Get\+Folder\+Name\+From\+Script\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Script\+Index,  }\item[{\mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}{C\+Editor\+Skin\+::\+E\+Editor\+Skin\+\_\+\+Icon\+Type}}}]{Icon\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a0b37d1f6dbb3a158d259426e35b8114c}\label{class_c_editor_skin_a0b37d1f6dbb3a158d259426e35b8114c}} 
+\index{CEditorSkin@{CEditorSkin}!GetLayerNameFromIndex@{GetLayerNameFromIndex}}
+\index{GetLayerNameFromIndex@{GetLayerNameFromIndex}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{GetLayerNameFromIndex()}{GetLayerNameFromIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Editor\+Skin\+::\+Get\+Layer\+Name\+From\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a46ebe171e0f6eed9c057072b3da91e62}\label{class_c_editor_skin_a46ebe171e0f6eed9c057072b3da91e62}} 
+\index{CEditorSkin@{CEditorSkin}!GetLayerVisibleFromIndex@{GetLayerVisibleFromIndex}}
+\index{GetLayerVisibleFromIndex@{GetLayerVisibleFromIndex}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{GetLayerVisibleFromIndex()}{GetLayerVisibleFromIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Get\+Layer\+Visible\+From\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_adfda4e1d77b948882e8f9a4460935e8c}\label{class_c_editor_skin_adfda4e1d77b948882e8f9a4460935e8c}} 
+\index{CEditorSkin@{CEditorSkin}!GetMainFrameMaxPage@{GetMainFrameMaxPage}}
+\index{GetMainFrameMaxPage@{GetMainFrameMaxPage}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{GetMainFrameMaxPage()}{GetMainFrameMaxPage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Skin\+::\+Get\+Main\+Frame\+Max\+Page (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Nb\+Per\+Page }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a3c9defaa2655e8fda0643f058349f1bc}\label{class_c_editor_skin_a3c9defaa2655e8fda0643f058349f1bc}} 
+\index{CEditorSkin@{CEditorSkin}!GetSubFolderIconFromId@{GetSubFolderIconFromId}}
+\index{GetSubFolderIconFromId@{GetSubFolderIconFromId}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{GetSubFolderIconFromId()}{GetSubFolderIconFromId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_image}{C\+Image}} C\+Editor\+Skin\+::\+Get\+Sub\+Folder\+Icon\+From\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Folder\+Index,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Elem\+Index,  }\item[{\mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}{C\+Editor\+Skin\+::\+E\+Editor\+Skin\+\_\+\+Icon\+Type}}}]{Icon\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_ae2bdd6c28778ada514074670c3d0000f}\label{class_c_editor_skin_ae2bdd6c28778ada514074670c3d0000f}} 
+\index{CEditorSkin@{CEditorSkin}!GetSubObjectMaxPage@{GetSubObjectMaxPage}}
+\index{GetSubObjectMaxPage@{GetSubObjectMaxPage}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{GetSubObjectMaxPage()}{GetSubObjectMaxPage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Skin\+::\+Get\+Sub\+Object\+Max\+Page (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Nb\+Per\+Page }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a52412a8e5210ed780da6b0b0e3875a48}\label{class_c_editor_skin_a52412a8e5210ed780da6b0b0e3875a48}} 
+\index{CEditorSkin@{CEditorSkin}!GetSubObjectNameFromIndex@{GetSubObjectNameFromIndex}}
+\index{GetSubObjectNameFromIndex@{GetSubObjectNameFromIndex}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{GetSubObjectNameFromIndex()}{GetSubObjectNameFromIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Editor\+Skin\+::\+Get\+Sub\+Object\+Name\+From\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Script\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a2a052e8cdb0f9cf4bfc95b4cdf8cf0ec}\label{class_c_editor_skin_a2a052e8cdb0f9cf4bfc95b4cdf8cf0ec}} 
+\index{CEditorSkin@{CEditorSkin}!ImportLayerEdition@{ImportLayerEdition}}
+\index{ImportLayerEdition@{ImportLayerEdition}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{ImportLayerEdition()}{ImportLayerEdition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Import\+Layer\+Edition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a503b758f0751ad7f4f7f2d1c44f9e180}\label{class_c_editor_skin_a503b758f0751ad7f4f7f2d1c44f9e180}} 
+\index{CEditorSkin@{CEditorSkin}!IsCtrlDown@{IsCtrlDown}}
+\index{IsCtrlDown@{IsCtrlDown}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsCtrlDown()}{IsCtrlDown()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Ctrl\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a6b47b836df1e56cabe6982d0fdc2621b}\label{class_c_editor_skin_a6b47b836df1e56cabe6982d0fdc2621b}} 
+\index{CEditorSkin@{CEditorSkin}!IsElemAtScriptIndexFolder@{IsElemAtScriptIndexFolder}}
+\index{IsElemAtScriptIndexFolder@{IsElemAtScriptIndexFolder}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsElemAtScriptIndexFolder()}{IsElemAtScriptIndexFolder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Elem\+At\+Script\+Index\+Folder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Script\+Index,  }\item[{\mbox{\hyperlink{class_c_editor_skin_a540cfe43e5f76ca3321315a76e4d778a}{C\+Editor\+Skin\+::\+E\+Editor\+Skin\+\_\+\+Icon\+Type}}}]{Icon\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a31769336419c1d9e023bd9655e92d5be}\label{class_c_editor_skin_a31769336419c1d9e023bd9655e92d5be}} 
+\index{CEditorSkin@{CEditorSkin}!MoveSelectedLayerDown@{MoveSelectedLayerDown}}
+\index{MoveSelectedLayerDown@{MoveSelectedLayerDown}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{MoveSelectedLayerDown()}{MoveSelectedLayerDown()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Move\+Selected\+Layer\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a19e3fa737db7402379e83992962ec3f8}\label{class_c_editor_skin_a19e3fa737db7402379e83992962ec3f8}} 
+\index{CEditorSkin@{CEditorSkin}!MoveSelectedLayerUp@{MoveSelectedLayerUp}}
+\index{MoveSelectedLayerUp@{MoveSelectedLayerUp}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{MoveSelectedLayerUp()}{MoveSelectedLayerUp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Move\+Selected\+Layer\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a1ba98d40a3fa7c86d1d5f5a15645ffad}\label{class_c_editor_skin_a1ba98d40a3fa7c86d1d5f5a15645ffad}} 
+\index{CEditorSkin@{CEditorSkin}!OnBrushSelected@{OnBrushSelected}}
+\index{OnBrushSelected@{OnBrushSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{OnBrushSelected()}{OnBrushSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+On\+Brush\+Selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Current\+Page,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_aabe94e5dc96c522a0ab820767582e172}\label{class_c_editor_skin_aabe94e5dc96c522a0ab820767582e172}} 
+\index{CEditorSkin@{CEditorSkin}!OnLayerSelected@{OnLayerSelected}}
+\index{OnLayerSelected@{OnLayerSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{OnLayerSelected()}{OnLayerSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+On\+Layer\+Selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Current\+Page,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a1c694c9454a95faaea37681b3f618bb7}\label{class_c_editor_skin_a1c694c9454a95faaea37681b3f618bb7}} 
+\index{CEditorSkin@{CEditorSkin}!OnStickerSelected@{OnStickerSelected}}
+\index{OnStickerSelected@{OnStickerSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{OnStickerSelected()}{OnStickerSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+On\+Sticker\+Selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Current\+Page,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_ab36c3f1c5c590bc149ea6259aceba450}\label{class_c_editor_skin_ab36c3f1c5c590bc149ea6259aceba450}} 
+\index{CEditorSkin@{CEditorSkin}!OnSubFolderElemSelected@{OnSubFolderElemSelected}}
+\index{OnSubFolderElemSelected@{OnSubFolderElemSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{OnSubFolderElemSelected()}{OnSubFolderElemSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+On\+Sub\+Folder\+Elem\+Selected (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Sub\+Folder\+Current\+Page,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Elem\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a2874b0e3187e54d2cfb632314d17c255}\label{class_c_editor_skin_a2874b0e3187e54d2cfb632314d17c255}} 
+\index{CEditorSkin@{CEditorSkin}!OpenMediaFolder@{OpenMediaFolder}}
+\index{OpenMediaFolder@{OpenMediaFolder}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{OpenMediaFolder()}{OpenMediaFolder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Open\+Media\+Folder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Sub\+Folder\+Path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_afe183e98875d6e6a9b2abea5a5edfb55}\label{class_c_editor_skin_afe183e98875d6e6a9b2abea5a5edfb55}} 
+\index{CEditorSkin@{CEditorSkin}!Redo@{Redo}}
+\index{Redo@{Redo}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{Redo()}{Redo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Redo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_addb73cf24f8eb80212b81ab0c78ff11e}\label{class_c_editor_skin_addb73cf24f8eb80212b81ab0c78ff11e}} 
+\index{CEditorSkin@{CEditorSkin}!ReloadResources@{ReloadResources}}
+\index{ReloadResources@{ReloadResources}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{ReloadResources()}{ReloadResources()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Reload\+Resources (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{for\+Sub\+Objects }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_aa42e25584bb35370b5f78a90af087509}\label{class_c_editor_skin_aa42e25584bb35370b5f78a90af087509}} 
+\index{CEditorSkin@{CEditorSkin}!SetCurrentLayerSelectedName@{SetCurrentLayerSelectedName}}
+\index{SetCurrentLayerSelectedName@{SetCurrentLayerSelectedName}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{SetCurrentLayerSelectedName()}{SetCurrentLayerSelectedName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Set\+Current\+Layer\+Selected\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_ab9b01c0315253a05ed1da822cf1cabc6}\label{class_c_editor_skin_ab9b01c0315253a05ed1da822cf1cabc6}} 
+\index{CEditorSkin@{CEditorSkin}!SetLayerVisibleFromIndex@{SetLayerVisibleFromIndex}}
+\index{SetLayerVisibleFromIndex@{SetLayerVisibleFromIndex}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{SetLayerVisibleFromIndex()}{SetLayerVisibleFromIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Set\+Layer\+Visible\+From\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Visible,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_ab70d789a5fdf08b9f6ffb37990331002}\label{class_c_editor_skin_ab70d789a5fdf08b9f6ffb37990331002}} 
+\index{CEditorSkin@{CEditorSkin}!SetPainterMode@{SetPainterMode}}
+\index{SetPainterMode@{SetPainterMode}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{SetPainterMode()}{SetPainterMode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Set\+Painter\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716a}{C\+Editor\+Skin\+::\+E\+Painter\+Mode}}}]{Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a8c614f32e4dacbde76eae50e6e9dd11c}\label{class_c_editor_skin_a8c614f32e4dacbde76eae50e6e9dd11c}} 
+\index{CEditorSkin@{CEditorSkin}!SetSubObjectIndexForLayer@{SetSubObjectIndexForLayer}}
+\index{SetSubObjectIndexForLayer@{SetSubObjectIndexForLayer}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{SetSubObjectIndexForLayer()}{SetSubObjectIndexForLayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Set\+Sub\+Object\+Index\+For\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Sub\+Object\+Index,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Layer\+Index,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Reset\+First }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_ab64f86ed9c778fbacd45fb610c5c4072}\label{class_c_editor_skin_ab64f86ed9c778fbacd45fb610c5c4072}} 
+\index{CEditorSkin@{CEditorSkin}!ToggleHelper@{ToggleHelper}}
+\index{ToggleHelper@{ToggleHelper}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{ToggleHelper()}{ToggleHelper()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Toggle\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a039eccc201e1ebc9af08f4558abed459}\label{class_c_editor_skin_a039eccc201e1ebc9af08f4558abed459}} 
+\index{CEditorSkin@{CEditorSkin}!ToggleIsPickingColor@{ToggleIsPickingColor}}
+\index{ToggleIsPickingColor@{ToggleIsPickingColor}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{ToggleIsPickingColor()}{ToggleIsPickingColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Toggle\+Is\+Picking\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a7401a10217b445ae0ac1b26decd98711}\label{class_c_editor_skin_a7401a10217b445ae0ac1b26decd98711}} 
+\index{CEditorSkin@{CEditorSkin}!ToggleIsTextEnabled@{ToggleIsTextEnabled}}
+\index{ToggleIsTextEnabled@{ToggleIsTextEnabled}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{ToggleIsTextEnabled()}{ToggleIsTextEnabled()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Toggle\+Is\+Text\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_ab391aa1c4e6dd8ae67fe8b86ca78fbf3}\label{class_c_editor_skin_ab391aa1c4e6dd8ae67fe8b86ca78fbf3}} 
+\index{CEditorSkin@{CEditorSkin}!ToggleLight@{ToggleLight}}
+\index{ToggleLight@{ToggleLight}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{ToggleLight()}{ToggleLight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Toggle\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_a355ecf0d1826b286d0d9d2eea8635764}\label{class_c_editor_skin_a355ecf0d1826b286d0d9d2eea8635764}} 
+\index{CEditorSkin@{CEditorSkin}!TogglePaintSymMode@{TogglePaintSymMode}}
+\index{TogglePaintSymMode@{TogglePaintSymMode}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{TogglePaintSymMode()}{TogglePaintSymMode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Toggle\+Paint\+Sym\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_skin_afc3f05d8498bb42cf032c7acc286a5d2}\label{class_c_editor_skin_afc3f05d8498bb42cf032c7acc286a5d2}} 
+\index{CEditorSkin@{CEditorSkin}!Undo@{Undo}}
+\index{Undo@{Undo}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{Undo()}{Undo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Skin\+::\+Undo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_editor_skin_af83fad3777d2c81ebdc7fa6f83916883}\label{class_c_editor_skin_af83fad3777d2c81ebdc7fa6f83916883}} 
+\index{CEditorSkin@{CEditorSkin}!AllIcons@{AllIcons}}
+\index{AllIcons@{AllIcons}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{AllIcons}{AllIcons}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_image}{C\+Image}}$>$ C\+Editor\+Skin\+::\+All\+Icons}
+
+\mbox{\Hypertarget{class_c_editor_skin_af3c5e076ecf41d1228be7a5ca11d2680}\label{class_c_editor_skin_af3c5e076ecf41d1228be7a5ca11d2680}} 
+\index{CEditorSkin@{CEditorSkin}!BrushsCount@{BrushsCount}}
+\index{BrushsCount@{BrushsCount}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{BrushsCount}{BrushsCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Skin\+::\+Brushs\+Count}
+
+\mbox{\Hypertarget{class_c_editor_skin_a56ebac6abda38f398ce8cd3171f57987}\label{class_c_editor_skin_a56ebac6abda38f398ce8cd3171f57987}} 
+\index{CEditorSkin@{CEditorSkin}!BrushsSelected@{BrushsSelected}}
+\index{BrushsSelected@{BrushsSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{BrushsSelected}{BrushsSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_integer}{Integer}}$>$ C\+Editor\+Skin\+::\+Brushs\+Selected}
+
+\mbox{\Hypertarget{class_c_editor_skin_a738b88fde98366f794f5482983feb445}\label{class_c_editor_skin_a738b88fde98366f794f5482983feb445}} 
+\index{CEditorSkin@{CEditorSkin}!CanRedo@{CanRedo}}
+\index{CanRedo@{CanRedo}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{CanRedo}{CanRedo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Can\+Redo}
+
+\mbox{\Hypertarget{class_c_editor_skin_a16d6b652651acf53720aea66e43543c2}\label{class_c_editor_skin_a16d6b652651acf53720aea66e43543c2}} 
+\index{CEditorSkin@{CEditorSkin}!CanUndo@{CanUndo}}
+\index{CanUndo@{CanUndo}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{CanUndo}{CanUndo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Can\+Undo}
+
+\mbox{\Hypertarget{class_c_editor_skin_ab7182fd06c970d26747f3c75ff8b84ff}\label{class_c_editor_skin_ab7182fd06c970d26747f3c75ff8b84ff}} 
+\index{CEditorSkin@{CEditorSkin}!Color@{Color}}
+\index{Color@{Color}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Editor\+Skin\+::\+Color}
+
+\mbox{\Hypertarget{class_c_editor_skin_a673ca9eed8d78a1c5bac625822f69160}\label{class_c_editor_skin_a673ca9eed8d78a1c5bac625822f69160}} 
+\index{CEditorSkin@{CEditorSkin}!CurrentLayerSubObjectsSelected@{CurrentLayerSubObjectsSelected}}
+\index{CurrentLayerSubObjectsSelected@{CurrentLayerSubObjectsSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{CurrentLayerSubObjectsSelected}{CurrentLayerSubObjectsSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_integer}{Integer}}$>$ C\+Editor\+Skin\+::\+Current\+Layer\+Sub\+Objects\+Selected}
+
+\mbox{\Hypertarget{class_c_editor_skin_a60b84a7e522407d495cf1e9ad5c0a063}\label{class_c_editor_skin_a60b84a7e522407d495cf1e9ad5c0a063}} 
+\index{CEditorSkin@{CEditorSkin}!CurSubFolderElemCount@{CurSubFolderElemCount}}
+\index{CurSubFolderElemCount@{CurSubFolderElemCount}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{CurSubFolderElemCount}{CurSubFolderElemCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Skin\+::\+Cur\+Sub\+Folder\+Elem\+Count}
+
+\mbox{\Hypertarget{class_c_editor_skin_ab65d3268cc05d9bb30bd8a8a72b22a41}\label{class_c_editor_skin_ab65d3268cc05d9bb30bd8a8a72b22a41}} 
+\index{CEditorSkin@{CEditorSkin}!CustomColors@{CustomColors}}
+\index{CustomColors@{CustomColors}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{CustomColors}{CustomColors}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_vec3}{Vec3}}$>$ C\+Editor\+Skin\+::\+Custom\+Colors}
+
+\mbox{\Hypertarget{class_c_editor_skin_ab9896468f9d57a2a4ef8a0b447e5e7d0}\label{class_c_editor_skin_ab9896468f9d57a2a4ef8a0b447e5e7d0}} 
+\index{CEditorSkin@{CEditorSkin}!EditionLayersCount@{EditionLayersCount}}
+\index{EditionLayersCount@{EditionLayersCount}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{EditionLayersCount}{EditionLayersCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Skin\+::\+Edition\+Layers\+Count}
+
+\mbox{\Hypertarget{class_c_editor_skin_ad15f2a58d9cd97549e0042403bd91246}\label{class_c_editor_skin_ad15f2a58d9cd97549e0042403bd91246}} 
+\index{CEditorSkin@{CEditorSkin}!EditionLayerSelected@{EditionLayerSelected}}
+\index{EditionLayerSelected@{EditionLayerSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{EditionLayerSelected}{EditionLayerSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Skin\+::\+Edition\+Layer\+Selected}
+
+\mbox{\Hypertarget{class_c_editor_skin_ab981e0def74027400f377ebed75446a6}\label{class_c_editor_skin_ab981e0def74027400f377ebed75446a6}} 
+\index{CEditorSkin@{CEditorSkin}!IsBrushNormal@{IsBrushNormal}}
+\index{IsBrushNormal@{IsBrushNormal}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsBrushNormal}{IsBrushNormal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Brush\+Normal}
+
+\mbox{\Hypertarget{class_c_editor_skin_ae05284983ac8d3bbf66456d0cb0c15e7}\label{class_c_editor_skin_ae05284983ac8d3bbf66456d0cb0c15e7}} 
+\index{CEditorSkin@{CEditorSkin}!IsCameraButtonOn@{IsCameraButtonOn}}
+\index{IsCameraButtonOn@{IsCameraButtonOn}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsCameraButtonOn}{IsCameraButtonOn}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Camera\+Button\+On}
+
+\mbox{\Hypertarget{class_c_editor_skin_ab0103b97155367bbe6f373fc0adc57e7}\label{class_c_editor_skin_ab0103b97155367bbe6f373fc0adc57e7}} 
+\index{CEditorSkin@{CEditorSkin}!IsEditingLayer@{IsEditingLayer}}
+\index{IsEditingLayer@{IsEditingLayer}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsEditingLayer}{IsEditingLayer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Editing\+Layer}
+
+\mbox{\Hypertarget{class_c_editor_skin_a6b23d0d8be61cbde189d7474ef16ac1d}\label{class_c_editor_skin_a6b23d0d8be61cbde189d7474ef16ac1d}} 
+\index{CEditorSkin@{CEditorSkin}!IsErasing@{IsErasing}}
+\index{IsErasing@{IsErasing}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsErasing}{IsErasing}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Erasing}
+
+\mbox{\Hypertarget{class_c_editor_skin_a519bf74e4a8bb7f49e230f4b34550785}\label{class_c_editor_skin_a519bf74e4a8bb7f49e230f4b34550785}} 
+\index{CEditorSkin@{CEditorSkin}!IsFillWithReplacement@{IsFillWithReplacement}}
+\index{IsFillWithReplacement@{IsFillWithReplacement}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsFillWithReplacement}{IsFillWithReplacement}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Fill\+With\+Replacement}
+
+\mbox{\Hypertarget{class_c_editor_skin_aea4ba2cfe5b3ea8a33017fa71abfe970}\label{class_c_editor_skin_aea4ba2cfe5b3ea8a33017fa71abfe970}} 
+\index{CEditorSkin@{CEditorSkin}!IsPickingColor@{IsPickingColor}}
+\index{IsPickingColor@{IsPickingColor}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsPickingColor}{IsPickingColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Picking\+Color}
+
+\mbox{\Hypertarget{class_c_editor_skin_a6e653b4786da680c5240b8ec44e5246f}\label{class_c_editor_skin_a6e653b4786da680c5240b8ec44e5246f}} 
+\index{CEditorSkin@{CEditorSkin}!IsSkinHelmetOk@{IsSkinHelmetOk}}
+\index{IsSkinHelmetOk@{IsSkinHelmetOk}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsSkinHelmetOk}{IsSkinHelmetOk}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Skin\+Helmet\+Ok}
+
+\mbox{\Hypertarget{class_c_editor_skin_a29ef362733de101aa1588c7496846c68}\label{class_c_editor_skin_a29ef362733de101aa1588c7496846c68}} 
+\index{CEditorSkin@{CEditorSkin}!IsTextEnabled@{IsTextEnabled}}
+\index{IsTextEnabled@{IsTextEnabled}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsTextEnabled}{IsTextEnabled}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Text\+Enabled}
+
+\mbox{\Hypertarget{class_c_editor_skin_acc77479cd636605071b9c9c996820e44}\label{class_c_editor_skin_acc77479cd636605071b9c9c996820e44}} 
+\index{CEditorSkin@{CEditorSkin}!IsTextSymmetry@{IsTextSymmetry}}
+\index{IsTextSymmetry@{IsTextSymmetry}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsTextSymmetry}{IsTextSymmetry}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Text\+Symmetry}
+
+\mbox{\Hypertarget{class_c_editor_skin_adb77c14a8ba067a0ceffd22904f139da}\label{class_c_editor_skin_adb77c14a8ba067a0ceffd22904f139da}} 
+\index{CEditorSkin@{CEditorSkin}!IsUsingShininessOnly@{IsUsingShininessOnly}}
+\index{IsUsingShininessOnly@{IsUsingShininessOnly}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{IsUsingShininessOnly}{IsUsingShininessOnly}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Skin\+::\+Is\+Using\+Shininess\+Only}
+
+\mbox{\Hypertarget{class_c_editor_skin_afce020d4fa33973c348800b00092d5da}\label{class_c_editor_skin_afce020d4fa33973c348800b00092d5da}} 
+\index{CEditorSkin@{CEditorSkin}!LayersCount@{LayersCount}}
+\index{LayersCount@{LayersCount}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{LayersCount}{LayersCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Skin\+::\+Layers\+Count}
+
+\mbox{\Hypertarget{class_c_editor_skin_abe4f5967ea5d07e6a5d54ff798bc1145}\label{class_c_editor_skin_abe4f5967ea5d07e6a5d54ff798bc1145}} 
+\index{CEditorSkin@{CEditorSkin}!LayersSelected@{LayersSelected}}
+\index{LayersSelected@{LayersSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{LayersSelected}{LayersSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_integer}{Integer}}$>$ C\+Editor\+Skin\+::\+Layers\+Selected}
+
+\mbox{\Hypertarget{class_c_editor_skin_a387cd7ee48c992dade7650ff674b7936}\label{class_c_editor_skin_a387cd7ee48c992dade7650ff674b7936}} 
+\index{CEditorSkin@{CEditorSkin}!Metal@{Metal}}
+\index{Metal@{Metal}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{Metal}{Metal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Editor\+Skin\+::\+Metal}
+
+\mbox{\Hypertarget{class_c_editor_skin_a1d57fd13be174fa0b3a0362f1f7bce7e}\label{class_c_editor_skin_a1d57fd13be174fa0b3a0362f1f7bce7e}} 
+\index{CEditorSkin@{CEditorSkin}!PainterMode@{PainterMode}}
+\index{PainterMode@{PainterMode}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{PainterMode}{PainterMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_editor_skin_a45236620fccde4e4485266867f27716a}{C\+Editor\+Skin\+::\+E\+Painter\+Mode}} C\+Editor\+Skin\+::\+Painter\+Mode}
+
+\mbox{\Hypertarget{class_c_editor_skin_a736ceb158838df80daf388008a4923de}\label{class_c_editor_skin_a736ceb158838df80daf388008a4923de}} 
+\index{CEditorSkin@{CEditorSkin}!PainterSolidType@{PainterSolidType}}
+\index{PainterSolidType@{PainterSolidType}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{PainterSolidType}{PainterSolidType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_editor_skin_aae51bb9133221367d3d10fb75e90cf9c}{C\+Editor\+Skin\+::\+E\+Painter\+Solid\+Type}} C\+Editor\+Skin\+::\+Painter\+Solid\+Type}
+
+\mbox{\Hypertarget{class_c_editor_skin_af9a56ed51d596943f1e1350324eecfc0}\label{class_c_editor_skin_af9a56ed51d596943f1e1350324eecfc0}} 
+\index{CEditorSkin@{CEditorSkin}!PendingEvents@{PendingEvents}}
+\index{PendingEvents@{PendingEvents}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{PendingEvents}{PendingEvents}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_editor_event}{C\+Editor\+Event}}$>$ C\+Editor\+Skin\+::\+Pending\+Events}
+
+\mbox{\Hypertarget{class_c_editor_skin_a94d8c9ec78f3ba0817f7a1a0deef83fb}\label{class_c_editor_skin_a94d8c9ec78f3ba0817f7a1a0deef83fb}} 
+\index{CEditorSkin@{CEditorSkin}!Rough@{Rough}}
+\index{Rough@{Rough}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{Rough}{Rough}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Editor\+Skin\+::\+Rough}
+
+\mbox{\Hypertarget{class_c_editor_skin_a8d76b863cd9647c58da5850c3a358335}\label{class_c_editor_skin_a8d76b863cd9647c58da5850c3a358335}} 
+\index{CEditorSkin@{CEditorSkin}!Scale@{Scale}}
+\index{Scale@{Scale}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{Scale}{Scale}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Editor\+Skin\+::\+Scale}
+
+\mbox{\Hypertarget{class_c_editor_skin_a2803a32aed3687aa57f142a4d3fbb94a}\label{class_c_editor_skin_a2803a32aed3687aa57f142a4d3fbb94a}} 
+\index{CEditorSkin@{CEditorSkin}!SkinName@{SkinName}}
+\index{SkinName@{SkinName}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{SkinName}{SkinName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Editor\+Skin\+::\+Skin\+Name}
+
+\mbox{\Hypertarget{class_c_editor_skin_abf480ada17f5f54ad6e38893ffe90bfa}\label{class_c_editor_skin_abf480ada17f5f54ad6e38893ffe90bfa}} 
+\index{CEditorSkin@{CEditorSkin}!StickersCount@{StickersCount}}
+\index{StickersCount@{StickersCount}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{StickersCount}{StickersCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Skin\+::\+Stickers\+Count}
+
+\mbox{\Hypertarget{class_c_editor_skin_a3cade07589447110a7d45b642c30dc80}\label{class_c_editor_skin_a3cade07589447110a7d45b642c30dc80}} 
+\index{CEditorSkin@{CEditorSkin}!StickersSelected@{StickersSelected}}
+\index{StickersSelected@{StickersSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{StickersSelected}{StickersSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_integer}{Integer}}$>$ C\+Editor\+Skin\+::\+Stickers\+Selected}
+
+\mbox{\Hypertarget{class_c_editor_skin_af40ffe13893773efb04f96bb311177a3}\label{class_c_editor_skin_af40ffe13893773efb04f96bb311177a3}} 
+\index{CEditorSkin@{CEditorSkin}!SubFolderElemSelected@{SubFolderElemSelected}}
+\index{SubFolderElemSelected@{SubFolderElemSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{SubFolderElemSelected}{SubFolderElemSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_integer}{Integer}}$>$ C\+Editor\+Skin\+::\+Sub\+Folder\+Elem\+Selected}
+
+\mbox{\Hypertarget{class_c_editor_skin_a8b3129017ded690f244793197837f61b}\label{class_c_editor_skin_a8b3129017ded690f244793197837f61b}} 
+\index{CEditorSkin@{CEditorSkin}!SubObjectHovered@{SubObjectHovered}}
+\index{SubObjectHovered@{SubObjectHovered}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{SubObjectHovered}{SubObjectHovered}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Skin\+::\+Sub\+Object\+Hovered}
+
+\mbox{\Hypertarget{class_c_editor_skin_aa6a8387296c1077353efbb5cb7a18dcd}\label{class_c_editor_skin_aa6a8387296c1077353efbb5cb7a18dcd}} 
+\index{CEditorSkin@{CEditorSkin}!SubObjectsCount@{SubObjectsCount}}
+\index{SubObjectsCount@{SubObjectsCount}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{SubObjectsCount}{SubObjectsCount}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Skin\+::\+Sub\+Objects\+Count}
+
+\mbox{\Hypertarget{class_c_editor_skin_aeee6cdad00e74731ae4a768693caf57f}\label{class_c_editor_skin_aeee6cdad00e74731ae4a768693caf57f}} 
+\index{CEditorSkin@{CEditorSkin}!SubObjectsSelected@{SubObjectsSelected}}
+\index{SubObjectsSelected@{SubObjectsSelected}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{SubObjectsSelected}{SubObjectsSelected}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_integer}{Integer}}$>$ C\+Editor\+Skin\+::\+Sub\+Objects\+Selected}
+
+\mbox{\Hypertarget{class_c_editor_skin_a46d0451523b5b0d53150ff65457c49bc}\label{class_c_editor_skin_a46d0451523b5b0d53150ff65457c49bc}} 
+\index{CEditorSkin@{CEditorSkin}!TextToCreateBitmap@{TextToCreateBitmap}}
+\index{TextToCreateBitmap@{TextToCreateBitmap}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{TextToCreateBitmap}{TextToCreateBitmap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Editor\+Skin\+::\+Text\+To\+Create\+Bitmap}
+
+\mbox{\Hypertarget{class_c_editor_skin_a1519d37f55e5e736aad754a2c46d9db5}\label{class_c_editor_skin_a1519d37f55e5e736aad754a2c46d9db5}} 
+\index{CEditorSkin@{CEditorSkin}!Transparency@{Transparency}}
+\index{Transparency@{Transparency}!CEditorSkin@{CEditorSkin}}
+\doxysubsubsection{\texorpdfstring{Transparency}{Transparency}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Editor\+Skin\+::\+Transparency}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

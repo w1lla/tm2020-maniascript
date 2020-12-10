@@ -1,0 +1,173 @@
+\hypertarget{class_c_tracking_mgr}{}\doxysection{C\+Tracking\+Mgr Class Reference}
+\label{class_c_tracking_mgr}\index{CTrackingMgr@{CTrackingMgr}}
+
+
+User privileges manager.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Tracking\+Mgr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_tracking_mgr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_a6e9211597e9069d54851a3d216fac112}{Task\+Result\+\_\+\+Release}} (\mbox{\hyperlink{struct_ident}{Ident}} Task\+Id)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_a485ffedddbaf1875b6daa47fd1304b7d}{Track\+\_\+\+Context\+Menu\+Start}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Menu\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_a881b11e63119392474281019ee5544d5}{Track\+\_\+\+Context\+Menu\+Stop}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Menu\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_a45a15a26ca64c61fc46584e076ed52d9}{Track\+\_\+\+Context\+Game\+Mode\+Start}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Game\+Mode)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_a99c79c01facc7dce43c5ed1f2904ce20}{Track\+\_\+\+Context\+Game\+Mode\+Stop}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Game\+Mode)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_a1315b6d99e00bb4cae46b490a7b78eeb}{Track\+\_\+\+Context\+Map\+Start}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Map\+Uid, \mbox{\hyperlink{struct_text}{Text}} Environment)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_a4428147221e0ba4d7447cff6c163ce83}{Track\+\_\+\+Context\+Map\+Stop}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Map\+Uid)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_aed012f3f8b7c7b9060db66d4e7a47ae0}{Track\+\_\+\+Context\+Play\+Start}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Type)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_a0f4acf7c72133cd69a0331354e5c7040}{Track\+\_\+\+Context\+Play\+Stop}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Type, \mbox{\hyperlink{struct_text}{Text}} Reason, \mbox{\hyperlink{struct_integer}{Integer}} Nb\+Respawns)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_abfd96e9adfa6630845cd05c41f19f5fa}{Track\+\_\+\+New\+Map\+Created}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Environment, \mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Randomly\+Generated)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_adfa03be55c1c2eedd529eceff2c04b81}{Track\+\_\+\+News\+Impression}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} News\+Id)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_a3191de8f860dd1a305b92fcc3177895e}{Track\+\_\+\+News\+Click}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} News\+Id)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_ad7f0a36407e40254e2e665760efd6d9e}{Track\+\_\+\+Player\+Achievement}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_integer}{Integer}} Achievement\+Id)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_ac4089d3a480cc9b5ad7ad567e43afd2f}{Track\+\_\+\+Stat\+Online}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_integer}{Integer}} Echelon)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_a098b9bdcc1c2b516b3a47e130c597a01}{Track\+\_\+\+Stat\+Season\+Official}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_integer}{Integer}} Played\+Map\+Count, \mbox{\hyperlink{struct_integer}{Integer}} Bronze\+Medal\+Count, \mbox{\hyperlink{struct_integer}{Integer}} Silver\+Medal\+Count, \mbox{\hyperlink{struct_integer}{Integer}} Gold\+Medal\+Count, \mbox{\hyperlink{struct_integer}{Integer}} Author\+Medal\+Count, \mbox{\hyperlink{struct_integer}{Integer}} Max\+Difficulty\+Level, \mbox{\hyperlink{struct_integer}{Integer}} Year, \mbox{\hyperlink{struct_text}{Text}} Season)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_tracking_mgr_aeef487a8ddc539167e7ef052934ce8bc}{Track\+\_\+\+Stat\+Season\+Weekly}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_integer}{Integer}} Played\+Map\+Count, \mbox{\hyperlink{struct_integer}{Integer}} Bronze\+Medal\+Count, \mbox{\hyperlink{struct_integer}{Integer}} Silver\+Medal\+Count, \mbox{\hyperlink{struct_integer}{Integer}} Gold\+Medal\+Count, \mbox{\hyperlink{struct_integer}{Integer}} Author\+Medal\+Count, \mbox{\hyperlink{struct_integer}{Integer}} Max\+Difficulty\+Level, \mbox{\hyperlink{struct_integer}{Integer}} Year, \mbox{\hyperlink{struct_integer}{Integer}} Week)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}} $>$ \mbox{\hyperlink{class_c_tracking_mgr_ad537330ab8fde75949c43784bb222015}{Task\+Results}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+User privileges manager. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_tracking_mgr_a6e9211597e9069d54851a3d216fac112}\label{class_c_tracking_mgr_a6e9211597e9069d54851a3d216fac112}} 
+\index{CTrackingMgr@{CTrackingMgr}!TaskResult\_Release@{TaskResult\_Release}}
+\index{TaskResult\_Release@{TaskResult\_Release}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{TaskResult\_Release()}{TaskResult\_Release()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Task\+Result\+\_\+\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Task\+Id }\end{DoxyParamCaption})}
+
+Release a task result no more used. \mbox{\Hypertarget{class_c_tracking_mgr_a45a15a26ca64c61fc46584e076ed52d9}\label{class_c_tracking_mgr_a45a15a26ca64c61fc46584e076ed52d9}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_ContextGameModeStart@{Track\_ContextGameModeStart}}
+\index{Track\_ContextGameModeStart@{Track\_ContextGameModeStart}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_ContextGameModeStart()}{Track\_ContextGameModeStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Context\+Game\+Mode\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Game\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_a99c79c01facc7dce43c5ed1f2904ce20}\label{class_c_tracking_mgr_a99c79c01facc7dce43c5ed1f2904ce20}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_ContextGameModeStop@{Track\_ContextGameModeStop}}
+\index{Track\_ContextGameModeStop@{Track\_ContextGameModeStop}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_ContextGameModeStop()}{Track\_ContextGameModeStop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Context\+Game\+Mode\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Game\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_a1315b6d99e00bb4cae46b490a7b78eeb}\label{class_c_tracking_mgr_a1315b6d99e00bb4cae46b490a7b78eeb}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_ContextMapStart@{Track\_ContextMapStart}}
+\index{Track\_ContextMapStart@{Track\_ContextMapStart}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_ContextMapStart()}{Track\_ContextMapStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Context\+Map\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Map\+Uid,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Environment }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_a4428147221e0ba4d7447cff6c163ce83}\label{class_c_tracking_mgr_a4428147221e0ba4d7447cff6c163ce83}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_ContextMapStop@{Track\_ContextMapStop}}
+\index{Track\_ContextMapStop@{Track\_ContextMapStop}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_ContextMapStop()}{Track\_ContextMapStop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Context\+Map\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Map\+Uid }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_a485ffedddbaf1875b6daa47fd1304b7d}\label{class_c_tracking_mgr_a485ffedddbaf1875b6daa47fd1304b7d}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_ContextMenuStart@{Track\_ContextMenuStart}}
+\index{Track\_ContextMenuStart@{Track\_ContextMenuStart}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_ContextMenuStart()}{Track\_ContextMenuStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Context\+Menu\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Menu\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_a881b11e63119392474281019ee5544d5}\label{class_c_tracking_mgr_a881b11e63119392474281019ee5544d5}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_ContextMenuStop@{Track\_ContextMenuStop}}
+\index{Track\_ContextMenuStop@{Track\_ContextMenuStop}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_ContextMenuStop()}{Track\_ContextMenuStop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Context\+Menu\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Menu\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_aed012f3f8b7c7b9060db66d4e7a47ae0}\label{class_c_tracking_mgr_aed012f3f8b7c7b9060db66d4e7a47ae0}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_ContextPlayStart@{Track\_ContextPlayStart}}
+\index{Track\_ContextPlayStart@{Track\_ContextPlayStart}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_ContextPlayStart()}{Track\_ContextPlayStart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Context\+Play\+Start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_a0f4acf7c72133cd69a0331354e5c7040}\label{class_c_tracking_mgr_a0f4acf7c72133cd69a0331354e5c7040}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_ContextPlayStop@{Track\_ContextPlayStop}}
+\index{Track\_ContextPlayStop@{Track\_ContextPlayStop}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_ContextPlayStop()}{Track\_ContextPlayStop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Context\+Play\+Stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Type,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Reason,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Nb\+Respawns }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_abfd96e9adfa6630845cd05c41f19f5fa}\label{class_c_tracking_mgr_abfd96e9adfa6630845cd05c41f19f5fa}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_NewMapCreated@{Track\_NewMapCreated}}
+\index{Track\_NewMapCreated@{Track\_NewMapCreated}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_NewMapCreated()}{Track\_NewMapCreated()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+New\+Map\+Created (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Environment,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Randomly\+Generated }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_a3191de8f860dd1a305b92fcc3177895e}\label{class_c_tracking_mgr_a3191de8f860dd1a305b92fcc3177895e}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_NewsClick@{Track\_NewsClick}}
+\index{Track\_NewsClick@{Track\_NewsClick}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_NewsClick()}{Track\_NewsClick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+News\+Click (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{News\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_adfa03be55c1c2eedd529eceff2c04b81}\label{class_c_tracking_mgr_adfa03be55c1c2eedd529eceff2c04b81}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_NewsImpression@{Track\_NewsImpression}}
+\index{Track\_NewsImpression@{Track\_NewsImpression}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_NewsImpression()}{Track\_NewsImpression()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+News\+Impression (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{News\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_ad7f0a36407e40254e2e665760efd6d9e}\label{class_c_tracking_mgr_ad7f0a36407e40254e2e665760efd6d9e}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_PlayerAchievement@{Track\_PlayerAchievement}}
+\index{Track\_PlayerAchievement@{Track\_PlayerAchievement}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_PlayerAchievement()}{Track\_PlayerAchievement()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Player\+Achievement (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Achievement\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_ac4089d3a480cc9b5ad7ad567e43afd2f}\label{class_c_tracking_mgr_ac4089d3a480cc9b5ad7ad567e43afd2f}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_StatOnline@{Track\_StatOnline}}
+\index{Track\_StatOnline@{Track\_StatOnline}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_StatOnline()}{Track\_StatOnline()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Stat\+Online (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Echelon }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_a098b9bdcc1c2b516b3a47e130c597a01}\label{class_c_tracking_mgr_a098b9bdcc1c2b516b3a47e130c597a01}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_StatSeasonOfficial@{Track\_StatSeasonOfficial}}
+\index{Track\_StatSeasonOfficial@{Track\_StatSeasonOfficial}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_StatSeasonOfficial()}{Track\_StatSeasonOfficial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Stat\+Season\+Official (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Played\+Map\+Count,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Bronze\+Medal\+Count,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Silver\+Medal\+Count,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Gold\+Medal\+Count,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Author\+Medal\+Count,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Max\+Difficulty\+Level,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Year,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Season }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tracking_mgr_aeef487a8ddc539167e7ef052934ce8bc}\label{class_c_tracking_mgr_aeef487a8ddc539167e7ef052934ce8bc}} 
+\index{CTrackingMgr@{CTrackingMgr}!Track\_StatSeasonWeekly@{Track\_StatSeasonWeekly}}
+\index{Track\_StatSeasonWeekly@{Track\_StatSeasonWeekly}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{Track\_StatSeasonWeekly()}{Track\_StatSeasonWeekly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Tracking\+Mgr\+::\+Track\+\_\+\+Stat\+Season\+Weekly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Played\+Map\+Count,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Bronze\+Medal\+Count,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Silver\+Medal\+Count,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Gold\+Medal\+Count,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Author\+Medal\+Count,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Max\+Difficulty\+Level,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Year,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Week }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_tracking_mgr_ad537330ab8fde75949c43784bb222015}\label{class_c_tracking_mgr_ad537330ab8fde75949c43784bb222015}} 
+\index{CTrackingMgr@{CTrackingMgr}!TaskResults@{TaskResults}}
+\index{TaskResults@{TaskResults}!CTrackingMgr@{CTrackingMgr}}
+\doxysubsubsection{\texorpdfstring{TaskResults}{TaskResults}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_task_result}{C\+Task\+Result}}$>$ C\+Tracking\+Mgr\+::\+Task\+Results}
+
+\mbox{\hyperlink{struct_array}{Array}} of task results. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

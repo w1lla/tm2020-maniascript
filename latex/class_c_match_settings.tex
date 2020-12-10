@@ -1,0 +1,133 @@
+\hypertarget{class_c_match_settings}{}\doxysection{C\+Match\+Settings Class Reference}
+\label{class_c_match_settings}\index{CMatchSettings@{CMatchSettings}}
+
+
+Represents a match-\/settings file.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Match\+Settings\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_match_settings}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_match_settings_a6b5a92c1bad581dc7b4c8b2b79afeaba}{Script\+Mode\+Name\+\_\+\+Check}} (\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_match_settings_ad783d31e4d1b5ca4ff063d652ccb5727}{Script\+Mode\+Name}})
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_match_settings_a4c03413a238502750f08eeef25fa656a}{Script\+Mode\+Name\+\_\+\+Set}} (\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_match_settings_ad783d31e4d1b5ca4ff063d652ccb5727}{Script\+Mode\+Name}})
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_match_settings_a3ce9f26670e5e5612c993729b3090fdd}{Playlist\+\_\+\+File\+Exists}} (\mbox{\hyperlink{struct_text}{Text}} File)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_match_settings_ae008d5f1faa7683fc6c5f1b850b1f4b6}{Playlist\+\_\+\+File\+Matches\+Mode}} (\mbox{\hyperlink{struct_text}{Text}} File)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_match_settings_aacdbd82f8e018dd90994d0f4ec08166d}{Playlist\+\_\+\+Add}} (\mbox{\hyperlink{struct_text}{Text}} File)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_match_settings_aefe0d32c90694c49893ea10c933536a9}{Playlist\+\_\+\+Remove}} (\mbox{\hyperlink{struct_integer}{Integer}} Index)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_match_settings_a7e667e2175d198bfd55d3d08e0809773}{Playlist\+\_\+\+Swap\+Up}} (\mbox{\hyperlink{struct_integer}{Integer}} Index)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_match_settings_a55430c2c34ca0b32d3c517ed2cfbef51}{Playlist\+\_\+\+Swap\+Down}} (\mbox{\hyperlink{struct_integer}{Integer}} Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_match_settings_af72826f6635e1ec61d169e93dc48eaa5}{Name}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_match_settings_a5dc9bae8651fcb060a86738d7d1beead}{File\+Name}}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_match_settings_ad783d31e4d1b5ca4ff063d652ccb5727}{Script\+Mode\+Name}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_match_settings_playlist_item}{C\+Match\+Settings\+Playlist\+Item}} $>$ \mbox{\hyperlink{class_c_match_settings_a3675c4ef656f2ade40d4a1a80d11af96}{Playlist}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a match-\/settings file. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_match_settings_aacdbd82f8e018dd90994d0f4ec08166d}\label{class_c_match_settings_aacdbd82f8e018dd90994d0f4ec08166d}} 
+\index{CMatchSettings@{CMatchSettings}!Playlist\_Add@{Playlist\_Add}}
+\index{Playlist\_Add@{Playlist\_Add}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{Playlist\_Add()}{Playlist\_Add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Match\+Settings\+::\+Playlist\+\_\+\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_match_settings_a3ce9f26670e5e5612c993729b3090fdd}\label{class_c_match_settings_a3ce9f26670e5e5612c993729b3090fdd}} 
+\index{CMatchSettings@{CMatchSettings}!Playlist\_FileExists@{Playlist\_FileExists}}
+\index{Playlist\_FileExists@{Playlist\_FileExists}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{Playlist\_FileExists()}{Playlist\_FileExists()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Match\+Settings\+::\+Playlist\+\_\+\+File\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_match_settings_ae008d5f1faa7683fc6c5f1b850b1f4b6}\label{class_c_match_settings_ae008d5f1faa7683fc6c5f1b850b1f4b6}} 
+\index{CMatchSettings@{CMatchSettings}!Playlist\_FileMatchesMode@{Playlist\_FileMatchesMode}}
+\index{Playlist\_FileMatchesMode@{Playlist\_FileMatchesMode}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{Playlist\_FileMatchesMode()}{Playlist\_FileMatchesMode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Match\+Settings\+::\+Playlist\+\_\+\+File\+Matches\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_match_settings_aefe0d32c90694c49893ea10c933536a9}\label{class_c_match_settings_aefe0d32c90694c49893ea10c933536a9}} 
+\index{CMatchSettings@{CMatchSettings}!Playlist\_Remove@{Playlist\_Remove}}
+\index{Playlist\_Remove@{Playlist\_Remove}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{Playlist\_Remove()}{Playlist\_Remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Match\+Settings\+::\+Playlist\+\_\+\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_match_settings_a55430c2c34ca0b32d3c517ed2cfbef51}\label{class_c_match_settings_a55430c2c34ca0b32d3c517ed2cfbef51}} 
+\index{CMatchSettings@{CMatchSettings}!Playlist\_SwapDown@{Playlist\_SwapDown}}
+\index{Playlist\_SwapDown@{Playlist\_SwapDown}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{Playlist\_SwapDown()}{Playlist\_SwapDown()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Match\+Settings\+::\+Playlist\+\_\+\+Swap\+Down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_match_settings_a7e667e2175d198bfd55d3d08e0809773}\label{class_c_match_settings_a7e667e2175d198bfd55d3d08e0809773}} 
+\index{CMatchSettings@{CMatchSettings}!Playlist\_SwapUp@{Playlist\_SwapUp}}
+\index{Playlist\_SwapUp@{Playlist\_SwapUp}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{Playlist\_SwapUp()}{Playlist\_SwapUp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Match\+Settings\+::\+Playlist\+\_\+\+Swap\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_match_settings_a6b5a92c1bad581dc7b4c8b2b79afeaba}\label{class_c_match_settings_a6b5a92c1bad581dc7b4c8b2b79afeaba}} 
+\index{CMatchSettings@{CMatchSettings}!ScriptModeName\_Check@{ScriptModeName\_Check}}
+\index{ScriptModeName\_Check@{ScriptModeName\_Check}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{ScriptModeName\_Check()}{ScriptModeName\_Check()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Match\+Settings\+::\+Script\+Mode\+Name\+\_\+\+Check (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Script\+Mode\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_match_settings_a4c03413a238502750f08eeef25fa656a}\label{class_c_match_settings_a4c03413a238502750f08eeef25fa656a}} 
+\index{CMatchSettings@{CMatchSettings}!ScriptModeName\_Set@{ScriptModeName\_Set}}
+\index{ScriptModeName\_Set@{ScriptModeName\_Set}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{ScriptModeName\_Set()}{ScriptModeName\_Set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Match\+Settings\+::\+Script\+Mode\+Name\+\_\+\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Script\+Mode\+Name }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_match_settings_a5dc9bae8651fcb060a86738d7d1beead}\label{class_c_match_settings_a5dc9bae8651fcb060a86738d7d1beead}} 
+\index{CMatchSettings@{CMatchSettings}!FileName@{FileName}}
+\index{FileName@{FileName}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{FileName}{FileName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Match\+Settings\+::\+File\+Name}
+
+\mbox{\Hypertarget{class_c_match_settings_af72826f6635e1ec61d169e93dc48eaa5}\label{class_c_match_settings_af72826f6635e1ec61d169e93dc48eaa5}} 
+\index{CMatchSettings@{CMatchSettings}!Name@{Name}}
+\index{Name@{Name}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Match\+Settings\+::\+Name}
+
+Name of the file \mbox{\Hypertarget{class_c_match_settings_a3675c4ef656f2ade40d4a1a80d11af96}\label{class_c_match_settings_a3675c4ef656f2ade40d4a1a80d11af96}} 
+\index{CMatchSettings@{CMatchSettings}!Playlist@{Playlist}}
+\index{Playlist@{Playlist}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{Playlist}{Playlist}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_match_settings_playlist_item}{C\+Match\+Settings\+Playlist\+Item}}$>$ C\+Match\+Settings\+::\+Playlist}
+
+\mbox{\Hypertarget{class_c_match_settings_ad783d31e4d1b5ca4ff063d652ccb5727}\label{class_c_match_settings_ad783d31e4d1b5ca4ff063d652ccb5727}} 
+\index{CMatchSettings@{CMatchSettings}!ScriptModeName@{ScriptModeName}}
+\index{ScriptModeName@{ScriptModeName}!CMatchSettings@{CMatchSettings}}
+\doxysubsubsection{\texorpdfstring{ScriptModeName}{ScriptModeName}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Match\+Settings\+::\+Script\+Mode\+Name}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

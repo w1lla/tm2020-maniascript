@@ -1,0 +1,188 @@
+\hypertarget{class_c_badge_editor}{}\doxysection{C\+Badge\+Editor Class Reference}
+\label{class_c_badge_editor}\index{CBadgeEditor@{CBadgeEditor}}
+
+
+A\+PI for Maniaplanet client scripts.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Badge\+Editor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_badge_editor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_badge_editor_a23cda4fb096bcbb29f41227cc253fb05}{Leave}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_badge_editor_a0b68ccc19b31fce4941d10f29e6f9d60}{Mesh\+Id\+\_\+\+Next}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_badge_editor_aa732ac0ec3c4c661a7eb5acbbe8f2875}{Mesh\+Id\+\_\+\+Previous}} ()
+\item 
+\mbox{\hyperlink{class_c_badge}{C\+Badge}} \mbox{\hyperlink{class_c_badge_editor_a80c5f3f1c7fae0f4589459e28cb55e76}{Badge\+Create}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_badge_editor_a8e466f2076672721697f489ee0c36df1}{Badge\+Destroy}} (\mbox{\hyperlink{class_c_badge}{C\+Badge}} Badge)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_badge_editor_a14db5ce14a445b4e4bf1700f91045e63}{Badge\+Copy}} (\mbox{\hyperlink{class_c_badge}{C\+Badge}} Source, \mbox{\hyperlink{class_c_badge}{C\+Badge}} Destination)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_badge_editor_a6d4c1d612192a593953940c6ae7005d6}{Badge\+Read\+From\+Profile}} (\mbox{\hyperlink{class_c_badge}{C\+Badge}} Badge, \mbox{\hyperlink{struct_ident}{Ident}} User\+Id)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_badge_editor_a1492f8ed3cc8ac898507a67b1a35a738}{Badge\+Write\+To\+Profile}} (\mbox{\hyperlink{class_c_badge}{C\+Badge}} Badge, \mbox{\hyperlink{struct_ident}{Ident}} User\+Id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_badge}{C\+Badge}} \mbox{\hyperlink{class_c_badge_editor_a74c131218c1b6e23b06d6146196688c1}{Display\+Current\+Badge}}
+\item 
+\mbox{\hyperlink{struct_vec2}{Vec2}} \mbox{\hyperlink{class_c_badge_editor_a79387bcd48ddc0e00f2e9d1227ef981d}{Display\+PosN}}
+\item 
+\mbox{\hyperlink{struct_vec2}{Vec2}} \mbox{\hyperlink{class_c_badge_editor_a712c74777608c35656cf0dfb3936a91b}{Display\+Size}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_badge_editor_a2a9a202907fe5b4547884dd90dca2917}{Display\+FoV}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_badge_editor_aaa54ebb84a316893b6a3f71a8522ae62}{Camera\+Transition\+Duration}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_badge_editor_ae98eeef9d7d5194eddd6f04550fdcb35}{Mesh\+Rotation\+\_\+\+Max\+Speed}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_badge_editor_ab67e9ca32c16543c09f16fde9bb08032}{Mesh\+Rotation\+\_\+\+Acceleration}}
+\item 
+\mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_badge_editor_aafd732c5d4482531816869ba83f9a74e}{Display\+Current\+Mesh\+Id}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_ident}{Ident}} $>$ \mbox{\hyperlink{class_c_badge_editor_aa9882c688662fbfe1b1a381f38103595}{Mesh\+Ids}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_badge}{C\+Badge}} $>$ \mbox{\hyperlink{class_c_badge_editor_a3c407821fc31d3e89858abff960b15d4}{Badges}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A\+PI for Maniaplanet client scripts. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Local
+\item Persistent 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_badge_editor_a14db5ce14a445b4e4bf1700f91045e63}\label{class_c_badge_editor_a14db5ce14a445b4e4bf1700f91045e63}} 
+\index{CBadgeEditor@{CBadgeEditor}!BadgeCopy@{BadgeCopy}}
+\index{BadgeCopy@{BadgeCopy}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{BadgeCopy()}{BadgeCopy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Badge\+Editor\+::\+Badge\+Copy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_badge}{C\+Badge}}}]{Source,  }\item[{\mbox{\hyperlink{class_c_badge}{C\+Badge}}}]{Destination }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_badge_editor_a80c5f3f1c7fae0f4589459e28cb55e76}\label{class_c_badge_editor_a80c5f3f1c7fae0f4589459e28cb55e76}} 
+\index{CBadgeEditor@{CBadgeEditor}!BadgeCreate@{BadgeCreate}}
+\index{BadgeCreate@{BadgeCreate}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{BadgeCreate()}{BadgeCreate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_badge}{C\+Badge}} C\+Badge\+Editor\+::\+Badge\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_badge_editor_a8e466f2076672721697f489ee0c36df1}\label{class_c_badge_editor_a8e466f2076672721697f489ee0c36df1}} 
+\index{CBadgeEditor@{CBadgeEditor}!BadgeDestroy@{BadgeDestroy}}
+\index{BadgeDestroy@{BadgeDestroy}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{BadgeDestroy()}{BadgeDestroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Badge\+Editor\+::\+Badge\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_badge}{C\+Badge}}}]{Badge }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_badge_editor_a6d4c1d612192a593953940c6ae7005d6}\label{class_c_badge_editor_a6d4c1d612192a593953940c6ae7005d6}} 
+\index{CBadgeEditor@{CBadgeEditor}!BadgeReadFromProfile@{BadgeReadFromProfile}}
+\index{BadgeReadFromProfile@{BadgeReadFromProfile}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{BadgeReadFromProfile()}{BadgeReadFromProfile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Badge\+Editor\+::\+Badge\+Read\+From\+Profile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_badge}{C\+Badge}}}]{Badge,  }\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_badge_editor_a1492f8ed3cc8ac898507a67b1a35a738}\label{class_c_badge_editor_a1492f8ed3cc8ac898507a67b1a35a738}} 
+\index{CBadgeEditor@{CBadgeEditor}!BadgeWriteToProfile@{BadgeWriteToProfile}}
+\index{BadgeWriteToProfile@{BadgeWriteToProfile}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{BadgeWriteToProfile()}{BadgeWriteToProfile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Badge\+Editor\+::\+Badge\+Write\+To\+Profile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_badge}{C\+Badge}}}]{Badge,  }\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_badge_editor_a23cda4fb096bcbb29f41227cc253fb05}\label{class_c_badge_editor_a23cda4fb096bcbb29f41227cc253fb05}} 
+\index{CBadgeEditor@{CBadgeEditor}!Leave@{Leave}}
+\index{Leave@{Leave}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{Leave()}{Leave()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Badge\+Editor\+::\+Leave (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_badge_editor_a0b68ccc19b31fce4941d10f29e6f9d60}\label{class_c_badge_editor_a0b68ccc19b31fce4941d10f29e6f9d60}} 
+\index{CBadgeEditor@{CBadgeEditor}!MeshId\_Next@{MeshId\_Next}}
+\index{MeshId\_Next@{MeshId\_Next}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{MeshId\_Next()}{MeshId\_Next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Badge\+Editor\+::\+Mesh\+Id\+\_\+\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_badge_editor_aa732ac0ec3c4c661a7eb5acbbe8f2875}\label{class_c_badge_editor_aa732ac0ec3c4c661a7eb5acbbe8f2875}} 
+\index{CBadgeEditor@{CBadgeEditor}!MeshId\_Previous@{MeshId\_Previous}}
+\index{MeshId\_Previous@{MeshId\_Previous}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{MeshId\_Previous()}{MeshId\_Previous()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Badge\+Editor\+::\+Mesh\+Id\+\_\+\+Previous (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_badge_editor_a3c407821fc31d3e89858abff960b15d4}\label{class_c_badge_editor_a3c407821fc31d3e89858abff960b15d4}} 
+\index{CBadgeEditor@{CBadgeEditor}!Badges@{Badges}}
+\index{Badges@{Badges}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{Badges}{Badges}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_badge}{C\+Badge}}$>$ C\+Badge\+Editor\+::\+Badges}
+
+\mbox{\Hypertarget{class_c_badge_editor_aaa54ebb84a316893b6a3f71a8522ae62}\label{class_c_badge_editor_aaa54ebb84a316893b6a3f71a8522ae62}} 
+\index{CBadgeEditor@{CBadgeEditor}!CameraTransitionDuration@{CameraTransitionDuration}}
+\index{CameraTransitionDuration@{CameraTransitionDuration}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{CameraTransitionDuration}{CameraTransitionDuration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Badge\+Editor\+::\+Camera\+Transition\+Duration}
+
+Values in range (0.\+100000-\/10.\+000000) \mbox{\Hypertarget{class_c_badge_editor_a74c131218c1b6e23b06d6146196688c1}\label{class_c_badge_editor_a74c131218c1b6e23b06d6146196688c1}} 
+\index{CBadgeEditor@{CBadgeEditor}!DisplayCurrentBadge@{DisplayCurrentBadge}}
+\index{DisplayCurrentBadge@{DisplayCurrentBadge}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{DisplayCurrentBadge}{DisplayCurrentBadge}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_badge}{C\+Badge}} C\+Badge\+Editor\+::\+Display\+Current\+Badge}
+
+\mbox{\Hypertarget{class_c_badge_editor_aafd732c5d4482531816869ba83f9a74e}\label{class_c_badge_editor_aafd732c5d4482531816869ba83f9a74e}} 
+\index{CBadgeEditor@{CBadgeEditor}!DisplayCurrentMeshId@{DisplayCurrentMeshId}}
+\index{DisplayCurrentMeshId@{DisplayCurrentMeshId}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{DisplayCurrentMeshId}{DisplayCurrentMeshId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ident}{Ident}} C\+Badge\+Editor\+::\+Display\+Current\+Mesh\+Id}
+
+\mbox{\Hypertarget{class_c_badge_editor_a2a9a202907fe5b4547884dd90dca2917}\label{class_c_badge_editor_a2a9a202907fe5b4547884dd90dca2917}} 
+\index{CBadgeEditor@{CBadgeEditor}!DisplayFoV@{DisplayFoV}}
+\index{DisplayFoV@{DisplayFoV}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{DisplayFoV}{DisplayFoV}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Badge\+Editor\+::\+Display\+FoV}
+
+\mbox{\Hypertarget{class_c_badge_editor_a79387bcd48ddc0e00f2e9d1227ef981d}\label{class_c_badge_editor_a79387bcd48ddc0e00f2e9d1227ef981d}} 
+\index{CBadgeEditor@{CBadgeEditor}!DisplayPosN@{DisplayPosN}}
+\index{DisplayPosN@{DisplayPosN}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{DisplayPosN}{DisplayPosN}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec2}{Vec2}} C\+Badge\+Editor\+::\+Display\+PosN}
+
+\mbox{\Hypertarget{class_c_badge_editor_a712c74777608c35656cf0dfb3936a91b}\label{class_c_badge_editor_a712c74777608c35656cf0dfb3936a91b}} 
+\index{CBadgeEditor@{CBadgeEditor}!DisplaySize@{DisplaySize}}
+\index{DisplaySize@{DisplaySize}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{DisplaySize}{DisplaySize}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec2}{Vec2}} C\+Badge\+Editor\+::\+Display\+Size}
+
+\mbox{\Hypertarget{class_c_badge_editor_aa9882c688662fbfe1b1a381f38103595}\label{class_c_badge_editor_aa9882c688662fbfe1b1a381f38103595}} 
+\index{CBadgeEditor@{CBadgeEditor}!MeshIds@{MeshIds}}
+\index{MeshIds@{MeshIds}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{MeshIds}{MeshIds}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_ident}{Ident}}$>$ C\+Badge\+Editor\+::\+Mesh\+Ids}
+
+\mbox{\Hypertarget{class_c_badge_editor_ab67e9ca32c16543c09f16fde9bb08032}\label{class_c_badge_editor_ab67e9ca32c16543c09f16fde9bb08032}} 
+\index{CBadgeEditor@{CBadgeEditor}!MeshRotation\_Acceleration@{MeshRotation\_Acceleration}}
+\index{MeshRotation\_Acceleration@{MeshRotation\_Acceleration}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{MeshRotation\_Acceleration}{MeshRotation\_Acceleration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Badge\+Editor\+::\+Mesh\+Rotation\+\_\+\+Acceleration}
+
+Values in range (0.\+100000-\/10.\+000000) \mbox{\Hypertarget{class_c_badge_editor_ae98eeef9d7d5194eddd6f04550fdcb35}\label{class_c_badge_editor_ae98eeef9d7d5194eddd6f04550fdcb35}} 
+\index{CBadgeEditor@{CBadgeEditor}!MeshRotation\_MaxSpeed@{MeshRotation\_MaxSpeed}}
+\index{MeshRotation\_MaxSpeed@{MeshRotation\_MaxSpeed}!CBadgeEditor@{CBadgeEditor}}
+\doxysubsubsection{\texorpdfstring{MeshRotation\_MaxSpeed}{MeshRotation\_MaxSpeed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Badge\+Editor\+::\+Mesh\+Rotation\+\_\+\+Max\+Speed}
+
+Values in range (-\/10.\+000000-\/10.\+000000) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

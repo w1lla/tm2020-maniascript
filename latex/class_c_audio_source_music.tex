@@ -1,0 +1,265 @@
+\hypertarget{class_c_audio_source_music}{}\doxysection{C\+Audio\+Source\+Music Class Reference}
+\label{class_c_audio_source_music}\index{CAudioSourceMusic@{CAudioSourceMusic}}
+
+
+Documentation for class \mbox{\hyperlink{class_c_audio_source_music}{C\+Audio\+Source\+Music}}.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Audio\+Source\+Music\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_audio_source_music}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73a}{E\+Update\+Mode}} \{ \mbox{\hyperlink{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aa87d4296e995ba075e438dbc8950eb5ca}{Cut}}, 
+\mbox{\hyperlink{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aa87fc8749820dfa6d49785587b158e221}{On\+Next\+Bar}}, 
+\mbox{\hyperlink{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aa4f7b2033031baae16178a81e89e10e9f}{On\+Next\+Half\+Bar}}, 
+\mbox{\hyperlink{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aaecca7b8d777df4e47bbaaf5cb8b3dbd6}{On\+Next\+Beat}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_audio_source_music_ae95f0bde451c637abaeb3c373bc201f2}{Mute\+All\+Tracks}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_audio_source_music_a68e4e360464d4b9a1fe3f2d200513904}{Unmute\+All\+Tracks}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_audio_source_music_a4f495f6e0160038f14d0487463460ff6}{Next\+Variant}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_audio_source_music_a6f9bdb435ee68e8021b7dbf0318f88b0}{Next\+Variant}} (\mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Intensity\+Decreasing)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_audio_source_music_a947267ac1a2794dec47b5ba1d67e9b06}{Enable\+Segment}} (\mbox{\hyperlink{struct_text}{Text}} Segment\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_real}{Real}} $>$ \mbox{\hyperlink{class_c_audio_source_music_a449e9193befacf086e56f4c3d229b029}{Tracks\+\_\+\+Volume}}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_real}{Real}} $>$ \mbox{\hyperlink{class_c_audio_source_music_a3bcdf18a0138462fffe75846c2ddca76}{Tracks\+\_\+\+VolumedB}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ \mbox{\hyperlink{class_c_audio_source_music_a72a860830062bf34e6522f682fd6d08a}{Tracks\+\_\+\+Name}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_real}{Real}} $>$ \mbox{\hyperlink{class_c_audio_source_music_ae1dc542c6057f91822eedf9900f03ef9}{Tracks\+\_\+\+Length}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_audio_source_music_ad047fc104b053786b6aab3123dcd6b9e}{Tracks\+\_\+\+Count}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_audio_source_music_a49aefaaef7c56970fcf327e706f10d7a}{Beats\+Per\+Minute}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_audio_source_music_a5b6127348a0e60559cce4ddef874d24e}{Beat\+Duration}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_audio_source_music_a8b981ef3596c5e13cf4788449e10b494}{Beats\+Per\+Bar}}
+\item 
+\mbox{\hyperlink{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73a}{C\+Audio\+Source\+Music\+::\+E\+Update\+Mode}} \mbox{\hyperlink{class_c_audio_source_music_a860daeae2def51068220a63553da8d30}{Update\+Mode}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_audio_source_music_ae16cf006281581bc4d351aa11fe38b36}{Dbg\+\_\+\+Force\+Intensity}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_audio_source_music_a77543788f7df439ce7fca6b5ffcfcda4}{Dbg\+\_\+\+Force\+Sequential}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_audio_source_music_aeec3c72e666e6dc1e281e545e7928949}{Dbg\+\_\+\+Force\+Random}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_audio_source_music_a598b43b11fefe6c2bd2e121ac462ba31}{L\+P\+F\+\_\+\+Cutoff\+Ratio}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_audio_source_music_a4c9ff9f0cd0b0e6f2a813e8f1baa546a}{L\+P\+F\+\_\+Q}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_audio_source_music_aa49c49b5b4d3754d187828fad466f31d}{H\+P\+F\+\_\+\+Cutoff\+Ratio}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_audio_source_music_ab4937016a4f08313814dea5425781e86}{H\+P\+F\+\_\+Q}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_audio_source_music_a60c8076b224643605b5f80bbb6c44ba8}{Fade\+Tracks\+Duration}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_audio_source_music_a4c47c644e3db7726cefa799b2a0575da}{Fade\+Filters\+Duration}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_audio_source_music_a8c5f7c61143e354d403ae7a522b5ad18}{Use\+New\+Implem}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Documentation for class \mbox{\hyperlink{class_c_audio_source_music}{C\+Audio\+Source\+Music}}. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73a}\label{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73a}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!EUpdateMode@{EUpdateMode}}
+\index{EUpdateMode@{EUpdateMode}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{EUpdateMode}{EUpdateMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73a}{C\+Audio\+Source\+Music\+::\+E\+Update\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Cut@{Cut}!CAudioSourceMusic@{CAudioSourceMusic}}\index{CAudioSourceMusic@{CAudioSourceMusic}!Cut@{Cut}}}\mbox{\Hypertarget{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aa87d4296e995ba075e438dbc8950eb5ca}\label{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aa87d4296e995ba075e438dbc8950eb5ca}} 
+Cut&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnNextBar@{OnNextBar}!CAudioSourceMusic@{CAudioSourceMusic}}\index{CAudioSourceMusic@{CAudioSourceMusic}!OnNextBar@{OnNextBar}}}\mbox{\Hypertarget{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aa87fc8749820dfa6d49785587b158e221}\label{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aa87fc8749820dfa6d49785587b158e221}} 
+On\+Next\+Bar&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnNextHalfBar@{OnNextHalfBar}!CAudioSourceMusic@{CAudioSourceMusic}}\index{CAudioSourceMusic@{CAudioSourceMusic}!OnNextHalfBar@{OnNextHalfBar}}}\mbox{\Hypertarget{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aa4f7b2033031baae16178a81e89e10e9f}\label{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aa4f7b2033031baae16178a81e89e10e9f}} 
+On\+Next\+Half\+Bar&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnNextBeat@{OnNextBeat}!CAudioSourceMusic@{CAudioSourceMusic}}\index{CAudioSourceMusic@{CAudioSourceMusic}!OnNextBeat@{OnNextBeat}}}\mbox{\Hypertarget{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aaecca7b8d777df4e47bbaaf5cb8b3dbd6}\label{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73aaecca7b8d777df4e47bbaaf5cb8b3dbd6}} 
+On\+Next\+Beat&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_audio_source_music_a947267ac1a2794dec47b5ba1d67e9b06}\label{class_c_audio_source_music_a947267ac1a2794dec47b5ba1d67e9b06}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!EnableSegment@{EnableSegment}}
+\index{EnableSegment@{EnableSegment}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{EnableSegment()}{EnableSegment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Audio\+Source\+Music\+::\+Enable\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Segment\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_audio_source_music_ae95f0bde451c637abaeb3c373bc201f2}\label{class_c_audio_source_music_ae95f0bde451c637abaeb3c373bc201f2}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!MuteAllTracks@{MuteAllTracks}}
+\index{MuteAllTracks@{MuteAllTracks}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{MuteAllTracks()}{MuteAllTracks()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Audio\+Source\+Music\+::\+Mute\+All\+Tracks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a4f495f6e0160038f14d0487463460ff6}\label{class_c_audio_source_music_a4f495f6e0160038f14d0487463460ff6}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!NextVariant@{NextVariant}}
+\index{NextVariant@{NextVariant}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{NextVariant()}{NextVariant()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Audio\+Source\+Music\+::\+Next\+Variant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a6f9bdb435ee68e8021b7dbf0318f88b0}\label{class_c_audio_source_music_a6f9bdb435ee68e8021b7dbf0318f88b0}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!NextVariant@{NextVariant}}
+\index{NextVariant@{NextVariant}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{NextVariant()}{NextVariant()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Audio\+Source\+Music\+::\+Next\+Variant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Intensity\+Decreasing }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a68e4e360464d4b9a1fe3f2d200513904}\label{class_c_audio_source_music_a68e4e360464d4b9a1fe3f2d200513904}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!UnmuteAllTracks@{UnmuteAllTracks}}
+\index{UnmuteAllTracks@{UnmuteAllTracks}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{UnmuteAllTracks()}{UnmuteAllTracks()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Audio\+Source\+Music\+::\+Unmute\+All\+Tracks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_audio_source_music_a5b6127348a0e60559cce4ddef874d24e}\label{class_c_audio_source_music_a5b6127348a0e60559cce4ddef874d24e}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!BeatDuration@{BeatDuration}}
+\index{BeatDuration@{BeatDuration}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{BeatDuration}{BeatDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Audio\+Source\+Music\+::\+Beat\+Duration}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a8b981ef3596c5e13cf4788449e10b494}\label{class_c_audio_source_music_a8b981ef3596c5e13cf4788449e10b494}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!BeatsPerBar@{BeatsPerBar}}
+\index{BeatsPerBar@{BeatsPerBar}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{BeatsPerBar}{BeatsPerBar}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Audio\+Source\+Music\+::\+Beats\+Per\+Bar}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a49aefaaef7c56970fcf327e706f10d7a}\label{class_c_audio_source_music_a49aefaaef7c56970fcf327e706f10d7a}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!BeatsPerMinute@{BeatsPerMinute}}
+\index{BeatsPerMinute@{BeatsPerMinute}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{BeatsPerMinute}{BeatsPerMinute}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Audio\+Source\+Music\+::\+Beats\+Per\+Minute}
+
+\mbox{\Hypertarget{class_c_audio_source_music_ae16cf006281581bc4d351aa11fe38b36}\label{class_c_audio_source_music_ae16cf006281581bc4d351aa11fe38b36}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!Dbg\_ForceIntensity@{Dbg\_ForceIntensity}}
+\index{Dbg\_ForceIntensity@{Dbg\_ForceIntensity}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{Dbg\_ForceIntensity}{Dbg\_ForceIntensity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Audio\+Source\+Music\+::\+Dbg\+\_\+\+Force\+Intensity}
+
+\mbox{\Hypertarget{class_c_audio_source_music_aeec3c72e666e6dc1e281e545e7928949}\label{class_c_audio_source_music_aeec3c72e666e6dc1e281e545e7928949}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!Dbg\_ForceRandom@{Dbg\_ForceRandom}}
+\index{Dbg\_ForceRandom@{Dbg\_ForceRandom}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{Dbg\_ForceRandom}{Dbg\_ForceRandom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Audio\+Source\+Music\+::\+Dbg\+\_\+\+Force\+Random}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a77543788f7df439ce7fca6b5ffcfcda4}\label{class_c_audio_source_music_a77543788f7df439ce7fca6b5ffcfcda4}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!Dbg\_ForceSequential@{Dbg\_ForceSequential}}
+\index{Dbg\_ForceSequential@{Dbg\_ForceSequential}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{Dbg\_ForceSequential}{Dbg\_ForceSequential}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Audio\+Source\+Music\+::\+Dbg\+\_\+\+Force\+Sequential}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a4c47c644e3db7726cefa799b2a0575da}\label{class_c_audio_source_music_a4c47c644e3db7726cefa799b2a0575da}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!FadeFiltersDuration@{FadeFiltersDuration}}
+\index{FadeFiltersDuration@{FadeFiltersDuration}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{FadeFiltersDuration}{FadeFiltersDuration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Audio\+Source\+Music\+::\+Fade\+Filters\+Duration}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a60c8076b224643605b5f80bbb6c44ba8}\label{class_c_audio_source_music_a60c8076b224643605b5f80bbb6c44ba8}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!FadeTracksDuration@{FadeTracksDuration}}
+\index{FadeTracksDuration@{FadeTracksDuration}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{FadeTracksDuration}{FadeTracksDuration}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Audio\+Source\+Music\+::\+Fade\+Tracks\+Duration}
+
+\mbox{\Hypertarget{class_c_audio_source_music_aa49c49b5b4d3754d187828fad466f31d}\label{class_c_audio_source_music_aa49c49b5b4d3754d187828fad466f31d}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!HPF\_CutoffRatio@{HPF\_CutoffRatio}}
+\index{HPF\_CutoffRatio@{HPF\_CutoffRatio}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{HPF\_CutoffRatio}{HPF\_CutoffRatio}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Audio\+Source\+Music\+::\+H\+P\+F\+\_\+\+Cutoff\+Ratio}
+
+Values in range (0.\+000000-\/1.\+000000) \mbox{\Hypertarget{class_c_audio_source_music_ab4937016a4f08313814dea5425781e86}\label{class_c_audio_source_music_ab4937016a4f08313814dea5425781e86}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!HPF\_Q@{HPF\_Q}}
+\index{HPF\_Q@{HPF\_Q}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{HPF\_Q}{HPF\_Q}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Audio\+Source\+Music\+::\+H\+P\+F\+\_\+Q}
+
+Values in range (0.\+100000-\/20.\+000000) \mbox{\Hypertarget{class_c_audio_source_music_a598b43b11fefe6c2bd2e121ac462ba31}\label{class_c_audio_source_music_a598b43b11fefe6c2bd2e121ac462ba31}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!LPF\_CutoffRatio@{LPF\_CutoffRatio}}
+\index{LPF\_CutoffRatio@{LPF\_CutoffRatio}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{LPF\_CutoffRatio}{LPF\_CutoffRatio}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Audio\+Source\+Music\+::\+L\+P\+F\+\_\+\+Cutoff\+Ratio}
+
+Values in range (0.\+000000-\/1.\+000000) \mbox{\Hypertarget{class_c_audio_source_music_a4c9ff9f0cd0b0e6f2a813e8f1baa546a}\label{class_c_audio_source_music_a4c9ff9f0cd0b0e6f2a813e8f1baa546a}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!LPF\_Q@{LPF\_Q}}
+\index{LPF\_Q@{LPF\_Q}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{LPF\_Q}{LPF\_Q}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Audio\+Source\+Music\+::\+L\+P\+F\+\_\+Q}
+
+Values in range (0.\+100000-\/20.\+000000) \mbox{\Hypertarget{class_c_audio_source_music_ad047fc104b053786b6aab3123dcd6b9e}\label{class_c_audio_source_music_ad047fc104b053786b6aab3123dcd6b9e}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!Tracks\_Count@{Tracks\_Count}}
+\index{Tracks\_Count@{Tracks\_Count}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{Tracks\_Count}{Tracks\_Count}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Audio\+Source\+Music\+::\+Tracks\+\_\+\+Count}
+
+\mbox{\Hypertarget{class_c_audio_source_music_ae1dc542c6057f91822eedf9900f03ef9}\label{class_c_audio_source_music_ae1dc542c6057f91822eedf9900f03ef9}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!Tracks\_Length@{Tracks\_Length}}
+\index{Tracks\_Length@{Tracks\_Length}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{Tracks\_Length}{Tracks\_Length}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_real}{Real}}$>$ C\+Audio\+Source\+Music\+::\+Tracks\+\_\+\+Length}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a72a860830062bf34e6522f682fd6d08a}\label{class_c_audio_source_music_a72a860830062bf34e6522f682fd6d08a}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!Tracks\_Name@{Tracks\_Name}}
+\index{Tracks\_Name@{Tracks\_Name}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{Tracks\_Name}{Tracks\_Name}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_text}{Text}}$>$ C\+Audio\+Source\+Music\+::\+Tracks\+\_\+\+Name}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a449e9193befacf086e56f4c3d229b029}\label{class_c_audio_source_music_a449e9193befacf086e56f4c3d229b029}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!Tracks\_Volume@{Tracks\_Volume}}
+\index{Tracks\_Volume@{Tracks\_Volume}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{Tracks\_Volume}{Tracks\_Volume}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_real}{Real}}$>$ C\+Audio\+Source\+Music\+::\+Tracks\+\_\+\+Volume}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a3bcdf18a0138462fffe75846c2ddca76}\label{class_c_audio_source_music_a3bcdf18a0138462fffe75846c2ddca76}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!Tracks\_VolumedB@{Tracks\_VolumedB}}
+\index{Tracks\_VolumedB@{Tracks\_VolumedB}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{Tracks\_VolumedB}{Tracks\_VolumedB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_real}{Real}}$>$ C\+Audio\+Source\+Music\+::\+Tracks\+\_\+\+VolumedB}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a860daeae2def51068220a63553da8d30}\label{class_c_audio_source_music_a860daeae2def51068220a63553da8d30}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!UpdateMode@{UpdateMode}}
+\index{UpdateMode@{UpdateMode}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{UpdateMode}{UpdateMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_audio_source_music_a0d7082da228f001b532295cf7d28b73a}{C\+Audio\+Source\+Music\+::\+E\+Update\+Mode}} C\+Audio\+Source\+Music\+::\+Update\+Mode}
+
+\mbox{\Hypertarget{class_c_audio_source_music_a8c5f7c61143e354d403ae7a522b5ad18}\label{class_c_audio_source_music_a8c5f7c61143e354d403ae7a522b5ad18}} 
+\index{CAudioSourceMusic@{CAudioSourceMusic}!UseNewImplem@{UseNewImplem}}
+\index{UseNewImplem@{UseNewImplem}!CAudioSourceMusic@{CAudioSourceMusic}}
+\doxysubsubsection{\texorpdfstring{UseNewImplem}{UseNewImplem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Audio\+Source\+Music\+::\+Use\+New\+Implem}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

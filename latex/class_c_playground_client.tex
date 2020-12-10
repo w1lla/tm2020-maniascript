@@ -1,0 +1,493 @@
+\hypertarget{class_c_playground_client}{}\doxysection{C\+Playground\+Client Class Reference}
+\label{class_c_playground_client}\index{CPlaygroundClient@{CPlaygroundClient}}
+
+
+A\+PI for plugins to get playground info.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Playground\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_playground_client}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cd}{E\+Spectator\+Camera\+Type}} \{ \newline
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cdaac56949cc69f7ae2b2fda52b09f719cb}{Replay}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cdac8a1e5d766644b7a5c8423350b68d431}{Follow}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cda258589723730e2c974264a1624ac2fa6}{Free}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cdab3bf707574cdc8ae20c06c620f9f013a}{Standard\+Count}}, 
+\newline
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cda64712b978138423d6ac69be162af725c}{Not\+Used0}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cda85c2711924484e4898f6a25ddfadb2f5}{Not\+Used1}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cda16dee0ebe375d003120193d15d90b3c1}{Not\+Used2}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cda00447cff8f403540ca4692b0dc12f460}{Not\+Used3}}, 
+\newline
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cda146f595d7361bafd5c96e9c7b9f52807}{Not\+Used4}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cda8c71abe7da02bfba3dbb4c59680749d3}{Not\+Used5}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cdab5d0ac1825b9f61778bad893f4d22369}{Not\+Used6}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cda4ec1c362249231c23d94a5beccc29819}{Not\+Used7}}, 
+\newline
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cdaa6c4d9b1b8018c943d8bf434b9b6af91}{Not\+Used8}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cdad320222bac11c7c65401b79f5238bf1b}{Not\+Used9}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cdac5faeb54933a719a79beb8f5eefd853d}{Follow\+Forced}}, 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cda5b7a2fb26bdd22b1dd2c9bc396f29af3}{Dont\+Change}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_playground_client_a47c1003cba6070db71929e432928d1bd}{E\+Spectator\+Target\+Type}} \{ \mbox{\hyperlink{class_c_playground_client_a47c1003cba6070db71929e432928d1bda8c3fffb98f4b666283cabc8878c9e707}{None}}, 
+\mbox{\hyperlink{class_c_playground_client_a47c1003cba6070db71929e432928d1bda2972e5eceb6b6c9e73af022c79681bbb}{Single}}, 
+\mbox{\hyperlink{class_c_playground_client_a47c1003cba6070db71929e432928d1bda5baf9d148c05429258de2330ca5ba33e}{All\+Players}}, 
+\mbox{\hyperlink{class_c_playground_client_a47c1003cba6070db71929e432928d1bdab036fc76c5ccaca7731bcefd479ffa1d}{All\+Map}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a659612f23a1a1f4594dc9418ef287eed}{Quit\+Server}} (\mbox{\hyperlink{struct_boolean}{Boolean}} Silent)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a7b2b88900729d16e9f6e6b5e550b30b8}{Quit\+Server\+And\+Set\+Result}} (\mbox{\hyperlink{struct_boolean}{Boolean}} Silent, \mbox{\hyperlink{struct_text}{Text}} Type, \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ Data)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a5f0e430795b1b103d01529a142eb0e6f}{Join\+Team1}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a4834a1e7095e60b7dc580f95f29b93f9}{Join\+Team2}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_aa0a5f834e1dfce7f1ee4cad448d6dbae}{Request\+Spectator\+Client}} (\mbox{\hyperlink{struct_boolean}{Boolean}} Spectator)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a168153087eceecd97eb6b619e1cc2ec7}{Set\+Spectate\+Target}} (\mbox{\hyperlink{struct_text}{Text}} Player)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a7d3ce2bde6346933487156f87379480f}{Show\+Profile}} (\mbox{\hyperlink{struct_text}{Text}} Player)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_a6e3d4a88a7807d70549b3f9e398c5e29}{Save\+Replay}} (\mbox{\hyperlink{struct_text}{Text}} File\+Name)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_ada6b696e62b4f06a2557a01c6bc5b065}{Save\+Prev\+Replay}} (\mbox{\hyperlink{struct_text}{Text}} File\+Name)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_a9d2b73bca975fc1eb9c3899e156764e7}{Save\+Map}} (\mbox{\hyperlink{struct_text}{Text}} File\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_ac224f31867afd731f0e52d847b384229}{Map\+List\+\_\+\+Request}} ()
+\item 
+\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cd}{C\+Playground\+Client\+::\+E\+Spectator\+Camera\+Type}} \mbox{\hyperlink{class_c_playground_client_a5e9bf1c6bb0be1f4f5689b6791e36fc7}{Get\+Spectator\+Camera\+Type}} ()
+\item 
+\mbox{\hyperlink{class_c_playground_client_a47c1003cba6070db71929e432928d1bd}{C\+Playground\+Client\+::\+E\+Spectator\+Target\+Type}} \mbox{\hyperlink{class_c_playground_client_a996e4a3aa13c47876a499982bf863601}{Get\+Spectator\+Target\+Type}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a0b688daa350f47812429d412a30ae8ad}{Set\+Wanted\+Spectator\+Camera\+Type}} (\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cd}{C\+Playground\+Client\+::\+E\+Spectator\+Camera\+Type}} Camera\+Type)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a3874edf9d7f850dcfe9922fc6b14fa5f}{Request\+Restart\+Map}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a430f6f44e314c1446519e5f58bb7f98c}{Request\+Next\+Map}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a998cb821556f37634a1a547f524f0824}{Request\+Goto\+Map}} (\mbox{\hyperlink{struct_text}{Text}} Map\+Uid)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a87a295bde3bd85ed5d3194c20cb71558}{Request\+Set\+Next\+Map}} (\mbox{\hyperlink{struct_text}{Text}} Map\+Uid)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a5208b1164a1d6999fb80472893ab10d0}{Request\+Auto\+Team\+Balance}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_playground_client_a72e8f4e3296bf49b4e7460c03669feaf}{Request\+Change\+Mode\+Script\+Settings}} (\mbox{\hyperlink{struct_text}{Text}} Settings\+Xml)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_c_map}{C\+Map}} \mbox{\hyperlink{class_c_playground_client_a3394944e456a991d2e323c19a71c7a93}{Map}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_playground_client_a9cf9c1d00ec4ab11764afcbfb59f73f6}{Game\+Time}}
+\item 
+const \mbox{\hyperlink{class_c_user}{C\+User}} \mbox{\hyperlink{class_c_playground_client_ad3e3c769189103a0d2fa2d0e9a724bbb}{Local\+User}}
+\item 
+const \mbox{\hyperlink{class_c_u_i_config}{C\+U\+I\+Config}} \mbox{\hyperlink{class_c_playground_client_a50bde07490784f5960761064246fe233}{UI}}
+\item 
+const \mbox{\hyperlink{class_c_server_info}{C\+Server\+Info}} \mbox{\hyperlink{class_c_playground_client_a97d4a02eb08a764ea56fb147e28e9707}{Server\+Info}}
+\item 
+const \mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_playground_client_a29a28783757a5be372fd545ccf2df440}{Settings\+Player\+Model\+Id}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_ae6a59e5c816c72deee15ace90b31f538}{Is\+Spectator}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_a43c33ac502649c6cc9c7f44c82c6c939}{Is\+Spectator\+Client}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_a0174c04b168633f42a7fc77900fc8e4f}{Use\+Clans}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_a23c46bbfb8c3825bef0e9915cfc80e89}{Use\+Forced\+Clans}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_abdc162d0016b6664a09b0f39939549f2}{Is\+Loading\+Screen}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_a731264675fa593baf7032798ed0d9e69}{Is\+Server\+Or\+Solo}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_ad8f617f5703358a5c9d0fb9305b8e65d}{Is\+In\+Game\+Menu\+Displayed}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_team}{C\+Team}} $>$ \mbox{\hyperlink{class_c_playground_client_a2b39c6ed19c6f71c0efae3f1d5c2ab1f}{Teams}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_a6667195e4d937686e095fcf37253df7d}{Map\+List\+\_\+\+Is\+In\+Progress}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ \mbox{\hyperlink{class_c_playground_client_a6816d1f7eaaff50bb11f00d69be146f9}{Map\+List\+\_\+\+Names}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ \mbox{\hyperlink{class_c_playground_client_a113f0cf97a075f333e60a9caca922e97}{Map\+List\+\_\+\+Map\+Uids}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_a27307df642cf0cee664aa1d536caf153}{Request\+\_\+\+Is\+In\+Progress}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_a35ea3877823b19c9e91ea3afa4ec24f1}{Request\+\_\+\+Success}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_playground_client_ab288b5b40d344b8c72f8fc66bed31c5d}{Disable\+Playing\+State\+Tracking}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A\+PI for plugins to get playground info. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Local
+\item Persistent 
+\end{DoxyItemize}
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cd}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cd}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!ESpectatorCameraType@{ESpectatorCameraType}}
+\index{ESpectatorCameraType@{ESpectatorCameraType}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{ESpectatorCameraType}{ESpectatorCameraType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cd}{C\+Playground\+Client\+::\+E\+Spectator\+Camera\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Replay@{Replay}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!Replay@{Replay}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cdaac56949cc69f7ae2b2fda52b09f719cb}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cdaac56949cc69f7ae2b2fda52b09f719cb}} 
+Replay&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Follow@{Follow}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!Follow@{Follow}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cdac8a1e5d766644b7a5c8423350b68d431}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cdac8a1e5d766644b7a5c8423350b68d431}} 
+Follow&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Free@{Free}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!Free@{Free}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cda258589723730e2c974264a1624ac2fa6}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cda258589723730e2c974264a1624ac2fa6}} 
+Free&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StandardCount@{StandardCount}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!StandardCount@{StandardCount}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cdab3bf707574cdc8ae20c06c620f9f013a}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cdab3bf707574cdc8ae20c06c620f9f013a}} 
+Standard\+Count&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotUsed0@{NotUsed0}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!NotUsed0@{NotUsed0}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cda64712b978138423d6ac69be162af725c}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cda64712b978138423d6ac69be162af725c}} 
+Not\+Used0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotUsed1@{NotUsed1}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!NotUsed1@{NotUsed1}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cda85c2711924484e4898f6a25ddfadb2f5}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cda85c2711924484e4898f6a25ddfadb2f5}} 
+Not\+Used1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotUsed2@{NotUsed2}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!NotUsed2@{NotUsed2}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cda16dee0ebe375d003120193d15d90b3c1}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cda16dee0ebe375d003120193d15d90b3c1}} 
+Not\+Used2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotUsed3@{NotUsed3}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!NotUsed3@{NotUsed3}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cda00447cff8f403540ca4692b0dc12f460}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cda00447cff8f403540ca4692b0dc12f460}} 
+Not\+Used3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotUsed4@{NotUsed4}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!NotUsed4@{NotUsed4}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cda146f595d7361bafd5c96e9c7b9f52807}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cda146f595d7361bafd5c96e9c7b9f52807}} 
+Not\+Used4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotUsed5@{NotUsed5}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!NotUsed5@{NotUsed5}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cda8c71abe7da02bfba3dbb4c59680749d3}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cda8c71abe7da02bfba3dbb4c59680749d3}} 
+Not\+Used5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotUsed6@{NotUsed6}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!NotUsed6@{NotUsed6}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cdab5d0ac1825b9f61778bad893f4d22369}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cdab5d0ac1825b9f61778bad893f4d22369}} 
+Not\+Used6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotUsed7@{NotUsed7}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!NotUsed7@{NotUsed7}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cda4ec1c362249231c23d94a5beccc29819}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cda4ec1c362249231c23d94a5beccc29819}} 
+Not\+Used7&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotUsed8@{NotUsed8}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!NotUsed8@{NotUsed8}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cdaa6c4d9b1b8018c943d8bf434b9b6af91}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cdaa6c4d9b1b8018c943d8bf434b9b6af91}} 
+Not\+Used8&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotUsed9@{NotUsed9}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!NotUsed9@{NotUsed9}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cdad320222bac11c7c65401b79f5238bf1b}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cdad320222bac11c7c65401b79f5238bf1b}} 
+Not\+Used9&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FollowForced@{FollowForced}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!FollowForced@{FollowForced}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cdac5faeb54933a719a79beb8f5eefd853d}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cdac5faeb54933a719a79beb8f5eefd853d}} 
+Follow\+Forced&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DontChange@{DontChange}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!DontChange@{DontChange}}}\mbox{\Hypertarget{class_c_playground_client_a7028d18142ce915612da10d0069079cda5b7a2fb26bdd22b1dd2c9bc396f29af3}\label{class_c_playground_client_a7028d18142ce915612da10d0069079cda5b7a2fb26bdd22b1dd2c9bc396f29af3}} 
+Dont\+Change&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_playground_client_a47c1003cba6070db71929e432928d1bd}\label{class_c_playground_client_a47c1003cba6070db71929e432928d1bd}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!ESpectatorTargetType@{ESpectatorTargetType}}
+\index{ESpectatorTargetType@{ESpectatorTargetType}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{ESpectatorTargetType}{ESpectatorTargetType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_playground_client_a47c1003cba6070db71929e432928d1bd}{C\+Playground\+Client\+::\+E\+Spectator\+Target\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!None@{None}}}\mbox{\Hypertarget{class_c_playground_client_a47c1003cba6070db71929e432928d1bda8c3fffb98f4b666283cabc8878c9e707}\label{class_c_playground_client_a47c1003cba6070db71929e432928d1bda8c3fffb98f4b666283cabc8878c9e707}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Single@{Single}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!Single@{Single}}}\mbox{\Hypertarget{class_c_playground_client_a47c1003cba6070db71929e432928d1bda2972e5eceb6b6c9e73af022c79681bbb}\label{class_c_playground_client_a47c1003cba6070db71929e432928d1bda2972e5eceb6b6c9e73af022c79681bbb}} 
+Single&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AllPlayers@{AllPlayers}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!AllPlayers@{AllPlayers}}}\mbox{\Hypertarget{class_c_playground_client_a47c1003cba6070db71929e432928d1bda5baf9d148c05429258de2330ca5ba33e}\label{class_c_playground_client_a47c1003cba6070db71929e432928d1bda5baf9d148c05429258de2330ca5ba33e}} 
+All\+Players&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AllMap@{AllMap}!CPlaygroundClient@{CPlaygroundClient}}\index{CPlaygroundClient@{CPlaygroundClient}!AllMap@{AllMap}}}\mbox{\Hypertarget{class_c_playground_client_a47c1003cba6070db71929e432928d1bdab036fc76c5ccaca7731bcefd479ffa1d}\label{class_c_playground_client_a47c1003cba6070db71929e432928d1bdab036fc76c5ccaca7731bcefd479ffa1d}} 
+All\+Map&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_playground_client_a5e9bf1c6bb0be1f4f5689b6791e36fc7}\label{class_c_playground_client_a5e9bf1c6bb0be1f4f5689b6791e36fc7}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!GetSpectatorCameraType@{GetSpectatorCameraType}}
+\index{GetSpectatorCameraType@{GetSpectatorCameraType}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{GetSpectatorCameraType()}{GetSpectatorCameraType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cd}{C\+Playground\+Client\+::\+E\+Spectator\+Camera\+Type}} C\+Playground\+Client\+::\+Get\+Spectator\+Camera\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a996e4a3aa13c47876a499982bf863601}\label{class_c_playground_client_a996e4a3aa13c47876a499982bf863601}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!GetSpectatorTargetType@{GetSpectatorTargetType}}
+\index{GetSpectatorTargetType@{GetSpectatorTargetType}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{GetSpectatorTargetType()}{GetSpectatorTargetType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_playground_client_a47c1003cba6070db71929e432928d1bd}{C\+Playground\+Client\+::\+E\+Spectator\+Target\+Type}} C\+Playground\+Client\+::\+Get\+Spectator\+Target\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a5f0e430795b1b103d01529a142eb0e6f}\label{class_c_playground_client_a5f0e430795b1b103d01529a142eb0e6f}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!JoinTeam1@{JoinTeam1}}
+\index{JoinTeam1@{JoinTeam1}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{JoinTeam1()}{JoinTeam1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Join\+Team1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a4834a1e7095e60b7dc580f95f29b93f9}\label{class_c_playground_client_a4834a1e7095e60b7dc580f95f29b93f9}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!JoinTeam2@{JoinTeam2}}
+\index{JoinTeam2@{JoinTeam2}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{JoinTeam2()}{JoinTeam2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Join\+Team2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_ac224f31867afd731f0e52d847b384229}\label{class_c_playground_client_ac224f31867afd731f0e52d847b384229}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!MapList\_Request@{MapList\_Request}}
+\index{MapList\_Request@{MapList\_Request}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{MapList\_Request()}{MapList\_Request()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Map\+List\+\_\+\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a659612f23a1a1f4594dc9418ef287eed}\label{class_c_playground_client_a659612f23a1a1f4594dc9418ef287eed}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!QuitServer@{QuitServer}}
+\index{QuitServer@{QuitServer}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{QuitServer()}{QuitServer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Quit\+Server (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Silent }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a7b2b88900729d16e9f6e6b5e550b30b8}\label{class_c_playground_client_a7b2b88900729d16e9f6e6b5e550b30b8}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!QuitServerAndSetResult@{QuitServerAndSetResult}}
+\index{QuitServerAndSetResult@{QuitServerAndSetResult}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{QuitServerAndSetResult()}{QuitServerAndSetResult()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Quit\+Server\+And\+Set\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Silent,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Type,  }\item[{\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$}]{Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a5208b1164a1d6999fb80472893ab10d0}\label{class_c_playground_client_a5208b1164a1d6999fb80472893ab10d0}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!RequestAutoTeamBalance@{RequestAutoTeamBalance}}
+\index{RequestAutoTeamBalance@{RequestAutoTeamBalance}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{RequestAutoTeamBalance()}{RequestAutoTeamBalance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Request\+Auto\+Team\+Balance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a72e8f4e3296bf49b4e7460c03669feaf}\label{class_c_playground_client_a72e8f4e3296bf49b4e7460c03669feaf}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!RequestChangeModeScriptSettings@{RequestChangeModeScriptSettings}}
+\index{RequestChangeModeScriptSettings@{RequestChangeModeScriptSettings}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{RequestChangeModeScriptSettings()}{RequestChangeModeScriptSettings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Request\+Change\+Mode\+Script\+Settings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Settings\+Xml }\end{DoxyParamCaption})}
+
+Change some settings from the mode with new values. No need to include unchanged settings. ex\+: \textquotesingle{}$<$script\+\_\+settings$>$$<$setting name=\char`\"{}\+S\+\_\+\+Time\+Limit\char`\"{} type=\char`\"{}integer\char`\"{} value=\char`\"{}300\char`\"{}$>$$<$script\+\_\+settings$>$\textquotesingle{} nb\+: you can use Trigger\+Page\+Action(\textquotesingle{}maniaplanet\+:editsettings\textquotesingle{}); to use the legacy UI. \mbox{\Hypertarget{class_c_playground_client_a998cb821556f37634a1a547f524f0824}\label{class_c_playground_client_a998cb821556f37634a1a547f524f0824}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!RequestGotoMap@{RequestGotoMap}}
+\index{RequestGotoMap@{RequestGotoMap}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{RequestGotoMap()}{RequestGotoMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Request\+Goto\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Map\+Uid }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a430f6f44e314c1446519e5f58bb7f98c}\label{class_c_playground_client_a430f6f44e314c1446519e5f58bb7f98c}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!RequestNextMap@{RequestNextMap}}
+\index{RequestNextMap@{RequestNextMap}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{RequestNextMap()}{RequestNextMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Request\+Next\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a3874edf9d7f850dcfe9922fc6b14fa5f}\label{class_c_playground_client_a3874edf9d7f850dcfe9922fc6b14fa5f}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!RequestRestartMap@{RequestRestartMap}}
+\index{RequestRestartMap@{RequestRestartMap}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{RequestRestartMap()}{RequestRestartMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Request\+Restart\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a87a295bde3bd85ed5d3194c20cb71558}\label{class_c_playground_client_a87a295bde3bd85ed5d3194c20cb71558}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!RequestSetNextMap@{RequestSetNextMap}}
+\index{RequestSetNextMap@{RequestSetNextMap}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{RequestSetNextMap()}{RequestSetNextMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Request\+Set\+Next\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Map\+Uid }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_aa0a5f834e1dfce7f1ee4cad448d6dbae}\label{class_c_playground_client_aa0a5f834e1dfce7f1ee4cad448d6dbae}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!RequestSpectatorClient@{RequestSpectatorClient}}
+\index{RequestSpectatorClient@{RequestSpectatorClient}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{RequestSpectatorClient()}{RequestSpectatorClient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Request\+Spectator\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Spectator }\end{DoxyParamCaption})}
+
+Request change of Is\+Spectator\+Client (not immediate, and it may be refused). Caveat\+: will not set Request\+\_\+\+Success \mbox{\Hypertarget{class_c_playground_client_a9d2b73bca975fc1eb9c3899e156764e7}\label{class_c_playground_client_a9d2b73bca975fc1eb9c3899e156764e7}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!SaveMap@{SaveMap}}
+\index{SaveMap@{SaveMap}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{SaveMap()}{SaveMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Save\+Map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File\+Name }\end{DoxyParamCaption})}
+
+Save the current map to a file (if the server Is\+Map\+Download\+Allowed). Filename is optional. \mbox{\Hypertarget{class_c_playground_client_ada6b696e62b4f06a2557a01c6bc5b065}\label{class_c_playground_client_ada6b696e62b4f06a2557a01c6bc5b065}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!SavePrevReplay@{SavePrevReplay}}
+\index{SavePrevReplay@{SavePrevReplay}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{SavePrevReplay()}{SavePrevReplay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Save\+Prev\+Replay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a6e3d4a88a7807d70549b3f9e398c5e29}\label{class_c_playground_client_a6e3d4a88a7807d70549b3f9e398c5e29}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!SaveReplay@{SaveReplay}}
+\index{SaveReplay@{SaveReplay}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{SaveReplay()}{SaveReplay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Save\+Replay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{File\+Name }\end{DoxyParamCaption})}
+
+Save the current replay to a file. Filename is optional. \mbox{\Hypertarget{class_c_playground_client_a168153087eceecd97eb6b619e1cc2ec7}\label{class_c_playground_client_a168153087eceecd97eb6b619e1cc2ec7}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!SetSpectateTarget@{SetSpectateTarget}}
+\index{SetSpectateTarget@{SetSpectateTarget}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{SetSpectateTarget()}{SetSpectateTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Set\+Spectate\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Player }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a0b688daa350f47812429d412a30ae8ad}\label{class_c_playground_client_a0b688daa350f47812429d412a30ae8ad}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!SetWantedSpectatorCameraType@{SetWantedSpectatorCameraType}}
+\index{SetWantedSpectatorCameraType@{SetWantedSpectatorCameraType}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{SetWantedSpectatorCameraType()}{SetWantedSpectatorCameraType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Set\+Wanted\+Spectator\+Camera\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_playground_client_a7028d18142ce915612da10d0069079cd}{C\+Playground\+Client\+::\+E\+Spectator\+Camera\+Type}}}]{Camera\+Type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_playground_client_a7d3ce2bde6346933487156f87379480f}\label{class_c_playground_client_a7d3ce2bde6346933487156f87379480f}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!ShowProfile@{ShowProfile}}
+\index{ShowProfile@{ShowProfile}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{ShowProfile()}{ShowProfile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Playground\+Client\+::\+Show\+Profile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Player }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_playground_client_ab288b5b40d344b8c72f8fc66bed31c5d}\label{class_c_playground_client_ab288b5b40d344b8c72f8fc66bed31c5d}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!DisablePlayingStateTracking@{DisablePlayingStateTracking}}
+\index{DisablePlayingStateTracking@{DisablePlayingStateTracking}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{DisablePlayingStateTracking}{DisablePlayingStateTracking}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Disable\+Playing\+State\+Tracking}
+
+\mbox{\Hypertarget{class_c_playground_client_a9cf9c1d00ec4ab11764afcbfb59f73f6}\label{class_c_playground_client_a9cf9c1d00ec4ab11764afcbfb59f73f6}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!GameTime@{GameTime}}
+\index{GameTime@{GameTime}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{GameTime}{GameTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Playground\+Client\+::\+Game\+Time}
+
+\mbox{\Hypertarget{class_c_playground_client_ad8f617f5703358a5c9d0fb9305b8e65d}\label{class_c_playground_client_ad8f617f5703358a5c9d0fb9305b8e65d}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!IsInGameMenuDisplayed@{IsInGameMenuDisplayed}}
+\index{IsInGameMenuDisplayed@{IsInGameMenuDisplayed}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{IsInGameMenuDisplayed}{IsInGameMenuDisplayed}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Is\+In\+Game\+Menu\+Displayed}
+
+\mbox{\Hypertarget{class_c_playground_client_abdc162d0016b6664a09b0f39939549f2}\label{class_c_playground_client_abdc162d0016b6664a09b0f39939549f2}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!IsLoadingScreen@{IsLoadingScreen}}
+\index{IsLoadingScreen@{IsLoadingScreen}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{IsLoadingScreen}{IsLoadingScreen}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Is\+Loading\+Screen}
+
+\mbox{\Hypertarget{class_c_playground_client_a731264675fa593baf7032798ed0d9e69}\label{class_c_playground_client_a731264675fa593baf7032798ed0d9e69}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!IsServerOrSolo@{IsServerOrSolo}}
+\index{IsServerOrSolo@{IsServerOrSolo}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{IsServerOrSolo}{IsServerOrSolo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Is\+Server\+Or\+Solo}
+
+\mbox{\Hypertarget{class_c_playground_client_ae6a59e5c816c72deee15ace90b31f538}\label{class_c_playground_client_ae6a59e5c816c72deee15ace90b31f538}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!IsSpectator@{IsSpectator}}
+\index{IsSpectator@{IsSpectator}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{IsSpectator}{IsSpectator}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Is\+Spectator}
+
+Is in spectator mode -\/ may be only for a short time between rounds. \mbox{\Hypertarget{class_c_playground_client_a43c33ac502649c6cc9c7f44c82c6c939}\label{class_c_playground_client_a43c33ac502649c6cc9c7f44c82c6c939}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!IsSpectatorClient@{IsSpectatorClient}}
+\index{IsSpectatorClient@{IsSpectatorClient}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{IsSpectatorClient}{IsSpectatorClient}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Is\+Spectator\+Client}
+
+Client actually desires to spectate instead of playing. \mbox{\Hypertarget{class_c_playground_client_ad3e3c769189103a0d2fa2d0e9a724bbb}\label{class_c_playground_client_ad3e3c769189103a0d2fa2d0e9a724bbb}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!LocalUser@{LocalUser}}
+\index{LocalUser@{LocalUser}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{LocalUser}{LocalUser}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_user}{C\+User}} C\+Playground\+Client\+::\+Local\+User}
+
+\mbox{\Hypertarget{class_c_playground_client_a3394944e456a991d2e323c19a71c7a93}\label{class_c_playground_client_a3394944e456a991d2e323c19a71c7a93}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!Map@{Map}}
+\index{Map@{Map}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{Map}{Map}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_map}{C\+Map}} C\+Playground\+Client\+::\+Map}
+
+Null when no map loaded. \mbox{\Hypertarget{class_c_playground_client_a6667195e4d937686e095fcf37253df7d}\label{class_c_playground_client_a6667195e4d937686e095fcf37253df7d}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!MapList\_IsInProgress@{MapList\_IsInProgress}}
+\index{MapList\_IsInProgress@{MapList\_IsInProgress}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{MapList\_IsInProgress}{MapList\_IsInProgress}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Map\+List\+\_\+\+Is\+In\+Progress}
+
+\mbox{\Hypertarget{class_c_playground_client_a113f0cf97a075f333e60a9caca922e97}\label{class_c_playground_client_a113f0cf97a075f333e60a9caca922e97}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!MapList\_MapUids@{MapList\_MapUids}}
+\index{MapList\_MapUids@{MapList\_MapUids}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{MapList\_MapUids}{MapList\_MapUids}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_text}{Text}}$>$ C\+Playground\+Client\+::\+Map\+List\+\_\+\+Map\+Uids}
+
+\mbox{\Hypertarget{class_c_playground_client_a6816d1f7eaaff50bb11f00d69be146f9}\label{class_c_playground_client_a6816d1f7eaaff50bb11f00d69be146f9}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!MapList\_Names@{MapList\_Names}}
+\index{MapList\_Names@{MapList\_Names}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{MapList\_Names}{MapList\_Names}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_text}{Text}}$>$ C\+Playground\+Client\+::\+Map\+List\+\_\+\+Names}
+
+\mbox{\Hypertarget{class_c_playground_client_a27307df642cf0cee664aa1d536caf153}\label{class_c_playground_client_a27307df642cf0cee664aa1d536caf153}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!Request\_IsInProgress@{Request\_IsInProgress}}
+\index{Request\_IsInProgress@{Request\_IsInProgress}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{Request\_IsInProgress}{Request\_IsInProgress}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Request\+\_\+\+Is\+In\+Progress}
+
+\mbox{\Hypertarget{class_c_playground_client_a35ea3877823b19c9e91ea3afa4ec24f1}\label{class_c_playground_client_a35ea3877823b19c9e91ea3afa4ec24f1}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!Request\_Success@{Request\_Success}}
+\index{Request\_Success@{Request\_Success}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{Request\_Success}{Request\_Success}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Request\+\_\+\+Success}
+
+\mbox{\Hypertarget{class_c_playground_client_a97d4a02eb08a764ea56fb147e28e9707}\label{class_c_playground_client_a97d4a02eb08a764ea56fb147e28e9707}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!ServerInfo@{ServerInfo}}
+\index{ServerInfo@{ServerInfo}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{ServerInfo}{ServerInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_server_info}{C\+Server\+Info}} C\+Playground\+Client\+::\+Server\+Info}
+
+\mbox{\Hypertarget{class_c_playground_client_a29a28783757a5be372fd545ccf2df440}\label{class_c_playground_client_a29a28783757a5be372fd545ccf2df440}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!SettingsPlayerModelId@{SettingsPlayerModelId}}
+\index{SettingsPlayerModelId@{SettingsPlayerModelId}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{SettingsPlayerModelId}{SettingsPlayerModelId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_ident}{Ident}} C\+Playground\+Client\+::\+Settings\+Player\+Model\+Id}
+
+\mbox{\Hypertarget{class_c_playground_client_a2b39c6ed19c6f71c0efae3f1d5c2ab1f}\label{class_c_playground_client_a2b39c6ed19c6f71c0efae3f1d5c2ab1f}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!Teams@{Teams}}
+\index{Teams@{Teams}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{Teams}{Teams}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_team}{C\+Team}}$>$ C\+Playground\+Client\+::\+Teams}
+
+\mbox{\Hypertarget{class_c_playground_client_a50bde07490784f5960761064246fe233}\label{class_c_playground_client_a50bde07490784f5960761064246fe233}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!UI@{UI}}
+\index{UI@{UI}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{UI}{UI}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_u_i_config}{C\+U\+I\+Config}} C\+Playground\+Client\+::\+UI}
+
+\mbox{\Hypertarget{class_c_playground_client_a0174c04b168633f42a7fc77900fc8e4f}\label{class_c_playground_client_a0174c04b168633f42a7fc77900fc8e4f}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!UseClans@{UseClans}}
+\index{UseClans@{UseClans}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{UseClans}{UseClans}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Use\+Clans}
+
+\mbox{\Hypertarget{class_c_playground_client_a23c46bbfb8c3825bef0e9915cfc80e89}\label{class_c_playground_client_a23c46bbfb8c3825bef0e9915cfc80e89}} 
+\index{CPlaygroundClient@{CPlaygroundClient}!UseForcedClans@{UseForcedClans}}
+\index{UseForcedClans@{UseForcedClans}!CPlaygroundClient@{CPlaygroundClient}}
+\doxysubsubsection{\texorpdfstring{UseForcedClans}{UseForcedClans}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Playground\+Client\+::\+Use\+Forced\+Clans}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

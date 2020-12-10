@@ -1,0 +1,513 @@
+\hypertarget{class_c_ml_script_ingame}{}\doxysection{C\+Ml\+Script\+Ingame Class Reference}
+\label{class_c_ml_script_ingame}\index{CMlScriptIngame@{CMlScriptIngame}}
+
+
+A\+PI for Game\+Modes Manialinks.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Ml\+Script\+Ingame\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_ml_script_ingame}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302}{E\+U\+I\+Sound}} \{ \newline
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a0d00cc0028e3936d7e8a144e8bfe62b0}{Default}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302addb16da587e12ad7f96c49e81f5cb5e6}{Silence}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a4d6401eb5b1bac0b1d1cc638e2d7c6bd}{Start\+Match}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a72517608b9a388da6cab1d909f8b0c51}{End\+Match}}, 
+\newline
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a8138795155ae17dacad6a9b03d9c0d5a}{Start\+Round}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a4833af2080141ca7190fc42cdc5f1715}{End\+Round}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a85ba8470ce4336a31bd7e2d2d9b74a6d}{Phase\+Change}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302add1f853230ae3b8f7b467a0fe2083810}{Tie\+Break\+Point}}, 
+\newline
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302adf5aeee0e8b62ef76d48b34a3f0c4c4e}{Tie\+Point}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a7a8b02d61edd2ae3767750fe19a1e3d9}{Victory\+Point}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a327c8527d91ba030930822f77bc77420}{Capture}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a6843795090dfc8d45c36eeaa238a5df4}{Time\+Out}}, 
+\newline
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a503c29378a6bb30cac8dac02f831eefd}{Notice}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302aaa02037c562baad308d8e12345a45823}{Warning}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a91bc46bbdc37739ef422da22aa17120f}{Player\+Eliminated}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ab38233e0c2861e0e900e4d7f79f6d3e6}{Player\+Hit}}, 
+\newline
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a9bf3165d739d67f87aec2d7918259a88}{Checkpoint}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a73228c4ed786549eef2931a7b37e6342}{Finish}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a81624198ad055ed682d2f68d63f53027}{Record}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a6901a76005052789f147a0a63e4189b5}{Score\+Progress}}, 
+\newline
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a3333844e55755589e08a5b2279690095}{Rank\+Change}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a03f24bb41b06c93ab40d0a0e7242d831}{Bonus}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302afe3129424ea82b426f59a3a9e722d670}{First\+Hit}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302aca3d59549524b793f4508ad6621fb07f}{Combo}}, 
+\newline
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ad166dcb57959d3d3627427340effe4de}{Players\+Remaining}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a4456789c0aec2eff1cb20f0992192e22}{Custom1}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ac61d7d57c762eb83dac5253a3ee55fab}{Custom2}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ab99cee233f0e278edc8c6456b148df2e}{Custom3}}, 
+\newline
+\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a78adcbf22ae0a58fea1c512189440957}{Custom4}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6}{E\+In\+Game\+Menu\+Result}} \{ \newline
+\mbox{\hyperlink{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6acdfc78df2db6a86fc54203fdcedc34e2}{Resume}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6abe0d05c265437ae22503e36545764995}{Quit}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6a51a19a9751f0b39c4a1625c3c1356a51}{Normal\+Menu}}, 
+\mbox{\hyperlink{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6a0f793ac08b6e46de8df9bb78d4f40999}{Advanced\+Menu}}, 
+\newline
+\mbox{\hyperlink{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6a9922ba16c0182dfdfbc3af1b598656dc}{Server\+Settings}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_aaee490172bf6d93ea2df6cb164856c00}{Show\+Cur\+Challenge\+Card}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_a49bc392108a73a15f6aecad15caccf99}{Show\+Mode\+Help}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_ac7fd3683936ece2a9a340a9bc2c6ef23}{Copy\+Server\+Link\+To\+Clip\+Board}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_aca6985994d1b71bdbc251e436d35b11f}{Join\+Team1}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_a66a5c66afc2aee975ad895525572fb86}{Join\+Team2}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_a03be57434761393ec5884c5b787b0a27}{Request\+Spectator\+Client}} (\mbox{\hyperlink{struct_boolean}{Boolean}} Spectator)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_a03ce109484037d5155754957764a0c39}{Set\+Spectate\+Target}} (\mbox{\hyperlink{struct_text}{Text}} Player)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_ae09c47238374d6d6573970da5fa8b58a}{Show\+Profile}} (\mbox{\hyperlink{struct_text}{Text}} Player)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_a53098b7ec2a145e6b75b36d017461ca2}{Show\+In\+Game\+Menu}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_ad343f4980955607eb2623d10ef116bcd}{Close\+In\+Game\+Menu}} (\mbox{\hyperlink{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6}{C\+Ml\+Script\+Ingame\+::\+E\+In\+Game\+Menu\+Result}} Result)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_a47fdc067b19125fed0c2839930011bda}{Close\+Scores\+Table}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_ml_script_ingame_ac135124a3896f602ccded97a38515edc}{Play\+Ui\+Sound}} (\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302}{C\+Ml\+Script\+Ingame\+::\+E\+U\+I\+Sound}} Sound, \mbox{\hyperlink{struct_integer}{Integer}} Sound\+Variant, \mbox{\hyperlink{struct_real}{Real}} Volume)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_ml_script_ingame_a3020a2294847820887a0679ad8c0bb45}{Game\+Time}}
+\item 
+const \mbox{\hyperlink{class_c_playground_client}{C\+Playground\+Client}} \mbox{\hyperlink{class_c_ml_script_ingame_aac12864de3cd6767495ac0ca72e25bd6}{Playground}}
+\item 
+\mbox{\hyperlink{class_c_u_i_config}{C\+U\+I\+Config}} \mbox{\hyperlink{class_c_ml_script_ingame_a507c1765dc7de5952ae02c3bcc1dd8b5}{UI}}
+\item 
+\mbox{\hyperlink{class_c_u_i_config}{C\+U\+I\+Config}} \mbox{\hyperlink{class_c_ml_script_ingame_ac6074eac6d796989a1d52f0bfe1d3fa3}{Client\+UI}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_ml_script_ingame_abbd9d0606086a5d652d242097c2ab1f2}{Is\+Spectator}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_ml_script_ingame_ad0a47375a5706e24f598af814190b5e5}{Is\+Spectator\+Client}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_ml_script_ingame_a524c0a591c24f11390b2da81101c0307}{Use\+Clans}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_ml_script_ingame_aa07795031d5060278f7b7878b3b84430}{Use\+Forced\+Clans}}
+\item 
+const \mbox{\hyperlink{class_c_mania_app_playground_common}{C\+Mania\+App\+Playground\+Common}} \mbox{\hyperlink{class_c_ml_script_ingame_a82196456a9985dd363f456e5a3a27df1}{Parent\+App}}
+\item 
+const \mbox{\hyperlink{class_c_map}{C\+Map}} \mbox{\hyperlink{class_c_ml_script_ingame_a0763ed093b35d42f7a649a3bd1db4f6f}{Map}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_team}{C\+Team}} $>$ \mbox{\hyperlink{class_c_ml_script_ingame_aed229af88441a60071959d5270c4b52c}{Teams}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_ml_script_ingame_ae6a79e8658b5108f244f19f6d05e86e2}{Is\+In\+Game\+Menu\+Displayed}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_ml_script_ingame_a1af61038ed7d54a4df0a9537a685882e}{Current\+Server\+Login}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_ml_script_ingame_a348e5f4e77337dc0e22a4f0b1aa90860}{Current\+Server\+Name}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_ml_script_ingame_ab985518d90821a6ef750a9dca19faedf}{Current\+Server\+Desc}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_ml_script_ingame_a824ff94d9655e649e71979512ac5ad5b}{Current\+Server\+Join\+Link}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_ml_script_ingame_a995bc4391be3f5ee766305d6904d3d09}{Current\+Server\+Mode\+Name}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_ml_script_ingame_a3ad1c6c0765b2f01e4ba4694b77a6549}{Split\+Screen\+Num}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_ml_script_ingame_a1e714c07529b31a3a87c13f2e2394bf2}{Split\+Screen\+Count}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_ml_script_ingame_a8ea924ca783ddb905bf623dc97e2e562}{Split\+Screen\+Is\+Horizontal}}
+\item 
+const \mbox{\hyperlink{class_c_achievements_manager}{C\+Achievements\+Manager}} \mbox{\hyperlink{class_c_ml_script_ingame_ac779c70ccadbadbc81a2de595ba0418a}{Achievements\+Manager}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A\+PI for Game\+Modes Manialinks. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Local
+\item Persistent 
+\end{DoxyItemize}
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6}\label{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!EInGameMenuResult@{EInGameMenuResult}}
+\index{EInGameMenuResult@{EInGameMenuResult}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{EInGameMenuResult}{EInGameMenuResult}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6}{C\+Ml\+Script\+Ingame\+::\+E\+In\+Game\+Menu\+Result}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Resume@{Resume}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Resume@{Resume}}}\mbox{\Hypertarget{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6acdfc78df2db6a86fc54203fdcedc34e2}\label{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6acdfc78df2db6a86fc54203fdcedc34e2}} 
+Resume&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Quit@{Quit}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Quit@{Quit}}}\mbox{\Hypertarget{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6abe0d05c265437ae22503e36545764995}\label{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6abe0d05c265437ae22503e36545764995}} 
+Quit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NormalMenu@{NormalMenu}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!NormalMenu@{NormalMenu}}}\mbox{\Hypertarget{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6a51a19a9751f0b39c4a1625c3c1356a51}\label{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6a51a19a9751f0b39c4a1625c3c1356a51}} 
+Normal\+Menu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AdvancedMenu@{AdvancedMenu}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!AdvancedMenu@{AdvancedMenu}}}\mbox{\Hypertarget{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6a0f793ac08b6e46de8df9bb78d4f40999}\label{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6a0f793ac08b6e46de8df9bb78d4f40999}} 
+Advanced\+Menu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ServerSettings@{ServerSettings}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!ServerSettings@{ServerSettings}}}\mbox{\Hypertarget{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6a9922ba16c0182dfdfbc3af1b598656dc}\label{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6a9922ba16c0182dfdfbc3af1b598656dc}} 
+Server\+Settings&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!EUISound@{EUISound}}
+\index{EUISound@{EUISound}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{EUISound}{EUISound}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302}{C\+Ml\+Script\+Ingame\+::\+E\+U\+I\+Sound}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Default@{Default}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Default@{Default}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a0d00cc0028e3936d7e8a144e8bfe62b0}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a0d00cc0028e3936d7e8a144e8bfe62b0}} 
+Default&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Silence@{Silence}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Silence@{Silence}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302addb16da587e12ad7f96c49e81f5cb5e6}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302addb16da587e12ad7f96c49e81f5cb5e6}} 
+Silence&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StartMatch@{StartMatch}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!StartMatch@{StartMatch}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a4d6401eb5b1bac0b1d1cc638e2d7c6bd}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a4d6401eb5b1bac0b1d1cc638e2d7c6bd}} 
+Start\+Match&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EndMatch@{EndMatch}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!EndMatch@{EndMatch}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a72517608b9a388da6cab1d909f8b0c51}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a72517608b9a388da6cab1d909f8b0c51}} 
+End\+Match&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StartRound@{StartRound}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!StartRound@{StartRound}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a8138795155ae17dacad6a9b03d9c0d5a}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a8138795155ae17dacad6a9b03d9c0d5a}} 
+Start\+Round&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EndRound@{EndRound}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!EndRound@{EndRound}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a4833af2080141ca7190fc42cdc5f1715}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a4833af2080141ca7190fc42cdc5f1715}} 
+End\+Round&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PhaseChange@{PhaseChange}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!PhaseChange@{PhaseChange}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a85ba8470ce4336a31bd7e2d2d9b74a6d}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a85ba8470ce4336a31bd7e2d2d9b74a6d}} 
+Phase\+Change&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TieBreakPoint@{TieBreakPoint}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!TieBreakPoint@{TieBreakPoint}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302add1f853230ae3b8f7b467a0fe2083810}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302add1f853230ae3b8f7b467a0fe2083810}} 
+Tie\+Break\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TiePoint@{TiePoint}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!TiePoint@{TiePoint}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302adf5aeee0e8b62ef76d48b34a3f0c4c4e}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302adf5aeee0e8b62ef76d48b34a3f0c4c4e}} 
+Tie\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VictoryPoint@{VictoryPoint}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!VictoryPoint@{VictoryPoint}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a7a8b02d61edd2ae3767750fe19a1e3d9}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a7a8b02d61edd2ae3767750fe19a1e3d9}} 
+Victory\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Capture@{Capture}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Capture@{Capture}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a327c8527d91ba030930822f77bc77420}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a327c8527d91ba030930822f77bc77420}} 
+Capture&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TimeOut@{TimeOut}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!TimeOut@{TimeOut}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a6843795090dfc8d45c36eeaa238a5df4}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a6843795090dfc8d45c36eeaa238a5df4}} 
+Time\+Out&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Notice@{Notice}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Notice@{Notice}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a503c29378a6bb30cac8dac02f831eefd}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a503c29378a6bb30cac8dac02f831eefd}} 
+Notice&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Warning@{Warning}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Warning@{Warning}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302aaa02037c562baad308d8e12345a45823}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302aaa02037c562baad308d8e12345a45823}} 
+Warning&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayerEliminated@{PlayerEliminated}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!PlayerEliminated@{PlayerEliminated}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a91bc46bbdc37739ef422da22aa17120f}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a91bc46bbdc37739ef422da22aa17120f}} 
+Player\+Eliminated&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayerHit@{PlayerHit}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!PlayerHit@{PlayerHit}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ab38233e0c2861e0e900e4d7f79f6d3e6}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ab38233e0c2861e0e900e4d7f79f6d3e6}} 
+Player\+Hit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Checkpoint@{Checkpoint}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Checkpoint@{Checkpoint}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a9bf3165d739d67f87aec2d7918259a88}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a9bf3165d739d67f87aec2d7918259a88}} 
+Checkpoint&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Finish@{Finish}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Finish@{Finish}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a73228c4ed786549eef2931a7b37e6342}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a73228c4ed786549eef2931a7b37e6342}} 
+Finish&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Record@{Record}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Record@{Record}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a81624198ad055ed682d2f68d63f53027}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a81624198ad055ed682d2f68d63f53027}} 
+Record&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ScoreProgress@{ScoreProgress}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!ScoreProgress@{ScoreProgress}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a6901a76005052789f147a0a63e4189b5}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a6901a76005052789f147a0a63e4189b5}} 
+Score\+Progress&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RankChange@{RankChange}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!RankChange@{RankChange}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a3333844e55755589e08a5b2279690095}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a3333844e55755589e08a5b2279690095}} 
+Rank\+Change&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Bonus@{Bonus}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Bonus@{Bonus}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a03f24bb41b06c93ab40d0a0e7242d831}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a03f24bb41b06c93ab40d0a0e7242d831}} 
+Bonus&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FirstHit@{FirstHit}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!FirstHit@{FirstHit}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302afe3129424ea82b426f59a3a9e722d670}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302afe3129424ea82b426f59a3a9e722d670}} 
+First\+Hit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Combo@{Combo}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Combo@{Combo}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302aca3d59549524b793f4508ad6621fb07f}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302aca3d59549524b793f4508ad6621fb07f}} 
+Combo&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayersRemaining@{PlayersRemaining}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!PlayersRemaining@{PlayersRemaining}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ad166dcb57959d3d3627427340effe4de}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ad166dcb57959d3d3627427340effe4de}} 
+Players\+Remaining&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom1@{Custom1}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Custom1@{Custom1}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a4456789c0aec2eff1cb20f0992192e22}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a4456789c0aec2eff1cb20f0992192e22}} 
+Custom1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom2@{Custom2}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Custom2@{Custom2}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ac61d7d57c762eb83dac5253a3ee55fab}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ac61d7d57c762eb83dac5253a3ee55fab}} 
+Custom2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom3@{Custom3}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Custom3@{Custom3}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ab99cee233f0e278edc8c6456b148df2e}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302ab99cee233f0e278edc8c6456b148df2e}} 
+Custom3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Custom4@{Custom4}!CMlScriptIngame@{CMlScriptIngame}}\index{CMlScriptIngame@{CMlScriptIngame}!Custom4@{Custom4}}}\mbox{\Hypertarget{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a78adcbf22ae0a58fea1c512189440957}\label{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302a78adcbf22ae0a58fea1c512189440957}} 
+Custom4&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_ml_script_ingame_ad343f4980955607eb2623d10ef116bcd}\label{class_c_ml_script_ingame_ad343f4980955607eb2623d10ef116bcd}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!CloseInGameMenu@{CloseInGameMenu}}
+\index{CloseInGameMenu@{CloseInGameMenu}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{CloseInGameMenu()}{CloseInGameMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Close\+In\+Game\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_ml_script_ingame_ab88b76dc3b14c89d1b648db65586b0b6}{C\+Ml\+Script\+Ingame\+::\+E\+In\+Game\+Menu\+Result}}}]{Result }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a47fdc067b19125fed0c2839930011bda}\label{class_c_ml_script_ingame_a47fdc067b19125fed0c2839930011bda}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!CloseScoresTable@{CloseScoresTable}}
+\index{CloseScoresTable@{CloseScoresTable}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{CloseScoresTable()}{CloseScoresTable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Close\+Scores\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_ac7fd3683936ece2a9a340a9bc2c6ef23}\label{class_c_ml_script_ingame_ac7fd3683936ece2a9a340a9bc2c6ef23}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!CopyServerLinkToClipBoard@{CopyServerLinkToClipBoard}}
+\index{CopyServerLinkToClipBoard@{CopyServerLinkToClipBoard}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{CopyServerLinkToClipBoard()}{CopyServerLinkToClipBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Copy\+Server\+Link\+To\+Clip\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_aca6985994d1b71bdbc251e436d35b11f}\label{class_c_ml_script_ingame_aca6985994d1b71bdbc251e436d35b11f}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!JoinTeam1@{JoinTeam1}}
+\index{JoinTeam1@{JoinTeam1}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{JoinTeam1()}{JoinTeam1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Join\+Team1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a66a5c66afc2aee975ad895525572fb86}\label{class_c_ml_script_ingame_a66a5c66afc2aee975ad895525572fb86}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!JoinTeam2@{JoinTeam2}}
+\index{JoinTeam2@{JoinTeam2}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{JoinTeam2()}{JoinTeam2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Join\+Team2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_ac135124a3896f602ccded97a38515edc}\label{class_c_ml_script_ingame_ac135124a3896f602ccded97a38515edc}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!PlayUiSound@{PlayUiSound}}
+\index{PlayUiSound@{PlayUiSound}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{PlayUiSound()}{PlayUiSound()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Play\+Ui\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_ml_script_ingame_a03f99561065dc005e6eeb89489e1d302}{C\+Ml\+Script\+Ingame\+::\+E\+U\+I\+Sound}}}]{Sound,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Sound\+Variant,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{Volume }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a03be57434761393ec5884c5b787b0a27}\label{class_c_ml_script_ingame_a03be57434761393ec5884c5b787b0a27}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!RequestSpectatorClient@{RequestSpectatorClient}}
+\index{RequestSpectatorClient@{RequestSpectatorClient}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{RequestSpectatorClient()}{RequestSpectatorClient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Request\+Spectator\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Spectator }\end{DoxyParamCaption})}
+
+Request change of Is\+Spectator\+Client (not immediate, and it may be refused). \mbox{\Hypertarget{class_c_ml_script_ingame_a03ce109484037d5155754957764a0c39}\label{class_c_ml_script_ingame_a03ce109484037d5155754957764a0c39}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!SetSpectateTarget@{SetSpectateTarget}}
+\index{SetSpectateTarget@{SetSpectateTarget}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{SetSpectateTarget()}{SetSpectateTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Set\+Spectate\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Player }\end{DoxyParamCaption})}
+
+Set the spectated player, but do not switch to spectator mode automatically. Equivalent to numpad1/2/3/4 \mbox{\Hypertarget{class_c_ml_script_ingame_aaee490172bf6d93ea2df6cb164856c00}\label{class_c_ml_script_ingame_aaee490172bf6d93ea2df6cb164856c00}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!ShowCurChallengeCard@{ShowCurChallengeCard}}
+\index{ShowCurChallengeCard@{ShowCurChallengeCard}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{ShowCurChallengeCard()}{ShowCurChallengeCard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Show\+Cur\+Challenge\+Card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a53098b7ec2a145e6b75b36d017461ca2}\label{class_c_ml_script_ingame_a53098b7ec2a145e6b75b36d017461ca2}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!ShowInGameMenu@{ShowInGameMenu}}
+\index{ShowInGameMenu@{ShowInGameMenu}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{ShowInGameMenu()}{ShowInGameMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Show\+In\+Game\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a49bc392108a73a15f6aecad15caccf99}\label{class_c_ml_script_ingame_a49bc392108a73a15f6aecad15caccf99}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!ShowModeHelp@{ShowModeHelp}}
+\index{ShowModeHelp@{ShowModeHelp}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{ShowModeHelp()}{ShowModeHelp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Show\+Mode\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_ae09c47238374d6d6573970da5fa8b58a}\label{class_c_ml_script_ingame_ae09c47238374d6d6573970da5fa8b58a}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!ShowProfile@{ShowProfile}}
+\index{ShowProfile@{ShowProfile}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{ShowProfile()}{ShowProfile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Ml\+Script\+Ingame\+::\+Show\+Profile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Player }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_ml_script_ingame_ac779c70ccadbadbc81a2de595ba0418a}\label{class_c_ml_script_ingame_ac779c70ccadbadbc81a2de595ba0418a}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!AchievementsManager@{AchievementsManager}}
+\index{AchievementsManager@{AchievementsManager}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{AchievementsManager}{AchievementsManager}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_achievements_manager}{C\+Achievements\+Manager}} C\+Ml\+Script\+Ingame\+::\+Achievements\+Manager}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_ac6074eac6d796989a1d52f0bfe1d3fa3}\label{class_c_ml_script_ingame_ac6074eac6d796989a1d52f0bfe1d3fa3}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!ClientUI@{ClientUI}}
+\index{ClientUI@{ClientUI}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{ClientUI}{ClientUI}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_u_i_config}{C\+U\+I\+Config}} C\+Ml\+Script\+Ingame\+::\+Client\+UI}
+
+Locally accessible by the client script to locally override settings from the server. \mbox{\Hypertarget{class_c_ml_script_ingame_ab985518d90821a6ef750a9dca19faedf}\label{class_c_ml_script_ingame_ab985518d90821a6ef750a9dca19faedf}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!CurrentServerDesc@{CurrentServerDesc}}
+\index{CurrentServerDesc@{CurrentServerDesc}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{CurrentServerDesc}{CurrentServerDesc}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Ml\+Script\+Ingame\+::\+Current\+Server\+Desc}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a824ff94d9655e649e71979512ac5ad5b}\label{class_c_ml_script_ingame_a824ff94d9655e649e71979512ac5ad5b}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!CurrentServerJoinLink@{CurrentServerJoinLink}}
+\index{CurrentServerJoinLink@{CurrentServerJoinLink}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{CurrentServerJoinLink}{CurrentServerJoinLink}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Ml\+Script\+Ingame\+::\+Current\+Server\+Join\+Link}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a1af61038ed7d54a4df0a9537a685882e}\label{class_c_ml_script_ingame_a1af61038ed7d54a4df0a9537a685882e}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!CurrentServerLogin@{CurrentServerLogin}}
+\index{CurrentServerLogin@{CurrentServerLogin}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{CurrentServerLogin}{CurrentServerLogin}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Ml\+Script\+Ingame\+::\+Current\+Server\+Login}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a995bc4391be3f5ee766305d6904d3d09}\label{class_c_ml_script_ingame_a995bc4391be3f5ee766305d6904d3d09}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!CurrentServerModeName@{CurrentServerModeName}}
+\index{CurrentServerModeName@{CurrentServerModeName}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{CurrentServerModeName}{CurrentServerModeName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Ml\+Script\+Ingame\+::\+Current\+Server\+Mode\+Name}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a348e5f4e77337dc0e22a4f0b1aa90860}\label{class_c_ml_script_ingame_a348e5f4e77337dc0e22a4f0b1aa90860}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!CurrentServerName@{CurrentServerName}}
+\index{CurrentServerName@{CurrentServerName}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{CurrentServerName}{CurrentServerName}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Ml\+Script\+Ingame\+::\+Current\+Server\+Name}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a3020a2294847820887a0679ad8c0bb45}\label{class_c_ml_script_ingame_a3020a2294847820887a0679ad8c0bb45}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!GameTime@{GameTime}}
+\index{GameTime@{GameTime}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{GameTime}{GameTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Ml\+Script\+Ingame\+::\+Game\+Time}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_ae6a79e8658b5108f244f19f6d05e86e2}\label{class_c_ml_script_ingame_ae6a79e8658b5108f244f19f6d05e86e2}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!IsInGameMenuDisplayed@{IsInGameMenuDisplayed}}
+\index{IsInGameMenuDisplayed@{IsInGameMenuDisplayed}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{IsInGameMenuDisplayed}{IsInGameMenuDisplayed}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Ml\+Script\+Ingame\+::\+Is\+In\+Game\+Menu\+Displayed}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_abbd9d0606086a5d652d242097c2ab1f2}\label{class_c_ml_script_ingame_abbd9d0606086a5d652d242097c2ab1f2}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!IsSpectator@{IsSpectator}}
+\index{IsSpectator@{IsSpectator}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{IsSpectator}{IsSpectator}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Ml\+Script\+Ingame\+::\+Is\+Spectator}
+
+Is in spectator mode -\/ may be only for a short time between rounds. \mbox{\Hypertarget{class_c_ml_script_ingame_ad0a47375a5706e24f598af814190b5e5}\label{class_c_ml_script_ingame_ad0a47375a5706e24f598af814190b5e5}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!IsSpectatorClient@{IsSpectatorClient}}
+\index{IsSpectatorClient@{IsSpectatorClient}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{IsSpectatorClient}{IsSpectatorClient}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Ml\+Script\+Ingame\+::\+Is\+Spectator\+Client}
+
+Client actually desires to spectate instead of playing. \mbox{\Hypertarget{class_c_ml_script_ingame_a0763ed093b35d42f7a649a3bd1db4f6f}\label{class_c_ml_script_ingame_a0763ed093b35d42f7a649a3bd1db4f6f}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!Map@{Map}}
+\index{Map@{Map}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{Map}{Map}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_map}{C\+Map}} C\+Ml\+Script\+Ingame\+::\+Map}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a82196456a9985dd363f456e5a3a27df1}\label{class_c_ml_script_ingame_a82196456a9985dd363f456e5a3a27df1}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!ParentApp@{ParentApp}}
+\index{ParentApp@{ParentApp}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{ParentApp}{ParentApp}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_mania_app_playground_common}{C\+Mania\+App\+Playground\+Common}} C\+Ml\+Script\+Ingame\+::\+Parent\+App}
+
+Will be Null if the script is not runing in a layer of an app. \mbox{\Hypertarget{class_c_ml_script_ingame_aac12864de3cd6767495ac0ca72e25bd6}\label{class_c_ml_script_ingame_aac12864de3cd6767495ac0ca72e25bd6}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!Playground@{Playground}}
+\index{Playground@{Playground}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{Playground}{Playground}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_playground_client}{C\+Playground\+Client}} C\+Ml\+Script\+Ingame\+::\+Playground}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a1e714c07529b31a3a87c13f2e2394bf2}\label{class_c_ml_script_ingame_a1e714c07529b31a3a87c13f2e2394bf2}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!SplitScreenCount@{SplitScreenCount}}
+\index{SplitScreenCount@{SplitScreenCount}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{SplitScreenCount}{SplitScreenCount}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Ml\+Script\+Ingame\+::\+Split\+Screen\+Count}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a8ea924ca783ddb905bf623dc97e2e562}\label{class_c_ml_script_ingame_a8ea924ca783ddb905bf623dc97e2e562}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!SplitScreenIsHorizontal@{SplitScreenIsHorizontal}}
+\index{SplitScreenIsHorizontal@{SplitScreenIsHorizontal}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{SplitScreenIsHorizontal}{SplitScreenIsHorizontal}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Ml\+Script\+Ingame\+::\+Split\+Screen\+Is\+Horizontal}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a3ad1c6c0765b2f01e4ba4694b77a6549}\label{class_c_ml_script_ingame_a3ad1c6c0765b2f01e4ba4694b77a6549}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!SplitScreenNum@{SplitScreenNum}}
+\index{SplitScreenNum@{SplitScreenNum}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{SplitScreenNum}{SplitScreenNum}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Ml\+Script\+Ingame\+::\+Split\+Screen\+Num}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_aed229af88441a60071959d5270c4b52c}\label{class_c_ml_script_ingame_aed229af88441a60071959d5270c4b52c}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!Teams@{Teams}}
+\index{Teams@{Teams}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{Teams}{Teams}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_team}{C\+Team}}$>$ C\+Ml\+Script\+Ingame\+::\+Teams}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_a507c1765dc7de5952ae02c3bcc1dd8b5}\label{class_c_ml_script_ingame_a507c1765dc7de5952ae02c3bcc1dd8b5}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!UI@{UI}}
+\index{UI@{UI}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{UI}{UI}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_u_i_config}{C\+U\+I\+Config}} C\+Ml\+Script\+Ingame\+::\+UI}
+
+(read-\/only) UI actually displayed, as defined by the server. \mbox{\Hypertarget{class_c_ml_script_ingame_a524c0a591c24f11390b2da81101c0307}\label{class_c_ml_script_ingame_a524c0a591c24f11390b2da81101c0307}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!UseClans@{UseClans}}
+\index{UseClans@{UseClans}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{UseClans}{UseClans}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Ml\+Script\+Ingame\+::\+Use\+Clans}
+
+\mbox{\Hypertarget{class_c_ml_script_ingame_aa07795031d5060278f7b7878b3b84430}\label{class_c_ml_script_ingame_aa07795031d5060278f7b7878b3b84430}} 
+\index{CMlScriptIngame@{CMlScriptIngame}!UseForcedClans@{UseForcedClans}}
+\index{UseForcedClans@{UseForcedClans}!CMlScriptIngame@{CMlScriptIngame}}
+\doxysubsubsection{\texorpdfstring{UseForcedClans}{UseForcedClans}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Ml\+Script\+Ingame\+::\+Use\+Forced\+Clans}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

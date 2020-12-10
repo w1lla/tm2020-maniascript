@@ -1,0 +1,885 @@
+\hypertarget{class_c_sm_player}{}\doxysection{C\+Sm\+Player Class Reference}
+\label{class_c_sm_player}\index{CSmPlayer@{CSmPlayer}}
+
+
+A Shootmania player.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Sm\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_sm_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572}{E\+Spawn\+Status}} \{ \mbox{\hyperlink{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572a962f013359f06aee11d8c2cab109432e}{Not\+Spawned}}, 
+\mbox{\hyperlink{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572a0721d269a08095d1b603a95e363f8579}{Spawning}}, 
+\mbox{\hyperlink{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572a29b890f5ee7f0eea00dd51d3d333d7d3}{Spawned}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_c_sm_score}{C\+Sm\+Score}} \mbox{\hyperlink{class_c_sm_player_a5628e8815a14e2dc4c4249792f6fa378}{Score}}
+\item 
+const \mbox{\hyperlink{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572}{C\+Sm\+Player\+::\+E\+Spawn\+Status}} \mbox{\hyperlink{class_c_sm_player_a31bbddd7b1a7225aa2a3e398d9228d27}{Spawn\+Status}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_aaec7ab68cfc93136144a96900e86aef0}{Start\+Time}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_afe977f8723f2ef25ee63ba2c2041efae}{End\+Time}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ \mbox{\hyperlink{class_c_sm_player_aad5b6264e50b23ddf9ab431f5d8ed4d3}{Race\+Waypoint\+Times}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ \mbox{\hyperlink{class_c_sm_player_ab67a99f0f725f47a634e4a2a3e9ac6b0}{Lap\+Waypoint\+Times}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_af27918bd150bcf26c7b6730ffe3f66b7}{Current\+Lap\+Number}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a46f1a0816e8b0ce0cd50cc0d558f4045}{Current\+Race\+Time}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a01a50d280190f25855ff337bcfc8a86f}{Current\+Lap\+Time}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_aa3810453ccec13df1514913bc24b078a}{Ammo\+Gain}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a4286638c1d9cfa93cd6a53a783f5f4c7}{Ammo\+Power}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a800ceb1b60ea3f51438db8def3eefe62}{Auto\+Switch\+Weapon}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a514127a0284a44c84d55f8b122cc9a43}{Cur\+Weapon}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a675b66abf87713119a1d0e9562586a09}{Cur\+Ammo}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a2901bf47b8cf2b53727dccfd5975240a}{Cur\+Ammo\+Max}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a0ebc4841dfd45e5d6acc5e17eb31689a}{Cur\+Ammo\+Unit}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_aff0ae9a65b5a398dfd76c6d7abf281e7}{Armor}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_aedec65cf8bf5cc97bcd3a3c58683dd0f}{Armor\+Max}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_aee331ec5da8cf1677e5a18edefae81cd}{Armor\+Gain}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_abb8a1eac4485254dfd12c01875da8de8}{Armor\+Replenish\+Gain}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_adbd32566a6863c187e3e66398483a39e}{Armor\+Power}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_af93e6a28d41242cb59fa1c2f4e5cea56}{Stamina}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a9f5beca308542de452bf20997a9ecb82}{Stamina\+Max\+Value}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_ae5c716e229cb962797567656ba358e23}{Stamina\+Max}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a92559b6c1da3193cb7f38141d40c753f}{Stamina\+Gain}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_ae6dd26ef847434777c2faae343ea9921}{Stamina\+Power}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_aa285ce086cbe809bc45fed1edd2c1c5b}{Speed\+Power}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_aef342861e44dba1ca7c801f2eb60eac3}{Jump\+Power}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a48ca0c070a606e9502ccf8bda48af486}{Allow\+Wall\+Jump}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_ad9cf398ebe2fe3360ad8ba3bbf63e137}{Allow\+Progressive\+Jump}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a045ea8677c53a87c239e8299e8157846}{Use\+Alternate\+Weapon\+Visual}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a34c0bc91c6b685f9aed015d9490eba80}{Is\+Highlighted}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a58af7996565e78972ca8c794fe1a6be7}{Energy\+Level}}
+\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_player_aa3e6b84f697261ef74764be2ccd0d136}{Force\+Color}}
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_sm_player_a615b8407e9950cf75fa48fa2d702295d}{Dossard}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_af68b1071913a7b6ad9c0c5e1c9f7c52e}{Get\+Linear\+Hue}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a26fa472176aa9f33c33bcb0c1ed549bc}{Force\+Linear\+Hue}}
+\item 
+\mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_sm_player_afced39084764e620379546f9d7c0522e}{Force\+Model\+Id}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a82961b801f3e206f15131f93db889963}{Has\+Shield}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a7cd178fedac08f34a531f033b6453bb5}{Is\+In\+Vehicle}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a6cfac7d585fa590dd3d385de5f4d3a62}{Is\+Stuck}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_af42a832a8d9ca0a1cd4e56ab3baa8b73}{Throw\+Speed}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a5e46508b511d1a69b5bb5307ef47a98e}{Current\+Clan}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a93875a0eebb7b613ebdeb64f73a573c1}{Idle\+Duration}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a1241355b337b694323c2db2a135ff4e1}{Is\+Entity\+State\+Available}}
+\item 
+const \mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_player_abf16213ca2be42af83a6e3e72fc4aecd}{Position}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a0be4f619ea6bb77057e99b064d039cb4}{Aim\+Yaw}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a550d7de1a3a1b01c2eaf54efb8506898}{Aim\+Pitch}}
+\item 
+const \mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_player_af80336ac8e5a2d09858ad429f3fee459}{Aim\+Direction}}
+\item 
+const \mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_player_a063d771af9b015f89e2f18fa65505051}{Velocity}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a987d5af5780578887aa7bccab8c4caec}{Speed}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a5a5058fca87496f8a636959cae049d33}{Is\+Underground}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a1ddc22ae610b9c243119a40ecd2549bb}{Is\+Touching\+Ground}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a712bab7092002546c9baba1b0af5707a}{Is\+In\+Air}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a8a1408239653fd7f520b3f29a0cc434b}{Is\+In\+Water}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a96a45893cd63929533769556582f4017}{Is\+In\+Off\+Zone}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a9c7d140d574230b83c1e6f8f39b5fa84}{Is\+On\+Tech}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a916641958b54c18d34c72731199b2e00}{Is\+On\+Tech\+Ground}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_acdd76da4b318df257d206ef16022827d}{Is\+On\+Tech\+Laser}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_ae43273dda04f18baa7bf4f4d361ad583}{Is\+On\+Tech\+Arrow}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_ae6216fd57dfa4802d7b3919fa5fff896}{Is\+On\+Tech\+Nucleus}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a009b77e8f8e23cde1fa1a591dbfcec67}{Is\+On\+Tech\+Armor}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a2154e2390836c30f268d4ddfbeb8f79f}{Is\+On\+Tech\+Safe\+Zone}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a564eeeb53cd5baf1bb66f16fae73ce0d}{Is\+On\+Tech\+Teleport}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_aeed8d4d9877512e7bab19ab1ea307fc6}{Is\+On\+Tech\+No\+Weapon}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a154ba035b73926cb917a0721d1b09eb7}{Is\+Power\+Jump\+Activable}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a9f52e93337457d3b89e7c0e9559899ce}{Is\+Teleport\+Activable}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a9204aa85c5b740c5b7444d7bebdaa7d2}{Is\+Attractor\+Activable}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a3f4a47b7d7c0c589d6fc6be18b69ff01}{Nb\+Active\+Attractors}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_aa1a0ab967ef0a6cff01780e4c1caf9dc}{Is\+Capturing}}
+\item 
+const \mbox{\hyperlink{class_c_sm_map_landmark}{C\+Sm\+Map\+Landmark}} \mbox{\hyperlink{class_c_sm_player_ab2318090a580d2f8951cbda860e724aa}{Captured\+Landmark}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_sm_object}{C\+Sm\+Object}} $>$ \mbox{\hyperlink{class_c_sm_player_a8dbb1a4da14f5916d10d9187869e67d8}{Objects}}
+\item 
+const \mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} \mbox{\hyperlink{class_c_sm_player_ad8486df43a73263c6bd67a76b6cb3432}{Vehicle}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a57a53b6474be54bb4f3e4c58bd34014b}{Is\+Fake\+Player}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_ad65d3a738efd7e4edd386c2906d87f69}{Is\+Bot}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a2c61dff5c61671c75826882372f2ba6b}{Use\+Delayed\+Visuals}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_aa7edfdebfa78abdf192151fa3725b493}{Trust\+Client\+Simu}}
+\item 
+const \mbox{\hyperlink{class_c_sm_player_driver}{C\+Sm\+Player\+Driver}} \mbox{\hyperlink{class_c_sm_player_a33ca0c7a71d0205b02d22700c9fa82fa}{Driver}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a49d9483a37d302402d4c4a87045b0e5f}{Accel\+Coef}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_aacdc63d9f4702c418623b35210c9b801}{Control\+Coef}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_ad91e4823bd52b0eb8b21bc31e419f19f}{Gravity\+Coef}}
+\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a3ce03eee70d3c877533c610bf2ae312e}{Adherence\+Coef}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_ade2cffc47e8c9b790d22a354f6247d48}{Upwardness}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a47afa991b994f2a989a9233e27aae000}{Distance}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a821d2fd7634390cf3395d4ce7ed1d305}{Display\+Speed}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a0eee73d43081811a51ec4f0456e5eb93}{Input\+Steer}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a3e7c28fe6f655570257951e3dc5f12a7}{Input\+Gas\+Pedal}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_player_a8306d3651193eb61e88e71aee051fbde}{Input\+Is\+Braking}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_aa8cda4d934ee630ccf41db6c477f0bda}{Engine\+Rpm}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_af67cf0e87d3ba194d0d60275b505d857}{Engine\+Cur\+Gear}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a282f26295f297f7bcb88fd7c82a54ccd}{Engine\+Turbo\+Ratio}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a13bc96b12055ec12d8d1055ff184e8e5}{Wheels\+Contact\+Count}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a038a76c1d1b1d03e95e3a15c9edd27c8}{Wheels\+Skidding\+Count}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_afa807bca96d27f87f0c3c3c049e656c1}{Flying\+Duration}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_af7eff66c2a2c19d24e09d100cf1bb5d8}{Skidding\+Duration}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a01409581cae58b0d2a293106c8e01097}{Skidding\+Distance}}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{class_c_sm_player_a0b9564ee8076c7496285a6b8ae76242f}{Flying\+Distance}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_ada2247c696e89c2a6c1239dee15ebaf2}{Handicap\+No\+Gas\+Duration}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_a8240eff7fb8e2ba1ecb9ce4d71f0b456}{Handicap\+Force\+Gas\+Duration}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_ac86fea08d2ca65394edc9b4dc71000b3}{Handicap\+No\+Brakes\+Duration}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_ab2078ceff4c6809cd418ff207da08775}{Handicap\+No\+Steering\+Duration}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_player_ab431fd47d941d77cf79c9528aeb145f6}{Handicap\+No\+Grip\+Duration}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Shootmania player. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Local
+\item Network\+Read
+\item Network\+Write 
+\end{DoxyItemize}
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572}\label{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572}} 
+\index{CSmPlayer@{CSmPlayer}!ESpawnStatus@{ESpawnStatus}}
+\index{ESpawnStatus@{ESpawnStatus}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{ESpawnStatus}{ESpawnStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572}{C\+Sm\+Player\+::\+E\+Spawn\+Status}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NotSpawned@{NotSpawned}!CSmPlayer@{CSmPlayer}}\index{CSmPlayer@{CSmPlayer}!NotSpawned@{NotSpawned}}}\mbox{\Hypertarget{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572a962f013359f06aee11d8c2cab109432e}\label{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572a962f013359f06aee11d8c2cab109432e}} 
+Not\+Spawned&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Spawning@{Spawning}!CSmPlayer@{CSmPlayer}}\index{CSmPlayer@{CSmPlayer}!Spawning@{Spawning}}}\mbox{\Hypertarget{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572a0721d269a08095d1b603a95e363f8579}\label{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572a0721d269a08095d1b603a95e363f8579}} 
+Spawning&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Spawned@{Spawned}!CSmPlayer@{CSmPlayer}}\index{CSmPlayer@{CSmPlayer}!Spawned@{Spawned}}}\mbox{\Hypertarget{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572a29b890f5ee7f0eea00dd51d3d333d7d3}\label{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572a29b890f5ee7f0eea00dd51d3d333d7d3}} 
+Spawned&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_sm_player_a49d9483a37d302402d4c4a87045b0e5f}\label{class_c_sm_player_a49d9483a37d302402d4c4a87045b0e5f}} 
+\index{CSmPlayer@{CSmPlayer}!AccelCoef@{AccelCoef}}
+\index{AccelCoef@{AccelCoef}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{AccelCoef}{AccelCoef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Accel\+Coef}
+
+\mbox{\Hypertarget{class_c_sm_player_a3ce03eee70d3c877533c610bf2ae312e}\label{class_c_sm_player_a3ce03eee70d3c877533c610bf2ae312e}} 
+\index{CSmPlayer@{CSmPlayer}!AdherenceCoef@{AdherenceCoef}}
+\index{AdherenceCoef@{AdherenceCoef}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{AdherenceCoef}{AdherenceCoef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Adherence\+Coef}
+
+\mbox{\Hypertarget{class_c_sm_player_af80336ac8e5a2d09858ad429f3fee459}\label{class_c_sm_player_af80336ac8e5a2d09858ad429f3fee459}} 
+\index{CSmPlayer@{CSmPlayer}!AimDirection@{AimDirection}}
+\index{AimDirection@{AimDirection}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{AimDirection}{AimDirection}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Sm\+Player\+::\+Aim\+Direction}
+
+\mbox{\Hypertarget{class_c_sm_player_a550d7de1a3a1b01c2eaf54efb8506898}\label{class_c_sm_player_a550d7de1a3a1b01c2eaf54efb8506898}} 
+\index{CSmPlayer@{CSmPlayer}!AimPitch@{AimPitch}}
+\index{AimPitch@{AimPitch}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{AimPitch}{AimPitch}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Aim\+Pitch}
+
+\mbox{\Hypertarget{class_c_sm_player_a0be4f619ea6bb77057e99b064d039cb4}\label{class_c_sm_player_a0be4f619ea6bb77057e99b064d039cb4}} 
+\index{CSmPlayer@{CSmPlayer}!AimYaw@{AimYaw}}
+\index{AimYaw@{AimYaw}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{AimYaw}{AimYaw}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Aim\+Yaw}
+
+\mbox{\Hypertarget{class_c_sm_player_ad9cf398ebe2fe3360ad8ba3bbf63e137}\label{class_c_sm_player_ad9cf398ebe2fe3360ad8ba3bbf63e137}} 
+\index{CSmPlayer@{CSmPlayer}!AllowProgressiveJump@{AllowProgressiveJump}}
+\index{AllowProgressiveJump@{AllowProgressiveJump}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{AllowProgressiveJump}{AllowProgressiveJump}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Allow\+Progressive\+Jump}
+
+\mbox{\Hypertarget{class_c_sm_player_a48ca0c070a606e9502ccf8bda48af486}\label{class_c_sm_player_a48ca0c070a606e9502ccf8bda48af486}} 
+\index{CSmPlayer@{CSmPlayer}!AllowWallJump@{AllowWallJump}}
+\index{AllowWallJump@{AllowWallJump}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{AllowWallJump}{AllowWallJump}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Allow\+Wall\+Jump}
+
+\mbox{\Hypertarget{class_c_sm_player_aa3810453ccec13df1514913bc24b078a}\label{class_c_sm_player_aa3810453ccec13df1514913bc24b078a}} 
+\index{CSmPlayer@{CSmPlayer}!AmmoGain@{AmmoGain}}
+\index{AmmoGain@{AmmoGain}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{AmmoGain}{AmmoGain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Ammo\+Gain}
+
+Values in range (0.\+000000-\/10.\+000000) \mbox{\Hypertarget{class_c_sm_player_a4286638c1d9cfa93cd6a53a783f5f4c7}\label{class_c_sm_player_a4286638c1d9cfa93cd6a53a783f5f4c7}} 
+\index{CSmPlayer@{CSmPlayer}!AmmoPower@{AmmoPower}}
+\index{AmmoPower@{AmmoPower}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{AmmoPower}{AmmoPower}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Ammo\+Power}
+
+Values in range (0.\+100000-\/10.\+000000) \mbox{\Hypertarget{class_c_sm_player_aff0ae9a65b5a398dfd76c6d7abf281e7}\label{class_c_sm_player_aff0ae9a65b5a398dfd76c6d7abf281e7}} 
+\index{CSmPlayer@{CSmPlayer}!Armor@{Armor}}
+\index{Armor@{Armor}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Armor}{Armor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Armor}
+
+\mbox{\Hypertarget{class_c_sm_player_aee331ec5da8cf1677e5a18edefae81cd}\label{class_c_sm_player_aee331ec5da8cf1677e5a18edefae81cd}} 
+\index{CSmPlayer@{CSmPlayer}!ArmorGain@{ArmorGain}}
+\index{ArmorGain@{ArmorGain}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{ArmorGain}{ArmorGain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Armor\+Gain}
+
+\mbox{\Hypertarget{class_c_sm_player_aedec65cf8bf5cc97bcd3a3c58683dd0f}\label{class_c_sm_player_aedec65cf8bf5cc97bcd3a3c58683dd0f}} 
+\index{CSmPlayer@{CSmPlayer}!ArmorMax@{ArmorMax}}
+\index{ArmorMax@{ArmorMax}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{ArmorMax}{ArmorMax}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Armor\+Max}
+
+\mbox{\Hypertarget{class_c_sm_player_adbd32566a6863c187e3e66398483a39e}\label{class_c_sm_player_adbd32566a6863c187e3e66398483a39e}} 
+\index{CSmPlayer@{CSmPlayer}!ArmorPower@{ArmorPower}}
+\index{ArmorPower@{ArmorPower}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{ArmorPower}{ArmorPower}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Armor\+Power}
+
+Values in range (0.\+100000-\/10.\+000000) \mbox{\Hypertarget{class_c_sm_player_abb8a1eac4485254dfd12c01875da8de8}\label{class_c_sm_player_abb8a1eac4485254dfd12c01875da8de8}} 
+\index{CSmPlayer@{CSmPlayer}!ArmorReplenishGain@{ArmorReplenishGain}}
+\index{ArmorReplenishGain@{ArmorReplenishGain}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{ArmorReplenishGain}{ArmorReplenishGain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Armor\+Replenish\+Gain}
+
+\mbox{\Hypertarget{class_c_sm_player_a800ceb1b60ea3f51438db8def3eefe62}\label{class_c_sm_player_a800ceb1b60ea3f51438db8def3eefe62}} 
+\index{CSmPlayer@{CSmPlayer}!AutoSwitchWeapon@{AutoSwitchWeapon}}
+\index{AutoSwitchWeapon@{AutoSwitchWeapon}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{AutoSwitchWeapon}{AutoSwitchWeapon}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Auto\+Switch\+Weapon}
+
+\mbox{\Hypertarget{class_c_sm_player_ab2318090a580d2f8951cbda860e724aa}\label{class_c_sm_player_ab2318090a580d2f8951cbda860e724aa}} 
+\index{CSmPlayer@{CSmPlayer}!CapturedLandmark@{CapturedLandmark}}
+\index{CapturedLandmark@{CapturedLandmark}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{CapturedLandmark}{CapturedLandmark}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_sm_map_landmark}{C\+Sm\+Map\+Landmark}} C\+Sm\+Player\+::\+Captured\+Landmark}
+
+\mbox{\Hypertarget{class_c_sm_player_aacdc63d9f4702c418623b35210c9b801}\label{class_c_sm_player_aacdc63d9f4702c418623b35210c9b801}} 
+\index{CSmPlayer@{CSmPlayer}!ControlCoef@{ControlCoef}}
+\index{ControlCoef@{ControlCoef}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{ControlCoef}{ControlCoef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Control\+Coef}
+
+\mbox{\Hypertarget{class_c_sm_player_a675b66abf87713119a1d0e9562586a09}\label{class_c_sm_player_a675b66abf87713119a1d0e9562586a09}} 
+\index{CSmPlayer@{CSmPlayer}!CurAmmo@{CurAmmo}}
+\index{CurAmmo@{CurAmmo}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{CurAmmo}{CurAmmo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Cur\+Ammo}
+
+\mbox{\Hypertarget{class_c_sm_player_a2901bf47b8cf2b53727dccfd5975240a}\label{class_c_sm_player_a2901bf47b8cf2b53727dccfd5975240a}} 
+\index{CSmPlayer@{CSmPlayer}!CurAmmoMax@{CurAmmoMax}}
+\index{CurAmmoMax@{CurAmmoMax}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{CurAmmoMax}{CurAmmoMax}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Cur\+Ammo\+Max}
+
+\mbox{\Hypertarget{class_c_sm_player_a0ebc4841dfd45e5d6acc5e17eb31689a}\label{class_c_sm_player_a0ebc4841dfd45e5d6acc5e17eb31689a}} 
+\index{CSmPlayer@{CSmPlayer}!CurAmmoUnit@{CurAmmoUnit}}
+\index{CurAmmoUnit@{CurAmmoUnit}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{CurAmmoUnit}{CurAmmoUnit}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Cur\+Ammo\+Unit}
+
+\mbox{\Hypertarget{class_c_sm_player_a5e46508b511d1a69b5bb5307ef47a98e}\label{class_c_sm_player_a5e46508b511d1a69b5bb5307ef47a98e}} 
+\index{CSmPlayer@{CSmPlayer}!CurrentClan@{CurrentClan}}
+\index{CurrentClan@{CurrentClan}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{CurrentClan}{CurrentClan}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Current\+Clan}
+
+\mbox{\Hypertarget{class_c_sm_player_af27918bd150bcf26c7b6730ffe3f66b7}\label{class_c_sm_player_af27918bd150bcf26c7b6730ffe3f66b7}} 
+\index{CSmPlayer@{CSmPlayer}!CurrentLapNumber@{CurrentLapNumber}}
+\index{CurrentLapNumber@{CurrentLapNumber}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{CurrentLapNumber}{CurrentLapNumber}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Current\+Lap\+Number}
+
+\mbox{\Hypertarget{class_c_sm_player_a01a50d280190f25855ff337bcfc8a86f}\label{class_c_sm_player_a01a50d280190f25855ff337bcfc8a86f}} 
+\index{CSmPlayer@{CSmPlayer}!CurrentLapTime@{CurrentLapTime}}
+\index{CurrentLapTime@{CurrentLapTime}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{CurrentLapTime}{CurrentLapTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Current\+Lap\+Time}
+
+\mbox{\Hypertarget{class_c_sm_player_a46f1a0816e8b0ce0cd50cc0d558f4045}\label{class_c_sm_player_a46f1a0816e8b0ce0cd50cc0d558f4045}} 
+\index{CSmPlayer@{CSmPlayer}!CurrentRaceTime@{CurrentRaceTime}}
+\index{CurrentRaceTime@{CurrentRaceTime}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{CurrentRaceTime}{CurrentRaceTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Current\+Race\+Time}
+
+\mbox{\Hypertarget{class_c_sm_player_a514127a0284a44c84d55f8b122cc9a43}\label{class_c_sm_player_a514127a0284a44c84d55f8b122cc9a43}} 
+\index{CSmPlayer@{CSmPlayer}!CurWeapon@{CurWeapon}}
+\index{CurWeapon@{CurWeapon}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{CurWeapon}{CurWeapon}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Cur\+Weapon}
+
+\mbox{\Hypertarget{class_c_sm_player_a821d2fd7634390cf3395d4ce7ed1d305}\label{class_c_sm_player_a821d2fd7634390cf3395d4ce7ed1d305}} 
+\index{CSmPlayer@{CSmPlayer}!DisplaySpeed@{DisplaySpeed}}
+\index{DisplaySpeed@{DisplaySpeed}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{DisplaySpeed}{DisplaySpeed}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Display\+Speed}
+
+\mbox{\Hypertarget{class_c_sm_player_a47afa991b994f2a989a9233e27aae000}\label{class_c_sm_player_a47afa991b994f2a989a9233e27aae000}} 
+\index{CSmPlayer@{CSmPlayer}!Distance@{Distance}}
+\index{Distance@{Distance}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Distance}{Distance}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Distance}
+
+\mbox{\Hypertarget{class_c_sm_player_a615b8407e9950cf75fa48fa2d702295d}\label{class_c_sm_player_a615b8407e9950cf75fa48fa2d702295d}} 
+\index{CSmPlayer@{CSmPlayer}!Dossard@{Dossard}}
+\index{Dossard@{Dossard}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Dossard}{Dossard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Sm\+Player\+::\+Dossard}
+
+5 ascii chars (ex\+: \textquotesingle{}01T\+MN\textquotesingle{}) or empty for default value \mbox{\Hypertarget{class_c_sm_player_a33ca0c7a71d0205b02d22700c9fa82fa}\label{class_c_sm_player_a33ca0c7a71d0205b02d22700c9fa82fa}} 
+\index{CSmPlayer@{CSmPlayer}!Driver@{Driver}}
+\index{Driver@{Driver}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Driver}{Driver}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_sm_player_driver}{C\+Sm\+Player\+Driver}} C\+Sm\+Player\+::\+Driver}
+
+\mbox{\Hypertarget{class_c_sm_player_afe977f8723f2ef25ee63ba2c2041efae}\label{class_c_sm_player_afe977f8723f2ef25ee63ba2c2041efae}} 
+\index{CSmPlayer@{CSmPlayer}!EndTime@{EndTime}}
+\index{EndTime@{EndTime}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{EndTime}{EndTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+End\+Time}
+
+\mbox{\Hypertarget{class_c_sm_player_a58af7996565e78972ca8c794fe1a6be7}\label{class_c_sm_player_a58af7996565e78972ca8c794fe1a6be7}} 
+\index{CSmPlayer@{CSmPlayer}!EnergyLevel@{EnergyLevel}}
+\index{EnergyLevel@{EnergyLevel}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{EnergyLevel}{EnergyLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Energy\+Level}
+
+Values in range (0.\+000000-\/1.\+000000) \mbox{\Hypertarget{class_c_sm_player_af67cf0e87d3ba194d0d60275b505d857}\label{class_c_sm_player_af67cf0e87d3ba194d0d60275b505d857}} 
+\index{CSmPlayer@{CSmPlayer}!EngineCurGear@{EngineCurGear}}
+\index{EngineCurGear@{EngineCurGear}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{EngineCurGear}{EngineCurGear}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Engine\+Cur\+Gear}
+
+\mbox{\Hypertarget{class_c_sm_player_aa8cda4d934ee630ccf41db6c477f0bda}\label{class_c_sm_player_aa8cda4d934ee630ccf41db6c477f0bda}} 
+\index{CSmPlayer@{CSmPlayer}!EngineRpm@{EngineRpm}}
+\index{EngineRpm@{EngineRpm}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{EngineRpm}{EngineRpm}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Engine\+Rpm}
+
+\mbox{\Hypertarget{class_c_sm_player_a282f26295f297f7bcb88fd7c82a54ccd}\label{class_c_sm_player_a282f26295f297f7bcb88fd7c82a54ccd}} 
+\index{CSmPlayer@{CSmPlayer}!EngineTurboRatio@{EngineTurboRatio}}
+\index{EngineTurboRatio@{EngineTurboRatio}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{EngineTurboRatio}{EngineTurboRatio}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Engine\+Turbo\+Ratio}
+
+\mbox{\Hypertarget{class_c_sm_player_a0b9564ee8076c7496285a6b8ae76242f}\label{class_c_sm_player_a0b9564ee8076c7496285a6b8ae76242f}} 
+\index{CSmPlayer@{CSmPlayer}!FlyingDistance@{FlyingDistance}}
+\index{FlyingDistance@{FlyingDistance}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{FlyingDistance}{FlyingDistance}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Flying\+Distance}
+
+\mbox{\Hypertarget{class_c_sm_player_afa807bca96d27f87f0c3c3c049e656c1}\label{class_c_sm_player_afa807bca96d27f87f0c3c3c049e656c1}} 
+\index{CSmPlayer@{CSmPlayer}!FlyingDuration@{FlyingDuration}}
+\index{FlyingDuration@{FlyingDuration}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{FlyingDuration}{FlyingDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Flying\+Duration}
+
+\mbox{\Hypertarget{class_c_sm_player_aa3e6b84f697261ef74764be2ccd0d136}\label{class_c_sm_player_aa3e6b84f697261ef74764be2ccd0d136}} 
+\index{CSmPlayer@{CSmPlayer}!ForceColor@{ForceColor}}
+\index{ForceColor@{ForceColor}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{ForceColor}{ForceColor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Sm\+Player\+::\+Force\+Color}
+
+\mbox{\Hypertarget{class_c_sm_player_a26fa472176aa9f33c33bcb0c1ed549bc}\label{class_c_sm_player_a26fa472176aa9f33c33bcb0c1ed549bc}} 
+\index{CSmPlayer@{CSmPlayer}!ForceLinearHue@{ForceLinearHue}}
+\index{ForceLinearHue@{ForceLinearHue}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{ForceLinearHue}{ForceLinearHue}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Force\+Linear\+Hue}
+
+\mbox{\Hypertarget{class_c_sm_player_afced39084764e620379546f9d7c0522e}\label{class_c_sm_player_afced39084764e620379546f9d7c0522e}} 
+\index{CSmPlayer@{CSmPlayer}!ForceModelId@{ForceModelId}}
+\index{ForceModelId@{ForceModelId}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{ForceModelId}{ForceModelId}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_ident}{Ident}} C\+Sm\+Player\+::\+Force\+Model\+Id}
+
+\mbox{\Hypertarget{class_c_sm_player_af68b1071913a7b6ad9c0c5e1c9f7c52e}\label{class_c_sm_player_af68b1071913a7b6ad9c0c5e1c9f7c52e}} 
+\index{CSmPlayer@{CSmPlayer}!GetLinearHue@{GetLinearHue}}
+\index{GetLinearHue@{GetLinearHue}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{GetLinearHue}{GetLinearHue}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Get\+Linear\+Hue}
+
+Values in range (0.\+000000-\/1.\+000000) \mbox{\Hypertarget{class_c_sm_player_ad91e4823bd52b0eb8b21bc31e419f19f}\label{class_c_sm_player_ad91e4823bd52b0eb8b21bc31e419f19f}} 
+\index{CSmPlayer@{CSmPlayer}!GravityCoef@{GravityCoef}}
+\index{GravityCoef@{GravityCoef}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{GravityCoef}{GravityCoef}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Gravity\+Coef}
+
+\mbox{\Hypertarget{class_c_sm_player_a8240eff7fb8e2ba1ecb9ce4d71f0b456}\label{class_c_sm_player_a8240eff7fb8e2ba1ecb9ce4d71f0b456}} 
+\index{CSmPlayer@{CSmPlayer}!HandicapForceGasDuration@{HandicapForceGasDuration}}
+\index{HandicapForceGasDuration@{HandicapForceGasDuration}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{HandicapForceGasDuration}{HandicapForceGasDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Handicap\+Force\+Gas\+Duration}
+
+\mbox{\Hypertarget{class_c_sm_player_ac86fea08d2ca65394edc9b4dc71000b3}\label{class_c_sm_player_ac86fea08d2ca65394edc9b4dc71000b3}} 
+\index{CSmPlayer@{CSmPlayer}!HandicapNoBrakesDuration@{HandicapNoBrakesDuration}}
+\index{HandicapNoBrakesDuration@{HandicapNoBrakesDuration}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{HandicapNoBrakesDuration}{HandicapNoBrakesDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Handicap\+No\+Brakes\+Duration}
+
+\mbox{\Hypertarget{class_c_sm_player_ada2247c696e89c2a6c1239dee15ebaf2}\label{class_c_sm_player_ada2247c696e89c2a6c1239dee15ebaf2}} 
+\index{CSmPlayer@{CSmPlayer}!HandicapNoGasDuration@{HandicapNoGasDuration}}
+\index{HandicapNoGasDuration@{HandicapNoGasDuration}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{HandicapNoGasDuration}{HandicapNoGasDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Handicap\+No\+Gas\+Duration}
+
+\mbox{\Hypertarget{class_c_sm_player_ab431fd47d941d77cf79c9528aeb145f6}\label{class_c_sm_player_ab431fd47d941d77cf79c9528aeb145f6}} 
+\index{CSmPlayer@{CSmPlayer}!HandicapNoGripDuration@{HandicapNoGripDuration}}
+\index{HandicapNoGripDuration@{HandicapNoGripDuration}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{HandicapNoGripDuration}{HandicapNoGripDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Handicap\+No\+Grip\+Duration}
+
+\mbox{\Hypertarget{class_c_sm_player_ab2078ceff4c6809cd418ff207da08775}\label{class_c_sm_player_ab2078ceff4c6809cd418ff207da08775}} 
+\index{CSmPlayer@{CSmPlayer}!HandicapNoSteeringDuration@{HandicapNoSteeringDuration}}
+\index{HandicapNoSteeringDuration@{HandicapNoSteeringDuration}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{HandicapNoSteeringDuration}{HandicapNoSteeringDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Handicap\+No\+Steering\+Duration}
+
+\mbox{\Hypertarget{class_c_sm_player_a82961b801f3e206f15131f93db889963}\label{class_c_sm_player_a82961b801f3e206f15131f93db889963}} 
+\index{CSmPlayer@{CSmPlayer}!HasShield@{HasShield}}
+\index{HasShield@{HasShield}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{HasShield}{HasShield}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Has\+Shield}
+
+\mbox{\Hypertarget{class_c_sm_player_a93875a0eebb7b613ebdeb64f73a573c1}\label{class_c_sm_player_a93875a0eebb7b613ebdeb64f73a573c1}} 
+\index{CSmPlayer@{CSmPlayer}!IdleDuration@{IdleDuration}}
+\index{IdleDuration@{IdleDuration}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IdleDuration}{IdleDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Idle\+Duration}
+
+\mbox{\Hypertarget{class_c_sm_player_a3e7c28fe6f655570257951e3dc5f12a7}\label{class_c_sm_player_a3e7c28fe6f655570257951e3dc5f12a7}} 
+\index{CSmPlayer@{CSmPlayer}!InputGasPedal@{InputGasPedal}}
+\index{InputGasPedal@{InputGasPedal}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{InputGasPedal}{InputGasPedal}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Input\+Gas\+Pedal}
+
+\mbox{\Hypertarget{class_c_sm_player_a8306d3651193eb61e88e71aee051fbde}\label{class_c_sm_player_a8306d3651193eb61e88e71aee051fbde}} 
+\index{CSmPlayer@{CSmPlayer}!InputIsBraking@{InputIsBraking}}
+\index{InputIsBraking@{InputIsBraking}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{InputIsBraking}{InputIsBraking}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Input\+Is\+Braking}
+
+\mbox{\Hypertarget{class_c_sm_player_a0eee73d43081811a51ec4f0456e5eb93}\label{class_c_sm_player_a0eee73d43081811a51ec4f0456e5eb93}} 
+\index{CSmPlayer@{CSmPlayer}!InputSteer@{InputSteer}}
+\index{InputSteer@{InputSteer}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{InputSteer}{InputSteer}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Input\+Steer}
+
+\mbox{\Hypertarget{class_c_sm_player_a9204aa85c5b740c5b7444d7bebdaa7d2}\label{class_c_sm_player_a9204aa85c5b740c5b7444d7bebdaa7d2}} 
+\index{CSmPlayer@{CSmPlayer}!IsAttractorActivable@{IsAttractorActivable}}
+\index{IsAttractorActivable@{IsAttractorActivable}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsAttractorActivable}{IsAttractorActivable}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+Attractor\+Activable}
+
+\mbox{\Hypertarget{class_c_sm_player_ad65d3a738efd7e4edd386c2906d87f69}\label{class_c_sm_player_ad65d3a738efd7e4edd386c2906d87f69}} 
+\index{CSmPlayer@{CSmPlayer}!IsBot@{IsBot}}
+\index{IsBot@{IsBot}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsBot}{IsBot}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+Bot}
+
+\mbox{\Hypertarget{class_c_sm_player_aa1a0ab967ef0a6cff01780e4c1caf9dc}\label{class_c_sm_player_aa1a0ab967ef0a6cff01780e4c1caf9dc}} 
+\index{CSmPlayer@{CSmPlayer}!IsCapturing@{IsCapturing}}
+\index{IsCapturing@{IsCapturing}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsCapturing}{IsCapturing}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+Capturing}
+
+\mbox{\Hypertarget{class_c_sm_player_a1241355b337b694323c2db2a135ff4e1}\label{class_c_sm_player_a1241355b337b694323c2db2a135ff4e1}} 
+\index{CSmPlayer@{CSmPlayer}!IsEntityStateAvailable@{IsEntityStateAvailable}}
+\index{IsEntityStateAvailable@{IsEntityStateAvailable}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsEntityStateAvailable}{IsEntityStateAvailable}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+Entity\+State\+Available}
+
+\mbox{\Hypertarget{class_c_sm_player_a57a53b6474be54bb4f3e4c58bd34014b}\label{class_c_sm_player_a57a53b6474be54bb4f3e4c58bd34014b}} 
+\index{CSmPlayer@{CSmPlayer}!IsFakePlayer@{IsFakePlayer}}
+\index{IsFakePlayer@{IsFakePlayer}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsFakePlayer}{IsFakePlayer}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+Fake\+Player}
+
+\mbox{\Hypertarget{class_c_sm_player_a34c0bc91c6b685f9aed015d9490eba80}\label{class_c_sm_player_a34c0bc91c6b685f9aed015d9490eba80}} 
+\index{CSmPlayer@{CSmPlayer}!IsHighlighted@{IsHighlighted}}
+\index{IsHighlighted@{IsHighlighted}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsHighlighted}{IsHighlighted}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+Highlighted}
+
+\mbox{\Hypertarget{class_c_sm_player_a712bab7092002546c9baba1b0af5707a}\label{class_c_sm_player_a712bab7092002546c9baba1b0af5707a}} 
+\index{CSmPlayer@{CSmPlayer}!IsInAir@{IsInAir}}
+\index{IsInAir@{IsInAir}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsInAir}{IsInAir}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+In\+Air}
+
+\mbox{\Hypertarget{class_c_sm_player_a96a45893cd63929533769556582f4017}\label{class_c_sm_player_a96a45893cd63929533769556582f4017}} 
+\index{CSmPlayer@{CSmPlayer}!IsInOffZone@{IsInOffZone}}
+\index{IsInOffZone@{IsInOffZone}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsInOffZone}{IsInOffZone}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+In\+Off\+Zone}
+
+\mbox{\Hypertarget{class_c_sm_player_a7cd178fedac08f34a531f033b6453bb5}\label{class_c_sm_player_a7cd178fedac08f34a531f033b6453bb5}} 
+\index{CSmPlayer@{CSmPlayer}!IsInVehicle@{IsInVehicle}}
+\index{IsInVehicle@{IsInVehicle}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsInVehicle}{IsInVehicle}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+In\+Vehicle}
+
+\mbox{\Hypertarget{class_c_sm_player_a8a1408239653fd7f520b3f29a0cc434b}\label{class_c_sm_player_a8a1408239653fd7f520b3f29a0cc434b}} 
+\index{CSmPlayer@{CSmPlayer}!IsInWater@{IsInWater}}
+\index{IsInWater@{IsInWater}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsInWater}{IsInWater}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+In\+Water}
+
+\mbox{\Hypertarget{class_c_sm_player_a9c7d140d574230b83c1e6f8f39b5fa84}\label{class_c_sm_player_a9c7d140d574230b83c1e6f8f39b5fa84}} 
+\index{CSmPlayer@{CSmPlayer}!IsOnTech@{IsOnTech}}
+\index{IsOnTech@{IsOnTech}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsOnTech}{IsOnTech}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+On\+Tech}
+
+\mbox{\Hypertarget{class_c_sm_player_a009b77e8f8e23cde1fa1a591dbfcec67}\label{class_c_sm_player_a009b77e8f8e23cde1fa1a591dbfcec67}} 
+\index{CSmPlayer@{CSmPlayer}!IsOnTechArmor@{IsOnTechArmor}}
+\index{IsOnTechArmor@{IsOnTechArmor}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsOnTechArmor}{IsOnTechArmor}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+On\+Tech\+Armor}
+
+\mbox{\Hypertarget{class_c_sm_player_ae43273dda04f18baa7bf4f4d361ad583}\label{class_c_sm_player_ae43273dda04f18baa7bf4f4d361ad583}} 
+\index{CSmPlayer@{CSmPlayer}!IsOnTechArrow@{IsOnTechArrow}}
+\index{IsOnTechArrow@{IsOnTechArrow}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsOnTechArrow}{IsOnTechArrow}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+On\+Tech\+Arrow}
+
+\mbox{\Hypertarget{class_c_sm_player_a916641958b54c18d34c72731199b2e00}\label{class_c_sm_player_a916641958b54c18d34c72731199b2e00}} 
+\index{CSmPlayer@{CSmPlayer}!IsOnTechGround@{IsOnTechGround}}
+\index{IsOnTechGround@{IsOnTechGround}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsOnTechGround}{IsOnTechGround}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+On\+Tech\+Ground}
+
+\mbox{\Hypertarget{class_c_sm_player_acdd76da4b318df257d206ef16022827d}\label{class_c_sm_player_acdd76da4b318df257d206ef16022827d}} 
+\index{CSmPlayer@{CSmPlayer}!IsOnTechLaser@{IsOnTechLaser}}
+\index{IsOnTechLaser@{IsOnTechLaser}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsOnTechLaser}{IsOnTechLaser}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+On\+Tech\+Laser}
+
+\mbox{\Hypertarget{class_c_sm_player_aeed8d4d9877512e7bab19ab1ea307fc6}\label{class_c_sm_player_aeed8d4d9877512e7bab19ab1ea307fc6}} 
+\index{CSmPlayer@{CSmPlayer}!IsOnTechNoWeapon@{IsOnTechNoWeapon}}
+\index{IsOnTechNoWeapon@{IsOnTechNoWeapon}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsOnTechNoWeapon}{IsOnTechNoWeapon}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+On\+Tech\+No\+Weapon}
+
+\mbox{\Hypertarget{class_c_sm_player_ae6216fd57dfa4802d7b3919fa5fff896}\label{class_c_sm_player_ae6216fd57dfa4802d7b3919fa5fff896}} 
+\index{CSmPlayer@{CSmPlayer}!IsOnTechNucleus@{IsOnTechNucleus}}
+\index{IsOnTechNucleus@{IsOnTechNucleus}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsOnTechNucleus}{IsOnTechNucleus}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+On\+Tech\+Nucleus}
+
+\mbox{\Hypertarget{class_c_sm_player_a2154e2390836c30f268d4ddfbeb8f79f}\label{class_c_sm_player_a2154e2390836c30f268d4ddfbeb8f79f}} 
+\index{CSmPlayer@{CSmPlayer}!IsOnTechSafeZone@{IsOnTechSafeZone}}
+\index{IsOnTechSafeZone@{IsOnTechSafeZone}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsOnTechSafeZone}{IsOnTechSafeZone}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+On\+Tech\+Safe\+Zone}
+
+\mbox{\Hypertarget{class_c_sm_player_a564eeeb53cd5baf1bb66f16fae73ce0d}\label{class_c_sm_player_a564eeeb53cd5baf1bb66f16fae73ce0d}} 
+\index{CSmPlayer@{CSmPlayer}!IsOnTechTeleport@{IsOnTechTeleport}}
+\index{IsOnTechTeleport@{IsOnTechTeleport}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsOnTechTeleport}{IsOnTechTeleport}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+On\+Tech\+Teleport}
+
+\mbox{\Hypertarget{class_c_sm_player_a154ba035b73926cb917a0721d1b09eb7}\label{class_c_sm_player_a154ba035b73926cb917a0721d1b09eb7}} 
+\index{CSmPlayer@{CSmPlayer}!IsPowerJumpActivable@{IsPowerJumpActivable}}
+\index{IsPowerJumpActivable@{IsPowerJumpActivable}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsPowerJumpActivable}{IsPowerJumpActivable}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+Power\+Jump\+Activable}
+
+\mbox{\Hypertarget{class_c_sm_player_a6cfac7d585fa590dd3d385de5f4d3a62}\label{class_c_sm_player_a6cfac7d585fa590dd3d385de5f4d3a62}} 
+\index{CSmPlayer@{CSmPlayer}!IsStuck@{IsStuck}}
+\index{IsStuck@{IsStuck}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsStuck}{IsStuck}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+Stuck}
+
+\mbox{\Hypertarget{class_c_sm_player_a9f52e93337457d3b89e7c0e9559899ce}\label{class_c_sm_player_a9f52e93337457d3b89e7c0e9559899ce}} 
+\index{CSmPlayer@{CSmPlayer}!IsTeleportActivable@{IsTeleportActivable}}
+\index{IsTeleportActivable@{IsTeleportActivable}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsTeleportActivable}{IsTeleportActivable}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+Teleport\+Activable}
+
+\mbox{\Hypertarget{class_c_sm_player_a1ddc22ae610b9c243119a40ecd2549bb}\label{class_c_sm_player_a1ddc22ae610b9c243119a40ecd2549bb}} 
+\index{CSmPlayer@{CSmPlayer}!IsTouchingGround@{IsTouchingGround}}
+\index{IsTouchingGround@{IsTouchingGround}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsTouchingGround}{IsTouchingGround}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+Touching\+Ground}
+
+\mbox{\Hypertarget{class_c_sm_player_a5a5058fca87496f8a636959cae049d33}\label{class_c_sm_player_a5a5058fca87496f8a636959cae049d33}} 
+\index{CSmPlayer@{CSmPlayer}!IsUnderground@{IsUnderground}}
+\index{IsUnderground@{IsUnderground}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{IsUnderground}{IsUnderground}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Is\+Underground}
+
+\mbox{\Hypertarget{class_c_sm_player_aef342861e44dba1ca7c801f2eb60eac3}\label{class_c_sm_player_aef342861e44dba1ca7c801f2eb60eac3}} 
+\index{CSmPlayer@{CSmPlayer}!JumpPower@{JumpPower}}
+\index{JumpPower@{JumpPower}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{JumpPower}{JumpPower}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Jump\+Power}
+
+Values in range (0.\+100000-\/1.\+000000) \mbox{\Hypertarget{class_c_sm_player_ab67a99f0f725f47a634e4a2a3e9ac6b0}\label{class_c_sm_player_ab67a99f0f725f47a634e4a2a3e9ac6b0}} 
+\index{CSmPlayer@{CSmPlayer}!LapWaypointTimes@{LapWaypointTimes}}
+\index{LapWaypointTimes@{LapWaypointTimes}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{LapWaypointTimes}{LapWaypointTimes}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_integer}{Integer}}$>$ C\+Sm\+Player\+::\+Lap\+Waypoint\+Times}
+
+\mbox{\Hypertarget{class_c_sm_player_a3f4a47b7d7c0c589d6fc6be18b69ff01}\label{class_c_sm_player_a3f4a47b7d7c0c589d6fc6be18b69ff01}} 
+\index{CSmPlayer@{CSmPlayer}!NbActiveAttractors@{NbActiveAttractors}}
+\index{NbActiveAttractors@{NbActiveAttractors}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{NbActiveAttractors}{NbActiveAttractors}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Nb\+Active\+Attractors}
+
+\mbox{\Hypertarget{class_c_sm_player_a8dbb1a4da14f5916d10d9187869e67d8}\label{class_c_sm_player_a8dbb1a4da14f5916d10d9187869e67d8}} 
+\index{CSmPlayer@{CSmPlayer}!Objects@{Objects}}
+\index{Objects@{Objects}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Objects}{Objects}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_sm_object}{C\+Sm\+Object}}$>$ C\+Sm\+Player\+::\+Objects}
+
+\mbox{\Hypertarget{class_c_sm_player_abf16213ca2be42af83a6e3e72fc4aecd}\label{class_c_sm_player_abf16213ca2be42af83a6e3e72fc4aecd}} 
+\index{CSmPlayer@{CSmPlayer}!Position@{Position}}
+\index{Position@{Position}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Sm\+Player\+::\+Position}
+
+\mbox{\Hypertarget{class_c_sm_player_aad5b6264e50b23ddf9ab431f5d8ed4d3}\label{class_c_sm_player_aad5b6264e50b23ddf9ab431f5d8ed4d3}} 
+\index{CSmPlayer@{CSmPlayer}!RaceWaypointTimes@{RaceWaypointTimes}}
+\index{RaceWaypointTimes@{RaceWaypointTimes}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{RaceWaypointTimes}{RaceWaypointTimes}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_integer}{Integer}}$>$ C\+Sm\+Player\+::\+Race\+Waypoint\+Times}
+
+\mbox{\Hypertarget{class_c_sm_player_a5628e8815a14e2dc4c4249792f6fa378}\label{class_c_sm_player_a5628e8815a14e2dc4c4249792f6fa378}} 
+\index{CSmPlayer@{CSmPlayer}!Score@{Score}}
+\index{Score@{Score}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Score}{Score}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_sm_score}{C\+Sm\+Score}} C\+Sm\+Player\+::\+Score}
+
+\mbox{\Hypertarget{class_c_sm_player_a01409581cae58b0d2a293106c8e01097}\label{class_c_sm_player_a01409581cae58b0d2a293106c8e01097}} 
+\index{CSmPlayer@{CSmPlayer}!SkiddingDistance@{SkiddingDistance}}
+\index{SkiddingDistance@{SkiddingDistance}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{SkiddingDistance}{SkiddingDistance}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Skidding\+Distance}
+
+\mbox{\Hypertarget{class_c_sm_player_af7eff66c2a2c19d24e09d100cf1bb5d8}\label{class_c_sm_player_af7eff66c2a2c19d24e09d100cf1bb5d8}} 
+\index{CSmPlayer@{CSmPlayer}!SkiddingDuration@{SkiddingDuration}}
+\index{SkiddingDuration@{SkiddingDuration}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{SkiddingDuration}{SkiddingDuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Skidding\+Duration}
+
+\mbox{\Hypertarget{class_c_sm_player_a31bbddd7b1a7225aa2a3e398d9228d27}\label{class_c_sm_player_a31bbddd7b1a7225aa2a3e398d9228d27}} 
+\index{CSmPlayer@{CSmPlayer}!SpawnStatus@{SpawnStatus}}
+\index{SpawnStatus@{SpawnStatus}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{SpawnStatus}{SpawnStatus}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_sm_player_a19a6c5239caaeb8a818b8c5129aec572}{C\+Sm\+Player\+::\+E\+Spawn\+Status}} C\+Sm\+Player\+::\+Spawn\+Status}
+
+\mbox{\Hypertarget{class_c_sm_player_a987d5af5780578887aa7bccab8c4caec}\label{class_c_sm_player_a987d5af5780578887aa7bccab8c4caec}} 
+\index{CSmPlayer@{CSmPlayer}!Speed@{Speed}}
+\index{Speed@{Speed}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Speed}
+
+\mbox{\Hypertarget{class_c_sm_player_aa285ce086cbe809bc45fed1edd2c1c5b}\label{class_c_sm_player_aa285ce086cbe809bc45fed1edd2c1c5b}} 
+\index{CSmPlayer@{CSmPlayer}!SpeedPower@{SpeedPower}}
+\index{SpeedPower@{SpeedPower}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{SpeedPower}{SpeedPower}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Speed\+Power}
+
+Values in range (0.\+100000-\/1.\+000000) \mbox{\Hypertarget{class_c_sm_player_af93e6a28d41242cb59fa1c2f4e5cea56}\label{class_c_sm_player_af93e6a28d41242cb59fa1c2f4e5cea56}} 
+\index{CSmPlayer@{CSmPlayer}!Stamina@{Stamina}}
+\index{Stamina@{Stamina}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Stamina}{Stamina}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Stamina}
+
+\mbox{\Hypertarget{class_c_sm_player_a92559b6c1da3193cb7f38141d40c753f}\label{class_c_sm_player_a92559b6c1da3193cb7f38141d40c753f}} 
+\index{CSmPlayer@{CSmPlayer}!StaminaGain@{StaminaGain}}
+\index{StaminaGain@{StaminaGain}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{StaminaGain}{StaminaGain}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Stamina\+Gain}
+
+Values in range (0.\+000000-\/1.\+000000) \mbox{\Hypertarget{class_c_sm_player_ae5c716e229cb962797567656ba358e23}\label{class_c_sm_player_ae5c716e229cb962797567656ba358e23}} 
+\index{CSmPlayer@{CSmPlayer}!StaminaMax@{StaminaMax}}
+\index{StaminaMax@{StaminaMax}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{StaminaMax}{StaminaMax}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Stamina\+Max}
+
+Values in range (0.\+100000-\/3.\+000000) \mbox{\Hypertarget{class_c_sm_player_a9f5beca308542de452bf20997a9ecb82}\label{class_c_sm_player_a9f5beca308542de452bf20997a9ecb82}} 
+\index{CSmPlayer@{CSmPlayer}!StaminaMaxValue@{StaminaMaxValue}}
+\index{StaminaMaxValue@{StaminaMaxValue}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{StaminaMaxValue}{StaminaMaxValue}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Stamina\+Max\+Value}
+
+\mbox{\Hypertarget{class_c_sm_player_ae6dd26ef847434777c2faae343ea9921}\label{class_c_sm_player_ae6dd26ef847434777c2faae343ea9921}} 
+\index{CSmPlayer@{CSmPlayer}!StaminaPower@{StaminaPower}}
+\index{StaminaPower@{StaminaPower}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{StaminaPower}{StaminaPower}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Stamina\+Power}
+
+Values in range (0.\+100000-\/1.\+000000) \mbox{\Hypertarget{class_c_sm_player_aaec7ab68cfc93136144a96900e86aef0}\label{class_c_sm_player_aaec7ab68cfc93136144a96900e86aef0}} 
+\index{CSmPlayer@{CSmPlayer}!StartTime@{StartTime}}
+\index{StartTime@{StartTime}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{StartTime}{StartTime}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Start\+Time}
+
+\mbox{\Hypertarget{class_c_sm_player_af42a832a8d9ca0a1cd4e56ab3baa8b73}\label{class_c_sm_player_af42a832a8d9ca0a1cd4e56ab3baa8b73}} 
+\index{CSmPlayer@{CSmPlayer}!ThrowSpeed@{ThrowSpeed}}
+\index{ThrowSpeed@{ThrowSpeed}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{ThrowSpeed}{ThrowSpeed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Throw\+Speed}
+
+Values in range (0.\+000000-\/500.\+000000) \mbox{\Hypertarget{class_c_sm_player_aa7edfdebfa78abdf192151fa3725b493}\label{class_c_sm_player_aa7edfdebfa78abdf192151fa3725b493}} 
+\index{CSmPlayer@{CSmPlayer}!TrustClientSimu@{TrustClientSimu}}
+\index{TrustClientSimu@{TrustClientSimu}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{TrustClientSimu}{TrustClientSimu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Trust\+Client\+Simu}
+
+\mbox{\Hypertarget{class_c_sm_player_ade2cffc47e8c9b790d22a354f6247d48}\label{class_c_sm_player_ade2cffc47e8c9b790d22a354f6247d48}} 
+\index{CSmPlayer@{CSmPlayer}!Upwardness@{Upwardness}}
+\index{Upwardness@{Upwardness}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Upwardness}{Upwardness}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} C\+Sm\+Player\+::\+Upwardness}
+
+\mbox{\Hypertarget{class_c_sm_player_a045ea8677c53a87c239e8299e8157846}\label{class_c_sm_player_a045ea8677c53a87c239e8299e8157846}} 
+\index{CSmPlayer@{CSmPlayer}!UseAlternateWeaponVisual@{UseAlternateWeaponVisual}}
+\index{UseAlternateWeaponVisual@{UseAlternateWeaponVisual}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{UseAlternateWeaponVisual}{UseAlternateWeaponVisual}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Use\+Alternate\+Weapon\+Visual}
+
+\mbox{\Hypertarget{class_c_sm_player_a2c61dff5c61671c75826882372f2ba6b}\label{class_c_sm_player_a2c61dff5c61671c75826882372f2ba6b}} 
+\index{CSmPlayer@{CSmPlayer}!UseDelayedVisuals@{UseDelayedVisuals}}
+\index{UseDelayedVisuals@{UseDelayedVisuals}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{UseDelayedVisuals}{UseDelayedVisuals}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Player\+::\+Use\+Delayed\+Visuals}
+
+\mbox{\Hypertarget{class_c_sm_player_ad8486df43a73263c6bd67a76b6cb3432}\label{class_c_sm_player_ad8486df43a73263c6bd67a76b6cb3432}} 
+\index{CSmPlayer@{CSmPlayer}!Vehicle@{Vehicle}}
+\index{Vehicle@{Vehicle}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Vehicle}{Vehicle}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_mode_vehicle}{C\+Mode\+Vehicle}} C\+Sm\+Player\+::\+Vehicle}
+
+\mbox{\Hypertarget{class_c_sm_player_a063d771af9b015f89e2f18fa65505051}\label{class_c_sm_player_a063d771af9b015f89e2f18fa65505051}} 
+\index{CSmPlayer@{CSmPlayer}!Velocity@{Velocity}}
+\index{Velocity@{Velocity}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{Velocity}{Velocity}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Sm\+Player\+::\+Velocity}
+
+\mbox{\Hypertarget{class_c_sm_player_a13bc96b12055ec12d8d1055ff184e8e5}\label{class_c_sm_player_a13bc96b12055ec12d8d1055ff184e8e5}} 
+\index{CSmPlayer@{CSmPlayer}!WheelsContactCount@{WheelsContactCount}}
+\index{WheelsContactCount@{WheelsContactCount}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{WheelsContactCount}{WheelsContactCount}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Wheels\+Contact\+Count}
+
+\mbox{\Hypertarget{class_c_sm_player_a038a76c1d1b1d03e95e3a15c9edd27c8}\label{class_c_sm_player_a038a76c1d1b1d03e95e3a15c9edd27c8}} 
+\index{CSmPlayer@{CSmPlayer}!WheelsSkiddingCount@{WheelsSkiddingCount}}
+\index{WheelsSkiddingCount@{WheelsSkiddingCount}!CSmPlayer@{CSmPlayer}}
+\doxysubsubsection{\texorpdfstring{WheelsSkiddingCount}{WheelsSkiddingCount}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Player\+::\+Wheels\+Skidding\+Count}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

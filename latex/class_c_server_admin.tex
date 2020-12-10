@@ -1,0 +1,232 @@
+\hypertarget{class_c_server_admin}{}\doxysection{C\+Server\+Admin Class Reference}
+\label{class_c_server_admin}\index{CServerAdmin@{CServerAdmin}}
+
+
+A\+PI for server control when playing online.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Server\+Admin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_server_admin}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1}{E\+Spec\+Mode}} \{ \newline
+\mbox{\hyperlink{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1aacb28fd2855b1d08a7f46a465982a832}{Selectable}}, 
+\mbox{\hyperlink{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1affa3b3c976c22e01510846abf4f21240}{Spectator\+Forced}}, 
+\mbox{\hyperlink{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1a09ec3945e1048cf344c1c5d8ff063972}{Player\+Forced}}, 
+\mbox{\hyperlink{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1abfe5a07308ae96a0cb4a340d340b7cd6}{Spectator\+Selectable}}, 
+\newline
+\mbox{\hyperlink{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1a76396212d0e4552327e2daa00256f989}{Player\+Selectable}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_admin_ad8d2ecb41971f0e126137fc759478da9}{Auto\+Team\+Balance}} ()
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_admin_a12fb5279853f22d141b138a3e58bc426}{Kick}} (\mbox{\hyperlink{class_c_user}{C\+User}} User, \mbox{\hyperlink{struct_text}{Text}} Reason)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_admin_a55a5db1da4f60aaeb529e6fe2660f0a9}{Kick}} (\mbox{\hyperlink{class_c_client}{C\+Client}} Client, \mbox{\hyperlink{struct_text}{Text}} Reason)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_admin_a1adbacdb24b1b2e3d08d39b60ed948eb}{Ban}} (\mbox{\hyperlink{class_c_user}{C\+User}} User, \mbox{\hyperlink{struct_text}{Text}} Reason)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_admin_ab78282e2c2865c7646b712276435c47e}{Ban}} (\mbox{\hyperlink{class_c_client}{C\+Client}} Client, \mbox{\hyperlink{struct_text}{Text}} Reason)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_admin_af17478de4e24c7f054aa57371ed4f3a8}{Force\+Spectator}} (\mbox{\hyperlink{class_c_user}{C\+User}} User, \mbox{\hyperlink{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1}{C\+Server\+Admin\+::\+E\+Spec\+Mode}} Spec\+Mode)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_admin_a699de8dc79eaaa97080c5fbbf6885871}{Force\+Spectator}} (\mbox{\hyperlink{class_c_client}{C\+Client}} Client, \mbox{\hyperlink{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1}{C\+Server\+Admin\+::\+E\+Spec\+Mode}} Spec\+Mode)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_admin_a758f13494a5fc6da3003a8461795b756}{Force\+Player\+Requested\+Team}} (\mbox{\hyperlink{class_c_user}{C\+User}} User, \mbox{\hyperlink{struct_integer}{Integer}} Team)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_admin_a65ffd6d29286b01f7416cf9b2e1774a2}{Force\+Player\+Requested\+Team}} (\mbox{\hyperlink{class_c_client}{C\+Client}} Client, \mbox{\hyperlink{struct_integer}{Integer}} Team)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_admin_a2120f04515ade6c1b4fcae9b51d2bcc4}{Set\+Lobby\+Info}} (\mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Lobby, \mbox{\hyperlink{struct_integer}{Integer}} Lobby\+Player\+Count, \mbox{\hyperlink{struct_integer}{Integer}} Lobby\+Max\+Player\+Count, \mbox{\hyperlink{struct_real}{Real}} Lobby\+Players\+Level)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_admin_ae11daf489424d897ba123691133962aa}{Send\+To\+Server\+After\+Match}} (\mbox{\hyperlink{struct_text}{Text}} Server\+Url)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_admin_a33d2479277a470b71b7b0b50d99d3cbe}{Customize\+Quit\+Dialog}} (\mbox{\hyperlink{struct_text}{Text}} Manialink\+Page, \mbox{\hyperlink{struct_text}{Text}} Send\+To\+Server\+Url, \mbox{\hyperlink{struct_boolean}{Boolean}} Propose\+Add\+To\+Favorites, \mbox{\hyperlink{struct_integer}{Integer}} Force\+Delay)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_admin_a8d886f7b869ce06419a66d2ca0693173}{Authentication\+\_\+\+Get\+Token}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} App\+Login)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_server_admin_abeb0fbbc4df54b9796348a1f1abc514a}{Set\+Viewer\+Count}} (\mbox{\hyperlink{struct_integer}{Integer}} Viewer\+Count)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_c_server_info}{C\+Server\+Info}} \mbox{\hyperlink{class_c_server_admin_ab7411983c8ea521bb38dff66d7801628}{Server\+Info}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_admin_a0b79c6c2896dc8644eb17c054fe03006}{Is\+Disable\+Change\+Teams}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_server_admin_aca0a53a7bcd7753af6aeaa9837030227}{Authentication\+\_\+\+Get\+Token\+Response\+Received}}
+\item 
+const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_server_admin_a262475ca6717985548213009d12883cc}{Authentication\+\_\+\+Error\+Code}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_server_admin_a24c9abdeba1a6ab7d3ced9f856cb1a01}{Authentication\+\_\+\+Token}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A\+PI for server control when playing online. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1}\label{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1}} 
+\index{CServerAdmin@{CServerAdmin}!ESpecMode@{ESpecMode}}
+\index{ESpecMode@{ESpecMode}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{ESpecMode}{ESpecMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1}{C\+Server\+Admin\+::\+E\+Spec\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Selectable@{Selectable}!CServerAdmin@{CServerAdmin}}\index{CServerAdmin@{CServerAdmin}!Selectable@{Selectable}}}\mbox{\Hypertarget{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1aacb28fd2855b1d08a7f46a465982a832}\label{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1aacb28fd2855b1d08a7f46a465982a832}} 
+Selectable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpectatorForced@{SpectatorForced}!CServerAdmin@{CServerAdmin}}\index{CServerAdmin@{CServerAdmin}!SpectatorForced@{SpectatorForced}}}\mbox{\Hypertarget{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1affa3b3c976c22e01510846abf4f21240}\label{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1affa3b3c976c22e01510846abf4f21240}} 
+Spectator\+Forced&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayerForced@{PlayerForced}!CServerAdmin@{CServerAdmin}}\index{CServerAdmin@{CServerAdmin}!PlayerForced@{PlayerForced}}}\mbox{\Hypertarget{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1a09ec3945e1048cf344c1c5d8ff063972}\label{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1a09ec3945e1048cf344c1c5d8ff063972}} 
+Player\+Forced&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpectatorSelectable@{SpectatorSelectable}!CServerAdmin@{CServerAdmin}}\index{CServerAdmin@{CServerAdmin}!SpectatorSelectable@{SpectatorSelectable}}}\mbox{\Hypertarget{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1abfe5a07308ae96a0cb4a340d340b7cd6}\label{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1abfe5a07308ae96a0cb4a340d340b7cd6}} 
+Spectator\+Selectable&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PlayerSelectable@{PlayerSelectable}!CServerAdmin@{CServerAdmin}}\index{CServerAdmin@{CServerAdmin}!PlayerSelectable@{PlayerSelectable}}}\mbox{\Hypertarget{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1a76396212d0e4552327e2daa00256f989}\label{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1a76396212d0e4552327e2daa00256f989}} 
+Player\+Selectable&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_server_admin_a8d886f7b869ce06419a66d2ca0693173}\label{class_c_server_admin_a8d886f7b869ce06419a66d2ca0693173}} 
+\index{CServerAdmin@{CServerAdmin}!Authentication\_GetToken@{Authentication\_GetToken}}
+\index{Authentication\_GetToken@{Authentication\_GetToken}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{Authentication\_GetToken()}{Authentication\_GetToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Admin\+::\+Authentication\+\_\+\+Get\+Token (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{App\+Login }\end{DoxyParamCaption})}
+
+Always use Null\+Id as User\+Id. \mbox{\Hypertarget{class_c_server_admin_ad8d2ecb41971f0e126137fc759478da9}\label{class_c_server_admin_ad8d2ecb41971f0e126137fc759478da9}} 
+\index{CServerAdmin@{CServerAdmin}!AutoTeamBalance@{AutoTeamBalance}}
+\index{AutoTeamBalance@{AutoTeamBalance}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{AutoTeamBalance()}{AutoTeamBalance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Admin\+::\+Auto\+Team\+Balance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_admin_ab78282e2c2865c7646b712276435c47e}\label{class_c_server_admin_ab78282e2c2865c7646b712276435c47e}} 
+\index{CServerAdmin@{CServerAdmin}!Ban@{Ban}}
+\index{Ban@{Ban}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{Ban()}{Ban()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Admin\+::\+Ban (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_client}{C\+Client}}}]{Client,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Reason }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_admin_a1adbacdb24b1b2e3d08d39b60ed948eb}\label{class_c_server_admin_a1adbacdb24b1b2e3d08d39b60ed948eb}} 
+\index{CServerAdmin@{CServerAdmin}!Ban@{Ban}}
+\index{Ban@{Ban}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{Ban()}{Ban()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Admin\+::\+Ban (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_user}{C\+User}}}]{User,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Reason }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_admin_a33d2479277a470b71b7b0b50d99d3cbe}\label{class_c_server_admin_a33d2479277a470b71b7b0b50d99d3cbe}} 
+\index{CServerAdmin@{CServerAdmin}!CustomizeQuitDialog@{CustomizeQuitDialog}}
+\index{CustomizeQuitDialog@{CustomizeQuitDialog}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{CustomizeQuitDialog()}{CustomizeQuitDialog()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Admin\+::\+Customize\+Quit\+Dialog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Manialink\+Page,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Send\+To\+Server\+Url,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Propose\+Add\+To\+Favorites,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Force\+Delay }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_admin_a65ffd6d29286b01f7416cf9b2e1774a2}\label{class_c_server_admin_a65ffd6d29286b01f7416cf9b2e1774a2}} 
+\index{CServerAdmin@{CServerAdmin}!ForcePlayerRequestedTeam@{ForcePlayerRequestedTeam}}
+\index{ForcePlayerRequestedTeam@{ForcePlayerRequestedTeam}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{ForcePlayerRequestedTeam()}{ForcePlayerRequestedTeam()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Admin\+::\+Force\+Player\+Requested\+Team (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_client}{C\+Client}}}]{Client,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Team }\end{DoxyParamCaption})}
+
+Team is 1 or 2. \mbox{\Hypertarget{class_c_server_admin_a758f13494a5fc6da3003a8461795b756}\label{class_c_server_admin_a758f13494a5fc6da3003a8461795b756}} 
+\index{CServerAdmin@{CServerAdmin}!ForcePlayerRequestedTeam@{ForcePlayerRequestedTeam}}
+\index{ForcePlayerRequestedTeam@{ForcePlayerRequestedTeam}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{ForcePlayerRequestedTeam()}{ForcePlayerRequestedTeam()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Admin\+::\+Force\+Player\+Requested\+Team (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_user}{C\+User}}}]{User,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Team }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_admin_a699de8dc79eaaa97080c5fbbf6885871}\label{class_c_server_admin_a699de8dc79eaaa97080c5fbbf6885871}} 
+\index{CServerAdmin@{CServerAdmin}!ForceSpectator@{ForceSpectator}}
+\index{ForceSpectator@{ForceSpectator}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{ForceSpectator()}{ForceSpectator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Admin\+::\+Force\+Spectator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_client}{C\+Client}}}]{Client,  }\item[{\mbox{\hyperlink{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1}{C\+Server\+Admin\+::\+E\+Spec\+Mode}}}]{Spec\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_admin_af17478de4e24c7f054aa57371ed4f3a8}\label{class_c_server_admin_af17478de4e24c7f054aa57371ed4f3a8}} 
+\index{CServerAdmin@{CServerAdmin}!ForceSpectator@{ForceSpectator}}
+\index{ForceSpectator@{ForceSpectator}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{ForceSpectator()}{ForceSpectator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Admin\+::\+Force\+Spectator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_user}{C\+User}}}]{User,  }\item[{\mbox{\hyperlink{class_c_server_admin_ae3d06762acb045939df7dffe0cdd79a1}{C\+Server\+Admin\+::\+E\+Spec\+Mode}}}]{Spec\+Mode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_admin_a55a5db1da4f60aaeb529e6fe2660f0a9}\label{class_c_server_admin_a55a5db1da4f60aaeb529e6fe2660f0a9}} 
+\index{CServerAdmin@{CServerAdmin}!Kick@{Kick}}
+\index{Kick@{Kick}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{Kick()}{Kick()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Admin\+::\+Kick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_client}{C\+Client}}}]{Client,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Reason }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_admin_a12fb5279853f22d141b138a3e58bc426}\label{class_c_server_admin_a12fb5279853f22d141b138a3e58bc426}} 
+\index{CServerAdmin@{CServerAdmin}!Kick@{Kick}}
+\index{Kick@{Kick}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{Kick()}{Kick()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Admin\+::\+Kick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_user}{C\+User}}}]{User,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Reason }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_admin_ae11daf489424d897ba123691133962aa}\label{class_c_server_admin_ae11daf489424d897ba123691133962aa}} 
+\index{CServerAdmin@{CServerAdmin}!SendToServerAfterMatch@{SendToServerAfterMatch}}
+\index{SendToServerAfterMatch@{SendToServerAfterMatch}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{SendToServerAfterMatch()}{SendToServerAfterMatch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Admin\+::\+Send\+To\+Server\+After\+Match (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Server\+Url }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_admin_a2120f04515ade6c1b4fcae9b51d2bcc4}\label{class_c_server_admin_a2120f04515ade6c1b4fcae9b51d2bcc4}} 
+\index{CServerAdmin@{CServerAdmin}!SetLobbyInfo@{SetLobbyInfo}}
+\index{SetLobbyInfo@{SetLobbyInfo}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{SetLobbyInfo()}{SetLobbyInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Admin\+::\+Set\+Lobby\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Lobby,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Lobby\+Player\+Count,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Lobby\+Max\+Player\+Count,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{Lobby\+Players\+Level }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_server_admin_abeb0fbbc4df54b9796348a1f1abc514a}\label{class_c_server_admin_abeb0fbbc4df54b9796348a1f1abc514a}} 
+\index{CServerAdmin@{CServerAdmin}!SetViewerCount@{SetViewerCount}}
+\index{SetViewerCount@{SetViewerCount}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{SetViewerCount()}{SetViewerCount()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Server\+Admin\+::\+Set\+Viewer\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Viewer\+Count }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_server_admin_a262475ca6717985548213009d12883cc}\label{class_c_server_admin_a262475ca6717985548213009d12883cc}} 
+\index{CServerAdmin@{CServerAdmin}!Authentication\_ErrorCode@{Authentication\_ErrorCode}}
+\index{Authentication\_ErrorCode@{Authentication\_ErrorCode}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{Authentication\_ErrorCode}{Authentication\_ErrorCode}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Server\+Admin\+::\+Authentication\+\_\+\+Error\+Code}
+
+\mbox{\Hypertarget{class_c_server_admin_aca0a53a7bcd7753af6aeaa9837030227}\label{class_c_server_admin_aca0a53a7bcd7753af6aeaa9837030227}} 
+\index{CServerAdmin@{CServerAdmin}!Authentication\_GetTokenResponseReceived@{Authentication\_GetTokenResponseReceived}}
+\index{Authentication\_GetTokenResponseReceived@{Authentication\_GetTokenResponseReceived}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{Authentication\_GetTokenResponseReceived}{Authentication\_GetTokenResponseReceived}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Admin\+::\+Authentication\+\_\+\+Get\+Token\+Response\+Received}
+
+\mbox{\Hypertarget{class_c_server_admin_a24c9abdeba1a6ab7d3ced9f856cb1a01}\label{class_c_server_admin_a24c9abdeba1a6ab7d3ced9f856cb1a01}} 
+\index{CServerAdmin@{CServerAdmin}!Authentication\_Token@{Authentication\_Token}}
+\index{Authentication\_Token@{Authentication\_Token}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{Authentication\_Token}{Authentication\_Token}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Server\+Admin\+::\+Authentication\+\_\+\+Token}
+
+\mbox{\Hypertarget{class_c_server_admin_a0b79c6c2896dc8644eb17c054fe03006}\label{class_c_server_admin_a0b79c6c2896dc8644eb17c054fe03006}} 
+\index{CServerAdmin@{CServerAdmin}!IsDisableChangeTeams@{IsDisableChangeTeams}}
+\index{IsDisableChangeTeams@{IsDisableChangeTeams}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{IsDisableChangeTeams}{IsDisableChangeTeams}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Server\+Admin\+::\+Is\+Disable\+Change\+Teams}
+
+Disable Team change UI on the clients. \mbox{\Hypertarget{class_c_server_admin_ab7411983c8ea521bb38dff66d7801628}\label{class_c_server_admin_ab7411983c8ea521bb38dff66d7801628}} 
+\index{CServerAdmin@{CServerAdmin}!ServerInfo@{ServerInfo}}
+\index{ServerInfo@{ServerInfo}!CServerAdmin@{CServerAdmin}}
+\doxysubsubsection{\texorpdfstring{ServerInfo}{ServerInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_server_info}{C\+Server\+Info}} C\+Server\+Admin\+::\+Server\+Info}
+
+Server\+Info 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

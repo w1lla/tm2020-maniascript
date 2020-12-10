@@ -1,0 +1,190 @@
+\hypertarget{class_c_sm_object}{}\doxysection{C\+Sm\+Object Class Reference}
+\label{class_c_sm_object}\index{CSmObject@{CSmObject}}
+
+
+An instance of an object.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Sm\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_sm_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71}{E\+Status}} \{ \mbox{\hyperlink{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71a8ae7f2e5af824cae12f0d43d88940dae}{On\+Player}}, 
+\mbox{\hyperlink{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71aaa94b273badb10b3c449f3018beef4f8}{On\+Anchor}}, 
+\mbox{\hyperlink{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71a5ce8b71ab60d64fe6f757aaac1831663}{In\+World}}, 
+\mbox{\hyperlink{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71a74b07042878fbf08370dde7a0404318b}{Unspawned}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_sm_object_af71c0b3ebd91c4e1c55ccc2d433e749a}{Set\+Anchor}} (\mbox{\hyperlink{class_c_map_object_anchor}{C\+Map\+Object\+Anchor}} Object\+Anchor)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_sm_object_a73f47afbf8b49df6dbcd37ab7ba20656}{Set\+Player}} (\mbox{\hyperlink{class_c_sm_player}{C\+Sm\+Player}} \mbox{\hyperlink{class_c_sm_object_a9903765a9c86ec30c7073716cca7fdac}{Player}})
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_sm_object_a2c1adea6518de2b33e6bdd02d0c35234}{Set\+Position}} (\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_object_a50831220266bf71fb3f3e9fdc09ec186}{Position}})
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_sm_object_a769962a0c6a9631745bbf2ff39e60a40}{Set\+Position\+And\+Vel}} (\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_object_a50831220266bf71fb3f3e9fdc09ec186}{Position}}, \mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_object_a10dffd593729ed709efcb46a78bcc4f5}{Vel}})
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_sm_object_ab175cde0c288ad0871720d53fb41b822}{Set\+Unspawned}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71}{C\+Sm\+Object\+::\+E\+Status}} \mbox{\hyperlink{class_c_sm_object_ac5c46ab6f141d547715bc452ea4a2dc5}{Status}}
+\item 
+const \mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_sm_object_acb08d6577383f87f50e2147f99de1830}{Model\+Id}}
+\item 
+const \mbox{\hyperlink{class_c_sm_player}{C\+Sm\+Player}} \mbox{\hyperlink{class_c_sm_object_a9903765a9c86ec30c7073716cca7fdac}{Player}}
+\item 
+const \mbox{\hyperlink{class_c_sm_map_landmark}{C\+Sm\+Map\+Landmark}} \mbox{\hyperlink{class_c_sm_object_a23995d015c9d66713411877caf2829ac}{Anchor\+Landmark}}
+\item 
+const \mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_object_a50831220266bf71fb3f3e9fdc09ec186}{Position}}
+\item 
+const \mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_sm_object_a10dffd593729ed709efcb46a78bcc4f5}{Vel}}
+\item 
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_sm_object_a79bbf6b1ec11c922b46ba073b9c66dad}{Machine\+State}}
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_sm_object_ad65075b66b042c1adcb45da6a0ed6c8f}{Throwable}}
+\item 
+const \mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_sm_object_a1a93c17c298e85855ee0c3790453bb90}{Throw\+Latest\+Player\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An instance of an object. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Local 
+\end{DoxyItemize}
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71}\label{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71}} 
+\index{CSmObject@{CSmObject}!EStatus@{EStatus}}
+\index{EStatus@{EStatus}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{EStatus}{EStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71}{C\+Sm\+Object\+::\+E\+Status}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnPlayer@{OnPlayer}!CSmObject@{CSmObject}}\index{CSmObject@{CSmObject}!OnPlayer@{OnPlayer}}}\mbox{\Hypertarget{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71a8ae7f2e5af824cae12f0d43d88940dae}\label{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71a8ae7f2e5af824cae12f0d43d88940dae}} 
+On\+Player&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OnAnchor@{OnAnchor}!CSmObject@{CSmObject}}\index{CSmObject@{CSmObject}!OnAnchor@{OnAnchor}}}\mbox{\Hypertarget{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71aaa94b273badb10b3c449f3018beef4f8}\label{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71aaa94b273badb10b3c449f3018beef4f8}} 
+On\+Anchor&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{InWorld@{InWorld}!CSmObject@{CSmObject}}\index{CSmObject@{CSmObject}!InWorld@{InWorld}}}\mbox{\Hypertarget{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71a5ce8b71ab60d64fe6f757aaac1831663}\label{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71a5ce8b71ab60d64fe6f757aaac1831663}} 
+In\+World&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unspawned@{Unspawned}!CSmObject@{CSmObject}}\index{CSmObject@{CSmObject}!Unspawned@{Unspawned}}}\mbox{\Hypertarget{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71a74b07042878fbf08370dde7a0404318b}\label{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71a74b07042878fbf08370dde7a0404318b}} 
+Unspawned&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_sm_object_af71c0b3ebd91c4e1c55ccc2d433e749a}\label{class_c_sm_object_af71c0b3ebd91c4e1c55ccc2d433e749a}} 
+\index{CSmObject@{CSmObject}!SetAnchor@{SetAnchor}}
+\index{SetAnchor@{SetAnchor}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{SetAnchor()}{SetAnchor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Sm\+Object\+::\+Set\+Anchor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_map_object_anchor}{C\+Map\+Object\+Anchor}}}]{Object\+Anchor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sm_object_a73f47afbf8b49df6dbcd37ab7ba20656}\label{class_c_sm_object_a73f47afbf8b49df6dbcd37ab7ba20656}} 
+\index{CSmObject@{CSmObject}!SetPlayer@{SetPlayer}}
+\index{SetPlayer@{SetPlayer}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{SetPlayer()}{SetPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Sm\+Object\+::\+Set\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_sm_player}{C\+Sm\+Player}}}]{Player }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sm_object_a2c1adea6518de2b33e6bdd02d0c35234}\label{class_c_sm_object_a2c1adea6518de2b33e6bdd02d0c35234}} 
+\index{CSmObject@{CSmObject}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Sm\+Object\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sm_object_a769962a0c6a9631745bbf2ff39e60a40}\label{class_c_sm_object_a769962a0c6a9631745bbf2ff39e60a40}} 
+\index{CSmObject@{CSmObject}!SetPositionAndVel@{SetPositionAndVel}}
+\index{SetPositionAndVel@{SetPositionAndVel}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{SetPositionAndVel()}{SetPositionAndVel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Sm\+Object\+::\+Set\+Position\+And\+Vel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Position,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Vel }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sm_object_ab175cde0c288ad0871720d53fb41b822}\label{class_c_sm_object_ab175cde0c288ad0871720d53fb41b822}} 
+\index{CSmObject@{CSmObject}!SetUnspawned@{SetUnspawned}}
+\index{SetUnspawned@{SetUnspawned}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{SetUnspawned()}{SetUnspawned()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Sm\+Object\+::\+Set\+Unspawned (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_sm_object_a23995d015c9d66713411877caf2829ac}\label{class_c_sm_object_a23995d015c9d66713411877caf2829ac}} 
+\index{CSmObject@{CSmObject}!AnchorLandmark@{AnchorLandmark}}
+\index{AnchorLandmark@{AnchorLandmark}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{AnchorLandmark}{AnchorLandmark}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_sm_map_landmark}{C\+Sm\+Map\+Landmark}} C\+Sm\+Object\+::\+Anchor\+Landmark}
+
+\mbox{\Hypertarget{class_c_sm_object_a79bbf6b1ec11c922b46ba073b9c66dad}\label{class_c_sm_object_a79bbf6b1ec11c922b46ba073b9c66dad}} 
+\index{CSmObject@{CSmObject}!MachineState@{MachineState}}
+\index{MachineState@{MachineState}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{MachineState}{MachineState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} C\+Sm\+Object\+::\+Machine\+State}
+
+\mbox{\Hypertarget{class_c_sm_object_acb08d6577383f87f50e2147f99de1830}\label{class_c_sm_object_acb08d6577383f87f50e2147f99de1830}} 
+\index{CSmObject@{CSmObject}!ModelId@{ModelId}}
+\index{ModelId@{ModelId}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{ModelId}{ModelId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_ident}{Ident}} C\+Sm\+Object\+::\+Model\+Id}
+
+\mbox{\Hypertarget{class_c_sm_object_a9903765a9c86ec30c7073716cca7fdac}\label{class_c_sm_object_a9903765a9c86ec30c7073716cca7fdac}} 
+\index{CSmObject@{CSmObject}!Player@{Player}}
+\index{Player@{Player}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{Player}{Player}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_sm_player}{C\+Sm\+Player}} C\+Sm\+Object\+::\+Player}
+
+Player holding the object, or Null if the object isn\textquotesingle{}t held by a player. \mbox{\Hypertarget{class_c_sm_object_a50831220266bf71fb3f3e9fdc09ec186}\label{class_c_sm_object_a50831220266bf71fb3f3e9fdc09ec186}} 
+\index{CSmObject@{CSmObject}!Position@{Position}}
+\index{Position@{Position}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Sm\+Object\+::\+Position}
+
+\mbox{\Hypertarget{class_c_sm_object_ac5c46ab6f141d547715bc452ea4a2dc5}\label{class_c_sm_object_ac5c46ab6f141d547715bc452ea4a2dc5}} 
+\index{CSmObject@{CSmObject}!Status@{Status}}
+\index{Status@{Status}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_sm_object_a71c8ee21fddb4a7c94b3d826f91c2f71}{C\+Sm\+Object\+::\+E\+Status}} C\+Sm\+Object\+::\+Status}
+
+\mbox{\Hypertarget{class_c_sm_object_ad65075b66b042c1adcb45da6a0ed6c8f}\label{class_c_sm_object_ad65075b66b042c1adcb45da6a0ed6c8f}} 
+\index{CSmObject@{CSmObject}!Throwable@{Throwable}}
+\index{Throwable@{Throwable}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{Throwable}{Throwable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Sm\+Object\+::\+Throwable}
+
+\mbox{\Hypertarget{class_c_sm_object_a1a93c17c298e85855ee0c3790453bb90}\label{class_c_sm_object_a1a93c17c298e85855ee0c3790453bb90}} 
+\index{CSmObject@{CSmObject}!ThrowLatestPlayerId@{ThrowLatestPlayerId}}
+\index{ThrowLatestPlayerId@{ThrowLatestPlayerId}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{ThrowLatestPlayerId}{ThrowLatestPlayerId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_ident}{Ident}} C\+Sm\+Object\+::\+Throw\+Latest\+Player\+Id}
+
+\mbox{\Hypertarget{class_c_sm_object_a10dffd593729ed709efcb46a78bcc4f5}\label{class_c_sm_object_a10dffd593729ed709efcb46a78bcc4f5}} 
+\index{CSmObject@{CSmObject}!Vel@{Vel}}
+\index{Vel@{Vel}!CSmObject@{CSmObject}}
+\doxysubsubsection{\texorpdfstring{Vel}{Vel}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Sm\+Object\+::\+Vel}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

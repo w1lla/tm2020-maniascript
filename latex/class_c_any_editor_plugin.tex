@@ -1,0 +1,125 @@
+\hypertarget{class_c_any_editor_plugin}{}\doxysection{C\+Any\+Editor\+Plugin Class Reference}
+\label{class_c_any_editor_plugin}\index{CAnyEditorPlugin@{CAnyEditorPlugin}}
+
+
+A\+PI for editor plugins.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Any\+Editor\+Plugin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_any_editor_plugin}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688}{E\+Interaction\+Status}} \{ \mbox{\hyperlink{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688ab98d233e8a1decdbf25c6afda1ec8e4d}{Active}}, 
+\mbox{\hyperlink{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688aec2ffe998693a8b37f3e3d082d4de17a}{Closed}}, 
+\mbox{\hyperlink{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688ad3a5a7272deb19f53fbeb70bcf361ea1}{Aborted}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_mania_app_event}{C\+Mania\+App\+Event}} $>$ \mbox{\hyperlink{class_c_any_editor_plugin_af4f94efbb77677d57b78e6d0a7d99b17}{Pending\+Events}}
+\item 
+const \mbox{\hyperlink{class_c_editor_module}{C\+Editor\+Module}} \mbox{\hyperlink{class_c_any_editor_plugin_a931c0bf84415ecf9079c9f15c2e9b927}{Module\+Editor}}
+\item 
+const \mbox{\hyperlink{class_c_editor_mesh}{C\+Editor\+Mesh}} \mbox{\hyperlink{class_c_any_editor_plugin_a6d6841a91c5cf34ce9e533b0cf013e87}{Mesh\+Editor}}
+\item 
+const \mbox{\hyperlink{class_c_editor_editor}{C\+Editor\+Editor}} \mbox{\hyperlink{class_c_any_editor_plugin_afa42341b4298ff81f5ca581f746f9007}{Editor\+Editor}}
+\item 
+const \mbox{\hyperlink{class_c_editor_media_tracker}{C\+Editor\+Media\+Tracker}} \mbox{\hyperlink{class_c_any_editor_plugin_af57f69450caa0f01e40f3b0445043405}{Media\+Tracker}}
+\item 
+const \mbox{\hyperlink{class_c_editor_skin}{C\+Editor\+Skin}} \mbox{\hyperlink{class_c_any_editor_plugin_a6df9ef1e04ea1a94a077a5698eb071cf}{Skin\+Editor}}
+\item 
+const \mbox{\hyperlink{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688}{C\+Any\+Editor\+Plugin\+::\+E\+Interaction\+Status}} \mbox{\hyperlink{class_c_any_editor_plugin_a36d515751b23e76a3226ee7ae9c73512}{Interaction\+Status}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A\+PI for editor plugins. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Local
+\item Persistent 
+\end{DoxyItemize}
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688}\label{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688}} 
+\index{CAnyEditorPlugin@{CAnyEditorPlugin}!EInteractionStatus@{EInteractionStatus}}
+\index{EInteractionStatus@{EInteractionStatus}!CAnyEditorPlugin@{CAnyEditorPlugin}}
+\doxysubsubsection{\texorpdfstring{EInteractionStatus}{EInteractionStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688}{C\+Any\+Editor\+Plugin\+::\+E\+Interaction\+Status}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Active@{Active}!CAnyEditorPlugin@{CAnyEditorPlugin}}\index{CAnyEditorPlugin@{CAnyEditorPlugin}!Active@{Active}}}\mbox{\Hypertarget{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688ab98d233e8a1decdbf25c6afda1ec8e4d}\label{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688ab98d233e8a1decdbf25c6afda1ec8e4d}} 
+Active&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Closed@{Closed}!CAnyEditorPlugin@{CAnyEditorPlugin}}\index{CAnyEditorPlugin@{CAnyEditorPlugin}!Closed@{Closed}}}\mbox{\Hypertarget{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688aec2ffe998693a8b37f3e3d082d4de17a}\label{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688aec2ffe998693a8b37f3e3d082d4de17a}} 
+Closed&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Aborted@{Aborted}!CAnyEditorPlugin@{CAnyEditorPlugin}}\index{CAnyEditorPlugin@{CAnyEditorPlugin}!Aborted@{Aborted}}}\mbox{\Hypertarget{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688ad3a5a7272deb19f53fbeb70bcf361ea1}\label{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688ad3a5a7272deb19f53fbeb70bcf361ea1}} 
+Aborted&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_any_editor_plugin_afa42341b4298ff81f5ca581f746f9007}\label{class_c_any_editor_plugin_afa42341b4298ff81f5ca581f746f9007}} 
+\index{CAnyEditorPlugin@{CAnyEditorPlugin}!EditorEditor@{EditorEditor}}
+\index{EditorEditor@{EditorEditor}!CAnyEditorPlugin@{CAnyEditorPlugin}}
+\doxysubsubsection{\texorpdfstring{EditorEditor}{EditorEditor}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_editor_editor}{C\+Editor\+Editor}} C\+Any\+Editor\+Plugin\+::\+Editor\+Editor}
+
+\mbox{\Hypertarget{class_c_any_editor_plugin_a36d515751b23e76a3226ee7ae9c73512}\label{class_c_any_editor_plugin_a36d515751b23e76a3226ee7ae9c73512}} 
+\index{CAnyEditorPlugin@{CAnyEditorPlugin}!InteractionStatus@{InteractionStatus}}
+\index{InteractionStatus@{InteractionStatus}!CAnyEditorPlugin@{CAnyEditorPlugin}}
+\doxysubsubsection{\texorpdfstring{InteractionStatus}{InteractionStatus}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_any_editor_plugin_a95a551f512ffb756b4e602487a395688}{C\+Any\+Editor\+Plugin\+::\+E\+Interaction\+Status}} C\+Any\+Editor\+Plugin\+::\+Interaction\+Status}
+
+\mbox{\Hypertarget{class_c_any_editor_plugin_af57f69450caa0f01e40f3b0445043405}\label{class_c_any_editor_plugin_af57f69450caa0f01e40f3b0445043405}} 
+\index{CAnyEditorPlugin@{CAnyEditorPlugin}!MediaTracker@{MediaTracker}}
+\index{MediaTracker@{MediaTracker}!CAnyEditorPlugin@{CAnyEditorPlugin}}
+\doxysubsubsection{\texorpdfstring{MediaTracker}{MediaTracker}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_editor_media_tracker}{C\+Editor\+Media\+Tracker}} C\+Any\+Editor\+Plugin\+::\+Media\+Tracker}
+
+\mbox{\Hypertarget{class_c_any_editor_plugin_a6d6841a91c5cf34ce9e533b0cf013e87}\label{class_c_any_editor_plugin_a6d6841a91c5cf34ce9e533b0cf013e87}} 
+\index{CAnyEditorPlugin@{CAnyEditorPlugin}!MeshEditor@{MeshEditor}}
+\index{MeshEditor@{MeshEditor}!CAnyEditorPlugin@{CAnyEditorPlugin}}
+\doxysubsubsection{\texorpdfstring{MeshEditor}{MeshEditor}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_editor_mesh}{C\+Editor\+Mesh}} C\+Any\+Editor\+Plugin\+::\+Mesh\+Editor}
+
+\mbox{\Hypertarget{class_c_any_editor_plugin_a931c0bf84415ecf9079c9f15c2e9b927}\label{class_c_any_editor_plugin_a931c0bf84415ecf9079c9f15c2e9b927}} 
+\index{CAnyEditorPlugin@{CAnyEditorPlugin}!ModuleEditor@{ModuleEditor}}
+\index{ModuleEditor@{ModuleEditor}!CAnyEditorPlugin@{CAnyEditorPlugin}}
+\doxysubsubsection{\texorpdfstring{ModuleEditor}{ModuleEditor}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_editor_module}{C\+Editor\+Module}} C\+Any\+Editor\+Plugin\+::\+Module\+Editor}
+
+\mbox{\Hypertarget{class_c_any_editor_plugin_af4f94efbb77677d57b78e6d0a7d99b17}\label{class_c_any_editor_plugin_af4f94efbb77677d57b78e6d0a7d99b17}} 
+\index{CAnyEditorPlugin@{CAnyEditorPlugin}!PendingEvents@{PendingEvents}}
+\index{PendingEvents@{PendingEvents}!CAnyEditorPlugin@{CAnyEditorPlugin}}
+\doxysubsubsection{\texorpdfstring{PendingEvents}{PendingEvents}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_mania_app_event}{C\+Mania\+App\+Event}}$>$ C\+Any\+Editor\+Plugin\+::\+Pending\+Events}
+
+\mbox{\Hypertarget{class_c_any_editor_plugin_a6df9ef1e04ea1a94a077a5698eb071cf}\label{class_c_any_editor_plugin_a6df9ef1e04ea1a94a077a5698eb071cf}} 
+\index{CAnyEditorPlugin@{CAnyEditorPlugin}!SkinEditor@{SkinEditor}}
+\index{SkinEditor@{SkinEditor}!CAnyEditorPlugin@{CAnyEditorPlugin}}
+\doxysubsubsection{\texorpdfstring{SkinEditor}{SkinEditor}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_editor_skin}{C\+Editor\+Skin}} C\+Any\+Editor\+Plugin\+::\+Skin\+Editor}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

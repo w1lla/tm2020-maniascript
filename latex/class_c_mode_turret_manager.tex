@@ -1,0 +1,173 @@
+\hypertarget{class_c_mode_turret_manager}{}\doxysection{C\+Mode\+Turret\+Manager Class Reference}
+\label{class_c_mode_turret_manager}\index{CModeTurretManager@{CModeTurretManager}}
+
+
+Documentation for class \mbox{\hyperlink{class_c_mode_turret_manager}{C\+Mode\+Turret\+Manager}}.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Mode\+Turret\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_mode_turret_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_a9dce0f7956656c761ee4a52262e10b94}{Map\+Turrets\+\_\+\+Reset}} ()
+\item 
+\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} \mbox{\hyperlink{class_c_mode_turret_manager_a93cad909690081e096d8e339d0f80db6}{Turret\+\_\+\+Create}} (\mbox{\hyperlink{struct_ident}{Ident}} Model\+Id, \mbox{\hyperlink{struct_vec3}{Vec3}} Position, \mbox{\hyperlink{struct_vec3}{Vec3}} Direction, \mbox{\hyperlink{struct_integer}{Integer}} Clan, \mbox{\hyperlink{class_c_player}{C\+Player}} Owner\+Player)
+\item 
+\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} \mbox{\hyperlink{class_c_mode_turret_manager_a0f633bcc6278989a8bcdff7f4ac310a4}{Turret\+\_\+\+Create\+With\+Owner}} (\mbox{\hyperlink{struct_ident}{Ident}} Model\+Id, \mbox{\hyperlink{struct_vec3}{Vec3}} Position, \mbox{\hyperlink{struct_vec3}{Vec3}} Direction, \mbox{\hyperlink{struct_vec3}{Vec3}} Up, \mbox{\hyperlink{struct_integer}{Integer}} Clan, \mbox{\hyperlink{struct_ident}{Ident}} Owner\+Id)
+\item 
+\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} \mbox{\hyperlink{class_c_mode_turret_manager_a2f9b5f07933017e215eb395ebc9981f0}{Turret\+\_\+\+Create\+With\+Owner}} (\mbox{\hyperlink{struct_ident}{Ident}} Model\+Id, \mbox{\hyperlink{struct_vec3}{Vec3}} Position, \mbox{\hyperlink{struct_vec3}{Vec3}} Direction, \mbox{\hyperlink{struct_vec3}{Vec3}} Up, \mbox{\hyperlink{struct_integer}{Integer}} Clan, \mbox{\hyperlink{struct_ident}{Ident}} Owner\+Id, \mbox{\hyperlink{struct_boolean}{Boolean}} Auto\+Aim\+On, \mbox{\hyperlink{struct_boolean}{Boolean}} Auto\+Trigger\+On)
+\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_mode_turret_manager_aa15ac40669b2fac153f1b13486502513}{Turret\+\_\+\+Get\+Position}} (\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} Turret)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_a65555cf2772c32174492a9ce48f609de}{Turret\+\_\+\+Destroy}} (\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} Turret)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_a88aacefe3ce77ce457f2f49c8cbd3ea8}{Turret\+\_\+\+Destroy\+All}} ()
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_acee42f2a651e8fc7480a7fe101a5cf4a}{Turret\+\_\+\+Activate}} (\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} Turret)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_a023f26d1859a528b53dbf993be363234}{Turret\+\_\+\+Deactivate}} (\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} Turret)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_a50708a2a0c876fd08c1054a143f84e88}{Turret\+\_\+\+Set\+Is\+Automatic}} (\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} Turret, \mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Auto)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_afa6dd69b91730c415a087573063c64c9}{Turret\+\_\+\+Auto\+\_\+\+Set\+Aim\+Anticipation}} (\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} Turret, \mbox{\hyperlink{struct_real}{Real}} Aim\+Anticipation\+Ms)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_ab2233ff63704d49c8505717b22b9666f}{Turret\+\_\+\+Auto\+\_\+\+Set\+Fire\+Period}} (\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} Turret, \mbox{\hyperlink{struct_integer}{Integer}} Fire\+Period\+Ms)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_a443ff62fea329afd606c3104b1bca8b6}{Turret\+\_\+\+Auto\+\_\+\+Set\+Target\+Detection\+Fov}} (\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} Turret, \mbox{\hyperlink{struct_real}{Real}} Dectection\+F\+O\+V\+Deg)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_a2361d8047feaf0e4ce358a483cb7f936}{Turret\+\_\+\+Auto\+\_\+\+Set\+Target\+Detection\+Radius}} (\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} Turret, \mbox{\hyperlink{struct_real}{Real}} Detection\+Radius)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_a68c52a7ec33140d8470f6eb7136a5710}{Turret\+\_\+\+Manual\+\_\+\+Set\+Target\+Pos}} (\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} Turret, \mbox{\hyperlink{struct_vec3}{Vec3}} Target\+Pos)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_mode_turret_manager_aec867c170d06847368f6fe430e111b8a}{Turret\+\_\+\+Manual\+\_\+\+Fire}} (\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} Turret)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} $>$ \mbox{\hyperlink{class_c_mode_turret_manager_a3defcb5d0a47e62c5d94d8c87e7e2e32}{Turrets}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Documentation for class \mbox{\hyperlink{class_c_mode_turret_manager}{C\+Mode\+Turret\+Manager}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_mode_turret_manager_a9dce0f7956656c761ee4a52262e10b94}\label{class_c_mode_turret_manager_a9dce0f7956656c761ee4a52262e10b94}} 
+\index{CModeTurretManager@{CModeTurretManager}!MapTurrets\_Reset@{MapTurrets\_Reset}}
+\index{MapTurrets\_Reset@{MapTurrets\_Reset}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{MapTurrets\_Reset()}{MapTurrets\_Reset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Map\+Turrets\+\_\+\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_acee42f2a651e8fc7480a7fe101a5cf4a}\label{class_c_mode_turret_manager_acee42f2a651e8fc7480a7fe101a5cf4a}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_Activate@{Turret\_Activate}}
+\index{Turret\_Activate@{Turret\_Activate}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_Activate()}{Turret\_Activate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Activate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}}]{Turret }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_afa6dd69b91730c415a087573063c64c9}\label{class_c_mode_turret_manager_afa6dd69b91730c415a087573063c64c9}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_Auto\_SetAimAnticipation@{Turret\_Auto\_SetAimAnticipation}}
+\index{Turret\_Auto\_SetAimAnticipation@{Turret\_Auto\_SetAimAnticipation}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_Auto\_SetAimAnticipation()}{Turret\_Auto\_SetAimAnticipation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Auto\+\_\+\+Set\+Aim\+Anticipation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}}]{Turret,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{Aim\+Anticipation\+Ms }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_ab2233ff63704d49c8505717b22b9666f}\label{class_c_mode_turret_manager_ab2233ff63704d49c8505717b22b9666f}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_Auto\_SetFirePeriod@{Turret\_Auto\_SetFirePeriod}}
+\index{Turret\_Auto\_SetFirePeriod@{Turret\_Auto\_SetFirePeriod}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_Auto\_SetFirePeriod()}{Turret\_Auto\_SetFirePeriod()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Auto\+\_\+\+Set\+Fire\+Period (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}}]{Turret,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Fire\+Period\+Ms }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_a443ff62fea329afd606c3104b1bca8b6}\label{class_c_mode_turret_manager_a443ff62fea329afd606c3104b1bca8b6}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_Auto\_SetTargetDetectionFov@{Turret\_Auto\_SetTargetDetectionFov}}
+\index{Turret\_Auto\_SetTargetDetectionFov@{Turret\_Auto\_SetTargetDetectionFov}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_Auto\_SetTargetDetectionFov()}{Turret\_Auto\_SetTargetDetectionFov()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Auto\+\_\+\+Set\+Target\+Detection\+Fov (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}}]{Turret,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{Dectection\+F\+O\+V\+Deg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_a2361d8047feaf0e4ce358a483cb7f936}\label{class_c_mode_turret_manager_a2361d8047feaf0e4ce358a483cb7f936}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_Auto\_SetTargetDetectionRadius@{Turret\_Auto\_SetTargetDetectionRadius}}
+\index{Turret\_Auto\_SetTargetDetectionRadius@{Turret\_Auto\_SetTargetDetectionRadius}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_Auto\_SetTargetDetectionRadius()}{Turret\_Auto\_SetTargetDetectionRadius()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Auto\+\_\+\+Set\+Target\+Detection\+Radius (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}}]{Turret,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{Detection\+Radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_a93cad909690081e096d8e339d0f80db6}\label{class_c_mode_turret_manager_a93cad909690081e096d8e339d0f80db6}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_Create@{Turret\_Create}}
+\index{Turret\_Create@{Turret\_Create}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_Create()}{Turret\_Create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Model\+Id,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Position,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Direction,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Clan,  }\item[{\mbox{\hyperlink{class_c_player}{C\+Player}}}]{Owner\+Player }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_a0f633bcc6278989a8bcdff7f4ac310a4}\label{class_c_mode_turret_manager_a0f633bcc6278989a8bcdff7f4ac310a4}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_CreateWithOwner@{Turret\_CreateWithOwner}}
+\index{Turret\_CreateWithOwner@{Turret\_CreateWithOwner}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_CreateWithOwner()}{Turret\_CreateWithOwner()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Create\+With\+Owner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Model\+Id,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Position,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Direction,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Up,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Clan,  }\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Owner\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_a2f9b5f07933017e215eb395ebc9981f0}\label{class_c_mode_turret_manager_a2f9b5f07933017e215eb395ebc9981f0}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_CreateWithOwner@{Turret\_CreateWithOwner}}
+\index{Turret\_CreateWithOwner@{Turret\_CreateWithOwner}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_CreateWithOwner()}{Turret\_CreateWithOwner()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Create\+With\+Owner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Model\+Id,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Position,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Direction,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Up,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Clan,  }\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Owner\+Id,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Auto\+Aim\+On,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Auto\+Trigger\+On }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_a023f26d1859a528b53dbf993be363234}\label{class_c_mode_turret_manager_a023f26d1859a528b53dbf993be363234}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_Deactivate@{Turret\_Deactivate}}
+\index{Turret\_Deactivate@{Turret\_Deactivate}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_Deactivate()}{Turret\_Deactivate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Deactivate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}}]{Turret }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_a65555cf2772c32174492a9ce48f609de}\label{class_c_mode_turret_manager_a65555cf2772c32174492a9ce48f609de}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_Destroy@{Turret\_Destroy}}
+\index{Turret\_Destroy@{Turret\_Destroy}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_Destroy()}{Turret\_Destroy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}}]{Turret }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_a88aacefe3ce77ce457f2f49c8cbd3ea8}\label{class_c_mode_turret_manager_a88aacefe3ce77ce457f2f49c8cbd3ea8}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_DestroyAll@{Turret\_DestroyAll}}
+\index{Turret\_DestroyAll@{Turret\_DestroyAll}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_DestroyAll()}{Turret\_DestroyAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Destroy\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_aa15ac40669b2fac153f1b13486502513}\label{class_c_mode_turret_manager_aa15ac40669b2fac153f1b13486502513}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_GetPosition@{Turret\_GetPosition}}
+\index{Turret\_GetPosition@{Turret\_GetPosition}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_GetPosition()}{Turret\_GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Get\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}}]{Turret }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_aec867c170d06847368f6fe430e111b8a}\label{class_c_mode_turret_manager_aec867c170d06847368f6fe430e111b8a}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_Manual\_Fire@{Turret\_Manual\_Fire}}
+\index{Turret\_Manual\_Fire@{Turret\_Manual\_Fire}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_Manual\_Fire()}{Turret\_Manual\_Fire()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Manual\+\_\+\+Fire (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}}]{Turret }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_a68c52a7ec33140d8470f6eb7136a5710}\label{class_c_mode_turret_manager_a68c52a7ec33140d8470f6eb7136a5710}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_Manual\_SetTargetPos@{Turret\_Manual\_SetTargetPos}}
+\index{Turret\_Manual\_SetTargetPos@{Turret\_Manual\_SetTargetPos}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_Manual\_SetTargetPos()}{Turret\_Manual\_SetTargetPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Manual\+\_\+\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}}]{Turret,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{Target\+Pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mode_turret_manager_a50708a2a0c876fd08c1054a143f84e88}\label{class_c_mode_turret_manager_a50708a2a0c876fd08c1054a143f84e88}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turret\_SetIsAutomatic@{Turret\_SetIsAutomatic}}
+\index{Turret\_SetIsAutomatic@{Turret\_SetIsAutomatic}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turret\_SetIsAutomatic()}{Turret\_SetIsAutomatic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Mode\+Turret\+Manager\+::\+Turret\+\_\+\+Set\+Is\+Automatic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}}]{Turret,  }\item[{\mbox{\hyperlink{struct_boolean}{Boolean}}}]{Is\+Auto }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_mode_turret_manager_a3defcb5d0a47e62c5d94d8c87e7e2e32}\label{class_c_mode_turret_manager_a3defcb5d0a47e62c5d94d8c87e7e2e32}} 
+\index{CModeTurretManager@{CModeTurretManager}!Turrets@{Turrets}}
+\index{Turrets@{Turrets}!CModeTurretManager@{CModeTurretManager}}
+\doxysubsubsection{\texorpdfstring{Turrets}{Turrets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_mode_turret}{C\+Mode\+Turret}}$>$ C\+Mode\+Turret\+Manager\+::\+Turrets}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

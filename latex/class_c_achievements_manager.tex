@@ -1,0 +1,85 @@
+\hypertarget{class_c_achievements_manager}{}\doxysection{C\+Achievements\+Manager Class Reference}
+\label{class_c_achievements_manager}\index{CAchievementsManager@{CAchievementsManager}}
+
+
+Manager of achievements.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Achievements\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_achievements_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_achievements_manager_ab353d3868133cf45dd65005aeb2e8d5b}{Send\+Event}} (\mbox{\hyperlink{struct_ident}{Ident}} User\+Id, \mbox{\hyperlink{struct_text}{Text}} Mnemo, \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ Params)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_achievements_event}{C\+Achievements\+Event}} $>$ \mbox{\hyperlink{class_c_achievements_manager_a0dff08b924778e0491bf9f52eac243ca}{Pending\+Events}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_achievements_achievement}{C\+Achievements\+Achievement}} $>$ \mbox{\hyperlink{class_c_achievements_manager_adef746f244f482021a2cd2bc4dc30917}{Achievements}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_achievements_stat}{C\+Achievements\+Stat}} $>$ \mbox{\hyperlink{class_c_achievements_manager_a5863fb0afe816f0b86cee77119228ef4}{Stats}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_achievements_achievement_desc}{C\+Achievements\+Achievement\+Desc}} $>$ \mbox{\hyperlink{class_c_achievements_manager_a2ace12168ad5d24169d8fa6013da7c7d}{Achievement\+Descriptions}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_achievements_stat_desc}{C\+Achievements\+Stat\+Desc}} $>$ \mbox{\hyperlink{class_c_achievements_manager_aac4f6babdbe70d2f6c22ce422007f511}{Stat\+Descriptions}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manager of achievements. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_achievements_manager_ab353d3868133cf45dd65005aeb2e8d5b}\label{class_c_achievements_manager_ab353d3868133cf45dd65005aeb2e8d5b}} 
+\index{CAchievementsManager@{CAchievementsManager}!SendEvent@{SendEvent}}
+\index{SendEvent@{SendEvent}!CAchievementsManager@{CAchievementsManager}}
+\doxysubsubsection{\texorpdfstring{SendEvent()}{SendEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Achievements\+Manager\+::\+Send\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{User\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Mnemo,  }\item[{\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$}]{Params }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_achievements_manager_a2ace12168ad5d24169d8fa6013da7c7d}\label{class_c_achievements_manager_a2ace12168ad5d24169d8fa6013da7c7d}} 
+\index{CAchievementsManager@{CAchievementsManager}!AchievementDescriptions@{AchievementDescriptions}}
+\index{AchievementDescriptions@{AchievementDescriptions}!CAchievementsManager@{CAchievementsManager}}
+\doxysubsubsection{\texorpdfstring{AchievementDescriptions}{AchievementDescriptions}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_achievements_achievement_desc}{C\+Achievements\+Achievement\+Desc}}$>$ C\+Achievements\+Manager\+::\+Achievement\+Descriptions}
+
+Achievements descriptions. \mbox{\Hypertarget{class_c_achievements_manager_adef746f244f482021a2cd2bc4dc30917}\label{class_c_achievements_manager_adef746f244f482021a2cd2bc4dc30917}} 
+\index{CAchievementsManager@{CAchievementsManager}!Achievements@{Achievements}}
+\index{Achievements@{Achievements}!CAchievementsManager@{CAchievementsManager}}
+\doxysubsubsection{\texorpdfstring{Achievements}{Achievements}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_achievements_achievement}{C\+Achievements\+Achievement}}$>$ C\+Achievements\+Manager\+::\+Achievements}
+
+Achievements descriptions. \mbox{\Hypertarget{class_c_achievements_manager_a0dff08b924778e0491bf9f52eac243ca}\label{class_c_achievements_manager_a0dff08b924778e0491bf9f52eac243ca}} 
+\index{CAchievementsManager@{CAchievementsManager}!PendingEvents@{PendingEvents}}
+\index{PendingEvents@{PendingEvents}!CAchievementsManager@{CAchievementsManager}}
+\doxysubsubsection{\texorpdfstring{PendingEvents}{PendingEvents}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_achievements_event}{C\+Achievements\+Event}}$>$ C\+Achievements\+Manager\+::\+Pending\+Events}
+
+List of events for current frame. \mbox{\Hypertarget{class_c_achievements_manager_aac4f6babdbe70d2f6c22ce422007f511}\label{class_c_achievements_manager_aac4f6babdbe70d2f6c22ce422007f511}} 
+\index{CAchievementsManager@{CAchievementsManager}!StatDescriptions@{StatDescriptions}}
+\index{StatDescriptions@{StatDescriptions}!CAchievementsManager@{CAchievementsManager}}
+\doxysubsubsection{\texorpdfstring{StatDescriptions}{StatDescriptions}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_achievements_stat_desc}{C\+Achievements\+Stat\+Desc}}$>$ C\+Achievements\+Manager\+::\+Stat\+Descriptions}
+
+Stats descriptions. \mbox{\Hypertarget{class_c_achievements_manager_a5863fb0afe816f0b86cee77119228ef4}\label{class_c_achievements_manager_a5863fb0afe816f0b86cee77119228ef4}} 
+\index{CAchievementsManager@{CAchievementsManager}!Stats@{Stats}}
+\index{Stats@{Stats}!CAchievementsManager@{CAchievementsManager}}
+\doxysubsubsection{\texorpdfstring{Stats}{Stats}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_achievements_stat}{C\+Achievements\+Stat}}$>$ C\+Achievements\+Manager\+::\+Stats}
+
+Stats descriptions. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['placemode_6185',['PlaceMode',['../struct_c_map_editor_plugin.html#a588b4a11b38fdde8d041e9c055d098bf',1,'CMapEditorPlugin']]]
+  ['linktype_7564',['LinkType',['../class_c_ml_script.html#aed6dfd4a2b14d2308f90f63c43042fed',1,'CMlScript']]]
 ];

@@ -1,0 +1,162 @@
+\hypertarget{class_c_editor_editor}{}\doxysection{C\+Editor\+Editor Class Reference}
+\label{class_c_editor_editor}\index{CEditorEditor@{CEditorEditor}}
+
+
+Documentation for class \mbox{\hyperlink{class_c_editor_editor}{C\+Editor\+Editor}}.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Editor\+Editor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_editor_editor}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_editor_a8de656f7085ba60d16dc2c435f08dbe2}{Bindings\+\_\+\+Add\+Context}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_editor_a6ba6352d60de34ab4c2e7e68168f72b3}{Bindings\+\_\+\+Add\+Binding}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name, \mbox{\hyperlink{struct_text}{Text}} Binding\+Script\+Id, \mbox{\hyperlink{struct_text}{Text}} Binding\+Display\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_editor_ae6f86039aa66dd2219ab7f9fd16119fb}{Bindings\+\_\+\+Remove\+Context}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_editor_a22f510138bad475ba4633df258cfea88}{Bindings\+\_\+\+Remove\+Binding}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name, \mbox{\hyperlink{struct_text}{Text}} Binding\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_editor_a6692e63aa730c5903a8f516ebe5cd6fc}{Bindings\+\_\+\+Request\+Input}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name, \mbox{\hyperlink{struct_text}{Text}} Binding\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_editor_a163c8053c23600dd4e7a893c0021ebeb}{Bindings\+\_\+\+Set\+Binding\+Script\+Id}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name, \mbox{\hyperlink{struct_text}{Text}} Binding\+Script\+Id, \mbox{\hyperlink{struct_text}{Text}} New\+Binding\+Script\+Id)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_editor_acd3af5a37a856656a397e70fbaa52b9b}{Bindings\+\_\+\+Set\+Binding\+Display\+Name}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name, \mbox{\hyperlink{struct_text}{Text}} Binding\+Script\+Id, \mbox{\hyperlink{struct_text}{Text}} Binding\+Display\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_editor_ac818967b192bd42d6362ae1efe214f7c}{Bindings\+\_\+\+Set\+Context\+Name}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name, \mbox{\hyperlink{struct_text}{Text}} New\+Context\+Name)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_editor_aa975c45fce10c10efb69caa72b6d1027}{Bindings\+\_\+\+Get\+Context\+Bindings}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name)
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_editor_editor_afb0adaacc00a4d19a1108e9d6e0f1ff6}{Bindings\+\_\+\+Get\+Binding\+Action\+Name}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name, \mbox{\hyperlink{struct_text}{Text}} Binding\+Name)
+\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_editor_editor_a2c3e14ace234333dfd6f3c02722548c9}{Bindings\+\_\+\+Get\+Binding\+Display\+Name}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name, \mbox{\hyperlink{struct_text}{Text}} Binding\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_editor_a82050ee3c809f48de552b31a203d7b48}{Bindings\+\_\+\+Request\+Input\+\_\+\+Done}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ \mbox{\hyperlink{class_c_editor_editor_ab254b5cbca74e1c84248f66bebfe9114}{Binding\+Contexts}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ \mbox{\hyperlink{class_c_editor_editor_a825aad2b0f3134a9f6863de215f33c30}{Requested\+Context\+Bindings}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_editor_event}{C\+Editor\+Event}} $>$ \mbox{\hyperlink{class_c_editor_editor_a67a21bef8fc00b70559f75cbcf4f5bd9}{Pending\+Events}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Documentation for class \mbox{\hyperlink{class_c_editor_editor}{C\+Editor\+Editor}}. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Metadata 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_editor_editor_a6ba6352d60de34ab4c2e7e68168f72b3}\label{class_c_editor_editor_a6ba6352d60de34ab4c2e7e68168f72b3}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_AddBinding@{Bindings\_AddBinding}}
+\index{Bindings\_AddBinding@{Bindings\_AddBinding}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_AddBinding()}{Bindings\_AddBinding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Add\+Binding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Context\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Binding\+Script\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Binding\+Display\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_editor_a8de656f7085ba60d16dc2c435f08dbe2}\label{class_c_editor_editor_a8de656f7085ba60d16dc2c435f08dbe2}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_AddContext@{Bindings\_AddContext}}
+\index{Bindings\_AddContext@{Bindings\_AddContext}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_AddContext()}{Bindings\_AddContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Add\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Context\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_editor_afb0adaacc00a4d19a1108e9d6e0f1ff6}\label{class_c_editor_editor_afb0adaacc00a4d19a1108e9d6e0f1ff6}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_GetBindingActionName@{Bindings\_GetBindingActionName}}
+\index{Bindings\_GetBindingActionName@{Bindings\_GetBindingActionName}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_GetBindingActionName()}{Bindings\_GetBindingActionName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Get\+Binding\+Action\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Context\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Binding\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_editor_a2c3e14ace234333dfd6f3c02722548c9}\label{class_c_editor_editor_a2c3e14ace234333dfd6f3c02722548c9}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_GetBindingDisplayName@{Bindings\_GetBindingDisplayName}}
+\index{Bindings\_GetBindingDisplayName@{Bindings\_GetBindingDisplayName}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_GetBindingDisplayName()}{Bindings\_GetBindingDisplayName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Get\+Binding\+Display\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Context\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Binding\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_editor_aa975c45fce10c10efb69caa72b6d1027}\label{class_c_editor_editor_aa975c45fce10c10efb69caa72b6d1027}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_GetContextBindings@{Bindings\_GetContextBindings}}
+\index{Bindings\_GetContextBindings@{Bindings\_GetContextBindings}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_GetContextBindings()}{Bindings\_GetContextBindings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Get\+Context\+Bindings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Context\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_editor_a22f510138bad475ba4633df258cfea88}\label{class_c_editor_editor_a22f510138bad475ba4633df258cfea88}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_RemoveBinding@{Bindings\_RemoveBinding}}
+\index{Bindings\_RemoveBinding@{Bindings\_RemoveBinding}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_RemoveBinding()}{Bindings\_RemoveBinding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Remove\+Binding (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Context\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Binding\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_editor_ae6f86039aa66dd2219ab7f9fd16119fb}\label{class_c_editor_editor_ae6f86039aa66dd2219ab7f9fd16119fb}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_RemoveContext@{Bindings\_RemoveContext}}
+\index{Bindings\_RemoveContext@{Bindings\_RemoveContext}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_RemoveContext()}{Bindings\_RemoveContext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Remove\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Context\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_editor_a6692e63aa730c5903a8f516ebe5cd6fc}\label{class_c_editor_editor_a6692e63aa730c5903a8f516ebe5cd6fc}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_RequestInput@{Bindings\_RequestInput}}
+\index{Bindings\_RequestInput@{Bindings\_RequestInput}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_RequestInput()}{Bindings\_RequestInput()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Request\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Context\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Binding\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_editor_acd3af5a37a856656a397e70fbaa52b9b}\label{class_c_editor_editor_acd3af5a37a856656a397e70fbaa52b9b}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_SetBindingDisplayName@{Bindings\_SetBindingDisplayName}}
+\index{Bindings\_SetBindingDisplayName@{Bindings\_SetBindingDisplayName}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_SetBindingDisplayName()}{Bindings\_SetBindingDisplayName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Set\+Binding\+Display\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Context\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Binding\+Script\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Binding\+Display\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_editor_a163c8053c23600dd4e7a893c0021ebeb}\label{class_c_editor_editor_a163c8053c23600dd4e7a893c0021ebeb}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_SetBindingScriptId@{Bindings\_SetBindingScriptId}}
+\index{Bindings\_SetBindingScriptId@{Bindings\_SetBindingScriptId}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_SetBindingScriptId()}{Bindings\_SetBindingScriptId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Set\+Binding\+Script\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Context\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Binding\+Script\+Id,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{New\+Binding\+Script\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_editor_ac818967b192bd42d6362ae1efe214f7c}\label{class_c_editor_editor_ac818967b192bd42d6362ae1efe214f7c}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_SetContextName@{Bindings\_SetContextName}}
+\index{Bindings\_SetContextName@{Bindings\_SetContextName}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_SetContextName()}{Bindings\_SetContextName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Set\+Context\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Context\+Name,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{New\+Context\+Name }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_editor_editor_ab254b5cbca74e1c84248f66bebfe9114}\label{class_c_editor_editor_ab254b5cbca74e1c84248f66bebfe9114}} 
+\index{CEditorEditor@{CEditorEditor}!BindingContexts@{BindingContexts}}
+\index{BindingContexts@{BindingContexts}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{BindingContexts}{BindingContexts}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_text}{Text}}$>$ C\+Editor\+Editor\+::\+Binding\+Contexts}
+
+\mbox{\Hypertarget{class_c_editor_editor_a82050ee3c809f48de552b31a203d7b48}\label{class_c_editor_editor_a82050ee3c809f48de552b31a203d7b48}} 
+\index{CEditorEditor@{CEditorEditor}!Bindings\_RequestInput\_Done@{Bindings\_RequestInput\_Done}}
+\index{Bindings\_RequestInput\_Done@{Bindings\_RequestInput\_Done}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{Bindings\_RequestInput\_Done}{Bindings\_RequestInput\_Done}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Editor\+::\+Bindings\+\_\+\+Request\+Input\+\_\+\+Done}
+
+\mbox{\Hypertarget{class_c_editor_editor_a67a21bef8fc00b70559f75cbcf4f5bd9}\label{class_c_editor_editor_a67a21bef8fc00b70559f75cbcf4f5bd9}} 
+\index{CEditorEditor@{CEditorEditor}!PendingEvents@{PendingEvents}}
+\index{PendingEvents@{PendingEvents}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{PendingEvents}{PendingEvents}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_editor_event}{C\+Editor\+Event}}$>$ C\+Editor\+Editor\+::\+Pending\+Events}
+
+\mbox{\Hypertarget{class_c_editor_editor_a825aad2b0f3134a9f6863de215f33c30}\label{class_c_editor_editor_a825aad2b0f3134a9f6863de215f33c30}} 
+\index{CEditorEditor@{CEditorEditor}!RequestedContextBindings@{RequestedContextBindings}}
+\index{RequestedContextBindings@{RequestedContextBindings}!CEditorEditor@{CEditorEditor}}
+\doxysubsubsection{\texorpdfstring{RequestedContextBindings}{RequestedContextBindings}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_text}{Text}}$>$ C\+Editor\+Editor\+::\+Requested\+Context\+Bindings}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

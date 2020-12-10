@@ -1,0 +1,85 @@
+\hypertarget{class_c_pack_creator_pack}{}\doxysection{C\+Pack\+Creator\+Pack Class Reference}
+\label{class_c_pack_creator_pack}\index{CPackCreatorPack@{CPackCreatorPack}}
+
+
+A pack.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Pack\+Creator\+Pack\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_pack_creator_pack}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_pack_creator_pack_a3b30ab4f27fa7a857950371938cb11a1}{Recipients\+\_\+\+Add}} (\mbox{\hyperlink{struct_text}{Text}} Login, \mbox{\hyperlink{struct_integer}{Integer}} Use\+Cost, \mbox{\hyperlink{struct_integer}{Integer}} Get\+Cost)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_pack_creator_pack_a971c404e1bcd1d4d57fddf117e542eb3}{Recipients\+\_\+\+Remove}} (\mbox{\hyperlink{struct_text}{Text}} Login)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_pack_creator_pack_aabb52ed4ef52160fadd838f884031434}{Pack\+Id}}
+\item 
+const \mbox{\hyperlink{struct_ident}{Ident}} \mbox{\hyperlink{class_c_pack_creator_pack_adf667227f4fa649119c1aabdf6fcd442}{Creator\+Id}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_pack_creator_pack_a1f87ec5f4f087f4e6252c4aded0569b2}{Is\+Title\+Pack}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_pack_creator_recipient}{C\+Pack\+Creator\+Recipient}} $>$ \mbox{\hyperlink{class_c_pack_creator_pack_adde38256ac41868b70b751cfb4ef28aa}{Recipients}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A pack. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_pack_creator_pack_a3b30ab4f27fa7a857950371938cb11a1}\label{class_c_pack_creator_pack_a3b30ab4f27fa7a857950371938cb11a1}} 
+\index{CPackCreatorPack@{CPackCreatorPack}!Recipients\_Add@{Recipients\_Add}}
+\index{Recipients\_Add@{Recipients\_Add}!CPackCreatorPack@{CPackCreatorPack}}
+\doxysubsubsection{\texorpdfstring{Recipients\_Add()}{Recipients\_Add()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Pack\+Creator\+Pack\+::\+Recipients\+\_\+\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Login,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Use\+Cost,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{Get\+Cost }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_pack_creator_pack_a971c404e1bcd1d4d57fddf117e542eb3}\label{class_c_pack_creator_pack_a971c404e1bcd1d4d57fddf117e542eb3}} 
+\index{CPackCreatorPack@{CPackCreatorPack}!Recipients\_Remove@{Recipients\_Remove}}
+\index{Recipients\_Remove@{Recipients\_Remove}!CPackCreatorPack@{CPackCreatorPack}}
+\doxysubsubsection{\texorpdfstring{Recipients\_Remove()}{Recipients\_Remove()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Pack\+Creator\+Pack\+::\+Recipients\+\_\+\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Login }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_pack_creator_pack_adf667227f4fa649119c1aabdf6fcd442}\label{class_c_pack_creator_pack_adf667227f4fa649119c1aabdf6fcd442}} 
+\index{CPackCreatorPack@{CPackCreatorPack}!CreatorId@{CreatorId}}
+\index{CreatorId@{CreatorId}!CPackCreatorPack@{CPackCreatorPack}}
+\doxysubsubsection{\texorpdfstring{CreatorId}{CreatorId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_ident}{Ident}} C\+Pack\+Creator\+Pack\+::\+Creator\+Id}
+
+\mbox{\Hypertarget{class_c_pack_creator_pack_a1f87ec5f4f087f4e6252c4aded0569b2}\label{class_c_pack_creator_pack_a1f87ec5f4f087f4e6252c4aded0569b2}} 
+\index{CPackCreatorPack@{CPackCreatorPack}!IsTitlePack@{IsTitlePack}}
+\index{IsTitlePack@{IsTitlePack}!CPackCreatorPack@{CPackCreatorPack}}
+\doxysubsubsection{\texorpdfstring{IsTitlePack}{IsTitlePack}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Pack\+Creator\+Pack\+::\+Is\+Title\+Pack}
+
+\mbox{\Hypertarget{class_c_pack_creator_pack_aabb52ed4ef52160fadd838f884031434}\label{class_c_pack_creator_pack_aabb52ed4ef52160fadd838f884031434}} 
+\index{CPackCreatorPack@{CPackCreatorPack}!PackId@{PackId}}
+\index{PackId@{PackId}!CPackCreatorPack@{CPackCreatorPack}}
+\doxysubsubsection{\texorpdfstring{PackId}{PackId}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_ident}{Ident}} C\+Pack\+Creator\+Pack\+::\+Pack\+Id}
+
+Pack\+Id is the Title\+Id if the pack is a Title\+Pack. \mbox{\Hypertarget{class_c_pack_creator_pack_adde38256ac41868b70b751cfb4ef28aa}\label{class_c_pack_creator_pack_adde38256ac41868b70b751cfb4ef28aa}} 
+\index{CPackCreatorPack@{CPackCreatorPack}!Recipients@{Recipients}}
+\index{Recipients@{Recipients}!CPackCreatorPack@{CPackCreatorPack}}
+\doxysubsubsection{\texorpdfstring{Recipients}{Recipients}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_pack_creator_recipient}{C\+Pack\+Creator\+Recipient}}$>$ C\+Pack\+Creator\+Pack\+::\+Recipients}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

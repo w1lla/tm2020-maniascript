@@ -1,0 +1,193 @@
+\hypertarget{class_c_server_plugin_event}{}\doxysection{C\+Server\+Plugin\+Event Class Reference}
+\label{class_c_server_plugin_event}\index{CServerPluginEvent@{CServerPluginEvent}}
+
+
+Server\+Plugin Event.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Server\+Plugin\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_server_plugin_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8d}{E\+Type}} \{ \newline
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dac06ba3aeb14a02d64aa0896b6f1ffb7b}{Unknown}}, 
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da37109c5fa7f28726b767e1c8d0e2e6b3}{Client\+Connected}}, 
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dad5082082f600a5cb13cb7efa6fa30175}{Client\+Disconnected}}, 
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da963da648cb21857af42d86503dd4aa0e}{Map\+Loaded}}, 
+\newline
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da0980af11ca932eb9277a3e0984e83140}{Begin\+Match}}, 
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8daaba2a8a3d6a5e7ad8667a0031c19f429}{Begin\+Round}}, 
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da875929187338323983af798928efc31c}{End\+Round}}, 
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da2e68953a0e9edb51a43050316be77463}{End\+Match}}, 
+\newline
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dab731a5f462bc6fc363609850e75f4e3c}{Map\+Unload\+Requested}}, 
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da3ce79a51ddc300838c33ad028e490b03}{Map\+Unloaded}}, 
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da26c27b9ae6014cb57335dff4b6f402dc}{Chat\+Command}}, 
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dac66d2eaaf1ed45c23303305053267edc}{Chat\+Message}}, 
+\newline
+\mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da8c76b445b793e01ba90594e10d391a1d}{Mode\+Callback}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8d}{C\+Server\+Plugin\+Event\+::\+E\+Type}} \mbox{\hyperlink{class_c_server_plugin_event_a40107b67ee5d251b069985ce74a7348f}{Type}}
+\item 
+const \mbox{\hyperlink{class_c_client}{C\+Client}} \mbox{\hyperlink{class_c_server_plugin_event_a783c1bd7ef134795a75e289f41914f9d}{Client}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_server_plugin_event_a7614744df270fb6cfd4ed3631bbbe922}{Chat\+Text}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_server_plugin_event_af01096fe7642717157ab5590d4eea5a4}{Chat\+Command\+Type}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ \mbox{\hyperlink{class_c_server_plugin_event_a1e97cf487e81e373248b24fae5f0653b}{Chat\+Command\+Data}}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_server_plugin_event_a96f5b330a1fa61e8d227a83acb5cfb64}{Mode\+Callback\+Type}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ \mbox{\hyperlink{class_c_server_plugin_event_ab2adb3cc1c348b2ff208c4fddf326d2e}{Mode\+Callback\+Data}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_score}{C\+Score}} $>$ \mbox{\hyperlink{class_c_server_plugin_event_a321fc026524fd125764a8785820dc5f2}{End\+Match\+Scores}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_integer}{Integer}} $>$ \mbox{\hyperlink{class_c_server_plugin_event_a1dc8a928272cac0e0db88353f6ec9649}{End\+Match\+Ranks}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Server\+Plugin Event. 
+
+Supported declare modes \+:
+\begin{DoxyItemize}
+\item Local 
+\end{DoxyItemize}
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8d}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8d}} 
+\index{CServerPluginEvent@{CServerPluginEvent}!EType@{EType}}
+\index{EType@{EType}!CServerPluginEvent@{CServerPluginEvent}}
+\doxysubsubsection{\texorpdfstring{EType}{EType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8d}{C\+Server\+Plugin\+Event\+::\+E\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unknown@{Unknown}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!Unknown@{Unknown}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dac06ba3aeb14a02d64aa0896b6f1ffb7b}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dac06ba3aeb14a02d64aa0896b6f1ffb7b}} 
+Unknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ClientConnected@{ClientConnected}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!ClientConnected@{ClientConnected}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da37109c5fa7f28726b767e1c8d0e2e6b3}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da37109c5fa7f28726b767e1c8d0e2e6b3}} 
+Client\+Connected&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ClientDisconnected@{ClientDisconnected}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!ClientDisconnected@{ClientDisconnected}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dad5082082f600a5cb13cb7efa6fa30175}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dad5082082f600a5cb13cb7efa6fa30175}} 
+Client\+Disconnected&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MapLoaded@{MapLoaded}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!MapLoaded@{MapLoaded}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da963da648cb21857af42d86503dd4aa0e}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da963da648cb21857af42d86503dd4aa0e}} 
+Map\+Loaded&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BeginMatch@{BeginMatch}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!BeginMatch@{BeginMatch}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da0980af11ca932eb9277a3e0984e83140}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da0980af11ca932eb9277a3e0984e83140}} 
+Begin\+Match&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BeginRound@{BeginRound}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!BeginRound@{BeginRound}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8daaba2a8a3d6a5e7ad8667a0031c19f429}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8daaba2a8a3d6a5e7ad8667a0031c19f429}} 
+Begin\+Round&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EndRound@{EndRound}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!EndRound@{EndRound}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da875929187338323983af798928efc31c}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da875929187338323983af798928efc31c}} 
+End\+Round&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EndMatch@{EndMatch}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!EndMatch@{EndMatch}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da2e68953a0e9edb51a43050316be77463}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da2e68953a0e9edb51a43050316be77463}} 
+End\+Match&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MapUnloadRequested@{MapUnloadRequested}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!MapUnloadRequested@{MapUnloadRequested}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dab731a5f462bc6fc363609850e75f4e3c}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dab731a5f462bc6fc363609850e75f4e3c}} 
+Map\+Unload\+Requested&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MapUnloaded@{MapUnloaded}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!MapUnloaded@{MapUnloaded}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da3ce79a51ddc300838c33ad028e490b03}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da3ce79a51ddc300838c33ad028e490b03}} 
+Map\+Unloaded&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ChatCommand@{ChatCommand}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!ChatCommand@{ChatCommand}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da26c27b9ae6014cb57335dff4b6f402dc}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da26c27b9ae6014cb57335dff4b6f402dc}} 
+Chat\+Command&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ChatMessage@{ChatMessage}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!ChatMessage@{ChatMessage}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dac66d2eaaf1ed45c23303305053267edc}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8dac66d2eaaf1ed45c23303305053267edc}} 
+Chat\+Message&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ModeCallback@{ModeCallback}!CServerPluginEvent@{CServerPluginEvent}}\index{CServerPluginEvent@{CServerPluginEvent}!ModeCallback@{ModeCallback}}}\mbox{\Hypertarget{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da8c76b445b793e01ba90594e10d391a1d}\label{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8da8c76b445b793e01ba90594e10d391a1d}} 
+Mode\+Callback&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_server_plugin_event_a1e97cf487e81e373248b24fae5f0653b}\label{class_c_server_plugin_event_a1e97cf487e81e373248b24fae5f0653b}} 
+\index{CServerPluginEvent@{CServerPluginEvent}!ChatCommandData@{ChatCommandData}}
+\index{ChatCommandData@{ChatCommandData}!CServerPluginEvent@{CServerPluginEvent}}
+\doxysubsubsection{\texorpdfstring{ChatCommandData}{ChatCommandData}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_text}{Text}}$>$ C\+Server\+Plugin\+Event\+::\+Chat\+Command\+Data}
+
+\mbox{\Hypertarget{class_c_server_plugin_event_af01096fe7642717157ab5590d4eea5a4}\label{class_c_server_plugin_event_af01096fe7642717157ab5590d4eea5a4}} 
+\index{CServerPluginEvent@{CServerPluginEvent}!ChatCommandType@{ChatCommandType}}
+\index{ChatCommandType@{ChatCommandType}!CServerPluginEvent@{CServerPluginEvent}}
+\doxysubsubsection{\texorpdfstring{ChatCommandType}{ChatCommandType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Server\+Plugin\+Event\+::\+Chat\+Command\+Type}
+
+\mbox{\Hypertarget{class_c_server_plugin_event_a7614744df270fb6cfd4ed3631bbbe922}\label{class_c_server_plugin_event_a7614744df270fb6cfd4ed3631bbbe922}} 
+\index{CServerPluginEvent@{CServerPluginEvent}!ChatText@{ChatText}}
+\index{ChatText@{ChatText}!CServerPluginEvent@{CServerPluginEvent}}
+\doxysubsubsection{\texorpdfstring{ChatText}{ChatText}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Server\+Plugin\+Event\+::\+Chat\+Text}
+
+\mbox{\Hypertarget{class_c_server_plugin_event_a783c1bd7ef134795a75e289f41914f9d}\label{class_c_server_plugin_event_a783c1bd7ef134795a75e289f41914f9d}} 
+\index{CServerPluginEvent@{CServerPluginEvent}!Client@{Client}}
+\index{Client@{Client}!CServerPluginEvent@{CServerPluginEvent}}
+\doxysubsubsection{\texorpdfstring{Client}{Client}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_client}{C\+Client}} C\+Server\+Plugin\+Event\+::\+Client}
+
+\mbox{\Hypertarget{class_c_server_plugin_event_a1dc8a928272cac0e0db88353f6ec9649}\label{class_c_server_plugin_event_a1dc8a928272cac0e0db88353f6ec9649}} 
+\index{CServerPluginEvent@{CServerPluginEvent}!EndMatchRanks@{EndMatchRanks}}
+\index{EndMatchRanks@{EndMatchRanks}!CServerPluginEvent@{CServerPluginEvent}}
+\doxysubsubsection{\texorpdfstring{EndMatchRanks}{EndMatchRanks}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_integer}{Integer}}$>$ C\+Server\+Plugin\+Event\+::\+End\+Match\+Ranks}
+
+\mbox{\Hypertarget{class_c_server_plugin_event_a321fc026524fd125764a8785820dc5f2}\label{class_c_server_plugin_event_a321fc026524fd125764a8785820dc5f2}} 
+\index{CServerPluginEvent@{CServerPluginEvent}!EndMatchScores@{EndMatchScores}}
+\index{EndMatchScores@{EndMatchScores}!CServerPluginEvent@{CServerPluginEvent}}
+\doxysubsubsection{\texorpdfstring{EndMatchScores}{EndMatchScores}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_score}{C\+Score}}$>$ C\+Server\+Plugin\+Event\+::\+End\+Match\+Scores}
+
+\mbox{\Hypertarget{class_c_server_plugin_event_ab2adb3cc1c348b2ff208c4fddf326d2e}\label{class_c_server_plugin_event_ab2adb3cc1c348b2ff208c4fddf326d2e}} 
+\index{CServerPluginEvent@{CServerPluginEvent}!ModeCallbackData@{ModeCallbackData}}
+\index{ModeCallbackData@{ModeCallbackData}!CServerPluginEvent@{CServerPluginEvent}}
+\doxysubsubsection{\texorpdfstring{ModeCallbackData}{ModeCallbackData}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_text}{Text}}$>$ C\+Server\+Plugin\+Event\+::\+Mode\+Callback\+Data}
+
+\mbox{\Hypertarget{class_c_server_plugin_event_a96f5b330a1fa61e8d227a83acb5cfb64}\label{class_c_server_plugin_event_a96f5b330a1fa61e8d227a83acb5cfb64}} 
+\index{CServerPluginEvent@{CServerPluginEvent}!ModeCallbackType@{ModeCallbackType}}
+\index{ModeCallbackType@{ModeCallbackType}!CServerPluginEvent@{CServerPluginEvent}}
+\doxysubsubsection{\texorpdfstring{ModeCallbackType}{ModeCallbackType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Server\+Plugin\+Event\+::\+Mode\+Callback\+Type}
+
+\mbox{\Hypertarget{class_c_server_plugin_event_a40107b67ee5d251b069985ce74a7348f}\label{class_c_server_plugin_event_a40107b67ee5d251b069985ce74a7348f}} 
+\index{CServerPluginEvent@{CServerPluginEvent}!Type@{Type}}
+\index{Type@{Type}!CServerPluginEvent@{CServerPluginEvent}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_server_plugin_event_a8c500907f6d8ee82888eb35cec35ac8d}{C\+Server\+Plugin\+Event\+::\+E\+Type}} C\+Server\+Plugin\+Event\+::\+Type}
+
+Event type. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

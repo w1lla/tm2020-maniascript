@@ -1,0 +1,151 @@
+\hypertarget{class_c_block_model}{}\doxysection{C\+Block\+Model Class Reference}
+\label{class_c_block_model}\index{CBlockModel@{CBlockModel}}
+
+
+The model of a map block.  
+
+
+
+
+{\ttfamily \#include $<$big.\+h$>$}
+
+Inheritance diagram for C\+Block\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_block_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_block_model_a38143764f437576c59c72aa948fa0dab}{E\+Way\+Point\+Type}} \{ \newline
+\mbox{\hyperlink{class_c_block_model_a38143764f437576c59c72aa948fa0daba4bf661841255e646210c30dca2b367f2}{Start}}, 
+\mbox{\hyperlink{class_c_block_model_a38143764f437576c59c72aa948fa0daba7214b4465377f1809ef536f0c84dd587}{Finish}}, 
+\mbox{\hyperlink{class_c_block_model_a38143764f437576c59c72aa948fa0daba3f671bf982a3f9a257a8b90f83b64de8}{Checkpoint}}, 
+\mbox{\hyperlink{class_c_block_model_a38143764f437576c59c72aa948fa0daba9e77ce956f694953e2a29e78f111ca8d}{None}}, 
+\newline
+\mbox{\hyperlink{class_c_block_model_a38143764f437576c59c72aa948fa0dabaea239abefb6fc8f383fd8fb0ffc334ff}{Start\+Finish}}, 
+\mbox{\hyperlink{class_c_block_model_a38143764f437576c59c72aa948fa0daba1b8dd5eb1cc4a3b52d2cbd8bf3bbbe9d}{Dispenser}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{class_c_block_model_a2489572112d65fc40c8b32ebefd99c2c}{Name}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_block_model_a786749a6d8f4f1764aa59856c013a262}{Is\+Road}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_block_model_ad356ab59c30e65aeeafb43f5559a95aa}{Is\+Terrain}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_block_model_a31dde04f73cd8f68353877abc258721a}{Is\+Podium}}
+\item 
+const \mbox{\hyperlink{class_c_block_model_a38143764f437576c59c72aa948fa0dab}{C\+Block\+Model\+::\+E\+Way\+Point\+Type}} \mbox{\hyperlink{class_c_block_model_a352982cf2112d877bb6b748297a90945}{Waypoint\+Type}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_block_model_a5cd446d3d2d713b93dc71ee3ca3fac3d}{No\+Respawn}}
+\item 
+const \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_block_model_a72ef81c638b7751406b34a42e13ff5a7}{Is\+Clip}}
+\item 
+const \mbox{\hyperlink{class_c_block_model_variant_ground}{C\+Block\+Model\+Variant\+Ground}} \mbox{\hyperlink{class_c_block_model_a32c1f4fc79536b7b81afadbdcf4069a3}{Variant\+Ground}}
+\item 
+const \mbox{\hyperlink{class_c_block_model_variant_air}{C\+Block\+Model\+Variant\+Air}} \mbox{\hyperlink{class_c_block_model_ab861d73833c35101afe28ff982376c5a}{Variant\+Air}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The model of a map block. 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_c_block_model_a38143764f437576c59c72aa948fa0dab}\label{class_c_block_model_a38143764f437576c59c72aa948fa0dab}} 
+\index{CBlockModel@{CBlockModel}!EWayPointType@{EWayPointType}}
+\index{EWayPointType@{EWayPointType}!CBlockModel@{CBlockModel}}
+\doxysubsubsection{\texorpdfstring{EWayPointType}{EWayPointType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_block_model_a38143764f437576c59c72aa948fa0dab}{C\+Block\+Model\+::\+E\+Way\+Point\+Type}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Start@{Start}!CBlockModel@{CBlockModel}}\index{CBlockModel@{CBlockModel}!Start@{Start}}}\mbox{\Hypertarget{class_c_block_model_a38143764f437576c59c72aa948fa0daba4bf661841255e646210c30dca2b367f2}\label{class_c_block_model_a38143764f437576c59c72aa948fa0daba4bf661841255e646210c30dca2b367f2}} 
+Start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Finish@{Finish}!CBlockModel@{CBlockModel}}\index{CBlockModel@{CBlockModel}!Finish@{Finish}}}\mbox{\Hypertarget{class_c_block_model_a38143764f437576c59c72aa948fa0daba7214b4465377f1809ef536f0c84dd587}\label{class_c_block_model_a38143764f437576c59c72aa948fa0daba7214b4465377f1809ef536f0c84dd587}} 
+Finish&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Checkpoint@{Checkpoint}!CBlockModel@{CBlockModel}}\index{CBlockModel@{CBlockModel}!Checkpoint@{Checkpoint}}}\mbox{\Hypertarget{class_c_block_model_a38143764f437576c59c72aa948fa0daba3f671bf982a3f9a257a8b90f83b64de8}\label{class_c_block_model_a38143764f437576c59c72aa948fa0daba3f671bf982a3f9a257a8b90f83b64de8}} 
+Checkpoint&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CBlockModel@{CBlockModel}}\index{CBlockModel@{CBlockModel}!None@{None}}}\mbox{\Hypertarget{class_c_block_model_a38143764f437576c59c72aa948fa0daba9e77ce956f694953e2a29e78f111ca8d}\label{class_c_block_model_a38143764f437576c59c72aa948fa0daba9e77ce956f694953e2a29e78f111ca8d}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StartFinish@{StartFinish}!CBlockModel@{CBlockModel}}\index{CBlockModel@{CBlockModel}!StartFinish@{StartFinish}}}\mbox{\Hypertarget{class_c_block_model_a38143764f437576c59c72aa948fa0dabaea239abefb6fc8f383fd8fb0ffc334ff}\label{class_c_block_model_a38143764f437576c59c72aa948fa0dabaea239abefb6fc8f383fd8fb0ffc334ff}} 
+Start\+Finish&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dispenser@{Dispenser}!CBlockModel@{CBlockModel}}\index{CBlockModel@{CBlockModel}!Dispenser@{Dispenser}}}\mbox{\Hypertarget{class_c_block_model_a38143764f437576c59c72aa948fa0daba1b8dd5eb1cc4a3b52d2cbd8bf3bbbe9d}\label{class_c_block_model_a38143764f437576c59c72aa948fa0daba1b8dd5eb1cc4a3b52d2cbd8bf3bbbe9d}} 
+Dispenser&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_block_model_a72ef81c638b7751406b34a42e13ff5a7}\label{class_c_block_model_a72ef81c638b7751406b34a42e13ff5a7}} 
+\index{CBlockModel@{CBlockModel}!IsClip@{IsClip}}
+\index{IsClip@{IsClip}!CBlockModel@{CBlockModel}}
+\doxysubsubsection{\texorpdfstring{IsClip}{IsClip}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Block\+Model\+::\+Is\+Clip}
+
+\mbox{\Hypertarget{class_c_block_model_a31dde04f73cd8f68353877abc258721a}\label{class_c_block_model_a31dde04f73cd8f68353877abc258721a}} 
+\index{CBlockModel@{CBlockModel}!IsPodium@{IsPodium}}
+\index{IsPodium@{IsPodium}!CBlockModel@{CBlockModel}}
+\doxysubsubsection{\texorpdfstring{IsPodium}{IsPodium}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Block\+Model\+::\+Is\+Podium}
+
+\mbox{\Hypertarget{class_c_block_model_a786749a6d8f4f1764aa59856c013a262}\label{class_c_block_model_a786749a6d8f4f1764aa59856c013a262}} 
+\index{CBlockModel@{CBlockModel}!IsRoad@{IsRoad}}
+\index{IsRoad@{IsRoad}!CBlockModel@{CBlockModel}}
+\doxysubsubsection{\texorpdfstring{IsRoad}{IsRoad}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Block\+Model\+::\+Is\+Road}
+
+\mbox{\Hypertarget{class_c_block_model_ad356ab59c30e65aeeafb43f5559a95aa}\label{class_c_block_model_ad356ab59c30e65aeeafb43f5559a95aa}} 
+\index{CBlockModel@{CBlockModel}!IsTerrain@{IsTerrain}}
+\index{IsTerrain@{IsTerrain}!CBlockModel@{CBlockModel}}
+\doxysubsubsection{\texorpdfstring{IsTerrain}{IsTerrain}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Block\+Model\+::\+Is\+Terrain}
+
+\mbox{\Hypertarget{class_c_block_model_a2489572112d65fc40c8b32ebefd99c2c}\label{class_c_block_model_a2489572112d65fc40c8b32ebefd99c2c}} 
+\index{CBlockModel@{CBlockModel}!Name@{Name}}
+\index{Name@{Name}!CBlockModel@{CBlockModel}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_text}{Text}} C\+Block\+Model\+::\+Name}
+
+\mbox{\Hypertarget{class_c_block_model_a5cd446d3d2d713b93dc71ee3ca3fac3d}\label{class_c_block_model_a5cd446d3d2d713b93dc71ee3ca3fac3d}} 
+\index{CBlockModel@{CBlockModel}!NoRespawn@{NoRespawn}}
+\index{NoRespawn@{NoRespawn}!CBlockModel@{CBlockModel}}
+\doxysubsubsection{\texorpdfstring{NoRespawn}{NoRespawn}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Block\+Model\+::\+No\+Respawn}
+
+\mbox{\Hypertarget{class_c_block_model_ab861d73833c35101afe28ff982376c5a}\label{class_c_block_model_ab861d73833c35101afe28ff982376c5a}} 
+\index{CBlockModel@{CBlockModel}!VariantAir@{VariantAir}}
+\index{VariantAir@{VariantAir}!CBlockModel@{CBlockModel}}
+\doxysubsubsection{\texorpdfstring{VariantAir}{VariantAir}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_block_model_variant_air}{C\+Block\+Model\+Variant\+Air}} C\+Block\+Model\+::\+Variant\+Air}
+
+\mbox{\Hypertarget{class_c_block_model_a32c1f4fc79536b7b81afadbdcf4069a3}\label{class_c_block_model_a32c1f4fc79536b7b81afadbdcf4069a3}} 
+\index{CBlockModel@{CBlockModel}!VariantGround@{VariantGround}}
+\index{VariantGround@{VariantGround}!CBlockModel@{CBlockModel}}
+\doxysubsubsection{\texorpdfstring{VariantGround}{VariantGround}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_block_model_variant_ground}{C\+Block\+Model\+Variant\+Ground}} C\+Block\+Model\+::\+Variant\+Ground}
+
+\mbox{\Hypertarget{class_c_block_model_a352982cf2112d877bb6b748297a90945}\label{class_c_block_model_a352982cf2112d877bb6b748297a90945}} 
+\index{CBlockModel@{CBlockModel}!WaypointType@{WaypointType}}
+\index{WaypointType@{WaypointType}!CBlockModel@{CBlockModel}}
+\doxysubsubsection{\texorpdfstring{WaypointType}{WaypointType}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_c_block_model_a38143764f437576c59c72aa948fa0dab}{C\+Block\+Model\+::\+E\+Way\+Point\+Type}} C\+Block\+Model\+::\+Waypoint\+Type}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+input/\mbox{\hyperlink{big_8h}{big.\+h}}\end{DoxyCompactItemize}

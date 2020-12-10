@@ -1,158 +1,173 @@
 \hypertarget{namespace_math_lib}{}\doxysection{Math\+Lib Namespace Reference}
 \label{namespace_math_lib}\index{MathLib@{MathLib}}
+
+
+Standard mathematical operations, angles are in radians unless specified.  
+
+
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_af0db166c5f92d64ce3efa931b96bbb87}{Abs}} (\mbox{\hyperlink{class_integer}{Integer}} Argument1)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a6daa1610b7c354db7d8c51a0e6237cf0}{Abs}} (\mbox{\hyperlink{struct_integer}{Integer}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a82671e85b2146fd59dff7d8318763ddf}{Abs}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_af5215706a45b371e917c31ed57e8344c}{Abs}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_aa99b79fc356289e59a7d1b7c416c53f1}{To\+Real}} (\mbox{\hyperlink{class_integer}{Integer}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a33b493445be4d1a2b652d4513f29bc3d}{To\+Real}} (\mbox{\hyperlink{struct_integer}{Integer}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a7c6ce63d2c882e6e38ec9ee6b2e44c5c}{Deg\+To\+Rad}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_aeb53de3e8087c3dca2d3caacfcc3ca98}{Deg\+To\+Rad}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Degree)
+\begin{DoxyCompactList}\small\item\em Converts an angle from degrees to radians. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ad952a41c0174247a2ee4b286bd9ff1fa}{Rad\+To\+Deg}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Radian)
+\begin{DoxyCompactList}\small\item\em Converts an angle from radians to degrees. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a04916c4fce4406e72970064f3aec2515}{Sin}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a3a5c390b0543e90a23fab3c9df908600}{Rad\+To\+Deg}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ae319dd3622e15b7926618000a913104b}{Cos}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_af4ab071b26c049fe170ed021a526973b}{Sin}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a4117b12fbc9ba8fd27ed02654a20b488}{Tan}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a62e31fc724f12f18f72088e2ae84a1c1}{Cos}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a3f4fb09e636b6d41f2389a8a068509a6}{Atan2}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a775c75cf4480707c6f02f1ee0d93cdf3}{Tan}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a3bbe6b4698fe11dc1b9d3fc7af986813}{Exp}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a4aab0176feec2947f129613deb109df5}{Atan2}} (\mbox{\hyperlink{class_real}{Real}} Argument1, \mbox{\hyperlink{class_real}{Real}} Argument2)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a6b4221f268047f118659bec3978427fc}{Rand}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ac0be71fc98349fd7f1464367f6db55d7}{Exp}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a1cd548d7d0fe78792d2bf196baf45198}{Rand}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument2, \mbox{\hyperlink{struct_integer}{Integer}} \+\_\+\+Argument3)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a889b57d15412780c14dba4127e5b8f33}{Rand}} (\mbox{\hyperlink{class_real}{Real}} Argument1, \mbox{\hyperlink{class_real}{Real}} Argument2)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a9e6017c7be41cc59cdb7346e91530594}{Rand}} (\mbox{\hyperlink{struct_integer}{Integer}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_integer}{Integer}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a3b44b79fa32ad2a96f191576ce8eb729}{Rand}} (\mbox{\hyperlink{class_real}{Real}} Argument1, \mbox{\hyperlink{class_real}{Real}} Argument2, \mbox{\hyperlink{class_integer}{Integer}} Argument3)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a4f240790365ae7ffe0db38a39c85a99f}{Rand}} (\mbox{\hyperlink{struct_integer}{Integer}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_integer}{Integer}} \+\_\+\+Argument2, \mbox{\hyperlink{struct_integer}{Integer}} \+\_\+\+Argument3)
 \item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a4ed5596dac2a280d6f8fff313d33519e}{Rand}} (\mbox{\hyperlink{class_integer}{Integer}} Argument1, \mbox{\hyperlink{class_integer}{Integer}} Argument2)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a5c7b42ff712ab48b71252c00475ece1b}{Nearest\+Real}} (\mbox{\hyperlink{struct_integer}{Integer}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a38a5db168ce9b1fc2ea144fa65fc1a54}{Rand}} (\mbox{\hyperlink{class_integer}{Integer}} Argument1, \mbox{\hyperlink{class_integer}{Integer}} Argument2, \mbox{\hyperlink{class_integer}{Integer}} Argument3)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a9ce4fe8047c23fdc66067efdf0029f6a}{Nearest\+Integer}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_affe75fa0f9dd156f06f02584b82c1649}{Nearest\+Real}} (\mbox{\hyperlink{class_integer}{Integer}} Argument1)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a552050017e25ae6f4952ac5fa56e30c0}{Floor\+Integer}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_aaff43751c3cffb6c6ba9f1d4a899a087}{Nearest\+Integer}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a921d62b51c937ee55f65b6271d9b4007}{Trunc\+Integer}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a3733fa45b5bf39e542aee0aa58b5c862}{Floor\+Integer}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_add0ce5fc22dfb20fbe9a0181616ac7c7}{Ceiling\+Integer}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a25c832e4f5998f1d0874473dd63f7dbf}{Trunc\+Integer}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a5eada03f7221ebadf36e8e07d72971a2}{Distance}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a2dcf7697c2e11d4174982bd99f820c3b}{Ceiling\+Integer}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a207b3f87eb54f5a3001aa97207833e8e}{Distance}} (\mbox{\hyperlink{struct_vec2}{Vec2}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_vec2}{Vec2}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a38fa98d0ab0f93c0d20927487b2315f4}{Distance}} (\mbox{\hyperlink{class_real}{Real}} Argument1, \mbox{\hyperlink{class_real}{Real}} Argument2)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a6c86b71d63a431187235c5dc7315d50f}{Distance}} (\mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a972866ad51ee9fd0d9661b2366f7730b}{Distance}} (\mbox{\hyperlink{class_vec2}{Vec2}} Argument1, \mbox{\hyperlink{class_vec2}{Vec2}} Argument2)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a2775edd84ac9cd1c2df730d9a3b64ca0}{Dot\+Product}} (\mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a9c2fba2c358f21d2558c32922869bd18}{Distance}} (\mbox{\hyperlink{class_vec3}{Vec3}} Argument1, \mbox{\hyperlink{class_vec3}{Vec3}} Argument2)
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{namespace_math_lib_a27de305533089854b0efeffe9e1eb5ea}{Cross\+Product}} (\mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a96301ebe4d434ea704c5cb4671a0c49a}{Dot\+Product}} (\mbox{\hyperlink{class_vec3}{Vec3}} Argument1, \mbox{\hyperlink{class_vec3}{Vec3}} Argument2)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a48f57df192f2b768d91dd8eb9b2bfe46}{Angle}} (\mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_vec3}{Vec3}} \mbox{\hyperlink{namespace_math_lib_a3413e02c98669d69f46bb41d26967f32}{Cross\+Product}} (\mbox{\hyperlink{class_vec3}{Vec3}} Argument1, \mbox{\hyperlink{class_vec3}{Vec3}} Argument2)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_acdaa54b1f5b5ce0304870cbbf82710de}{Oriented\+Angle}} (\mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_vec3}{Vec3}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ae87167929340edc45db6fc85985dab89}{Angle}} (\mbox{\hyperlink{class_vec3}{Vec3}} Argument1, \mbox{\hyperlink{class_vec3}{Vec3}} Argument2)
-\item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ad276ced981dd829d11bbd83c9f7445ec}{Oriented\+Angle}} (\mbox{\hyperlink{class_vec3}{Vec3}} Argument1, \mbox{\hyperlink{class_vec3}{Vec3}} Argument2)
-\item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ab1dd71351db053e2601feb682480ef97}{Angle}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+\+Radian1, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Radian2)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ab1dd71351db053e2601feb682480ef97}{Angle}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Radian1, \mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Radian2)
 \begin{DoxyCompactList}\small\item\em Returns the smallest angle from A to B. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ab1aeed6c8556e73eda5c8f8ddabd3057}{Angle}} (\mbox{\hyperlink{class_vec2}{Vec2}} Argument1, \mbox{\hyperlink{class_vec2}{Vec2}} Argument2)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_acb468d376026db2cec173a85269986fc}{Angle}} (\mbox{\hyperlink{struct_vec2}{Vec2}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_vec2}{Vec2}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_abcbc3599ce503c93f2fb44259dc25661}{Oriented\+Angle}} (\mbox{\hyperlink{class_vec2}{Vec2}} Argument1, \mbox{\hyperlink{class_vec2}{Vec2}} Argument2)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ac1450c407f5b089b9448a1f0fdc0a3ac}{Oriented\+Angle}} (\mbox{\hyperlink{struct_vec2}{Vec2}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_vec2}{Vec2}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a7fed6b63e6aabb344d6fd4c30d60a63e}{PI}} ()
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a7fed6b63e6aabb344d6fd4c30d60a63e}{PI}} ()
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_acdbca57896208c8b17afce00c1fe7911}{Asin}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_aa5cc50a9cf2555dd4eeb17e7e30a23be}{Asin}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ad347b9f2e988824797dc1e968b96b88d}{Acos}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_aa1c741dadb35c0a82e23a11fb44069aa}{Acos}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ac8c75c2e319d1ffcaa0d0702cdf00d0f}{Pow}} (\mbox{\hyperlink{class_real}{Real}} Argument1, \mbox{\hyperlink{class_real}{Real}} Argument2)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a6e6fd8430f9677a7610df345980f2545}{Pow}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1, \mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument2)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_ad58b9177a5f905f543cb87a46e6c5fff}{Ln}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a8f4d611bbf2d24cd1de8688855569aa6}{Ln}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a2bd4b87a898cc3cce512b05cefc4c6c3}{Sqrt}} (\mbox{\hyperlink{class_real}{Real}} Argument1)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a72cbbc54d4540f03a20c6d31438a22ae}{Sqrt}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Argument1)
 \item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a30248e36f296afcc3385a324c75e346f}{Max}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+A, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+B)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a30248e36f296afcc3385a324c75e346f}{Max}} (\mbox{\hyperlink{struct_integer}{Integer}} \+\_\+A, \mbox{\hyperlink{struct_integer}{Integer}} \+\_\+B)
 \begin{DoxyCompactList}\small\item\em Returns the maximum between A and B. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_aba69fc1fe37b433485e7c4c0a08b3bb5}{Min}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+A, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+B)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_aba69fc1fe37b433485e7c4c0a08b3bb5}{Min}} (\mbox{\hyperlink{struct_integer}{Integer}} \+\_\+A, \mbox{\hyperlink{struct_integer}{Integer}} \+\_\+B)
 \begin{DoxyCompactList}\small\item\em Returns the minimum between A and B. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a019cf62676ef930db57822d90707c503}{Clamp}} (\mbox{\hyperlink{class_integer}{Integer}} \+\_\+X, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Min, \mbox{\hyperlink{class_integer}{Integer}} \+\_\+\+Max)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_math_lib_a019cf62676ef930db57822d90707c503}{Clamp}} (\mbox{\hyperlink{struct_integer}{Integer}} \+\_\+X, \mbox{\hyperlink{struct_integer}{Integer}} \+\_\+\+Min, \mbox{\hyperlink{struct_integer}{Integer}} \+\_\+\+Max)
 \begin{DoxyCompactList}\small\item\em Returns the value X clamped to the range Min..Max. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_af07e59491d69f20a778ec2ea417736d4}{Max}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+A, \mbox{\hyperlink{class_real}{Real}} \+\_\+B)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_af07e59491d69f20a778ec2ea417736d4}{Max}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+A, \mbox{\hyperlink{struct_real}{Real}} \+\_\+B)
 \begin{DoxyCompactList}\small\item\em Returns the maximum between A and B. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a0a82921bf198d6aa713b2a945894ab09}{Min}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+A, \mbox{\hyperlink{class_real}{Real}} \+\_\+B)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a0a82921bf198d6aa713b2a945894ab09}{Min}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+A, \mbox{\hyperlink{struct_real}{Real}} \+\_\+B)
 \begin{DoxyCompactList}\small\item\em Returns the minimum between A and B. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a5a6f6e95ff0906ea2f93e870e6391f72}{Clamp}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+X, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Min, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Max)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a5a6f6e95ff0906ea2f93e870e6391f72}{Clamp}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+X, \mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Min, \mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Max)
 \begin{DoxyCompactList}\small\item\em Returns the value X clamped to the range Min..Max. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_math_lib_aff82d7a4c0acc8442d9b7b285b858fba}{Mod}} (\mbox{\hyperlink{class_real}{Real}} \+\_\+X, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Min, \mbox{\hyperlink{class_real}{Real}} \+\_\+\+Max)
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_aff82d7a4c0acc8442d9b7b285b858fba}{Mod}} (\mbox{\hyperlink{struct_real}{Real}} \+\_\+X, \mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Min, \mbox{\hyperlink{struct_real}{Real}} \+\_\+\+Max)
 \begin{DoxyCompactList}\small\item\em Returns the modulus of X in the range Min..Max. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a3c4d742f51414a62e98a80004acb814c}{Pi}} = 3.\+14159
+\item 
+const \mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_math_lib_a80447fa6db2d91e112e477952ff9a5f6}{Tau}} = 6.\+28319
+\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Standard mathematical operations, angles are in radians unless specified. 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespace_math_lib_af0db166c5f92d64ce3efa931b96bbb87}\label{namespace_math_lib_af0db166c5f92d64ce3efa931b96bbb87}} 
+\mbox{\Hypertarget{namespace_math_lib_a6daa1610b7c354db7d8c51a0e6237cf0}\label{namespace_math_lib_a6daa1610b7c354db7d8c51a0e6237cf0}} 
 \index{MathLib@{MathLib}!Abs@{Abs}}
 \index{Abs@{Abs}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Abs()}{Abs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Math\+Lib\+::\+Abs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Math\+Lib\+::\+Abs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a82671e85b2146fd59dff7d8318763ddf}\label{namespace_math_lib_a82671e85b2146fd59dff7d8318763ddf}} 
+\mbox{\Hypertarget{namespace_math_lib_af5215706a45b371e917c31ed57e8344c}\label{namespace_math_lib_af5215706a45b371e917c31ed57e8344c}} 
 \index{MathLib@{MathLib}!Abs@{Abs}}
 \index{Abs@{Abs}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Abs()}{Abs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Abs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Abs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_ad347b9f2e988824797dc1e968b96b88d}\label{namespace_math_lib_ad347b9f2e988824797dc1e968b96b88d}} 
+\mbox{\Hypertarget{namespace_math_lib_aa1c741dadb35c0a82e23a11fb44069aa}\label{namespace_math_lib_aa1c741dadb35c0a82e23a11fb44069aa}} 
 \index{MathLib@{MathLib}!Acos@{Acos}}
 \index{Acos@{Acos}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Acos()}{Acos()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Acos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Acos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{namespace_math_lib_ab1dd71351db053e2601feb682480ef97}\label{namespace_math_lib_ab1dd71351db053e2601feb682480ef97}} 
 \index{MathLib@{MathLib}!Angle@{Angle}}
 \index{Angle@{Angle}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Angle()}{Angle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+\+Radian1,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+\+Radian2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Radian1,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Radian2 }\end{DoxyParamCaption})}
 
 
 
 Returns the smallest angle from A to B. 
 
-\mbox{\Hypertarget{namespace_math_lib_ab1aeed6c8556e73eda5c8f8ddabd3057}\label{namespace_math_lib_ab1aeed6c8556e73eda5c8f8ddabd3057}} 
+\mbox{\Hypertarget{namespace_math_lib_acb468d376026db2cec173a85269986fc}\label{namespace_math_lib_acb468d376026db2cec173a85269986fc}} 
 \index{MathLib@{MathLib}!Angle@{Angle}}
 \index{Angle@{Angle}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Angle()}{Angle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec2}{Vec2}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_vec2}{Vec2}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec2}{Vec2}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_vec2}{Vec2}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_ae87167929340edc45db6fc85985dab89}\label{namespace_math_lib_ae87167929340edc45db6fc85985dab89}} 
+\mbox{\Hypertarget{namespace_math_lib_a48f57df192f2b768d91dd8eb9b2bfe46}\label{namespace_math_lib_a48f57df192f2b768d91dd8eb9b2bfe46}} 
 \index{MathLib@{MathLib}!Angle@{Angle}}
 \index{Angle@{Angle}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Angle()}{Angle()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_acdbca57896208c8b17afce00c1fe7911}\label{namespace_math_lib_acdbca57896208c8b17afce00c1fe7911}} 
+\mbox{\Hypertarget{namespace_math_lib_aa5cc50a9cf2555dd4eeb17e7e30a23be}\label{namespace_math_lib_aa5cc50a9cf2555dd4eeb17e7e30a23be}} 
 \index{MathLib@{MathLib}!Asin@{Asin}}
 \index{Asin@{Asin}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Asin()}{Asin()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Asin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Asin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a4aab0176feec2947f129613deb109df5}\label{namespace_math_lib_a4aab0176feec2947f129613deb109df5}} 
+\mbox{\Hypertarget{namespace_math_lib_a3f4fb09e636b6d41f2389a8a068509a6}\label{namespace_math_lib_a3f4fb09e636b6d41f2389a8a068509a6}} 
 \index{MathLib@{MathLib}!Atan2@{Atan2}}
 \index{Atan2@{Atan2}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Atan2()}{Atan2()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Atan2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Atan2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a2dcf7697c2e11d4174982bd99f820c3b}\label{namespace_math_lib_a2dcf7697c2e11d4174982bd99f820c3b}} 
+\mbox{\Hypertarget{namespace_math_lib_add0ce5fc22dfb20fbe9a0181616ac7c7}\label{namespace_math_lib_add0ce5fc22dfb20fbe9a0181616ac7c7}} 
 \index{MathLib@{MathLib}!CeilingInteger@{CeilingInteger}}
 \index{CeilingInteger@{CeilingInteger}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{CeilingInteger()}{CeilingInteger()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Math\+Lib\+::\+Ceiling\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Math\+Lib\+::\+Ceiling\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{namespace_math_lib_a019cf62676ef930db57822d90707c503}\label{namespace_math_lib_a019cf62676ef930db57822d90707c503}} 
 \index{MathLib@{MathLib}!Clamp@{Clamp}}
 \index{Clamp@{Clamp}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Math\+Lib\+::\+Clamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{\+\_\+X,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{\+\_\+\+Min,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{\+\_\+\+Max }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Math\+Lib\+::\+Clamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+X,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+\+Min,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+\+Max }\end{DoxyParamCaption})}
 
 
 
@@ -162,77 +177,81 @@ Returns the value X clamped to the range Min..Max.
 \index{MathLib@{MathLib}!Clamp@{Clamp}}
 \index{Clamp@{Clamp}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Clamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+X,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+\+Min,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+\+Max }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Clamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+X,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Min,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Max }\end{DoxyParamCaption})}
 
 
 
 Returns the value X clamped to the range Min..Max. 
 
-\mbox{\Hypertarget{namespace_math_lib_a62e31fc724f12f18f72088e2ae84a1c1}\label{namespace_math_lib_a62e31fc724f12f18f72088e2ae84a1c1}} 
+\mbox{\Hypertarget{namespace_math_lib_ae319dd3622e15b7926618000a913104b}\label{namespace_math_lib_ae319dd3622e15b7926618000a913104b}} 
 \index{MathLib@{MathLib}!Cos@{Cos}}
 \index{Cos@{Cos}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Cos()}{Cos()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Cos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Cos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a3413e02c98669d69f46bb41d26967f32}\label{namespace_math_lib_a3413e02c98669d69f46bb41d26967f32}} 
+\mbox{\Hypertarget{namespace_math_lib_a27de305533089854b0efeffe9e1eb5ea}\label{namespace_math_lib_a27de305533089854b0efeffe9e1eb5ea}} 
 \index{MathLib@{MathLib}!CrossProduct@{CrossProduct}}
 \index{CrossProduct@{CrossProduct}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{CrossProduct()}{CrossProduct()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_vec3}{Vec3}} Math\+Lib\+::\+Cross\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} Math\+Lib\+::\+Cross\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a7c6ce63d2c882e6e38ec9ee6b2e44c5c}\label{namespace_math_lib_a7c6ce63d2c882e6e38ec9ee6b2e44c5c}} 
+\mbox{\Hypertarget{namespace_math_lib_aeb53de3e8087c3dca2d3caacfcc3ca98}\label{namespace_math_lib_aeb53de3e8087c3dca2d3caacfcc3ca98}} 
 \index{MathLib@{MathLib}!DegToRad@{DegToRad}}
 \index{DegToRad@{DegToRad}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{DegToRad()}{DegToRad()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Deg\+To\+Rad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Deg\+To\+Rad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Degree }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a38fa98d0ab0f93c0d20927487b2315f4}\label{namespace_math_lib_a38fa98d0ab0f93c0d20927487b2315f4}} 
+
+
+Converts an angle from degrees to radians. 
+
+\mbox{\Hypertarget{namespace_math_lib_a5eada03f7221ebadf36e8e07d72971a2}\label{namespace_math_lib_a5eada03f7221ebadf36e8e07d72971a2}} 
 \index{MathLib@{MathLib}!Distance@{Distance}}
 \index{Distance@{Distance}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Distance()}{Distance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a972866ad51ee9fd0d9661b2366f7730b}\label{namespace_math_lib_a972866ad51ee9fd0d9661b2366f7730b}} 
+\mbox{\Hypertarget{namespace_math_lib_a207b3f87eb54f5a3001aa97207833e8e}\label{namespace_math_lib_a207b3f87eb54f5a3001aa97207833e8e}} 
 \index{MathLib@{MathLib}!Distance@{Distance}}
 \index{Distance@{Distance}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Distance()}{Distance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec2}{Vec2}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_vec2}{Vec2}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec2}{Vec2}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_vec2}{Vec2}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a9c2fba2c358f21d2558c32922869bd18}\label{namespace_math_lib_a9c2fba2c358f21d2558c32922869bd18}} 
+\mbox{\Hypertarget{namespace_math_lib_a6c86b71d63a431187235c5dc7315d50f}\label{namespace_math_lib_a6c86b71d63a431187235c5dc7315d50f}} 
 \index{MathLib@{MathLib}!Distance@{Distance}}
 \index{Distance@{Distance}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Distance()}{Distance()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a96301ebe4d434ea704c5cb4671a0c49a}\label{namespace_math_lib_a96301ebe4d434ea704c5cb4671a0c49a}} 
+\mbox{\Hypertarget{namespace_math_lib_a2775edd84ac9cd1c2df730d9a3b64ca0}\label{namespace_math_lib_a2775edd84ac9cd1c2df730d9a3b64ca0}} 
 \index{MathLib@{MathLib}!DotProduct@{DotProduct}}
 \index{DotProduct@{DotProduct}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{DotProduct()}{DotProduct()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Dot\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Dot\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_ac0be71fc98349fd7f1464367f6db55d7}\label{namespace_math_lib_ac0be71fc98349fd7f1464367f6db55d7}} 
+\mbox{\Hypertarget{namespace_math_lib_a3bbe6b4698fe11dc1b9d3fc7af986813}\label{namespace_math_lib_a3bbe6b4698fe11dc1b9d3fc7af986813}} 
 \index{MathLib@{MathLib}!Exp@{Exp}}
 \index{Exp@{Exp}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Exp()}{Exp()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Exp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Exp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a3733fa45b5bf39e542aee0aa58b5c862}\label{namespace_math_lib_a3733fa45b5bf39e542aee0aa58b5c862}} 
+\mbox{\Hypertarget{namespace_math_lib_a552050017e25ae6f4952ac5fa56e30c0}\label{namespace_math_lib_a552050017e25ae6f4952ac5fa56e30c0}} 
 \index{MathLib@{MathLib}!FloorInteger@{FloorInteger}}
 \index{FloorInteger@{FloorInteger}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{FloorInteger()}{FloorInteger()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Math\+Lib\+::\+Floor\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Math\+Lib\+::\+Floor\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_ad58b9177a5f905f543cb87a46e6c5fff}\label{namespace_math_lib_ad58b9177a5f905f543cb87a46e6c5fff}} 
+\mbox{\Hypertarget{namespace_math_lib_a8f4d611bbf2d24cd1de8688855569aa6}\label{namespace_math_lib_a8f4d611bbf2d24cd1de8688855569aa6}} 
 \index{MathLib@{MathLib}!Ln@{Ln}}
 \index{Ln@{Ln}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Ln()}{Ln()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Ln (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Ln (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{namespace_math_lib_a30248e36f296afcc3385a324c75e346f}\label{namespace_math_lib_a30248e36f296afcc3385a324c75e346f}} 
 \index{MathLib@{MathLib}!Max@{Max}}
 \index{Max@{Max}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Math\+Lib\+::\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{\+\_\+A,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{\+\_\+B }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Math\+Lib\+::\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+A,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+B }\end{DoxyParamCaption})}
 
 
 
@@ -242,7 +261,7 @@ Returns the maximum between A and B.
 \index{MathLib@{MathLib}!Max@{Max}}
 \index{Max@{Max}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Max()}{Max()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+A,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+B }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Max (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+A,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+B }\end{DoxyParamCaption})}
 
 
 
@@ -252,7 +271,7 @@ Returns the maximum between A and B.
 \index{MathLib@{MathLib}!Min@{Min}}
 \index{Min@{Min}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Math\+Lib\+::\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{\+\_\+A,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{\+\_\+B }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Math\+Lib\+::\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+A,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+B }\end{DoxyParamCaption})}
 
 
 
@@ -262,7 +281,7 @@ Returns the minimum between A and B.
 \index{MathLib@{MathLib}!Min@{Min}}
 \index{Min@{Min}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Min()}{Min()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+A,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+B }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Min (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+A,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+B }\end{DoxyParamCaption})}
 
 
 
@@ -272,105 +291,124 @@ Returns the minimum between A and B.
 \index{MathLib@{MathLib}!Mod@{Mod}}
 \index{Mod@{Mod}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Mod()}{Mod()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Mod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+X,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+\+Min,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{\+\_\+\+Max }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Mod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+X,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Min,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Max }\end{DoxyParamCaption})}
 
 
 
 Returns the modulus of X in the range Min..Max. 
 
-\mbox{\Hypertarget{namespace_math_lib_aaff43751c3cffb6c6ba9f1d4a899a087}\label{namespace_math_lib_aaff43751c3cffb6c6ba9f1d4a899a087}} 
+\mbox{\Hypertarget{namespace_math_lib_a9ce4fe8047c23fdc66067efdf0029f6a}\label{namespace_math_lib_a9ce4fe8047c23fdc66067efdf0029f6a}} 
 \index{MathLib@{MathLib}!NearestInteger@{NearestInteger}}
 \index{NearestInteger@{NearestInteger}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{NearestInteger()}{NearestInteger()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Math\+Lib\+::\+Nearest\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Math\+Lib\+::\+Nearest\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_affe75fa0f9dd156f06f02584b82c1649}\label{namespace_math_lib_affe75fa0f9dd156f06f02584b82c1649}} 
+\mbox{\Hypertarget{namespace_math_lib_a5c7b42ff712ab48b71252c00475ece1b}\label{namespace_math_lib_a5c7b42ff712ab48b71252c00475ece1b}} 
 \index{MathLib@{MathLib}!NearestReal@{NearestReal}}
 \index{NearestReal@{NearestReal}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{NearestReal()}{NearestReal()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Nearest\+Real (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Nearest\+Real (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_abcbc3599ce503c93f2fb44259dc25661}\label{namespace_math_lib_abcbc3599ce503c93f2fb44259dc25661}} 
+\mbox{\Hypertarget{namespace_math_lib_ac1450c407f5b089b9448a1f0fdc0a3ac}\label{namespace_math_lib_ac1450c407f5b089b9448a1f0fdc0a3ac}} 
 \index{MathLib@{MathLib}!OrientedAngle@{OrientedAngle}}
 \index{OrientedAngle@{OrientedAngle}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{OrientedAngle()}{OrientedAngle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Oriented\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec2}{Vec2}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_vec2}{Vec2}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Oriented\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec2}{Vec2}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_vec2}{Vec2}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_ad276ced981dd829d11bbd83c9f7445ec}\label{namespace_math_lib_ad276ced981dd829d11bbd83c9f7445ec}} 
+\mbox{\Hypertarget{namespace_math_lib_acdaa54b1f5b5ce0304870cbbf82710de}\label{namespace_math_lib_acdaa54b1f5b5ce0304870cbbf82710de}} 
 \index{MathLib@{MathLib}!OrientedAngle@{OrientedAngle}}
 \index{OrientedAngle@{OrientedAngle}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{OrientedAngle()}{OrientedAngle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Oriented\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_vec3}{Vec3}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Oriented\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_vec3}{Vec3}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{namespace_math_lib_a7fed6b63e6aabb344d6fd4c30d60a63e}\label{namespace_math_lib_a7fed6b63e6aabb344d6fd4c30d60a63e}} 
 \index{MathLib@{MathLib}!PI@{PI}}
 \index{PI@{PI}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{PI()}{PI()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+PI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+PI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_ac8c75c2e319d1ffcaa0d0702cdf00d0f}\label{namespace_math_lib_ac8c75c2e319d1ffcaa0d0702cdf00d0f}} 
+\mbox{\Hypertarget{namespace_math_lib_a6e6fd8430f9677a7610df345980f2545}\label{namespace_math_lib_a6e6fd8430f9677a7610df345980f2545}} 
 \index{MathLib@{MathLib}!Pow@{Pow}}
 \index{Pow@{Pow}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Pow()}{Pow()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Pow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Pow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a3a5c390b0543e90a23fab3c9df908600}\label{namespace_math_lib_a3a5c390b0543e90a23fab3c9df908600}} 
+\mbox{\Hypertarget{namespace_math_lib_ad952a41c0174247a2ee4b286bd9ff1fa}\label{namespace_math_lib_ad952a41c0174247a2ee4b286bd9ff1fa}} 
 \index{MathLib@{MathLib}!RadToDeg@{RadToDeg}}
 \index{RadToDeg@{RadToDeg}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{RadToDeg()}{RadToDeg()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Rad\+To\+Deg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Rad\+To\+Deg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Radian }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a4ed5596dac2a280d6f8fff313d33519e}\label{namespace_math_lib_a4ed5596dac2a280d6f8fff313d33519e}} 
+
+
+Converts an angle from radians to degrees. 
+
+\mbox{\Hypertarget{namespace_math_lib_a9e6017c7be41cc59cdb7346e91530594}\label{namespace_math_lib_a9e6017c7be41cc59cdb7346e91530594}} 
 \index{MathLib@{MathLib}!Rand@{Rand}}
 \index{Rand@{Rand}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Rand()}{Rand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Math\+Lib\+::\+Rand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Math\+Lib\+::\+Rand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a38a5db168ce9b1fc2ea144fa65fc1a54}\label{namespace_math_lib_a38a5db168ce9b1fc2ea144fa65fc1a54}} 
+\mbox{\Hypertarget{namespace_math_lib_a4f240790365ae7ffe0db38a39c85a99f}\label{namespace_math_lib_a4f240790365ae7ffe0db38a39c85a99f}} 
 \index{MathLib@{MathLib}!Rand@{Rand}}
 \index{Rand@{Rand}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Rand()}{Rand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Math\+Lib\+::\+Rand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Argument2,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Argument3 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Math\+Lib\+::\+Rand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+\+Argument2,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+\+Argument3 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a889b57d15412780c14dba4127e5b8f33}\label{namespace_math_lib_a889b57d15412780c14dba4127e5b8f33}} 
+\mbox{\Hypertarget{namespace_math_lib_a6b4221f268047f118659bec3978427fc}\label{namespace_math_lib_a6b4221f268047f118659bec3978427fc}} 
 \index{MathLib@{MathLib}!Rand@{Rand}}
 \index{Rand@{Rand}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Rand()}{Rand()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Rand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Rand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument2 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a3b44b79fa32ad2a96f191576ce8eb729}\label{namespace_math_lib_a3b44b79fa32ad2a96f191576ce8eb729}} 
+\mbox{\Hypertarget{namespace_math_lib_a1cd548d7d0fe78792d2bf196baf45198}\label{namespace_math_lib_a1cd548d7d0fe78792d2bf196baf45198}} 
 \index{MathLib@{MathLib}!Rand@{Rand}}
 \index{Rand@{Rand}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Rand()}{Rand()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Rand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1,  }\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument2,  }\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Argument3 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Rand (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1,  }\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument2,  }\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+\+Argument3 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_af4ab071b26c049fe170ed021a526973b}\label{namespace_math_lib_af4ab071b26c049fe170ed021a526973b}} 
+\mbox{\Hypertarget{namespace_math_lib_a04916c4fce4406e72970064f3aec2515}\label{namespace_math_lib_a04916c4fce4406e72970064f3aec2515}} 
 \index{MathLib@{MathLib}!Sin@{Sin}}
 \index{Sin@{Sin}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Sin()}{Sin()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Sin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Sin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a2bd4b87a898cc3cce512b05cefc4c6c3}\label{namespace_math_lib_a2bd4b87a898cc3cce512b05cefc4c6c3}} 
+\mbox{\Hypertarget{namespace_math_lib_a72cbbc54d4540f03a20c6d31438a22ae}\label{namespace_math_lib_a72cbbc54d4540f03a20c6d31438a22ae}} 
 \index{MathLib@{MathLib}!Sqrt@{Sqrt}}
 \index{Sqrt@{Sqrt}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Sqrt()}{Sqrt()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Sqrt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Sqrt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a775c75cf4480707c6f02f1ee0d93cdf3}\label{namespace_math_lib_a775c75cf4480707c6f02f1ee0d93cdf3}} 
+\mbox{\Hypertarget{namespace_math_lib_a4117b12fbc9ba8fd27ed02654a20b488}\label{namespace_math_lib_a4117b12fbc9ba8fd27ed02654a20b488}} 
 \index{MathLib@{MathLib}!Tan@{Tan}}
 \index{Tan@{Tan}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{Tan()}{Tan()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+Tan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Tan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_aa99b79fc356289e59a7d1b7c416c53f1}\label{namespace_math_lib_aa99b79fc356289e59a7d1b7c416c53f1}} 
+\mbox{\Hypertarget{namespace_math_lib_a33b493445be4d1a2b652d4513f29bc3d}\label{namespace_math_lib_a33b493445be4d1a2b652d4513f29bc3d}} 
 \index{MathLib@{MathLib}!ToReal@{ToReal}}
 \index{ToReal@{ToReal}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{ToReal()}{ToReal()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Math\+Lib\+::\+To\+Real (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_integer}{Integer}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+To\+Real (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_integer}{Integer}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{namespace_math_lib_a25c832e4f5998f1d0874473dd63f7dbf}\label{namespace_math_lib_a25c832e4f5998f1d0874473dd63f7dbf}} 
+\mbox{\Hypertarget{namespace_math_lib_a921d62b51c937ee55f65b6271d9b4007}\label{namespace_math_lib_a921d62b51c937ee55f65b6271d9b4007}} 
 \index{MathLib@{MathLib}!TruncInteger@{TruncInteger}}
 \index{TruncInteger@{TruncInteger}!MathLib@{MathLib}}
 \doxysubsubsection{\texorpdfstring{TruncInteger()}{TruncInteger()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Math\+Lib\+::\+Trunc\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_real}{Real}}}]{Argument1 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Math\+Lib\+::\+Trunc\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_real}{Real}}}]{\+\_\+\+Argument1 }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespace_math_lib_a3c4d742f51414a62e98a80004acb814c}\label{namespace_math_lib_a3c4d742f51414a62e98a80004acb814c}} 
+\index{MathLib@{MathLib}!Pi@{Pi}}
+\index{Pi@{Pi}!MathLib@{MathLib}}
+\doxysubsubsection{\texorpdfstring{Pi}{Pi}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Pi = 3.\+14159}
+
+\mbox{\Hypertarget{namespace_math_lib_a80447fa6db2d91e112e477952ff9a5f6}\label{namespace_math_lib_a80447fa6db2d91e112e477952ff9a5f6}} 
+\index{MathLib@{MathLib}!Tau@{Tau}}
+\index{Tau@{Tau}!MathLib@{MathLib}}
+\doxysubsubsection{\texorpdfstring{Tau}{Tau}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_real}{Real}} Math\+Lib\+::\+Tau = 6.\+28319}
 

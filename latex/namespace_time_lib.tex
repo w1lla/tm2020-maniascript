@@ -1,5 +1,10 @@
 \hypertarget{namespace_time_lib}{}\doxysection{Time\+Lib Namespace Reference}
 \label{namespace_time_lib}\index{TimeLib@{TimeLib}}
+
+
+Standard time manipulation functions.  
+
+
 \doxysubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
@@ -22,21 +27,28 @@ enum \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+D
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_ae1c55491218e93c7a92295f4867e66bd}{Format\+Date}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp, \mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}{E\+Date\+Formats}} \+\_\+\+Format)
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{namespace_time_lib_ae1c55491218e93c7a92295f4867e66bd}{Format\+Date}} (\mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Timestamp, \mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}{E\+Date\+Formats}} \+\_\+\+Format)
 \begin{DoxyCompactList}\small\item\em Returns the date corresponding to a timestamp, formatted according to the locale. Not available on servers. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_a9a36b23165d90326d3278547c4c6a8c2}{Format\+Delta}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp2, \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}} \+\_\+\+Format)
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{namespace_time_lib_a9a36b23165d90326d3278547c4c6a8c2}{Format\+Delta}} (\mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Timestamp2, \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}} \+\_\+\+Format)
 \begin{DoxyCompactList}\small\item\em Returns the duration between 2 timestamps, formatted according to the locale. Not available on servers. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_ad11de83d1793ad46f46a25b394cfcbfb}{Format\+Delta}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Delta, \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}} \+\_\+\+Format)
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{namespace_time_lib_ad11de83d1793ad46f46a25b394cfcbfb}{Format\+Delta}} (\mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Delta, \mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}} \+\_\+\+Format)
 \begin{DoxyCompactList}\small\item\em Returns the duration Delta formatted according to the locale. Not available on servers. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_time_lib_ad802f0c578558ee75aa8bce738ec8f6f}{Compare}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp2)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_time_lib_ad802f0c578558ee75aa8bce738ec8f6f}{Compare}} (\mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Timestamp2)
 \begin{DoxyCompactList}\small\item\em Compares 2 timestamps. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_real}{Real}} \mbox{\hyperlink{namespace_time_lib_a9a26b6eb869f43c3e5319025a280edf2}{Clamp01}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Boundary1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Boundary2, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp)
-\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{class_real}{Real}} between 0 and 1, given an interval and a timestamp. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_text}{Text}} \mbox{\hyperlink{namespace_time_lib_a1717b5cebb9be21540e240308894ffa3}{Get\+Current}} ()
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_time_lib_a9a26b6eb869f43c3e5319025a280edf2}{Clamp01}} (\mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Boundary1, \mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Boundary2, \mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Timestamp)
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{struct_real}{Real}} between 0 and 1, given an interval and a timestamp. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_time_lib_a013e41aefcda783c00860b2031c99338}{Clamp01\+T\+Z\+Day}} (\mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Timestamp)
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{struct_real}{Real}} between 0 and 1, given a timestamp, according to the day cycle in local timezone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_real}{Real}} \mbox{\hyperlink{namespace_time_lib_a751dae46c98927dfe54592e2094ad464}{Clamp01\+U\+T\+C\+Day}} (\mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Timestamp)
+\begin{DoxyCompactList}\small\item\em Returns a \mbox{\hyperlink{struct_real}{Real}} between 0 and 1, given a timestamp, according to the day cycle in U\+TC timezone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_text}{Text}} \mbox{\hyperlink{namespace_time_lib_a1717b5cebb9be21540e240308894ffa3}{Get\+Current}} ()
 \begin{DoxyCompactList}\small\item\em Gets current timestamp. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_integer}{Integer}} \mbox{\hyperlink{namespace_time_lib_a44ea3b8bdac601cc2ca87b11ca3dfee1}{Get\+Delta}} (\mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{class_text}{Text}} \+\_\+\+Timestamp2)
+\mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{namespace_time_lib_a44ea3b8bdac601cc2ca87b11ca3dfee1}{Get\+Delta}} (\mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Timestamp1, \mbox{\hyperlink{struct_text}{Text}} \+\_\+\+Timestamp2)
 \begin{DoxyCompactList}\small\item\em Returns the duration in seconds between 2 timestamps. May be clamped if huge. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Standard time manipulation functions. 
 
 \doxysubsection{Enumeration Type Documentation}
 \mbox{\Hypertarget{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}\label{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}} 
@@ -102,11 +114,11 @@ Chrono&\\
 \index{TimeLib@{TimeLib}!Clamp01@{Clamp01}}
 \index{Clamp01@{Clamp01}!TimeLib@{TimeLib}}
 \doxysubsubsection{\texorpdfstring{Clamp01()}{Clamp01()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_real}{Real}} Time\+Lib\+::\+Clamp01 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Boundary1,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Boundary2,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Time\+Lib\+::\+Clamp01 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Boundary1,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Boundary2,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Timestamp }\end{DoxyParamCaption})}
 
 
 
-Returns a \mbox{\hyperlink{class_real}{Real}} between 0 and 1, given an interval and a timestamp. 
+Returns a \mbox{\hyperlink{struct_real}{Real}} between 0 and 1, given an interval and a timestamp. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -117,11 +129,41 @@ Returns a \mbox{\hyperlink{class_real}{Real}} between 0 and 1, given an interval
 {\em \+\_\+\+Timestamp} & \+: Timestamp to check \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{namespace_time_lib_a013e41aefcda783c00860b2031c99338}\label{namespace_time_lib_a013e41aefcda783c00860b2031c99338}} 
+\index{TimeLib@{TimeLib}!Clamp01TZDay@{Clamp01TZDay}}
+\index{Clamp01TZDay@{Clamp01TZDay}!TimeLib@{TimeLib}}
+\doxysubsubsection{\texorpdfstring{Clamp01TZDay()}{Clamp01TZDay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Time\+Lib\+::\+Clamp01\+T\+Z\+Day (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Timestamp }\end{DoxyParamCaption})}
+
+
+
+Returns a \mbox{\hyperlink{struct_real}{Real}} between 0 and 1, given a timestamp, according to the day cycle in local timezone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Timestamp} & \+: Timestamp to check \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespace_time_lib_a751dae46c98927dfe54592e2094ad464}\label{namespace_time_lib_a751dae46c98927dfe54592e2094ad464}} 
+\index{TimeLib@{TimeLib}!Clamp01UTCDay@{Clamp01UTCDay}}
+\index{Clamp01UTCDay@{Clamp01UTCDay}!TimeLib@{TimeLib}}
+\doxysubsubsection{\texorpdfstring{Clamp01UTCDay()}{Clamp01UTCDay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_real}{Real}} Time\+Lib\+::\+Clamp01\+U\+T\+C\+Day (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Timestamp }\end{DoxyParamCaption})}
+
+
+
+Returns a \mbox{\hyperlink{struct_real}{Real}} between 0 and 1, given a timestamp, according to the day cycle in U\+TC timezone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+Timestamp} & \+: Timestamp to check \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{namespace_time_lib_ad802f0c578558ee75aa8bce738ec8f6f}\label{namespace_time_lib_ad802f0c578558ee75aa8bce738ec8f6f}} 
 \index{TimeLib@{TimeLib}!Compare@{Compare}}
 \index{Compare@{Compare}!TimeLib@{TimeLib}}
 \doxysubsubsection{\texorpdfstring{Compare()}{Compare()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Time\+Lib\+::\+Compare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp1,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Time\+Lib\+::\+Compare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Timestamp1,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Timestamp2 }\end{DoxyParamCaption})}
 
 
 
@@ -138,7 +180,7 @@ Compares 2 timestamps.
 \index{TimeLib@{TimeLib}!FormatDate@{FormatDate}}
 \index{FormatDate@{FormatDate}!TimeLib@{TimeLib}}
 \doxysubsubsection{\texorpdfstring{FormatDate()}{FormatDate()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} Time\+Lib\+::\+Format\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp,  }\item[{\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}{E\+Date\+Formats}}}]{\+\_\+\+Format }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} Time\+Lib\+::\+Format\+Date (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Timestamp,  }\item[{\mbox{\hyperlink{namespace_time_lib_a61bd18cc93cd6fa9cca4e2b66125afe8}{E\+Date\+Formats}}}]{\+\_\+\+Format }\end{DoxyParamCaption})}
 
 
 
@@ -155,7 +197,7 @@ Returns the date corresponding to a timestamp, formatted according to the locale
 \index{TimeLib@{TimeLib}!FormatDelta@{FormatDelta}}
 \index{FormatDelta@{FormatDelta}!TimeLib@{TimeLib}}
 \doxysubsubsection{\texorpdfstring{FormatDelta()}{FormatDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} Time\+Lib\+::\+Format\+Delta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Delta,  }\item[{\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}}}]{\+\_\+\+Format }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} Time\+Lib\+::\+Format\+Delta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Delta,  }\item[{\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}}}]{\+\_\+\+Format }\end{DoxyParamCaption})}
 
 
 
@@ -172,7 +214,7 @@ Returns the duration Delta formatted according to the locale. Not available on s
 \index{TimeLib@{TimeLib}!FormatDelta@{FormatDelta}}
 \index{FormatDelta@{FormatDelta}!TimeLib@{TimeLib}}
 \doxysubsubsection{\texorpdfstring{FormatDelta()}{FormatDelta()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} Time\+Lib\+::\+Format\+Delta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp1,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp2,  }\item[{\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}}}]{\+\_\+\+Format }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} Time\+Lib\+::\+Format\+Delta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Timestamp1,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Timestamp2,  }\item[{\mbox{\hyperlink{namespace_time_lib_ab25afd1fe35e44e43a5c27ef9d7ba863}{E\+Duration\+Formats}}}]{\+\_\+\+Format }\end{DoxyParamCaption})}
 
 
 
@@ -191,7 +233,7 @@ Returns the duration between 2 timestamps, formatted according to the locale. No
 \index{TimeLib@{TimeLib}!GetCurrent@{GetCurrent}}
 \index{GetCurrent@{GetCurrent}!TimeLib@{TimeLib}}
 \doxysubsubsection{\texorpdfstring{GetCurrent()}{GetCurrent()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_text}{Text}} Time\+Lib\+::\+Get\+Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_text}{Text}} Time\+Lib\+::\+Get\+Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -201,7 +243,7 @@ Gets current timestamp.
 \index{TimeLib@{TimeLib}!GetDelta@{GetDelta}}
 \index{GetDelta@{GetDelta}!TimeLib@{TimeLib}}
 \doxysubsubsection{\texorpdfstring{GetDelta()}{GetDelta()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_integer}{Integer}} Time\+Lib\+::\+Get\+Delta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp1,  }\item[{\mbox{\hyperlink{class_text}{Text}}}]{\+\_\+\+Timestamp2 }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_integer}{Integer}} Time\+Lib\+::\+Get\+Delta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Timestamp1,  }\item[{\mbox{\hyperlink{struct_text}{Text}}}]{\+\_\+\+Timestamp2 }\end{DoxyParamCaption})}
 
 
 
