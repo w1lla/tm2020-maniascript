@@ -123,7 +123,8 @@ enum \mbox{\hyperlink{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90c}{E\+
 \mbox{\hyperlink{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90ca1059a05ec31c45a08da50c99af66e003}{Respawn\+Pos}}, 
 \newline
 \mbox{\hyperlink{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90ca076cc7df9f79f9b7c49c96b9cc361b1a}{Sector}}, 
-\mbox{\hyperlink{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90ca2c08d85c8644077097569cbf15253d1f}{Light\+Ball}}, 
+\mbox{\hyperlink{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90ca6141fa42751bf7d7a0b0636404547801}{Light}}, 
+\mbox{\hyperlink{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90caf7daed38b36263118e8a80f42fd3c4eb}{Light\+Model}}, 
 \mbox{\hyperlink{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90ca941bce807ffc936905d6561d5d43a260}{None}}
  \}
 \item 
@@ -283,6 +284,8 @@ enum \mbox{\hyperlink{class_c_editor_mesh_a0639a4d88c4adb38dd7d3a32965e7ed2}{E\+
 \mbox{\hyperlink{class_c_image}{C\+Image}} \mbox{\hyperlink{class_c_editor_mesh_a47afa11f7891a40a0af13f9ce3ee5cde}{Material\+\_\+\+Get\+Bitmap}} (\mbox{\hyperlink{struct_ident}{Ident}} Material\+Id)
 \item 
 \mbox{\hyperlink{class_c_image}{C\+Image}} \mbox{\hyperlink{class_c_editor_mesh_a8891250f2930dd0c367825901fd4939d}{Material\+Dyna\+\_\+\+Get\+Bitmap}} (\mbox{\hyperlink{struct_ident}{Ident}} Material\+Id)
+\item 
+\mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_mesh_a520a008db872183912b6525e91e55b4a}{Material\+\_\+\+Is\+Special\+Colored}} (\mbox{\hyperlink{struct_ident}{Ident}} Material\+Id)
 \item 
 \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_mesh_a6eca246f6f9ca18b9c7206f1c03ca47c}{Material\+\_\+\+Matches\+Criterion}} (\mbox{\hyperlink{struct_ident}{Ident}} Material\+Id, \mbox{\hyperlink{class_c_editor_mesh_aedcd03d3f96e2cf34c83401cd5a19457}{C\+Editor\+Mesh\+::\+E\+Material\+Filter\+Criterion}} Result\+Set\+Handle)
 \item 
@@ -673,6 +676,12 @@ const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Te
 \item 
 const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_text}{Text}} $>$ \mbox{\hyperlink{class_c_editor_mesh_a23637237bbd4516655c9a00c4c257033}{Material\+Dyna\+Names}}
 \item 
+\mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_vec3}{Vec3}} $>$ \mbox{\hyperlink{class_c_editor_mesh_a89672665ef93660ce2adc30ce2211d23}{Material\+Last\+Used\+Colors}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{struct_vec3}{Vec3}} $>$ \mbox{\hyperlink{class_c_editor_mesh_a0e3abcf9d4dbfcf3edb5ab3cc8c6e9ba}{Material\+Base\+Colors}}
+\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \mbox{\hyperlink{class_c_editor_mesh_a308e8749fbbfcb4871b40087c71d6865}{Current\+Color\+For\+Special\+Materials}}
+\item 
 const \mbox{\hyperlink{struct_integer}{Integer}} \mbox{\hyperlink{class_c_editor_mesh_a0fe69099e718bd95d058936970b579c5}{Material\+\_\+\+Atlas\+\_\+\+Selected\+Sub\+Tex\+Index}}
 \item 
 const \mbox{\hyperlink{class_c_editor_mesh_a6714e5bf21b474ab2bdf740405c3dd3b}{C\+Editor\+Mesh\+::\+E\+Interaction}} \mbox{\hyperlink{class_c_editor_mesh_a1dcefb4f8dcd9a3b82730fc3cf12bd16}{Current\+Interaction}}
@@ -993,8 +1002,12 @@ Respawn\+Pos&\\
 Sector&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{LightBall@{LightBall}!CEditorMesh@{CEditorMesh}}\index{CEditorMesh@{CEditorMesh}!LightBall@{LightBall}}}\mbox{\Hypertarget{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90ca2c08d85c8644077097569cbf15253d1f}\label{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90ca2c08d85c8644077097569cbf15253d1f}} 
-Light\+Ball&\\
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Light@{Light}!CEditorMesh@{CEditorMesh}}\index{CEditorMesh@{CEditorMesh}!Light@{Light}}}\mbox{\Hypertarget{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90ca6141fa42751bf7d7a0b0636404547801}\label{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90ca6141fa42751bf7d7a0b0636404547801}} 
+Light&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LightModel@{LightModel}!CEditorMesh@{CEditorMesh}}\index{CEditorMesh@{CEditorMesh}!LightModel@{LightModel}}}\mbox{\Hypertarget{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90caf7daed38b36263118e8a80f42fd3c4eb}\label{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90caf7daed38b36263118e8a80f42fd3c4eb}} 
+Light\+Model&\\
 \hline
 
 \raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CEditorMesh@{CEditorMesh}}\index{CEditorMesh@{CEditorMesh}!None@{None}}}\mbox{\Hypertarget{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90ca941bce807ffc936905d6561d5d43a260}\label{class_c_editor_mesh_abc85e532d322099837fe77712c2fd90ca941bce807ffc936905d6561d5d43a260}} 
@@ -1672,6 +1685,12 @@ Apply\+Only\+Material&\\
 \index{Material\_IsGameMaterial@{Material\_IsGameMaterial}!CEditorMesh@{CEditorMesh}}
 \doxysubsubsection{\texorpdfstring{Material\_IsGameMaterial()}{Material\_IsGameMaterial()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Mesh\+::\+Material\+\_\+\+Is\+Game\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_editor_mesh_a520a008db872183912b6525e91e55b4a}\label{class_c_editor_mesh_a520a008db872183912b6525e91e55b4a}} 
+\index{CEditorMesh@{CEditorMesh}!Material\_IsSpecialColored@{Material\_IsSpecialColored}}
+\index{Material\_IsSpecialColored@{Material\_IsSpecialColored}!CEditorMesh@{CEditorMesh}}
+\doxysubsubsection{\texorpdfstring{Material\_IsSpecialColored()}{Material\_IsSpecialColored()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_boolean}{Boolean}} C\+Editor\+Mesh\+::\+Material\+\_\+\+Is\+Special\+Colored (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ident}{Ident}}}]{Material\+Id }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{class_c_editor_mesh_a6eca246f6f9ca18b9c7206f1c03ca47c}\label{class_c_editor_mesh_a6eca246f6f9ca18b9c7206f1c03ca47c}} 
 \index{CEditorMesh@{CEditorMesh}!Material\_MatchesCriterion@{Material\_MatchesCriterion}}
@@ -2426,6 +2445,12 @@ Apply\+Only\+Material&\\
 \doxysubsubsection{\texorpdfstring{CreationElemsCount}{CreationElemsCount}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Mesh\+::\+Creation\+Elems\+Count}
 
+\mbox{\Hypertarget{class_c_editor_mesh_a308e8749fbbfcb4871b40087c71d6865}\label{class_c_editor_mesh_a308e8749fbbfcb4871b40087c71d6865}} 
+\index{CEditorMesh@{CEditorMesh}!CurrentColorForSpecialMaterials@{CurrentColorForSpecialMaterials}}
+\index{CurrentColorForSpecialMaterials@{CurrentColorForSpecialMaterials}!CEditorMesh@{CEditorMesh}}
+\doxysubsubsection{\texorpdfstring{CurrentColorForSpecialMaterials}{CurrentColorForSpecialMaterials}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}} C\+Editor\+Mesh\+::\+Current\+Color\+For\+Special\+Materials}
+
 \mbox{\Hypertarget{class_c_editor_mesh_a1dcefb4f8dcd9a3b82730fc3cf12bd16}\label{class_c_editor_mesh_a1dcefb4f8dcd9a3b82730fc3cf12bd16}} 
 \index{CEditorMesh@{CEditorMesh}!CurrentInteraction@{CurrentInteraction}}
 \index{CurrentInteraction@{CurrentInteraction}!CEditorMesh@{CEditorMesh}}
@@ -2630,6 +2655,12 @@ Apply\+Only\+Material&\\
 \doxysubsubsection{\texorpdfstring{Material\_Atlas\_SelectedSubTexIndex}{Material\_Atlas\_SelectedSubTexIndex}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{struct_integer}{Integer}} C\+Editor\+Mesh\+::\+Material\+\_\+\+Atlas\+\_\+\+Selected\+Sub\+Tex\+Index}
 
+\mbox{\Hypertarget{class_c_editor_mesh_a0e3abcf9d4dbfcf3edb5ab3cc8c6e9ba}\label{class_c_editor_mesh_a0e3abcf9d4dbfcf3edb5ab3cc8c6e9ba}} 
+\index{CEditorMesh@{CEditorMesh}!MaterialBaseColors@{MaterialBaseColors}}
+\index{MaterialBaseColors@{MaterialBaseColors}!CEditorMesh@{CEditorMesh}}
+\doxysubsubsection{\texorpdfstring{MaterialBaseColors}{MaterialBaseColors}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_vec3}{Vec3}}$>$ C\+Editor\+Mesh\+::\+Material\+Base\+Colors}
+
 \mbox{\Hypertarget{class_c_editor_mesh_a07f645d226bfe13773a9705a2adb9700}\label{class_c_editor_mesh_a07f645d226bfe13773a9705a2adb9700}} 
 \index{CEditorMesh@{CEditorMesh}!MaterialDynaIds@{MaterialDynaIds}}
 \index{MaterialDynaIds@{MaterialDynaIds}!CEditorMesh@{CEditorMesh}}
@@ -2653,6 +2684,12 @@ Apply\+Only\+Material&\\
 \index{MaterialIds@{MaterialIds}!CEditorMesh@{CEditorMesh}}
 \doxysubsubsection{\texorpdfstring{MaterialIds}{MaterialIds}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_ident}{Ident}}$>$ C\+Editor\+Mesh\+::\+Material\+Ids}
+
+\mbox{\Hypertarget{class_c_editor_mesh_a89672665ef93660ce2adc30ce2211d23}\label{class_c_editor_mesh_a89672665ef93660ce2adc30ce2211d23}} 
+\index{CEditorMesh@{CEditorMesh}!MaterialLastUsedColors@{MaterialLastUsedColors}}
+\index{MaterialLastUsedColors@{MaterialLastUsedColors}!CEditorMesh@{CEditorMesh}}
+\doxysubsubsection{\texorpdfstring{MaterialLastUsedColors}{MaterialLastUsedColors}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{struct_vec3}{Vec3}}$>$ C\+Editor\+Mesh\+::\+Material\+Last\+Used\+Colors}
 
 \mbox{\Hypertarget{class_c_editor_mesh_ada4e737f0e07781cae7361a07fe0e9ac}\label{class_c_editor_mesh_ada4e737f0e07781cae7361a07fe0e9ac}} 
 \index{CEditorMesh@{CEditorMesh}!MaterialNames@{MaterialNames}}

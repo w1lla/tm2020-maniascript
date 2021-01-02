@@ -50,11 +50,15 @@ enum \mbox{\hyperlink{class_c_editor_main_plugin_a6a0c20ff6f9e06f4a052d1346b8f3b
 \mbox{\hyperlink{struct_boolean}{Boolean}} \mbox{\hyperlink{class_c_editor_main_plugin_a45a24c1ee96cceb2762b0f68044c265d}{Binding\+\_\+\+Is\+Active}} (\mbox{\hyperlink{struct_text}{Text}} Context\+Name, \mbox{\hyperlink{struct_text}{Text}} Binding\+Name)
 \item 
 \mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_main_plugin_a0a83a0b29e2e5d371940a6e77d142a99}{Plugin\+\_\+\+Set\+Clearance}} (\mbox{\hyperlink{class_c_editor_plugin_handle}{C\+Editor\+Plugin\+Handle}} Handle, \mbox{\hyperlink{class_c_editor_main_plugin_a6a0c20ff6f9e06f4a052d1346b8f3b0e}{C\+Editor\+Main\+Plugin\+::\+E\+Mesh\+Editor\+A\+PI}} A\+PI, \mbox{\hyperlink{struct_boolean}{Boolean}} Is\+Allowed)
+\item 
+\mbox{\hyperlink{struct_void}{Void}} \mbox{\hyperlink{class_c_editor_main_plugin_a5fb75458b119d83f498fb4a92e66f71d}{Module\+\_\+\+Load}} (\mbox{\hyperlink{struct_text}{Text}} Module\+Name)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_editor_plugin_handle}{C\+Editor\+Plugin\+Handle}} $>$ \mbox{\hyperlink{class_c_editor_main_plugin_ae57a1259ac5b252b7b35ba3a655d830a}{Plugins}}
+\item 
+const \mbox{\hyperlink{struct_array}{Array}}$<$ \mbox{\hyperlink{class_c_game_module_editor_base}{C\+Game\+Module\+Editor\+Base}} $>$ \mbox{\hyperlink{class_c_editor_main_plugin_a27ed92805620fed96f94779b58b566b4}{Modules}}
 \end{DoxyCompactItemize}
 
 
@@ -153,6 +157,12 @@ Undo\+Redo&\\
 \doxysubsubsection{\texorpdfstring{Help\_Open()}{Help\_Open()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Main\+Plugin\+::\+Help\+\_\+\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+\mbox{\Hypertarget{class_c_editor_main_plugin_a5fb75458b119d83f498fb4a92e66f71d}\label{class_c_editor_main_plugin_a5fb75458b119d83f498fb4a92e66f71d}} 
+\index{CEditorMainPlugin@{CEditorMainPlugin}!Module\_Load@{Module\_Load}}
+\index{Module\_Load@{Module\_Load}!CEditorMainPlugin@{CEditorMainPlugin}}
+\doxysubsubsection{\texorpdfstring{Module\_Load()}{Module\_Load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_void}{Void}} C\+Editor\+Main\+Plugin\+::\+Module\+\_\+\+Load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_text}{Text}}}]{Module\+Name }\end{DoxyParamCaption})}
+
 \mbox{\Hypertarget{class_c_editor_main_plugin_a0a83a0b29e2e5d371940a6e77d142a99}\label{class_c_editor_main_plugin_a0a83a0b29e2e5d371940a6e77d142a99}} 
 \index{CEditorMainPlugin@{CEditorMainPlugin}!Plugin\_SetClearance@{Plugin\_SetClearance}}
 \index{Plugin\_SetClearance@{Plugin\_SetClearance}!CEditorMainPlugin@{CEditorMainPlugin}}
@@ -168,6 +178,12 @@ Undo\+Redo&\\
 
 
 \doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_c_editor_main_plugin_a27ed92805620fed96f94779b58b566b4}\label{class_c_editor_main_plugin_a27ed92805620fed96f94779b58b566b4}} 
+\index{CEditorMainPlugin@{CEditorMainPlugin}!Modules@{Modules}}
+\index{Modules@{Modules}!CEditorMainPlugin@{CEditorMainPlugin}}
+\doxysubsubsection{\texorpdfstring{Modules}{Modules}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_array}{Array}}$<$\mbox{\hyperlink{class_c_game_module_editor_base}{C\+Game\+Module\+Editor\+Base}}$>$ C\+Editor\+Main\+Plugin\+::\+Modules}
+
 \mbox{\Hypertarget{class_c_editor_main_plugin_ae57a1259ac5b252b7b35ba3a655d830a}\label{class_c_editor_main_plugin_ae57a1259ac5b252b7b35ba3a655d830a}} 
 \index{CEditorMainPlugin@{CEditorMainPlugin}!Plugins@{Plugins}}
 \index{Plugins@{Plugins}!CEditorMainPlugin@{CEditorMainPlugin}}

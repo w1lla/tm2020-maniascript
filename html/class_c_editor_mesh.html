@@ -198,7 +198,8 @@ Public Types</h2></td></tr>
 <a class="el" href="class_c_editor_mesh.html#abc85e532d322099837fe77712c2fd90ca1059a05ec31c45a08da50c99af66e003">RespawnPos</a>, 
 <br />
 &#160;&#160;<a class="el" href="class_c_editor_mesh.html#abc85e532d322099837fe77712c2fd90ca076cc7df9f79f9b7c49c96b9cc361b1a">Sector</a>, 
-<a class="el" href="class_c_editor_mesh.html#abc85e532d322099837fe77712c2fd90ca2c08d85c8644077097569cbf15253d1f">LightBall</a>, 
+<a class="el" href="class_c_editor_mesh.html#abc85e532d322099837fe77712c2fd90ca6141fa42751bf7d7a0b0636404547801">Light</a>, 
+<a class="el" href="class_c_editor_mesh.html#abc85e532d322099837fe77712c2fd90caf7daed38b36263118e8a80f42fd3c4eb">LightModel</a>, 
 <a class="el" href="class_c_editor_mesh.html#abc85e532d322099837fe77712c2fd90ca941bce807ffc936905d6561d5d43a260">None</a>
 <br />
  }</td></tr>
@@ -360,6 +361,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a47afa11f7891a40a0af13f9ce3ee5cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8891250f2930dd0c367825901fd4939d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_image.html">CImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_editor_mesh.html#a8891250f2930dd0c367825901fd4939d">MaterialDyna_GetBitmap</a> (<a class="el" href="struct_ident.html">Ident</a> MaterialId)</td></tr>
 <tr class="separator:a8891250f2930dd0c367825901fd4939d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520a008db872183912b6525e91e55b4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_boolean.html">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_editor_mesh.html#a520a008db872183912b6525e91e55b4a">Material_IsSpecialColored</a> (<a class="el" href="struct_ident.html">Ident</a> MaterialId)</td></tr>
+<tr class="separator:a520a008db872183912b6525e91e55b4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eca246f6f9ca18b9c7206f1c03ca47c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_boolean.html">Boolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_editor_mesh.html#a6eca246f6f9ca18b9c7206f1c03ca47c">Material_MatchesCriterion</a> (<a class="el" href="struct_ident.html">Ident</a> MaterialId, <a class="el" href="class_c_editor_mesh.html#aedcd03d3f96e2cf34c83401cd5a19457">CEditorMesh::EMaterialFilterCriterion</a> ResultSetHandle)</td></tr>
 <tr class="separator:a6eca246f6f9ca18b9c7206f1c03ca47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d446886907743547a691b439bd8f216"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_void.html">Void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_editor_mesh.html#a5d446886907743547a691b439bd8f216">Material_SetFilter</a> (<a class="el" href="class_c_editor_mesh.html#aedcd03d3f96e2cf34c83401cd5a19457">CEditorMesh::EMaterialFilterCriterion</a> Criterion, <a class="el" href="class_c_editor_mesh.html#a3105437dc70cf74c28f1fd49af2bf28d">CEditorMesh::EFilterKind</a> FilterKind)</td></tr>
@@ -749,6 +752,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5065ec00530bd0a7e4c0f7b4366714fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23637237bbd4516655c9a00c4c257033"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_array.html">Array</a>&lt; <a class="el" href="struct_text.html">Text</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_editor_mesh.html#a23637237bbd4516655c9a00c4c257033">MaterialDynaNames</a></td></tr>
 <tr class="separator:a23637237bbd4516655c9a00c4c257033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89672665ef93660ce2adc30ce2211d23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_array.html">Array</a>&lt; <a class="el" href="struct_vec3.html">Vec3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_editor_mesh.html#a89672665ef93660ce2adc30ce2211d23">MaterialLastUsedColors</a></td></tr>
+<tr class="separator:a89672665ef93660ce2adc30ce2211d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e3abcf9d4dbfcf3edb5ab3cc8c6e9ba"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_array.html">Array</a>&lt; <a class="el" href="struct_vec3.html">Vec3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_editor_mesh.html#a0e3abcf9d4dbfcf3edb5ab3cc8c6e9ba">MaterialBaseColors</a></td></tr>
+<tr class="separator:a0e3abcf9d4dbfcf3edb5ab3cc8c6e9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308e8749fbbfcb4871b40087c71d6865"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_vec3.html">Vec3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_editor_mesh.html#a308e8749fbbfcb4871b40087c71d6865">CurrentColorForSpecialMaterials</a></td></tr>
+<tr class="separator:a308e8749fbbfcb4871b40087c71d6865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe69099e718bd95d058936970b579c5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_integer.html">Integer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_editor_mesh.html#a0fe69099e718bd95d058936970b579c5">Material_Atlas_SelectedSubTexIndex</a></td></tr>
 <tr class="separator:a0fe69099e718bd95d058936970b579c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dcefb4f8dcd9a3b82730fc3cf12bd16"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_c_editor_mesh.html#a6714e5bf21b474ab2bdf740405c3dd3b">CEditorMesh::EInteraction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_editor_mesh.html#a1dcefb4f8dcd9a3b82730fc3cf12bd16">CurrentInteraction</a></td></tr>
@@ -942,7 +951,8 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="abc85e532d322099837fe77712c2fd90caa631df9aca32e716dbdded7c9745398a"></a>TriggerShape&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abc85e532d322099837fe77712c2fd90ca1059a05ec31c45a08da50c99af66e003"></a>RespawnPos&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abc85e532d322099837fe77712c2fd90ca076cc7df9f79f9b7c49c96b9cc361b1a"></a>Sector&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abc85e532d322099837fe77712c2fd90ca2c08d85c8644077097569cbf15253d1f"></a>LightBall&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abc85e532d322099837fe77712c2fd90ca6141fa42751bf7d7a0b0636404547801"></a>Light&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abc85e532d322099837fe77712c2fd90caf7daed38b36263118e8a80f42fd3c4eb"></a>LightModel&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abc85e532d322099837fe77712c2fd90ca941bce807ffc936905d6561d5d43a260"></a>None&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
@@ -2797,6 +2807,24 @@ Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="struct_boolean.html">Boolean</a> CEditorMesh::Material_IsGameMaterial </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a520a008db872183912b6525e91e55b4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a520a008db872183912b6525e91e55b4a">&#9670;&nbsp;</a></span>Material_IsSpecialColored()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_boolean.html">Boolean</a> CEditorMesh::Material_IsSpecialColored </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_ident.html">Ident</a>&#160;</td>
+          <td class="paramname"><em>MaterialId</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -5322,6 +5350,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a308e8749fbbfcb4871b40087c71d6865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308e8749fbbfcb4871b40087c71d6865">&#9670;&nbsp;</a></span>CurrentColorForSpecialMaterials</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_vec3.html">Vec3</a> CEditorMesh::CurrentColorForSpecialMaterials</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1dcefb4f8dcd9a3b82730fc3cf12bd16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1dcefb4f8dcd9a3b82730fc3cf12bd16">&#9670;&nbsp;</a></span>CurrentInteraction</h2>
 
@@ -5798,6 +5840,20 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0e3abcf9d4dbfcf3edb5ab3cc8c6e9ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e3abcf9d4dbfcf3edb5ab3cc8c6e9ba">&#9670;&nbsp;</a></span>MaterialBaseColors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="struct_array.html">Array</a>&lt;<a class="el" href="struct_vec3.html">Vec3</a>&gt; CEditorMesh::MaterialBaseColors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a07f645d226bfe13773a9705a2adb9700"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07f645d226bfe13773a9705a2adb9700">&#9670;&nbsp;</a></span>MaterialDynaIds</h2>
 
@@ -5848,6 +5904,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="struct_array.html">Array</a>&lt;<a class="el" href="struct_ident.html">Ident</a>&gt; CEditorMesh::MaterialIds</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89672665ef93660ce2adc30ce2211d23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89672665ef93660ce2adc30ce2211d23">&#9670;&nbsp;</a></span>MaterialLastUsedColors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_array.html">Array</a>&lt;<a class="el" href="struct_vec3.html">Vec3</a>&gt; CEditorMesh::MaterialLastUsedColors</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -6252,7 +6322,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Dec 10 2020 13:59:46 for ManiaScript by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+Generated on Sat Jan 2 2021 14:24:23 for ManiaScript by&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
 </small></address>
 </body>
 </html>
